@@ -7058,6 +7058,24 @@
             </StackPanel>
         </StackPanel>
 
+
+        <StackPanel x:Name="StackPanel_OBJ_Uniform" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="White" Visibility="Collapsed">
+            <Label x:Name="Label_OBJ_Uniform_1" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
+            <Label x:Name="Label_OBJ_Uniform_2" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_3" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2" />
+            <Label x:Name="Label_OBJ_Uniform_4" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_5" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_6" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_7" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_8" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_9" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_10" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
+                <Button x:Name="Button_Obj_Uniform_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Uniform_oui_Click"/>
+                <Button x:Name="Button_Obj_Uniform_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Uniform_non_Click"/>
+            </StackPanel>
+        </StackPanel>
+
         <StackPanel x:Name="Label_OBJ_Sec_1_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_1_Att_1" Content="ASSASSINAT (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_1_Att_2" Content="Marquez 3 pts de victoire a la fin de la Bataille pour" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
