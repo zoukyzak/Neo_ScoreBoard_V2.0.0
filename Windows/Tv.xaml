@@ -1,0 +1,1003 @@
+﻿<Window x:Class="CPV9.Windows.Tv"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPV9.Windows"
+        mc:Ignorable="d"
+        Title="Néo ScoreBoard Mini" Height="500" Width="600" MinHeight="400" MinWidth="500" Background="White" Foreground="Black" SizeChanged="Window_Tv_SizeChanged" ResizeMode="CanResizeWithGrip" SizeToContent="WidthAndHeight" WindowStyle="None">
+    <Grid>
+
+        <Label x:Name="Label_Tv_Titre" Content="titre TV"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="top" Foreground="Black" FontSize="45" FontFamily="Source Serif Pro Black"/>
+        <StackPanel x:Name="StackPanel_CPV9_Droit" Orientation="Vertical">
+            <Label x:Name="CDV9_droit_Neo" Content="Néo" Width="Auto" Height="Auto" Margin="0,14,0,0" HorizontalAlignment="Right" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="100" FontFamily="Arial Black">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0.087"/>
+                        <GradientStop Color="#FF73F10A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="10.372"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label x:Name="CDV9_droit_ScoreBoard" Content="ScoreBoard" Width="Auto" Height="Auto" Margin="0,-40,0,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="30" FontFamily="Arial Black">
+                <Label.Foreground>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF1244EE" Offset="1"/>
+                        <GradientStop Color="#FFFF1700"/>
+                    </RadialGradientBrush>
+                </Label.Foreground>
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="10.372"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </StackPanel>
+        <StackPanel x:Name="StackPanel_CPV9_Gauche" Orientation="Vertical">
+            <Label x:Name="CDV9_gauche_Neo" Content="Néo" Width="Auto" Height="Auto" Margin="0,14,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="100" FontFamily="Arial Black">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0.087"/>
+                        <GradientStop Color="#FF73F10A" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-9.183"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label x:Name="CDV9_gauche_ScoreBoard" Content="ScorBoard" Width="Auto" Height="Auto" Margin="0,-40,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="30" FontFamily="Arial Black">
+                <Label.Foreground>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF1244EE"/>
+                        <GradientStop Color="#FFFF1700" Offset="1"/>
+                    </RadialGradientBrush>
+                </Label.Foreground>
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-9.183"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+        </StackPanel>
+            <!--#region Image Pl1 -->
+        <Image x:Name="Image_PL1_ADEPTA_SORORITAS" Source="/Images/ADEPTA SORORITAS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_ADEPTUS_CUSTODES" Source="/Images/ADEPTUS CUSTODES.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_ADEPTUS_MECHANICUS" Source="/Images/ADEPTUS MECHANICUS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_ASTRA_MILITARUM" Source="/Images/ASTRA MILITARUM.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_BLOOD_ANGELS" Source="/Images/BLOOD ANGELS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_CHAOS_DAEMONS" Source="/Images/CHAOS DAEMONS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_CHAOS_KNIGHTS" Source="/Images/CHAOS KNIGHTS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_CHAOS_SPACE_MARINES" Source="/Images/CHAOS SPACE MARINES.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_CRAFTWORLDS" Source="/Images/CRAFTWORLDS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_DARK_ANGELS" Source="/Images/DARK ANGELS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_DEATH_GUARD" Source="/Images/DEATH GUARD.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_DEATHWATCH" Source="/Images/DEATHWATCH.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_DRUKHARI" Source="/Images/DRUKHARI.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_GENESTEALER_CULTS" Source="/Images/GENESTEALERCULTS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_GREY_KNIGHTS" Source="/Images/GREY KNIGHTS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_HARLEQUINS" Source="/Images/HARLEQUINS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_IMPERIAL_KNIGHTS" Source="/Images/IMPERIAL KNIGHTS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_NECRONS" Source="/Images/NECRONS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_OFFICIO_ASSASSINORUM" Source="/Images/OFFICIO ASSASSINORUM.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_ORKS" Source="/Images/ORKS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SM_IMPERIAL_FISTS" Source="/Images/SM_IMPERIAL FISTS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SM_IRON_HANDS" Source="/Images/SM_IRON HANDS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SM_RAVEN_GUARD" Source="/Images/SM_RAVEN GUARD.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SM_SALAMANDRES" Source="/Images/SM_SALAMANDRES.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SM_ULTRAMARINES" Source="/Images/SM_ULTRAMARINES.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SM_WHITE_SCARES" Source="/Images/SM_WHITE SCARES.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SPACE_MARINES" Source="/Images/SPACE MARINES.png " Width="368" Height="330" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_SPACE_WOLVES" Source="/Images/SPACE WOLVES.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_T_AU_EMPIRE" Source="/Images/T AU EMPIRE.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_THOUSAND_SONS" Source="/Images/THOUSAND SONS.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_TYRANID" Source="/Images/TYRANID.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL1_YNARRI" Source="/Images/YNARRI.png " Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+            <!--#endregion-->
+            <!--#region Image PL2 -->
+        <Image x:Name="Image_PL2_ADEPTA_SORORITAS" Source="/Images/ADEPTA SORORITAS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_ADEPTUS_CUSTODES" Source="/Images/ADEPTUS CUSTODES.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_ADEPTUS_MECHANICUS" Source="/Images/ADEPTUS MECHANICUS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_ASTRA_MILITARUM" Source="/Images/ASTRA MILITARUM.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_BLOOD_ANGELS" Source="/Images/BLOOD ANGELS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_CHAOS_DAEMONS" Source="/Images/CHAOS DAEMONS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_CHAOS_KNIGHTS" Source="/Images/CHAOS KNIGHTS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_CHAOS_SPACE_MARINES" Source="/Images/CHAOS SPACE MARINES.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_CRAFTWORLDS" Source="/Images/CRAFTWORLDS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_DARK_ANGELS" Source="/Images/DARK ANGELS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_DEATH_GUARD" Source="/Images/DEATH GUARD.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_DEATHWATCH" Source="/Images/DEATHWATCH.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_DRUKHARI" Source="/Images/DRUKHARI.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_GENESTEALER_CULTS" Source="/Images/GENESTEALERCULTS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_GREY_KNIGHTS" Source="/Images/GREY KNIGHTS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_HARLEQUINS" Source="/Images/HARLEQUINS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_IMPERIAL_KNIGHTS" Source="/Images/IMPERIAL KNIGHTS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_NECRONS" Source="/Images/NECRONS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_OFFICIO_ASSASSINORUM" Source="/Images/OFFICIO ASSASSINORUM.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_ORKS" Source="/Images/ORKS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SM_IMPERIAL_FISTS" Source="/Images/SM_IMPERIAL FISTS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SM_IRON_HANDS" Source="/Images/SM_IRON HANDS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SM_RAVEN_GUARD" Source="/Images/SM_RAVEN GUARD.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SM_SALAMANDRES" Source="/Images/SM_SALAMANDRES.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SM_ULTRAMARINES" Source="/Images/SM_ULTRAMARINES.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SM_WHITE_SCARES" Source="/Images/SM_WHITE SCARES.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SPACE_MARINES" Source="/Images/SPACE MARINES.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.839"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+            <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_SPACE_WOLVES" Source="/Images/SPACE WOLVES.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_T_AU_EMPIRE" Source="/Images/T AU EMPIRE.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_THOUSAND_SONS" Source="/Images/THOUSAND SONS.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_TYRANID" Source="/Images/TYRANID.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        <Image x:Name="Image_PL2_YNARRI" Source="/Images/YNARRI.png " Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <!--#endregion-->
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock x:Name="TextBlock_Nom_Player_1_Tv" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="top" FontSize="20" FontFamily="Arial Black" Visibility="Visible" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="auto" Text="Pseudo" >
+                <TextBlock.Foreground>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
+                        <GradientStop Color="#FFFF3D04" Offset="1"/>
+                    </RadialGradientBrush>
+                </TextBlock.Foreground>
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-10.923"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="TextBlock_Nom_SG_1_Tv" HorizontalAlignment="Left" Margin="10,-10,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de gerre" AllowDrop="True">
+                <TextBlock.Foreground>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
+                        <GradientStop Color="#FFFF3D04" Offset="1"/>
+                    </RadialGradientBrush>
+                </TextBlock.Foreground>
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-10.923"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <StackPanel x:Name="StackPanel_Cape_Player_1_Tv" Orientation="Vertical" Margin="5,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="Auto" Width="Auto" Background="Gray" Visibility="Visible">
+                <Label x:Name="Label_Score_ObjP_Cape_Player_1" Content="OBJECTIF PRINCIPAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Visible"/>
+                <Label x:Name="Label_Score_ObjS_1_Cape_Player_1" Content="1-ASSASSINAT (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2_Cape_Player_1" Content="2-ABATTEZ LE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3_Cape_Player_1" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_4_Cape_Player_1" Content="4-TUEZ LE SG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_5_Cape_Player_1" Content="5-ERODEZ LEURS RANGS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_6_Cape_Player_1" Content="6-ATTRITION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_7_Cape_Player_1" Content="7-JUSQU'AU DERNIER (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_8_Cape_Player_1" Content="8- PREMIER SANG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_9_Cape_Player_1" Content="9-SUR TOUS LES FRONTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_10_Cape_Player_1" Content="10-BRISEUR DE LIGNE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_11_Cape_Player_1" Content="11-DOMINATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_12_Cape_Player_1" Content="12-INSPECTER LE TERRAIN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_13_Cape_Player_1" Content="13-BALISE DE TELEPORTATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_14_Cape_Player_1" Content="14-LEVEZ HAUT LES ETANDARDS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_16_Cape_Player_1" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_17_Cape_Player_1" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_18_Cape_Player_1" Content="18-RECEVEZ LES DATAS D'OCTARIUS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_19_Cape_Player_1" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_501_Cape_Player_1" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_502_Cape_Player_1" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_503_Cape_Player_1" Content="503-ENCERCLER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1011_Cape_Player_1" Content="1011-PRISE DE FLAN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1012_Cape_Player_1" Content="1012-SECURISEZ LES SITES D'ATTERRISSAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1013_Cape_Player_1" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1021_Cape_Player_1" Content="1021-POSITION CENTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1022_Cape_Player_1" Content="1022-S'ELEVER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1023_Cape_Player_1" Content="1023-IRRUPTION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1031_Cape_Player_1" Content="1031-TELECHARGER LE DATA-PSAUME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1032_Cape_Player_1" Content="1032-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1033_Cape_Player_1" Content="1033-BALAYAGE DE RECONNAISSANCE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2011_Cape_Player_1" Content="2011-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2012_Cape_Player_1" Content="2012-RASER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2013_Cape_Player_1" Content="2013-INTERCEPTION DE DONNEES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2021_Cape_Player_1" Content="2021-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2022_N_Cape_Player_1" Content="2022-TERRAIN VITAL (objectifs neutre) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2022_Cape_Player_1" Content="2022-TERRAIN VITAL (pts totaux) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2023_Cape_Player_1" Content="2023-SCAN STRATEGIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2031_Cape_Player_1" Content="2031-DEBORDEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2032_Cape_Player_1" Content="2032-ASSAUT DIRECT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2033_Cape_Player_1" Content="2033-CIBLES PRIORITAIRES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3001_Cape_Player_1" Content="3001-TENIR LE CENTRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3002_Cape_Player_1" Content="3002-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3003_Cape_Player_1" Content="3003-CHERCHER LE PORTAIL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_100_Cape_Player_1" Content="Necron 100-CODE DE COMBAT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_101_Cape_Player_1" Content="Necron 101-ELEMINEZ LA VERMINE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_102_Cape_Player_1" Content="Necron 102-TRESORS DES EONS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_103_Cape_Player_1" Content="Necron 103-MACHINES ANTIQUES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SM_110_Cape_Player_1" Content="Space Marine 110-GUERRE CODEX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SM_111_Cape_Player_1" Content="Space Marine 111-TACTIQUES DE CHOC capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SM_112_Cape_Player_1" Content="Space Marine 112-SERMENT DE L'INSTANT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_113_Cape_Player_1" Content="Blood Angel 113-LAME DE SANGUINIUS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_114_Cape_Player_1" Content="Blood Angel 114-FUREUR DES EGUARES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_115_Cape_Player_1" Content="Blood Angel 115-LA MORT DESCEND DU CIEL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_116_Cape_Player_1" Content="Blood Angel 116-ASSAUT IMPLACABLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_117_Cape_Player_1" Content="Deathwatch 117-LA LONGUE VEILLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_118_Cape_Player_1" Content="Deathwatch 118-ORDRE D'ABATTAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_119_Cape_Player_1" Content="Deathwatch 119-PARALYSER LA PLACE FORTE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_120_Cape_Player_1" Content="Deathwatch 120-NE TOLEREZ PAS LE XENOS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_121_Cape_Player_1" Content="Space Wolwes 121-PROIES GLORIEUSES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_122_Cape_Player_1" Content="Space Wolwes 122-DEFI HEROIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_123_Cape_Player_1" Content="Space Wolwes 123-UNE SAGA MAGISTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_124_Cape_Player_1" Content="Space Wolwes 124-FIERTE DU GUERRIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_DG_125_Cape_Player_1" Content="Death Guard 125-VECTEURS INCONSCIENTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_DG_126_Cape_Player_1" Content="Death Guard 126-SOL CORROMPU capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_DG_127_Cape_Player_1" Content="Death Guard 127-REPANDRE LES MALADIES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_128_Cape_Player_1" Content="Adeptus M 128-ACCRETION DU SAVOIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_129_Cape_Player_1" Content="Adeptus M 129-ERADICATION DE LA CHAIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_130_Cape_Player_1" Content="Adeptus M 130-SEQUENCAGE NON REPERTORIE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_131_Cape_Player_1" Content="Adeptus M 131-ARCHEOCRYPTE SECRETE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_132_Cape_Player_1" Content="Adepta S 132-DEMONSTRATION DE FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_133_Cape_Player_1" Content="Adepta S 133-TUEZ L'HERETIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_134_Cape_Player_1" Content="Adepta S 134-SOL SACRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_135_Cape_Player_1" Content="Adepta S 135-DEFENDEZ LE SANCTUAIRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+
+            </StackPanel>
+
+        </StackPanel>
+
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <TextBlock x:Name="TextBlock_Nom_Player_2_Tv" HorizontalAlignment="Right" Margin="0,50,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" Visibility="Visible" TextAlignment="Center" LineHeight="auto" IsEnabled="False" Height="Auto" Text="Pseudo" >
+                <TextBlock.Foreground>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
+                        <GradientStop Color="#FFFF3D04" Offset="1"/>
+                    </RadialGradientBrush>
+                </TextBlock.Foreground>
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="10.923"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="TextBlock_Nom_SG_2_Tv" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" TextAlignment="Center" LineHeight="auto" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de guerre" >
+                <TextBlock.Foreground>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
+                        <GradientStop Color="#FFFF3D04" Offset="1"/>
+                    </RadialGradientBrush>
+                </TextBlock.Foreground>
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="10.923"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <StackPanel x:Name="StackPanel_Cape_Player_2_Tv" Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,5,0" Height="Auto" Width="Auto" Background="Gray" Visibility="Visible">
+                <Label x:Name="Label_Score_ObjP_Cape_Player_2" HorizontalAlignment="Center" Content="OBJECTIF PRINCIPAL capé" VerticalAlignment="Top" Height="Auto" Width="auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" RenderTransformOrigin="0.353,0.687" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1_Cape_Player_2" Content="1-ASSASSINAT (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2_Cape_Player_2" Content="2-ABATTEZ LE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3_Cape_Player_2" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_4_Cape_Player_2" Content="4-TUEZ LE SG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_5_Cape_Player_2" Content="5-ERODEZ LEURS RANGS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_6_Cape_Player_2" Content="6-ATTRITION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_7_Cape_Player_2" Content="7-JUSQU'AU DERNIER (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_8_Cape_Player_2" Content="8-PREMIER SANG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_9_Cape_Player_2" Content="9-SUR TOUS LES FRONTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_10_Cape_Player_2" Content="10-BRISEUR DE LIGNE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_11_Cape_Player_2" Content="11-DOMINATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_12_Cape_Player_2" Content="12-INSPECTER LE TERRAIN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_13_Cape_Player_2" Content="13-BALISE DE TELEPORTATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_14_Cape_Player_2" Content="14-LEVEZ HAUT LES ETANDARDS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_16_Cape_Player_2" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_17_Cape_Player_2" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_18_Cape_Player_2" Content="18-RECEVEZ LES DATAS D'OCTARIUS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_19_Cape_Player_2" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_501_Cape_Player_2" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_502_Cape_Player_2" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_503_Cape_Player_2" Content="503-ENCERCLER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1011_Cape_Player_2" Content="1011-PRISE DE FLAN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1012_Cape_Player_2" Content="1012-SECURISEZ LES SITES D'ATTERRISSAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1013_Cape_Player_2" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1021_Cape_Player_2" Content="1021-POSITION CENTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1022_Cape_Player_2" Content="1022-S'ELEVER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1023_Cape_Player_2" Content="1023-IRRUPTION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1031_Cape_Player_2" Content="1031-TELECHARGER LE DATA-PSAUME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1032_Cape_Player_2" Content="1032-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_1033_Cape_Player_2" Content="1033-BALAYAGE DE RECONNAISSANCE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2011_Cape_Player_2" Content="2011-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2012_Cape_Player_2" Content="2012-RASER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2013_Cape_Player_2" Content="2013-INTERCEPTION DE DONNEES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2021_Cape_Player_2" Content="2021-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2022_N_Cape_Player_2" Content="2022-TERRAIN VITAL (objectifs neutre) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2022_Cape_Player_2" Content="2022-TERRAIN VITAL (points totaux) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2023_Cape_Player_2" Content="2023-SCAN STRATEGIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2031_Cape_Player_2" Content="2031-DEBORDEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2032_Cape_Player_2" Content="2032-ASSAUT DIRECT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_2033_Cape_Player_2" Content="2033-CIBLES PRIORITAIRES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3001_Cape_Player_2" Content="3001-TENIR LE CENTRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3002_Cape_Player_2" Content="3002-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjS_3003_Cape_Player_2" Content="3003-CHERCHER LE PORTAIL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_100_Cape_Player_2" Content="Necron 100-CODE DE COMBAT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_101_Cape_Player_2" Content="Necron 101-ELEMINEZ LA VERMINE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_102_Cape_Player_2" Content="Necron 102-TRESORS DES EONS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Necron_103_Cape_Player_2" Content="Necron 103-MACHINES ANTIQUES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SM_110_Cape_Player_2" Content="SM 110-GUERRE CODEX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SM_111_Cape_Player_2" Content="SM 111-TACTIQUES DE CHOC capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SM_112_Cape_Player_2" Content="SM 112-SERMENTS DE L'INSTANT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_113_Cape_Player_2" Content="Blood Angel 113-LAME DE SANGUINIUS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_114_Cape_Player_2" Content="Blood Angel 114-FUREUR DES EGUARES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_115_Cape_Player_2" Content="Blood Angel 115-LA MORT DESCEND DU CIEL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_BA_116_Cape_Player_2" Content="Blood Angel 116-ASSAUT IMPLACABLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_117_Cape_Player_2" Content="Deathwatch 117-LA LONGUE VEILLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_118_Cape_Player_2" Content="Deathwatch 118-ORDRE D'ABATTAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_119_Cape_Player_2" Content="Deathwatch 119-PARALYSER LA PLACE FORTE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Deathwatch_120_Cape_Player_2" Content="Deathwatch 120-NE TOLEREZ PAS LE XENOS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_121_Cape_Player_2" Content="Space Wolwes 121-PROIES GLORIEUSES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_122_Cape_Player_2" Content="Space Wolwes 122-DEFI HEROIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_123_Cape_Player_2" Content="Space Wolwes 123-UNE SAGA MAGISTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_SW_124_Cape_Player_2" Content="Space Wolwes 124-FIERTE DU GUERRIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_DG_125_Cape_Player_2" Content="Death Guard 125-VECTEURS INCONSCIENTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_DG_126_Cape_Player_2" Content="Death Guard 126-SOL CORROMPU capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_DG_127_Cape_Player_2" Content="Death Guard 127-REPANDRE LES MALADIES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_128_Cape_Player_2" Content="Adeptus M 128-ACCRETION DU SAVOIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_129_Cape_Player_2" Content="Adeptus M 129-ERADICATION DE LA CHAIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_130_Cape_Player_2" Content="Adeptus M 130-SEQUENCAGE NON REPERTORIE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Admech_131_Cape_Player_2" Content="Adeptus M 131-ARCHEOCRYPTE SECRETE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_132_Cape_Player_2" Content="Adepta S 132-DEMONSTRATION DE FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_133_Cape_Player_2" Content="Adepta S 133-TUEZ L'HERETIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_134_Cape_Player_2" Content="Adepta S 134-SOL SACRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_AdeptaS_135_Cape_Player_2" Content="Adepta S 135-DEFENDEZ LE SANCTUAIRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel x:Name="StackPanel_Tv_Scores" Orientation="Horizontal" HorizontalAlignment="Center" Height="auto" Margin="5,100,0,0" VerticalAlignment="Center" Width="auto">
+            <TextBlock x:Name="TextBlock_Score_Player_1_Tv" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" FontSize="20" FontWeight="Bold" FontFamily="Impact" TextAlignment="Center" Text="Nc"  Visibility="Visible">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF83DE15" Offset="1"/>
+                        <GradientStop Color="#FFEC1919"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <Label x:Name="Label_Serapare_Score" Content="-" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="30" FontFamily="Source Serif Pro Black"/>
+            <TextBlock x:Name="TextBlock_Score_Player_2_Tv" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="Auto" Width="Auto" FontSize="20" FontWeight="Bold" FontFamily="Impact" TextAlignment="Center" Text="Nc" Visibility="Visible">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF83DE15" Offset="1"/>
+                        <GradientStop Color="#FFEC1919"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel x:Name="StackPanel_Round" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,100" Visibility="Visible">
+            <Label x:Name="Label_Round" Content="ROUND " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" FontFamily="Arial Black">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF83DE15" Offset="1"/>
+                        <GradientStop Color="#FFEC1919"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <TextBlock x:Name="TextBlock_Round" Text="NC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" FontFamily="Arial Black">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="#FF83DE15" Offset="1"/>
+                        <GradientStop Color="#FFEC1919"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+        </StackPanel>
+
+        <Button x:Name="Button_Option_Tv" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,5,5,5" Visibility ="Visible" Click="Button_Option_Tv_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+            <Image Source="/Icons/option.PNG " Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
+    </Grid>
+</Window>
