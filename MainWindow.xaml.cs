@@ -870,6 +870,7 @@ namespace CPV9
             FDE.Visibility = Visibility.Collapsed;
             StackPanel_CPV9_Droit.Visibility = Visibility.Collapsed;
             StackPanel_CPV9_Gauche.Visibility = Visibility.Collapsed;
+            Image_CA22.Visibility = Visibility.Collapsed;
             Button_info.Visibility = Visibility.Collapsed;
             StackPanel_Tables.Visibility = Visibility.Collapsed;
             Button_Table_Mars_Reprendre.Visibility = Visibility.Hidden;
@@ -23816,6 +23817,12 @@ namespace CPV9
             FDE.Width = _Resolution[0] * 1.3;
             FDE.Height = _Resolution[1] * 1.2;///x 1.6 avant la modif du 09/11/2021 version 1.6.4.4
             FDE.Visibility = Visibility.Visible;
+
+            Image_CA22.Visibility = Visibility.Visible;
+            Image_CA22.Width = 20 * Rapport_Taille_X;
+            Image_CA22.Height = 15 * Rapport_Taille_Y;
+
+            Image_CA22.Margin = new Thickness(0, 0, 5 * Rapport_Taille_X, 5 * Rapport_Taille_Y);
         }
         private void Affichage_CP_v9()
         {
@@ -23825,7 +23832,7 @@ namespace CPV9
 
             StackPanel_CPV9_Droit.Visibility = Visibility.Visible;
             CDV9_droit_Neo.FontSize = 5 * Rapport_Taille_X;
-            CDV9_droit_ScoreBoard.FontSize = Rapport_Taille_X;
+            CDV9_droit_ScoreBoard.FontSize = Rapport_Taille_X;            
         }
         private void Affichage_Version()
         {

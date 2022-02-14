@@ -83,8 +83,9 @@
                 </Label.RenderTransform>
             </Label>
         </StackPanel>
-
         <Button x:Name="Button_info" Content="Info" HorizontalAlignment="Right" Margin="0,0,20,10" VerticalAlignment="Bottom" Width="Auto" Height="Auto" FontSize="12" FontFamily="Arial Black" Background="#FF3A3A7E" Visibility="Collapsed" Click="Button_info_Click"/>
+        <Image x:Name="Image_CA22" Source="/Images_Fond/CA22.jpg " Width="86" Height="121" HorizontalAlignment="Right" VerticalAlignment="bottom" Margin="0,0,100,100" OpacityMask="#FF67E80E" Visibility="collapsed"/>
+
         <!--#endregion-->
 
         <!--#region Image Pl1 -->
