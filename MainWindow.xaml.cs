@@ -161,8 +161,7 @@ namespace CPV9
         public bool Oeil_OBJS_2_Def = false;
         public bool Oeil_OBJS_3_Att = false;
         public bool Oeil_OBJS_3_Def = false;
-        public bool Oeil_OBJS_4_Att = false;
-        public bool Oeil_OBJS_4_Def = false;
+
         public bool Oeil_OBJS_5_Att = false;
         public bool Oeil_OBJS_5_Def = false;
         public bool Oeil_OBJS_6_Att = false;
@@ -1010,8 +1009,7 @@ namespace CPV9
             Label_Score_ObjS_2_Cape_Player_2.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_3_Cape_Player_1.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_3_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_4_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_4_Cape_Player_2.Visibility = Visibility.Collapsed;
+
             Label_Score_ObjS_5_Cape_Player_1.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_5_Cape_Player_2.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_6_Cape_Player_1.Visibility = Visibility.Collapsed;
@@ -1359,8 +1357,7 @@ namespace CPV9
             TextBox_ObjS_2_Att_C.Clear();
             /// OBJECTIF SECONDAIRE 3 : TUEURS DE TITANS
             TextBox_ObjS_3_Att.Clear();
-            /// OBJECTIF SECONDAIRE 4 : TUEZ LE SEIGNEUR DE GUERRE
-            TextBox_ObjS_4_Att.Clear();
+
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
             TextBox_ObjS_5_Att_A.Clear();
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
@@ -1853,8 +1850,7 @@ namespace CPV9
             TextBox_ObjS_2_Def_C.Clear();
             /// OBJECTIF SECONDAIRE 3 : TUEURS DE TITANS
             TextBox_ObjS_3_Def.Clear();
-            /// OBJECTIF SECONDAIRE 4 : TUEZ LE SEIGNEUR DE GUERRE
-            TextBox_ObjS_4_Def.Clear();
+
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
             TextBox_ObjS_5_Def_A.Clear();
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
@@ -2489,8 +2485,7 @@ namespace CPV9
             Mem_Saisie_Attaquant[2, 2] = TextBox_ObjS_2_Att_C.Text;
             /// OBJECTIF SECONDAIRE 3 : TUEURS DE TITANS
             Mem_Saisie_Attaquant[0, 3] = TextBox_ObjS_3_Att.Text;
-            /// OBJECTIF SECONDAIRE 4 : TUEZ LE SEIGNEUR DE GUERRE
-            Mem_Saisie_Attaquant[0, 4] = TextBox_ObjS_4_Att.Text;
+
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
             Mem_Saisie_Attaquant[0, 5] = TextBox_ObjS_5_Att_A.Text;
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
@@ -3037,8 +3032,7 @@ namespace CPV9
             Mem_Saisie_Defenseur[2, 2] = TextBox_ObjS_2_Def_C.Text;
             /// OBJECTIF SECONDAIRE 3 : TUEURS DE TITANS
             Mem_Saisie_Defenseur[0, 3] = TextBox_ObjS_3_Def.Text;
-            /// OBJECTIF SECONDAIRE 4 : TUEZ LE SEIGNEUR DE GUERRE
-            Mem_Saisie_Defenseur[0, 4] = TextBox_ObjS_4_Def.Text;
+
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
             Mem_Saisie_Defenseur[0, 5] = TextBox_ObjS_5_Def_A.Text;
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
@@ -3588,8 +3582,7 @@ namespace CPV9
             TextBox_ObjS_2_Att_C.Text = Mem_Saisie_Attaquant[2, 2];
             /// OBJECTIF SECONDAIRE 3 : TUEURS DE TITANS
             TextBox_ObjS_3_Att.Text = Mem_Saisie_Attaquant[0, 3];
-            /// OBJECTIF SECONDAIRE 4 : TUEZ LE SEIGNEUR DE GUERRE
-            TextBox_ObjS_4_Att.Text = Mem_Saisie_Attaquant[0, 4];
+
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
             TextBox_ObjS_5_Att_A.Text = Mem_Saisie_Attaquant[0, 5];
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
@@ -5035,8 +5028,7 @@ namespace CPV9
             TextBox_ObjS_2_Def_C.Text = Mem_Saisie_Defenseur[2, 2];
             /// OBJECTIF SECONDAIRE 3 : TUEURS DE TITANS
             TextBox_ObjS_3_Def.Text = Mem_Saisie_Defenseur[0, 3];
-            /// OBJECTIF SECONDAIRE 4 : TUEZ LE SEIGNEUR DE GUERRE
-            TextBox_ObjS_4_Def.Text = Mem_Saisie_Defenseur[0, 4];
+
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
             TextBox_ObjS_5_Def_A.Text = Mem_Saisie_Defenseur[0, 5];
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
@@ -6911,7 +6903,7 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 1 || Choix_ObjS_Attaquant[1] == 1 || Choix_ObjS_Attaquant[2] == 1) { StackPanel_ObjS_1_Att.Visibility = Visibility.Visible; oeil_OBJS_1_Att(); };
             if (Choix_ObjS_Attaquant[0] == 2 || Choix_ObjS_Attaquant[1] == 2 || Choix_ObjS_Attaquant[2] == 2) { StackPanel_ObjS_2_Att.Visibility = Visibility.Visible; oeil_OBJS_2_Att(); };
             if (Choix_ObjS_Attaquant[0] == 3 || Choix_ObjS_Attaquant[1] == 3 || Choix_ObjS_Attaquant[2] == 3) { StackPanel_ObjS_3_Att.Visibility = Visibility.Visible; oeil_OBJS_3_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 4 || Choix_ObjS_Attaquant[1] == 4 || Choix_ObjS_Attaquant[2] == 4) { StackPanel_ObjS_4_Att.Visibility = Visibility.Visible; oeil_OBJS_4_Att(); };
+
             if (Choix_ObjS_Attaquant[0] == 5 || Choix_ObjS_Attaquant[1] == 5 || Choix_ObjS_Attaquant[2] == 5) { StackPanel_ObjS_5_Att.Visibility = Visibility.Visible; oeil_OBJS_5_Att(); };
             if (Choix_ObjS_Attaquant[0] == 6 || Choix_ObjS_Attaquant[1] == 6 || Choix_ObjS_Attaquant[2] == 6) { StackPanel_ObjS_6_Att.Visibility = Visibility.Visible; oeil_OBJS_6_Att(); };
             if (Choix_ObjS_Attaquant[0] == 7 || Choix_ObjS_Attaquant[1] == 7 || Choix_ObjS_Attaquant[2] == 7) { StackPanel_ObjS_7_Att.Visibility = Visibility.Visible; oeil_OBJS_7_Att(); };
@@ -7055,7 +7047,7 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 1 || Choix_ObjS_Defenseur[1] == 1 || Choix_ObjS_Defenseur[2] == 1) { StackPanel_ObjS_1_Def.Visibility = Visibility.Visible; oeil_OBJS_1_Def(); };
             if (Choix_ObjS_Defenseur[0] == 2 || Choix_ObjS_Defenseur[1] == 2 || Choix_ObjS_Defenseur[2] == 2) { StackPanel_ObjS_2_Def.Visibility = Visibility.Visible; oeil_OBJS_2_Def(); };
             if (Choix_ObjS_Defenseur[0] == 3 || Choix_ObjS_Defenseur[1] == 3 || Choix_ObjS_Defenseur[2] == 3) { StackPanel_ObjS_3_Def.Visibility = Visibility.Visible; oeil_OBJS_3_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 4 || Choix_ObjS_Defenseur[1] == 4 || Choix_ObjS_Defenseur[2] == 4) { StackPanel_ObjS_4_Def.Visibility = Visibility.Visible; oeil_OBJS_4_Def(); };
+
             if (Choix_ObjS_Defenseur[0] == 5 || Choix_ObjS_Defenseur[1] == 5 || Choix_ObjS_Defenseur[2] == 5) { StackPanel_ObjS_5_Def.Visibility = Visibility.Visible; oeil_OBJS_5_Def(); };
             if (Choix_ObjS_Defenseur[0] == 6 || Choix_ObjS_Defenseur[1] == 6 || Choix_ObjS_Defenseur[2] == 6) { StackPanel_ObjS_6_Def.Visibility = Visibility.Visible; oeil_OBJS_6_Def(); };
             if (Choix_ObjS_Defenseur[0] == 7 || Choix_ObjS_Defenseur[1] == 7 || Choix_ObjS_Defenseur[2] == 7) { StackPanel_ObjS_7_Def.Visibility = Visibility.Visible; oeil_OBJS_7_Def(); };
@@ -9116,34 +9108,6 @@ namespace CPV9
             Affich_Descript_OBJ(3, "Att");
         }
 
-        private void Button_Obj_Sec_Att_4_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_4_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_4_Att_1.FontSize = 3 * x;
-            Label_OBJ_SEC_4_Att_2.FontSize = 2 * x;
-            Label_OBJ_SEC_4_Att_3.FontSize = 2 * x;
-            Button_Obj_Sec_4_Att_oui.FontSize = 2 * x;
-            Button_Obj_Sec_4_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_4_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_4_Att_non.FontSize = 2 * x;
-            Button_Obj_Sec_4_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_4_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_4_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_4_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 4;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_Sec_4_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_4_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
 
         private void Button_Obj_Sec_Att_5_Click(object sender, RoutedEventArgs e)
         {
@@ -9641,34 +9605,6 @@ namespace CPV9
             Affich_Descript_OBJ(3, "Def");
         }
 
-        private void Button_Obj_Sec_Def_4_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_4_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_4_Def_1.FontSize = 3 * x;
-            Label_OBJ_SEC_4_Def_2.FontSize = 2 * x;
-            Label_OBJ_SEC_4_Def_3.FontSize = 2 * x;
-            Button_Obj_Sec_4_Def_oui.FontSize = 2 * x;
-            Button_Obj_Sec_4_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_4_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_4_Def_non.FontSize = 2 * x;
-            Button_Obj_Sec_4_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_4_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_4_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_4_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 4;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_Sec_4_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_4_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
 
         private void Button_Obj_Sec_Def_5_Click(object sender, RoutedEventArgs e)
         {
@@ -14635,24 +14571,7 @@ namespace CPV9
                 TextBlock_ObjS_3_Att.Text = Convert.ToString(OBJECTIF_Secondaire_003_Att.Score_ObjS_003);
             }
 
-            ///CALCUL SCORE OBJECTIF SECONDAIRE 004
-            if (TextBox_ObjS_4_Att.Text != "")
-            {
-                Classe_Score_OBJS_004 OBJECTIF_Secondaire_004_Att;
-                OBJECTIF_Secondaire_004_Att = new Classe_Score_OBJS_004(Convert.ToString(TextBox_ObjS_4_Att.Text));
-                Scores_Attaquant[4] = OBJECTIF_Secondaire_004_Att.Scores_Joueur;
-                if (Convert.ToInt32(OBJECTIF_Secondaire_004_Att.Score_ObjS) >= 13)
-                {
-                    Label_Score_ObjS_4_Cape_Player_1.Visibility = Visibility.Visible;
-                    win._Capes_Tv[1, 4] = 1;
-                }
-                else
-                {
-                    Label_Score_ObjS_4_Cape_Player_1.Visibility = Visibility.Collapsed;
-                    win._Capes_Tv[1, 4] = 0;
-                }
-                TextBlock_ObjS_4_Att.Text = Convert.ToString(OBJECTIF_Secondaire_004_Att.Score_ObjS);
-            }
+            ///CALCUL SCORE OBJECTIF SECONDAIRE 004            
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 005
             if (TextBox_ObjS_5_Att_A.Text != "")
@@ -15780,23 +15699,6 @@ namespace CPV9
             }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 004
-            if (TextBox_ObjS_4_Def.Text != "")
-            {
-                Classe_Score_OBJS_004 OBJECTIF_Secondaire_004_Def;
-                OBJECTIF_Secondaire_004_Def = new Classe_Score_OBJS_004(Convert.ToString(TextBox_ObjS_4_Def.Text));
-                Scores_Defenseur[4] = OBJECTIF_Secondaire_004_Def.Scores_Joueur;
-                if (Convert.ToInt32(OBJECTIF_Secondaire_004_Def.Score_ObjS) >= 13)
-                {
-                    Label_Score_ObjS_4_Cape_Player_2.Visibility = Visibility.Visible;
-                    win._Capes_Tv[2, 4] = 1;
-                }
-                else
-                {
-                    Label_Score_ObjS_4_Cape_Player_2.Visibility = Visibility.Collapsed;
-                    win._Capes_Tv[2, 4] = 0;
-                }
-                TextBlock_ObjS_4_Def.Text = Convert.ToString(OBJECTIF_Secondaire_004_Def.Score_ObjS);
-            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 005
             if (TextBox_ObjS_5_Def_A.Text != "")
@@ -17120,29 +17022,6 @@ namespace CPV9
             else
             {
                 TextBox_ObjS_3_Def.Text = "";
-            }
-        }
-
-        private void TextBox_ObjS_4_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_4_Att.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBox_ObjS_4_Att.Text = "";
-            }
-        }
-        private void TextBox_ObjS_4_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_4_Def.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBox_ObjS_4_Def.Text = "";
             }
         }
 
@@ -23935,9 +23814,7 @@ namespace CPV9
             Button_Obj_Sec_Att_3.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_3.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_3.FontSize = x;
-            Button_Obj_Sec_Att_4.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Sec_Att_4.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Sec_Att_4.FontSize = x;
+
             Button_Obj_Codex_SM_110_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_SM_110_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_SM_110_Att.FontSize = x;
@@ -24436,9 +24313,7 @@ namespace CPV9
             Button_Obj_Sec_Def_3.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_3.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_3.FontSize = x;
-            Button_Obj_Sec_Def_4.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Sec_Def_4.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Sec_Def_4.FontSize = x;
+
             Button_Obj_Codex_SM_110_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_SM_110_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_SM_110_Def.FontSize = x;
@@ -24900,17 +24775,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_3B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 4
-            Label_Objectif_Sec_Att_4A.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_4B.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_4C.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_4D.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_4_Att.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_4_Att.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_4_Att.Height = Hauteur_saisie * Multiple;
-            TextBlock_ObjS_4_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            GridSplitter_Objectif_Sec_Att_4A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Att_4B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-
+            
             /// OBJECTIF SECONDAIRE 5
             Label_Objectif_Sec_Att_5A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_5B.FontSize = Taille_texte * Multiple;
@@ -27039,16 +26904,6 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_3B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 4
-            Label_Objectif_Sec_Def_4A.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_4B.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_4C.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_4D.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_4_Def.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_4_Def.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_4_Def.Height = Hauteur_saisie * Multiple;
-            TextBlock_ObjS_4_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            GridSplitter_Objectif_Sec_Def_4A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Def_4B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 5
             Label_Objectif_Sec_Def_5A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -29019,7 +28874,7 @@ namespace CPV9
             Label_Score_ObjS_1_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_2_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_3_Cape_Player_1.FontSize = z * x;
-            Label_Score_ObjS_4_Cape_Player_1.FontSize = z * x;
+
             Label_Score_ObjS_5_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_6_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_7_Cape_Player_1.FontSize = z * x;
@@ -29095,7 +28950,7 @@ namespace CPV9
             Label_Score_ObjS_1_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_2_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_3_Cape_Player_2.FontSize = z * x;
-            Label_Score_ObjS_4_Cape_Player_2.FontSize = z * x;
+
             Label_Score_ObjS_5_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_6_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_7_Cape_Player_2.FontSize = z * x;
@@ -29730,90 +29585,6 @@ namespace CPV9
 
         #endregion
 
-        #region Oeil_OBJS_4 Att & Def
-        private void Affichage_Button_oeil_ObjS_4_Att()
-        {
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
-            Button_Caché_ObjS_4_Att.Width = x;
-            Button_Caché_ObjS_4_Att.Height = x;
-            Button_Visible_ObjS_4_Att.Width = x;
-            Button_Visible_ObjS_4_Att.Height = x;
-        }
-        private void Button_Caché_ObjS_4_Att_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_ObjS_4_Att();
-            StackPanel_ObjS_4B_Att.Visibility = Visibility.Collapsed;
-            Button_Caché_ObjS_4_Att.Visibility = Visibility.Collapsed;
-            Button_Visible_ObjS_4_Att.Visibility = Visibility.Visible;
-            Oeil_OBJS_4_Att = true;
-        }
-        private void Button_Visible_ObjS_4_Att_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_ObjS_4_Att();
-            StackPanel_ObjS_4B_Att.Visibility = Visibility.Visible;
-            Button_Caché_ObjS_4_Att.Visibility = Visibility.Visible;
-            Button_Visible_ObjS_4_Att.Visibility = Visibility.Collapsed;
-            Oeil_OBJS_4_Att = false;
-        }
-        private void oeil_OBJS_4_Att()
-        {
-            Affichage_Button_oeil_ObjS_4_Att();
-            if (Oeil_OBJS_4_Att == true)
-            {
-                StackPanel_ObjS_4B_Att.Visibility = Visibility.Collapsed;
-                Button_Visible_ObjS_4_Att.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                StackPanel_ObjS_4B_Att.Visibility = Visibility.Visible;
-                Button_Caché_ObjS_4_Att.Visibility = Visibility.Visible;
-            }
-        }
-
-        private void Affichage_Button_oeil_4_Def()
-        {
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
-            Button_Caché_ObjS_4_Def.Width = x;
-            Button_Caché_ObjS_4_Def.Height = x;
-            Button_Visible_ObjS_4_Def.Width = x;
-            Button_Visible_ObjS_4_Def.Height = x;
-        }
-        private void Button_Caché_ObjS_4_Def_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_4_Def();
-            StackPanel_ObjS_4B_Def.Visibility = Visibility.Collapsed;
-            Button_Caché_ObjS_4_Def.Visibility = Visibility.Collapsed;
-            Button_Visible_ObjS_4_Def.Visibility = Visibility.Visible;
-            Oeil_OBJS_4_Def = true;
-        }
-        private void Button_Visible_ObjS_4_Def_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_4_Def();
-            StackPanel_ObjS_4B_Def.Visibility = Visibility.Visible;
-            Button_Caché_ObjS_4_Def.Visibility = Visibility.Visible;
-            Button_Visible_ObjS_4_Def.Visibility = Visibility.Collapsed;
-            Oeil_OBJS_4_Def = false;
-        }
-        private void oeil_OBJS_4_Def()
-        {
-            Affichage_Button_oeil_4_Def();
-            if (Oeil_OBJS_4_Def == true)
-            {
-                StackPanel_ObjS_4B_Def.Visibility = Visibility.Collapsed;
-                Button_Visible_ObjS_4_Def.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                StackPanel_ObjS_4B_Def.Visibility = Visibility.Visible;
-                Button_Caché_ObjS_4_Def.Visibility = Visibility.Visible;
-            }
-        }
-
-
-
-
-
-        #endregion
 
         #region Oeil_OBJS_5 Att & Def
         private void Affichage_Button_oeil_ObjS_5_Att()

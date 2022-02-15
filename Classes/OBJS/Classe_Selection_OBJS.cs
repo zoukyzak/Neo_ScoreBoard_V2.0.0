@@ -18,10 +18,7 @@
             {
                 text_Objectif = "3-Tueur de Titans (ca22) , ";
             }
-            if (Choix_ObjS == 4)
-            {
-                text_Objectif = "4-Tuez le SG , ";
-            }
+            
             if (Choix_ObjS == 5)
             {
                 text_Objectif = "5-Erodez leurs rangs (v2), ";

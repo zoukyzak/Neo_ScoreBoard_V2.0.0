@@ -147,7 +147,6 @@
     <Compile Include="Classes\Sauvegarde\Classe_Sauvegardes_Mars_T1.cs" />
     <Compile Include="Classes\Sauvegarde\Classe_Sauvegardes_Quarantaine_T1.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_003.cs" />
-    <Compile Include="Classes\OBJS\Classe_Score_OBJS_004.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_005.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_006.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_007.cs" />
