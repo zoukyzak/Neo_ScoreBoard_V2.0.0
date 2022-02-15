@@ -37,6 +37,20 @@ namespace CPV9.Classes
                     l9 = "et 3 points de victoire à la fin de la bataille pour chaque figurine ennemi, ";
                     l10 = "véhicule ou monstre avec une charactéristique de PV de 15 et plus qui est détruite.";
                     break;
+
+                case 3:
+                    l1 = " TUEUR DE TITANS (ca22)";
+                    l2 = "";
+                    l3 = "Score 4 points de victoire à la fin de la bataille si,";
+                    l4 = "une figurine Titanesque ennemi est détruite.";
+                    l5 = "";
+                    l6 = "Score 9 points de victoire à la fin de la bataille si,";
+                    l7 = "deux figurines Titanesques ennemi sont détruitent.";
+                    l8 = "";
+                    l9 = "Score 15 points de victoire à la fin de la bataille si,";
+                    l10 = "trois figurines Titanesques ennemi sont détruitent.";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";

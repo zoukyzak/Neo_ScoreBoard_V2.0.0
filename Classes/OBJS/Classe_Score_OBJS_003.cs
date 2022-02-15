@@ -17,13 +17,13 @@ namespace CPV9.Classes
                 {
                     if (Convert.ToInt32(Saisie1) == 1)
                     {
-                        Score = 8;
+                        Score = 4;
                     }
                     if (Convert.ToInt32(Saisie1) == 2)
                     {
-                        Score = 12;
+                        Score = 9;
                     }
-                    if (Convert.ToInt32(Saisie1) == 3)
+                    if (Convert.ToInt32(Saisie1) >= 3)
                     {
                         Score = 15;
                     }

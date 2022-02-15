@@ -954,7 +954,7 @@
             <Label x:Name="Label_Score_ObjP_Cape_Player_1" Content="OBJECTIF PRINCIPAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1_Cape_Player_1" Content="1-ASSASSINAT (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2_Cape_Player_1" Content="2-ABATTEZ-LE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_3_Cape_Player_1" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_3_Cape_Player_1" Content="3-TUEURS DE TITANS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_4_Cape_Player_1" Content="4-TUEZ LE SG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_5_Cape_Player_1" Content="5-ERODEZ LEURS RANGS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_6_Cape_Player_1" Content="6-ATTRITION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1075,7 +1075,7 @@
             <Label x:Name="Label_Score_ObjP_Cape_Player_2" HorizontalAlignment="Center" Content="OBJECTIF PRINCIPAL capé" VerticalAlignment="Top" Height="Auto" Width="auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" RenderTransformOrigin="0.353,0.687" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1_Cape_Player_2" Content="1-ASSASSINAT (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2_Cape_Player_2" Content="2-ABATTEZ-LE  (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_3_Cape_Player_2" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_3_Cape_Player_2" Content="3-TUEURS DE TITANS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_4_Cape_Player_2" Content="4-TUEZ LE SG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_5_Cape_Player_2" Content="5-ERODEZ LEURS RANGS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_6_Cape_Player_2" Content="6-ATTRITION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1287,7 +1287,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_3_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_3A" Content="3-TUEURS DE TITANS" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_3A" Content="3-TUEURS DE TITANS (ca22)" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_3_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_3_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -1296,7 +1296,7 @@
                         </Button>
                     </StackPanel>
                     <StackPanel x:Name="StackPanel_ObjS_3B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_3B" Content="Nbres de figurines TITANESQUES ennemies detruit (8/12/15 pts):" FontFamily="Arial Black" FontSize="10" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_3B" Content="Nbres de figurines TITANESQUES ennemies detruit (4/9/15 pts):" FontFamily="Arial Black" FontSize="10" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_3_Att" Width="15"  Height="12" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_3_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_3A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
@@ -4046,7 +4046,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_3_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_3A" Content="3-TUEURS DE TITANS" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_3A" Content="3-TUEURS DE TITANS (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_3_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_3_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -4055,7 +4055,7 @@
                         </Button>
                     </StackPanel>
                     <StackPanel x:Name="StackPanel_ObjS_3B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_3B" Content="Nbres de figurines TITANESQUES ennemies detruit (8/12/15):" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_3B" Content="Nbres de figurines TITANESQUES ennemies detruit (4/9/15):" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_3_Def" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_3_Def_TextChanged_1" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_3A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
@@ -6679,7 +6679,7 @@
                     <Label x:Name="Label_Eleminez_l_Ennemi_Att" Content="ELIMINEZ L ENNEMI" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="3" Background="{x:Null}" Foreground="White"/>
                     <Button x:Name="Button_Obj_Sec_Att_1" Content="1 - ASSASSINAT (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_1_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_2" Content="2 - ABATTEZ-LE (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_2_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Att_3" Content="3 - TUEURS DE TITANS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_3_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Att_3" Content="3 - TUEURS DE TITANS (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_3_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_4" Content="4 - TUEZ LE SG" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_4_Click"/>
                     <Button x:Name="Button_Obj_Codex_SM_110_Att" Content="Space Marine 110 - GUERRE CODEX" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_SM_110_Att_1_Click"/>
                     <Button x:Name="Button_Obj_Codex_BA_113_Att" Content="Blood Angel 113 - LAME DE SANGUINIUS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_BA_113_Att_Click"/>
@@ -6874,7 +6874,7 @@
                     <Label x:Name="Label_Eleminez_l_Ennemi_Def" Content="ELIMINEZ L ENNEMI" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="3" Background="{x:Null}" Foreground="White" />
                     <Button x:Name="Button_Obj_Sec_Def_1" Content="1 - ASSASSINAT (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_1_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_2" Content="2 - ABATTEZ-LE (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_2_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_3" Content="3 - TUEURS DE TITANS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_3_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_3" Content="3 - TUEURS DE TITANS (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_3_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_4" Content="4 - TUEZ LE SG" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_4_Click"/>
                     <Button x:Name="Button_Obj_Codex_SM_110_Def" Content="Space Marine 110 - GUERRE CODEX" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_SM_110_Def_Click"/>
                     <Button x:Name="Button_Obj_Codex_BA_113_Def" Content="Blood Angel 113 - LAME DE SANGUINIUS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_BA_113_Def_Click"/>
@@ -7076,16 +7076,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_3_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_3_Att_1" Content="TUEURS DE TITANS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_3_Att_2" Content="Marquez 8 pts de victoire a la fin de la bataille,si 1 figurine TITANESQUE ennemie a été detruite," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_3_Att_3" Content="ou 12 pts de victoire si 2 figurines TITANESQUES, ou 15 pts de victoire si 3 figurines TITANESQUES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_3_Att_4" Content="énnemies ou plus ont été détruites" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_3_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_3_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_3_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_3_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_4_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_4_Att_1" Content="TUEZ LE SEIGNEUR DE GUERRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_4_Att_2" Content="Marquez 13 pts de victoire si vous le detruisez au round 1" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7825,16 +7815,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_3_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_3_Def_1" Content="TUEURS DE TITANS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_3_Def_2" Content="Marquez 8 pts de victoire a la fin de la bataille,si 1 figurine TITANESQUE ennemie a été detruite," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_3_Def_3" Content="ou 12 pts de victoire si 2 figurines TITANESQUES, ou 15 pts de victoire si 3 figurines TITANESQUES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_3_Def_4" Content="énnemies ou plus ont été détruites" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_3_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_3_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_3_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_3_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_4_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_4_Def_1" Content="TUEZ LE SEIGNEUR DE GUERRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_4_Def_2" Content="Marquez 13 pts de victoire si vous le detruisez au round 1" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>

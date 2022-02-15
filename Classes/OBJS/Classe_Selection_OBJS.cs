@@ -16,7 +16,7 @@
             }
             if (Choix_ObjS == 3)
             {
-                text_Objectif = "3-Tueur de Titans , ";
+                text_Objectif = "3-Tueur de Titans (ca22) , ";
             }
             if (Choix_ObjS == 4)
             {
