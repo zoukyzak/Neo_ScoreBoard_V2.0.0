@@ -8,11 +8,11 @@
         {
             if (Choix_ObjS == 1)
             {
-                text_Objectif = "1-Assasinat (ac22), ";
+                text_Objectif = "1-Assasinat (ca22), ";
             }
             if (Choix_ObjS == 2)
             {
-                text_Objectif = "2-Abbatez-le (ac22) , ";
+                text_Objectif = "2-Abbatez-le (ca22) , ";
             }
             if (Choix_ObjS == 3)
             {
