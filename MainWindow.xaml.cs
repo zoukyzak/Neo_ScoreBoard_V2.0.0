@@ -9015,7 +9015,45 @@ namespace CPV9
         #endregion
 
         #region OBJECTIF SECONDAIRE
-        
+
+        private void Affich_Descript_OBJ(int Objectif, string Camps)
+        {
+            Select_Camps = Camps;
+            Select_Objectif = Objectif;
+            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
+            StackPanel_OBJ_Uniform.Visibility = Visibility.Visible;
+            CPV9.Classes.Descript_OBJS CetObjectif = new CPV9.Classes.Descript_OBJS(Objectif);
+
+            Label_OBJ_Uniform_1.Content = CetObjectif.L1;
+            Label_OBJ_Uniform_2.Content = CetObjectif.L2;
+            Label_OBJ_Uniform_3.Content = CetObjectif.L3;
+            Label_OBJ_Uniform_4.Content = CetObjectif.L4;
+            Label_OBJ_Uniform_5.Content = CetObjectif.L5;
+            Label_OBJ_Uniform_6.Content = CetObjectif.L6;
+            Label_OBJ_Uniform_7.Content = CetObjectif.L7;
+            Label_OBJ_Uniform_8.Content = CetObjectif.L8;
+            Label_OBJ_Uniform_9.Content = CetObjectif.L9;
+            Label_OBJ_Uniform_10.Content = CetObjectif.L10;
+
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
+            Label_OBJ_Uniform_1.FontSize = 1.2 * Rapport_Taille_X;
+            Label_OBJ_Uniform_2.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_3.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_4.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_5.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_6.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_7.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_8.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_9.FontSize = 0.9 * Rapport_Taille_X;
+            Label_OBJ_Uniform_10.FontSize = 0.9 * Rapport_Taille_X;
+
+            Button_Obj_Uniform_oui.FontSize = 2 * x;
+            Button_Obj_Uniform_oui.Width = 8 * Rapport_Taille_X;
+            Button_Obj_Uniform_oui.Height = 3 * Rapport_Taille_Y;
+            Button_Obj_Uniform_non.FontSize = 2 * x;
+            Button_Obj_Uniform_non.Width = 8 * Rapport_Taille_X;
+            Button_Obj_Uniform_non.Height = 3 * Rapport_Taille_Y;
+        }
         private void Button_Obj_Uniform_oui_Click(object sender, RoutedEventArgs e)
         {
             StackPanel_OBJ_Uniform.Visibility = Visibility.Collapsed;
@@ -9033,12 +9071,12 @@ namespace CPV9
                         break;
 
                     case 2:
-                        Label_OBJ_Sec_2_Att.Visibility = Visibility.Collapsed;
                         StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
                         StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
                         Choix_ObjS_Att = 2;
                         Select_ObjS_Attaquant(Choix_ObjS_Att);
                         break;
+
                     default:
                         break;
                 }
@@ -9056,19 +9094,18 @@ namespace CPV9
                         break;
 
                     case 2:
-                        Label_OBJ_Sec_2_Def.Visibility = Visibility.Collapsed;
                         StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
                         StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
                         Choix_ObjS_Def = 2;
                         Select_ObjS_Defenseur(Choix_ObjS_Def);
                         break;
+
                     default:
                         break;
                 }
             }
             
         }
-
         private void Button_Obj_Uniform_non_Click(object sender, RoutedEventArgs e)
         {
             StackPanel_OBJ_Uniform.Visibility = Visibility.Collapsed;
@@ -9084,44 +9121,6 @@ namespace CPV9
             
         }
 
-        private void Affich_Descript_OBJ(int Objectif , string Camps)
-            {
-                Select_Camps = Camps;
-                Select_Objectif = Objectif;
-                StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-                StackPanel_OBJ_Uniform.Visibility = Visibility.Visible;
-                CPV9.Classes.Descript_OBJS CetObjectif = new CPV9.Classes.Descript_OBJS(Objectif);   
-            
-                Label_OBJ_Uniform_1.Content = CetObjectif.L1;
-                Label_OBJ_Uniform_2.Content = CetObjectif.L2;
-                Label_OBJ_Uniform_3.Content = CetObjectif.L3;
-                Label_OBJ_Uniform_4.Content = CetObjectif.L4;
-                Label_OBJ_Uniform_5.Content = CetObjectif.L5;
-                Label_OBJ_Uniform_6.Content = CetObjectif.L6;
-                Label_OBJ_Uniform_7.Content = CetObjectif.L7;
-                Label_OBJ_Uniform_8.Content = CetObjectif.L8;
-                Label_OBJ_Uniform_9.Content = CetObjectif.L9;
-                Label_OBJ_Uniform_10.Content = CetObjectif.L10;
-
-                double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-                Label_OBJ_Uniform_1.FontSize = 1.2 * Rapport_Taille_X;
-                Label_OBJ_Uniform_2.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_3.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_4.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_5.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_6.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_7.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_8.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_9.FontSize = 0.9 * Rapport_Taille_X;
-                Label_OBJ_Uniform_10.FontSize = 0.9 * Rapport_Taille_X;
-
-                Button_Obj_Uniform_oui.FontSize = 2 * x;
-                Button_Obj_Uniform_oui.Width = 8 * Rapport_Taille_X;
-                Button_Obj_Uniform_oui.Height = 3 * Rapport_Taille_Y;
-                Button_Obj_Uniform_non.FontSize = 2 * x;
-                Button_Obj_Uniform_non.Width = 8 * Rapport_Taille_X;
-                Button_Obj_Uniform_non.Height = 3 * Rapport_Taille_Y;
-        }
 
         #region Objectif secondaires attaquant
 
@@ -9132,33 +9131,7 @@ namespace CPV9
         
         private void Button_Obj_Sec_Att_2_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_2_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_2_Att_1.FontSize = 3 * x;
-            Label_OBJ_SEC_2_Att_2.FontSize = 2 * x;
-            Label_OBJ_SEC_2_Att_3.FontSize = 2 * x;
-            Label_OBJ_SEC_2_Att_4.FontSize = 2 * x;
-            Label_OBJ_SEC_2_Att_5.FontSize = 2 * x;
-            Button_Obj_Sec_2_Att_oui.FontSize = 2 * x;
-            Button_Obj_Sec_2_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_2_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_2_Att_non.FontSize = 2 * x;
-            Button_Obj_Sec_2_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_2_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_2_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_2_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 2;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_Sec_2_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_2_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ( 2, "Att");
         }
 
         private void Button_Obj_Sec_Att_3_Click(object sender, RoutedEventArgs e)
@@ -9698,6 +9671,7 @@ namespace CPV9
             Label_OBJ_Sec_19_Att.Visibility = Visibility.Collapsed;
             StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
         }
+
         #endregion
         #region Objectif secondaire defenseur
         private void Button_Obj_Sec_Def_1_Click(object sender, RoutedEventArgs e)
@@ -9707,33 +9681,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Def_2_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_2_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_2_Def_1.FontSize = 3 * x;
-            Label_OBJ_SEC_2_Def_2.FontSize = 2 * x;
-            Label_OBJ_SEC_2_Def_3.FontSize = 2 * x;
-            Label_OBJ_SEC_2_Def_4.FontSize = 2 * x;
-            Label_OBJ_SEC_2_Def_5.FontSize = 2 * x;
-            Button_Obj_Sec_2_Def_oui.FontSize = 2 * x;
-            Button_Obj_Sec_2_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_2_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_2_Def_non.FontSize = 2 * x;
-            Button_Obj_Sec_2_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_2_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_2_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_2_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 2;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_Sec_2_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_2_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(2, "Def");
         }
 
         private void Button_Obj_Sec_Def_3_Click(object sender, RoutedEventArgs e)

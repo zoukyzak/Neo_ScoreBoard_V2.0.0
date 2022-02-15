@@ -12,7 +12,7 @@
             }
             if (Choix_ObjS == 2)
             {
-                text_Objectif = "2-Abbatez-le , ";
+                text_Objectif = "2-Abbatez-le (ac22) , ";
             }
             if (Choix_ObjS == 3)
             {

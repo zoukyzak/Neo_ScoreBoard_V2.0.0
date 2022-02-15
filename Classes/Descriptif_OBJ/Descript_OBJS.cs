@@ -24,6 +24,19 @@ namespace CPV9.Classes
                     l9 = "";
                     l10 = "";
                     break;
+
+                case 2:
+                    l1 = " ABBATEZ-LE (ca22)";
+                    l2 = "";
+                    l3 = "Score 1 points de victoire à la fin de la bataille pour chaque figurine ennemi,";
+                    l4 = "véhicule ou monstre avec une charactéristique de PV de 9 ou moins qui est détruite.";
+                    l5 = "";
+                    l6 = "Score 2 points de victoire à la fin de la bataille pour chaque figurine ennemi";
+                    l7 = "véhicule ou monstre avec une charactéristique de PV entre 10 et 14 qui est détruite.";
+                    l8 = "";
+                    l9 = "et 3 points de victoire à la fin de la bataille pour chaque figurine ennemi, ";
+                    l10 = "véhicule ou monstre avec une charactéristique de PV de 15 et plus qui est détruite.";
+                    break;
                 default:
                     l1 = "default";
                     l2 = "default";
