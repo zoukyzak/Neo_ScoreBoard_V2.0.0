@@ -13,28 +13,28 @@ namespace CPV9.Classes
             switch (OBJ)
             {
                 case 1:
-                    l1 = " ASSASSINAT (CA22)";
-                    l2 = " Marquez 3 pts de victoire a la fin de la Bataille pour";
-                    l3 = " chaque personnage ennemie qui a été detruite.";
-                    l4 = "Marquez 1 pts de plus si vous tuer le seigneur de Guerre.";
-                    l5 = "";
-                    l6 = "";
-                    l7 = "";
+                    l1 = " ASSASSINAT (ca22)";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Score 3 points de victoire à la fin de la bataille";
+                    l5 = "pour chaque figurine personnage ennemi qui aura été detruite.";
+                    l6 = "Si , le Seigneur de Guerre ennemi est detruit durant la bataille,";
+                    l7 = "gagner 1 point de victoire supplementaire.";
                     l8 = "";
                     l9 = "";
                     l10 = "";
                     break;
                 default:
-                    l1 = " NC";
-                    l2 = " NC";
-                    l3 = " NC";
-                    l4 = " NC";
-                    l5 = " NC";
-                    l6 = " NC";
-                    l7 = " NC";
-                    l8 = " NC";
-                    l9 = " NC";
-                    l10 = "NC";
+                    l1 = "default";
+                    l2 = "default";
+                    l3 = "default";
+                    l4 = "default";
+                    l5 = "default";
+                    l6 = "default";
+                    l7 = "default";
+                    l8 = "default";
+                    l9 = "default";
+                    l10 = "default";
                     break;
             }
         }

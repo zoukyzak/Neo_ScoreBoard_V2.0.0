@@ -952,7 +952,7 @@
         </TextBlock>
         <StackPanel x:Name="StackPanel_Cape_Player_1" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Background="Gray" Visibility="Collapsed">
             <Label x:Name="Label_Score_ObjP_Cape_Player_1" Content="OBJECTIF PRINCIPAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1_Cape_Player_1" Content="1-ASSASSINAT (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1_Cape_Player_1" Content="1-ASSASSINAT (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2_Cape_Player_1" Content="2-ABATTEZ LE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_3_Cape_Player_1" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_4_Cape_Player_1" Content="4-TUEZ LE SG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1073,7 +1073,7 @@
         </TextBlock>
         <StackPanel x:Name="StackPanel_Cape_Player_2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0" Height="Auto" Width="Auto" Background="Gray" Visibility="Collapsed">
             <Label x:Name="Label_Score_ObjP_Cape_Player_2" HorizontalAlignment="Center" Content="OBJECTIF PRINCIPAL capé" VerticalAlignment="Top" Height="Auto" Width="auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" RenderTransformOrigin="0.353,0.687" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1_Cape_Player_2" Content="1-ASSASSINAT (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1_Cape_Player_2" Content="1-ASSASSINAT (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2_Cape_Player_2" Content="2-ABATTEZ LE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_3_Cape_Player_2" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_4_Cape_Player_2" Content="4-TUEZ LE SG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1228,7 +1228,7 @@
             <StackPanel x:Name="StackPanel_ObjS_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right" Width="Auto">
                 <StackPanel x:Name="StackPanel_ObjS_1_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_1A" Content="1-ASSASSINAT (v2)" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1A" Content="1-ASSASSINAT (ca22)" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_1_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3988,7 +3988,7 @@
             <StackPanel x:Name="StackPanel_ObjS_Def" Height="Auto" Orientation="Vertical" Margin="0,0">
                 <StackPanel x:Name="StackPanel_ObjS_1_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_1A" Content="1-ASSASSINAT (v2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1A" Content="1-ASSASSINAT (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_1_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6677,7 +6677,7 @@
             <StackPanel Height="Auto" Orientation="Horizontal">
                 <StackPanel x:Name="StackPanel_Obj_Sec_Att_1" HorizontalAlignment="Left" Height="auto" Margin="0,0,0,0" VerticalAlignment="Top" Width="Auto" Visibility="Visible">
                     <Label x:Name="Label_Eleminez_l_Ennemi_Att" Content="ELIMINEZ L ENNEMI" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="3" Background="{x:Null}" Foreground="White"/>
-                    <Button x:Name="Button_Obj_Sec_Att_1" Content="1 - ASSASSINAT (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_1_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Att_1" Content="1 - ASSASSINAT (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_1_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_2" Content="2 - ABATTEZ-LE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_2_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_3" Content="3 - TUEURS DE TITANS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_3_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_4" Content="4 - TUEZ LE SG" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_4_Click"/>
@@ -6872,7 +6872,7 @@
             <StackPanel Height="Auto" Orientation="Horizontal">
                 <StackPanel x:Name="StackPanel_Obj_Sec_Def_1" HorizontalAlignment="Left" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
                     <Label x:Name="Label_Eleminez_l_Ennemi_Def" Content="ELIMINEZ L ENNEMI" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="3" Background="{x:Null}" Foreground="White" />
-                    <Button x:Name="Button_Obj_Sec_Def_1" Content="1 - ASSASSINAT (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_1_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_1" Content="1 - ASSASSINAT (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_1_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_2" Content="2 - ABATTEZ-LE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_2_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_3" Content="3 - TUEURS DE TITANS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_3_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_4" Content="4 - TUEZ LE SG" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_4_Click"/>
@@ -7060,7 +7060,7 @@
 
 
         <StackPanel x:Name="StackPanel_OBJ_Uniform" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="White" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Uniform_1" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
+            <Label x:Name="Label_OBJ_Uniform_1" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6" Margin="0,20"/>
             <Label x:Name="Label_OBJ_Uniform_2" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
             <Label x:Name="Label_OBJ_Uniform_3" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2" />
             <Label x:Name="Label_OBJ_Uniform_4" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7076,16 +7076,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_1_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_1_Att_1" Content="ASSASSINAT (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_1_Att_2" Content="Marquez 3 pts de victoire a la fin de la Bataille pour" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_1_Att_3" Content="chaque personnage ennemie qui a été detruite." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_1_Att_4" Content="Marquez 1 pts de plus si vous tuer le seigneur de Guerre." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_1_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_1_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_1_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_1_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_2_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_2_Att_1" Content="ABBATEZ-LE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_2_Att_2" Content="Pour chaque figurine MONSTRE ou VEHICULE ennemie detruit de :" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7846,17 +7836,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_1_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_1_Def_1" Content="ASSASSINAT (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-
-            <Label x:Name="Label_OBJ_SEC_1_Def_2" Content="Marquez 3 pts de victoire a la fin de la Bataille pour" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_1_Def_3" Content="chaque personnage ennemie qui a été detruite." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_1_Def_4" Content="Marquez 1 pts de plus si vous tuer le seigneur de Guerre." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_1_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_1_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_1_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_1_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_2_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_2_Def_1" Content="ABBATEZ-LE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_2_Def_2" Content="Pour chaque figurine MONSTRE ou VEHICULE ennemie detruit de :" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
