@@ -1319,16 +1319,37 @@
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <StackPanel x:Name="StackPanel_ObjS_5B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                    <StackPanel x:Name="StackPanel_ObjS_5B_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Att_5B" Content="Nombres de PV perdu par les figurines ennemies détruitent (1pts / 10 pv) :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_5_Att_A" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5A" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                            <Label x:Name="Label_Objectif_Sec_Att_5C" Content="ROUND 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Att_R1" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5A" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_5D" Content="ROUND 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Att_R2" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5B" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_5E" Content="ROUND 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Att_R3" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5C" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_5F" Content="ROUND 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Att_R4" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5D" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_5G" Content="ROUND 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Att_R5" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5E" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                        </StackPanel>                        
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_5C" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_5H" Content="PV Cumulé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBlock x:Name="TextBlock_ObjS_5_Att_Cumul" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_5I" Content="Points bonus :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBlock x:Name="TextBlock_ObjS_5_Att_Bonus" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_5J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_5_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_5D" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5B" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_5K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_5H" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_6_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -4048,6 +4069,7 @@
                     </StackPanel>
                 </StackPanel>
                 <!--# 2-pas de pitier , pas de repit -->
+
                 <StackPanel x:Name="StackPanel_ObjS_5_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_5A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_5A" Content="5-PAS DE PRISONNIER (ca22)" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -4058,16 +4080,37 @@
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <StackPanel x:Name="StackPanel_ObjS_5B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_5B" Content="Nombres de PV perdu par les figurines ennemies détruitent (1 pts / 10 pv):" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_5_Def_A" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5A" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                    <StackPanel x:Name="StackPanel_ObjS_5B_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                        <Label x:Name="Label_Objectif_Sec_Def_5B" Content="Nombres de PV perdu par les figurines ennemies détruitent (1pts / 10 pv) :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                            <Label x:Name="Label_Objectif_Sec_Def_5C" Content="ROUND 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Def_R1" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5A" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_5D" Content="ROUND 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Def_R2" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5B" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_5E" Content="ROUND 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Def_R3" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5C" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_5F" Content="ROUND 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Def_R4" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5D" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_5G" Content="ROUND 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <TextBox x:Name="TextBox_ObjS_5_Def_R5" Width="20" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_5_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5E" Width="5" Margin="10,0,0,0" HorizontalAlignment="Right" Background="Green"/>
+                        </StackPanel>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_5C" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_5H" Content="PV Cumulé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBlock x:Name="TextBlock_ObjS_5_Def_Cumul" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_5I" Content="Points bonus :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBlock x:Name="TextBlock_ObjS_5_Def_Bonus" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_5J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_5_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_5D" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5B" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_5K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_5H" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_6_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -7036,18 +7079,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_5_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_5_Att_1" Content="ERODEZ LEURS RANGS (V2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_5_Att_2" Content="Marquez 1 pts de destruction par PV perdu par les figurines détruitent" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Att_3" Content="par les figurines détruitent." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Att_4" Content="Une figurine qui réssucite peu redonner des pts de destruction à sa mort. " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Att_5" Content="puis divisez les pts de destruction par 10 en arrondissant à l inférieur,  " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Att_6" Content="Le resultat sera les pts de victoire pour cette obectif secondaire.  " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_5_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_5_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_5_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_5_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_6_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_6_Att_1" Content="ATTRITION" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="3"/>
             <Label x:Name="Label_OBJ_SEC_6_Att_2" Content="Marquez 4 pts de victoire a la fin du round de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7766,18 +7797,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_5_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_5_Def_1" Content="ERODEZ LEURS RANGS (V2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_5_Def_2" Content="Marquez 1 pts de destruction par PV perdu par les figurines détruitent" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Def_3" Content="par les figurines détruitent." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Def_4" Content="Une figurine qui réssucite peu redonner des pts de destruction à sa mort. " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Def_5" Content="puis divisez les pts de destruction par 10 en arrondissant à l inférieur,  " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_5_Def_6" Content="Le resultat sera les pts de victoire pour cette obectif secondaire.  " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_5_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_5_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_5_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_5_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_6_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_6_Def_1" Content="ATTRITION" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_6_Def_2" Content="Marquez 4 pts de victoire a la fin du round de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>

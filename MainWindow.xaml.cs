@@ -1359,7 +1359,12 @@ namespace CPV9
             TextBox_ObjS_3_Att.Clear();
 
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
-            TextBox_ObjS_5_Att_A.Clear();
+            TextBox_ObjS_5_Att_R1.Clear();
+            TextBox_ObjS_5_Att_R2.Clear();
+            TextBox_ObjS_5_Att_R3.Clear();
+            TextBox_ObjS_5_Att_R4.Clear();
+            TextBox_ObjS_5_Att_R5.Clear();
+
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
             TextBox_ObjS_6_Att_RE1.Clear();
             TextBox_ObjS_6_Att_RA1.Clear();
@@ -1852,7 +1857,12 @@ namespace CPV9
             TextBox_ObjS_3_Def.Clear();
 
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
-            TextBox_ObjS_5_Def_A.Clear();
+            TextBox_ObjS_5_Def_R1.Clear();
+            TextBox_ObjS_5_Def_R2.Clear();
+            TextBox_ObjS_5_Def_R3.Clear();
+            TextBox_ObjS_5_Def_R4.Clear();
+            TextBox_ObjS_5_Def_R5.Clear();
+
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
             TextBox_ObjS_6_Def_RE1.Clear();
             TextBox_ObjS_6_Def_RA1.Clear();
@@ -2459,7 +2469,7 @@ namespace CPV9
         {
             int n = 0;
             #region Transfert_Donnees_To_Mem_Attaquant
-            #region Transfert_Donnees_To_Mem_Attaquant_Princiapux
+            #region Transfert_Donnees_To_Mem_Attaquant_Principaux
             /// OJBJECTIF PRINCIPAUX ATTAQUANT
             Mem_Saisie_Attaquant[0, 0] = TextBox_OBJP_2_Att_Att.Text;
             Mem_Saisie_Attaquant[1, 0] = TextBox_OBJP_2_Att_Def.Text;
@@ -2487,7 +2497,12 @@ namespace CPV9
             Mem_Saisie_Attaquant[0, 3] = TextBox_ObjS_3_Att.Text;
 
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
-            Mem_Saisie_Attaquant[0, 5] = TextBox_ObjS_5_Att_A.Text;
+            Mem_Saisie_Attaquant[0, 5] = TextBox_ObjS_5_Att_R1.Text;
+            Mem_Saisie_Attaquant[1, 5] = TextBox_ObjS_5_Att_R2.Text;
+            Mem_Saisie_Attaquant[2, 5] = TextBox_ObjS_5_Att_R3.Text;
+            Mem_Saisie_Attaquant[3, 5] = TextBox_ObjS_5_Att_R4.Text;
+            Mem_Saisie_Attaquant[4, 5] = TextBox_ObjS_5_Att_R5.Text;
+
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
             Mem_Saisie_Attaquant[0, 6] = TextBox_ObjS_6_Att_RE1.Text;
             Mem_Saisie_Attaquant[1, 6] = TextBox_ObjS_6_Att_RA1.Text;
@@ -3034,7 +3049,12 @@ namespace CPV9
             Mem_Saisie_Defenseur[0, 3] = TextBox_ObjS_3_Def.Text;
 
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
-            Mem_Saisie_Defenseur[0, 5] = TextBox_ObjS_5_Def_A.Text;
+            Mem_Saisie_Defenseur[0, 5] = TextBox_ObjS_5_Def_R1.Text;
+            Mem_Saisie_Defenseur[1, 5] = TextBox_ObjS_5_Def_R2.Text;
+            Mem_Saisie_Defenseur[2, 5] = TextBox_ObjS_5_Def_R3.Text;
+            Mem_Saisie_Defenseur[3, 5] = TextBox_ObjS_5_Def_R4.Text;
+            Mem_Saisie_Defenseur[4, 5] = TextBox_ObjS_5_Def_R5.Text;
+
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
             Mem_Saisie_Defenseur[0, 6] = TextBox_ObjS_6_Def_RE1.Text;
             Mem_Saisie_Defenseur[1, 6] = TextBox_ObjS_6_Def_RA1.Text;
@@ -3584,7 +3604,12 @@ namespace CPV9
             TextBox_ObjS_3_Att.Text = Mem_Saisie_Attaquant[0, 3];
 
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
-            TextBox_ObjS_5_Att_A.Text = Mem_Saisie_Attaquant[0, 5];
+            TextBox_ObjS_5_Att_R1.Text = Mem_Saisie_Attaquant[0, 5];
+            TextBox_ObjS_5_Att_R2.Text = Mem_Saisie_Attaquant[1, 5];
+            TextBox_ObjS_5_Att_R3.Text = Mem_Saisie_Attaquant[2, 5];
+            TextBox_ObjS_5_Att_R4.Text = Mem_Saisie_Attaquant[3, 5];
+            TextBox_ObjS_5_Att_R5.Text = Mem_Saisie_Attaquant[4, 5];
+
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
             TextBox_ObjS_6_Att_RE1.Text = Mem_Saisie_Attaquant[0, 6];
             TextBox_ObjS_6_Att_RA1.Text = Mem_Saisie_Attaquant[1, 6];
@@ -5030,7 +5055,12 @@ namespace CPV9
             TextBox_ObjS_3_Def.Text = Mem_Saisie_Defenseur[0, 3];
 
             /// OBJECTIF SECONDAIRE 5 : ERODEZ LEURS RANGS
-            TextBox_ObjS_5_Def_A.Text = Mem_Saisie_Defenseur[0, 5];
+            TextBox_ObjS_5_Def_R1.Text = Mem_Saisie_Defenseur[0, 5];
+            TextBox_ObjS_5_Def_R2.Text = Mem_Saisie_Defenseur[1, 5];
+            TextBox_ObjS_5_Def_R3.Text = Mem_Saisie_Defenseur[2, 5];
+            TextBox_ObjS_5_Def_R4.Text = Mem_Saisie_Defenseur[3, 5];
+            TextBox_ObjS_5_Def_R5.Text = Mem_Saisie_Defenseur[4, 5];
+
             /// OBJECTIF SECONDAIRE 6 : ATTRITION
             TextBox_ObjS_6_Def_RE1.Text = Mem_Saisie_Defenseur[0, 6];
             TextBox_ObjS_6_Def_RA1.Text = Mem_Saisie_Defenseur[1, 6];
@@ -9112,34 +9142,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Att_5_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_5_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_5_Att_1.FontSize = 3 * x;
-            Label_OBJ_SEC_5_Att_2.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Att_3.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Att_4.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Att_5.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Att_6.FontSize = 2 * x;
-            Button_Obj_Sec_5_Att_oui.FontSize = 2 * x;
-            Button_Obj_Sec_5_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_5_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_5_Att_non.FontSize = 2 * x;
-            Button_Obj_Sec_5_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_5_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_5_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_5_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 5;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_Sec_5_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_5_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(5, "Att");            
         }
 
         private void Button_Obj_Sec_Att_6_Click(object sender, RoutedEventArgs e)
@@ -9609,34 +9612,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Def_5_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_5_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_5_Def_1.FontSize = 3 * x;
-            Label_OBJ_SEC_5_Def_2.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Def_3.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Def_4.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Def_5.FontSize = 2 * x;
-            Label_OBJ_SEC_5_Def_6.FontSize = 2 * x;
-            Button_Obj_Sec_5_Def_oui.FontSize = 2 * x;
-            Button_Obj_Sec_5_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_5_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_5_Def_non.FontSize = 2 * x;
-            Button_Obj_Sec_5_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_5_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_5_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_5_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 5;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_Sec_5_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_5_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(5, "Def");
         }
 
         private void Button_Obj_Sec_Def_6_Click(object sender, RoutedEventArgs e)
@@ -14575,11 +14551,14 @@ namespace CPV9
             ///CALCUL SCORE OBJECTIF SECONDAIRE 004            
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 005
-            if (TextBox_ObjS_5_Att_A.Text != "")
+            if (TextBox_ObjS_5_Att_R1.Text != "" || TextBox_ObjS_5_Att_R2.Text != "" || TextBox_ObjS_5_Att_R3.Text != "" || TextBox_ObjS_5_Att_R4.Text != "" || TextBox_ObjS_5_Att_R5.Text != "")
             {
                 Classe_Score_OBJS_005 OBJECTIF_Secondaire_005_Att;
-                OBJECTIF_Secondaire_005_Att = new Classe_Score_OBJS_005(Convert.ToString(TextBox_ObjS_5_Att_A.Text));
+                OBJECTIF_Secondaire_005_Att = new Classe_Score_OBJS_005(Convert.ToString(TextBox_ObjS_5_Att_R1.Text), Convert.ToString(TextBox_ObjS_5_Att_R2.Text), Convert.ToString(TextBox_ObjS_5_Att_R3.Text), Convert.ToString(TextBox_ObjS_5_Att_R4.Text), Convert.ToString(TextBox_ObjS_5_Att_R5.Text));
                 Scores_Attaquant[5] = OBJECTIF_Secondaire_005_Att.Scores_Joueur;
+                TextBlock_ObjS_5_Att_Cumul.Text = OBJECTIF_Secondaire_005_Att.Cumul;
+                TextBlock_ObjS_5_Att_Bonus.Text = OBJECTIF_Secondaire_005_Att.Bonus;
+
                 if (Convert.ToInt32(OBJECTIF_Secondaire_005_Att.Score_ObjS) >= 15)
                 {
                     Label_Score_ObjS_5_Cape_Player_1.Visibility = Visibility.Visible;
@@ -15702,11 +15681,13 @@ namespace CPV9
             ///CALCUL SCORE OBJECTIF SECONDAIRE 004
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 005
-            if (TextBox_ObjS_5_Def_A.Text != "")
+            if (TextBox_ObjS_5_Def_R1.Text != "" || TextBox_ObjS_5_Def_R2.Text != "" || TextBox_ObjS_5_Def_R3.Text != "" || TextBox_ObjS_5_Def_R4.Text != "" || TextBox_ObjS_5_Def_R5.Text != "")
             {
                 Classe_Score_OBJS_005 OBJECTIF_Secondaire_005_Def;
-                OBJECTIF_Secondaire_005_Def = new Classe_Score_OBJS_005(Convert.ToString(TextBox_ObjS_5_Def_A.Text));
+                OBJECTIF_Secondaire_005_Def = new Classe_Score_OBJS_005(Convert.ToString(TextBox_ObjS_5_Def_R1.Text), Convert.ToString(TextBox_ObjS_5_Def_R2.Text), Convert.ToString(TextBox_ObjS_5_Def_R3.Text), Convert.ToString(TextBox_ObjS_5_Def_R4.Text), Convert.ToString(TextBox_ObjS_5_Def_R5.Text));
                 Scores_Defenseur[5] = OBJECTIF_Secondaire_005_Def.Scores_Joueur;
+                TextBlock_ObjS_5_Def_Cumul.Text = OBJECTIF_Secondaire_005_Def.Cumul;
+                TextBlock_ObjS_5_Def_Bonus.Text = OBJECTIF_Secondaire_005_Def.Bonus;
                 if (Convert.ToInt32(OBJECTIF_Secondaire_005_Def.Score_ObjS) >= 15)
                 {
                     Label_Score_ObjS_5_Cape_Player_2.Visibility = Visibility.Visible;
@@ -17029,14 +17010,14 @@ namespace CPV9
         private void TextBox_ObjS_5_Att_TextChanged(object sender, TextChangedEventArgs e)
         {
 
-            if (TextBox_ObjS_5_Att_A.Text != "")
+            if (TextBox_ObjS_5_Att_R1.Text != "" || TextBox_ObjS_5_Att_R2.Text != "" || TextBox_ObjS_5_Att_R3.Text != "" || TextBox_ObjS_5_Att_R4.Text != "" || TextBox_ObjS_5_Att_R5.Text != "")
             {
                 Calcul_Score_Attaquant();
             }
         }
         private void TextBox_ObjS_5_Def_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_5_Def_A.Text != "")
+            if (TextBox_ObjS_5_Def_R1.Text != "" || TextBox_ObjS_5_Def_R2.Text != "" || TextBox_ObjS_5_Def_R3.Text != "" || TextBox_ObjS_5_Def_R4.Text != "" || TextBox_ObjS_5_Def_R5.Text != "")
             {
                 Calcul_Score_Defenseur();
             }
@@ -24780,14 +24761,41 @@ namespace CPV9
             /// OBJECTIF SECONDAIRE 5
             Label_Objectif_Sec_Att_5A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_5B.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_5C.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_5D.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_5_Att_A.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_5_Att_A.Width = 3 * Largeur_saisie * Multiple;
-            TextBox_ObjS_5_Att_A.Height = Hauteur_saisie * Multiple;
+            Label_Objectif_Sec_Att_5C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_5K.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_5_Att_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Att_R1.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Att_R2.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Att_R3.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Att_R4.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Att_R5.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Att_R5.Height = Hauteur_saisie * Multiple;
+            TextBlock_ObjS_5_Att_Cumul.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBlock_ObjS_5_Att_Bonus.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_5_Att.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_Objectif_Sec_Att_5A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_5B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_5C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_5D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_5E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_5F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_5G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_5H.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 6
             Label_Objectif_Sec_Att_6A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -26909,14 +26917,41 @@ namespace CPV9
             /// OBJECTIF SECONDAIRE 5
             Label_Objectif_Sec_Def_5A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_5B.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_5C.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_5D.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_5_Def_A.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_5_Def_A.Width = 3 * Largeur_saisie * Multiple;
-            TextBox_ObjS_5_Def_A.Height = Hauteur_saisie * Multiple;
+            Label_Objectif_Sec_Def_5C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_5K.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_5_Def_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Def_R1.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Def_R2.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Def_R3.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Def_R4.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_5_Def_R5.Width = 3 * Largeur_saisie * Multiple;
+            TextBox_ObjS_5_Def_R5.Height = Hauteur_saisie * Multiple;
+            TextBlock_ObjS_5_Def_Cumul.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBlock_ObjS_5_Def_Bonus.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_5_Def.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_Objectif_Sec_Def_5A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_5B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_5C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_5D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_5E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_5F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_5G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_5H.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 6
             Label_Objectif_Sec_Def_6A.FontSize = 1.2 * Taille_texte * Multiple;

@@ -52,16 +52,16 @@ namespace CPV9.Classes
                     break;
 
                 case 5:
-                    l1 = " PAS DE PRISONNIER(ca22)";
+                    l1 = " PAS DE PRISONNIER (ca22)";
                     l2 = "Additionnez le nombres de points de vie des figurines ennemi détruite durant la bataille.";
                     l3 = "Une unitée réssuscité et de nouveau détruite , sera comptabilisé une seconde fois";
-                    l4 = "une figurine Titanesque ennemi est détruite.";
-                    l5 = "";
-                    l6 = "A la fin de la bataille, diviser par 10 le nombres de points de vie perdu par l' ennemi";
-                    l7 = "deux figurines Titanesques ennemi sont détruitent.";
-                    l8 = "";
-                    l9 = "Score 15 points de victoire à la fin de la bataille si,";
-                    l10 = "trois figurines Titanesques ennemi sont détruitent.";
+                    l4 = "";
+                    l5 = "A la fin de la bataille,score 1 point par tranche de 10 points de vie perdu par l' ennemi";
+                    l6 = "";
+                    l7 = "de plus ,";
+                    l8 = "si vous avez cumulez entre 50 et 99 points de vie , ajouter 1 point de victoire supplemenaire";
+                    l9 = "si vous avez cumulez 100 points de vie et plus, ajouter 2 point de victoire supplemenaire";
+                    l10 = "";
                     break;
                     
                 default:
@@ -78,6 +78,7 @@ namespace CPV9.Classes
                     break;
             }
         }
+
             private string l1;
             private string l2;
             private string l3;

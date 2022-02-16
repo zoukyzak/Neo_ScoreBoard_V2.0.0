@@ -21,7 +21,7 @@
             
             if (Choix_ObjS == 5)
             {
-                text_Objectif = "5-Erodez leurs rangs (v2), ";
+                text_Objectif = "5-Pas de prisonnier (ca22), ";
             }
             if (Choix_ObjS == 6)
             {
