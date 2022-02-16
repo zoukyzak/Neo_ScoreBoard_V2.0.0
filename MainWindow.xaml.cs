@@ -9016,6 +9016,7 @@ namespace CPV9
             if (Camps =="Def"){ StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed; };
             
             StackPanel_OBJ_Uniform.Visibility = Visibility.Visible;
+           
             CPV9.Classes.Descript_OBJS CetObjectif = new CPV9.Classes.Descript_OBJS(Objectif);
 
             Label_OBJ_Uniform_1.Content = CetObjectif.L1;
