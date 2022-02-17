@@ -34,15 +34,15 @@
             
             if (Choix_ObjS == 9)
             {
-                text_Objectif = "9-Sur tous les fronts (ca22), ";
+                text_Objectif = "9-Sur tous les fronts (ca22) , ";
             }
             if (Choix_ObjS == 10)
             {
-                text_Objectif = "10-Briseur de ligne , ";
+                text_Objectif = "10-Derrière les lignes ennemies (ca22) , ";
             }
             if (Choix_ObjS == 11)
             {
-                text_Objectif = "11-Domination (v2), ";
+                text_Objectif = "11-Domination (v2) , ";
             }
             if (Choix_ObjS == 12)
             {

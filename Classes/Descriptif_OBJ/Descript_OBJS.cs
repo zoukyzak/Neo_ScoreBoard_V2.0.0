@@ -103,6 +103,19 @@ namespace CPV9.Classes
                     l10 = "";
                     break;
 
+                case 10:
+                    l1 = " DERRIERE LES LIGNES ENNEMIES (ca22)";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez 2 points de victoire à la fin de votre tour si 1 unité de votre armée (hors Aérodyne)";
+                    l5 = "est entièrement dans la zone de déploiement adverse.";
+                    l6 = "";
+                    l7 = "Marquez 4 points de victoire à la place à la fin de votre tour , si 2 unités ou plus (hors Aérodyne)";
+                    l8 = "sont entièrement dans la zone de déploiement adverse.";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";
