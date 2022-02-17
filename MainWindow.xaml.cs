@@ -9088,8 +9088,8 @@ namespace CPV9
                 StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
                 Select_ObjS_Attaquant(Select_Objectif);
                 if (Select_Objectif >= 1 && Select_Objectif <= 3){ StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 4 && Select_Objectif <= 8){ StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 9 && Select_Objectif <= 12){ StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 4 && Select_Objectif <= 6){ StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 7 && Select_Objectif <= 12){ StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden; };                
                 if (Select_Objectif >= 13 && Select_Objectif <= 15){ StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden; };                
                 if (Select_Objectif >= 16 && Select_Objectif <= 19){ StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden; };                
             }
@@ -9099,8 +9099,8 @@ namespace CPV9
                 StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
                 Select_ObjS_Defenseur(Select_Objectif);
                 if (Select_Objectif >= 1 && Select_Objectif <= 3) { StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >= 4 && Select_Objectif <= 8) { StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >= 9 && Select_Objectif <= 12) { StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden; };
+                if (Select_Objectif >= 4 && Select_Objectif <= 6) { StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden; };
+                if (Select_Objectif >=7 && Select_Objectif <= 12) { StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden; };
                 if (Select_Objectif >= 13 && Select_Objectif <= 15) { StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden; };
                 if (Select_Objectif >= 16 && Select_Objectif <= 19) { StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden; };
             }
@@ -9152,36 +9152,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Att_7_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_7_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_7_Att_1.FontSize = 3 * x;
-            Label_OBJ_SEC_7_Att_2.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Att_3.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Att_4.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Att_5.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Att_6.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Att_7.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Att_8.FontSize = 2 * x;
-            Button_Obj_Sec_7_Att_oui.FontSize = 2 * x;
-            Button_Obj_Sec_7_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_7_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_7_Att_non.FontSize = 2 * x;
-            Button_Obj_Sec_7_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_7_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_7_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_7_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 7;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_Sec_7_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_7_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(7, "Att");
         }
 
         private void Button_Obj_Sec_Att_8_Click(object sender, RoutedEventArgs e)
@@ -9597,36 +9568,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Def_7_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_7_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_7_Def_1.FontSize = 3 * x;
-            Label_OBJ_SEC_7_Def_2.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Def_3.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Def_4.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Def_5.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Def_6.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Def_7.FontSize = 2 * x;
-            Label_OBJ_SEC_7_Def_8.FontSize = 2 * x;
-            Button_Obj_Sec_7_Def_oui.FontSize = 2 * x;
-            Button_Obj_Sec_7_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_7_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_7_Def_non.FontSize = 2 * x;
-            Button_Obj_Sec_7_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_7_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_7_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_7_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 7;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_Sec_7_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_7_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(7, "Def");
         }
 
         private void Button_Obj_Sec_Def_8_Click(object sender, RoutedEventArgs e)
@@ -23733,10 +23675,11 @@ namespace CPV9
         private void Affichage_OBJsec_Att()
         {
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
+            int taille = 25;
             Label_OBJSec_Att.FontSize = 3 * x;
             StackPanel_OBJSec_Att.Margin = new Thickness(0, Rapport_Taille_Y, 0, 0);
 
-            Label_Eleminez_l_Ennemi_Att.FontSize = 1.3 * x;
+            Image_EleminezLEnnemi_Att.Width = taille * x;
             Button_Obj_Sec_Att_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_1.FontSize = x;
@@ -23769,7 +23712,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_133_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_133_Att.FontSize = x;
 
-            Label_Pas_Pitier_Att.FontSize = 1.3 * x;
+            Image_PasDePitier_Att.Width = taille * x;
             Button_Obj_Sec_Att_5.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_5.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_5.FontSize = x;
@@ -23779,9 +23722,6 @@ namespace CPV9
             Button_Obj_Sec_Att_7.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_7.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_7.FontSize = x;
-            Button_Obj_Sec_Att_8.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Sec_Att_8.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Sec_Att_8.FontSize = x;
             Button_Obj_Codex_Necron_100_Att_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_100_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Att_1.FontSize = x;
@@ -23813,7 +23753,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_132_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_132_Att.FontSize = x;
 
-            Label_Supprematie_Militaire_Att.FontSize = 1.3 * x;
+            Image_SupprematieMilitaire_Att.Width = taille * x;
             Button_Obj_Sec_Att_9.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_9.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_9.FontSize = x;
@@ -23851,7 +23791,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_135_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_135_Att.FontSize = x;
 
-            label_Operations_Clandestines_Att.FontSize = 1.3 * x;
+            Image_OperationsClandestines_Att.Width = taille * x;
             Button_Obj_Sec_Att_12.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_12.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_12.FontSize = x;
@@ -23877,7 +23817,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_134_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_134_Att.FontSize = x;
 
-            Label_Art_Warp_Att.FontSize = 1.3 * x;
+            Image_ArtDuWarp_Att.Width = taille * x;
             Button_Obj_Sec_Att_15.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_15.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_15.FontSize = x;
@@ -24232,10 +24172,11 @@ namespace CPV9
         private void Affichage_OBJsec_Def()
         {
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
+            int taille = 25;
             Label_OBJSec_Def.FontSize = 3 * x;
             StackPanel_OBJSec_Def.Margin = new Thickness(0, Rapport_Taille_Y, 0, 0);
 
-            Label_Eleminez_l_Ennemi_Def.FontSize = 1.3 * x;
+            Image_EleminezLEnnemi_Def.Width = taille * x;
             Button_Obj_Sec_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_1.FontSize = x;
@@ -24268,7 +24209,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_133_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_133_Def.FontSize = x;
 
-            Label_Pas_Pitier_Def.FontSize = 1.3 * x;
+            Image_PasDePitier_Def.Width = taille * x;
             Button_Obj_Sec_Def_5.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_5.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_5.FontSize = x;
@@ -24278,9 +24219,6 @@ namespace CPV9
             Button_Obj_Sec_Def_7.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_7.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_7.FontSize = x;
-            Button_Obj_Sec_Def_8.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Sec_Def_8.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Sec_Def_8.FontSize = x;
             Button_Obj_Codex_Necron_100_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_100_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Def_1.FontSize = x;
@@ -24312,7 +24250,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_132_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_132_Def.FontSize = x;
 
-            Label_Supprematie_Militaire_Def.FontSize = 1.3 * x;
+            Image_SupprematieMilitaire_Def.Width = taille * x;
             Button_Obj_Sec_Def_9.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_9.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_9.FontSize = x;
@@ -24350,7 +24288,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_135_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_135_Def.FontSize = x;
 
-            label_Operations_Clandestines_Def.FontSize = 1.3 * x;
+            Image_OperationsClandestines_Def.Width = taille * x;
             Button_Obj_Sec_Def_12.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_12.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_12.FontSize = x;
@@ -24376,7 +24314,7 @@ namespace CPV9
             Button_Obj_Codex_AdeptaS_134_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_AdeptaS_134_Def.FontSize = x;
 
-            Label_Art_Warp_Def.FontSize = 1.3 * x;
+            Image_ArtDuWarp_Def.Width = taille * x;
             Button_Obj_Sec_Def_15.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_15.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_15.FontSize = x;

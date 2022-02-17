@@ -77,6 +77,19 @@ namespace CPV9.Classes
                     l10 = "";
                     break;
 
+                case 7:
+                    l1 = " J'USQU'AU DERNIER (ca22)";
+                    l2 = "";
+                    l3 = "Identifié avant la bataille vos trois unités qui ont leurs coups en points les plus élévés.";
+                    l4 = " les unitée avec le rôle tactique fortification exclues ";
+                    l5 = "";
+                    l6 = "Score 5 points de victoire pour chaque unité encore en vie à la fin de la bataille";
+                    l7 = "";
+                    l8 = "Si une unité se scinde en deux et qu'une partie est détruite et l'autre est resté en vie à la fin de la bataille,";
+                    l9 = "Score 3 points de victoire pour cette unité au lieu de 5 points";
+                    l10 = "";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";

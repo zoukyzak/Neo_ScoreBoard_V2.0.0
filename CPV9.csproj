@@ -400,5 +400,14 @@
   <ItemGroup>
     <Resource Include="Images_Fond\CA22.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ArtDuWarp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\EiminezLEnnemi.jpg" />
+    <Resource Include="Images\Operationsclandestines.jpg" />
+    <Resource Include="Images\PasDePitier.jpg" />
+    <Resource Include="Images\SuprematiMilitaire.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

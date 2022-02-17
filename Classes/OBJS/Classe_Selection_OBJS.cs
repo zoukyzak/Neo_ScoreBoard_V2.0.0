@@ -29,7 +29,7 @@
             }
             if (Choix_ObjS == 7)
             {
-                text_Objectif = "7-Jusqu'au dernier (v2) , ";
+                text_Objectif = "7-Jusqu'au dernier (ca22) , ";
             }
             if (Choix_ObjS == 8)
             {
