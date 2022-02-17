@@ -9126,33 +9126,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Att_9_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_9_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_9_Att_1.FontSize = 3 * x;
-            Label_OBJ_SEC_9_Att_2.FontSize = 2 * x;
-            Label_OBJ_SEC_9_Att_3.FontSize = 2 * x;
-            Label_OBJ_SEC_9_Att_4.FontSize = 2 * x;
-            Label_OBJ_SEC_9_Att_5.FontSize = 2 * x;
-            Button_Obj_Sec_9_Att_oui.FontSize = 2 * x;
-            Button_Obj_Sec_9_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_9_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_9_Att_non.FontSize = 2 * x;
-            Button_Obj_Sec_9_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_9_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_9_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_9_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 9;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_Sec_9_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_9_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(9, "Att");
         }
 
         private void Button_Obj_Sec_Att_10_Click(object sender, RoutedEventArgs e)
@@ -9510,33 +9484,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Def_9_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_9_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_9_Def_1.FontSize = 3 * x;
-            Label_OBJ_SEC_9_Def_2.FontSize = 2 * x;
-            Label_OBJ_SEC_9_Def_3.FontSize = 2 * x;
-            Label_OBJ_SEC_9_Def_4.FontSize = 2 * x;
-            Label_OBJ_SEC_9_Def_5.FontSize = 2 * x;
-            Button_Obj_Sec_9_Def_oui.FontSize = 2 * x;
-            Button_Obj_Sec_9_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_9_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_9_Def_non.FontSize = 2 * x;
-            Button_Obj_Sec_9_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_9_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_9_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_9_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 9;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_Sec_9_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_9_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(9, "Def");
         }
 
         private void Button_Obj_Sec_Def_10_Click(object sender, RoutedEventArgs e)

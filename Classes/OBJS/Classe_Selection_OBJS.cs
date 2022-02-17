@@ -34,7 +34,7 @@
             
             if (Choix_ObjS == 9)
             {
-                text_Objectif = "9-Sur tous les fronts , ";
+                text_Objectif = "9-Sur tous les fronts (ca22), ";
             }
             if (Choix_ObjS == 10)
             {

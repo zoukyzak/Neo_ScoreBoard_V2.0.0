@@ -90,6 +90,19 @@ namespace CPV9.Classes
                     l10 = "";
                     break;
 
+                case 9:
+                    l1 = " SUR TOUS LES FRONT (ca22)";
+                    l2 = "";
+                    l3 = "Marquez 2 points de victoire à la fin de votre tour si vous avez une unité éligible ou plus";
+                    l4 = "de votre armée entiérement dans les 3/4 de tables différents et a plus de 6 pouces du centre.";
+                    l5 = "";
+                    l6 = "Marquez 3 points de victoire à la fin de votre tour si vous avez une unité éligible ou plus";
+                    l7 = "de votre armée entiérement dans chaque quart de tables différents et a plus de 6 pouces du centre.";
+                    l8 = "";
+                    l9 = "Pour être éligible , l'unité dois contenir 3 figurines ou plus , oubien contenir un véhicule ou monstre ou plus.";
+                    l10 = "";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";
