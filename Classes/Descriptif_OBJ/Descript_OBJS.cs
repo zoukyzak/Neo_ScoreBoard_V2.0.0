@@ -52,7 +52,7 @@ namespace CPV9.Classes
                     break;
 
                 case 5:
-                    l1 = " PAS DE PRISONNIER (ca22)";
+                    l1 = " BROYEZ-LES (ca22)";
                     l2 = "Additionnez le nombres de points de vie des figurines ennemi détruite durant la bataille.";
                     l3 = "Une unitée réssuscité et de nouveau détruite , sera comptabilisé une seconde fois";
                     l4 = "";
@@ -63,7 +63,20 @@ namespace CPV9.Classes
                     l9 = "si vous avez cumulez 100 points de vie et plus, ajouter 2 point de victoire supplemenaire";
                     l10 = "";
                     break;
-                    
+
+                case 6:
+                    l1 = " PAS DE PRISONNIER (ca22)";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez 3 pts de victoire a la fin du round de bataille";
+                    l5 = "si d'avantage d'unités ennemies que d'unités amis ";
+                    l6 = "ont été détruites à ce round de bataille.";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";

@@ -25,7 +25,7 @@
             }
             if (Choix_ObjS == 6)
             {
-                text_Objectif = "6-Attrition , ";
+                text_Objectif = "6-Broyez-les (ca22) , ";
             }
             if (Choix_ObjS == 7)
             {
