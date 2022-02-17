@@ -50,7 +50,7 @@
             }
             if (Choix_ObjS == 13)
             {
-                text_Objectif = "13-Balise de téléportation (v2) , ";
+                text_Objectif = "13-Balise de téléportation (ca22) , ";
             }
             if (Choix_ObjS == 14)
             {

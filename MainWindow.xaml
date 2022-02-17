@@ -964,7 +964,7 @@
             <Label x:Name="Label_Score_ObjS_10_Cape_Player_1" Content="10-DERRIERE LES LIGNES ENNEMIES (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_11_Cape_Player_1" Content="11-EMPRISE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_12_Cape_Player_1" Content="12-INSPECTER LE SIGNAL (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_13_Cape_Player_1" Content="13-BALISE DE TELEPORTATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_13_Cape_Player_1" Content="13-BALISE DE TELEPORTATION (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_1" Content="14-LEVEZ HAUT LES ETANDARDS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_1" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1086,7 +1086,7 @@
             <Label x:Name="Label_Score_ObjS_11_Cape_Player_2" Content="11-EMPRISE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             
             <Label x:Name="Label_Score_ObjS_12_Cape_Player_2" Content="12-INSPECTER LE SIGNAL (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_13_Cape_Player_2" Content="13-BALISE DE TELEPORTATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_13_Cape_Player_2" Content="13-BALISE DE TELEPORTATION (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_2" Content="14-LEVEZ HAUT LES ETANDARDS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_2" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1614,7 +1614,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_13_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_13A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_13A" Content="13-BALISE DE TELEPORTATION (v2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_13A" Content="13-BALISE DE TELEPORTATION (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_13_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_13_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -1624,7 +1624,7 @@
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_13B" Content="A la fin de votre phase de mouvement,avec une unité infanterie ou Motard, l'action de déployer une balise de téléportation," FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_13C" Content="Entierement dans la zone de deploiement ennemies (4 pts) ou entierement à 12 pouces de cette zone (2 pts)." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_13D" Content="Action réussit a votre prochaine phase de commandement (2 ou 4 pts/tour)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_13D" Content="Action réussit a votre prochaine phase de commandement ou si Troupe à la fin de votre phase de mouvement." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_13B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Att_13F" Content="ROUND 2 :" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                         <CheckBox x:Name="CheckBox_ObjS_13_Att_In_R2"  Content="ZDDE" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Margin="5,0,0,0"  Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_13_Att_In_Click"/>
@@ -4347,7 +4347,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_13_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_13A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_13A" Content="13-BALISE DE TELEPORTATION (v2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_13A" Content="13-BALISE DE TELEPORTATION (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_13_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_13_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -4357,7 +4357,7 @@
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_13B" Content="A la fin de votre phase de mouvement,avec une unité infanterie ou Motard, l'action de déployer une balise de téléportation," FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_13C" Content="Entierement dans la zone de deploiement ennemies (4 pts) ou entierement à 12 pouces de cette zone (2 pts)." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_13D" Content="Action réussit a votre prochaine phase de commandement (2 ou 4 pts/tour)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_13D" Content="Action réussit a votre prochaine phase de commandement ou si Troupe à la fin de votre phase de Mouvement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_13B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Def_13F" Content="ROUND 2:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                         <CheckBox x:Name="CheckBox_ObjS_13_Def_In_R2"  Content="ZDDE"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Margin="5,0,0,0"  Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_13_Def_In_Click"/>
@@ -6675,7 +6675,7 @@
                     <Image x:Name="Image_OperationsClandestines_Att" Source="/Images/OperationsClandestines.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
                     
                     <Button x:Name="Button_Obj_Sec_Att_12" Content="12 - INSPECTER LE SIGNAL (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_12_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Att_13" Content="13 - BALISES DE TELEPORTATION (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_13_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Att_13" Content="13 - BALISES DE TELEPORTATION (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_13_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_14" Content="14 - LEVEZ HAUT LES ETENDARDS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_14_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_18" Content="18 - RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_18_Click"/>
                     <Button x:Name="Button_Obj_Codex_Necron_103_Att_1" Content="Necron 103 - MACHINES ANTIQUES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkViolet" Foreground="White" Click="Button_Obj_Codex_Necron_103_Att_1_Click"/>
@@ -6877,7 +6877,7 @@
                     <Image x:Name="Image_OperationsClandestines_Def" Source="/Images/OperationsClandestines.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
                     
                     <Button x:Name="Button_Obj_Sec_Def_12" Content="12 - INSPECTER LE SIGNAL (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_12_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_13" Content="13 - BALISE DE TELEPORTATION (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_13_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_13" Content="13 - BALISE DE TELEPORTATION (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_13_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_14" Content="14 - LEVEZ HAUT LES ETENDARDS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_14_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_18" Content="18 - RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_18_Click"/>
                     <Button x:Name="Button_Obj_Codex_Necron_103_Def_1" Content="Necron 103 - MACHINES ANTIQUES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkViolet" Foreground="White" Visibility="Collapsed" Click="Button_Obj_Codex_Necron_103_Def_1_Click"/>
@@ -7035,20 +7035,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_13_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_13_Att_1" Content="BALISE DE TELEPORTATION (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_13_Att_2" Content="A la fin de votre phase de mouvement,avec une unité infanterie ou Motard," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Att_3" Content="effectuez l'action de déployer une balise de téléportation," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Att_4" Content="Entierement dans la zone de deploiement ennemies (4 pts)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Att_5" Content=" ou entierement à 12 pouces de cette zone (2 pts)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="26"/>
-            <Label x:Name="Label_OBJ_SEC_13_Att_6" Content="cette action, debutera a la fin de  votre phase de mouvement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Att_7" Content="et se terminera a la fin de votre prochaine phase de commandement." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Att_8" Content="l'action est un echec si cette unité est detruite avant la fin de l'action." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_13_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_13_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_13_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_13_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_14_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_14_Att_1" Content="LEVEZ HAUT LES ETENDARDS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_14_Att_2" Content="Les unités infanterie de votre armée peuvent accomplir l'action suivante" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7674,20 +7660,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_13_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_13_Def_1" Content="BALISE DE TELEPORTATION (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_13_Def_2" Content="A la fin de votre phase de mouvement,avec une unité infanterie ou Motard," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Def_3" Content="effectuez l'action de déployer une balise de téléportation," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Def_4" Content="Entierement dans la zone de deploiement ennemies (4 pts)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Def_5" Content=" ou entierement à 12 pouces de cette zone (2 pts)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="26"/>
-            <Label x:Name="Label_OBJ_SEC_13_Def_6" Content="cette action, debutera a la fin de  votre phase de mouvement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Def_7" Content="et se terminera a la fin de votre prochaine phase de commandement." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_13_Def_8" Content="l'action est un echec si cette unité est detruite avant la fin de l'action." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_13_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_13_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_13_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_13_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_14_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_14_Def_1" Content="LEVEZ HAUT LES ETENDARDS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_14_Def_2" Content="Les unités infanterie de votre armée peuvent accomplir l'action suivante" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>

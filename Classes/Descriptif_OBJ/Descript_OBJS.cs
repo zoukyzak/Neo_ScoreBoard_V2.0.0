@@ -139,7 +139,20 @@ namespace CPV9.Classes
                     l7 = "entreprendre cette action à la fin de votre phase de mouvement si elle est entièrement à 6 pouces";
                     l8 = "du centre du champs de bataille.Cette action est accomplit à la fin de votre tour à condition que";
                     l9 = "l'unité qui l'entreprenait soit toujours entièrement a 6 pouces du centre du champs de bataille";
-                    l10 = " et qu'il n'y ai pas d'unité ennemie entièrement à 6 pouces du centre.(hors Aérodyne)";
+                    l10 = "et qu'il n'y ai pas d'unité ennemie entièrement à 6 pouces du centre.(hors Aérodyne)";
+                    break;
+
+                case 13:
+                    l1 = " DEPLOYEZ LES BALISES DE TELEPORTATION (ca22)";
+                    l2 = "Si vous choisissez cette objectif , alors les unités de votre armée peuvent accomplir l'action suivante:";
+                    l3 = "DEPLOYEZ UNE BALISE DE TELEPORTATION (action) :";
+                    l4 = "1 unité d'infanterie ou motard peut commencer cette action à la fin de votre phase de mouvement si elle est";
+                    l5 = "entièrement à 12 pouces de la zone de déploiement adverse.";
+                    l6 = "Si l'unité a le rôle tactique Troupes,l'action est accomplie à la fin de votre phase de mouvement ;";
+                    l7 = "sinon l'action n'est accomplie qu'à la fin de la prochaine phase de commandement et si l'unité est";
+                    l8 = "toujours entièrement à 12 pouces de la zone de déploiement adverse.";
+                    l9 = "Chaque fois qu'une unité accomplit cette action, vous marquerez 2 points de victoire.";
+                    l10 = "4 points de victoire à la place si l'unité est entièrement dans la zone de déploiement adverse.";
                     break;
 
                 default:
