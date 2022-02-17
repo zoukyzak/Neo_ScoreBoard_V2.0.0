@@ -46,7 +46,7 @@
             }
             if (Choix_ObjS == 12)
             {
-                text_Objectif = "12-Inspecter le terrain , ";
+                text_Objectif = "12-Inspecter le signal (ca22) , ";
             }
             if (Choix_ObjS == 13)
             {

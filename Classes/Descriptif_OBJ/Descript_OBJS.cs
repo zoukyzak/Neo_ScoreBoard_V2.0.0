@@ -129,6 +129,19 @@ namespace CPV9.Classes
                     l10 = "";
                     break;
 
+                case 12:
+                    l1 = " INSPECTER LE SIGNAL (ca22)";
+                    l2 = "";
+                    l3 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action suivante :";
+                    l4 = "";
+                    l5 = "Inspecter le signal (action) :";
+                    l6 = "1 unité d'INFANTERIE de votre armée qui contient 3 figurines ou plus peut";
+                    l7 = "entreprendre cette action à la fin de votre phase de mouvement si elle est entièrement à 6 pouces";
+                    l8 = "du centre du champs de bataille.Cette action est accomplit à la fin de votre tour à condition que";
+                    l9 = "l'unité qui l'entreprenait soit toujours entièrement a 6 pouces du centre du champs de bataille";
+                    l10 = " et qu'il n'y ai pas d'unité ennemie entièrement à 6 pouces du centre.(hors Aérodyne)";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";

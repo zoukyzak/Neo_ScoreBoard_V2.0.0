@@ -963,7 +963,7 @@
             <Label x:Name="Label_Score_ObjS_9_Cape_Player_1" Content="9-SUR TOUS LES FRONTS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_10_Cape_Player_1" Content="10-DERRIERE LES LIGNES ENNEMIES (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_11_Cape_Player_1" Content="11-EMPRISE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_12_Cape_Player_1" Content="12-INSPECTER LE TERRAIN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_12_Cape_Player_1" Content="12-INSPECTER LE SIGNAL (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_13_Cape_Player_1" Content="13-BALISE DE TELEPORTATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_1" Content="14-LEVEZ HAUT LES ETANDARDS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1085,7 +1085,7 @@
             <Label x:Name="Label_Score_ObjS_10_Cape_Player_2" Content="10-DERRIERE LES LIGNES ENNEMIES (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_11_Cape_Player_2" Content="11-EMPRISE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             
-            <Label x:Name="Label_Score_ObjS_12_Cape_Player_2" Content="12-INSPECTER LE TERRAIN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_12_Cape_Player_2" Content="12-INSPECTER LE SIGNAL (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_13_Cape_Player_2" Content="13-BALISE DE TELEPORTATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_2" Content="14-LEVEZ HAUT LES ETANDARDS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1575,9 +1575,10 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_11E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
+                <!--# 4-Opérations Clandestines -->
                 <StackPanel x:Name="StackPanel_ObjS_12_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_12A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_12A" Content="12-INSPECTER LE TERRAIN" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_12A" Content="12-INSPECTER LE SIGNAL (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_12_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_12_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -1585,8 +1586,8 @@
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_12B" Content="Action d inspection du center du terrain (6 pouces) (infanterie uniquement et hors personnages)  !" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_12C" Content="Action reussit a la fin de votre tour (3 pts/tour)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_12B" Content="Action d'inspection du signal au centre du terrain (6 pouces) (infanterie uniquement 3 figurines minimum)  !" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_12C" Content="Action réussit à la fin de votre tour (3 pts/tour)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_12B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Att_12D" Content="ROUND 1:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                         <CheckBox x:Name="CheckBox_ObjS_12_Att_R1" VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_12_Att_Click"/>
@@ -4307,9 +4308,10 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_11E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
+                <!--# 4-Opérations Clandestines -->
                 <StackPanel x:Name="StackPanel_ObjS_12_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_12A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_12A" Content="12-INSPECTER LE TERRAIN" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_12A" Content="12-INSPECTER LE SIGNAL (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_12_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_12_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -4317,8 +4319,8 @@
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_12B" Content="Action d inspection du center du terrain (6 pouces) (infanterie uniquement et hors personnages)  !" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_12C" Content="Action reussit a la fin de votre tour (3 pts/tour)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_12B" Content="Action d'inspection du signal au centre du terrain (6 pouces) (infanterie uniquement 3 figurines minimum)  !" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_12C" Content="Action réussit à la fin de votre tour (3 pts/tour)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_12B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Def_12D" Content="ROUND 1:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                         <CheckBox x:Name="CheckBox_ObjS_12_Def_R1" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_12_Def_Click"/>
@@ -6672,7 +6674,7 @@
                 <StackPanel x:Name="StackPanel_Obj_Sec_Att_4" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="Auto" Visibility="Visible">
                     <Image x:Name="Image_OperationsClandestines_Att" Source="/Images/OperationsClandestines.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
                     
-                    <Button x:Name="Button_Obj_Sec_Att_12" Content="12 - INSPECTER LE TERRAIN" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_12_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Att_12" Content="12 - INSPECTER LE SIGNAL (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_12_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_13" Content="13 - BALISES DE TELEPORTATION (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_13_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_14" Content="14 - LEVEZ HAUT LES ETENDARDS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_14_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_18" Content="18 - RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_18_Click"/>
@@ -6874,7 +6876,7 @@
                 <StackPanel x:Name="StackPanel_Obj_Sec_Def_4" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
                     <Image x:Name="Image_OperationsClandestines_Def" Source="/Images/OperationsClandestines.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
                     
-                    <Button x:Name="Button_Obj_Sec_Def_12" Content="12 - INSPECTER LE TERRAIN" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_12_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_12" Content="12 - INSPECTER LE SIGNAL (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_12_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_13" Content="13 - BALISE DE TELEPORTATION (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_13_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_14" Content="14 - LEVEZ HAUT LES ETENDARDS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_14_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_18" Content="18 - RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_18_Click"/>
@@ -7033,19 +7035,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_12_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_12_Att_1" Content="INSPECTER LE TERRAIN" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_12_Att_2" Content="Marquez 3 pts de victoire chaque fois qu une unité infanterie (hors personnage)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Att_3" Content=" de votre armée accomplit l action suivante : INSPECTER LE TERRAIN" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Att_4" Content="cette action consciste a avoir cette unité dans les 6 pouces" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Att_5" Content="du  centre du champs de bataille et qu'aucune unités ennemis ne s y trouve (hors Aérodynes). " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Att_6" Content="cette action, debutera a la fin de la phase de mouvement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Att_7" Content="et se terminera a la fin de votre tour" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_12_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_12_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_12_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_12_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_13_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_13_Att_1" Content="BALISE DE TELEPORTATION (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_13_Att_2" Content="A la fin de votre phase de mouvement,avec une unité infanterie ou Motard," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7685,19 +7674,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_12_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_12_Def_1" Content="INSPECTER LE TERRAIN" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_12_Def_2" Content="Marquez 3 pts de victoire chaque fois qu une unité infanterie (hors personnage)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Def_3" Content=" de votre armée accomplit l action suivante : INSPECTER LE TERRAIN" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Def_4" Content="cette action consciste a avoir cette unité dans les 6 pouces" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Def_5" Content="du  centre du champs de bataille et qu'aucune unités ennemis ne s y trouve (hors Aérodynes). " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Def_6" Content="cette action, debutera a la fin de la phase de mouvement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_12_Def_7" Content="et se terminera a la fin de votre tour" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_12_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_12_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_12_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_12_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_13_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_13_Def_1" Content="BALISE DE TELEPORTATION (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_13_Def_2" Content="A la fin de votre phase de mouvement,avec une unité infanterie ou Motard," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>

@@ -207,14 +207,14 @@ namespace CPV9.Windows
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2_Cape_Player_1.Visibility = Visibility.Visible; };///2
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_3_Cape_Player_1.Visibility = Visibility.Visible; };///3
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_3_Cape_Player_2.Visibility = Visibility.Visible; }; n = 4;
+            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_3_Cape_Player_2.Visibility = Visibility.Visible; }; n = 5;
 
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_5_Cape_Player_1.Visibility = Visibility.Visible; };///5
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_5_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_6_Cape_Player_1.Visibility = Visibility.Visible; };///6
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_6_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_7_Cape_Player_1.Visibility = Visibility.Visible; };///7
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_7_Cape_Player_2.Visibility = Visibility.Visible; }; n = 8;
+            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_7_Cape_Player_2.Visibility = Visibility.Visible; }; n = 9;
 
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_9_Cape_Player_1.Visibility = Visibility.Visible; };///9
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_9_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
