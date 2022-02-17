@@ -959,7 +959,7 @@
             <Label x:Name="Label_Score_ObjS_5_Cape_Player_1" Content="5-PAS DE PRISONNIER (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_6_Cape_Player_1" Content="6-BROYEZ-LES (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_7_Cape_Player_1" Content="7-JUSQU'AU DERNIER (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_8_Cape_Player_1" Content="8- PREMIER SANG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjS_9_Cape_Player_1" Content="9-SUR TOUS LES FRONTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_10_Cape_Player_1" Content="10-BRISEUR DE LIGNE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_11_Cape_Player_1" Content="11-DOMINATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1080,7 +1080,7 @@
             <Label x:Name="Label_Score_ObjS_5_Cape_Player_2" Content="5-PAS DE PRISONNIER (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_6_Cape_Player_2" Content="6-BROYEZ-LES (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_7_Cape_Player_2" Content="7-JUSQU'AU DERNIER (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_8_Cape_Player_2" Content="8-PREMIER SANG capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjS_9_Cape_Player_2" Content="9-SUR TOUS LES FRONTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_10_Cape_Player_2" Content="10-BRISEUR DE LIGNE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_11_Cape_Player_2" Content="11-DOMINATION (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1453,36 +1453,6 @@
                         <TextBlock x:Name="TextBlock_ObjS_7_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
                         <Label x:Name="Label_Objectif_Sec_Att_7G" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_7D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Right" Background="Green"/>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel x:Name="StackPanel_ObjS_8_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
-                    <StackPanel x:Name="StackPanel_ObjS_8A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_8A" Content="8-PREMIER SANG" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
-                        <Button x:Name="Button_Caché_ObjS_8_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_8_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                        <Button x:Name="Button_Visible_ObjS_8_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_8_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                    </StackPanel>
-                    <StackPanel x:Name="StackPanel_ObjS_8B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_8B" Content="Detruite une unité au premier round (5 pts):" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_8_Att" FlowDirection="LeftToRight" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="Auto" Height="auto" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_8_Att_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_8A" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                    <StackPanel x:Name="StackPanel_ObjS_8C_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_8C" Content="Pertes round 1 (+ 3 pts)" FontFamily="Arial Black" FontSize="11" FontWeight="Bold" FontStyle="Italic" Margin="20,0"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_8D" Content="Unitées ennemies détruite :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_8_Att_B" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_8_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_8E" Content="Unitées amies détruite :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_8_Att_C" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_8_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_8B" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                    <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_8F" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBlock x:Name="TextBlock_ObjS_8_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_8G" Content="/8" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_8C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_9_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -4215,36 +4185,6 @@
                         <TextBlock x:Name="TextBlock_ObjS_7_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
                         <Label x:Name="Label_Objectif_Sec_Def_7G" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_7D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel x:Name="StackPanel_ObjS_8_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
-                    <StackPanel x:Name="StackPanel_ObjS_8A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_8A" Content="8-PREMIER SANG" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
-                        <Button x:Name="Button_Caché_ObjS_8_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_8_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                        <Button x:Name="Button_Visible_ObjS_8_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_8_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                    </StackPanel>
-                    <StackPanel x:Name="StackPanel_ObjS_8B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_8B" Content="Detruite une unité au premier round (5 pts):" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_8_Def" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_8_Def_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_8A" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                    <StackPanel x:Name="StackPanel_ObjS_8C_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_8C" Content="Pertes round 1 (+ 3 pts)" FontFamily="Arial Black" FontSize="11" FontWeight="Bold" FontStyle="Italic" Margin="20,0"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_8D" Content="Unitées ennemies détruite :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_8_Def_B" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_8_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_8E" Content="Unitées amies détruite :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_8_Def_C" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_8_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_8B" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                    <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_8F" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBlock x:Name="TextBlock_ObjS_8_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_8G" Content="/8" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_8C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_9_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -7091,18 +7031,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_8_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_8_Att_1" Content="PREMIER SANG" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_8_Att_2" Content="Marquez 5 pts de victoire a la fin de la bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Att_3" Content="si 1 ou plusieurs unités ennemies ont été detruites" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Att_4" Content="au premier round de bataille, et marquez 3 pts de victoire " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Att_5" Content="si plus d unités ennemis ont été detruite que d unités amis" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Att_6" Content="a la fin du premier round de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_8_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_8_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_8_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_8_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_9_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_9_Att_1" Content="SUR TOUS LES FRONTS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_9_Att_2" Content="Marquez 2 pts de victoire a la fin de votre tour" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7785,18 +7713,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_8_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_8_Def_1" Content="PREMIER SANG" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_8_Def_2" Content="Marquez 5 pts de victoire a la fin de la bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Def_3" Content="si 1 ou plusieurs unités ennemies ont été detruites" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Def_4" Content="au premier round de bataille, et marquez 3 pts de victoire " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Def_5" Content="si plus d unités ennemis ont été detruite que d unités amis" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_8_Def_6" Content="a la fin du premier round de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_8_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_8_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_8_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_8_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_9_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_9_Def_1" Content="SUR TOUS LES FRONTS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_9_Def_2" Content="Marquez 2 pts de victoire a la fin de votre tour" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>

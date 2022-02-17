@@ -150,7 +150,6 @@
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_005.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_006.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_007.cs" />
-    <Compile Include="Classes\OBJS\Classe_Score_OBJS_008.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_009.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_010.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_011.cs" />

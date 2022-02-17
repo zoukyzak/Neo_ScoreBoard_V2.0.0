@@ -51,8 +51,7 @@ namespace CPV9.Windows
             Label_Score_ObjS_6_Cape_Player_2.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_7_Cape_Player_1.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_7_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_8_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_8_Cape_Player_2.Visibility = Visibility.Collapsed;
+
             Label_Score_ObjS_9_Cape_Player_1.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_9_Cape_Player_2.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_10_Cape_Player_1.Visibility = Visibility.Collapsed;
@@ -213,9 +212,7 @@ namespace CPV9.Windows
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_6_Cape_Player_1.Visibility = Visibility.Visible; };///6
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_6_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_7_Cape_Player_1.Visibility = Visibility.Visible; };///7
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_7_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_8_Cape_Player_1.Visibility = Visibility.Visible; };///8
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_8_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
+            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_7_Cape_Player_2.Visibility = Visibility.Visible; }; n = 8;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_9_Cape_Player_1.Visibility = Visibility.Visible; };///9
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_9_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_10_Cape_Player_1.Visibility = Visibility.Visible; };///10
@@ -409,8 +406,6 @@ namespace CPV9.Windows
             Label_Score_ObjS_6_Cape_Player_2.FontSize = 8 * _Taille;
             Label_Score_ObjS_7_Cape_Player_1.FontSize = 8 * _Taille;
             Label_Score_ObjS_7_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_8_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_8_Cape_Player_2.FontSize = 8 * _Taille;
             Label_Score_ObjS_9_Cape_Player_1.FontSize = 8 * _Taille;
             Label_Score_ObjS_9_Cape_Player_2.FontSize = 8 * _Taille;
             Label_Score_ObjS_10_Cape_Player_1.FontSize = 8 * _Taille;

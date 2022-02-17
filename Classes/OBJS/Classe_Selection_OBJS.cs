@@ -31,10 +31,7 @@
             {
                 text_Objectif = "7-Jusqu'au dernier (ca22) , ";
             }
-            if (Choix_ObjS == 8)
-            {
-                text_Objectif = "8-Premier sang , ";
-            }
+            
             if (Choix_ObjS == 9)
             {
                 text_Objectif = "9-Sur tous les fronts , ";
