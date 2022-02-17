@@ -42,7 +42,7 @@
             }
             if (Choix_ObjS == 11)
             {
-                text_Objectif = "11-Domination (v2) , ";
+                text_Objectif = "11-Emprise (ca22) , ";
             }
             if (Choix_ObjS == 12)
             {

@@ -116,6 +116,19 @@ namespace CPV9.Classes
                     l10 = "";
                     break;
 
+                case 11:
+                    l1 = " EMPRISE (ca22)";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "Marquez 3 points de victoire à la fin de votre tour si vous contrôlez 3 objectifs";
+                    l6 = "ou plus et que vous en contrôliez plus que votre adversaire.";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";
