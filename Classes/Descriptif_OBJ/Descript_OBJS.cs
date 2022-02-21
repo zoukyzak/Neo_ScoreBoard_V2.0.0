@@ -155,6 +155,19 @@ namespace CPV9.Classes
                     l10 = "4 points de victoire à la place si l'unité est entièrement dans la zone de déploiement adverse.";
                     break;
 
+                case 14:
+                    l1 = " LEVEZ HAUT LES ETENDARDS (action) (ca22)";
+                    l2 = "1 unité INFANTERIE ou plus de votre armée peut commencer cette action à la fin de votre phase de mouvement.";
+                    l3 = "Chaque unité de votre armée qui commence cette action doit être à portée d'un pion objectif";
+                    l4 = "différent sur lequel aucun de vos étendards n'a été levé.";
+                    l5 = "Une unité ne peut pas commencer cette action s'il y a la moindre unité ennemie (hors Aérodyne) à portée du même pion objectif.";
+                    l6 = "L'action est accomplie à la fin de votre phase de mouvement.";
+                    l7 = "si cette action est accomplie, on dit qu'un étendard de votre armée est levé sur ce pion objectif.";
+                    l8 = "L'étendard est retiré si votre adversaire contrôle le pion objectif au début de n'importe quelle phase.";
+                    l9 = "Vous marquez 1 point de victoire à la fin de chacune de vos phase de commandement et 1 point de victoire à la fin de la bataille,";
+                    l10 = "pour chaque pion objectif du champs de bataille sur lequel un de vos étendards a été levé";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";

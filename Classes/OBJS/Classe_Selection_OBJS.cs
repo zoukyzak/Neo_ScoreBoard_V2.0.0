@@ -54,7 +54,7 @@
             }
             if (Choix_ObjS == 14)
             {
-                text_Objectif = "14-Levez les étendards , ";
+                text_Objectif = "14-Levez les étendards (ca22) , ";
             }
             if (Choix_ObjS == 15)
             {
