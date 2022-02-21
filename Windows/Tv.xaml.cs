@@ -67,6 +67,7 @@ namespace CPV9.Windows
             Label_Score_ObjS_14_Cape_Player_2.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_15_Cape_Player_1.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_15_Cape_Player_2.Visibility = Visibility.Collapsed;
+
             Label_Score_ObjS_16_Cape_Player_1.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_16_Cape_Player_2.Visibility = Visibility.Collapsed;
             Label_Score_ObjS_17_Cape_Player_1.Visibility = Visibility.Collapsed;
@@ -231,6 +232,7 @@ namespace CPV9.Windows
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_14_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_15_Cape_Player_1.Visibility = Visibility.Visible; };///15
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_15_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
+
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_16_Cape_Player_1.Visibility = Visibility.Visible; };///16
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_16_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_17_Cape_Player_1.Visibility = Visibility.Visible; };///17

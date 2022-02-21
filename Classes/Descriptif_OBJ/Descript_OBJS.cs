@@ -168,6 +168,19 @@ namespace CPV9.Classes
                     l10 = "pour chaque pion objectif du champs de bataille sur lequel un de vos étendards a été levé";
                     break;
 
+                case 18:
+                    l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action) (ca22)";
+                    l2 = "1 unité INFANTERIE ou motard de votre armée peut entreprendre cette action à la fin de votre phase de mouvement";
+                    l3 = "si elle est entièrement dans un quart de table sans servocrâne récupéré par votre armée (voir ci-dessous)";
+                    l4 = "et à plus de 6 pouces de tout autre quart de table.";
+                    l5 = "Cette action est accomplie à la fin de votre tour, tant que l'unité qui tente de le faire est toujours dans le même ";
+                    l6 = "quart de table. Si cette action est accomplie, jetez un D6, en soustrayant 1 au résultat si l'unité qui as accompli l'action";
+                    l7 = "a le rôle tactique TROUPES :  si le résultat est inférieur ou égal au nombres de figurines actuel,";
+                    l8 = "votre armée a retrouvé un servocrâne dans ce quart de table et vous ajoutez 1 à votre compte de Données récupérées.";
+                    l9 = "A la fin de la bataille, marquez 4 points de victoire si votre compte de Données Récupérées est de 2, marquez 8 points";
+                    l10 = "de victoire s'il est de 3, ou 12 points de victoire s'il est de 4";
+                    break;
+
                 default:
                     l1 = "default";
                     l2 = "default";

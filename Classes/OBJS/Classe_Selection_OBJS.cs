@@ -58,7 +58,7 @@
             }
             if (Choix_ObjS == 15)
             {
-                text_Objectif = "15-Intérrogation mentale (v2), ";
+                text_Objectif = "15-Interrogation psychique (ca22) ";
             }
             if (Choix_ObjS == 16)
             {
@@ -70,7 +70,7 @@
             }
             if (Choix_ObjS == 18)
             {
-                text_Objectif = "18-Recevez les datas d'Octarius (v2) , ";
+                text_Objectif = "18-Données de Nachmund (ca22) , ";
             }
             if (Choix_ObjS == 19)
             {

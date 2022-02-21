@@ -963,13 +963,15 @@
             <Label x:Name="Label_Score_ObjS_9_Cape_Player_1" Content="9-SUR TOUS LES FRONTS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_10_Cape_Player_1" Content="10-DERRIERE LES LIGNES ENNEMIES (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_11_Cape_Player_1" Content="11-EMPRISE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjS_12_Cape_Player_1" Content="12-INSPECTER LE SIGNAL (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_13_Cape_Player_1" Content="13-BALISE DE TELEPORTATION (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_1" Content="14-LEVEZ HAUT LES ETANDARDS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_18_Cape_Player_1" Content="18-RECUPEREZ LES DONNEEDE NACHMUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+
+            <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-DONNEES DE NACHMOUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_1" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_17_Cape_Player_1" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_18_Cape_Player_1" Content="18-RECEVEZ LES DATAS D'OCTARIUS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_19_Cape_Player_1" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_1" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_502_Cape_Player_1" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1088,10 +1090,11 @@
             <Label x:Name="Label_Score_ObjS_12_Cape_Player_2" Content="12-INSPECTER LE SIGNAL (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_13_Cape_Player_2" Content="13-BALISE DE TELEPORTATION (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_2" Content="14-LEVEZ HAUT LES ETANDARDS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-INTERROGATION MENTALE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_18_Cape_Player_2" Content="18-RECUPEREZ LES DONNEEDE NACHMUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+
+            <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-DONNEES DE NACHMOUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_2" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_17_Cape_Player_2" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_18_Cape_Player_2" Content="18-RECEVEZ LES DATAS D'OCTARIUS (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_19_Cape_Player_2" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_2" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_502_Cape_Player_2" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1688,9 +1691,44 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_14F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
+                <StackPanel x:Name="StackPanel_ObjS_18_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
+                    <StackPanel x:Name="StackPanel_ObjS_18A_Att" Orientation="Horizontal" Margin="5,0">
+                        <Label x:Name="Label_Objectif_Sec_Att_18A" Content="18-RECUPEREZ LES DONNEES DE NACHMUND (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Button x:Name="Button_Caché_ObjS_18_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_18_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Visible_ObjS_18_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_18_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                    </StackPanel>
+                    <Label x:Name="Label_Objectif_Sec_Att_18B" Content="Action réalisée a + de 6 pouces des bords dans chaque quart de table, infanterie ou motard ," FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_18C" Content="Jetez 1D6 (-1 si troupe) , si 1D6 inférieur ou = Nbre de fig , +1 données" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <StackPanel x:Name="StackPanel_ObjS_18B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                        <Label x:Name="Label_Objectif_Sec_Att_18D" Content="Quart 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Att_A" VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18A" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_18E" Content="Quart 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Att_B" VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18B" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_18F" Content="Quart 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Att_C"  VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_18G" Content="Quart 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Att_D"  VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                    </StackPanel>
+                    <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                        <Label x:Name="Label_Objectif_Sec_Att_18H" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBlock x:Name="TextBlock_ObjS_18_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_18I" Content="/12" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                    </StackPanel>
+                </StackPanel>
+
+
                 <StackPanel x:Name="StackPanel_ObjS_15_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_15A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_15A" Content="15-INTERROGATION MENTALE (V2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_15A" Content="15-DONNEES DE NACHMOUND (ca22) " FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_15_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_15_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -1781,38 +1819,6 @@
                         <TextBlock x:Name="TextBlock_ObjS_17_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
                         <Label x:Name="Label_Objectif_Sec_Att_17E" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_17C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel x:Name="StackPanel_ObjS_18_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
-                    <StackPanel x:Name="StackPanel_ObjS_18A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_18A" Content="18-RECEVEZ LES DATAS D'OCTARIUS (v2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
-                        <Button x:Name="Button_Caché_ObjS_18_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_18_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                        <Button x:Name="Button_Visible_ObjS_18_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_18_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                    </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_18B" Content="Action réalisée a + de 6 pouces des bords dans chaque quart de table" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <StackPanel x:Name="StackPanel_ObjS_18B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_18C" Content="Quart 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Att_A" VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18A" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_18D" Content="Quart 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Att_B" VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18B" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_18E" Content="Quart 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Att_C"  VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_18F" Content="Quart 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Att_D"  VerticalAlignment="Center" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Att_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                    <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_18G" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBlock x:Name="TextBlock_ObjS_18_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_18H" Content="/12" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_19_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -4422,6 +4428,40 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_14F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
+                <StackPanel x:Name="StackPanel_ObjS_18_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
+                    <StackPanel x:Name="StackPanel_ObjS_18A_Def" Orientation="Horizontal" Margin="5,0">
+                        <Label x:Name="Label_Objectif_Sec_Def_18A" Content="18-RECUPEREZ LES DONNEES DE NACHMUND (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Button x:Name="Button_Caché_ObjS_18_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_18_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Visible_ObjS_18_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_18_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                    </StackPanel>
+                    <Label x:Name="Label_Objectif_Sec_Def_18B" Content="Action réalisée a + de 6 pouces des bords dans chaque quart de table, infanterie ou motard ," FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_18C" Content="Jetez 1D6 (-1 si troupe) , si 1D6 inférieur ou = Nbre de fig , +1 données" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <StackPanel x:Name="StackPanel_ObjS_18B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                        <Label x:Name="Label_Objectif_Sec_Def_18D" Content="Quart 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Def_A" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18A" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_18E" Content="Quart 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Def_B" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18B" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_18F" Content="Quart 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Def_C" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18C" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_18G" Content="Quart 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_18_Def_D" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18D" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
+                    </StackPanel>
+                    <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                        <Label x:Name="Label_Objectif_Sec_Def_18H" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBlock x:Name="TextBlock_ObjS_18_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_18I" Content="/12" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                    </StackPanel>
+                </StackPanel>
+
                 <StackPanel x:Name="StackPanel_ObjS_15_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_15A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_15A" Content="15-INTERROGATION MENTALE (V2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -4514,38 +4554,6 @@
                         <TextBlock x:Name="TextBlock_ObjS_17_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
                         <Label x:Name="Label_Objectif_Sec_Def_17E" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_17C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                </StackPanel>
-                <StackPanel x:Name="StackPanel_ObjS_18_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
-                    <StackPanel x:Name="StackPanel_ObjS_18A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_18A" Content="18-RECEVEZ LES DATAS D'OCTARIUS (v2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
-                        <Button x:Name="Button_Caché_ObjS_18_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_18_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                        <Button x:Name="Button_Visible_ObjS_18_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_18_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-                            <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Button>
-                    </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_18B" Content="Action réalisée a + de 6 pouces des bords dans chaque quart de table" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <StackPanel x:Name="StackPanel_ObjS_18B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_18C" Content="Quart 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Def_A" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18A" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_18D" Content="Quart 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Def_B" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18B" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_18E" Content="Quart 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Def_C" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18C" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_18F" Content="Quart 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <CheckBox x:Name="CheckBox_ObjS_18_Def_D" FlowDirection="LeftToRight" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="15" Height="15" FontFamily="Arial Black" FontSize="10" Click="CheckBox_ObjS_18_Def_Click"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18D" Width="5" Margin="5,0,5,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-                    <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_18G" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBlock x:Name="TextBlock_ObjS_18_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_18H" Content="/12" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_19_Def" Height="Auto" Orientation="Vertical" Margin="0,-10" Visibility="Collapsed">
@@ -6677,7 +6685,7 @@
                     <Button x:Name="Button_Obj_Sec_Att_12" Content="12 - INSPECTER LE SIGNAL (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_12_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_13" Content="13 - BALISES DE TELEPORTATION (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_13_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_14" Content="14 - LEVEZ HAUT LES ETENDARDS (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_14_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Att_18" Content="18 - RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_18_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Att_18" Content="18 - DONNEES DE NATCHMUND (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_18_Click"/>
                     <Button x:Name="Button_Obj_Codex_Necron_103_Att_1" Content="Necron 103 - MACHINES ANTIQUES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkViolet" Foreground="White" Click="Button_Obj_Codex_Necron_103_Att_1_Click"/>
                     <Button x:Name="Button_Obj_Codex_Deathwatch_119_Att" Content="Deathwatch 119 - PARALYSER LA PLACE FORTE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_Deathwatch_119_Att_Click"/>
                     <Button x:Name="Button_Obj_Codex_DG_127_Att" Content="Death Guard 127 - REPANDRE LES MALADIES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkOliveGreen" Foreground="White" Click="Button_Obj_Codex_DG_127_Att_Click"/>
@@ -6879,7 +6887,8 @@
                     <Button x:Name="Button_Obj_Sec_Def_12" Content="12 - INSPECTER LE SIGNAL (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_12_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_13" Content="13 - BALISE DE TELEPORTATION (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_13_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_14" Content="14 - LEVEZ HAUT LES ETENDARDS (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_14_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_18" Content="18 - RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_18_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_18" Content="18 -  DONNEES DE NATCHMUND (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_18_Click"/>
+                    
                     <Button x:Name="Button_Obj_Codex_Necron_103_Def_1" Content="Necron 103 - MACHINES ANTIQUES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkViolet" Foreground="White" Visibility="Collapsed" Click="Button_Obj_Codex_Necron_103_Def_1_Click"/>
                     <Button x:Name="Button_Obj_Codex_Deathwatch_119_Def" Content="Deathwatch 119 - PARALYSER LA PLACE FORTE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_Deathwatch_119_Def_Click"/>
                     <Button x:Name="Button_Obj_Codex_DG_127_Def" Content="Death Guard 127 - REPANDRE LES MALADIES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkOliveGreen" Foreground="White" Click="Button_Obj_Codex_DG_127_Def_Click"/>
@@ -7065,18 +7074,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_Sec_17_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_17_Att_oui_Click"/>
                 <Button x:Name="Button_Obj_Sec_17_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_17_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Sec_18_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_18_Att_1" Content="RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_18_Att_2" Content="Marquez 12 pts de victoire si vous réalisez cette Action a l aide d'une unité infanterie (Hors personnage)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Att_3" Content="Votre armée doit accomplir l action suivante : RECEVEVEZ LES DATAS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Att_4" Content="cette action dois etre réalisé 1 fois dans chaque quart de table et a plus de 6 pouces des bords." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Att_5" Content="Prenez 4 pts pour 2 quarts , 8 pts pour 3 quarts et 12 pts pour les 4 quarts de table" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Att_6" Content="cette action, débutera a la fin de  votre phase de mouvement et se terminera a la fin de votre tour." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_18_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_18_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_18_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_18_Att_non_Click"/>
             </StackPanel>
         </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_19_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
@@ -7675,18 +7672,6 @@
                 <Button x:Name="Button_Obj_Sec_17_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_17_Def_non_Click"/>
             </StackPanel>
 
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Sec_18_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_18_Def_1" Content="RECEVEZ LES DATAS D'OCTARIUS (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_18_Def_2" Content="Marquez 12 pts de victoire si vous réalisez cette Action a l aide d'une unité infanterie (Hors personnage)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Def_3" Content="Votre armée doit accomplir l action suivante : RECEVEVEZ LES DATAS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Def_4" Content="cette action dois etre réalisé 1 fois dans chaque quart de table et a plus de 6 pouces des bords." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Def_5" Content="Prenez 4 pts pour 2 quarts , 8 pts pour 3 quarts et 12 pts pour les 4 quarts de table" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_18_Def_6" Content="cette action, débutera a la fin de  votre phase de mouvement et se terminera a la fin de votre tour." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_18_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_18_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_18_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_18_Def_non_Click"/>
-            </StackPanel>
         </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_19_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_19_Def_1" Content="PERCER LE VOILE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>

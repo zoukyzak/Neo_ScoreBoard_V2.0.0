@@ -9058,8 +9058,8 @@ namespace CPV9
                 if (Select_Objectif >= 1 && Select_Objectif <= 3){ StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden; };                
                 if (Select_Objectif >= 5 && Select_Objectif <= 7){ StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden; };                
                 if (Select_Objectif >= 9 && Select_Objectif <= 11){ StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 12 && Select_Objectif <= 15){ StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 16 && Select_Objectif <= 19){ StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18) { StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19) { StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden; };                
             }
 
             if (Select_Camps == "Def")
@@ -9069,8 +9069,8 @@ namespace CPV9
                 if (Select_Objectif >= 1 && Select_Objectif <= 3) { StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden; };
                 if (Select_Objectif >= 5 && Select_Objectif <= 7) { StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden; };
                 if (Select_Objectif >=9 && Select_Objectif <= 11) { StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >= 12 && Select_Objectif <= 15) { StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >= 16 && Select_Objectif <= 19) { StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden; };
+                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18) { StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden; };
+                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19) { StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden; };
             }
             
         }
@@ -9152,6 +9152,11 @@ namespace CPV9
         private void Button_Obj_Sec_Att_14_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(14, "Att");
+        }
+
+        private void Button_Obj_Sec_Att_18_Click(object sender, RoutedEventArgs e)
+        {
+            Affich_Descript_OBJ(18, "Att");
         }
 
         private void Button_Obj_Sec_Att_15_Click(object sender, RoutedEventArgs e)
@@ -9246,37 +9251,6 @@ namespace CPV9
             StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
         }
 
-        private void Button_Obj_Sec_Att_18_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_18_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_18_Att_1.FontSize = 2.5 * x;
-            Label_OBJ_SEC_18_Att_2.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Att_3.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Att_4.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Att_5.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Att_6.FontSize = 1.5 * x;
-            Button_Obj_Sec_18_Att_oui.FontSize = 1.5 * x;
-            Button_Obj_Sec_18_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_18_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_18_Att_non.FontSize = 2 * x;
-            Button_Obj_Sec_18_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_18_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_18_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_18_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 18;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_Sec_18_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_18_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
 
         private void Button_Obj_Sec_Att_19_Click(object sender, RoutedEventArgs e)
         {
@@ -9373,6 +9347,10 @@ namespace CPV9
         {
             Affich_Descript_OBJ(14, "Def");
         }
+        private void Button_Obj_Sec_Def_18_Click(object sender, RoutedEventArgs e)
+        {
+            Affich_Descript_OBJ(18, "Def");
+        }
 
         private void Button_Obj_Sec_Def_15_Click(object sender, RoutedEventArgs e)
         {
@@ -9466,37 +9444,6 @@ namespace CPV9
             StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
         }
 
-        private void Button_Obj_Sec_Def_18_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_18_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_18_Def_1.FontSize = 2.5 * x;
-            Label_OBJ_SEC_18_Def_2.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Def_3.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Def_4.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Def_5.FontSize = 1.5 * x;
-            Label_OBJ_SEC_18_Def_6.FontSize = 1.5 * x;
-            Button_Obj_Sec_18_Def_oui.FontSize = 2 * x;
-            Button_Obj_Sec_18_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_18_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_18_Def_non.FontSize = 2 * x;
-            Button_Obj_Sec_18_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_18_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_18_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_18_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 18;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_Sec_18_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_18_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
 
         private void Button_Obj_Sec_Def_19_Click(object sender, RoutedEventArgs e)
         {
@@ -24549,8 +24496,9 @@ namespace CPV9
             Label_Objectif_Sec_Att_18D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_18E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_18F.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_18G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_18G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_18H.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_18I.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_18_Att.FontSize = 1.2 * Taille_texte * Multiple;
             CheckBox_ObjS_18_Att_A.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_18_Att_B.FontSize = Taille_texte * Multiple;
@@ -26684,8 +26632,9 @@ namespace CPV9
             Label_Objectif_Sec_Def_18D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_18E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_18F.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_18G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_18G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_18H.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_18I.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_18_Def.FontSize = 1.2 * Taille_texte * Multiple;
             CheckBox_ObjS_18_Def_A.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_18_Def_B.FontSize = Taille_texte * Multiple;
@@ -28263,14 +28212,17 @@ namespace CPV9
             Label_Score_ObjS_9_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_10_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_11_Cape_Player_1.FontSize = z * x;
+
             Label_Score_ObjS_12_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_13_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_14_Cape_Player_1.FontSize = z * x;
+            Label_Score_ObjS_18_Cape_Player_1.FontSize = z * x;
+
             Label_Score_ObjS_15_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_16_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_17_Cape_Player_1.FontSize = z * x;
-            Label_Score_ObjS_18_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_19_Cape_Player_1.FontSize = z * x;
+
             Label_Score_ObjC_Necron_100_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjC_Necron_101_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjC_Necron_102_Cape_Player_1.FontSize = z * x;
@@ -28339,14 +28291,17 @@ namespace CPV9
             Label_Score_ObjS_9_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_10_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_11_Cape_Player_2.FontSize = z * x;
+
             Label_Score_ObjS_12_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_13_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_14_Cape_Player_2.FontSize = z * x;
+            Label_Score_ObjS_18_Cape_Player_2.FontSize = z * x;
+
             Label_Score_ObjS_15_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_16_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_17_Cape_Player_2.FontSize = z * x;
-            Label_Score_ObjS_18_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjS_19_Cape_Player_2.FontSize = z * x;
+
             Label_Score_ObjC_Necron_100_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjC_Necron_101_Cape_Player_2.FontSize = z * x;
             Label_Score_ObjC_Necron_102_Cape_Player_2.FontSize = z * x;
@@ -29564,6 +29519,7 @@ namespace CPV9
 
         #endregion
 
+
         #region Oeil_OBJS_12 Att & Def
         private void Affichage_Button_oeil_ObjS_12_Att()
         {
@@ -29881,6 +29837,103 @@ namespace CPV9
 
         #endregion
 
+        #region Oeil_OBJS_18 Att & Def
+        private void Affichage_Button_oeil_ObjS_18_Att()
+        {
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
+            Button_Caché_ObjS_18_Att.Width = x;
+            Button_Caché_ObjS_18_Att.Height = x;
+            Button_Visible_ObjS_18_Att.Width = x;
+            Button_Visible_ObjS_18_Att.Height = x;
+        }
+        private void Button_Caché_ObjS_18_Att_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_18_Att();
+            StackPanel_ObjS_18B_Att.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Att_18B.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Att_18C.Visibility = Visibility.Collapsed;
+            Button_Caché_ObjS_18_Att.Visibility = Visibility.Collapsed;
+            Button_Visible_ObjS_18_Att.Visibility = Visibility.Visible;
+            Oeil_OBJS_18_Att = true;
+        }
+        private void Button_Visible_ObjS_18_Att_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_18_Att();
+            StackPanel_ObjS_18B_Att.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Att_18B.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Att_18C.Visibility = Visibility.Visible;
+            Button_Caché_ObjS_18_Att.Visibility = Visibility.Visible;
+            Button_Visible_ObjS_18_Att.Visibility = Visibility.Collapsed;
+            Oeil_OBJS_18_Att = false;
+        }
+        private void oeil_OBJS_18_Att()
+        {
+            Affichage_Button_oeil_ObjS_18_Att();
+            if (Oeil_OBJS_18_Att == true)
+            {
+                StackPanel_ObjS_18B_Att.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_18B.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_18C.Visibility = Visibility.Collapsed;
+                Button_Visible_ObjS_18_Att.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                StackPanel_ObjS_18B_Att.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_18B.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_18C.Visibility = Visibility.Visible;
+                Button_Caché_ObjS_18_Att.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Affichage_Button_oeil_18_Def()
+        {
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
+            Button_Caché_ObjS_18_Def.Width = x;
+            Button_Caché_ObjS_18_Def.Height = x;
+            Button_Visible_ObjS_18_Def.Width = x;
+            Button_Visible_ObjS_18_Def.Height = x;
+        }
+        private void Button_Caché_ObjS_18_Def_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_18_Def();
+            StackPanel_ObjS_18B_Def.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Def_18B.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Def_18C.Visibility = Visibility.Collapsed;
+            Button_Caché_ObjS_18_Def.Visibility = Visibility.Collapsed;
+            Button_Visible_ObjS_18_Def.Visibility = Visibility.Visible;
+            Oeil_OBJS_18_Def = true;
+        }
+        private void Button_Visible_ObjS_18_Def_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_18_Def();
+            StackPanel_ObjS_18B_Def.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Def_18B.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Def_18C.Visibility = Visibility.Visible;
+            Button_Caché_ObjS_18_Def.Visibility = Visibility.Visible;
+            Button_Visible_ObjS_18_Def.Visibility = Visibility.Collapsed;
+            Oeil_OBJS_18_Def = false;
+        }
+        private void oeil_OBJS_18_Def()
+        {
+            Affichage_Button_oeil_18_Def();
+            if (Oeil_OBJS_18_Def == true)
+            {
+                StackPanel_ObjS_18B_Def.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_18B.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_18C.Visibility = Visibility.Collapsed;
+                Button_Visible_ObjS_18_Def.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                StackPanel_ObjS_18B_Def.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_18B.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_18C.Visibility = Visibility.Visible;
+                Button_Caché_ObjS_18_Def.Visibility = Visibility.Visible;
+            }
+        }
+        #endregion
+
+
         #region Oeil_OBJS_15 Att & Def
         private void Affichage_Button_oeil_ObjS_15_Att()
         {
@@ -30167,94 +30220,6 @@ namespace CPV9
         }
         #endregion
 
-        #region Oeil_OBJS_18 Att & Def
-        private void Affichage_Button_oeil_ObjS_18_Att()
-        {
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
-            Button_Caché_ObjS_18_Att.Width = x;
-            Button_Caché_ObjS_18_Att.Height = x;
-            Button_Visible_ObjS_18_Att.Width = x;
-            Button_Visible_ObjS_18_Att.Height = x;
-        }
-        private void Button_Caché_ObjS_18_Att_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_ObjS_18_Att();
-            StackPanel_ObjS_18B_Att.Visibility = Visibility.Collapsed;
-            Label_Objectif_Sec_Att_18B.Visibility = Visibility.Collapsed;
-            Button_Caché_ObjS_18_Att.Visibility = Visibility.Collapsed;
-            Button_Visible_ObjS_18_Att.Visibility = Visibility.Visible;
-            Oeil_OBJS_18_Att = true;
-        }
-        private void Button_Visible_ObjS_18_Att_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_ObjS_18_Att();
-            StackPanel_ObjS_18B_Att.Visibility = Visibility.Visible;
-            Label_Objectif_Sec_Att_18B.Visibility = Visibility.Visible;
-            Button_Caché_ObjS_18_Att.Visibility = Visibility.Visible;
-            Button_Visible_ObjS_18_Att.Visibility = Visibility.Collapsed;
-            Oeil_OBJS_18_Att = false;
-        }
-        private void oeil_OBJS_18_Att()
-        {
-            Affichage_Button_oeil_ObjS_18_Att();
-            if (Oeil_OBJS_18_Att == true)
-            {
-                StackPanel_ObjS_18B_Att.Visibility = Visibility.Collapsed;
-                Label_Objectif_Sec_Att_18B.Visibility = Visibility.Collapsed;
-                Button_Visible_ObjS_18_Att.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                StackPanel_ObjS_18B_Att.Visibility = Visibility.Visible;
-                Label_Objectif_Sec_Att_18B.Visibility = Visibility.Visible;
-                Button_Caché_ObjS_18_Att.Visibility = Visibility.Visible;
-            }
-        }
-
-        private void Affichage_Button_oeil_18_Def()
-        {
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
-            Button_Caché_ObjS_18_Def.Width = x;
-            Button_Caché_ObjS_18_Def.Height = x;
-            Button_Visible_ObjS_18_Def.Width = x;
-            Button_Visible_ObjS_18_Def.Height = x;
-        }
-        private void Button_Caché_ObjS_18_Def_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_18_Def();
-            StackPanel_ObjS_18B_Def.Visibility = Visibility.Collapsed;
-            Label_Objectif_Sec_Def_18B.Visibility = Visibility.Collapsed;
-            Button_Caché_ObjS_18_Def.Visibility = Visibility.Collapsed;
-            Button_Visible_ObjS_18_Def.Visibility = Visibility.Visible;
-            Oeil_OBJS_18_Def = true;
-        }
-        private void Button_Visible_ObjS_18_Def_Click(object sender, RoutedEventArgs e)
-        {
-            Affichage_Button_oeil_18_Def();
-            StackPanel_ObjS_18B_Def.Visibility = Visibility.Visible;
-            Label_Objectif_Sec_Def_18B.Visibility = Visibility.Visible;
-            Button_Caché_ObjS_18_Def.Visibility = Visibility.Visible;
-            Button_Visible_ObjS_18_Def.Visibility = Visibility.Collapsed;
-            Oeil_OBJS_18_Def = false;
-        }
-        private void oeil_OBJS_18_Def()
-        {
-            Affichage_Button_oeil_18_Def();
-            if (Oeil_OBJS_18_Def == true)
-            {
-                StackPanel_ObjS_18B_Def.Visibility = Visibility.Collapsed;
-                Label_Objectif_Sec_Def_18B.Visibility = Visibility.Collapsed;
-                Button_Visible_ObjS_18_Def.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                StackPanel_ObjS_18B_Def.Visibility = Visibility.Visible;
-                Label_Objectif_Sec_Def_18B.Visibility = Visibility.Visible;
-                Button_Caché_ObjS_18_Def.Visibility = Visibility.Visible;
-            }
-        }
-        #endregion
-
         #region Oeil_OBJS_19 Att & Def
         private void Affichage_Button_oeil_ObjS_19_Att()
         {
@@ -30359,6 +30324,7 @@ namespace CPV9
         }
 
         #endregion
+
 
         #region Oeil_OBJS_100 Att & Def
         private void Affichage_Button_oeil_ObjS_100_Att()
