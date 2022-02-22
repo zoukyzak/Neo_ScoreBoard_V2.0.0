@@ -221,17 +221,30 @@ namespace CPV9.Classes
                     l10 = "de victoire s'il est de 3, ou 12 points de victoire s'il est de 4";
                     break;
 
+                case 19:
+                    l1 = " PERCER LE VOILE (ca22)";
+                    l2 = "Marquez 8 points de victoire à la fin de la bataille si une ou plusieurs unités de votre armée ont accompli avec succès";
+                    l3 = "l'action psychique suivante 2 fois ou plus lors de la bataille, ou 15 points de victoire à la fin de la bataille";
+                    l4 = "si une ou plusieurs unités de votre armée ont accompli avec succès l'action psychique suivante 4 fois lors de la bataille.";
+                    l5 = "";
+                    l6 = "vVous ne pouvez accomplir cet objectif qu'une fois par tour.";
+                    l7 = "";
+                    l8 = "PERCER LE VOILE (action psychique - charge warp 4)";
+                    l9 = "1 unité PERSONNAGE PSYKER de votre armée peu tenter d'accomplir cette action psychique durant votre phase psychique";
+                    l10 = "s'il est à 6 pouces du bord de table de votre adversaire et a plus de 6 pouces de toute figurine ennemie.";
+                    break;
+
                 default:
-                    l1 = "default";
-                    l2 = "default";
-                    l3 = "default";
-                    l4 = "default";
-                    l5 = "default";
-                    l6 = "default";
-                    l7 = "default";
-                    l8 = "default";
-                    l9 = "default";
-                    l10 = "default";
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "PAS DE DESCRIPTION DISPONNIBLE !";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
                     break;
             }
         }

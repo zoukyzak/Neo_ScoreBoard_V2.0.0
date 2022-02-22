@@ -74,7 +74,7 @@
             }
             if (Choix_ObjS == 19)
             {
-                text_Objectif = "19-Percer le voile , ";
+                text_Objectif = "19-Percer le voile (ca22) , ";
             }
             if (Choix_ObjS == 100)
             {
