@@ -969,10 +969,11 @@
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_1" Content="14-LEVEZ HAUT LES ETANDARDS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_18_Cape_Player_1" Content="18-RECUPEREZ LES DONNEE DE NACHMUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
 
-            <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-DONNEES DE NACHMOUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-INTERROGATION PSYCHIQUE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_1" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_17_Cape_Player_1" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_19_Cape_Player_1" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_1" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_502_Cape_Player_1" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_503_Cape_Player_1" Content="503-ENCERCLER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1092,10 +1093,11 @@
             <Label x:Name="Label_Score_ObjS_14_Cape_Player_2" Content="14-LEVEZ HAUT LES ETANDARDS (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_18_Cape_Player_2" Content="18-RECUPEREZ LES DONNEE DE NACHMUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
 
-            <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-DONNEES DE NACHMOUND (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-INTERROGATION PSYCHIQUE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_2" Content="16-RITUEL PSYCHIQUE (v2) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_17_Cape_Player_2" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_19_Cape_Player_2" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_2" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_502_Cape_Player_2" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_503_Cape_Player_2" Content="503-ENCERCLER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1715,11 +1717,11 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_18E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# 5-Art du Warp-->
 
                 <StackPanel x:Name="StackPanel_ObjS_15_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_15A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_15A" Content="15-DONNEES DE NACHMOUND (ca22) " FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_15A" Content="15-INTERROGATION PSYCHIQUE (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_15_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_15_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -4442,10 +4444,10 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_18E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# 5-Art du Warp -->
                 <StackPanel x:Name="StackPanel_ObjS_15_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_15A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_15A" Content="15-INTERROGATION MENTALE (V2)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_15A" Content="15-INTERROGATION PSYCHIQUE (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_15_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_15_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6675,7 +6677,7 @@
                 <StackPanel x:Name="StackPanel_Obj_Sec_Att_5" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="Auto" Visibility="Visible">
                     <Image x:Name="Image_ArtDuWarp_Att" Source="/Images/ArtDuWarp.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
                     
-                    <Button x:Name="Button_Obj_Sec_Att_15" Content="15 - INTERROGATION MENTALE (V2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_15_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Att_15" Content="15 - INTERROGATION PSYCHIQUE (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_15_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_16" Content="16 - RITUEL PSYCHIQUE (V2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_16_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_17" Content="17 - ABHORREZ LE SORCIER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_17_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_19" Content="19 - PERCER LE VOILE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_19_Click"/>
@@ -6811,8 +6813,7 @@
                 </Label.Foreground>
             </Label>
             <StackPanel Height="Auto" Orientation="Horizontal">
-                <StackPanel x:Name="StackPanel_Obj_Sec_Def_1" HorizontalAlignment="Left" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
-                    <Label x:Name="Label_Eleminez_l_Ennemi_Def" Content="ELIMINEZ L ENNEMI" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="3" Background="{x:Null}" Foreground="White" />
+                <StackPanel x:Name="StackPanel_Obj_Sec_Def_1" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
                     <Image x:Name="Image_EleminezLEnnemi_Def" Source="/Images/EiminezLEnnemi.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
 
 
@@ -6878,7 +6879,7 @@
                 <StackPanel x:Name="StackPanel_Obj_Sec_Def_5" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
                     <Image x:Name="Image_ArtDuWarp_Def" Source="/Images/ArtDuWarp.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
                     
-                    <Button x:Name="Button_Obj_Sec_Def_15" Content="15 - INTERROGATION MENTALE (V2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_15_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_15" Content="15 - INTERROGATION PSYCHIQUE (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_15_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_16" Content="16 - RITUEL PSYCHIQUE (V2)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_16_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_17" Content="17 - ABHORREZ LE SORCIER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_17_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_19" Content="19 - PERCER LE VOILE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_19_Click"/>
@@ -7025,17 +7026,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_15_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_15_Att_1" Content="INTERROGATION MENTALE (V2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_15_Att_2" Content="Marquez 3 pts de victoire chaque fois qu'une unité personnage psyker" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_15_Att_3" Content=" de votre armée accomplit l action suivante : INTERROGATION MENTALE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_15_Att_4" Content="réaliser une action psychique (charge warp 4) à votre phase spy" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_15_Att_5" Content="à moins de 24 pouces d un personnage ennemies." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_15_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_15_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_15_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_15_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_16_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_16_Att_1" Content="RITUEL PSYCHIQUE (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_16_Att_2" Content="Marquez jusqu'a 12 pts de victoire a la fin de la bataille si vous accomplissez 3 fois l'action : RITUEL PSYCHIQUE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7621,17 +7611,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_15_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_15_Def_1" Content="INTERROGATION MENTALE (V2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_15_Def_2" Content="Marquez 3 pts de victoire chaque fois qu'une unité personnage psyker" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_15_Def_3" Content=" de votre armée accomplit l action suivante : INTERROGATION MENTALE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_15_Def_4" Content="réaliser une action psychique (charge warp 4) à votre phase psy" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_15_Def_5" Content="à moins de 24 pouces d un personnage ennemies." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_15_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_15_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_15_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_15_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_16_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_16_Def_1" Content="RITUEL PSYCHIQUE (v2)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_16_Def_2" Content="Marquez jusqu'a 12 pts de victoire a la fin de la bataille si vous accomplissez 3 fois l'action : RITUEL PSYCHIQUE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
