@@ -13,7 +13,7 @@ namespace CPV9.Classes
             switch (OBJ)
             {
                 case 1:
-                    l1 = " ASSASSINAT (ca22)";
+                    l1 = " ASSASSINAT";
                     l2 = "";
                     l3 = "";
                     l4 = "Score 3 points de victoire à la fin de la bataille";
@@ -26,7 +26,7 @@ namespace CPV9.Classes
                     break;
 
                 case 2:
-                    l1 = " ABBATEZ-LE (ca22)";
+                    l1 = " ABBATEZ-LE";
                     l2 = "";
                     l3 = "Score 1 points de victoire à la fin de la bataille pour chaque figurine ennemi,";
                     l4 = "véhicule ou monstre avec une charactéristique de PV de 9 ou moins qui est détruite.";
@@ -39,7 +39,7 @@ namespace CPV9.Classes
                     break;
 
                 case 3:
-                    l1 = " TUEUR DE TITANS (ca22)";
+                    l1 = " TUEUR DE TITANS";
                     l2 = "";
                     l3 = "Score 4 points de victoire à la fin de la bataille si,";
                     l4 = "une figurine Titanesque ennemi est détruite.";
@@ -52,7 +52,7 @@ namespace CPV9.Classes
                     break;
 
                 case 5:
-                    l1 = " BROYEZ-LES (ca22)";
+                    l1 = " BROYEZ-LES";
                     l2 = "Additionnez le nombres de points de vie des figurines ennemi détruite durant la bataille.";
                     l3 = "Une unitée réssuscité et de nouveau détruite , sera comptabilisé une seconde fois";
                     l4 = "";
@@ -65,7 +65,7 @@ namespace CPV9.Classes
                     break;
 
                 case 6:
-                    l1 = " PAS DE PRISONNIER (ca22)";
+                    l1 = " PAS DE PRISONNIER";
                     l2 = "";
                     l3 = "";
                     l4 = "Marquez 3 pts de victoire a la fin du round de bataille";
@@ -78,7 +78,7 @@ namespace CPV9.Classes
                     break;
 
                 case 7:
-                    l1 = " J'USQU'AU DERNIER (ca22)";
+                    l1 = " J'USQU'AU DERNIER";
                     l2 = "";
                     l3 = "Identifié avant la bataille vos trois unités qui ont leurs coups en points les plus élévés.";
                     l4 = " les unitée avec le rôle tactique fortification exclues ";
@@ -91,7 +91,7 @@ namespace CPV9.Classes
                     break;
 
                 case 9:
-                    l1 = " SUR TOUS LES FRONT (ca22)";
+                    l1 = " SUR TOUS LES FRONT";
                     l2 = "";
                     l3 = "Marquez 2 points de victoire à la fin de votre tour si vous avez une unité éligible ou plus";
                     l4 = "de votre armée entiérement dans les 3/4 de tables différents et a plus de 6 pouces du centre.";
@@ -104,7 +104,7 @@ namespace CPV9.Classes
                     break;
 
                 case 10:
-                    l1 = " DERRIERE LES LIGNES ENNEMIES (ca22)";
+                    l1 = " DERRIERE LES LIGNES ENNEMIES";
                     l2 = "";
                     l3 = "";
                     l4 = "Marquez 2 points de victoire à la fin de votre tour si 1 unité de votre armée (hors Aérodyne)";
@@ -117,7 +117,7 @@ namespace CPV9.Classes
                     break;
 
                 case 11:
-                    l1 = " EMPRISE (ca22)";
+                    l1 = " EMPRISE";
                     l2 = "";
                     l3 = "";
                     l4 = "";
@@ -130,7 +130,7 @@ namespace CPV9.Classes
                     break;
 
                 case 12:
-                    l1 = " INSPECTER LE SIGNAL (ca22)";
+                    l1 = " INSPECTER LE SIGNAL";
                     l2 = "";
                     l3 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action suivante :";
                     l4 = "";
@@ -143,7 +143,7 @@ namespace CPV9.Classes
                     break;
 
                 case 13:
-                    l1 = " DEPLOYEZ LES BALISES DE TELEPORTATION (ca22)";
+                    l1 = " DEPLOYEZ LES BALISES DE TELEPORTATION";
                     l2 = "Si vous choisissez cette objectif , alors les unités de votre armée peuvent accomplir l'action suivante:";
                     l3 = "DEPLOYEZ UNE BALISE DE TELEPORTATION (action) :";
                     l4 = "1 unité d'infanterie ou motard peut commencer cette action à la fin de votre phase de mouvement si elle est";
@@ -156,7 +156,7 @@ namespace CPV9.Classes
                     break;
 
                 case 14:
-                    l1 = " LEVEZ HAUT LES ETENDARDS (action) (ca22)";
+                    l1 = " LEVEZ HAUT LES ETENDARDS (action)";
                     l2 = "1 unité INFANTERIE ou plus de votre armée peut commencer cette action à la fin de votre phase de mouvement.";
                     l3 = "Chaque unité de votre armée qui commence cette action doit être à portée d'un pion objectif";
                     l4 = "différent sur lequel aucun de vos étendards n'a été levé.";
@@ -169,7 +169,7 @@ namespace CPV9.Classes
                     break;
 
                 case 15:
-                    l1 = " INTERROGATION PSYCHIQUE (action) (ca22)";
+                    l1 = " INTERROGATION PSYCHIQUE (action)";
                     l2 = "";
                     l3 = "Marquez 3 points de victoire chaque fois que vous accomplissez avec succès l'action psychique suivante:";
                     l4 = "";
@@ -182,7 +182,7 @@ namespace CPV9.Classes
                     break;
 
                 case 16:
-                    l1 = " RITUEL DU WARP (action) (ca22)";
+                    l1 = " RITUEL DU WARP (action)";
                     l2 = "Si vous choississez cet objectif , tenez un compte de rituel;";
                     l3 = "ajouter 1 a ce compte chaque fois qu'une unité de votre armée accomplit avec succès l'action psychique suivante:";
                     l4 = "";
@@ -195,7 +195,7 @@ namespace CPV9.Classes
                     break;
 
                 case 17:
-                    l1 = " ABHORREZ LE SORCIER (ca22)";
+                    l1 = " ABHORREZ LE SORCIER";
                     l2 = "";
                     l3 = "";
                     l4 = "Vous ne pouvez pas choisir cet objectif secondaire si votre armée inclut la moindre unité Psyker.";
@@ -209,7 +209,7 @@ namespace CPV9.Classes
 
 
                 case 18:
-                    l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action) (ca22)";
+                    l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action)";
                     l2 = "1 unité INFANTERIE ou motard de votre armée peut entreprendre cette action à la fin de votre phase de mouvement";
                     l3 = "si elle est entièrement dans un quart de table sans servocrâne récupéré par votre armée (voir ci-dessous)";
                     l4 = "et à plus de 6 pouces de tout autre quart de table.";
@@ -222,7 +222,7 @@ namespace CPV9.Classes
                     break;
 
                 case 19:
-                    l1 = " PERCER LE VOILE (ca22)";
+                    l1 = " PERCER LE VOILE";
                     l2 = "Marquez 8 points de victoire à la fin de la bataille si une ou plusieurs unités de votre armée ont accompli avec succès";
                     l3 = "l'action psychique suivante 2 fois ou plus lors de la bataille, ou 15 points de victoire à la fin de la bataille";
                     l4 = "si une ou plusieurs unités de votre armée ont accompli avec succès l'action psychique suivante 4 fois lors de la bataille.";

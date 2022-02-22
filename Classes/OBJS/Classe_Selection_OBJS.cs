@@ -21,60 +21,60 @@
             
             if (Choix_ObjS == 5)
             {
-                text_Objectif = "5-Pas de prisonnier (ca22), ";
+                text_Objectif = "5-Pas de prisonnier , ";
             }
             if (Choix_ObjS == 6)
             {
-                text_Objectif = "6-Broyez-les (ca22) , ";
+                text_Objectif = "6-Broyez-les , ";
             }
             if (Choix_ObjS == 7)
             {
-                text_Objectif = "7-Jusqu'au dernier (ca22) , ";
+                text_Objectif = "7-Jusqu'au dernier , ";
             }
             
             if (Choix_ObjS == 9)
             {
-                text_Objectif = "9-Sur tous les fronts (ca22) , ";
+                text_Objectif = "9-Sur tous les fronts , ";
             }
             if (Choix_ObjS == 10)
             {
-                text_Objectif = "10-Derrière les lignes ennemies (ca22) , ";
+                text_Objectif = "10-Derrière les lignes ennemies , ";
             }
             if (Choix_ObjS == 11)
             {
-                text_Objectif = "11-Emprise (ca22) , ";
+                text_Objectif = "11-Emprise , ";
             }
             if (Choix_ObjS == 12)
             {
-                text_Objectif = "12-Inspecter le signal (ca22) , ";
+                text_Objectif = "12-Inspecter le signal , ";
             }
             if (Choix_ObjS == 13)
             {
-                text_Objectif = "13-Balise de téléportation (ca22) , ";
+                text_Objectif = "13-Balise de téléportation , ";
             }
             if (Choix_ObjS == 14)
             {
-                text_Objectif = "14-Levez les étendards (ca22) , ";
+                text_Objectif = "14-Levez les étendards , ";
             }
             if (Choix_ObjS == 15)
             {
-                text_Objectif = "15-Interrogation psychique (ca22) ";
+                text_Objectif = "15-Interrogation psychique ,";
             }
             if (Choix_ObjS == 16)
             {
-                text_Objectif = "16-Rituel du warp (ca22), ";
+                text_Objectif = "16-Rituel du warp , ";
             }
             if (Choix_ObjS == 17)
             {
-                text_Objectif = "17-Abhorrez le sorcier (ca22) , ";
+                text_Objectif = "17-Abhorrez le sorcier , ";
             }
             if (Choix_ObjS == 18)
             {
-                text_Objectif = "18-Données de Nachmund (ca22) , ";
+                text_Objectif = "18-Données de Nachmund , ";
             }
             if (Choix_ObjS == 19)
             {
-                text_Objectif = "19-Percer le voile (ca22) , ";
+                text_Objectif = "19-Percer le voile , ";
             }
             if (Choix_ObjS == 100)
             {
