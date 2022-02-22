@@ -6897,14 +6897,17 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 9 || Choix_ObjS_Attaquant[1] == 9 || Choix_ObjS_Attaquant[2] == 9) { StackPanel_ObjS_9_Att.Visibility = Visibility.Visible; oeil_OBJS_9_Att(); };
             if (Choix_ObjS_Attaquant[0] == 10 || Choix_ObjS_Attaquant[1] == 10 || Choix_ObjS_Attaquant[2] == 10) { StackPanel_ObjS_10_Att.Visibility = Visibility.Visible; oeil_OBJS_10_Att(); };
             if (Choix_ObjS_Attaquant[0] == 11 || Choix_ObjS_Attaquant[1] == 11 || Choix_ObjS_Attaquant[2] == 11) { StackPanel_ObjS_11_Att.Visibility = Visibility.Visible; oeil_OBJS_11_Att(); };
+
             if (Choix_ObjS_Attaquant[0] == 12 || Choix_ObjS_Attaquant[1] == 12 || Choix_ObjS_Attaquant[2] == 12) { StackPanel_ObjS_12_Att.Visibility = Visibility.Visible; oeil_OBJS_12_Att(); };
             if (Choix_ObjS_Attaquant[0] == 13 || Choix_ObjS_Attaquant[1] == 13 || Choix_ObjS_Attaquant[2] == 13) { StackPanel_ObjS_13_Att.Visibility = Visibility.Visible; oeil_OBJS_13_Att(); };
             if (Choix_ObjS_Attaquant[0] == 14 || Choix_ObjS_Attaquant[1] == 14 || Choix_ObjS_Attaquant[2] == 14) { StackPanel_ObjS_14_Att.Visibility = Visibility.Visible; oeil_OBJS_14_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 18 || Choix_ObjS_Attaquant[1] == 18 || Choix_ObjS_Attaquant[2] == 18) { StackPanel_ObjS_18_Att.Visibility = Visibility.Visible; oeil_OBJS_18_Att(); };
+
             if (Choix_ObjS_Attaquant[0] == 15 || Choix_ObjS_Attaquant[1] == 15 || Choix_ObjS_Attaquant[2] == 15) { StackPanel_ObjS_15_Att.Visibility = Visibility.Visible; oeil_OBJS_15_Att(); };
             if (Choix_ObjS_Attaquant[0] == 16 || Choix_ObjS_Attaquant[1] == 16 || Choix_ObjS_Attaquant[2] == 16) { StackPanel_ObjS_16_Att.Visibility = Visibility.Visible; oeil_OBJS_16_Att(); };
             if (Choix_ObjS_Attaquant[0] == 17 || Choix_ObjS_Attaquant[1] == 17 || Choix_ObjS_Attaquant[2] == 17) { StackPanel_ObjS_17_Att.Visibility = Visibility.Visible; oeil_OBJS_17_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 18 || Choix_ObjS_Attaquant[1] == 18 || Choix_ObjS_Attaquant[2] == 18) { StackPanel_ObjS_18_Att.Visibility = Visibility.Visible; oeil_OBJS_18_Att(); };
             if (Choix_ObjS_Attaquant[0] == 19 || Choix_ObjS_Attaquant[1] == 19 || Choix_ObjS_Attaquant[2] == 19) { StackPanel_ObjS_19_Att.Visibility = Visibility.Visible; oeil_OBJS_19_Att(); };
+
             if (Choix_ObjS_Attaquant[0] == 100 || Choix_ObjS_Attaquant[1] == 100 || Choix_ObjS_Attaquant[2] == 100) { StackPanel_ObjS_100_Att.Visibility = Visibility.Visible; oeil_OBJS_100_Att(); };
             if (Choix_ObjS_Attaquant[0] == 101 || Choix_ObjS_Attaquant[1] == 101 || Choix_ObjS_Attaquant[2] == 101) { StackPanel_ObjS_101_Att.Visibility = Visibility.Visible; oeil_OBJS_101_Att(); };
             if (Choix_ObjS_Attaquant[0] == 102 || Choix_ObjS_Attaquant[1] == 102 || Choix_ObjS_Attaquant[2] == 102) { StackPanel_ObjS_102_Att.Visibility = Visibility.Visible; oeil_OBJS_102_Att(); };
@@ -7041,14 +7044,17 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 9 || Choix_ObjS_Defenseur[1] == 9 || Choix_ObjS_Defenseur[2] == 9) { StackPanel_ObjS_9_Def.Visibility = Visibility.Visible; oeil_OBJS_9_Def(); };
             if (Choix_ObjS_Defenseur[0] == 10 || Choix_ObjS_Defenseur[1] == 10 || Choix_ObjS_Defenseur[2] == 10) { StackPanel_ObjS_10_Def.Visibility = Visibility.Visible; oeil_OBJS_10_Def(); };
             if (Choix_ObjS_Defenseur[0] == 11 || Choix_ObjS_Defenseur[1] == 11 || Choix_ObjS_Defenseur[2] == 11) { StackPanel_ObjS_11_Def.Visibility = Visibility.Visible; oeil_OBJS_11_Def(); };
+
             if (Choix_ObjS_Defenseur[0] == 12 || Choix_ObjS_Defenseur[1] == 12 || Choix_ObjS_Defenseur[2] == 12) { StackPanel_ObjS_12_Def.Visibility = Visibility.Visible; oeil_OBJS_12_Def(); };
             if (Choix_ObjS_Defenseur[0] == 13 || Choix_ObjS_Defenseur[1] == 13 || Choix_ObjS_Defenseur[2] == 13) { StackPanel_ObjS_13_Def.Visibility = Visibility.Visible; oeil_OBJS_13_Def(); };
             if (Choix_ObjS_Defenseur[0] == 14 || Choix_ObjS_Defenseur[1] == 14 || Choix_ObjS_Defenseur[2] == 14) { StackPanel_ObjS_14_Def.Visibility = Visibility.Visible; oeil_OBJS_14_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 18 || Choix_ObjS_Defenseur[1] == 18 || Choix_ObjS_Defenseur[2] == 18) { StackPanel_ObjS_18_Def.Visibility = Visibility.Visible; oeil_OBJS_18_Def(); };
+
             if (Choix_ObjS_Defenseur[0] == 15 || Choix_ObjS_Defenseur[1] == 15 || Choix_ObjS_Defenseur[2] == 15) { StackPanel_ObjS_15_Def.Visibility = Visibility.Visible; oeil_OBJS_15_Def(); };
             if (Choix_ObjS_Defenseur[0] == 16 || Choix_ObjS_Defenseur[1] == 16 || Choix_ObjS_Defenseur[2] == 16) { StackPanel_ObjS_16_Def.Visibility = Visibility.Visible; oeil_OBJS_16_Def(); };
             if (Choix_ObjS_Defenseur[0] == 17 || Choix_ObjS_Defenseur[1] == 17 || Choix_ObjS_Defenseur[2] == 17) { StackPanel_ObjS_17_Def.Visibility = Visibility.Visible; oeil_OBJS_17_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 18 || Choix_ObjS_Defenseur[1] == 18 || Choix_ObjS_Defenseur[2] == 18) { StackPanel_ObjS_18_Def.Visibility = Visibility.Visible; oeil_OBJS_18_Def(); };
             if (Choix_ObjS_Defenseur[0] == 19 || Choix_ObjS_Defenseur[1] == 19 || Choix_ObjS_Defenseur[2] == 19) { StackPanel_ObjS_19_Def.Visibility = Visibility.Visible; oeil_OBJS_19_Def(); };
+
             if (Choix_ObjS_Defenseur[0] == 100 || Choix_ObjS_Defenseur[1] == 100 || Choix_ObjS_Defenseur[2] == 100) { StackPanel_ObjS_100_Def.Visibility = Visibility.Visible; oeil_OBJS_100_Def(); };
             if (Choix_ObjS_Defenseur[0] == 101 || Choix_ObjS_Defenseur[1] == 101 || Choix_ObjS_Defenseur[2] == 101) { StackPanel_ObjS_101_Def.Visibility = Visibility.Visible; oeil_OBJS_101_Def(); };
             if (Choix_ObjS_Defenseur[0] == 102 || Choix_ObjS_Defenseur[1] == 102 || Choix_ObjS_Defenseur[2] == 102) { StackPanel_ObjS_102_Def.Visibility = Visibility.Visible; oeil_OBJS_102_Def(); };
