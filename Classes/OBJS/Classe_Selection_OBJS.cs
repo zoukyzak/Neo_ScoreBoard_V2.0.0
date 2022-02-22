@@ -62,7 +62,7 @@
             }
             if (Choix_ObjS == 16)
             {
-                text_Objectif = "16-Rituel psychique (v2), ";
+                text_Objectif = "16-Rituel du warp (ca22), ";
             }
             if (Choix_ObjS == 17)
             {

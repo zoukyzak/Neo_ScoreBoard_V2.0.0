@@ -9162,33 +9162,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Att_16_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_16_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_16_Att_1.FontSize = 3 * x;
-            Label_OBJ_SEC_16_Att_2.FontSize = 2 * x;
-            Label_OBJ_SEC_16_Att_3.FontSize = 2 * x;
-            Label_OBJ_SEC_16_Att_4.FontSize = 2 * x;
-            Label_OBJ_SEC_16_Att_5.FontSize = 2 * x;
-            Button_Obj_Sec_16_Att_oui.FontSize = 2 * x;
-            Button_Obj_Sec_16_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_16_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_16_Att_non.FontSize = 2 * x;
-            Button_Obj_Sec_16_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_16_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_16_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_16_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 16;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_Sec_16_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_16_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(16, "Att");
         }
 
         private void Button_Obj_Sec_Att_17_Click(object sender, RoutedEventArgs e)
@@ -9329,33 +9303,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Def_16_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Sec_16_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_SEC_16_Def_1.FontSize = 3 * x;
-            Label_OBJ_SEC_16_Def_2.FontSize = 2 * x;
-            Label_OBJ_SEC_16_Def_3.FontSize = 2 * x;
-            Label_OBJ_SEC_16_Def_4.FontSize = 2 * x;
-            Label_OBJ_SEC_16_Def_5.FontSize = 2 * x;
-            Button_Obj_Sec_16_Def_oui.FontSize = 2 * x;
-            Button_Obj_Sec_16_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_16_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_Sec_16_Def_non.FontSize = 2 * x;
-            Button_Obj_Sec_16_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_Sec_16_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_Sec_16_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_16_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 16;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_Sec_16_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Sec_16_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(16, "Def");
         }
 
         private void Button_Obj_Sec_Def_17_Click(object sender, RoutedEventArgs e)
@@ -14095,7 +14043,7 @@ namespace CPV9
             Classe_Score_OBJS_016 OBJECTIF_Secondaire_016_Att;
             OBJECTIF_Secondaire_016_Att = new Classe_Score_OBJS_016(CheckBox_ObjS_16_Att_R1_Etat, CheckBox_ObjS_16_Att_R2_Etat, CheckBox_ObjS_16_Att_R3_Etat, CheckBox_ObjS_16_Att_R4_Etat, CheckBox_ObjS_16_Att_R5_Etat);
             Scores_Attaquant[16] = OBJECTIF_Secondaire_016_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Secondaire_016_Att.Score_ObjS) >= 15)
+            if (Convert.ToInt32(OBJECTIF_Secondaire_016_Att.Score_ObjS) >= 12)
             {
                 Label_Score_ObjS_16_Cape_Player_1.Visibility = Visibility.Visible;
                 win._Capes_Tv[1, 16] = 1;
@@ -15208,7 +15156,7 @@ namespace CPV9
             Classe_Score_OBJS_016 OBJECTIF_Secondaire_016_Def;
             OBJECTIF_Secondaire_016_Def = new Classe_Score_OBJS_016(CheckBox_ObjS_16_Def_R1_Etat, CheckBox_ObjS_16_Def_R2_Etat, CheckBox_ObjS_16_Def_R3_Etat, CheckBox_ObjS_16_Def_R4_Etat, CheckBox_ObjS_16_Def_R5_Etat);
             Scores_Defenseur[16] = OBJECTIF_Secondaire_016_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Secondaire_016_Def.Score_ObjS) >= 15)
+            if (Convert.ToInt32(OBJECTIF_Secondaire_016_Def.Score_ObjS) >= 12)
             {
                 Label_Score_ObjS_16_Cape_Player_2.Visibility = Visibility.Visible;
                 win._Capes_Tv[2, 16] = 1;

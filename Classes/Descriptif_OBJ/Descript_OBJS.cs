@@ -181,6 +181,19 @@ namespace CPV9.Classes
                     l10 = "";
                     break;
 
+                case 16:
+                    l1 = " RITUEL DU WARP (action) (ca22)";
+                    l2 = "Si vous choississez cet objectif , tenez un compte de rituel;";
+                    l3 = "ajouter 1 a ce compte chaque fois qu'une unité de votre armée accomplit avec succès l'action psychique suivante:";
+                    l4 = "";
+                    l5 = "RITUEL DU WARP (Action Psychique charge Warp 3):";
+                    l6 = "";
+                    l7 = "1 unité PERSONNAGE PSYKER de votre armée peut tenter d'accomplir cette action psychique à votre phase psychique";
+                    l8 = "si elle est à 6 pouces du centre du champ de bataille.";
+                    l9 = "A la fin de la bataille, marquez 3 points de victoire si votre compte est de 1, marquez 7 points de victoire s'il est de 2,";
+                    l10 = "ou marquez 12 points de victoire s'il est de 3 ou plus";
+                    break;
+
 
                 case 18:
                     l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action) (ca22)";
