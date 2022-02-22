@@ -66,7 +66,7 @@
             }
             if (Choix_ObjS == 17)
             {
-                text_Objectif = "17-Abhorrez le sorcier , ";
+                text_Objectif = "17-Abhorrez le sorcier (ca22) , ";
             }
             if (Choix_ObjS == 18)
             {

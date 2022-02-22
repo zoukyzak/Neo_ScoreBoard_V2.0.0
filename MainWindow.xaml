@@ -971,7 +971,7 @@
 
             <Label x:Name="Label_Score_ObjS_15_Cape_Player_1" Content="15-INTERROGATION PSYCHIQUE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_1" Content="16-RITUEL DU WARP (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_17_Cape_Player_1" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_17_Cape_Player_1" Content="17-ABHORREZ LE SORCIER(ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_19_Cape_Player_1" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_1" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1095,7 +1095,7 @@
 
             <Label x:Name="Label_Score_ObjS_15_Cape_Player_2" Content="15-INTERROGATION PSYCHIQUE (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_16_Cape_Player_2" Content="16-RITUEL DU WARP  (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_17_Cape_Player_2" Content="17-ABHORREZ LE SORCIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_17_Cape_Player_2" Content="17-ABHORREZ LE SORCIER (ca22) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_19_Cape_Player_2" Content="19-PERCER LE VOILE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_2" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1789,7 +1789,7 @@
                 <StackPanel x:Name="StackPanel_ObjS_17_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
 
                     <StackPanel x:Name="StackPanel_ObjS_17A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_17A" Content="17-ABHORREZ LE SORCIER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_17A" Content="17-ABHORREZ LE SORCIER  (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_17_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_17_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -4514,7 +4514,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_17_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_17A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_17A" Content="17-ABHORREZ LE SORCIER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_17A" Content="17-ABHORREZ LE SORCIER (ca22)" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_17_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_17_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6679,7 +6679,7 @@
                     
                     <Button x:Name="Button_Obj_Sec_Att_15" Content="15 - INTERROGATION PSYCHIQUE (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_15_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_16" Content="16 - RITUEL DU WARP (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_16_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Att_17" Content="17 - ABHORREZ LE SORCIER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_17_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Att_17" Content="17 - ABHORREZ LE SORCIER (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_17_Click"/>
                     <Button x:Name="Button_Obj_Sec_Att_19" Content="19 - PERCER LE VOILE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Att_19_Click"/>
                 </StackPanel>
             </StackPanel>
@@ -6881,7 +6881,7 @@
                     
                     <Button x:Name="Button_Obj_Sec_Def_15" Content="15 - INTERROGATION PSYCHIQUE (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_15_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_16" Content="16 - RITUEL DU WARP (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_16_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_17" Content="17 - ABHORREZ LE SORCIER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_17_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_17" Content="17 - ABHORREZ LE SORCIER (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_17_Click"/>
                     <Button x:Name="Button_Obj_Sec_Def_19" Content="19 - PERCER LE VOILE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_19_Click"/>
 
                 </StackPanel>
@@ -7026,16 +7026,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Sec_17_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_17_Att_1" Content="ABHORREZ LE SORCIER" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_17_Att_2" Content="Vous ne pouvez pas choisir cette objectif si votre armée contient du psycker." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_17_Att_3" Content="Marquez 3 pts de victoire a la fin de la bataille pour chaque personnage psyker detruit," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_17_Att_4" Content="et marquez 2 pts pour chaque autre unité psyker ennemis detruite." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_17_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_17_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_17_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_17_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_19_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_19_Att_1" Content="PERCER LE VOILE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_19_Att_2" Content="Marquez 8 pts de victoire si vous réalisez 2 fois cette Action a l aide d'unitée personnage psyker." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7600,17 +7590,6 @@
         </StackPanel>
 
 
-        <StackPanel x:Name="Label_OBJ_Sec_17_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_SEC_17_Def_1" Content="ABHORREZ LE SORCIER" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_SEC_17_Def_2" Content="Vous ne pouvez pas choisir cette objectif si votre armée contient du psycker." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_17_Def_3" Content="Marquez 3 pts de victoire a la fin de la bataille pour chaque personnage psyker detruit," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_SEC_17_Def_4" Content="et marquez 2 pts pour chaque autre unité psyker ennemis detruite." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_Sec_17_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_17_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_Sec_17_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Sec_17_Def_non_Click"/>
-            </StackPanel>
-
-        </StackPanel>
         <StackPanel x:Name="Label_OBJ_Sec_19_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_SEC_19_Def_1" Content="PERCER LE VOILE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_SEC_19_Def_2" Content="Marquez 8 pts de victoire si vous réalisez 2 fois cette Action a l aide d'unitée personnage psyker." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>

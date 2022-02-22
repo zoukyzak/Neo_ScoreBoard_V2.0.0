@@ -194,6 +194,19 @@ namespace CPV9.Classes
                     l10 = "ou marquez 12 points de victoire s'il est de 3 ou plus";
                     break;
 
+                case 17:
+                    l1 = " ABHORREZ LE SORCIER (ca22)";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Vous ne pouvez pas choisir cet objectif secondaire si votre armée inclut la moindre unité Psyker.";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "Marquez 3 points de victoire à la fin de la bataille pour chaque unité PERSONNAGE PSYKER ennemie";
+                    l8 = "qui a été détruit, et 2 points de victoire pour chaque autre unité Psyker ennemie qui a été détruite.";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
 
                 case 18:
                     l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action) (ca22)";
