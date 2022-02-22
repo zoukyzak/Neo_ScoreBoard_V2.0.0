@@ -1209,16 +1209,7 @@
                     <TextBox x:Name="TextBox_OBJP_5_Att_Def" Width="15" Height="12" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" TextChanged="Calcul_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                     <GridSplitter x:Name="GridSplitter_OBJP_5_Att_5C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                 </StackPanel>
-                <StackPanel x:Name="StackPanel_Objectif_Principal_Att_6" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                    <Label x:Name="Label_Objectif_Principal_Att_Round_6A" Content="FIN" FontFamily="Arial Black" FontSize="10" Margin="20,0" HorizontalAlignment="Left"/>
-                    <GridSplitter x:Name="GridSplitter_OBJP_6_Att_6A" Width="5" Margin="1,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                    <Label x:Name="Label_Objectif_Principal_Att_Round_6B" Content="Nbres Objectif Attaquant" FontFamily="Arial Black" FontSize="10" Margin="0,0" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="TextBox_OBJP_6_Att_Att" Width="15" Height="12" FontFamily="Arial Black" FontSize="10" Margin="0,0" TextAlignment="Center" TextChanged="Calcul_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                    <GridSplitter x:Name="GridSplitter_OBJP_6_Att_6B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                    <Label x:Name="Label_Objectif_Principal_Att_Round_6C" Content="Nbres Objectif Defenseur" FontFamily="Arial Black" FontSize="10" Margin="0,0" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="TextBox_OBJP_6_Att_Def" Width="15" Height="12" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" TextChanged="Calcul_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                    <GridSplitter x:Name="GridSplitter_OBJP_6_Att_6C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                </StackPanel>
+                
                 <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                     <Label x:Name="Label_Objectif_Principal_Att_PtsA" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                     <TextBlock x:Name="TextBlock_ObjP_Att"  FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center" Text="0" />
@@ -3946,16 +3937,6 @@
                     <Label x:Name="Label_Objectif_Principal_Def_Round_5C" Content="Nbres Objectif Attaquant" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                     <TextBox x:Name="TextBox_OBJP_5_Def_Att" Width="30" Height="20" FontFamily="Arial Black" FontSize="18" Margin="0,0" HorizontalAlignment="Left" TextAlignment="Center" TextChanged="Calcul_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                     <GridSplitter x:Name="GridSplitter_OBJP_5_Def_5C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                </StackPanel>
-                <StackPanel x:Name="StackPanel_Objectif_Principal_Def_6" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right" VerticalAlignment="Top">
-                    <Label x:Name="Label_Objectif_Principal_Def_Round_6A" Content="FIN" FontFamily="Arial Black" FontSize="16" Margin="20,0" HorizontalAlignment="Left"/>
-                    <GridSplitter x:Name="GridSplitter_OBJP_6_Def_6A" Width="5" Margin="1,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    <Label x:Name="Label_Objectif_Principal_Def_Round_6B" Content="Nbres Objectif Defenseur" FontFamily="Arial Black" FontSize="12" Margin="0,0" HorizontalAlignment="Left"/>
-                    <TextBox x:Name="TextBox_OBJP_6_Def_Def" Width="30" Height="20" FontFamily="Arial Black" FontSize="18" Margin="0,0" HorizontalAlignment="Left" TextAlignment="Center" TextChanged="Calcul_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                    <GridSplitter x:Name="GridSplitter_OBJP_6_Def_6B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Center" Background="Green"/>
-                    <Label x:Name="Label_Objectif_Principal_Def_Round_6C" Content="Nbres Objectif Attaquant" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                    <TextBox x:Name="TextBox_OBJP_6_Def_Att" Width="30" Height="20" FontFamily="Arial Black" FontSize="18" Margin="0,0" HorizontalAlignment="Left" TextAlignment="Center" TextChanged="Calcul_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                    <GridSplitter x:Name="GridSplitter_OBJP_6_Def_6C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                 </StackPanel>
                 <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                     <Label x:Name="Label_Objectif_Principal_Def_PtsA" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>

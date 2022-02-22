@@ -1340,8 +1340,6 @@ namespace CPV9
             TextBox_OBJP_4_Att_Def.Clear();
             TextBox_OBJP_5_Att_Att.Clear();
             TextBox_OBJP_5_Att_Def.Clear();
-            TextBox_OBJP_6_Att_Att.Clear();
-            TextBox_OBJP_6_Att_Def.Clear();
             /// OBJECTIF PEINTURE ATTAQUANT
             TextBox_Obj_FIG_Att.Text = "0";
             #endregion
@@ -1835,8 +1833,6 @@ namespace CPV9
             TextBox_OBJP_4_Def_Att.Clear();
             TextBox_OBJP_5_Def_Def.Clear();
             TextBox_OBJP_5_Def_Att.Clear();
-            TextBox_OBJP_6_Def_Def.Clear();
-            TextBox_OBJP_6_Def_Att.Clear();
             /// OBJECTIF PEINTURE Defenseur
             TextBox_Obj_FIG_Def.Text = "0";
             #endregion
@@ -2471,8 +2467,6 @@ namespace CPV9
             Mem_Saisie_Attaquant[6, 0] = TextBox_OBJP_4_Att_Def.Text;
             Mem_Saisie_Attaquant[7, 0] = TextBox_OBJP_5_Att_Att.Text;
             Mem_Saisie_Attaquant[8, 0] = TextBox_OBJP_5_Att_Def.Text;
-            Mem_Saisie_Attaquant[9, 0] = TextBox_OBJP_6_Att_Att.Text;
-            Mem_Saisie_Attaquant[10, 0] = TextBox_OBJP_6_Att_Def.Text;
 
             /// OBJECTIF PEINTURE ATTAQUANT
             Mem_Saisie_Attaquant[0, 20] = TextBox_Obj_FIG_Att.Text;
@@ -3019,8 +3013,6 @@ namespace CPV9
             Mem_Saisie_Defenseur[6, 0] = TextBox_OBJP_4_Def_Att.Text;
             Mem_Saisie_Defenseur[7, 0] = TextBox_OBJP_5_Def_Def.Text;
             Mem_Saisie_Defenseur[8, 0] = TextBox_OBJP_5_Def_Att.Text;
-            Mem_Saisie_Defenseur[9, 0] = TextBox_OBJP_6_Def_Def.Text;
-            Mem_Saisie_Defenseur[10, 0] = TextBox_OBJP_6_Def_Att.Text;
 
             /// OBJECTIF PEINTURE Defenseur
             Mem_Saisie_Defenseur[0, 20] = TextBox_Obj_FIG_Def.Text;
@@ -3566,8 +3558,6 @@ namespace CPV9
             TextBox_OBJP_4_Att_Def.Text = Mem_Saisie_Attaquant[6, 0];
             TextBox_OBJP_5_Att_Att.Text = Mem_Saisie_Attaquant[7, 0];
             TextBox_OBJP_5_Att_Def.Text = Mem_Saisie_Attaquant[8, 0];
-            TextBox_OBJP_6_Att_Att.Text = Mem_Saisie_Attaquant[9, 0];
-            TextBox_OBJP_6_Att_Def.Text = Mem_Saisie_Attaquant[10, 0];
 
             /// OBJECTIF PEINTURE ATTAQUANT
             TextBox_Obj_FIG_Att.Text = Mem_Saisie_Attaquant[0, 20];
@@ -5009,8 +4999,6 @@ namespace CPV9
             TextBox_OBJP_4_Def_Att.Text = Mem_Saisie_Defenseur[6, 0];
             TextBox_OBJP_5_Def_Def.Text = Mem_Saisie_Defenseur[7, 0];
             TextBox_OBJP_5_Def_Att.Text = Mem_Saisie_Defenseur[8, 0];
-            TextBox_OBJP_6_Def_Def.Text = Mem_Saisie_Defenseur[9, 0];
-            TextBox_OBJP_6_Def_Att.Text = Mem_Saisie_Defenseur[10, 0];
 
             /// OBJECTIF PEINTURE Defenseur
             TextBox_Obj_FIG_Def.Text = Mem_Saisie_Defenseur[0, 20];
@@ -13889,7 +13877,7 @@ namespace CPV9
             #region Calcul_Objectif_Principaux
             /// CALCUL SCORE OBJECTIF PRINCIPAL
             Classe_Score_Obj_Principaux OBJECTIF_Principal_Att;
-            OBJECTIF_Principal_Att = new Classe_Score_Obj_Principaux(formatBis, Convert.ToString(TextBox_OBJP_2_Att_Att.Text), Convert.ToString(TextBox_OBJP_2_Att_Def.Text), Convert.ToString(TextBox_OBJP_3_Att_Att.Text), Convert.ToString(TextBox_OBJP_3_Att_Def.Text), Convert.ToString(TextBox_OBJP_4_Att_Att.Text), Convert.ToString(TextBox_OBJP_4_Att_Def.Text), Convert.ToString(TextBox_OBJP_5_Att_Att.Text), Convert.ToString(TextBox_OBJP_5_Att_Def.Text), Convert.ToString(TextBox_OBJP_6_Att_Att.Text), Convert.ToString(TextBox_OBJP_6_Att_Def.Text));
+            OBJECTIF_Principal_Att = new Classe_Score_Obj_Principaux(formatBis, Convert.ToString(TextBox_OBJP_2_Att_Att.Text), Convert.ToString(TextBox_OBJP_2_Att_Def.Text), Convert.ToString(TextBox_OBJP_3_Att_Att.Text), Convert.ToString(TextBox_OBJP_3_Att_Def.Text), Convert.ToString(TextBox_OBJP_4_Att_Att.Text), Convert.ToString(TextBox_OBJP_4_Att_Def.Text), Convert.ToString(TextBox_OBJP_5_Att_Att.Text), Convert.ToString(TextBox_OBJP_5_Att_Def.Text));
             Scores_Attaquant[0] = OBJECTIF_Principal_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Principal_Att.Score_ObjP) >= 45)
             { 
@@ -15003,7 +14991,7 @@ namespace CPV9
             #region Calcul_Objectif_Principaux
             /// CALCUL SCORE OBJECTIF PRINCIPAL
             Classe_Score_Obj_Principaux OBJECTIF_Principal_Def;
-            OBJECTIF_Principal_Def = new Classe_Score_Obj_Principaux(formatBis, Convert.ToString(TextBox_OBJP_2_Def_Def.Text), Convert.ToString(TextBox_OBJP_2_Def_Att.Text), Convert.ToString(TextBox_OBJP_3_Def_Def.Text), Convert.ToString(TextBox_OBJP_3_Def_Att.Text), Convert.ToString(TextBox_OBJP_4_Def_Def.Text), Convert.ToString(TextBox_OBJP_4_Def_Att.Text), Convert.ToString(TextBox_OBJP_5_Def_Def.Text), Convert.ToString(TextBox_OBJP_5_Def_Att.Text), Convert.ToString(TextBox_OBJP_6_Def_Def.Text), Convert.ToString(TextBox_OBJP_6_Def_Att.Text));
+            OBJECTIF_Principal_Def = new Classe_Score_Obj_Principaux(formatBis, Convert.ToString(TextBox_OBJP_2_Def_Def.Text), Convert.ToString(TextBox_OBJP_2_Def_Att.Text), Convert.ToString(TextBox_OBJP_3_Def_Def.Text), Convert.ToString(TextBox_OBJP_3_Def_Att.Text), Convert.ToString(TextBox_OBJP_4_Def_Def.Text), Convert.ToString(TextBox_OBJP_4_Def_Att.Text), Convert.ToString(TextBox_OBJP_5_Def_Def.Text), Convert.ToString(TextBox_OBJP_5_Def_Att.Text));
             Scores_Defenseur[0] = OBJECTIF_Principal_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Principal_Def.Score_ObjP) >= 45)
             {
@@ -24017,20 +24005,6 @@ namespace CPV9
             GridSplitter_OBJP_5_Att_5B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_OBJP_5_Att_5C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
-            /// OBJECTIF PRINCIPAL 6
-            Label_Objectif_Principal_Att_Round_6A.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Att_Att.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Att_Att.Width = Largeur_saisie * Multiple;
-            TextBox_OBJP_6_Att_Att.Height = Hauteur_saisie * Multiple;
-            Label_Objectif_Principal_Att_Round_6B.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Att_Def.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Att_Def.Width = Largeur_saisie * Multiple;
-            TextBox_OBJP_6_Att_Def.Height = Hauteur_saisie * Multiple;
-            Label_Objectif_Principal_Att_Round_6C.FontSize = Taille_texte * Multiple;
-            GridSplitter_OBJP_6_Att_6A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_OBJP_6_Att_6B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_OBJP_6_Att_6C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-
             /// OBJECTIF PRINCIPAL PTS
             Label_Objectif_Principal_Att_PtsA.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjP_Att.FontSize = 1.2 * Taille_texte * Multiple;
@@ -26152,20 +26126,6 @@ namespace CPV9
             GridSplitter_OBJP_5_Def_5A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_OBJP_5_Def_5B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_OBJP_5_Def_5C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-
-            /// OBJECTIF PRINCIPAL 6
-            Label_Objectif_Principal_Def_Round_6A.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Def_Def.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Def_Def.Width = Largeur_saisie * Multiple;
-            TextBox_OBJP_6_Def_Def.Height = Hauteur_saisie * Multiple;
-            Label_Objectif_Principal_Def_Round_6B.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Def_Att.FontSize = Taille_texte * Multiple;
-            TextBox_OBJP_6_Def_Att.Width = Largeur_saisie * Multiple;
-            TextBox_OBJP_6_Def_Att.Height = Hauteur_saisie * Multiple;
-            Label_Objectif_Principal_Def_Round_6C.FontSize = Taille_texte * Multiple;
-            GridSplitter_OBJP_6_Def_6A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_OBJP_6_Def_6B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_OBJP_6_Def_6C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF PRINCIPAL PTS
             Label_Objectif_Principal_Def_PtsA.FontSize = 1.2 * Taille_texte * Multiple;
@@ -28535,7 +28495,6 @@ namespace CPV9
             StackPanel_Objectif_Principal_Att_3.Visibility = Visibility.Collapsed;
             StackPanel_Objectif_Principal_Att_4.Visibility = Visibility.Collapsed;
             StackPanel_Objectif_Principal_Att_5.Visibility = Visibility.Collapsed;
-            StackPanel_Objectif_Principal_Att_6.Visibility = Visibility.Collapsed;
             Label_Objectif_Principal_Att_message.Visibility = Visibility.Collapsed;
             Button_Caché_Obj_Principaux_Att.Visibility = Visibility.Collapsed;
             Button_Visible_Obj_Principaux_Att.Visibility = Visibility.Visible;
@@ -28548,7 +28507,6 @@ namespace CPV9
             StackPanel_Objectif_Principal_Att_3.Visibility = Visibility.Visible;
             StackPanel_Objectif_Principal_Att_4.Visibility = Visibility.Visible;
             StackPanel_Objectif_Principal_Att_5.Visibility = Visibility.Visible;
-            StackPanel_Objectif_Principal_Att_6.Visibility = Visibility.Collapsed;/// a mettre en visible si on veux utiliser la Version maison
             Button_Visible_Obj_Principaux_Att.Visibility = Visibility.Visible;
             Button_Caché_Obj_Principaux_Att.Visibility = Visibility.Visible;
             Button_Visible_Obj_Principaux_Att.Visibility = Visibility.Collapsed;
@@ -28563,7 +28521,6 @@ namespace CPV9
                 StackPanel_Objectif_Principal_Att_3.Visibility = Visibility.Collapsed;
                 StackPanel_Objectif_Principal_Att_4.Visibility = Visibility.Collapsed;
                 StackPanel_Objectif_Principal_Att_5.Visibility = Visibility.Collapsed;
-                StackPanel_Objectif_Principal_Att_6.Visibility = Visibility.Collapsed;
                 Label_Objectif_Principal_Att_message.Visibility = Visibility.Collapsed;
                 Button_Visible_Obj_Principaux_Att.Visibility = Visibility.Visible;
             }
@@ -28573,7 +28530,6 @@ namespace CPV9
                 StackPanel_Objectif_Principal_Att_3.Visibility = Visibility.Visible;
                 StackPanel_Objectif_Principal_Att_4.Visibility = Visibility.Visible;
                 StackPanel_Objectif_Principal_Att_5.Visibility = Visibility.Visible;
-                StackPanel_Objectif_Principal_Att_6.Visibility = Visibility.Collapsed;/// a mettre en visible si on veux utiliser la Version maison
                 if (format == 1) { Label_Objectif_Principal_Att_message.Visibility = Visibility.Visible; };
                 Button_Caché_Obj_Principaux_Att.Visibility = Visibility.Visible;
             }
@@ -28594,7 +28550,6 @@ namespace CPV9
             StackPanel_Objectif_Principal_Def_3.Visibility = Visibility.Collapsed;
             StackPanel_Objectif_Principal_Def_4.Visibility = Visibility.Collapsed;
             StackPanel_Objectif_Principal_Def_5.Visibility = Visibility.Collapsed;
-            StackPanel_Objectif_Principal_Def_6.Visibility = Visibility.Collapsed;
             Label_Objectif_Principal_Def_message.Visibility = Visibility.Collapsed;
             Button_Caché_Obj_Principaux_Def.Visibility = Visibility.Collapsed;
             Button_Visible_Obj_Principaux_Def.Visibility = Visibility.Visible;
@@ -28607,7 +28562,6 @@ namespace CPV9
             StackPanel_Objectif_Principal_Def_3.Visibility = Visibility.Visible;
             StackPanel_Objectif_Principal_Def_4.Visibility = Visibility.Visible;
             StackPanel_Objectif_Principal_Def_5.Visibility = Visibility.Visible;
-            StackPanel_Objectif_Principal_Def_6.Visibility = Visibility.Collapsed;/// a mettre en visible si on veux utiliser la Version maison
             Label_Objectif_Principal_Def_message.Visibility = Visibility.Visible;
             Button_Caché_Obj_Principaux_Def.Visibility = Visibility.Visible;
             Button_Visible_Obj_Principaux_Def.Visibility = Visibility.Collapsed;
@@ -28622,7 +28576,6 @@ namespace CPV9
                 StackPanel_Objectif_Principal_Def_3.Visibility = Visibility.Collapsed;
                 StackPanel_Objectif_Principal_Def_4.Visibility = Visibility.Collapsed;
                 StackPanel_Objectif_Principal_Def_5.Visibility = Visibility.Collapsed;
-                StackPanel_Objectif_Principal_Def_6.Visibility = Visibility.Collapsed;
                 Label_Objectif_Principal_Def_message.Visibility = Visibility.Collapsed;
                 Button_Visible_Obj_Principaux_Def.Visibility = Visibility.Visible;
             }
@@ -28632,7 +28585,6 @@ namespace CPV9
                 StackPanel_Objectif_Principal_Def_3.Visibility = Visibility.Visible;
                 StackPanel_Objectif_Principal_Def_4.Visibility = Visibility.Visible;
                 StackPanel_Objectif_Principal_Def_5.Visibility = Visibility.Visible;
-                StackPanel_Objectif_Principal_Def_6.Visibility = Visibility.Collapsed;/// a mettre en visible si on veux utiliser la Version maison
                 if (format == 1) { Label_Objectif_Principal_Def_message.Visibility = Visibility.Visible; };
                 Button_Caché_Obj_Principaux_Def.Visibility = Visibility.Visible;
             }
