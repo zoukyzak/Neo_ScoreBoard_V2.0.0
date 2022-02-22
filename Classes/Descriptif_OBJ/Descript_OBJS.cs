@@ -168,6 +168,20 @@ namespace CPV9.Classes
                     l10 = "pour chaque pion objectif du champs de bataille sur lequel un de vos étendards a été levé";
                     break;
 
+                case 15:
+                    l1 = " INTERROGATION PSYCHIQUE (action) (ca22)";
+                    l2 = "";
+                    l3 = "Marquez 3 points de victoire chaque fois que vous accomplissez avec succès l'action psychique suivante:";
+                    l4 = "";
+                    l5 = "INTERROGATION PSYCHIQUE (Action Psychique charge Warp 4):";
+                    l6 = "";
+                    l7 = "1 unité PERSONNAGE PSYKER de votre armée peut tenter d'accomplir cette action psychique à votre phase psychique";
+                    l8 = "si elle est à 24 pouces d'une ou plusieurs figurines PERSONNAGES ennemies.";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+
                 case 18:
                     l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action) (ca22)";
                     l2 = "1 unité INFANTERIE ou motard de votre armée peut entreprendre cette action à la fin de votre phase de mouvement";
