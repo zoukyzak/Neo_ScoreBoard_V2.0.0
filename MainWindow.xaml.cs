@@ -9050,21 +9050,50 @@ namespace CPV9
                 StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
                 Select_ObjS_Attaquant(Select_Objectif);
                 if (Select_Objectif >= 1 && Select_Objectif <= 3){ StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 5 && Select_Objectif <= 7){ StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 9 && Select_Objectif <= 11){ StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18) { StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden; };                
-                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19) { StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 5 && Select_Objectif <= 7 || Select_Objectif == 100 ) { StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 9 && Select_Objectif <= 11 || Select_Objectif == 101 || Select_Objectif == 102) { StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18 || Select_Objectif == 103) { StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden; };                
+                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19) { StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden; };
+                if (Select_Objectif >= 100 && Select_Objectif <= 103)
+                {
+                    Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_101_Att_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Hidden;
+                }
             }
 
             if (Select_Camps == "Def")
             {
                 StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
                 Select_ObjS_Defenseur(Select_Objectif);
-                if (Select_Objectif >= 1 && Select_Objectif <= 3) { StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >= 5 && Select_Objectif <= 7) { StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >=9 && Select_Objectif <= 11) { StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18) { StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden; };
-                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19) { StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden; };
+                if (Select_Objectif >= 1 && Select_Objectif <= 3)
+                    {   
+                        StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
+                    }
+                if (Select_Objectif >= 5 && Select_Objectif <= 7 || Select_Objectif == 100)
+                    {
+                        StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
+                    }
+                if (Select_Objectif >=9 && Select_Objectif <= 11 || Select_Objectif == 101 || Select_Objectif == 102)
+                    {
+                        StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
+                    }
+                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18 || Select_Objectif == 103)
+                    { 
+                        StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
+                    }
+                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19)
+                    {
+                        StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden;
+                    }
+                if (Select_Objectif >= 100 && Select_Objectif <= 103)
+                {
+                    Button_Obj_Codex_Necron_100_Def_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_101_Def_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_103_Def_1.Visibility = Visibility.Hidden;
+                }
             }
             
         }
@@ -10896,260 +10925,39 @@ namespace CPV9
         #region Objectif Codex Necron Attaquant
         private void Button_Obj_Codex_Necron_100_Att_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_100_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_100_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_100_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_100_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_100_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_100_Att_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(100, "Att");
         }
-        private void Label_OBJ_Codex_Necron_100_Att_1_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_100_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 100;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_Necrons_Att();
-        }
-        private void Label_OBJ_Codex_Necron_100_Att_1_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_100_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_Codex_Necron_101_Att_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_101_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_101_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_101_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_101_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_101_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_101_Att_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(101, "Att");
         }
-        private void Label_OBJ_Codex_Necron_101_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_101_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 101;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_Necrons_Att();
-        }
-        private void Label_OBJ_Codex_Necron_101_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_101_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_Codex_Necron_102_Att_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_102_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_102_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_102_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_102_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_102_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_102_Att_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(102, "Att");
         }
-        private void Label_OBJ_Codex_Necron_102_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_102_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 102;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_Necrons_Att();
-        }
-        private void Label_OBJ_Codex_Necron_102_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_102_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_Codex_Necron_103_Att_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_103_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_103_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_103_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_103_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_103_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_103_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Label_OBJ_Codex_Necron_103_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_103_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 103;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_Necrons_Att();
-        }
-        private void Label_OBJ_Codex_Necron_103_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_103_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(103, "Att");
         }
         #endregion
         #region Objectif Codex Necron Defenseur
         private void Button_Obj_Codex_Necron_100_Def_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_100_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_100_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_100_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_100_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_100_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_100_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_100_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Label_OBJ_Codex_Necron_100_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_100_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 100;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_Necrons_Def();
-        }
-        private void Label_OBJ_Codex_Necron_100_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_100_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
+            Affich_Descript_OBJ(100, "Def");
+        }        
         private void Button_Obj_Codex_Necron_101_Def_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_101_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_101_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_101_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Def_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_101_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_101_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_101_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_101_Def_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(101, "Def");
         }
-        private void Label_OBJ_Codex_Necron_101_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_101_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 101;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_Necrons_Def();
-        }
-        private void Label_OBJ_Codex_Necron_101_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_101_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_Codex_Necron_102_Def_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_102_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_102_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_102_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_102_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_102_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_102_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_102_Def_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(102, "Def");
         }
-        private void Label_OBJ_Codex_Necron_102_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_102_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 102;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_Necrons_Def();
-        }
-        private void Label_OBJ_Codex_Necron_102_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_102_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_Codex_Necron_103_Def_1_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_Codex_Necron_103_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Necron_103_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Necron_103_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_103_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Necron_103_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Necron_103_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Necron_103_Def_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(103, "Def");
         }
-        private void Label_OBJ_Codex_Necron_103_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_103_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 103;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_Necrons_Def();
-        }
-        private void Label_OBJ_Codex_Necron_103_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_Codex_Necron_103_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
+        
         #endregion
 
         #endregion

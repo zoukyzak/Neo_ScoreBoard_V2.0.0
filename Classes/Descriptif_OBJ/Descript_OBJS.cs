@@ -227,11 +227,63 @@ namespace CPV9.Classes
                     l3 = "l'action psychique suivante 2 fois ou plus lors de la bataille, ou 15 points de victoire à la fin de la bataille";
                     l4 = "si une ou plusieurs unités de votre armée ont accompli avec succès l'action psychique suivante 4 fois lors de la bataille.";
                     l5 = "";
-                    l6 = "vVous ne pouvez accomplir cet objectif qu'une fois par tour.";
+                    l6 = "Vous ne pouvez accomplir cet objectif qu'une fois par tour.";
                     l7 = "";
                     l8 = "PERCER LE VOILE (action psychique - charge warp 4)";
                     l9 = "1 unité PERSONNAGE PSYKER de votre armée peu tenter d'accomplir cette action psychique durant votre phase psychique";
                     l10 = "s'il est à 6 pouces du bord de table de votre adversaire et a plus de 6 pouces de toute figurine ennemie.";
+                    break;
+
+                case 100:
+                    l1 = " CODE DE COMBAT";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "Marquez 3 points de victoire à la fin de la bataille pour chaque unité énnemie détruite";
+                    l6 = "par une unité NOBLE Nécron de votre armée.";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 101:
+                    l1 = " ELEMINEZ LA VERMINE";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez 2 points de victoire à la fin de votre tour pour chaque quart de table";
+                    l5 = "qui n'as aucune unité énnemie ( hors aérodynes) entièement à l'intérieur.";
+                    l6 = "cette objectif ne peut pas être marqué au premier tour.";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 102:
+                    l1 = " TRESORS DES EONS";
+                    l2 = "";
+                    l3 = "Si vous choisissez cette objectif secondaire, une fois les deux camps déployés,";
+                    l4 = "votre adversaire choisit 3 pions objectifs sur le champs de bataille.";
+                    l5 = "Marquez un nombre de points de victoire à la fin de votre tour si vous contrôlez";
+                    l6 = "un ou plusieurs de ces pions objectif";
+                    l7 = "Nombres de pions objectifs contrôler :";
+                    l8 = "1 = 2 points de victoire";
+                    l9 = "2 = 3 points de victoire";
+                    l10 = "3 = 5 points de victoire";
+                    break;
+
+                case 103:
+                    l1 = " MACHINES ANTIQUES";
+                    l2 = "Une fois les deux camps déployés, en commençant par votre adversaire, les joueurs altérne pour choissir les pions objectif";
+                    l3 = " qui ne sont dans aucune zone de dépoiement pour être des pions objectifs de Machine Antique, jusqu'a ce que 3 pions objectifs aient été choisis";
+                    l4 = " (s'il n'y a qu'un pion répondant à ces critères, seul ce pion objectif est un pion objectif de machine antique)";
+                    l5 = ".Les unités BASE Nécron ou CANOPTEKS peuvent tenter l'action suivante : Eveillez une machine antique (Action)";
+                    l6 = "A la fin de votre phase de mouvement , une ou plusieurs unités BASE ou CANOPTECKS Nécrons de votre armée peuvent commencer";
+                    l7 = "à accomplir cette action. Chaque unité de votre armée qui commence à accomplir cette action dois être à porté d'un pion objectif";
+                    l8 = "Machine de guerre Antique distinct.Une unité ne peut pas commencer à accomplir cette action tant qu'il y a une unité ennemi à portée";
+                    l9 = "du même pion objectif.L'action est achevé à la fin de votre prochaine phase de commandement,tant que l'unité est encore à porté du pion";
+                    l10 = "de machine quantique en question.Marquez 3 points chaque fois qu'une unité achève l'action Eveiller une machine quantite.";
                     break;
 
                 default:

@@ -4564,7 +4564,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_19B" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# Nécrons -->
                 <StackPanel x:Name="StackPanel_ObjS_100_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_100A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_100A" Content="100-CODE DE COMBAT" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -7305,51 +7305,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_100_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Att_1" Content="CODE DE COMBAT" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Att_2" Content="Marquez 3 pts de victoire a la fin de la" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Att_3" Content="bataille pour chaque unitée ennemie detruite" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Att_4" Content="par une unité Noble de votre armée." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_100_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_100_Att_1_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_100_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_100_Att_1_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_101_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Att_1" Content="ELIMINEZ LA VERMINE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Att_2" Content="Marquez 2 pts de victoire à la fin de votre tour pour chaque" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Att_3" Content="quart de table qui n'a aucune unité ennemie entièrement." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Att_4" Content="a l'intérieur (hors Aérodyne)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Att_5" Content="Cette objectif ne peut être réalisé au round 1" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_101_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_101_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_101_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_101_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_102_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Att_1" Content="TRESORS DES EONS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Att_2" Content="Une fois les deux camps déployés , votre adversaire choisit 3 objectifs de la map." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Att_3" Content="A la fin de votre tour ,marquez des pts ,  si vous en controlez :" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Att_4" Content="1 objectif = 2 pts , 2 objectifs = 3 pts , 3 objectifs = 5 pts." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_102_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_102_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_102_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_102_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_103_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Att_1" Content="MACHINES ANTIQUES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Att_2" Content="aprés le déploiement des deux armées, a tour de rôle , en commençant par votre adversaire," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Att_3" Content="choisissez 3 objectifs ( hors zone de déploiement) pour être des objectifs de MACHINES ANTIQUES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Att_4" Content="A la fin de votre phase de mouvement , accomplissez l action EVEILLER UNE MACHINE ANTIQUES " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Att_5" Content="a l aide d une ou plusieurs unités Base ou Canoptek Necrons, sur des objectifs distinct," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Att_6" Content=" et hors unités ennemis (Aérodyne exclus), marquez 3 pts par action réussit à votre prochaine" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Att_7" Content="phase de commandement ( l'unité doit encore être presente sur son objectif)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_103_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_103_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_103_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_103_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
         <StackPanel x:Name="Label_OBJ_Codex_SM_110_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_Codex_SM_110_Att_1" Content="GUERRE CODEX" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_Codex_SM_110_Att_2" Content="Marquez 1 pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7850,51 +7805,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_3003_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_oui_Click"/>
                 <Button x:Name="Button_Obj_3003_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_100_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Def_1" Content="CODE DE COMBAT" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Def_2" Content="Marquez 3 pts de victoire a la fin de la" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Def_3" Content="bataille pour chaque unitée ennemie detruite" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_100_Def_4" Content="par une unité Noble de votre armée." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_100_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_100_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_100_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_100_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_101_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Def_1" Content="ELIMINEZ LA VERMINE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Def_2" Content="Marquez 2 pts de victoire à la fin de votre tour pour chaque" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Def_3" Content="quart de table qui n'a aucune unité ennemie entièrement." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Def_4" Content="a l'intérieur (hors Aérodyne)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_101_Def_5" Content="Cette objectif ne peut être réalisé au round 1" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_101_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_101_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_101_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_101_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_102_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Def_1" Content="TRESORS DES EONS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Def_2" Content="Une fois les deux camps déployés , votre adversaire choisit 3 objectifs de la map." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Def_3" Content="A la fin de votre tour ,marquez des pts ,  si vous en controlez :" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_102_Def_4" Content="1 objectif = 2 pts , 2 objectifs = 3 pts , 3 objectifs = 5 pts." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_102_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_102_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_102_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_102_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_Necron_103_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Def_1" Content="MACHINES ANTIQUES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Def_2" Content="aprés le déploiement des deux armées, a tour de rôle , en commençant par votre adversaire," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Def_3" Content="choisissez 3 objectifs ( hors zone de déploiement) pour être des objectifs de MACHINES ANTIQUES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Def_4" Content="A la fin de votre phase de mouvement , accomplissez l action EVEILLER UNE MACHINE ANTIQUES " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Def_5" Content="a l aide d une ou plusieurs unités Base ou Canoptek Necrons, sur des objectifs distinct," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Def_6" Content=" et hors unités ennemis (Aérodyne exclus), marquez 3 pts par action réussit à votre prochaine" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_Necron_103_Def_7" Content="phase de commandement ( l'unité doit encore être presente sur son objectif)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_Necron_103_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_103_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_Necron_103_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_Necron_103_Def_non_Click"/>
             </StackPanel>
         </StackPanel>
 
