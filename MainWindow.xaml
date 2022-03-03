@@ -7010,6 +7010,9 @@
             <Label x:Name="Label_OBJ_Uniform_8" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
             <Label x:Name="Label_OBJ_Uniform_9" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
             <Label x:Name="Label_OBJ_Uniform_10" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_11" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_12" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
+            <Label x:Name="Label_OBJ_Uniform_13" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_Uniform_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Uniform_oui_Click"/>
                 <Button x:Name="Button_Obj_Uniform_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Uniform_non_Click"/>
@@ -7293,40 +7296,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_3003_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Att_oui_Click"/>
                 <Button x:Name="Button_Obj_3003_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_Codex_DG_125_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_DG_125_Att_1" Content="VECTEURS INCONSCIENTS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_DG_125_Att_2" Content="Marquez 3 points par tour si une unité ennemi échoue au test de moral " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_125_Att_3" Content="dûe à une attaque d'une arme de la peste" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_DG_125_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_125_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_DG_125_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_125_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_DG_126_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_DG_126_Att_1" Content="SOL CORROMPU" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Att_2" Content="1-Marquez 4 points , en fin de partie , si vous avez une unité BUBONICUS ASTARTES entierement dans votre ZDD et une autre dans la ZDD ennemi" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Att_3" Content="2-Marquez 4 points , en fin de partie , si vous avez une unité BUBONICUS ASTARTES entierement dans les 3/4 de table et a plus de 6 pouces du centre" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Att_4" Content="3-Marquez 4 points , en fin de partie , si vous possédé plus de la moitié des objectifs et que vous avez une unité BUBONICUS ASTARTES a moins de 3 pouces de ces objetifs" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Att_5" Content="4-Marquez 4 points , en fin de partie , si tous les objectifs sont a portés de contagion" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_DG_126_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_126_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_DG_126_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_126_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_DG_127_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_DG_127_Att_1" Content="REPANDRE LES MALADIES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Att_2" Content="Marquez 3 points pour chaque objectifs que vous aurez contaminé" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Att_3" Content="Effectuez l'action de contamination a la fin de votre phase de mouvement , a moins de 3 pouces d'un objectif non contaminé." HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Att_4" Content="Aucune unitée ennemie ne dois être à moins de 3 pouces de cette objectif (hors aérodyne)" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Att_5" Content="A la fin de votre tour , prenez les points si la contamination est une réussite, pour ce faire , choisissez une option :" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Att_6" Content="1- jetez un D6 , sur 4+ l'objectif est bien contaminé " HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Att_7" Content="2- votre unité subit D3 mortel pour confirmer la contamination" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_DG_127_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_127_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_DG_127_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_127_Att_non_Click"/>
             </StackPanel>
         </StackPanel>
 
@@ -7719,40 +7688,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_3003_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_oui_Click"/>
                 <Button x:Name="Button_Obj_3003_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_Codex_DG_125_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_DG_125_Def_1" Content="VECTEURS INCONSCIENTS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_DG_125_Def_2" Content="Marquez 3 points par tour si une unité ennemi échoue au test de moral " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_125_Def_3" Content="dûe à une attaque d'une arme de la peste" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_DG_125_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_125_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_DG_125_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_125_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_DG_126_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_DG_126_Def_1" Content="SOL CORROMPU" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Def_2" Content="1-Marquez 4 points , en fin de partie , si vous avez une unité BUBONICUS ASTARTES entierement dans votre ZDD et une autre dans la ZDD ennemi" HorizontalAlignment="Left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Def_3" Content="2-Marquez 4 points , en fin de partie , si vous avez une unité BUBONICUS ASTARTES entierement dans les 3/4 de table et a plus de 6 pouces du centre" HorizontalAlignment="Left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Def_4" Content="3-Marquez 4 points , en fin de partie , si vous possédé plus de la moitié des objectifs et que vous avez une unité BUBONICUS ASTARTES a moins de 3 pouces de ces objetifs" HorizontalAlignment="Left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_126_Def_5" Content="4-Marquez 4 points , en fin de partie , si tous les objectifs sont a portés de contagion" HorizontalAlignment="Left" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_DG_126_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_126_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_DG_126_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_126_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_DG_127_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_DG_127_Def_1" Content="REPANDRE LES MALADIES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Def_2" Content="Marquez 3 points pour chaque objectifs que vous aurez contaminé" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Def_3" Content="Effectuez l'action de contamination a la fin de votre phase de mouvement , a moins de 3 pouces d'un objectif non contaminé." HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Def_4" Content="Aucune unitée ennemie ne dois être à moins de 3 pouces de cette objectif (hors aérodyne)" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Def_5" Content="A la fin de votre tour , prenez les points si la contamination est une réussite, pour ce faire , choisissez une option :" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Def_6" Content="1- jetez un D6 , sur 4+ l'objectif est bien contaminé " HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_DG_127_Def_7" Content="2- votre unité subit D3 mortel pour confirmer la contamination" HorizontalAlignment="left" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_DG_127_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_127_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_DG_127_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_DG_127_Def_non_Click"/>
             </StackPanel>
         </StackPanel>
 
