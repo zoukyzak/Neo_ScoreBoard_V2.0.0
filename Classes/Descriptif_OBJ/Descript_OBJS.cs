@@ -12,6 +12,7 @@ namespace CPV9.Classes
         {
             switch (OBJ)
             {
+                #region OBJP
                 case 1:
                     l1 = " ASSASSINAT";
                     l2 = "";
@@ -233,7 +234,8 @@ namespace CPV9.Classes
                     l9 = "1 unité PERSONNAGE PSYKER de votre armée peu tenter d'accomplir cette action psychique durant votre phase psychique";
                     l10 = "s'il est à 6 pouces du bord de table de votre adversaire et a plus de 6 pouces de toute figurine ennemie.";
                     break;
-
+                #endregion
+                #region OBJC_Necron
                 case 100:
                     l1 = " CODE DE COMBAT";
                     l2 = "";
@@ -285,6 +287,47 @@ namespace CPV9.Classes
                     l9 = "du même pion objectif.L'action est achevé à la fin de votre prochaine phase de commandement,tant que l'unité est encore à porté du pion";
                     l10 = "de machine quantique en question.Marquez 3 points chaque fois qu'une unité achève l'action Eveiller une machine quantite.";
                     break;
+                #endregion
+                #region OBJC_SM
+                case 110:
+                    l1 = "GUERRE CODEX";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez 1 pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné";
+                    l5 = "dans un maximun de 5 pts par doctrine (Utiliser les unités ADEPTUS ASTARTES uniquement)";
+                    l6 = "";
+                    l7 = "Doctrine Devastator ( armes Lourdes et Grenades)";
+                    l8 = "Doctrine Tactique ( armes Assaut et Tir rapide)";
+                    l9 = "Doctrine Assaut ( armes Mêlé et Pistolet)";
+                    l10 = "";
+                    break;
+
+                case 111:
+                    l1 = "TACTIQUES DE CHOC";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez 3 pts par round si vous contrôlez , a la fin du round ,";
+                    l5 = " au moins un objectif que l adversaire possédait au début de ce même round.";
+                    l6 = "Une unité ADEPTUS ASTARTES dois être presente sur cette objectif";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 112:
+                    l1 = "SERMENTS DE L'INSTANT";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez des points a chaque round , pour chaque serment respecté.";
+                    l5 = "";
+                    l6 = "serment de VALEUR ( 1 pts/round) pour avoir détruit au moins un personnage,véhicule ou montre a laide d'une unité ADEPTUS ASTARTES";
+                    l7 = "serment d'HONNEUR ( 1 pts/round) pour n'avoir ni battu en retraite , ni avoir raté un test de morale";
+                    l8 = "serment du DEVOIR ( 2 pts/round) pour avoir une unité ADEPTUS ASTARTES entierement dans les 6 pouces au centre du champs de bataille";
+                    l9 = "";
+                    l10 = "";
+                    break; 
+                #endregion
 
                 default:
                     l1 = "";

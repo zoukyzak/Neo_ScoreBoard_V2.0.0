@@ -7305,40 +7305,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Codex_SM_110_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_SM_110_Att_1" Content="GUERRE CODEX" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Att_2" Content="Marquez 1 pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Att_3" Content="dans un maximun de 5 pts par doctrine (Utiliser les unités ADEPTUS ASTARTES uniquement)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Att_4" Content="Doctrine Devastator ( armes Lourdes et Grenades)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Att_5" Content="Doctrine Tactique ( armes Assaut et Tir rapide)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Att_6" Content="Doctrine Assaut ( armes Mêlé et Pistolet)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_SM_110_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_110_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_SM_110_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_110_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_SM_111_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_SM_111_Att_1" Content="TACTIQUES DE CHOC" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_SM_111_Att_2" Content="Marquez 3 pts par round si vous contrôlez , a la fin du round ," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_111_Att_3" Content=" au moins un objectif que l adversaire possédait au début de ce même round." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_111_Att_4" Content="Une unité ADEPTUS ASTARTES dois être presente sur cette objectif" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_SM_111_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_111_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_SM_111_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_111_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_SM_112_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_SM_112_Att_1" Content="SERMENTS DE L'INSTANT" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Att_2" Content="Marquez des points a chaque round , pour chaque serment respecté." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Att_3" Content="serment de VALEUR ( 1 pts/round) pour avoir détruit au moins un personnage,véhicule ou montre a laide d'une unité ADEPTUS ASTARTES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Att_4" Content="serment d'HONNEUR ( 1 pts/round) pour n'avoir ni battu en retraite , ni avoir raté un test de morale" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Att_5" Content="serment du DEVOIR ( 2 pts/round) pour avoir une unité ADEPTUS ASTARTES entierement dans les 6 pouces au centre du champs de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_SM_112_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_112_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_SM_112_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_112_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
         <StackPanel x:Name="Label_OBJ_Codex_BA_113_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_Codex_BA_113_Att_1" Content="LAME DE SANGUINIUS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
             <Label x:Name="Label_OBJ_Codex_BA_113_Att_2" Content="Marquez 5 points pour chaque défi réussit !" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7805,40 +7771,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_3003_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_oui_Click"/>
                 <Button x:Name="Button_Obj_3003_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_Codex_SM_110_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_SM_110_Def_1" Content="GUERRE CODEX" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Def_2" Content="Marquez 1 pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Def_3" Content="dans un maximun de 5 pts par doctrine (Utiliser les unités ADEPTUS ASTARTES uniquement)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Def_4" Content="Doctrine Devastator ( armes Lourdes et Grenades)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Def_5" Content="Doctrine Tactique ( armes Assaut et Tir rapide)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_110_Def_6" Content="Doctrine Assaut ( armes Mêlé et Pistolet)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_SM_110_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_110_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_SM_110_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_110_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_SM_111_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_SM_111_Def_1" Content="TACTIQUES DE CHOC" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_SM_111_Def_2" Content="Marquez 3 pts par round si vous contrôlez , a la fin du round ," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_111_Def_3" Content=" au moins un objectif que l adversaire possédait au début de ce même round." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_111_Def_4" Content="Une unité ADEPTUS ASTARTES dois être presente sur cette objectif" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_SM_111_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_111_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_SM_111_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_111_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_SM_112_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_SM_112_Def_1" Content="SERMENTS DE L'INSTANT" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Def_2" Content="Marquez des points a chaque round , pour chaque serment respecté." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Def_3" Content="serment de VALEUR ( 1 pts/round) pour avoir détruit au moins un personnage,véhicule ou montre a laide d'une unité ADEPTUS ASTARTES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Def_4" Content="serment d'HONNEUR ( 1 pts/round) pour n'avoir ni battu en retraite , ni avoir raté un test de morale" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_SM_112_Def_5" Content="serment du DEVOIR ( 2 pts/round) pour avoir une unité ADEPTUS ASTARTES entierement dans les 6 pouces au centre du champs de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_SM_112_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_112_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_SM_112_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_SM_112_Def_non_Click"/>
             </StackPanel>
         </StackPanel>
 
