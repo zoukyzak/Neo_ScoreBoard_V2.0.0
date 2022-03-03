@@ -326,7 +326,117 @@ namespace CPV9.Classes
                     l8 = "serment du DEVOIR ( 2 pts/round) pour avoir une unité ADEPTUS ASTARTES entierement dans les 6 pouces au centre du champs de bataille";
                     l9 = "";
                     l10 = "";
-                    break; 
+                    break;
+                #endregion
+                #region OBJC_BA
+                case 113:
+                    l1 = "LAME SANGUINIUS";
+                    l2 = "";
+                    l3 = "Au début de votre première phase de commandement, vous devez choisir une figurines PERSONNAGE Blood Angels de votre armée";
+                    l4 = "pour lancer un défi et votre adversaire dois choisir une figurine PERSONNAGE de son armée pour le relever.";
+                    l5 = "Si un joueur ou l'autre n'as pas de figurine personnage, il doit à la place choisir son seigneur de guerre.";
+                    l6 = "";
+                    l7 = "Marquez 5 points de victoire à la fin de la bataille pour chacune des conditions suivantes qui as été rempli:";
+                    l8 = "La figurine qui as relevé le défi a été détruite.";
+                    l9 = "La figurine qui as relevé le défi a été détruite par une attaque de mélée.";
+                    l10 = "La figurine qui as relevé le défi a été détruite par une attaque de mélée de la figurine qui as lancé le défi.";
+                    break;
+
+                case 114:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 115:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 116:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                #endregion
+
+
+                #region OBJC_vide
+                case 1130:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 1140:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 1150:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
+                case 1160:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    break;
+
                 #endregion
 
                 default:

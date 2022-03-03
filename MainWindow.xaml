@@ -1718,7 +1718,6 @@
                     </StackPanel>
                 </StackPanel>
                 <!--# 5-Art du Warp-->
-
                 <StackPanel x:Name="StackPanel_ObjS_15_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_15A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_15A" Content="15-INTERROGATION PSYCHIQUE" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -1839,7 +1838,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_19B" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# Necrons -->
                 <StackPanel x:Name="StackPanel_ObjS_100_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_100A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_100A" Content="100-CODE DE COMBAT" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -1968,7 +1967,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_103E_Att" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# SM -->
                 <StackPanel x:Name="StackPanel_ObjS_110_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_110A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_110A" Content="110-GUERRE CODEX" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -2140,7 +2139,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_112P" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# Blood Angel -->
                 <StackPanel x:Name="StackPanel_ObjS_113_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_113A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_113A" Content="113-LAME DE SANGUINIUS" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -4693,7 +4692,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_103E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# SM -->
                 <StackPanel x:Name="StackPanel_ObjS_110_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_110A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_110A" Content="110-GUERRE CODEX" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -4867,7 +4866,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_112P" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# Blood Angel -->
                 <StackPanel x:Name="StackPanel_ObjS_113_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_113A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_113A" Content="113-LAME DE SANGUINIUS" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
