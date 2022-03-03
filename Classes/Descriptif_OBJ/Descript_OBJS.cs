@@ -518,6 +518,72 @@ namespace CPV9.Classes
                     l13 = "Marquez 3 points de victoire à la fin de la bataille pour chaque pion objectif Contaminé par une unité de votre armée.";
                     break;
                 #endregion
+                #region OBJC_Admech
+                case 128:
+                    l1 = "ACCRETION DU SAVOIR";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez 3 points de victoire à la fin de la bataille pour chaque figurine ennemie détruite";
+                    l5 = "qui remplit un ou plusieurs des critères suivants";
+                    l6 = "";
+                    l7 = "- La figurine a un Trait de Seigneur de Guerre.";
+                    l8 = "- La figurine a une Relique.";
+                    l9 = "-La figurine a le mot-clé Véhicule et une charactèristique de PV de 14 ou plus.";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 129:
+                    l1 = "ERADICATION DE LA CHAIR";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Marquez 3 points de victoire à la fin du round de bataille s'il y a au moins une unité Véhicule ADEPTUS MECHANICUS";
+                    l5 = "de votre armée sur le champs de bataille,";
+                    l6 = "et si à ce round de bataille, les unités ADEPTUS MECHANICUS de votre armée ont détruit plus d'unités d'Infanterie";
+                    l7 = "que les unités ennemie n'ont détruit d'unités Vehicule amies.";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 130:
+                    l1 = "SEQUENCAGE NON REPERTORIE";
+                    l2 = "";
+                    l3 = "Avant le déploiement ,";
+                    l4 = "Assignez un seul pion objectif à chaque round de bataille et inscrivez le. ";
+                    l5 = "";
+                    l6 = "Un pion objectif ne peut pas être assigné à plus d'un round de bataille.";
+                    l7 = "";
+                    l8 = "Marquez 3 points de victoire à la fin du round de bataille, si vous contrôlez ";
+                    l9 = "le pion objectif assigné au round de bataille concerné.";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 131:
+                    l1 = "ARCHEOCRYPTE SECRETE";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "Aprés le déploiement,votre adversaire choisit un seul pion objectif sur le champs de bataille";
+                    l5 = "( En dehors des pions objectif dans sa propre zon de déploiement) ";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "- Marquez 2 points de victoire à la fin du round de bataille si vous contrôlez le pion objectif concerné.";
+                    l9 = "";
+                    l10 = "- Marquez 5 points de victoire à la fin du round de bataille si vous contrôlez le pion objectif concerné.";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                #endregion
 
 
                 #region OBJC_vide
@@ -548,6 +614,9 @@ namespace CPV9.Classes
                     l8 = "";
                     l9 = "";
                     l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
                     break;
 
                 case 1150:
@@ -561,6 +630,9 @@ namespace CPV9.Classes
                     l8 = "";
                     l9 = "";
                     l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
                     break;
 
                 case 1160:
@@ -574,6 +646,9 @@ namespace CPV9.Classes
                     l8 = "";
                     l9 = "";
                     l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
                     break;
 
                 #endregion
