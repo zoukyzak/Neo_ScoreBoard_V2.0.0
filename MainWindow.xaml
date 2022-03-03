@@ -2215,16 +2215,6 @@
                         <Label x:Name="Label_Objectif_Sec_Att_114I" Content="/15" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_114F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
-
-
-
-
-
-
-
-
-
-
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_115_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_115A_Att" Orientation="Horizontal" Margin="5,0">
@@ -6610,6 +6600,7 @@
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
+            <!--# BOUTTONS OBJECTIFS ATT -->
             <StackPanel Height="Auto" Orientation="Horizontal">
                 <StackPanel x:Name="StackPanel_Obj_Sec_Att_1" HorizontalAlignment="Left" Height="auto" Margin="0,0,0,0" VerticalAlignment="Top" Width="Auto" Visibility="Visible">
                     <Image x:Name="Image_EleminezLEnnemi_Att" Source="/Images/EiminezLEnnemi.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
@@ -6810,6 +6801,7 @@
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
+            <!--# BOUTTONS OBJECTIFS DEF -->
             <StackPanel Height="Auto" Orientation="Horizontal">
                 <StackPanel x:Name="StackPanel_Obj_Sec_Def_1" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
                     <Image x:Name="Image_EleminezLEnnemi_Def" Source="/Images/EiminezLEnnemi.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
@@ -7006,7 +6998,7 @@
             </StackPanel>
         </StackPanel>
 
-
+        <!--# DESCRIPTIFS -->
         <StackPanel x:Name="StackPanel_OBJ_Uniform" HorizontalAlignment="Center" Height="auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="auto" Background="Ivory" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_Uniform_1" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6" Margin="0,20" FontWeight="Bold" BorderBrush="#FF182E7C" BorderThickness="2"/>
             <Label x:Name="Label_OBJ_Uniform_2" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
@@ -7301,49 +7293,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_3003_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Att_oui_Click"/>
                 <Button x:Name="Button_Obj_3003_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_Codex_BA_113_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_113_Att_1" Content="LAME DE SANGUINIUS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Att_2" Content="Marquez 5 points pour chaque défi réussit !" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Att_3" Content="Au début de votre première phase de commandement , choisissez une figurine personnage de votre armée pour lancer une défi." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Att_4" Content="votre adversaire choisi une figurine personnage pour relevé ce défi. ( si aucun perso , choisir le SG)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Att_5" Content="premier défi: détruire le personnage défié " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Att_6" Content="deuxième défi: détruire le personnage défié par une attaque de mélée" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Att_7" Content="troisième défi: détruire le personnage défié par une attaque de mélée venant du personnage défiant" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_113_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_113_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_113_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_113_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_BA_114_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_114_Att_1" Content="FUREUR DES EGARES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_114_Att_2" Content="Marquez 3 points par tour quand une unité" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_114_Att_3" Content="COMPAGNIE DE LA MORT de votre armée" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_114_Att_4" Content="détruit une unité ennemi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_114_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_114_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_114_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_114_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_BA_115_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_115_Att_1" Content="LA MORT DESCEND DU CIEL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_115_Att_2" Content="Marquez 2 points par tour quand une unité BLOOD ANGEL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_115_Att_3" Content=" de votre armée venant de refort détruit une unité ennemi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_115_Att_4" Content="oubien 3 pts si cette unité est un personnage" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_115_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_115_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_115_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_115_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_BA_116_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_116_Att_1" Content="ASSAUT IMPLACAPLE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_116_Att_2" Content="Marquez 4 points par tour si vous avez plus d unitées BLOOD ANGEL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_116_Att_3" Content=" dans la zone de déploiement ennemi qu'il n'y a d' unité ennemi dans votre zone" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_116_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_116_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_116_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_116_Att_non_Click"/>
             </StackPanel>
         </StackPanel>
 
@@ -7770,49 +7719,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_3003_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_oui_Click"/>
                 <Button x:Name="Button_Obj_3003_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_Codex_BA_113_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_113_Def_1" Content="LAME DE SANGUINIUS" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Def_2" Content="Marquez 5 points pour chaque défi réussit !" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Def_3" Content="Au début de votre première phase de commandement , choisissez une figurine personnage de votre armée pour lancer une défi." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Def_4" Content="votre adversaire choisi une figurine personnage pour relevé ce défi. ( si aucun perso , choisir le SG)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Def_5" Content="premier défi: détruire le personnage défié " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Def_6" Content="deuxième défi: détruire le personnage défié par une attaque de mélée" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_113_Def_7" Content="troisième défi: détruire le personnage défié par une attaque de mélée venant du personnage défiant" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_113_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_113_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_113_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_113_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_BA_114_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_114_Def_1" Content="FUREUR DES EGARES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_114_Def_2" Content="Marquez 3 points par tour quand une unité" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_114_Def_3" Content="COMPAGNIE DE LA MORT de votre armée" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_114_Def_4" Content="détruit une unité ennemi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_114_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_114_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_114_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_114_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_BA_115_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_115_Def_1" Content="LA MORT DESCEND DU CIEL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_115_Def_2" Content="Marquez 2 points par tour quand une unité BLOOD ANGEL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_115_Def_3" Content=" de votre armée venant de refort détruit une unité ennemi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_115_Def_4" Content="oubien 3 pts si cette unité est un personnage" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_115_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_115_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_115_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_115_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_BA_116_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_BA_116_Def_1" Content="ASSAUT IMPLACAPLE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_BA_116_Def_2" Content="Marquez 4 points par tour si vous avez plus d unitées BLOOD ANGEL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_BA_116_Def_3" Content=" dans la zone de déploiement énnemi qu'il n'y a d' unité ennemi dans votre zone" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_BA_116_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_116_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_BA_116_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_BA_116_Def_non_Click"/>
             </StackPanel>
         </StackPanel>
 

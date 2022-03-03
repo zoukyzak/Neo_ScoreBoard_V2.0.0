@@ -343,11 +343,11 @@ namespace CPV9.Classes
                     break;
 
                 case 114:
-                    l1 = "";
+                    l1 = "FUREUR DES EGARES";
                     l2 = "";
                     l3 = "";
-                    l4 = "";
-                    l5 = "";
+                    l4 = "Marquez 3 points de victoire à la fin de votre tour si une ou plusieurs unités ennemies";
+                    l5 = "ont été détruites par une unitée COMPAGNIE DE LA MORT de votre armée à ce tour .";
                     l6 = "";
                     l7 = "";
                     l8 = "";
@@ -356,25 +356,25 @@ namespace CPV9.Classes
                     break;
 
                 case 115:
-                    l1 = "";
+                    l1 = "LA MORT DESCEND DU CIEL";
                     l2 = "";
                     l3 = "";
-                    l4 = "";
-                    l5 = "";
-                    l6 = "";
+                    l4 = "Marquez 2 points de victoire à la fin de votre tour si une ou plusieurs unités ennemie ont été détruites";
+                    l5 = "par une unitée Blood Angels de votre armée qui as té placé sur le champs de bataille ";
+                    l6 = "à l'étapes de renforts d'une de vos phase de mouvement.";
                     l7 = "";
-                    l8 = "";
-                    l9 = "";
+                    l8 = "Si une de ces unités ennemies étaient une unité Personnage,";
+                    l9 = "Marquez 3 points de victoire à la place.";
                     l10 = "";
                     break;
 
                 case 116:
-                    l1 = "";
+                    l1 = "ASSAUT IMPLACABLE";
                     l2 = "";
                     l3 = "";
-                    l4 = "";
-                    l5 = "";
-                    l6 = "";
+                    l4 = "Marquez 2 points de victoire à la fin de votre tour s'il y a plus d'unités Bood Angels";
+                    l5 = "de votre armée dans la zone de déploiement ennemie qu'il y as d'unités ennemies";
+                    l6 = "dans votre zone de déploiement.";
                     l7 = "";
                     l8 = "";
                     l9 = "";
