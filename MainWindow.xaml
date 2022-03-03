@@ -2633,7 +2633,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_131H" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# Adepta S -->
                 <StackPanel x:Name="StackPanel_ObjS_132_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_132A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_132A" Content="132-DEMONSTRATION DE FOI" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -5350,7 +5350,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_131H" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# Adepta S -->
                 <StackPanel x:Name="StackPanel_ObjS_132_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_132A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_132A" Content="132-DEMONSTRATION DE FOI" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
@@ -6649,7 +6649,7 @@
                     <Button x:Name="Button_Obj_Codex_DG_126_Att" Content="Death Guard 126 - SOL CORROMPU" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkOliveGreen" Foreground="White" Click="Button_Obj_Codex_DG_126_Att_Click"/>
                     <Button x:Name="Button_Obj_Codex_Admech_130_Att" Content="Adeptus 130 - SEQUENCAGE NON REPERTORIE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_Admech_130_Att_Click"/>
                     <Button x:Name="Button_Obj_Codex_Admech_131_Att" Content="Adeptus 131 - ARCHEOCRYPTE SECRETE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_Admech_131_Att_Click"/>
-                    <Button x:Name="Button_Obj_Codex_AdeptaS_135_Att" Content="Adeptus 135 - DEFENDEZ LE SANCTUAIRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_AdeptaS_135_Att_Click"/>
+                    <Button x:Name="Button_Obj_Codex_AdeptaS_135_Att" Content="Adepta 135 - DEFENDEZ LE SANCTUAIRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_AdeptaS_135_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_Obj_Sec_Att_4" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="Auto" Visibility="Visible">
                     <Image x:Name="Image_OperationsClandestines_Att" Source="/Images/OperationsClandestines.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
@@ -6840,9 +6840,9 @@
                 <StackPanel x:Name="StackPanel_Obj_Sec_Def_3" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
                     <Image x:Name="Image_SupprematieMilitaire_Def" Source="/Images/SuprematiMilitaire.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
 
-                    <Button x:Name="Button_Obj_Sec_Def_9" Content="9 - SUR TOUS LES FRONTS (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_9_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_10" Content="10 - DERRIERE LES LIGNES ENNEMIES (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_10_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_11" Content="11 - EMPRISE (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_11_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_9" Content="9 - SUR TOUS LES FRONTS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_9_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_10" Content="10 - DERRIERE LES LIGNES ENNEMIES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_10_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_11" Content="11 - EMPRISE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_11_Click"/>
                     <Button x:Name="Button_Obj_Codex_Necron_101_Def_1" Content="Necron 101 - ELIMINEZ LA VERMINE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkViolet" Foreground="White" Visibility="Collapsed" Click="Button_Obj_Codex_Necron_101_Def_1_Click"/>
                     <Button x:Name="Button_Obj_Codex_Necron_102_Def_1" Content="Necron 102 - TRESORS DES EONS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkViolet" Foreground="White" Visibility="Collapsed" Click="Button_Obj_Codex_Necron_102_Def_1_Click"/>
                     <Button x:Name="Button_Obj_Codex_SM_111_Def" Content="Space Marine 111 - TACTIQUES DE CHOC" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_SM_111_Def_Click"/>
@@ -6851,15 +6851,15 @@
                     <Button x:Name="Button_Obj_Codex_DG_126_Def" Content="Death Guard 126 - SOL CORROMPU" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkOliveGreen" Foreground="White" Click="Button_Obj_Codex_DG_126_Def_Click"/>
                     <Button x:Name="Button_Obj_Codex_Admech_130_Def" Content="Adeptus 130 - SEQUENCAGE NON REPERTORIE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_Admech_130_Def_Click"/>
                     <Button x:Name="Button_Obj_Codex_Admech_131_Def" Content="Adeptus 131 - ARCHEOCRYPTE SECRETE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_Admech_131_Def_Click"/>
-                    <Button x:Name="Button_Obj_Codex_AdeptaS_135_Def" Content="Adeptus 135 - DEFENDEZ LE SANCTUAIRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_AdeptaS_135_Def_Click"/>
+                    <Button x:Name="Button_Obj_Codex_AdeptaS_135_Def" Content="Adepta 135 - DEFENDEZ LE SANCTUAIRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_AdeptaS_135_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_Obj_Sec_Def_4" HorizontalAlignment="Left" Height="Auto" Margin="10,0,0,0" VerticalAlignment="Top" Width="auto" Visibility="Visible">
                     <Image x:Name="Image_OperationsClandestines_Def" Source="/Images/OperationsClandestines.jpg"  Width="auto" Height="30" HorizontalAlignment="center" VerticalAlignment="Top"></Image>
                     
-                    <Button x:Name="Button_Obj_Sec_Def_12" Content="12 - INSPECTER LE SIGNAL (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_12_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_13" Content="13 - BALISE DE TELEPORTATION (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_13_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_14" Content="14 - LEVEZ HAUT LES ETENDARDS (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_14_Click"/>
-                    <Button x:Name="Button_Obj_Sec_Def_18" Content="18 -  DONNEES DE NACHMUND (ca22)" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_18_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_12" Content="12 - INSPECTER LE SIGNAL" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_12_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_13" Content="13 - BALISE DE TELEPORTATION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_13_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_14" Content="14 - LEVEZ HAUT LES ETENDARDS" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_14_Click"/>
+                    <Button x:Name="Button_Obj_Sec_Def_18" Content="18 -  DONNEES DE NACHMUND" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_Sec_Def_18_Click"/>
                     
                     <Button x:Name="Button_Obj_Codex_Necron_103_Def_1" Content="Necron 103 - MACHINES ANTIQUES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkViolet" Foreground="White" Visibility="Collapsed" Click="Button_Obj_Codex_Necron_103_Def_1_Click"/>
                     <Button x:Name="Button_Obj_Codex_Deathwatch_119_Def" Content="Deathwatch 119 - PARALYSER LA PLACE FORTE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="DarkBlue" Foreground="White" Click="Button_Obj_Codex_Deathwatch_119_Def_Click"/>
@@ -7299,57 +7299,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_132_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Att_1" Content="DEMONSTRATION DE FOI" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Att_2" Content="Marquez 1 pts par round si vous accomplissez 2 actes de foi pendant votre tour," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Att_3" Content="Oubien marquez 2 pts par round si vous accomplissez 2 actes de foi pendant le tour adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Att_4" Content="Marquez 1 points supplementaire a la fin du round ,si vous avez accompli au moins 3 actes actes de foi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Att_5" Content="Les actes de foi accordé par des chérubins ne seront pas comptabilisé,12 pts maximum" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_132_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_132_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_132_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_132_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_133_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Att_1" Content="TUEZ l'HERETIQUE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Att_2" Content="Marquez 1 pts a la fin de chaque phase de tir ,pour chaque conditions ci-dessous rempli," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Att_3" Content="et 1 pts supplémentaire si vous réalisez les 3 durant le meme tour." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Att_4" Content="a l'aide d'unité Adeptus Ministorum, detruisez une ou plusieurs unité ennemi à l'aide des armes suivantes " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Att_5" Content="Condition 1: Armes à bolts" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Att_6" Content="Condition 2: Armes à flammes" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Att_7" Content="Condition 3: Armes à fusion" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_133_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_133_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_133_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_133_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_134_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Att_1" Content="SOL SACRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Att_2" Content="Faite l'action 'Sol sacré' aux points d'objectif, l'ennemis ne doit pas être present (hors aérodyne)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Att_3" Content="Les actions doivent être réalisé en fin de phase de mouvement.Elles se terminent à la prochaine phase de commandement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Att_4" Content=" ou a la fin de la bataille , si les unites ayant accompli ces actions sont encore présentent sur les objectifs en question," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Att_5" Content="alors les objectifs deviennent des Sol sacré jusqu'a la fin de la bataille.Ils ne pourront plus être Sacré." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Att_6" Content="Ces objectifs aquiérent le trait de terrain éxaltant, mais n'est pas consideré comme un terrain." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Att_7" Content="prenez 1 pts par objectifs entierement dans votre ZDD , et 4 points pour les autres objectifs sacré." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_134_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_134_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_134_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_134_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_135_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Att_1" Content="DEFENDEZ LE SANCTUAIRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Att_2" Content="Après les déploiements , votre adversaire choisi un objectif en dehors de sa zone de déploiement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Att_3" Content="Cette objectif est consideré comme le sanctuaire." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Att_4" Content="Marquez 3 points a la fin de vos tours si vous le controlez." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Att_5" Content="Marquez 3 points si vous le controlez a la fin de la bataille." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Att_6" Content="Mais si c est votre adversaire qui le controle a la fin de la bataille," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Att_7" Content=" il vous retire 3 pts sur cette objectif (jusqu'a un minimum de 0)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_135_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_135_Att_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_135_Att_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_135_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
         <StackPanel x:Name="StackPanel_Valid_Choix_ObjS_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,0,0,30" VerticalAlignment="Bottom" Orientation="Vertical" Width="auto" Visibility="Collapsed" Background="#FF2E3340">
             <Label x:Name="Label_Validez_Objs_Att" Content="VALIDEZ VOS CHOIX !" FontFamily="Arial Black" FontSize="2" Background="{x:Null}" HorizontalAlignment="Center">
                 <Label.Foreground>
@@ -7643,57 +7592,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_3003_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_oui_Click"/>
                 <Button x:Name="Button_Obj_3003_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_135_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Def_1" Content="DEFENDEZ LE SANCTUAIRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Def_2" Content="Après les déploiements , votre adversaire choisi un objectif en dehors de sa zone de déploiement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Def_3" Content="Cette objectif est consideré comme le sanctuaire." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Def_4" Content="Marquez 3 points a la fin de vos tours si vous le controlez." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Def_5" Content="Marquez 3 points si vous le controlez a la fin de la bataille." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Def_6" Content="Mais si c est votre adversaire qui le controle a la fin de la bataille," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_135_Def_7" Content=" il vous retire 3 pts sur cette objectif (jusqu'a un minimum de 0)." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_135_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_135_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_135_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_135_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_132_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Def_1" Content="DEMONSTRATION DE FOI" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Def_2" Content="Marquez 1 pts par round si vous accomplissez 2 actes de foi pendant votre tour," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Def_3" Content="Oubien marquez 2 pts par round si vous accomplissez 2 actes de foi pendant le tour adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Def_4" Content="Marquez 1 points supplementaire a la fin du round ,si vous avez accompli au moins 3 actes actes de foi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_132_Def_5" Content="Les actes de foi accordé par des chérubins ne seront pas comptabilisé,12 pts maximum" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_132_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_132_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_132_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_132_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_133_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Def_1" Content="TUEZ l'HERETIQUE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Def_2" Content="Marquez 1 pts a la fin de chaque phase de tir ,pour chaque conditions ci-dessous rempli," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Def_3" Content="et 1 pts supplémentaire si vous réalisez les 3 durant le meme tour." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Def_4" Content="a l'aide d'unité Adeptus Ministorum, detruisez une ou plusieurs unité ennemi à l'aide des armes suivantes " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Def_5" Content="Condition 1: Armes à bolts" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Def_6" Content="Condition 2: Armes à flammes" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_133_Def_7" Content="Condition 3: Armes à fusion" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_133_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_133_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_133_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_133_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_Codex_AdeptaS_134_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Def_1" Content="SOL SACRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Def_2" Content="Faite l'action 'Sol sacré' aux points d'objectif, l'ennemis ne doit pas être present (hors aérodyne)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Def_3" Content="Les actions doivent être réalisé en fin de phase de mouvement.Elles se terminent à la prochaine phase de commandement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Def_4" Content=" ou a la fin de la bataille , si les unites ayant accompli ces actions sont encore présentent sur les objectifs en question," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Def_5" Content="alors les objectifs deviennent des Sol sacré jusqu'a la fin de la bataille.Ils ne pourront plus être Sacré." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Def_6" Content="Ces objectifs aquiérent le trait de terrain éxaltant, mais n'est pas consideré comme un terrain." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_Codex_AdeptaS_134_Def_7" Content="prenez 1 pts par objectifs entierement dans votre ZDD , et 4 points pour les autres objectifs sacré." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_134_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_134_Def_oui_Click"/>
-                <Button x:Name="Label_OBJ_Codex_AdeptaS_134_Def_non" Content="ANNULER" HorizontalAlignment="Center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Label_OBJ_Codex_AdeptaS_134_Def_non_Click"/>
             </StackPanel>
         </StackPanel>
 

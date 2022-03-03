@@ -585,6 +585,73 @@ namespace CPV9.Classes
 
                 #endregion
 
+                #region OBJC_Adepta S
+                case 132:
+                    l1 = "DEMONSTRATION DE FOI";
+                    l2 = "";
+                    l3 = "A la fin de chaque tour , si 2 actes de foi ont été accomplis à ce tour par des unités Adepta Sororitas de votre armée,";
+                    l4 = "marquez 1 points de victoire si c'est votre tour, ou 2 points de victoire si c'est le tour adverse.";
+                    l5 = "";
+                    l6 = "Si au moins 3 actes de foi ont été accomplis à ce tour par des unités Adepta Sororitas de votre armée, marquez 1 point de victoire additionnel.";
+                    l7 = "";
+                    l8 = "Notez que les actes de foi accomplis grâce à des dés de Chérubin accordés par des chérubins à encensoire ne compte pas pour cet objectif secondaire.";
+                    l9 = "";
+                    l10 = "Vous ne pouvez pas marquer plus de 12 points de victoire grâce à cet objectif secondaire pendant la mission.";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 133:
+                    l1 = "TUEZ L'HERETIQUE";
+                    l2 = "";
+                    l3 = "A la fin de chacune de vos phase de tir, marquez 1 points de victoire pour chacune des conditions suivantes qui as été rempli:";
+                    l4 = "";
+                    l5 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a BOLTS par une unité MINISTORUM de votre armée.";
+                    l6 = "";
+                    l7 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FLAMMES par une unité MINISTORUM de votre armée.";
+                    l8 = "";
+                    l9 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FUSION par une unité MINISTORUM de votre armée.";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "Si ces trois conditions ont été remplis à la fin de votre phase de tir , marquez 1 point de victoire additionnel";
+                    l13 = "( pour un maximum de 4 points de victoire )";
+                    break;
+
+                case 134:
+                    l1 = "SOL SACRE";
+                    l2 = "Les unités Infanterie ADEPTA SORORITAS et PRETRES MINISTRUM de votre armée pevent tenter l'action suivante :";
+                    l3 = "";
+                    l4 = "Sol sacré (atcion) :";
+                    l5 = "";
+                    l6 = "Une unité infanterie Adepta Sororitas ou prêtre Culte Impérialis de votre armée peuvent commencer à accomplir cette action";
+                    l7 = "à la fin de votre phase de mouvement si elle est à porté d'un pion objectif que votre armée n'a pas déjà consacré.";
+                    l8 = "Une unitée ne peut pas commencer à accomplir cette action tant qu'il y a une unitée ennemie à porte du pion objectif. (hors aérodynes).";
+                    l9 = "L'action est achevé à la fin de votre prochaine phase de commandement ou à la fin de la bataille, selon qui surviens en premier,";
+                    l10 = "tant que l'unité qui l'accomplit est encore à portée du pion objectif.Si elle est achevée, le pion objectif est consacré par votre armée,";
+                    l11 = "et jusqu'a la fin de la bataille , il gagne le trait Terrain Exaltant comme s'il sagissait d'un élément de terrain";
+                    l12 = "Chaque fois qu'une unité achève l'action Sol Sacré,si le pion objectif consacré par l'action était entièrement dans votre zone de déploiement";
+                    l13 = "marquez 1 point de victoire ; sinon marquez 4 points de victoire.";
+                    break;
+
+                case 135:
+                    l1 = "DEFENDEZ LE SANCTUAIRE";
+                    l2 = "";
+                    l3 = "Si vous choisissez cet objecif secondaire, après que les deux camps ont fini de se déployer, votre adversaire doit choisir un pion objectif";
+                    l4 = "sur le champs de bataille hors de sa zone de déploiement qui sera le pion objectif du sanctuaire";
+                    l5 = "(Si le seul pion objectif du champ de bataille est dans la zone de déploiement ennemie, ce sera le pion objectif du sanctuaire)";
+                    l6 = "";
+                    l7 = "- A la fin de votre tour, marquez 3 points de victoire, si vous contrôlez le pion objectif de sanctuaire. ";
+                    l8 = "";
+                    l9 = "- A la fin de la bataille, marquez 3 points de victoire additionnel, si vous contrôlez le pion objectif de sanctuaire. ";
+                    l10 = "";
+                    l11 = "- A la fin de la bataille, réduisez le nombre de point de victoire que vous a rapporté cet objectif secondaire de 3 ";
+                    l12 = "jusqu'a un minimun de 0, si votre adversaire contrôle le pion de santuaire.";
+                    l13 = "";
+                    break;
+
+                #endregion
+
 
                 #region OBJC_vide
                 case 1130:
