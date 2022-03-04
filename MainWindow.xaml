@@ -7018,39 +7018,6 @@
                 <Button x:Name="Button_Obj_Uniform_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_Uniform_non_Click"/>
             </StackPanel>
         </StackPanel>
-        
-        <StackPanel x:Name="Label_OBJ_501_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_501_Att_1" Content="ASSAUT CHIRURGICAL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_501_Att_2" Content="Marquez 5 points a la fin de votre tour ," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_501_Att_3" Content="si vous controlez l'objectifs ." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_501_Att_4" Content="dans la zone de deploiement adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_501_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_501_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_501_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_501_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_502_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_502_Att_1" Content="SONDAGE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_502_Att_2" Content="Marquez 5 points a la prochaine phase de commandement ," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_502_Att_3" Content="si vous controlez les 2 objectifs ." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_502_Att_4" Content="hors zone de deploiement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_502_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_502_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_502_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_502_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_503_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_503_Att_1" Content="ENCERCLER" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_503_Att_2" Content="Marquez , a la fin de votre tour , soit 3 pts" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Att_3" Content="si vous avez 1 unitée a moins de 6 pouces de votre bord de champs de bataille et" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Att_4" Content="1 unitée a moins de 6 pouces du bord du champs de bataille adverse." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Att_5" Content="oubien marquez 5 pts si cette derniere est entierement dans la zone de deploiement adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Att_6" Content="(Aerodynes excus)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_503_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_503_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_503_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_503_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
 
         <StackPanel x:Name="Label_OBJ_1011_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
             <Label x:Name="Label_OBJ_1011_Att_1" Content="PRISE DE FLAN" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
@@ -7312,39 +7279,6 @@
                 <Button x:Name="Button_Valid_Choix_ObsS_Att_Ok" Content="VALIDER" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#FFFB3205" Foreground="#FF32C307" FontSize="2" FontFamily="Arial Black" Click="Button_Valid_Choix_ObsS_Att_Ok_Click" BorderThickness="3"/>
 
                 <Button x:Name="Button_Valid_Choix_ObsS_Att_Annuler" Content="ANNULER" HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="#FFFB3205" Foreground="#FF32C307" FontSize="2" FontFamily="Arial Black" Click="Button_Valid_Choix_ObsS_Att_Annuler_Click" BorderThickness="3"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_501_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_501_Def_1" Content="ASSAUT CHIRURGICAL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_501_Def_2" Content="Marquez 5 points a la fin de votre tour ," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_501_Def_3" Content="si vous controlez l'objectifs ." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_501_Def_4" Content="dans la zone de deploiement adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_501_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_501_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_501_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_501_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_502_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_502_Def_1" Content="SONDAGE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_502_Def_2" Content="Marquez 5 points a la prochaine phase de commandement ," HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_502_Def_3" Content="si vous controlez les 2 objectifs ." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_502_Def_4" Content="hors zone de deploiement" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_502_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_502_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_502_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_502_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_503_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_503_Def_1" Content="ENCERCLER" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_503_Def_2" Content="Marquez , a la fin de votre tour , soit 3 pts" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Def_3" Content="si vous avez 1 unitée a moins de 6 pouces de votre bord de champs de bataille et" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Def_4" Content="1 unitée a moins de 6 pouces du bord du champs de bataille adverse." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Def_5" Content="oubien marquez 5 pts si cette derniere est entierement dans la zone de deploiement adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_503_Def_6" Content="(Aerodynes excus)" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_503_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_503_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_503_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_503_Def_non_Click"/>
             </StackPanel>
         </StackPanel>
 

@@ -9113,6 +9113,11 @@ namespace CPV9
                     Button_Obj_Codex_AdeptaS_134_Att.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_AdeptaS_135_Att.Visibility = Visibility.Hidden;
                 }
+
+                if (Select_Objectif >= 500 && Select_Objectif <= 3003)
+                {
+                    StackPanel_Obj_M_Att.Visibility = Visibility.Hidden;
+                }
             }
 
             if (Select_Camps == "Def")
@@ -9176,6 +9181,11 @@ namespace CPV9
                     Button_Obj_Codex_AdeptaS_133_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_AdeptaS_134_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_AdeptaS_135_Def.Visibility = Visibility.Hidden;
+                }
+
+                if (Select_Objectif >= 500 && Select_Objectif <= 3003)
+                {
+                    StackPanel_Obj_M_Def.Visibility = Visibility.Hidden;
                 }
             }
             
@@ -9386,100 +9396,15 @@ namespace CPV9
         #region Objectif Mission Attaquant
         private void Button_Obj_501_Att_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Stackpanel_Obj_501_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_501_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_501_Att_1.FontSize = 3 * x;
-            Label_OBJ_501_Att_2.FontSize = 2 * x;
-            Label_OBJ_501_Att_3.FontSize = 2 * x;
-            Label_OBJ_501_Att_4.FontSize = 2 * x;
-            Button_Obj_501_Att_oui.FontSize = 2 * x;
-            Button_Obj_501_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_501_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_501_Att_non.FontSize = 2 * x;
-            Button_Obj_501_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_501_Att_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(501, "Att");
         }
-        private void Button_Obj_501_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_501_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            Label_OBJ_501_Att.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 501;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_501_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_501_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            Stackpanel_Obj_501_Att.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_502_Att_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Stackpanel_Obj_502_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_502_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_502_Att_1.FontSize = 3 * x;
-            Label_OBJ_502_Att_2.FontSize = 2 * x;
-            Label_OBJ_502_Att_3.FontSize = 2 * x;
-            Label_OBJ_502_Att_4.FontSize = 2 * x;
-            Button_Obj_502_Att_oui.FontSize = 2 * x;
-            Button_Obj_502_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_502_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_502_Att_non.FontSize = 2 * x;
-            Button_Obj_502_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_502_Att_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(502, "Att");
         }
-        private void Button_Obj_502_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_502_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            Label_OBJ_502_Att.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 502;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_502_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_502_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            Stackpanel_Obj_502_Att.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_503_Att_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            Stackpanel_Obj_503_Att.Visibility = Visibility.Collapsed;
-            Label_OBJ_503_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_503_Att_1.FontSize = 3 * x;
-            Label_OBJ_503_Att_2.FontSize = 2 * x;
-            Label_OBJ_503_Att_3.FontSize = 2 * x;
-            Label_OBJ_503_Att_4.FontSize = 2 * x;
-            Label_OBJ_503_Att_5.FontSize = 2 * x;
-            Label_OBJ_503_Att_6.FontSize = 2 * x;
-            Button_Obj_503_Att_oui.FontSize = 2 * x;
-            Button_Obj_503_Att_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_503_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_503_Att_non.FontSize = 2 * x;
-            Button_Obj_503_Att_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_503_Att_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_503_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_503_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            Label_OBJ_501_Att.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 503;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-        }
-        private void Button_Obj_503_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_503_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            Stackpanel_Obj_503_Att.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(503, "Att");
         }
 
         private void Button_Obj_1011_Att_Click(object sender, RoutedEventArgs e)
@@ -10196,99 +10121,15 @@ namespace CPV9
         #region Objectif Mission Defenseur
         private void Button_Obj_501_Def_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Stackpanel_Obj_501_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_501_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_501_Def_1.FontSize = 3 * x;
-            Label_OBJ_501_Def_2.FontSize = 2 * x;
-            Label_OBJ_501_Def_3.FontSize = 2 * x;
-            Label_OBJ_501_Def_4.FontSize = 2 * x;
-            Button_Obj_501_Def_oui.FontSize = 2 * x;
-            Button_Obj_501_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_501_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_501_Def_non.FontSize = 2 * x;
-            Button_Obj_501_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_501_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_501_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_501_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            Label_OBJ_501_Def.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 501;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_501_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_501_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            Stackpanel_Obj_501_Def.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(501, "Def");
         }
         private void Button_Obj_502_Def_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Stackpanel_Obj_502_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_502_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_502_Def_1.FontSize = 3 * x;
-            Label_OBJ_502_Def_2.FontSize = 2 * x;
-            Label_OBJ_502_Def_3.FontSize = 2 * x;
-            Label_OBJ_502_Def_4.FontSize = 2 * x;
-            Button_Obj_502_Def_oui.FontSize = 2 * x;
-            Button_Obj_502_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_502_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_502_Def_non.FontSize = 2 * x;
-            Button_Obj_502_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_502_Def_non.Height = 3 * Rapport_Taille_Y;
+            Affich_Descript_OBJ(502, "Def");
         }
-        private void Button_Obj_502_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_502_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            Label_OBJ_502_Def.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 502;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_502_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_502_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            Stackpanel_Obj_502_Def.Visibility = Visibility.Visible;
-        }
-
         private void Button_Obj_503_Def_Click(object sender, RoutedEventArgs e)
         {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            Stackpanel_Obj_503_Def.Visibility = Visibility.Collapsed;
-            Label_OBJ_503_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_503_Def_1.FontSize = 3 * x;
-            Label_OBJ_503_Def_2.FontSize = 2 * x;
-            Label_OBJ_503_Def_3.FontSize = 2 * x;
-            Label_OBJ_503_Def_4.FontSize = 2 * x;
-            Label_OBJ_503_Def_5.FontSize = 2 * x;
-            Label_OBJ_503_Def_6.FontSize = 2 * x;
-            Button_Obj_503_Def_oui.FontSize = 2 * x;
-            Button_Obj_503_Def_oui.Width = 8 * Rapport_Taille_X;
-            Button_Obj_503_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Button_Obj_503_Def_non.FontSize = 2 * x;
-            Button_Obj_503_Def_non.Width = 8 * Rapport_Taille_X;
-            Button_Obj_503_Def_non.Height = 3 * Rapport_Taille_Y;
-        }
-        private void Button_Obj_503_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_503_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            Label_OBJ_503_Def.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 503;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-        }
-        private void Button_Obj_503_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            Label_OBJ_503_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            Stackpanel_Obj_503_Def.Visibility = Visibility.Visible;
+            Affich_Descript_OBJ(503, "Def");
         }
 
         private void Button_Obj_1011_Def_Click(object sender, RoutedEventArgs e)
@@ -11002,7 +10843,6 @@ namespace CPV9
         #endregion
 
         #endregion
-
         #region OBJECTIF CODEX
         #region necron
         #region Objectif Codex Necron Attaquant
@@ -11824,6 +11664,16 @@ namespace CPV9
         #endregion
         #endregion
         #endregion
+        #region OBJECTIF MISSION
+        #region OBJM_Incursion
+        #region Objectif Mission Incursion Attaquant
+        
+        #endregion
+        #region Objectif  Mission Incursion Defenseur
+        
+        #endregion
+        #endregion
+        #endregion
         #endregion
         private void FormatBis()
         {
@@ -12561,7 +12411,8 @@ namespace CPV9
                 Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Collapsed;
                 win._Capes_Tv[1,0] = 0;
             }
-            TextBlock_ObjP_Att.Text = Convert.ToString(OBJECTIF_Principal_Att.Score_ObjP);
+            TextBlock_ObjP_Att.Text = Convert.ToString(OBJECTIF_Principal_Att.Score_ObjP);            
+           
             #endregion
 
             #region Calcul_Objectif_Secondaire
@@ -14847,8 +14698,8 @@ namespace CPV9
 
 
         private void ComboBox_Choix_Armee_Imperium_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            if (ComboBox_Choix_Armee_Imperium.SelectedIndex != 0)
+        {            
+            if ( ComboBox_Choix_Armee_Imperium.SelectedIndex != 0)
             {
                 if (ComboBox_Choix_Armee_Chaos.SelectedIndex != 0)
                 {

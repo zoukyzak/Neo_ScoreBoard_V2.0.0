@@ -584,7 +584,6 @@ namespace CPV9.Classes
                     break;
 
                 #endregion
-
                 #region OBJC_Adepta S
                 case 132:
                     l1 = "DEMONSTRATION DE FOI";
@@ -651,7 +650,55 @@ namespace CPV9.Classes
                     break;
 
                 #endregion
+                #region OBJ M Incursion                
+                case 501:
+                    l1 = "ASSAUT CHIRURGICAL";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "Marquez 5 points de victoire si vous contrôlez le pion objectif";
+                    l7 = "dans la zone de déploiement adverse à la fin de votre tour.";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
 
+                case 502:
+                    l1 = "SONDAGE";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "Marquez 5 points de victoire si vous contrôlez les 2 pions objectifs qui ne sont dans aucune";
+                    l6 = "des zones de déploiement des joueurs a la fin de votre phase de commandement.";
+                    l7 = "";
+                    l8 = "Cette objectif secondaire ne peut pas être marqué au premier round de bataille";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 503:
+                    l1 = "LIGNES DE DEMARQUATION";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "A la fin de votre tour , vous marquez 4 points de victoire si vous contrôlez les 2 pions objectifs marqués A,";
+                    l6 = "ou 2 points de victoire si vous contrôlez les 2 pions objectifs marqués B.";
+                    l7 = "(Selon le gain le plus élevé)";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+                #endregion
 
                 #region OBJC_vide
                 case 1130:
