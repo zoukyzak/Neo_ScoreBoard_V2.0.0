@@ -2840,7 +2840,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_135E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# OBJM Patrouille -->
                 <StackPanel x:Name="StackPanel_ObjS_501_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_501A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_501A" Content="501-ASSAUT CHIRURGICAL" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -2967,7 +2967,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_503F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# OBJM Incursion -->
                 <StackPanel x:Name="StackPanel_ObjS_1011_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1011A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_1011A" Content="1011-PRISE DE FLAN" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -3341,7 +3341,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1033E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# OBJM Force de Frappe -->
                 <StackPanel x:Name="StackPanel_ObjS_2011_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2011A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_2011A" Content="2011-MINIMISER LES PERTES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -3694,7 +3694,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# OBJM Apocalypse -->
                 <StackPanel x:Name="StackPanel_ObjS_3001_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3001A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_3001A" Content="3001-TENIR LE CENTRE" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -5557,8 +5557,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_135E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
-
+                <!--# OBJM Patrouille -->
                 <StackPanel x:Name="StackPanel_ObjS_501_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_501A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_501A" Content="501-ASSAUT CHIRURGICAL" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -5685,7 +5684,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_503F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# OBJM Incursion -->
                 <StackPanel x:Name="StackPanel_ObjS_1011_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1011A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_1011A" Content="1011-PRISE DE FLAN" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -6060,7 +6059,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1033E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# OBJM Force de Frappe -->
                 <StackPanel x:Name="StackPanel_ObjS_2011_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2011A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_2011A" Content="2011-MINIMISER LES PERTES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -6410,7 +6409,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-
+                <!--# OBJM Apocalypse -->
                 <StackPanel x:Name="StackPanel_ObjS_3001_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3001A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_3001A" Content="3001-TENIR LE CENTRE" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>

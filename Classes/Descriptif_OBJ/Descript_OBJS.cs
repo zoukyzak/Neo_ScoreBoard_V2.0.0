@@ -650,7 +650,7 @@ namespace CPV9.Classes
                     break;
 
                 #endregion
-                #region OBJ M Incursion                
+                #region OBJM patrouille
                 case 501:
                     l1 = "ASSAUT CHIRURGICAL";
                     l2 = "";
@@ -684,20 +684,29 @@ namespace CPV9.Classes
                     break;
 
                 case 503:
-                    l1 = "LIGNES DE DEMARQUATION";
+                    l1 = "ENCERCER";
                     l2 = "";
                     l3 = "";
-                    l4 = "";
-                    l5 = "A la fin de votre tour , vous marquez 4 points de victoire si vous contrôlez les 2 pions objectifs marqués A,";
-                    l6 = "ou 2 points de victoire si vous contrôlez les 2 pions objectifs marqués B.";
-                    l7 = "(Selon le gain le plus élevé)";
-                    l8 = "";
+                    l4 = "MArquez 3 points de victoire si vous au moins une unité de votre armée ( hors Aérodynes ) entièrement à 6 pouces";
+                    l5 = "de votre bord de champ de bataille et au moins une unité de votre armée (hors Aérodynes ) entièrement à 6 pouces";
+                    l6 = "du bord du champ de bataille adverse à la fin de votre tour.";
+                    l7 = "";
+                    l8 = "Marquez 5 points de victoire à la place si une de ces unités est de surcroît entièrement dans la zone de déploiement adverse.";
                     l9 = "";
                     l10 = "";
                     l11 = "";
                     l12 = "";
                     l13 = "";
                     break;
+                #endregion
+                #region OBJM Incursion                
+
+                #endregion
+                #region OBJM Force De Frappe
+
+                #endregion
+                #region OBJM Apocypse
+
                 #endregion
 
                 #region OBJC_vide
