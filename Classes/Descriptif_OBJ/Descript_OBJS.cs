@@ -781,19 +781,19 @@ namespace CPV9.Classes
                     break;
 
                 case 1023:
-                    l1 = "";
+                    l1 = "ELAN DE FOI";
                     l2 = "";
-                    l3 = "";
-                    l4 = "";
-                    l5 = "";
-                    l6 = "";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
+                    l3 = "Elan de Foi ( Action):";
+                    l4 = "1 unité de votre armée peut enteprendre cette action au début de votre phase de mouvement si elle est à portée d'un pion objectif qui ne se trouve pas";
+                    l5 = " dans votre zone de déploiement.Les unités ayant l'aptitude OBjectif Sécurisé ou une règle similaire peuvent entreprendre cette action à la fin";
+                    l6 = " de votre phase de mouvement à la place.Une unité ne peut pas entreprendre cette action tant qu'une ou plusieurs unités ennemies ( hors aérodines) sont";
+                    l7 = "à portée du même pion objectif.L'action est accomplieà la fin de votre tour, à condition que l'unité qui l'entreprend soit toujours à portée du même pion";
+                    l8 = "chaque fois qu'une unité de votre armée accomplit avec succès l'action de Foi,";
+                    l9 = "vous marquez des points de victoire selon le pion objectif sur lequel cette action a été entreprise,comme suit:";
+                    l10 = "Pion objectif A -->      pts de victoire Joueur A: N/A     pts de victoire joueur B: 4";
+                    l11 = "Pion objectif B -->      pts de victoire Joueur A: 2       pts de victoire joueur B: 3";
+                    l12 = "Pion objectif C -->      pts de victoire Joueur A: 3       pts de victoire joueur B: 2";
+                    l13 = "Pion objectif D -->      pts de victoire Joueur A: 4       pts de victoire joueur B N/A";
                     break;
 
                 case 1031:
