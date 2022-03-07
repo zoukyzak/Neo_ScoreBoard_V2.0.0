@@ -700,6 +700,150 @@ namespace CPV9.Classes
                     break;
                 #endregion
                 #region OBJM Incursion                
+                case 1011:
+                    l1 = "ASSAUT DIRECT";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "A la fin du tour de chaque joueur,  le joueur dont c'est le tour marque 2 points de victoire s'il remplit une des conditions suivante,";
+                    l5 = "ou 3 points de victoire s'il remplit les deux conditions suivantes :";
+                    l6 = "";
+                    l7 = "1- Il contrôle chaque pion objectif du champ de bataille ou il contrôle au moins 1 pion objectif qu'il ne contrôlait pas au début du tour.";
+                    l8 = "";
+                    l9 = "2- Il a détruit au moins 1 unité ennemie qui était à portée d'un pion objectif au début de son tour. ";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 1012:
+                    l1 = "SECURISER LES SITES D'ATTERRISSAGE";
+                    l2 = "";
+                    l3 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour marque des points de victoire pour chaque pion objectif";
+                    l4 = "dans le No Man's Land qu'il contrôle comme indiqué ci-dessous ";
+                    l5 = "( Notez que le nombres de point de victoire marqué changent selon le round de bataille )";
+                    l6 = "";
+                    l7 = "Round 3: 2 points de victoire par pion objectif dans le No Man's Land contrôlé";
+                    l8 = "Round 4: 3 points de victoire par pion objectif dans le No Man's Land contrôlé";
+                    l9 = "Round 5: 4 points de victoire par pion objectif dans le No Man's Land contrôlé";
+                    l10 = "";
+                    l11 = "cet objectif principal ne peut pas être marqué au premier ou au deuxième rounds de bataille";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 1013:
+                    l1 = "ATTAQUEZ LES LIGNES DE RAVITAILLEMENT";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour, marque 3 points de victoire ";
+                    l7 = "s'il contrôle au moins 1 des pions objectif qui se trouve dans la zone de déploiement de son adversaire.";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 1021:
+                    l1 = "LA SAGESSE EST LE PILIER DE LA FOI";
+                    l2 = "";
+                    l3 = "A la fin du tour du joueur A, ce joueur : ";
+                    l4 = "- Marque 2 points de victoire s'il contrôle le pion objectif B";
+                    l5 = "- Perd 1 point de victoire s'il ne contrôle pas le pion objectif A";
+                    l6 = "- Marque 1 point de victoire pour chaque autre pion objectid qu'il contrôle";
+                    l7 = "";
+                    l8 = "A la fin du tour du joueur B, ce joueur : ";
+                    l9 = "- Marque 2 points de victoire s'il contrôle le pion objectif A";
+                    l10 = "- Perd 1 point de victoire s'il ne contrôle pas le pion objectif B";
+                    l11 = "- Marque 1 point de victoire pour chaque autre pion objectid qu'il contrôle";
+                    l12 = "";
+                    l13 = "Le score de points de victoire d'un joueur ne peut pas tomber en dessous de 0.";
+                    break;
+
+                case 1022:
+                    l1 = "ASCENSION";
+                    l2 = "";
+                    l3 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour marque 2 points de victoire s'il remplit au moins une des conditions suivantes:";
+                    l4 = "";
+                    l5 = "Il contrôle le pion objectif au centre du champ de bataille.";
+                    l6 = "Il a détruit au moins 1 unité ennemie qui était à 6 pouces du centre du champ de bataille au début de son tour.";
+                    l7 = "";
+                    l8 = "A la fin de la bataille, chaque joueur marque 3 points de victoire pour chacune des conditions suivantes qu'il remplit:";
+                    l9 = "(jusqu'à un maximum de 6 points par joueur)";
+                    l10 = "";
+                    l11 = "- Son seigner de Guerre est à porté du pion objectif au centre du champ de bataille.";
+                    l12 = "- Le seigneur de Guerre de son adversaire est détruit.";
+                    l13 = "";
+                    break;
+
+                case 1023:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 1031:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 1032:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 1033:
+                    l1 = "";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "";
+                    l7 = "";
+                    l8 = "";
+                    l9 = "";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
 
                 #endregion
                 #region OBJM Force De Frappe
