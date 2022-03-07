@@ -705,8 +705,54 @@ namespace CPV9.Classes
                 #region OBJM Force De Frappe
 
                 #endregion
-                #region OBJM Apocypse
+                #region OBJM Offensive
+                case 3001:
+                    l1 = "TENIR LE CENTRE";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "";
+                    l6 = "Marquez 5 points de victoire à la fin de votre phase de Commandement, ";
+                    l7 = "si vous contrôlez plus de pions objectif marquez B que votre adversaire n'en contrôle";
+                    l8 = "et que vous avez plus de figurines entièrement à 12 pouces du centre du champ de bataille que votre adversaire.";
+                    l9 = "";
+                    l10 = "Cet objectif secondaire ne peut pas être marqué au premier round de bataille.";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
 
+                case 3002:
+                    l1 = "ENCERCLEZ-LES";
+                    l2 = "";
+                    l3 = "";
+                    l4 = "";
+                    l5 = "Marquez 4 points de victoire à la fin de votre phase de Commandement et à la fin de la bataille";
+                    l6 = "si vous contrôlez les pions objectifs dans votre zone de déploiement";
+                    l7 = " et un pion objectif ou plus dans la zone de déploiement adverse.";
+                    l8 = "";
+                    l9 = "Marquez 8 points de victoire à la place si vous contrôlez les quatre pions objectif qui sont dans es zones de déploiement";
+                    l10 = "";
+                    l11 = "";
+                    l12 = "";
+                    l13 = "";
+                    break;
+
+                case 3003:
+                    l1 = "CHERCHER LE PORTAIL";
+                    l2 = "";
+                    l3 = "Chaque fois qu'une unité de votre armée accomplit l'Action Chercher le Portail , vous marquez 1 point de victoire,";
+                    l4 = "et 1 point de victoire supplémentaire pour chaque pion objectif marqué A actuellement sous votre contrôle";
+                    l5 = "( pour un maximum de 5 points de victoire )";
+                    l6 = "";
+                    l7 = "Chercher le Portail ( Action) :";
+                    l8 = "";
+                    l9 = "1 unité INFANTERIE de votre armée ( PERSONNAGES EXCLUS) peut commencer à effectuer cette action à la fin de votre phase de mouvement";
+                    l10 = "si elle est entièrement dans la zone de fouille figurée sur la carte de déploiement.";
+                    l11 = "L'action est accompie à la fin de votre prochaine phase de Commandement tant que l'unité qui l'effectue";
+                    l12 = " est toujours entièrement dans la zone de Fouille.";
+                    l13 = "";
+                    break;
                 #endregion
 
                 #region OBJC_vide

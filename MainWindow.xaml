@@ -3694,7 +3694,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-                <!--# OBJM Apocalypse -->
+                <!--# OBJM offensive -->
                 <StackPanel x:Name="StackPanel_ObjS_3001_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3001A_Att" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Att_3001A" Content="3001-TENIR LE CENTRE" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -6409,7 +6409,7 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
-                <!--# OBJM Apocalypse -->
+                <!--# OBJM offensive -->
                 <StackPanel x:Name="StackPanel_ObjS_3001_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3001A_Def" Orientation="Horizontal" Margin="5,0">
                         <Label x:Name="Label_Objectif_Sec_Def_3001A" Content="3001-TENIR LE CENTRE" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
@@ -7230,41 +7230,6 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel x:Name="Label_OBJ_3001_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_3001_Att_1" Content="TENIR LE CENTRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_3001_Att_2" Content="Marquez 5 points a votre phase de commandement si vous controlez plus." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3001_Att_3" Content="d'objectifs B que votre adversaire et que vous ailliez plus de " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3001_Att_4" Content="figurines dans les 12 pouces du centre du champs de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_3001_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3001_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_3001_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3001_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_3002_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_3002_Att_1" Content="ENCERCLEZ-LES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_3002_Att_2" Content="Marquez 4 points a votre phase de commandement et a la fin de la bataille " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3002_Att_3" Content="si vous controlez les 2 objectifs dans votre zone de deploiement ainsi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3002_Att_4" Content="qu 1 objectifs dans la zone de deploiement adverse. remporter 4 pts supplementaire" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3002_Att_5" Content="si vous controlez aussi le second objectif dans la zone adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_3002_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3002_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_3002_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3002_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_3003_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_3003_Att_1" Content="CHERCHER LE PORTAIL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_3003_Att_2" Content="Marquez 1 points, a votre phase de commandement , a chaque fois qu une unitée de votre armée" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Att_3" Content="effectue l action suivante : Chercher le portail , et 1 pts supplemantaire pour chaque objectif A" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Att_4" Content="que vous controlez ( 5 pts maximum )" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Att_5" Content="cette action dois etre effectué, a la fin de votre phase de mouvement et" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Att_6" Content="entierement dans les 12 pouces du centre du champs de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Att_7" Content="l'unitée dois toujours etre dans la zone a votre prochaine phase de commandement " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_3003_Att_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Att_oui_Click"/>
-                <Button x:Name="Button_Obj_3003_Att_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Att_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
         <StackPanel x:Name="StackPanel_Valid_Choix_ObjS_Att" HorizontalAlignment="Center" Height="Auto" Margin="0,0,0,30" VerticalAlignment="Bottom" Orientation="Vertical" Width="auto" Visibility="Collapsed" Background="#FF2E3340">
             <Label x:Name="Label_Validez_Objs_Att" Content="VALIDEZ VOS CHOIX !" FontFamily="Arial Black" FontSize="2" Background="{x:Null}" HorizontalAlignment="Center">
                 <Label.Foreground>
@@ -7490,41 +7455,6 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
                 <Button x:Name="Button_Obj_2033_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_2033_Def_oui_Click"/>
                 <Button x:Name="Button_Obj_2033_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_2033_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-
-        <StackPanel x:Name="Label_OBJ_3001_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_3001_Def_1" Content="TENIR LE CENTRE" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_3001_Def_2" Content="Marquez 5 points a votre phase de commandement si vous controlez plus." HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3001_Def_3" Content="d'objectifs B que votre adversaire et que vous ailliez plus de " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3001_Def_4" Content="figurines dans les 12 pouces du centre du champs de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_3001_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3001_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_3001_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3001_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_3002_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_3002_Def_1" Content="ENCERCLEZ-LES" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_3002_Def_2" Content="Marquez 4 points a votre phase de commandement et a la fin de la bataille " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3002_Def_3" Content="si vous controlez les 2 objectifs dans votre zone de deploiement ainsi" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3002_Def_4" Content="qu 1 objectifs dans la zone de deploiement adverse. remporter 4 pts supplementaire" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3002_Def_5" Content="si vous controlez aussi le second objectif dans la zone adverse" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_3002_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3002_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_3002_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3002_Def_non_Click"/>
-            </StackPanel>
-        </StackPanel>
-        <StackPanel x:Name="Label_OBJ_3003_Def" HorizontalAlignment="Center" Height="Auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="Auto" Background="#FF90B070" Visibility="Collapsed">
-            <Label x:Name="Label_OBJ_3003_Def_1" Content="CHERCHER LE PORTAIL" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="6"/>
-            <Label x:Name="Label_OBJ_3003_Def_2" Content="Marquez 1 points, a votre phase de commandement , a chaque fois qu une unitée de votre armée" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Def_3" Content="effectue l action suivante : Chercher le portail , et 1 pts supplemantaire pour chaque objectif A" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Def_4" Content="que vous controlez ( 5 pts maximum )" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Def_5" Content="cette action dois etre effectué, a la fin de votre phase de mouvement et" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Def_6" Content="entierement dans les 12 pouces du centre du champs de bataille" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <Label x:Name="Label_OBJ_3003_Def_7" Content="l'unitée dois toujours etre dans la zone a votre prochaine phase de commandement " HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="2"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="top" Margin="0,50,0,0">
-                <Button x:Name="Button_Obj_3003_Def_oui" Content="CHOISIR" HorizontalAlignment="center" Margin="0,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_oui_Click"/>
-                <Button x:Name="Button_Obj_3003_Def_non" Content="ANNULER" HorizontalAlignment="center" Margin="20,0,0,0" FontFamily="Arial Black" FontSize="3" Background="#FF2B4021" Click="Button_Obj_3003_Def_non_Click"/>
             </StackPanel>
         </StackPanel>
 
