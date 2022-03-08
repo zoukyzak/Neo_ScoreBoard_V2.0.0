@@ -565,19 +565,66 @@ namespace CPV9.Classes
 
                 case 2021:
                     l1 = "SECURISER LES SANCTUAIRES";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
-                    l5 = "";
-                    l6 = "";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
-                    l14 = "";
+                    l3 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour marque 2 points de victoire s'il remplit au moins une des conditions suivantes:";
+                    l4 = "-Il contrôle le pion objectif au centre du champs de bataille.";
+                    l5 = "-Il a détruit au moins une unité ennemie qui était à 6' du centre du champ de bataille au début du tour.";
+                    l7 = "A la fin de la bataille, le joueur qui contrôle le pion objectif au centre du champ de bataille marque 5 points de victoire";
+                    l10 = "NO MAN'S LAND:";
+                    l12 = "Si une unité a une règle de prébataille qui lui permet d'être placé n'importe où sur le champ de bataille, elle ne peut pas être placée dans le man's land.";
+                    l13 = "Si une unité a une règle qui lui permet de faire un mouvement avant le début du premier tour, elle ne peut pas le terminer dans le no man's land.";
+                    l14 = "Si une règle est utilisée pour redéployer une unité, elle ne peut pas servir à placer l'unité dans le no man's land.";
+                    break;
+
+                case 2022:
+                    l1 = "SOL CORROMPU";
+                    l2 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour:";
+                    l3 = "Marque 4 points de victoire s'il contrôle le pion objectif de la zone de déploiement adverse.";
+                    l4 = "Marque 2 points de victoire s'il contrôle au moins un pion objectif qui est dans le no man's land.";
+                    l5 = "Perd 1 points de victoire s'il ne contrôle pas le pion objectif dans sa zone de déploiement.";
+                    l6 = "Le score de points de victoires d'un joueur ne peut jamais descendre en dessous de 0.";
+                    l8 = "DIRIGER EN PREMIERE LIGNE";
+                    l10 = "Dans cette mission, un joueur reçoit le bonus de PC Réglementaire au ";
+                    l11 = "début de la phase de commandement seulement si son Seigneur de Guerre est sur le champ de bataille, ";
+                    l13 = "ou s'il est embarqué dans une figurine de Transport qui est sur le champ de bataille.";
+                    break;
+
+                case 2023:
+                    l1 = "SCAN STRATEGIQUE";
+                    l3 = "A la fin de la bataille, chaque joueur marque 3 points de victoire pour chaque pion objectif sur le champ de bataille";
+                    l4 = "qui a été scanné par son armée";
+                    l6 = "SCAN D'AUSPEX";
+                    l8 = "1 unité de votre armée peut entreprendre cette action à la fin de votre phase de Mouvement";
+                    l9 = "si elle est à portée d'un pion objectif qui n'a pas été scanné par une unité de votre armée.";
+                    l10 = "Une unité ne peut pas entreprendre cette action tant qu'il y a une ou plusieurs unités ennemies (hormis Aérodynes) à portée du pion objectif.";
+                    l11 = "Cette action est accomplie au début de votre prochaine phase de Commandement, ou à la fin de bataille,";
+                    l13 = "à condition que l'unité qui l'entreprend soit toujours à portée du pion objectif.";
+                    l14 = "Si cette action est accomplie, le pion objectif à été scanné par votre armée";
+                    break;
+
+                case 2031:
+                    l1 = "SUBMERGER";
+                    l2 = "A la fin des premier, deuxième, troisième et quatrième tours de chaque joueur, le joueur dont ";
+                    l3 = "c'est le tour marque 2 points de victoire s'il contrôle au moins un pion objectif dans le territoire adverse";
+                    l4 = "A la fin de la bataille, chaque joueur marque 4 points de victoire s'il contrôle le pion objectif";
+                    l5 = "dans la zone de déploiement adverse, et 2 points de victoire pour chaque autre pion objectif du territoire adverse qu'il contrôle";
+                    l6 = "(pour un maximum de 8 points de victoire par joueur).";
+                    l8 = "LIGNES DE RAVITAILLEMENT";
+                    l11 = "Dans cette mission, un joueur reçoit le bonus de PC Réglementaire au début de sa phase de Commandement";
+                    l13 = "seulement s'il contrôle le pion objectif de sa zone de déploiement.";
+                    break;
+
+                case 2032:
+                    l1 = "ASSAUT DIRECT";
+                    l2 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour marque 2 points de victoire";
+                    l3 = "s'il remplit une de ces conditions suivantes, ou 3 points de victoire s'il remplit les deux:";
+                    l4 = "-Il contrôle tous les pions objectif du champ de bataille ou il contrôle au moins un pion objectif";
+                    l5 = "qu'il ne contrôlait pas au début de son tour";
+                    l7 = "-Il a détruit au moins une unité ennemie qui était à portée d'un pion objectif au début de son tour";
+                    l9 = "OBJECTIF PURGE";
+                    l11 = "Dans cette mission, si un joueur contrôle un pion objectif à la fin de sa phase de Commandement";
+                    l12 = "et si une ou plusieurs de ses unités qui sont à portée de celui-ci ont l'aptitude Objectif Sécurisé";
+                    l13 = "ou une règle similaire, il reste sous le contrôle du joueur même s'il n'y a pas de figurine à portée,";
+                    l14 = "à moins que son adversaire en prenne le contrôle à la fin d'une phase ultérieure.";
                     break;
 
                 #endregion
