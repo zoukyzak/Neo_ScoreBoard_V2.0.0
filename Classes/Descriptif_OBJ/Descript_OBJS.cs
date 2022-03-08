@@ -10,181 +10,107 @@ namespace CPV9.Classes
     {
         public Descript_OBJS(int OBJ)
         {
+            l1 = l2 = l3 = l4 = l5 = l6 = l7 = l8 = l9 = l10 = l11 = l12 = l13 = l14 = "";
             switch (OBJ)
             {
                 #region OBJP
                 case 1:
                     l1 = " ASSASSINAT";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Score 3 points de victoire à la fin de la bataille";
                     l5 = "pour chaque figurine personnage ennemi qui aura été detruite.";
-                    l6 = "";
-                    l7 = "";
-                    l8 = "";
                     l9 = "Si , le Seigneur de Guerre ennemi est detruit durant la bataille,";
                     l10 = "gagner 1 point de victoire supplementaire.";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 2:
                     l1 = " ABBATEZ-LE";
-                    l2 = "";
                     l3 = "Score 1 points de victoire à la fin de la bataille pour chaque figurine ennemi,";
                     l4 = "véhicule ou monstre avec une charactéristique de PV de 9 ou moins qui est détruite.";
-                    l5 = "";
                     l6 = "Score 2 points de victoire à la fin de la bataille pour chaque figurine ennemi";
                     l7 = "véhicule ou monstre avec une charactéristique de PV entre 10 et 14 qui est détruite.";
-                    l8 = "";
                     l9 = "et 3 points de victoire à la fin de la bataille pour chaque figurine ennemi, ";
                     l10 = "véhicule ou monstre avec une charactéristique de PV de 15 et plus qui est détruite.";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 3:
                     l1 = " TUEUR DE TITANS";
-                    l2 = "";
                     l3 = "Score 4 points de victoire à la fin de la bataille si,";
                     l4 = "une figurine Titanesque ennemi est détruite.";
-                    l5 = "";
                     l6 = "Score 9 points de victoire à la fin de la bataille si,";
                     l7 = "deux figurines Titanesques ennemi sont détruitent.";
-                    l8 = "";
                     l9 = "Score 15 points de victoire à la fin de la bataille si,";
                     l10 = "trois figurines Titanesques ennemi sont détruitent.";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 5:
                     l1 = " BROYEZ-LES";
                     l2 = "Additionnez le nombres de points de vie des figurines ennemi détruite durant la bataille.";
                     l3 = "Une unitée réssuscité et de nouveau détruite , sera comptabilisé une seconde fois";
-                    l4 = "";
                     l5 = "A la fin de la bataille,score 1 point par tranche de 10 points de vie perdu par l' ennemi";
-                    l6 = "";
                     l7 = "de plus ,";
-                    l8 = "";
                     l9 = "si vous avez cumulez entre 50 et 99 points de vie , ajouter 1 point de victoire supplemenaire";
                     l10 = "si vous avez cumulez 100 points de vie et plus, ajouter 2 point de victoire supplemenaire";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 6:
                     l1 = " PAS DE PRISONNIER";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 3 pts de victoire a la fin du round de bataille";
                     l5 = "si d'avantage d'unités ennemies que d'unités amis ";
                     l6 = "ont été détruites à ce round de bataille.";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 7:
                     l1 = " J'USQU'AU DERNIER";
-                    l2 = "";
                     l3 = "Identifié avant la bataille vos trois unités qui ont leurs coups en points les plus élévés.";
                     l4 = " les unitée avec le rôle tactique fortification exclues ";
-                    l5 = "";
                     l6 = "Score 5 points de victoire pour chaque unité encore en vie à la fin de la bataille";
-                    l7 = "";
                     l8 = "Si une unité se scinde en deux et qu'une partie est détruite et l'autre est resté en vie à la fin de la bataille,";
                     l9 = "Score 3 points de victoire pour cette unité au lieu de 5 points";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 9:
                     l1 = " SUR TOUS LES FRONT";
-                    l2 = "";
                     l3 = "Marquez 2 points de victoire à la fin de votre tour si vous avez une unité éligible ou plus";
                     l4 = "de votre armée entiérement dans les 3/4 de tables différents et a plus de 6 pouces du centre.";
-                    l5 = "";
                     l6 = "Marquez 3 points de victoire à la fin de votre tour si vous avez une unité éligible ou plus";
                     l7 = "de votre armée entiérement dans chaque quart de tables différents et a plus de 6 pouces du centre.";
-                    l8 = "";
                     l9 = "Pour être éligible , l'unité dois contenir 3 figurines ou plus , oubien contenir un véhicule ou monstre ou plus.";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 10:
                     l1 = " DERRIERE LES LIGNES ENNEMIES";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 2 points de victoire à la fin de votre tour si 1 unité de votre armée (hors Aérodyne)";
                     l5 = "est entièrement dans la zone de déploiement adverse.";
-                    l6 = "";
                     l7 = "Marquez 4 points de victoire à la place à la fin de votre tour , si 2 unités ou plus (hors Aérodyne)";
                     l8 = "sont entièrement dans la zone de déploiement adverse.";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 11:
                     l1 = " EMPRISE";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
                     l5 = "Marquez 3 points de victoire à la fin de votre tour si vous contrôlez 3 objectifs";
                     l6 = "ou plus et que vous en contrôliez plus que votre adversaire.";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 12:
                     l1 = " INSPECTER LE SIGNAL";
-                    l2 = "";
                     l3 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action suivante :";
-                    l4 = "";
                     l5 = "Inspecter le signal (action) :";
-                    l6 = "";
-                    l7 = "";
                     l8 = "1 unité d'INFANTERIE de votre armée qui contient 3 figurines ou plus peut";
                     l9 = "entreprendre cette action à la fin de votre phase de mouvement si elle est entièrement à 6 pouces";
                     l10 = "du centre du champs de bataille.Cette action est accomplit à la fin de votre tour à condition que";
                     l11 = "l'unité qui l'entreprenait soit toujours entièrement a 6 pouces du centre du champs de bataille";
                     l12 = "et qu'il n'y ai pas d'unité ennemie entièrement à 6 pouces du centre.(hors Aérodyne)";
-                    l13 = "";
                     break;
 
                 case 13:
                     l1 = " DEPLOYEZ LES BALISES DE TELEPORTATION";
                     l2 = "Si vous choisissez cette objectif , alors les unités de votre armée peuvent accomplir l'action suivante:";
                     l3 = "DEPLOYEZ UNE BALISE DE TELEPORTATION (action) :";
-                    l4 = "";
                     l5 = "1 unité d'infanterie ou motard peut commencer cette action à la fin de votre phase de mouvement si elle est";
                     l6 = "entièrement à 12 pouces de la zone de déploiement adverse.";
-                    l7 = "";
                     l8 = "Si l'unité a le rôle tactique Troupes,l'action est accomplie à la fin de votre phase de mouvement ,";
                     l9 = "sinon l'action n'est accomplie qu'à la fin de la prochaine phase de commandement et si l'unité est";
                     l10 = "toujours entièrement à 12 pouces de la zone de déploiement adverse.";
-                    l11 = "";
                     l12 = "Chaque fois qu'une unité accomplit cette action, vous marquerez 2 points de victoire.";
                     l13 = "4 points de victoire à la place si l'unité est entièrement dans la zone de déploiement adverse.";
                     break;
@@ -194,63 +120,38 @@ namespace CPV9.Classes
                     l2 = "1 unité INFANTERIE ou plus de votre armée peut commencer cette action à la fin de votre phase de mouvement.";
                     l3 = "Chaque unité de votre armée qui commence cette action doit être à portée d'un pion objectif";
                     l4 = "différent sur lequel aucun de vos étendards n'a été levé.";
-                    l5 = "";
                     l6 = "Une unité ne peut pas commencer cette action s'il y a la moindre unité ennemie (hors Aérodyne) à portée du même pion objectif.";
                     l7 = "L'action est accomplie à la fin de votre phase de mouvement.";
                     l8 = "si cette action est accomplie, on dit qu'un étendard de votre armée est levé sur ce pion objectif.";
-                    l9 = "";
                     l10 = "L'étendard est retiré si votre adversaire contrôle le pion objectif au début de n'importe quelle phase.";
-                    l11 = "";
                     l12 = "Vous marquez 1 point de victoire à la fin de chacune de vos phase de commandement et 1 point de victoire à la fin de la bataille,";
                     l13 = "pour chaque pion objectif du champs de bataille sur lequel un de vos étendards a été levé";
                     break;
 
                 case 15:
                     l1 = " INTERROGATION PSYCHIQUE (action)";
-                    l2 = "";
                     l3 = "Marquez 3 points de victoire chaque fois que vous accomplissez avec succès l'action psychique suivante:";
-                    l4 = "";
                     l5 = "INTERROGATION PSYCHIQUE (Action Psychique charge Warp 4):";
-                    l6 = "";
                     l7 = "1 unité PERSONNAGE PSYKER de votre armée peut tenter d'accomplir cette action psychique à votre phase psychique";
                     l8 = "si elle est à 24 pouces d'une ou plusieurs figurines PERSONNAGES ennemies.";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 16:
                     l1 = " RITUEL DU WARP (action)";
                     l2 = "Si vous choississez cet objectif , tenez un compte de rituel;";
                     l3 = "ajouter 1 a ce compte chaque fois qu'une unité de votre armée accomplit avec succès l'action psychique suivante:";
-                    l4 = "";
                     l5 = "RITUEL DU WARP (Action Psychique charge Warp 3):";
-                    l6 = "";
                     l7 = "1 unité PERSONNAGE PSYKER de votre armée peut tenter d'accomplir cette action psychique à votre phase psychique";
                     l8 = "si elle est à 6 pouces du centre du champ de bataille.";
-                    l9 = "";
-                    l10 = "";
                     l11 = "A la fin de la bataille, marquez 3 points de victoire si votre compte est de 1, marquez 7 points de victoire s'il est de 2,";
                     l12 = "ou marquez 12 points de victoire s'il est de 3 ou plus";
-                    l13 = "";
                     break;
 
                 case 17:
                     l1 = " ABHORREZ LE SORCIER";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Vous ne pouvez pas choisir cet objectif secondaire si votre armée inclut la moindre unité Psyker.";
-                    l5 = "";
-                    l6 = "";
                     l7 = "Marquez 3 points de victoire à la fin de la bataille pour chaque unité PERSONNAGE PSYKER ennemie";
                     l8 = "qui a été détruit, et 2 points de victoire pour chaque autre unité Psyker ennemie qui a été détruite.";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
 
@@ -259,29 +160,21 @@ namespace CPV9.Classes
                     l2 = "1 unité INFANTERIE ou motard de votre armée peut entreprendre cette action à la fin de votre phase de mouvement";
                     l3 = "si elle est entièrement dans un quart de table sans servocrâne récupéré par votre armée (voir ci-dessous)";
                     l4 = "et à plus de 6 pouces de tout autre quart de table.";
-                    l5 = "  ";
                     l6 = "Cette action est accomplie à la fin de votre tour, tant que l'unité qui tente de le faire est toujours dans le même quart de table.";
-                    l7 = "";
                     l8 = "Si cette action est accomplie, jetez un D6, en soustrayant 1 au résultat si l'unité qui as accompli l'action";
                     l9 = "a le rôle tactique TROUPES :  si le résultat est inférieur ou égal au nombres de figurines actuel,";
                     l10 = "votre armée a retrouvé un servocrâne dans ce quart de table et vous ajoutez 1 à votre compte de Données récupérées.";
-                    l11 = "";
                     l12 = "A la fin de la bataille, marquez 4 points de victoire si votre compte de Données Récupérées est de 2, marquez 8 points";
                     l13 = "de victoire s'il est de 3, ou 12 points de victoire s'il est de 4";
                     break;
 
                 case 19:
                     l1 = " PERCER LE VOILE";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 8 points de victoire à la fin de la bataille si une ou plusieurs unités de votre armée ont accompli avec succès";
                     l5 = "l'action psychique suivante 2 fois ou plus lors de la bataille, ou 15 points de victoire à la fin de la bataille";
-                    l6 = "";
                     l7 = "si une ou plusieurs unités de votre armée ont accompli avec succès l'action psychique suivante 4 fois lors de la bataille.";
                     l8 = "Vous ne pouvez accomplir cet objectif qu'une fois par tour.";
-                    l9 = "";
                     l10 = "PERCER LE VOILE (action psychique - charge warp 4)";
-                    l11 = "";
                     l12 = "1 unité PERSONNAGE PSYKER de votre armée peu tenter d'accomplir cette action psychique durant votre phase psychique";
                     l13 = "s'il est à 6 pouces du bord de table de votre adversaire et a plus de 6 pouces de toute figurine ennemie.";
                     break;
@@ -289,50 +182,27 @@ namespace CPV9.Classes
                 #region OBJC_Necron
                 case 100:
                     l1 = " CODE DE COMBAT";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
                     l5 = "Marquez 3 points de victoire à la fin de la bataille pour chaque unité énnemie détruite";
                     l6 = "par une unité NOBLE Nécron de votre armée.";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 101:
                     l1 = " ELEMINEZ LA VERMINE";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 2 points de victoire à la fin de votre tour pour chaque quart de table";
                     l5 = "qui n'as aucune unité énnemie ( hors aérodynes) entièement à l'intérieur.";
                     l6 = "cette objectif ne peut pas être marqué au premier tour.";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 102:
                     l1 = " TRESORS DES EONS";
-                    l2 = "";
                     l3 = "Si vous choisissez cette objectif secondaire, une fois les deux camps déployés,";
                     l4 = "votre adversaire choisit 3 pions objectifs sur le champs de bataille.";
                     l5 = "Marquez un nombre de points de victoire à la fin de votre tour si vous contrôlez";
                     l6 = "un ou plusieurs de ces pions objectif";
-                    l7 = "";
                     l8 = "Nombres de pions objectifs contrôler :";
-                    l9 = "";
                     l10 = "1 = 2 points de victoire";
                     l11 = "2 = 3 points de victoire";
                     l12 = "3 = 5 points de victoire";
-                    l13 = "";
                     break;
 
                 case 103:
@@ -341,10 +211,8 @@ namespace CPV9.Classes
                     l3 = " qui ne sont dans aucune zone de dépoiement pour être des pions objectifs de Machine Antique, jusqu'a ce que 3 pions objectifs aient été choisis";
                     l4 = " (s'il n'y a qu'un pion répondant à ces critères, seul ce pion objectif est un pion objectif de machine antique)";
                     l5 = ".Les unités BASE Nécron ou CANOPTEKS peuvent tenter l'action suivante : Eveillez une machine antique (Action)";
-                    l6 = " ";
                     l7 = "A la fin de votre phase de mouvement ,";
                     l8 = "une ou plusieurs unités BASE ou CANOPTECKS Nécrons de votre armée peuvent commencer à accomplir cette action. ";
-                    l9 = "";
                     l10 = "Chaque unité de votre armée qui commence à accomplir cette action dois être à porté d'un pion objectif Machine de guerre Antique distinct.";
                     l11 = "Une unité ne peut pas commencer à accomplir cette action tant qu'il y a une unité ennemi à portée du même pion objectif.";
                     l12 = "L'action est achevé à la fin de votre prochaine phase de commandement, tant que l'unité est encore à porté du pion";
@@ -354,136 +222,69 @@ namespace CPV9.Classes
                 #region OBJC_SM
                 case 110:
                     l1 = "GUERRE CODEX";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 1 pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné";
                     l5 = "dans un maximun de 5 pts par doctrine (Utiliser les unités ADEPTUS ASTARTES uniquement)";
-                    l6 = "";
                     l7 = "Doctrine Devastator ( armes Lourdes et Grenades)";
                     l8 = "Doctrine Tactique ( armes Assaut et Tir rapide)";
                     l9 = "Doctrine Assaut ( armes Mêlé et Pistolet)";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 111:
                     l1 = "TACTIQUES DE CHOC";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 3 pts par round si vous contrôlez , a la fin du round ,";
                     l5 = " au moins un objectif que l adversaire possédait au début de ce même round.";
                     l6 = "Une unité ADEPTUS ASTARTES dois être presente sur cette objectif";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 112:
                     l1 = "SERMENTS DE L'INSTANT";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez des points a chaque round , pour chaque serment respecté.";
-                    l5 = "";
                     l6 = "serment de VALEUR ( 1 pts/round) pour avoir détruit au moins un personnage,véhicule ou montre a laide d'une unité ADEPTUS ASTARTES";
                     l7 = "serment d'HONNEUR ( 1 pts/round) pour n'avoir ni battu en retraite , ni avoir raté un test de morale";
                     l8 = "serment du DEVOIR ( 2 pts/round) pour avoir une unité ADEPTUS ASTARTES entierement dans les 6 pouces au centre du champs de bataille";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
                 #endregion
                 #region OBJC_BA
                 case 113:
                     l1 = "LAME SANGUINIUS";
-                    l2 = "";
                     l3 = "Au début de votre première phase de commandement, vous devez choisir une figurines PERSONNAGE Blood Angels de votre armée";
                     l4 = "pour lancer un défi et votre adversaire dois choisir une figurine PERSONNAGE de son armée pour le relever.";
                     l5 = "Si un joueur ou l'autre n'as pas de figurine personnage, il doit à la place choisir son seigneur de guerre.";
-                    l6 = "";
                     l7 = "Marquez 5 points de victoire à la fin de la bataille pour chacune des conditions suivantes qui as été rempli:";
                     l8 = "La figurine qui as relevé le défi a été détruite.";
                     l9 = "La figurine qui as relevé le défi a été détruite par une attaque de mélée.";
                     l10 = "La figurine qui as relevé le défi a été détruite par une attaque de mélée de la figurine qui as lancé le défi.";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 114:
                     l1 = "FUREUR DES EGARES";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 3 points de victoire à la fin de votre tour si une ou plusieurs unités ennemies";
                     l5 = "ont été détruites par une unitée COMPAGNIE DE LA MORT de votre armée à ce tour .";
-                    l6 = "";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 115:
                     l1 = "LA MORT DESCEND DU CIEL";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 2 points de victoire à la fin de votre tour si une ou plusieurs unités ennemie ont été détruites";
                     l5 = "par une unitée Blood Angels de votre armée qui as té placé sur le champs de bataille ";
                     l6 = "à l'étapes de renforts d'une de vos phase de mouvement.";
-                    l7 = "";
                     l8 = "Si une de ces unités ennemies étaient une unité Personnage,";
                     l9 = "Marquez 3 points de victoire à la place.";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 116:
                     l1 = "ASSAUT IMPLACABLE";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 2 points de victoire à la fin de votre tour s'il y a plus d'unités Bood Angels";
                     l5 = "de votre armée dans la zone de déploiement ennemie qu'il y as d'unités ennemies";
                     l6 = "dans votre zone de déploiement.";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 #endregion
                 #region OBJC_DeadGuard
                 case 125:
                     l1 = "VECTEURS INCONSCIENTS";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 3 points de victoire à la fin du round de bataille si au moins une unitée ennemie";
                     l5 = "a raté un test de moral à ce round, et qu'au cours de celui-ci";
                     l6 = "au moins une de ses figurines ai été détruite par des attaques d'une arme de la peste ";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 126:
@@ -494,10 +295,8 @@ namespace CPV9.Classes
                     l5 = "sur 3 quarts de table différents, et ue ces unités sont toutes à plus de 6 pouces du centre du champs de bataille.";
                     l6 = "Marquez 6 points de victoire à la place si vous avez au moins une unité BUBONICUS ASTARTES entièrement sur chaque";
                     l7 = "quarts de table et que ces unités sont toutes à plus de 6 pouces du centre du champs de bataille. ";
-                    l8 = "";
                     l9 = "Marquez 4 points de victoire à la fin de la bataille si vous contrôlez plus de la moitier du nombre total de pions objectifs";
                     l10 = "sur le champs de bataille et qu'il y a des unités BUBONICUS ASTARTES de votre armée à 3 pouces de ces pions objectifs.";
-                    l11 = "";
                     l12 = "Marquez 4 points de victoire à la fin de la bataille si chaque pion objectif sur le champs de bataille";
                     l13 = " est à portée de contagion d'une aptitude de contagion des unitées de votre armée.";
                     break;
@@ -505,13 +304,10 @@ namespace CPV9.Classes
                 case 127:
                     l1 = "REPANDRE LES MALADIES";
                     l2 = "Si vous choisissez cet objectif , les unités Infanterie de la Death Guard de votre armée peuvent effectuer l'action suivante:";
-                    l3 = "";
                     l4 = "Répandre les maladies (Action):";
                     l5 = "Une unité de votre armée peut commencer à effectuer cette action à la fin de votre phase de mouvement si elle est à 3 pouces";
                     l6 = "d'un pion objectif qui n'as pas été contaminé. ";
-                    l7 = "";
                     l8 = "Une unité ne peut pas commencer cette action si il y a une unité ennemie ( hors aérodynes) à 3 pouces du même pion objectif.";
-                    l9 = "";
                     l10 = "L'action est terminé à la fin de votre tour. Quand cette action est terminée, choisissez un des effets suivants:";
                     l11 = "Jetez un D6 : sur 4+ ce pion objectif est contaminé oubien , ";
                     l12 = "L'unité qui effectue cette action subit D3 BM et ce pion objectif est contaminé";
@@ -521,98 +317,55 @@ namespace CPV9.Classes
                 #region OBJC_Admech
                 case 128:
                     l1 = "ACCRETION DU SAVOIR";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 3 points de victoire à la fin de la bataille pour chaque figurine ennemie détruite";
                     l5 = "qui remplit un ou plusieurs des critères suivants";
-                    l6 = "";
                     l7 = "- La figurine a un Trait de Seigneur de Guerre.";
                     l8 = "- La figurine a une Relique.";
                     l9 = "-La figurine a le mot-clé Véhicule et une charactèristique de PV de 14 ou plus.";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 129:
                     l1 = "ERADICATION DE LA CHAIR";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Marquez 3 points de victoire à la fin du round de bataille s'il y a au moins une unité Véhicule ADEPTUS MECHANICUS";
                     l5 = "de votre armée sur le champs de bataille,";
                     l6 = "et si à ce round de bataille, les unités ADEPTUS MECHANICUS de votre armée ont détruit plus d'unités d'Infanterie";
                     l7 = "que les unités ennemie n'ont détruit d'unités Vehicule amies.";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 130:
                     l1 = "SEQUENCAGE NON REPERTORIE";
-                    l2 = "";
                     l3 = "Avant le déploiement ,";
                     l4 = "Assignez un seul pion objectif à chaque round de bataille et inscrivez le. ";
-                    l5 = "";
                     l6 = "Un pion objectif ne peut pas être assigné à plus d'un round de bataille.";
-                    l7 = "";
                     l8 = "Marquez 3 points de victoire à la fin du round de bataille, si vous contrôlez ";
                     l9 = "le pion objectif assigné au round de bataille concerné.";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 131:
                     l1 = "ARCHEOCRYPTE SECRETE";
-                    l2 = "";
-                    l3 = "";
                     l4 = "Aprés le déploiement,votre adversaire choisit un seul pion objectif sur le champs de bataille";
                     l5 = "( En dehors des pions objectif dans sa propre zon de déploiement) ";
-                    l6 = "";
-                    l7 = "";
                     l8 = "- Marquez 2 points de victoire à la fin du round de bataille si vous contrôlez le pion objectif concerné.";
-                    l9 = "";
                     l10 = "- Marquez 5 points de victoire à la fin du round de bataille si vous contrôlez le pion objectif concerné.";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 #endregion
                 #region OBJC_Adepta S
                 case 132:
                     l1 = "DEMONSTRATION DE FOI";
-                    l2 = "";
                     l3 = "A la fin de chaque tour , si 2 actes de foi ont été accomplis à ce tour par des unités Adepta Sororitas de votre armée,";
                     l4 = "marquez 1 points de victoire si c'est votre tour, ou 2 points de victoire si c'est le tour adverse.";
-                    l5 = "";
                     l6 = "Si au moins 3 actes de foi ont été accomplis à ce tour par des unités Adepta Sororitas de votre armée, marquez 1 point de victoire additionnel.";
-                    l7 = "";
                     l8 = "Notez que les actes de foi accomplis grâce à des dés de Chérubin accordés par des chérubins à encensoire ne compte pas pour cet objectif secondaire.";
-                    l9 = "";
                     l10 = "Vous ne pouvez pas marquer plus de 12 points de victoire grâce à cet objectif secondaire pendant la mission.";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 133:
                     l1 = "TUEZ L'HERETIQUE";
-                    l2 = "";
                     l3 = "A la fin de chacune de vos phase de tir, marquez 1 points de victoire pour chacune des conditions suivantes qui as été rempli:";
-                    l4 = "";
                     l5 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a BOLTS par une unité MINISTORUM de votre armée.";
-                    l6 = "";
                     l7 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FLAMMES par une unité MINISTORUM de votre armée.";
-                    l8 = "";
                     l9 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FUSION par une unité MINISTORUM de votre armée.";
-                    l10 = "";
-                    l11 = "";
                     l12 = "Si ces trois conditions ont été remplis à la fin de votre phase de tir , marquez 1 point de victoire additionnel";
                     l13 = "( pour un maximum de 4 points de victoire )";
                     break;
@@ -620,9 +373,7 @@ namespace CPV9.Classes
                 case 134:
                     l1 = "SOL SACRE";
                     l2 = "Les unités Infanterie ADEPTA SORORITAS et PRETRES MINISTRUM de votre armée pevent tenter l'action suivante :";
-                    l3 = "";
                     l4 = "Sol sacré (atcion) :";
-                    l5 = "";
                     l6 = "Une unité infanterie Adepta Sororitas ou prêtre Culte Impérialis de votre armée peuvent commencer à accomplir cette action";
                     l7 = "à la fin de votre phase de mouvement si elle est à porté d'un pion objectif que votre armée n'a pas déjà consacré.";
                     l8 = "Une unitée ne peut pas commencer à accomplir cette action tant qu'il y a une unitée ennemie à porte du pion objectif. (hors aérodynes).";
@@ -635,154 +386,90 @@ namespace CPV9.Classes
 
                 case 135:
                     l1 = "DEFENDEZ LE SANCTUAIRE";
-                    l2 = "";
                     l3 = "Si vous choisissez cet objecif secondaire, après que les deux camps ont fini de se déployer, votre adversaire doit choisir un pion objectif";
                     l4 = "sur le champs de bataille hors de sa zone de déploiement qui sera le pion objectif du sanctuaire";
                     l5 = "(Si le seul pion objectif du champ de bataille est dans la zone de déploiement ennemie, ce sera le pion objectif du sanctuaire)";
-                    l6 = "";
                     l7 = "- A la fin de votre tour, marquez 3 points de victoire, si vous contrôlez le pion objectif de sanctuaire. ";
-                    l8 = "";
                     l9 = "- A la fin de la bataille, marquez 3 points de victoire additionnel, si vous contrôlez le pion objectif de sanctuaire. ";
-                    l10 = "";
                     l11 = "- A la fin de la bataille, réduisez le nombre de point de victoire que vous a rapporté cet objectif secondaire de 3 ";
                     l12 = "jusqu'a un minimun de 0, si votre adversaire contrôle le pion de santuaire.";
-                    l13 = "";
                     break;
 
                 #endregion
                 #region OBJM patrouille
                 case 501:
                     l1 = "ASSAUT CHIRURGICAL";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
-                    l5 = "";
                     l6 = "Marquez 5 points de victoire si vous contrôlez le pion objectif";
                     l7 = "dans la zone de déploiement adverse à la fin de votre tour.";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 502:
                     l1 = "SONDAGE";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
                     l5 = "Marquez 5 points de victoire si vous contrôlez les 2 pions objectifs qui ne sont dans aucune";
                     l6 = "des zones de déploiement des joueurs a la fin de votre phase de commandement.";
-                    l7 = "";
                     l8 = "Cette objectif secondaire ne peut pas être marqué au premier round de bataille";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 503:
                     l1 = "ENCERCER";
-                    l2 = "";
-                    l3 = "";
                     l4 = "MArquez 3 points de victoire si vous au moins une unité de votre armée ( hors Aérodynes ) entièrement à 6 pouces";
                     l5 = "de votre bord de champ de bataille et au moins une unité de votre armée (hors Aérodynes ) entièrement à 6 pouces";
                     l6 = "du bord du champ de bataille adverse à la fin de votre tour.";
-                    l7 = "";
                     l8 = "Marquez 5 points de victoire à la place si une de ces unités est de surcroît entièrement dans la zone de déploiement adverse.";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
                 #endregion
                 #region OBJM Incursion                
                 case 1011:
                     l1 = "ASSAUT DIRECT";
-                    l2 = "";
-                    l3 = "";
                     l4 = "A la fin du tour de chaque joueur,  le joueur dont c'est le tour marque 2 points de victoire s'il remplit une des conditions suivante,";
                     l5 = "ou 3 points de victoire s'il remplit les deux conditions suivantes :";
-                    l6 = "";
                     l7 = "1- Il contrôle chaque pion objectif du champ de bataille ou il contrôle au moins 1 pion objectif qu'il ne contrôlait pas au début du tour.";
-                    l8 = "";
                     l9 = "2- Il a détruit au moins 1 unité ennemie qui était à portée d'un pion objectif au début de son tour. ";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 1012:
                     l1 = "SECURISER LES SITES D'ATTERRISSAGE";
-                    l2 = "";
                     l3 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour marque des points de victoire pour chaque pion objectif";
                     l4 = "dans le No Man's Land qu'il contrôle comme indiqué ci-dessous ";
                     l5 = "( Notez que le nombres de point de victoire marqué changent selon le round de bataille )";
-                    l6 = "";
                     l7 = "Round 3: 2 points de victoire par pion objectif dans le No Man's Land contrôlé";
                     l8 = "Round 4: 3 points de victoire par pion objectif dans le No Man's Land contrôlé";
                     l9 = "Round 5: 4 points de victoire par pion objectif dans le No Man's Land contrôlé";
-                    l10 = "";
                     l11 = "cet objectif principal ne peut pas être marqué au premier ou au deuxième rounds de bataille";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 1013:
                     l1 = "ATTAQUEZ LES LIGNES DE RAVITAILLEMENT";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
-                    l5 = "";
                     l6 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour, marque 3 points de victoire ";
                     l7 = "s'il contrôle au moins 1 des pions objectif qui se trouve dans la zone de déploiement de son adversaire.";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 1021:
                     l1 = "LA SAGESSE EST LE PILIER DE LA FOI";
-                    l2 = "";
                     l3 = "A la fin du tour du joueur A, ce joueur : ";
                     l4 = "- Marque 2 points de victoire s'il contrôle le pion objectif B";
                     l5 = "- Perd 1 point de victoire s'il ne contrôle pas le pion objectif A";
                     l6 = "- Marque 1 point de victoire pour chaque autre pion objectid qu'il contrôle";
-                    l7 = "";
                     l8 = "A la fin du tour du joueur B, ce joueur : ";
                     l9 = "- Marque 2 points de victoire s'il contrôle le pion objectif A";
                     l10 = "- Perd 1 point de victoire s'il ne contrôle pas le pion objectif B";
                     l11 = "- Marque 1 point de victoire pour chaque autre pion objectid qu'il contrôle";
-                    l12 = "";
                     l13 = "Le score de points de victoire d'un joueur ne peut pas tomber en dessous de 0.";
                     break;
 
                 case 1022:
                     l1 = "ASCENSION";
-                    l2 = "";
                     l3 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour marque 2 points de victoire s'il remplit au moins une des conditions suivantes:";
-                    l4 = "";
                     l5 = "Il contrôle le pion objectif au centre du champ de bataille.";
                     l6 = "Il a détruit au moins 1 unité ennemie qui était à 6 pouces du centre du champ de bataille au début de son tour.";
-                    l7 = "";
                     l8 = "A la fin de la bataille, chaque joueur marque 3 points de victoire pour chacune des conditions suivantes qu'il remplit:";
                     l9 = "(jusqu'à un maximum de 6 points par joueur)";
-                    l10 = "";
                     l11 = "- Son seigner de Guerre est à porté du pion objectif au centre du champ de bataille.";
                     l12 = "- Le seigneur de Guerre de son adversaire est détruit.";
-                    l13 = "";
                     break;
 
                 case 1023:
                     l1 = "ELAN DE FOI";
-                    l2 = "";
                     l3 = "Elan de Foi ( Action):";
                     l4 = "1 unité de votre armée peut enteprendre cette action au début de votre phase de mouvement si elle est à portée d'un pion objectif qui ne se trouve pas";
                     l5 = " dans votre zone de déploiement.Les unités ayant l'aptitude OBjectif Sécurisé ou une règle similaire peuvent entreprendre cette action à la fin";
@@ -797,39 +484,87 @@ namespace CPV9.Classes
                     break;
 
                 case 1031:
-                    l1 = "";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
-                    l5 = "";
-                    l6 = "";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
+                    l1 = "TELECHARGER LE DATA-PSAUME";
+                    l2 = "A la fin du tour de chaque joueur , si une ou plusieurs unités de l'armée de ce joueur ont accompli avec succès l'action Télécharger le Data-psaume à ce tour,";
+                    l3 = "le joueur concerné marque 1 point de victoire pour chaque pion objectif qu'il contrôle à ce moment (jusqu'à un maximum de 3 points de victoire par joueur et par tour)";
+                    l5 = "TELECHARHER LE DATA-PSAUME (Action):";
+                    l7 = "une ou plusieurs unités de votre armée peuvent entreprendre cette action à la fin de votre phase de mouvement.";
+                    l8 = "Chaque unité qui entreprend cette action doit êtreà portée d'un pion objectif différent.";
+                    l9 = " Une unité ne peut pas commencer cette action tant que n'importe quel nombre d'unités ennemies sont à portée du même pion objectif (Aérodynes exclus). ";
+                    l11 = "Cette action est accompit à la fin de votre phase de commandement suivante , à condition que l'unité qui l'a entreprise soit toujours à portée du même pion objectif.";
+                    l12 = "Si une unité ayant la règleObjectif Sécurisé ou une règle similaire accomplit cette action avec succès, le pion objectif concerné demeure sous le contrôle de ce joueur,";
+                    l13 = "à moins que son adversaire le contrôle à la fin de n'importe quelle phase ultérieure, même s'il n'y a pas de figurine à portée.";
                     break;
 
                 case 1032:
-                    l1 = "";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
-                    l5 = "";
-                    l6 = "";
-                    l7 = "";
-                    l8 = "";
-                    l9 = "";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
+                    l1 = "BRISEZ-LES CORPS ET AME";
+                    l4 = "A la fin de chaque round de bataille, ";
+                    l5 = "chaque joueur marque 1 point de victoire pour chaque unité ennemie qui a été détruite lors du round de bataille concerné.";
+                    l7 = " (jusqu'a un maximum de 3 points de victoire par joueur et par round)";
+                    l9 = "Une unité peut, ";
+                    l10 = "si elle est ressuscitée pour n'importe quelle raison, compter potentiellement comme ayant été détruite plusieurs fois pour cet objectif principal";
+                    l12 = "( en supposant qu'elle a été détruite à nouveau au cours du même round de bataille )";
                     break;
 
                 case 1033:
-                    l1 = "";
+                    l1 = "BALAYAGE DE RECONNAISSANCE";
+                    l2 = "A a fin de la bataille, chaque joueur marque des points de victoire pour le nombre total de pions objectif du champ de bataille";
+                    l3 = " qui ont été balayés par son armée, comme indiqué ci-dessous";
+                    l4 = "1 Pion OBjectif balayé = 3 points de victoire  ; 2 Pion OBjectif balayé = 6 points de victoire ;";
+                    l5 = "3 Pion OBjectif balayé = 10 points de victoire ; 4 Pion OBjectif balayé = 15 points de victoire ;";
+                    l7 = "BALAYAGE DE RECONNAISSANCE ( Action:)";
+                    l8 = "Une unitée de votre armée peu entrependre cette action à la fin de votre phase de mouvement si elle est à portée d'un pion objectif qui nas pas été balayé";
+                    l9 = "par une unité de votre armée. Une unité ne peut pas commencer cette action tant que n'importe quelle nombres d'unités ennemies sont à portée du même pion objectif.(hors Aérodynes)";
+                    l10 = "Si l'unité qui entreprend l'action a le rôle tactique Attaque rapide, ou si elle a l'aptitude Objectif Sécurisé ou une règle similaire, l'action est accomplie";
+                    l11 = "à la fin de votre tour à condition que l'unité soit toujours à portée du même pion objectif; sinon , l'action est accomplie au début de votre prochaine phase de commandement,";
+                    l12 = "ou à la fin de la bataille ( selon ce qui arrive en premier), à condition que l'unité qui entreprend l'action soit toujours à portée du même pion objectif.";
+                    l13 = "Si l'action est accompie avec succès, on dit du pion objectif concerné qu'il a été balayé par votre armée.";
+                    break;
+                #endregion
+                #region OBJM Force De Frappe
+                case 2011:
+                    l1 = "BRISEZ-LES CORPS ET AME";
+                    l4 = "A la fin de chaque round de bataille, ";
+                    l5 = "chaque joueur marque 1 point de victoire pour chaque unité ennemie qui a été détruite lors du round de bataille concerné.";
+                    l7 = " (jusqu'a un maximum de 3 points de victoire par joueur et par round)";
+                    l9 = "Une unité peut, ";
+                    l10 = "si elle est ressuscitée pour n'importe quelle raison, compter potentiellement comme ayant été détruite plusieurs fois pour cet objectif principal";
+                    l12 = "( en supposant qu'elle a été détruite à nouveau au cours du même round de bataille )";
+                    break;
+
+                case 2012:
+                    l1 = "DETONATION";
+                    l2 = "A la fin de la bataille, chaque joueur marque 4 point de victoire pour chaque pion objectif d'Explosifs Amorcés qui est dans le territoire de l'adversaire.";
+                    l3 = "(Jusqu'à un maximum de 15 points de victoire par joueur)";
+                    l4 = "AMORCER LES EXPLOSIFS (Action):";
+                    l5 = "1 unité de votre armée peut entreprendre cette action à la fin de votre phase de Mouvement si elle est entièrement dans le territoire adverse et ";
+                    l6 = "si elle est à 9 pouces d'un ou plusieurs pions objectif d'explosifs Amorcés.Si l'unité qui entreprend l'action a l'aptitude Objectif Sécurisé ou une règle similaire,";
+                    l7 = " l'action est accomplie à la fin de votre tour; sinon , l'action est accomplie a la fin de votre prochaine phase de commandement. Si cette action est accomplie,";
+                    l8 = "placer 1 pion objectif d'explosifs Amorcés sur le champ de bataille, entièrement dans le territoire adverse et entièrement à 3 pouces de l'unité qui accompli cette action:";
+                    l9 = "ceci représente une cache d'Explosifs Amorcés, mais ne compte pas comme un pion objectif en termes de règles, sauf pour les besoins de l'action Désamorcer les Explosifs et";
+                    l10 = "l'objectif principal Détonation";
+                    l11 = "DESAMORCER LES EXPLOSIFS (Action)";
+                    l12 = "1 unité de votre armée peut entreprendre cette action à la fin de votre phase de Mouvement si elle st à portée d'un pion objectif d'Explosifs Amorcés dans votre territoire et si";
+                    l13 = "aucune unité ennemie ( hors Aérodynes ) n'est à portée du même pion objectif d'Explosifs Amorcés. Si cette action accomplie, jetez un D6  et ajoutez 3 au résultat si l'unité";
+                    l14 = "accompli l'action a 'aptitude Objectif Sécurisé ou une règles similaire: sur 4+, retirez le pion objectif d'Explosis Amorcés du champ de bataille.";
+                    break;
+
+                case 2013:
+                    l1 = "INTERCEPTION DE DONNEES";
+                    l3 = "Chaque fois qu'une unité de votre armée accomplit l'action Interception de Données, vous marquez autant de points de victoire que le nombre de pions objectif situés";
+                    l4 = "dans le no Man's Land que vous contrôlez actuellement, jusqu'à un maximum de 3 points de victoire par action.";
+                    l6 = "INTERCEPTION DE DONNEES (Action):";
+                    l7 = "1 unité de votre armée peut entreprendre cette action à la fin de votre phase de Mouvement si elle est à portée du pion objectif dans sa zone de déploiement et";
+                    l8 = "si aucune unité ennemie ( hormis les Aérodynes ) n'est à portée du pion objectif";
+                    l9 = "Cette action est accomplie à la fin de votre tour, à condition que l'unité qui l'entreprend soit toujours à portée du pion objectif.";
+                    l11 = "TERMINAUX DE DONNEES";
+                    l12 = "Dans cette mission, si un joueur contrôle un pion objectif qui est dans le no Man's Land à la fin de sa phase de Commandement et si une ou plusieurs des ses unités";
+                    l13 = "qui sont à portée de celui-ci ont l'aptitude Objectif Sécurisé ou une règle similaire, il reste sous le contrôle du joueur même s'il n'y a pas de figurines à portée,";
+                    l14 = "à moins que son adversaire en prenne le contrôle à la fin d'une phase ultérieure.";
+                    break;
+
+                case 2021:
+                    l1 = "SECURISER LES SANCTUAIRES";
                     l2 = "";
                     l3 = "";
                     l4 = "";
@@ -842,60 +577,37 @@ namespace CPV9.Classes
                     l11 = "";
                     l12 = "";
                     l13 = "";
+                    l14 = "";
                     break;
-
-
-                #endregion
-                #region OBJM Force De Frappe
 
                 #endregion
                 #region OBJM Offensive
                 case 3001:
                     l1 = "TENIR LE CENTRE";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
-                    l5 = "";
                     l6 = "Marquez 5 points de victoire à la fin de votre phase de Commandement, ";
                     l7 = "si vous contrôlez plus de pions objectif marquez B que votre adversaire n'en contrôle";
                     l8 = "et que vous avez plus de figurines entièrement à 12 pouces du centre du champ de bataille que votre adversaire.";
-                    l9 = "";
                     l10 = "Cet objectif secondaire ne peut pas être marqué au premier round de bataille.";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 3002:
                     l1 = "ENCERCLEZ-LES";
-                    l2 = "";
-                    l3 = "";
-                    l4 = "";
                     l5 = "Marquez 4 points de victoire à la fin de votre phase de Commandement et à la fin de la bataille";
                     l6 = "si vous contrôlez les pions objectifs dans votre zone de déploiement";
                     l7 = " et un pion objectif ou plus dans la zone de déploiement adverse.";
-                    l8 = "";
                     l9 = "Marquez 8 points de victoire à la place si vous contrôlez les quatre pions objectif qui sont dans es zones de déploiement";
-                    l10 = "";
-                    l11 = "";
-                    l12 = "";
-                    l13 = "";
                     break;
 
                 case 3003:
                     l1 = "CHERCHER LE PORTAIL";
-                    l2 = "";
                     l3 = "Chaque fois qu'une unité de votre armée accomplit l'Action Chercher le Portail , vous marquez 1 point de victoire,";
                     l4 = "et 1 point de victoire supplémentaire pour chaque pion objectif marqué A actuellement sous votre contrôle";
                     l5 = "( pour un maximum de 5 points de victoire )";
-                    l6 = "";
                     l7 = "Chercher le Portail ( Action) :";
-                    l8 = "";
                     l9 = "1 unité INFANTERIE de votre armée ( PERSONNAGES EXCLUS) peut commencer à effectuer cette action à la fin de votre phase de mouvement";
                     l10 = "si elle est entièrement dans la zone de fouille figurée sur la carte de déploiement.";
                     l11 = "L'action est accompie à la fin de votre prochaine phase de Commandement tant que l'unité qui l'effectue";
                     l12 = " est toujours entièrement dans la zone de Fouille.";
-                    l13 = "";
                     break;
                 #endregion
 
@@ -914,6 +626,7 @@ namespace CPV9.Classes
                     l11 = "";
                     l12 = "";
                     l13 = "";
+                    l14 = "";
                     break;
 
                 case 1140:
@@ -980,6 +693,7 @@ namespace CPV9.Classes
                     l11 = "";
                     l12 = "";
                     l13 = "";
+                    l14 = "";
                     break;
             }
         }
@@ -997,6 +711,7 @@ namespace CPV9.Classes
             private string l11;
             private string l12;
             private string l13;
+            private string l14;
 
             public string L1 { get { return l1; } }
             public string L2 { get { return l2; } }
@@ -1011,6 +726,7 @@ namespace CPV9.Classes
             public string L11 { get { return l11; } }
             public string L12 { get { return l12; } }
             public string L13 { get { return l13; } }
+            public string L14 { get { return l14; } }
     }
     }
 
