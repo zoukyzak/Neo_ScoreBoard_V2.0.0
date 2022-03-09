@@ -6,19 +6,20 @@
 
         public Classe_Selection_OBJS(int Choix_ObjS, string text_Objectif)
         {
+            /**  ELIMINEZ L ENNEMI  **/
             if (Choix_ObjS == 1)
             {
-                text_Objectif = "1-Assasinat (ca22), ";
+                text_Objectif = "1-Assasinat , ";
             }
             if (Choix_ObjS == 2)
             {
-                text_Objectif = "2-Abbatez-le (ca22) , ";
+                text_Objectif = "2-Abbatez-le , ";
             }
             if (Choix_ObjS == 3)
             {
-                text_Objectif = "3-Tueur de Titans (ca22) , ";
+                text_Objectif = "3-chasseur de Titans , ";
             }
-            
+            /**  PAS DE PITIER PAS DE REPIT  **/
             if (Choix_ObjS == 5)
             {
                 text_Objectif = "5-Pas de prisonnier , ";
@@ -31,7 +32,7 @@
             {
                 text_Objectif = "7-Jusqu'au dernier , ";
             }
-            
+            /**  SUPREMATIE MILITAIRE  **/
             if (Choix_ObjS == 9)
             {
                 text_Objectif = "9-Sur tous les fronts , ";
@@ -44,6 +45,7 @@
             {
                 text_Objectif = "11-Emprise , ";
             }
+            /**  OPERATION CLANDESTINE  **/
             if (Choix_ObjS == 12)
             {
                 text_Objectif = "12-Inspecter le signal , ";
@@ -54,8 +56,13 @@
             }
             if (Choix_ObjS == 14)
             {
-                text_Objectif = "14-Levez les étendards , ";
+                text_Objectif = "14-Levez hauts les étendards , ";
             }
+            if (Choix_ObjS == 18)
+            {
+                text_Objectif = "18-Données de Nachmund , ";
+            }
+            /**  ART DU WARP  **/
             if (Choix_ObjS == 15)
             {
                 text_Objectif = "15-Interrogation psychique ,";
@@ -67,15 +74,13 @@
             if (Choix_ObjS == 17)
             {
                 text_Objectif = "17-Abhorrez le sorcier , ";
-            }
-            if (Choix_ObjS == 18)
-            {
-                text_Objectif = "18-Données de Nachmund , ";
-            }
+            }            
             if (Choix_ObjS == 19)
             {
                 text_Objectif = "19-Percer le voile , ";
             }
+
+            /**  NECRON  **/
             if (Choix_ObjS == 100)
             {
                 text_Objectif = "100-Code de combat , ";
@@ -92,6 +97,8 @@
             {
                 text_Objectif = "103-Machines antiques , ";
             }
+
+            /**  SPACE MARINE  **/
             if (Choix_ObjS == 110)
             {
                 text_Objectif = "110-Guerre codex , ";
@@ -104,6 +111,8 @@
             {
                 text_Objectif = "112-Sermnents de l'instant , ";
             }
+
+            /**  BLODD ANGELS  **/
             if (Choix_ObjS == 113)
             {
                 text_Objectif = "113-Lame de sanguinius , ";
@@ -120,6 +129,7 @@
             {
                 text_Objectif = "116-Assaut implacable , ";
             }
+           
             if (Choix_ObjS == 117)
             {
                 text_Objectif = "117-La longue veille , ";
@@ -152,6 +162,8 @@
             {
                 text_Objectif = "124-Fierté du guerrier , ";
             }
+
+            /**  DEAD GUARD  **/
             if (Choix_ObjS == 125)
             {
                 text_Objectif = "125-Vecteurs inconscients , ";
@@ -164,6 +176,8 @@
             {
                 text_Objectif = "127-Répandre les maladies , ";
             }
+
+            /**  ADMECH  **/
             if (Choix_ObjS == 128)
             {
                 text_Objectif = "128-Accrétion du savoir , ";
@@ -180,6 +194,8 @@
             {
                 text_Objectif = "131-Archéocrypte secrète , ";
             }
+
+            /**  ADEPTA SORORITAS **/
             if (Choix_ObjS == 132)
             {
                 text_Objectif = "132-Démonstration de foi , ";
@@ -196,6 +212,8 @@
             {
                 text_Objectif = "135-Défendez le sanctuaire , ";
             }
+
+            /**  PATROUILLE  **/
             if (Choix_ObjS == 501)
             {
                 text_Objectif = "501-Assaut chirurgical , ";
@@ -208,9 +226,11 @@
             {
                 text_Objectif = "503-Encercler , ";
             }
+
+            /**  INCURSION  **/
             if (Choix_ObjS == 1011)
             {
-                text_Objectif = "1011-Prise de flan , ";
+                text_Objectif = "1011-assaut direct , ";
             }
             if (Choix_ObjS == 1012)
             {
@@ -222,15 +242,15 @@
             }
             if (Choix_ObjS == 1021)
             {
-                text_Objectif = "1021-Position centrale  , ";
+                text_Objectif = "1021-la sagesse est le pilier de la foi  , ";
             }
             if (Choix_ObjS == 1022)
             {
-                text_Objectif = "1022-s'elevez  , ";
+                text_Objectif = "1022-ascension  , ";
             }
             if (Choix_ObjS == 1023)
             {
-                text_Objectif = "1023-Irruption  , ";
+                text_Objectif = "1023-elan de foi  , ";
             }
             if (Choix_ObjS == 1031)
             {
@@ -238,19 +258,21 @@
             }
             if (Choix_ObjS == 1032)
             {
-                text_Objectif = "1032-Limitez les pertes  , ";
+                text_Objectif = "1032-brisez-les corps et âme  , ";
             }
             if (Choix_ObjS == 1033)
             {
                 text_Objectif = "1033-Balayage de reconnaissance  , ";
             }
+
+            /**  FORCE DE FRAPPE  **/
             if (Choix_ObjS == 2011)
             {
-                text_Objectif = "2011-Minimisez les pertes  , ";
+                text_Objectif = "2011-brisez-les corps et âme , ";
             }
             if (Choix_ObjS == 2012)
             {
-                text_Objectif = "2012-Raser  , ";
+                text_Objectif = "2012-detonation  , ";
             }
             if (Choix_ObjS == 2013)
             {
@@ -258,11 +280,11 @@
             }
             if (Choix_ObjS == 2021)
             {
-                text_Objectif = "2021-Encerclez-les  , ";
+                text_Objectif = "2021-Sécurisez le sanctuaire  , ";
             }
             if (Choix_ObjS == 2022)
             {
-                text_Objectif = "2022-Terrain vital  , ";
+                text_Objectif = "2022-Sol corrompu  , ";
             }
             if (Choix_ObjS == 2023)
             {
@@ -270,7 +292,7 @@
             }
             if (Choix_ObjS == 2031)
             {
-                text_Objectif = "2031-Débordement  , ";
+                text_Objectif = "2031-Submerger  , ";
             }
             if (Choix_ObjS == 2032)
             {
@@ -278,8 +300,10 @@
             }
             if (Choix_ObjS == 2033)
             {
-                text_Objectif = "2033-Cibles prioritaires , ";
+                text_Objectif = "2033-Artéfacts précieux , ";
             }
+
+            /**  OFFENSIVE  **/
             if (Choix_ObjS == 3001)
             {
                 text_Objectif = "3001-Tenir le centre , ";
@@ -292,6 +316,7 @@
             {
                 text_Objectif = "3003-Chercher le portail , ";
             }
+
             Nom_Objectif_Selected = text_Objectif;
             return;
         }

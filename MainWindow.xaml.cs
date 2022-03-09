@@ -10421,17 +10421,7 @@ namespace CPV9
         }
         #endregion
         #endregion
-        #endregion
-        #region OBJECTIF MISSION
-        #region OBJM_Incursion
-        #region Objectif Mission Incursion Attaquant
-        
-        #endregion
-        #region Objectif  Mission Incursion Defenseur
-        
-        #endregion
-        #endregion
-        #endregion
+        #endregion       
         #endregion
         private void FormatBis()
         {

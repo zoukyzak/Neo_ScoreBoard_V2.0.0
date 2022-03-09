@@ -136,7 +136,7 @@
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1013.cs" />
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1012.cs" />
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1011.cs" />
-    <Compile Include="Classes\OBJS\Classe_Selection_OBJS.cs" />
+    <Compile Include="Classes\Classe_Selection_OBJS.cs" />
     <Compile Include="Classes\OBJM\Patrouille\Classe_Score_OBJM_503.cs" />
     <Compile Include="Classes\OBJM\Patrouille\Classe_Score_OBJM_501.cs" />
     <Compile Include="Classes\OBJM\Patrouille\Classe_Score_OBJM_502.cs" />

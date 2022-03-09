@@ -14,6 +14,7 @@ namespace CPV9.Classes
             switch (OBJ)
             {
                 #region OBJP
+                /**  ELIMINEZ L ENNEMI  **/
                 case 1:
                     l1 = " ASSASSINAT";
                     l4 = "Score 3 points de victoire à la fin de la bataille";
@@ -33,7 +34,7 @@ namespace CPV9.Classes
                     break;
 
                 case 3:
-                    l1 = " TUEUR DE TITANS";
+                    l1 = " CHASSEUR DE TITANS";
                     l3 = "Score 4 points de victoire à la fin de la bataille si,";
                     l4 = "une figurine Titanesque ennemi est détruite.";
                     l6 = "Score 9 points de victoire à la fin de la bataille si,";
@@ -41,19 +42,20 @@ namespace CPV9.Classes
                     l9 = "Score 15 points de victoire à la fin de la bataille si,";
                     l10 = "trois figurines Titanesques ennemi sont détruitent.";
                     break;
-
+                /**  PAS DE PITIER PAS DE REPIT  **/
                 case 5:
-                    l1 = " BROYEZ-LES";
-                    l2 = "Additionnez le nombres de points de vie des figurines ennemi détruite durant la bataille.";
-                    l3 = "Une unitée réssuscité et de nouveau détruite , sera comptabilisé une seconde fois";
-                    l5 = "A la fin de la bataille,score 1 point par tranche de 10 points de vie perdu par l' ennemi";
-                    l7 = "de plus ,";
-                    l9 = "si vous avez cumulez entre 50 et 99 points de vie , ajouter 1 point de victoire supplemenaire";
-                    l10 = "si vous avez cumulez 100 points de vie et plus, ajouter 2 point de victoire supplemenaire";
+                    l1 = " PAS DE PRISONNIER";
+                    l2 = "Si vous choisissez cet objectif, tenez un compte de points de pertes infigées. Chaque fois qu'une figurine ennemie";
+                    l3 = "est détruite, à moins q'il sagise d'une unité Véhicule, Monstre ou Personnage, ajoutez à ce compte autant de points que la charactéristique";
+                    l4 = "de points de vie de la figurine détruite.";
+                    l6 = "Une figurine peut, si elle est ressuscitée  pour n'importe quelle raison, potentiellement octroyer plusieurs points à ce compte";
+                    l8 = "A la fin de la bataille, divisez par 10 votre compte de points de pertes infligées en arrondissant à l'entier inférieur; le résultat est le nombre de points";
+                    l9 = "de victoire marqués. De plus , si votre compte de points de pertes infligées est entre 50 et 99, vous marquez 1 points de victoire supplémentaire, et";
+                    l10 = "si votre comptre de points de pertes infligées est de 100 ou plus, vous marquez 2 point de victoire supplemenaire";
                     break;
 
                 case 6:
-                    l1 = " PAS DE PRISONNIER";
+                    l1 = " BROYEZ-LES";
                     l4 = "Marquez 3 pts de victoire a la fin du round de bataille";
                     l5 = "si d'avantage d'unités ennemies que d'unités amis ";
                     l6 = "ont été détruites à ce round de bataille.";
@@ -67,7 +69,7 @@ namespace CPV9.Classes
                     l8 = "Si une unité se scinde en deux et qu'une partie est détruite et l'autre est resté en vie à la fin de la bataille,";
                     l9 = "Score 3 points de victoire pour cette unité au lieu de 5 points";
                     break;
-
+                /**  SUPREMATIE MILITAIRE  **/
                 case 9:
                     l1 = " SUR TOUS LES FRONT";
                     l3 = "Marquez 2 points de victoire à la fin de votre tour si vous avez une unité éligible ou plus";
@@ -90,7 +92,7 @@ namespace CPV9.Classes
                     l5 = "Marquez 3 points de victoire à la fin de votre tour si vous contrôlez 3 objectifs";
                     l6 = "ou plus et que vous en contrôliez plus que votre adversaire.";
                     break;
-
+                /**  OPERATION CLANDESTINE  **/
                 case 12:
                     l1 = " INSPECTER LE SIGNAL";
                     l3 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action suivante :";
@@ -128,6 +130,19 @@ namespace CPV9.Classes
                     l13 = "pour chaque pion objectif du champs de bataille sur lequel un de vos étendards a été levé";
                     break;
 
+                case 18:
+                    l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action)";
+                    l2 = "1 unité INFANTERIE ou motard de votre armée peut entreprendre cette action à la fin de votre phase de mouvement";
+                    l3 = "si elle est entièrement dans un quart de table sans servocrâne récupéré par votre armée (voir ci-dessous)";
+                    l4 = "et à plus de 6 pouces de tout autre quart de table.";
+                    l6 = "Cette action est accomplie à la fin de votre tour, tant que l'unité qui tente de le faire est toujours dans le même quart de table.";
+                    l8 = "Si cette action est accomplie, jetez un D6, en soustrayant 1 au résultat si l'unité qui as accompli l'action";
+                    l9 = "a le rôle tactique TROUPES :  si le résultat est inférieur ou égal au nombres de figurines actuel,";
+                    l10 = "votre armée a retrouvé un servocrâne dans ce quart de table et vous ajoutez 1 à votre compte de Données récupérées.";
+                    l12 = "A la fin de la bataille, marquez 4 points de victoire si votre compte de Données Récupérées est de 2, marquez 8 points";
+                    l13 = "de victoire s'il est de 3, ou 12 points de victoire s'il est de 4";
+                    break;
+                /**  ART DU WARP  **/
                 case 15:
                     l1 = " INTERROGATION PSYCHIQUE (action)";
                     l3 = "Marquez 3 points de victoire chaque fois que vous accomplissez avec succès l'action psychique suivante:";
@@ -152,20 +167,6 @@ namespace CPV9.Classes
                     l4 = "Vous ne pouvez pas choisir cet objectif secondaire si votre armée inclut la moindre unité Psyker.";
                     l7 = "Marquez 3 points de victoire à la fin de la bataille pour chaque unité PERSONNAGE PSYKER ennemie";
                     l8 = "qui a été détruit, et 2 points de victoire pour chaque autre unité Psyker ennemie qui a été détruite.";
-                    break;
-
-
-                case 18:
-                    l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action)";
-                    l2 = "1 unité INFANTERIE ou motard de votre armée peut entreprendre cette action à la fin de votre phase de mouvement";
-                    l3 = "si elle est entièrement dans un quart de table sans servocrâne récupéré par votre armée (voir ci-dessous)";
-                    l4 = "et à plus de 6 pouces de tout autre quart de table.";
-                    l6 = "Cette action est accomplie à la fin de votre tour, tant que l'unité qui tente de le faire est toujours dans le même quart de table.";
-                    l8 = "Si cette action est accomplie, jetez un D6, en soustrayant 1 au résultat si l'unité qui as accompli l'action";
-                    l9 = "a le rôle tactique TROUPES :  si le résultat est inférieur ou égal au nombres de figurines actuel,";
-                    l10 = "votre armée a retrouvé un servocrâne dans ce quart de table et vous ajoutez 1 à votre compte de Données récupérées.";
-                    l12 = "A la fin de la bataille, marquez 4 points de victoire si votre compte de Données Récupérées est de 2, marquez 8 points";
-                    l13 = "de victoire s'il est de 3, ou 12 points de victoire s'il est de 4";
                     break;
 
                 case 19:
@@ -279,7 +280,7 @@ namespace CPV9.Classes
                     break;
 
                 #endregion
-                #region OBJC_DeadGuard
+                #region OBJC_Dead Guard
                 case 125:
                     l1 = "VECTEURS INCONSCIENTS";
                     l4 = "Marquez 3 points de victoire à la fin du round de bataille si au moins une unitée ennemie";

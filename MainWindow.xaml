@@ -896,8 +896,8 @@
             </StackPanel>
             <Label x:Name="Label_Maps_B" Content="Utiliser les objectifs des Codex" HorizontalAlignment="Center" Margin="0,5,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="White" FontSize="10" FontFamily="Arial Black"/>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Visible" Margin="0,10,0,0" Background="Gray">
-                <RadioButton x:Name="radioButton_Codex_oui" Content="OUI" Foreground="White" BorderBrush="#FF257C0C" FontSize="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0" BorderThickness="5,1" VerticalContentAlignment="Center" FlowDirection="RightToLeft" IsThreeState="True" Click="radioButton_Codex_oui_Click"/>
-                <RadioButton x:Name="radioButton_Codex_non" Content="NON" Foreground="White" BorderBrush="#FF257C0C" FontSize="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0" BorderThickness="5,1" VerticalContentAlignment="Center" FlowDirection="RightToLeft" IsThreeState="True" IsChecked="True" Click="radioButton_Codex_non_Click"/>
+                <RadioButton x:Name="radioButton_Codex_oui" Content="OUI" Foreground="White" BorderBrush="#FF257C0C" FontSize="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0" BorderThickness="5,1" VerticalContentAlignment="Center" FlowDirection="RightToLeft" IsThreeState="True" IsChecked="True" Click="radioButton_Codex_oui_Click"/>
+                <RadioButton x:Name="radioButton_Codex_non" Content="NON" Foreground="White" BorderBrush="#FF257C0C" FontSize="6" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0" BorderThickness="5,1" VerticalContentAlignment="Center" FlowDirection="RightToLeft" IsThreeState="True" Click="radioButton_Codex_non_Click"/>
             </StackPanel>
             <Button x:Name="Button_Map_Ok" Content="VALIDER" HorizontalAlignment="Center" Margin="50,10,50,10" VerticalAlignment="Center" Width="auto" Height="auto" FontSize="10" FontFamily="Arial Black" BorderBrush="#FFE44010" Background="#FFC53535" Click="Button_Map_Ok_Click"/>
         </StackPanel>
@@ -954,7 +954,7 @@
             <Label x:Name="Label_Score_ObjP_Cape_Player_1" Content="OBJECTIF PRINCIPAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1_Cape_Player_1" Content="1-ASSASSINAT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2_Cape_Player_1" Content="2-ABATTEZ-LE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_3_Cape_Player_1" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_3_Cape_Player_1" Content="3-CHASSEUR DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             
             <Label x:Name="Label_Score_ObjS_5_Cape_Player_1" Content="5-PAS DE PRISONNIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_6_Cape_Player_1" Content="6-BROYEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -977,54 +977,65 @@
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_1" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_502_Cape_Player_1" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_503_Cape_Player_1" Content="503-ENCERCLER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1011_Cape_Player_1" Content="1011-PRISE DE FLAN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
+            <Label x:Name="Label_Score_ObjS_1011_Cape_Player_1" Content="1011-ASSAUT DIRECT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1012_Cape_Player_1" Content="1012-SECURISEZ LES SITES D'ATTERRISSAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1013_Cape_Player_1" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1021_Cape_Player_1" Content="1021-POSITION CENTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1022_Cape_Player_1" Content="1022-S'ELEVER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1023_Cape_Player_1" Content="1023-IRRUPTION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1021_Cape_Player_1" Content="1021-LA SAGESSE EST LE PILIER DE LA FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1022_Cape_Player_1" Content="1022-ASCENSION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1023_Cape_Player_1" Content="1023-ELAN DE FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1031_Cape_Player_1" Content="1031-TELECHARGER LE DATA-PSAUME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1032_Cape_Player_1" Content="1032-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1032_Cape_Player_1" Content="1032-BRISEZ-LES CORPS ET AME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1033_Cape_Player_1" Content="1033-BALAYAGE DE RECONNAISSANCE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2011_Cape_Player_1" Content="2011-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2012_Cape_Player_1" Content="2012-RASER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+
+            <Label x:Name="Label_Score_ObjS_2011_Cape_Player_1" Content="2011-BRISEZ-LES CORPS ET AME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2012_Cape_Player_1" Content="2012-DETONATION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2013_Cape_Player_1" Content="2013-INTERCEPTION DE DONNEES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2021_Cape_Player_1" Content="2021-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2022_N_Cape_Player_1" Content="2022-TERRAIN VITAL (objectifs neutre) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2022_Cape_Player_1" Content="2022-TERRAIN VITAL (pts totaux) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2021_Cape_Player_1" Content="2021-SECURISER LES SANCTUAIRES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2022_N_Cape_Player_1" Content="2022-SOL CORROMPU (objectifs neutre) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2022_Cape_Player_1" Content="2022-SOL CORROMPU (pts totaux) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2023_Cape_Player_1" Content="2023-SCAN STRATEGIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2031_Cape_Player_1" Content="2031-DEBORDEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2031_Cape_Player_1" Content="2031-SUBMERGER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2032_Cape_Player_1" Content="2032-ASSAUT DIRECT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2033_Cape_Player_1" Content="2033-CIBLES PRIORITAIRES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2033_Cape_Player_1" Content="2033-ARTEFACTS PRECIEUX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjS_3001_Cape_Player_1" Content="3001-TENIR LE CENTRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_3002_Cape_Player_1" Content="3002-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_3003_Cape_Player_1" Content="3003-CHERCHER LE PORTAIL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_Necron_100_Cape_Player_1" Content="Necron 100-CODE DE COMBAT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Necron_101_Cape_Player_1" Content="Necron 101-ELEMINEZ LA VERMINE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Necron_102_Cape_Player_1" Content="Necron 102-TRESORS DES EONS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Necron_103_Cape_Player_1" Content="Necron 103-MACHINES ANTIQUES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_SM_110_Cape_Player_1" Content="Space Marine 110-GUERRE CODEX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SM_111_Cape_Player_1" Content="Space Marine 111-TACTIQUES DE CHOC capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SM_112_Cape_Player_1" Content="Space Marine 112-SERMENT DE L'INSTANT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_BA_113_Cape_Player_1" Content="Blood Angel 113-LAME DE SANGUINIUS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_BA_114_Cape_Player_1" Content="Blood Angel 114-FUREUR DES EGUARES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_BA_115_Cape_Player_1" Content="Blood Angel 115-LA MORT DESCEND DU CIEL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_BA_116_Cape_Player_1" Content="Blood Angel 116-ASSAUT IMPLACABLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_Deathwatch_117_Cape_Player_1" Content="Deathwatch 117-LA LONGUE VEILLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Deathwatch_118_Cape_Player_1" Content="Deathwatch 118-ORDRE D'ABATTAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Deathwatch_119_Cape_Player_1" Content="Deathwatch 119-PARALYSER LA PLACE FORTE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Deathwatch_120_Cape_Player_1" Content="Deathwatch 120-NE TOLEREZ PAS LE XENOS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_SW_121_Cape_Player_1" Content="Space Wolwes 121-PROIES GLORIEUSES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SW_122_Cape_Player_1" Content="Space Wolwes 122-DEFI HEROIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SW_123_Cape_Player_1" Content="Space Wolwes 123-UNE SAGA MAGISTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SW_124_Cape_Player_1" Content="Space Wolwes 124-FIERTE DU GUERRIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_DG_125_Cape_Player_1" Content="Death Guard 125-VECTEURS INCONSCIENTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_DG_126_Cape_Player_1" Content="Death Guard 126-SOL CORROMPU capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_DG_127_Cape_Player_1" Content="Death Guard 127-REPANDRE LES MALADIES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_Admech_128_Cape_Player_1" Content="Adeptus M 128-ACCRETION DU SAVOIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Admech_129_Cape_Player_1" Content="Adeptus M 129-ERADICATION DE LA CHAIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Admech_130_Cape_Player_1" Content="Adeptus M 130-SEQUENCAGE NON REPERTORIE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Admech_131_Cape_Player_1" Content="Adeptus M 131-ARCHEOCRYPTE SECRETE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_AdeptaS_132_Cape_Player_1" Content="Adepta S 132-DEMONSTRATION DE FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_AdeptaS_133_Cape_Player_1" Content="Adepta S 133-TUEZ L'HERETIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_AdeptaS_134_Cape_Player_1" Content="Adepta S 134-SOL SACRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
@@ -1078,7 +1089,7 @@
             <Label x:Name="Label_Score_ObjP_Cape_Player_2" HorizontalAlignment="Center" Content="OBJECTIF PRINCIPAL capé" VerticalAlignment="Top" Height="Auto" Width="auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" RenderTransformOrigin="0.353,0.687" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1_Cape_Player_2" Content="1-ASSASSINAT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2_Cape_Player_2" Content="2-ABATTEZ-LE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_3_Cape_Player_2" Content="3-TUEURS DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_3_Cape_Player_2" Content="3-CHASSEUR DE TITANS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
 
             <Label x:Name="Label_Score_ObjS_5_Cape_Player_2" Content="5-PAS DE PRISONNIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_6_Cape_Player_2" Content="6-BROYEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
@@ -1101,54 +1112,65 @@
             <Label x:Name="Label_Score_ObjS_501_Cape_Player_2" Content="501-ASSAUT CHIRURGICAL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_502_Cape_Player_2" Content="502-SONDAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_503_Cape_Player_2" Content="503-ENCERCLER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1011_Cape_Player_2" Content="1011-PRISE DE FLAN capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
+            <Label x:Name="Label_Score_ObjS_1011_Cape_Player_2" Content="1011-ASSAUT DIRECT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1012_Cape_Player_2" Content="1012-SECURISEZ LES SITES D'ATTERRISSAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1013_Cape_Player_2" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1021_Cape_Player_2" Content="1021-POSITION CENTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1022_Cape_Player_2" Content="1022-S'ELEVER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1023_Cape_Player_2" Content="1023-IRRUPTION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1021_Cape_Player_2" Content="1021-LA SAGESSE EST LE PILIER DE LA FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1022_Cape_Player_2" Content="1022-ASCENSION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1023_Cape_Player_2" Content="1023-ELAN DE FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1031_Cape_Player_2" Content="1031-TELECHARGER LE DATA-PSAUME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_1032_Cape_Player_2" Content="1032-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_1032_Cape_Player_2" Content="1032-BRISEZ-LES CORPS ET AME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_1033_Cape_Player_2" Content="1033-BALAYAGE DE RECONNAISSANCE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2011_Cape_Player_2" Content="2011-MINIMISER LES PERTES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2012_Cape_Player_2" Content="2012-RASER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+
+            <Label x:Name="Label_Score_ObjS_2011_Cape_Player_2" Content="2011-BRISEZ-LES CORPS ET AME capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2012_Cape_Player_2" Content="2012-DETONATION capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2013_Cape_Player_2" Content="2013-INTERCEPTION DE DONNEES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2021_Cape_Player_2" Content="2021-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2022_N_Cape_Player_2" Content="2022-TERRAIN VITAL (objectifs neutre) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2022_Cape_Player_2" Content="2022-TERRAIN VITAL (points totaux) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2021_Cape_Player_2" Content="2021-SECURISER LES SANCTUAIRES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2022_N_Cape_Player_2" Content="2022-SOL CORROMPU (objectifs neutre) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2022_Cape_Player_2" Content="2022-SOL CORROMPU (points totaux) capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2023_Cape_Player_2" Content="2023-SCAN STRATEGIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2031_Cape_Player_2" Content="2031-DEBORDEMENT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2031_Cape_Player_2" Content="2031-SUBMERGER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_2032_Cape_Player_2" Content="2032-ASSAUT DIRECT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
-            <Label x:Name="Label_Score_ObjS_2033_Cape_Player_2" Content="2033-CIBLES PRIORITAIRES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            <Label x:Name="Label_Score_ObjS_2033_Cape_Player_2" Content="2033-ARTEFACTS PRECIEUX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjS_3001_Cape_Player_2" Content="3001-TENIR LE CENTRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_3002_Cape_Player_2" Content="3002-ENCERCLEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjS_3003_Cape_Player_2" Content="3003-CHERCHER LE PORTAIL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="White" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_Necron_100_Cape_Player_2" Content="Necron 100-CODE DE COMBAT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Necron_101_Cape_Player_2" Content="Necron 101-ELEMINEZ LA VERMINE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Necron_102_Cape_Player_2" Content="Necron 102-TRESORS DES EONS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Necron_103_Cape_Player_2" Content="Necron 103-MACHINES ANTIQUES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkViolet" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_SM_110_Cape_Player_2" Content="SM 110-GUERRE CODEX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SM_111_Cape_Player_2" Content="SM 111-TACTIQUES DE CHOC capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SM_112_Cape_Player_2" Content="SM 112-SERMENTS DE L'INSTANT capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_BA_113_Cape_Player_2" Content="Blood Angel 113-LAME DE SANGUINIUS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_BA_114_Cape_Player_2" Content="Blood Angel 114-FUREUR DES EGUARES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_BA_115_Cape_Player_2" Content="Blood Angel 115-LA MORT DESCEND DU CIEL capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_BA_116_Cape_Player_2" Content="Blood Angel 116-ASSAUT IMPLACABLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_Deathwatch_117_Cape_Player_2" Content="Deathwatch 117-LA LONGUE VEILLE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Deathwatch_118_Cape_Player_2" Content="Deathwatch 118-ORDRE D'ABATTAGE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Deathwatch_119_Cape_Player_2" Content="Deathwatch 119-PARALYSER LA PLACE FORTE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Deathwatch_120_Cape_Player_2" Content="Deathwatch 120-NE TOLEREZ PAS LE XENOS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_SW_121_Cape_Player_2" Content="Space Wolwes 121-PROIES GLORIEUSES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SW_122_Cape_Player_2" Content="Space Wolwes 122-DEFI HEROIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SW_123_Cape_Player_2" Content="Space Wolwes 123-UNE SAGA MAGISTRALE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_SW_124_Cape_Player_2" Content="Space Wolwes 124-FIERTE DU GUERRIER capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_DG_125_Cape_Player_2" Content="Death Guard 125-VECTEURS INCONSCIENTS capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_DG_126_Cape_Player_2" Content="Death Guard 126-SOL CORROMPU capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_DG_127_Cape_Player_2" Content="Death Guard 127-REPANDRE LES MALADIES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkGreen" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_Admech_128_Cape_Player_2" Content="Adeptus M 128-ACCRETION DU SAVOIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Admech_129_Cape_Player_2" Content="Adeptus M 129-ERADICATION DE LA CHAIR capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Admech_130_Cape_Player_2" Content="Adeptus M 130-SEQUENCAGE NON REPERTORIE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_Admech_131_Cape_Player_2" Content="Adeptus M 131-ARCHEOCRYPTE SECRETE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             <Label x:Name="Label_Score_ObjC_AdeptaS_132_Cape_Player_2" Content="Adepta S 132-DEMONSTRATION DE FOI capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_AdeptaS_133_Cape_Player_2" Content="Adepta S 133-TUEZ L'HERETIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             <Label x:Name="Label_Score_ObjC_AdeptaS_134_Cape_Player_2" Content="Adepta S 134-SOL SACRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
@@ -1285,7 +1307,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_3_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_3A" Content="3-TUEURS DE TITANS" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_3A" Content="3-CHASSEUR DE TITANS" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_3_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_3_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -2970,7 +2992,7 @@
                 <!--# OBJM Incursion -->
                 <StackPanel x:Name="StackPanel_ObjS_1011_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1011A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_1011A" Content="1011-PRISE DE FLAN" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1011A" Content="1011-ASSAUT DIRECT" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1011_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1011_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3096,7 +3118,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1021_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1021A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_1021A" Content="1021-POSITION CENTRALE" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1021A" Content="1021-LA SAGESSE EST LE PILIER DE LA FOI" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1021_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1021_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3130,7 +3152,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1022_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1022A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_1022A" Content="1022-S'ELEVER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1022A" Content="1022-ASCENSION" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1022_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1022_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3184,7 +3206,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1023_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1023A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_1023A" Content="1023-IRRUPTION" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1023A" Content="1023-ELAN DE FOI" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1023_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1023_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3287,7 +3309,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1032_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1032A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_1032A" Content="1032-MINIMISER LES PERTES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032A" Content="1032-BRISEZ-LES CORPS ET AME" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1032_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1032_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3344,7 +3366,7 @@
                 <!--# OBJM Force de Frappe -->
                 <StackPanel x:Name="StackPanel_ObjS_2011_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2011A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_2011A" Content="2011-MINIMISER LES PERTES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2011A" Content="2011-BRISEZ-LES CORPS ET AME" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2011_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2011_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3371,7 +3393,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2012_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2012A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_2012A" Content="2012-RASER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2012A" Content="2012-DETONATION" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2012_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2012_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3429,7 +3451,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2021_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2021A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_2021A" Content="2021-ENCERCLEZ-LES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2021A" Content="2021-SECURISER LES SANCTUAIRES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2021_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2021_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3484,7 +3506,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2022_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2022A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_2022A" Content="2022-TERRAIN VITAL" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2022A" Content="2022-SOL CORROMPU" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2022_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2022_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3568,7 +3590,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2031_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2031A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_2031A" Content="2031-DEBORDEMENT" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2031A" Content="2031-SUBMERGER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2031_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2031_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3659,7 +3681,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2033_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2033A_Att" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Att_2033A" Content="2033-CIBLES PRIORITAIRES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2033A" Content="2033-ARTEFACTS PRECIEUX" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2033_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2033_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -3851,6 +3873,7 @@
                 </StackPanel>
 
             </StackPanel>
+            <!--# OBJ Peinture -->
             <StackPanel Orientation="Horizontal">
                 <Label x:Name="Label_Objectif_Peinture_Att_A" Content="OBJECTIF PEINTURES" FontFamily="Arial Black" Foreground="DarkBlue" FontSize="14" FontWeight="Bold" FontStyle="Italic" Margin="0" HorizontalAlignment="Left" BorderThickness="2" BorderBrush="DarkBlue"/>
                 <Button x:Name="Button_Caché_Obj_Peint_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_Obj_Peint_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
@@ -3998,7 +4021,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_3_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_3A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_3A" Content="3-TUEURS DE TITANS" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_3A" Content="3-CHASSEUR DE TITANS" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
                         <Button x:Name="Button_Caché_ObjS_3_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_3_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -5687,7 +5710,7 @@
                 <!--# OBJM Incursion -->
                 <StackPanel x:Name="StackPanel_ObjS_1011_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1011A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_1011A" Content="1011-PRISE DE FLAN" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1011A" Content="1011-ASSAUT DIRECT" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1011_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1011_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -5813,7 +5836,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1021_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1021A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_1021A" Content="1021-POSITION CENTRALE" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1021A" Content="1021-LA SAGESSE EST LE PILIER DE LA FOI" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1021_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1021_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -5848,7 +5871,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1022_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1022A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_1022A" Content="1022-S'ELEVER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1022A" Content="1022-ASCENSION" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1022_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1022_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -5902,7 +5925,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1023_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1023A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_1023A" Content="1023-IRRUPTION" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1023A" Content="1023-ELAN DE FOI" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1023_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1023_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6005,7 +6028,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1032_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_1032A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_1032A" Content="1032-MINIMISER LES PERTES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032A" Content="1032-BRISEZ-LES CORPS ET AME" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_1032_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_1032_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6062,7 +6085,7 @@
                 <!--# OBJM Force de Frappe -->
                 <StackPanel x:Name="StackPanel_ObjS_2011_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2011A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_2011A" Content="2011-MINIMISER LES PERTES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2011A" Content="2011-BRISEZ-LES CORPS ET AME" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2011_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2011_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6089,7 +6112,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2012_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2012A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_2012A" Content="2012-RASER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2012A" Content="2012-DETONATION" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2012_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2012_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6147,7 +6170,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2021_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2021A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_2021A" Content="2021-ENCERCLEZ-LES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2021A" Content="2021-SECURISER LES SANCTUAIRES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2021_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2021_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6196,7 +6219,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2022_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2022A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_2022A" Content="2022-TERRAIN VITAL" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2022A" Content="2022-SOL CORROMPU" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2022_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2022_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6283,7 +6306,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2031_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2031A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_2031A" Content="2031-DEBORDEMENT" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2031A" Content="2031-SUBMERGER" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2031_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2031_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6374,7 +6397,7 @@
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2033_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
                     <StackPanel x:Name="StackPanel_ObjS_2033A_Def" Orientation="Horizontal" Margin="5,0">
-                        <Label x:Name="Label_Objectif_Sec_Def_2033A" Content="2033-CIBLES PRIORITAIRES" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2033A" Content="2033-ARTEFACTS PRECIEUX" FontFamily="Arial Black" FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2" Padding="5,2"/>
                         <Button x:Name="Button_Caché_ObjS_2033_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_2033_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
@@ -6566,6 +6589,7 @@
                 </StackPanel>
 
             </StackPanel>
+            <!--# OBJ Peinture -->
             <StackPanel Orientation="Horizontal" Margin="0,0">
                 <Label x:Name="Label_Objectif_Peinture_Def_A" Content="OBJECTIF PEINTURES" FontFamily="Arial Black" Foreground="DarkBlue" FontSize="14" FontWeight="Bold" FontStyle="Italic" Margin="0" HorizontalAlignment="Left" BorderThickness="2" BorderBrush="DarkBlue"/>
                 <Button x:Name="Button_Caché_Obj_Peint_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_Obj_Peint_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
@@ -6689,8 +6713,9 @@
                 <StackPanel x:Name="Stackpanel_Obj_503_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_503_Att" Content="503 - ENCERCLER" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_503_Att_Click"/>
                 </StackPanel>
+                
                 <StackPanel x:Name="Stackpanel_Obj_1011_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1011_Att" Content="1011 - PRISE DE FLAN" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1011_Att_Click"/>
+                    <Button x:Name="Button_Obj_1011_Att" Content="1011 - ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1011_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1012_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_1012_Att" Content="1012 - SECURISEZ LES SITES D'ATTERRISSAGE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1012_Att_Click"/>
@@ -6699,50 +6724,52 @@
                     <Button x:Name="Button_Obj_1013_Att" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1013_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1021_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1021_Att" Content="1021-POSITION CENTRALE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1021_Att_Click"/>
+                    <Button x:Name="Button_Obj_1021_Att" Content="1021-PILIER DE LA FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1021_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1022_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1022_Att" Content="1022-S'ELEVER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1022_Att_Click"/>
+                    <Button x:Name="Button_Obj_1022_Att" Content="1022-ASCENSION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1022_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1023_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1023_Att" Content="1023-IRRUPTION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1023_Att_Click"/>
+                    <Button x:Name="Button_Obj_1023_Att" Content="1023-ELAN DE FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1023_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1031_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_1031_Att" Content="1031-TELECHARGER LE DATA-SPAUME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1031_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1032_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1032_Att" Content="1032-LIMITER LES PERTES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1032_Att_Click"/>
+                    <Button x:Name="Button_Obj_1032_Att" Content="1032-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1032_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1033_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_1033_Att" Content="1033-BALAYAGE DE RECONNAISSANCE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1033_Att_Click"/>
                 </StackPanel>
+                
                 <StackPanel x:Name="Stackpanel_Obj_2011_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2011_Att" Content="2011-LIMITER LES PERTES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2011_Att_Click"/>
+                    <Button x:Name="Button_Obj_2011_Att" Content="2011-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2011_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2012_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2012_Att" Content="2012-RASER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2012_Att_Click"/>
+                    <Button x:Name="Button_Obj_2012_Att" Content="2012-DETONATION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2012_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2013_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_2013_Att" Content="2013-INTERCEPTION DE DONNEES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2013_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2021_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2021_Att" Content="2021-ENCERCLEZ-LES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2021_Att_Click"/>
+                    <Button x:Name="Button_Obj_2021_Att" Content="2021-SECURISER LES SANCTUAIRES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2021_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2022_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2022_Att" Content="2022-TERRAIN VITAL" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2022_Att_Click"/>
+                    <Button x:Name="Button_Obj_2022_Att" Content="2022-SOL CORROMPU" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2022_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2023_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_2023_Att" Content="2023-SCAN STRATEGIQUE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2023_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2031_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2031_Att" Content="2031-DEBORDEMENT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2031_Att_Click"/>
+                    <Button x:Name="Button_Obj_2031_Att" Content="2031-SUBMERGER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2031_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2032_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_2032_Att" Content="2032-ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2032_Att_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2033_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2033_Att" Content="2033-CIBLES PRIORITAIRES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2033_Att_Click"/>
+                    <Button x:Name="Button_Obj_2033_Att" Content="2033-ARTEFACTS PRECIEUX" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2033_Att_Click"/>
                 </StackPanel>
+                
                 <StackPanel x:Name="Stackpanel_Obj_3001_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_3001_Att" Content="3001-TENIR LE CENTRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_3001_Att_Click"/>
                 </StackPanel>
@@ -6893,8 +6920,9 @@
                 <StackPanel x:Name="Stackpanel_Obj_503_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_503_Def" Content="503 - ENCERCLER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_503_Def_Click"/>
                 </StackPanel>
+                
                 <StackPanel x:Name="Stackpanel_Obj_1011_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1011_Def" Content="1011 - PRISE DE FLAN" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1011_Def_Click"/>
+                    <Button x:Name="Button_Obj_1011_Def" Content="1011 - ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1011_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1012_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_1012_Def" Content="1012 - SECURISEZ LES SITES D'ATTERRISSAGE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1012_Def_Click"/>
@@ -6903,50 +6931,52 @@
                     <Button x:Name="Button_Obj_1013_Def" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1013_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1021_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1021_Def" Content="1021-POSITION CENTRALE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1021_Def_Click"/>
+                    <Button x:Name="Button_Obj_1021_Def" Content="1021-PILIER DE LA FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1021_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1022_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1022_Def" Content="1022-S'ELEVER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1022_Def_Click"/>
+                    <Button x:Name="Button_Obj_1022_Def" Content="1022-ASCENSION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1022_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1023_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1023_Def" Content="1023-IRRUPTION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1023_Def_Click"/>
+                    <Button x:Name="Button_Obj_1023_Def" Content="1023-ELAN DE FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1023_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1031_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_1031_Def" Content="1031-TELECHARGER LE DATA-SPAUME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1031_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1032_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1032_Def" Content="1032-LIMITER LES PERTES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1032_Def_Click"/>
+                    <Button x:Name="Button_Obj_1032_Def" Content="1032-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1032_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_1033_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_1033_Def" Content="1033-BALAYAGE DE RECONNAISSANCE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_1033_Def_Click"/>
                 </StackPanel>
+                
                 <StackPanel x:Name="Stackpanel_Obj_2011_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2011_Def" Content="2011-LIMITER LES PERTES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2011_Def_Click"/>
+                    <Button x:Name="Button_Obj_2011_Def" Content="2011-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2011_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2012_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2012_Def" Content="2012-RASER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2012_Def_Click"/>
+                    <Button x:Name="Button_Obj_2012_Def" Content="2012-DETONATION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2012_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2013_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_2013_Def" Content="2013-INTERCEPTION DE DONNEES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2013_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2021_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2021_Def" Content="2021-ENCERCLEZ-LES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2021_Def_Click"/>
+                    <Button x:Name="Button_Obj_2021_Def" Content="2021-SECURISER LES SANCTUAIRES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2021_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2022_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2022_Def" Content="2022-TERRAIN VITAL" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2022_Def_Click"/>
+                    <Button x:Name="Button_Obj_2022_Def" Content="2022-SOL CORROMPU" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2022_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2023_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_2023_Def" Content="2023-SCAN STRATEGIQUE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2023_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2031_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2031_Def" Content="2031-DEBORDEMENT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2031_Def_Click"/>
+                    <Button x:Name="Button_Obj_2031_Def" Content="2031-SUBMERGER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2031_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2032_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_2032_Def" Content="2032-ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2032_Def_Click"/>
                 </StackPanel>
                 <StackPanel x:Name="Stackpanel_Obj_2033_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2033_Def" Content="2033-CIBLES PRIOTITAIRES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2033_Def_Click"/>
+                    <Button x:Name="Button_Obj_2033_Def" Content="2033-ARTEFACTS PRECIEUX" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2033_Def_Click"/>
                 </StackPanel>
+                
                 <StackPanel x:Name="Stackpanel_Obj_3001_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
                     <Button x:Name="Button_Obj_3001_Def" Content="3001-TENIR LE CENTRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_3001_Def_Click"/>
                 </StackPanel>
