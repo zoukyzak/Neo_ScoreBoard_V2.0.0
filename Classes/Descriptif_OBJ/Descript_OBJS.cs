@@ -627,6 +627,22 @@ namespace CPV9.Classes
                     l14 = "à moins que son adversaire en prenne le contrôle à la fin d'une phase ultérieure.";
                     break;
 
+                case 2033:
+                    l1 = "ARTEFACTS PRECIEUX";
+                    l2 = "A la fin du tour de chaque joueur, le joueur dont c'est le tour marque 3 points de victoire";
+                    l3 = "s'il contrôle le pion objectif Prioritaire qui est dans son territoire.";
+                    l4 = "OBJECTIFS PRECIEUX";
+                    l5 = "-D'abord, l'Attaquant repositionne 1 pion objectif noté A ou 1 pion objectif noté B.";
+                    l6 = "-Ensuite, le Défenseur repositionne 1 pion objectif noté A et 1 pion objectif noté B";
+                    l7 = "(un pion objectif ne peut pas être repositionné plusieurs fois)";
+                    l8 = "-Enfin, l'Attaquant repositionne le dernier pion objectif noté A ou B qui doit encore être repositionné.";
+                    l9 = "Dans tous les cas, quand un pion objectif est repositionné, placez-le entièrement à 6' horizontalement";
+                    l10 = "de sa position initiale, et pas sur ou dans un Obstacle ni sur un Terrain Défendable.";
+                    l11 = "Après que tous les pions objectif ont été repositionnés, chaque joueur note en secret un des pion";
+                    l12 = "objectif Prioritaire (ce ne peut pas être le pion objectif au centre du champ de bataille).";
+                    l13 = "Après que les deux joueurs ont déployé leurs armées, ils révèlent leur choix à l'adversaire.";
+                    break;
+
                 #endregion
                 #region OBJM Offensive
                 case 3001:
