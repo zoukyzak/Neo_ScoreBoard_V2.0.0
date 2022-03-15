@@ -9,12 +9,13 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJM_1011(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String Saisie7, String Saisie8)
+        public Classe_Score_OBJM_1011(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String Saisie7, String Saisie8, String Saisie9, String Saisie10)
         {
             Calcul(Saisie1, Saisie2);
             Calcul(Saisie3, Saisie4);
             Calcul(Saisie5, Saisie6);
             Calcul(Saisie7, Saisie8);
+            Calcul(Saisie9, Saisie10);
             Score_ObjS = Score;
             if (Score >= 15)
             {
@@ -25,15 +26,21 @@ namespace CPV9.Classes
 
         private void Calcul(string DonneeA, String DonneeB)
         {
-            if (DonneeA == "true")
+            if (DonneeA == "true" && DonneeB == "true")
             {
                 Score += 3;
-                if (DonneeB == "true")
-                {
-                    Score += 2;
-                }
+                return;
             }
-            return;
+            if (DonneeA == "true" || DonneeB == "true")
+            {
+                Score += 2;
+                return;
+            }
+            else
+            {
+                return;
+            }
+           
         }
     }
 }

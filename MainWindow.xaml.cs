@@ -11541,7 +11541,7 @@ namespace CPV9
             #region Calcul_Objectif_Missions_Incursion_1011_1033
             ///CALCUL SCORE OBJECTIF MISSION 1011          
             Classe_Score_OBJM_1011 OBJECTIF_Mission_1011_Att;
-            OBJECTIF_Mission_1011_Att = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Att_T2A_Etat, CheckBox_ObjS_1011_Att_T2B_Etat, CheckBox_ObjS_1011_Att_T3A_Etat, CheckBox_ObjS_1011_Att_T3B_Etat, CheckBox_ObjS_1011_Att_T4A_Etat, CheckBox_ObjS_1011_Att_T4B_Etat, CheckBox_ObjS_1011_Att_T5A_Etat, CheckBox_ObjS_1011_Att_T5B_Etat);
+            OBJECTIF_Mission_1011_Att = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Att_T1A_Etat, CheckBox_ObjS_1011_Att_T1B_Etat, CheckBox_ObjS_1011_Att_T2A_Etat, CheckBox_ObjS_1011_Att_T2B_Etat, CheckBox_ObjS_1011_Att_T3A_Etat, CheckBox_ObjS_1011_Att_T3B_Etat, CheckBox_ObjS_1011_Att_T4A_Etat, CheckBox_ObjS_1011_Att_T4B_Etat, CheckBox_ObjS_1011_Att_T5A_Etat, CheckBox_ObjS_1011_Att_T5B_Etat);
             Scores_Attaquant[24] = OBJECTIF_Mission_1011_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_1011_Att.Score_ObjS) >= 15)
             {
@@ -12654,7 +12654,7 @@ namespace CPV9
             #region Calcul_Objectif_Missions_Incursion_1011_1033
             ///CALCUL SCORE OBJECTIF MISSION 1011          
             Classe_Score_OBJM_1011 OBJECTIF_Mission_1011_Def;
-            OBJECTIF_Mission_1011_Def = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Def_T2A_Etat, CheckBox_ObjS_1011_Def_T2B_Etat, CheckBox_ObjS_1011_Def_T3A_Etat, CheckBox_ObjS_1011_Def_T3B_Etat, CheckBox_ObjS_1011_Def_T4A_Etat, CheckBox_ObjS_1011_Def_T4B_Etat, CheckBox_ObjS_1011_Def_T5A_Etat, CheckBox_ObjS_1011_Def_T5B_Etat);
+            OBJECTIF_Mission_1011_Def = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Def_T1A_Etat, CheckBox_ObjS_1011_Def_T1B_Etat, CheckBox_ObjS_1011_Def_T2A_Etat, CheckBox_ObjS_1011_Def_T2B_Etat, CheckBox_ObjS_1011_Def_T3A_Etat, CheckBox_ObjS_1011_Def_T3B_Etat, CheckBox_ObjS_1011_Def_T4A_Etat, CheckBox_ObjS_1011_Def_T4B_Etat, CheckBox_ObjS_1011_Def_T5A_Etat, CheckBox_ObjS_1011_Def_T5B_Etat);
             Scores_Defenseur[24] = OBJECTIF_Mission_1011_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_1011_Def.Score_ObjS) >= 15)
             {
@@ -21894,9 +21894,12 @@ namespace CPV9
             Label_Objectif_Sec_Att_1011J.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1011K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1011L.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_1011M.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1011M.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1011N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1011O.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_1011_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            CheckBox_ObjS_1011_Att_T1A.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_1011_Att_T1B.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1011_Att_T2A.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1011_Att_T2B.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1011_Att_T3A.FontSize = Taille_texte * Multiple;
@@ -21912,6 +21915,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_1011D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_1011E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_1011F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_1011G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 1012
             Label_Objectif_Sec_Att_1012A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -23987,9 +23991,12 @@ namespace CPV9
             Label_Objectif_Sec_Def_1011J.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1011K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1011L.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_1011M.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1011M.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1011N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1011O.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_1011_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            CheckBox_ObjS_1011_Def_T1A.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_1011_Def_T1B.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1011_Def_T2A.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1011_Def_T2B.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1011_Def_T3A.FontSize = Taille_texte * Multiple;
@@ -24005,6 +24012,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_1011D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_1011E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_1011F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_1011G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 1012
             Label_Objectif_Sec_Def_1012A.FontSize = 1.2 * Taille_texte * Multiple;
