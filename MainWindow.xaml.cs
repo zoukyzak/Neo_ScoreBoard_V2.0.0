@@ -6503,110 +6503,110 @@ namespace CPV9
             }
             if (format == 1011)
             {
-                Image_1011.Width = _Resolution[0];
-                Image_1011.Height = _Resolution[1];
+                Image_1011.Width = this.Width;
+                Image_1011.Height =this.Height;
                 Image_1011.Visibility = Visibility.Visible;                
             }
             if (format == 1012)
             {
-                Image_1012.Width = _Resolution[0];
-                Image_1012.Height = _Resolution[1];
+                Image_1012.Width = this.Width;
+                Image_1012.Height = this.Height;
                 Image_1012.Visibility = Visibility.Visible;
             }
             if (format == 1013)
             {
-                Image_1013.Width = _Resolution[0];
-                Image_1013.Height = _Resolution[1];
+                Image_1013.Width = this.Width;
+                Image_1013.Height = this.Height;
                 Image_1013.Visibility = Visibility.Visible;
             }
             if (format == 1021)
             {
-                Image_1021.Width = _Resolution[0];
-                Image_1021.Height = _Resolution[1];
+                Image_1021.Width = this.Width;
+                Image_1021.Height = this.Height;
                 Image_1021.Visibility = Visibility.Visible;
             }
             if (format == 1022)
             {
-                Image_1022.Width = _Resolution[0];
-                Image_1022.Height = _Resolution[1];
+                Image_1022.Width = this.Width;
+                Image_1022.Height = this.Height;
                 Image_1022.Visibility = Visibility.Visible;
             }
             if (format == 1023)
             {
-                Image_1023.Width = _Resolution[0];
-                Image_1023.Height = _Resolution[1];
+                Image_1023.Width = this.Width;
+                Image_1023.Height = this.Height;
                 Image_1023.Visibility = Visibility.Visible;
             }
             if (format == 1031)
             {
-                Image_1031.Width = _Resolution[0];
-                Image_1031.Height = _Resolution[1];
+                Image_1031.Width = this.Width;
+                Image_1031.Height = this.Height;
                 Image_1031.Visibility = Visibility.Visible;
             }
             if (format == 1032)
             {
-                Image_1032.Width = _Resolution[0];
-                Image_1032.Height = _Resolution[1];
+                Image_1032.Width = this.Width;
+                Image_1032.Height = this.Height;
                 Image_1032.Visibility = Visibility.Visible;
             }
             if (format == 1033)
             {
-                Image_1033.Width = _Resolution[0];
-                Image_1033.Height = _Resolution[1];
+                Image_1033.Width = this.Width;
+                Image_1033.Height = this.Height;
                 Image_1033.Visibility = Visibility.Visible;
             }
             if (format == 2011)
             {
-                Image_2011.Width = _Resolution[0];
-                Image_2011.Height = _Resolution[1];
+                Image_2011.Width = this.Width;
+                Image_2011.Height = this.Height;
                 Image_2011.Visibility = Visibility.Visible;
             }
             if (format == 2012)
             {
-                Image_2012.Width = _Resolution[0];
-                Image_2012.Height = _Resolution[1];
+                Image_2012.Width = this.Width;
+                Image_2012.Height = this.Height;
                 Image_2012.Visibility = Visibility.Visible;
             }
             if (format == 2013)
             {
-                Image_2013.Width = _Resolution[0];
-                Image_2013.Height = _Resolution[1];
+                Image_2013.Width = this.Width;
+                Image_2013.Height = this.Height;
                 Image_2013.Visibility = Visibility.Visible;
             }
             if (format == 2021)
             {
-                Image_2021.Width = _Resolution[0];
-                Image_2021.Height = _Resolution[1];
+                Image_2021.Width = this.Width;
+                Image_2021.Height = this.Height;
                 Image_2021.Visibility = Visibility.Visible;
             }
             if (format == 2022)
             {
-                Image_2022.Width = _Resolution[0];
-                Image_2022.Height = _Resolution[1];
+                Image_2022.Width = this.Width;
+                Image_2022.Height = this.Height;
                 Image_2022.Visibility = Visibility.Visible;
             }
             if (format == 2023)
             {
-                Image_2023.Width = _Resolution[0];
-                Image_2023.Height = _Resolution[1];
+                Image_2023.Width = this.Width;
+                Image_2023.Height = this.Height;
                 Image_2023.Visibility = Visibility.Visible;
             }
             if (format == 2031)
             {
-                Image_2031.Width = _Resolution[0];
-                Image_2031.Height = _Resolution[1];
+                Image_2031.Width = this.Width;
+                Image_2031.Height = this.Height;
                 Image_2031.Visibility = Visibility.Visible;
             }
             if (format == 2032)
             {
-                Image_2032.Width = _Resolution[0];
-                Image_2032.Height = _Resolution[1];
+                Image_2032.Width = this.Width;
+                Image_2032.Height = this.Height;
                 Image_2032.Visibility = Visibility.Visible;
             }
             if (format == 2033)
             {
-                Image_2033.Width = _Resolution[0];
-                Image_2033.Height = _Resolution[1];
+                Image_2033.Width = this.Width;
+                Image_2033.Height = this.Height;
                 Image_2033.Visibility = Visibility.Visible;
             }
             if (format == 3001)
