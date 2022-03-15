@@ -1,0 +1,27 @@
+﻿<Window x:Name="___Néo_Scoreboard_Livres_" x:Class="CPV9.Windows.Livres"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPV9.Windows"
+        mc:Ignorable="d"
+        Title="Néo ScoreBoard Livres" Height="800" Width="1000" MinHeight="800" MinWidth="1000" Background="White" Foreground="Black" ResizeMode="CanResizeWithGrip" SizeToContent="WidthAndHeight" WindowStyle="ThreeDBorderWindow">
+    <Grid MinWidth="1000" MinHeight="800">
+        <StackPanel x:Name="StackPanel_Livres" HorizontalAlignment="Center" Height="auto" Margin="0,-100,0,0" VerticalAlignment="Center" Width="auto" Background="Ivory" Visibility="Visible">
+            <Label x:Name="Label_OBJ_Livres_1" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="18" Margin="0,20" FontWeight="Bold" BorderBrush="#FF182E7C" BorderThickness="2"/>
+            <Label x:Name="Label_OBJ_Livres_2" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_3" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12" />
+            <Label x:Name="Label_OBJ_Livres_4" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_5" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_6" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_7" Content="pas de text" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_8" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_9" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_10" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_11" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_12" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_13" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+            <Label x:Name="Label_OBJ_Livres_14" Content="" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="12"/>
+        </StackPanel>
+    </Grid>
+</Window>

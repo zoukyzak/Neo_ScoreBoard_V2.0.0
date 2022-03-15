@@ -433,6 +433,8 @@ namespace CPV9
         public string CheckBox_ObjS_503_Def_T5B_Etat = "false";
         #endregion
         #region Variables_Objectifs_Missions_Incursion_1011_1033
+        public string CheckBox_ObjS_1011_Att_T1A_Etat = "false";
+        public string CheckBox_ObjS_1011_Att_T1B_Etat = "false";
         public string CheckBox_ObjS_1011_Att_T2A_Etat = "false";
         public string CheckBox_ObjS_1011_Att_T2B_Etat = "false";
         public string CheckBox_ObjS_1011_Att_T3A_Etat = "false";
@@ -441,6 +443,8 @@ namespace CPV9
         public string CheckBox_ObjS_1011_Att_T4B_Etat = "false";
         public string CheckBox_ObjS_1011_Att_T5A_Etat = "false";
         public string CheckBox_ObjS_1011_Att_T5B_Etat = "false";
+        public string CheckBox_ObjS_1011_Def_T1A_Etat = "false";
+        public string CheckBox_ObjS_1011_Def_T1B_Etat = "false";
         public string CheckBox_ObjS_1011_Def_T2A_Etat = "false";
         public string CheckBox_ObjS_1011_Def_T2B_Etat = "false";
         public string CheckBox_ObjS_1011_Def_T3A_Etat = "false";
@@ -848,7 +852,7 @@ namespace CPV9
 
         #endregion
 
-        Windows.Tv win = new Windows.Tv();
+        readonly Windows.Tv win = new Windows.Tv();
 
         public MainWindow()
         {
@@ -1651,7 +1655,9 @@ namespace CPV9
             CheckBox_ObjS_503_Att_T5B.IsChecked = false;
             #endregion
             #region INIT_OBJ_ATTAQUANT_FORMAT_INCURSION
-            /// OBJECTIF SECONDAIRE 1011 : PRISE DE FLAN
+            /// OBJECTIF SECONDAIRE 1011 : ASSAUT DIRECT
+            CheckBox_ObjS_1011_Att_T1A.IsChecked = false;
+            CheckBox_ObjS_1011_Att_T1B.IsChecked = false;
             CheckBox_ObjS_1011_Att_T2A.IsChecked = false;
             CheckBox_ObjS_1011_Att_T2B.IsChecked = false;
             CheckBox_ObjS_1011_Att_T3A.IsChecked = false;
@@ -2151,6 +2157,17 @@ namespace CPV9
             CheckBox_ObjS_1011_Def_T5B.IsChecked = false;
             #endregion
             #region INIT_OBJ_DEFENSEUR_FORMAT_INCURSION
+            /// OBJECTIF SECONDAIRE 1011 : ASSAUT DIRECT
+            CheckBox_ObjS_1011_Def_T1A.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T1B.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T2A.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T2B.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T3A.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T3B.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T4A.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T4B.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T5A.IsChecked = false;
+            CheckBox_ObjS_1011_Def_T5B.IsChecked = false;
             /// OBJECTIF SECONDAIRE 1012 : SECURISEZ LES SITES D ATTERRISSAGE
             TextBox_ObjS_1012_Def_T2.Clear();
             TextBox_ObjS_1012_Def_T3.Clear();
@@ -17498,237 +17515,54 @@ namespace CPV9
         #endregion
 
         #region TextChanged objectif Mission Incursion
-        private void CheckBox_ObjS_1011_Att_A2_Click(object sender, RoutedEventArgs e)
+        private void CheckBox_ObjS_1011_Att_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_1011_Att_T2A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T2A_Etat = "true";
-                CheckBox_ObjS_1011_Att_T2B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Att_T2A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Att_T2A_Etat = "false";
-                CheckBox_ObjS_1011_Att_T2B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Att_T2B.IsChecked = false;
-                CheckBox_ObjS_1011_Att_T2B_Etat = "false";
-            }
+            if (CheckBox_ObjS_1011_Att_T1A.IsChecked == true) { CheckBox_ObjS_1011_Att_T1A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T1A.IsChecked == false) { CheckBox_ObjS_1011_Att_T1A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T1B.IsChecked == true) { CheckBox_ObjS_1011_Att_T1B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T1B.IsChecked == false) { CheckBox_ObjS_1011_Att_T1B_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T2A.IsChecked == true) { CheckBox_ObjS_1011_Att_T2A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T2A.IsChecked == false) { CheckBox_ObjS_1011_Att_T2A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T2B.IsChecked == true) { CheckBox_ObjS_1011_Att_T2B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T2B.IsChecked == false) { CheckBox_ObjS_1011_Att_T2B_Etat = "false"; };            
+            if (CheckBox_ObjS_1011_Att_T3A.IsChecked == true) { CheckBox_ObjS_1011_Att_T3A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T3A.IsChecked == false) { CheckBox_ObjS_1011_Att_T3A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T3B.IsChecked == true) { CheckBox_ObjS_1011_Att_T3B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T3B.IsChecked == false) { CheckBox_ObjS_1011_Att_T3B_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T4A.IsChecked == true) { CheckBox_ObjS_1011_Att_T4A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T4A.IsChecked == false) { CheckBox_ObjS_1011_Att_T4A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T4B.IsChecked == true) { CheckBox_ObjS_1011_Att_T4B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T4B.IsChecked == false) { CheckBox_ObjS_1011_Att_T4B_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T5A.IsChecked == true) { CheckBox_ObjS_1011_Att_T5A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T5A.IsChecked == false) { CheckBox_ObjS_1011_Att_T5A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Att_T5B.IsChecked == true) { CheckBox_ObjS_1011_Att_T5B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Att_T5B.IsChecked == false) { CheckBox_ObjS_1011_Att_T5B_Etat = "false"; };
+
             Calcul_Score_Attaquant();
         }
-        private void CheckBox_ObjS_1011_Att_B2_Click(object sender, RoutedEventArgs e)
+        private void CheckBox_ObjS_1011_Def_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_1011_Att_T2B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T2B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Att_T2B.IsChecked == false)
-            {
+            if (CheckBox_ObjS_1011_Def_T1A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T1A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T1A.IsChecked == false) { CheckBox_ObjS_1011_Def_T1A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T1B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T1B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T1B.IsChecked == false) { CheckBox_ObjS_1011_Def_T1B_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T2A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T2A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T2A.IsChecked == false) { CheckBox_ObjS_1011_Def_T2A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T2B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T2B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T2B.IsChecked == false) { CheckBox_ObjS_1011_Def_T2B_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T3A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T3A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T3A.IsChecked == false) { CheckBox_ObjS_1011_Def_T3A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T3B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T3B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T3B.IsChecked == false) { CheckBox_ObjS_1011_Def_T3B_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T4A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T4A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T4A.IsChecked == false) { CheckBox_ObjS_1011_Def_T4A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T4B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T4B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T4B.IsChecked == false) { CheckBox_ObjS_1011_Def_T4B_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T5A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T5A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T5A.IsChecked == false) { CheckBox_ObjS_1011_Def_T5A_Etat = "false"; };
+            if (CheckBox_ObjS_1011_Def_T5B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T5B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T5B.IsChecked == false) { CheckBox_ObjS_1011_Def_T5B_Etat = "false"; };
 
-                CheckBox_ObjS_1011_Att_T2B_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_1011_Att_A3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Att_T3A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T3A_Etat = "true";
-                CheckBox_ObjS_1011_Att_T3B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Att_T3A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Att_T3A_Etat = "false";
-                CheckBox_ObjS_1011_Att_T3B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Att_T3B.IsChecked = false;
-                CheckBox_ObjS_1011_Att_T3B_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_1011_Att_B3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Att_T3B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T3B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Att_T3B.IsChecked == false)
-            {
-
-                CheckBox_ObjS_1011_Att_T3B_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_1011_Att_A4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Att_T4A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T4A_Etat = "true";
-                CheckBox_ObjS_1011_Att_T4B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Att_T4A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Att_T4A_Etat = "false";
-                CheckBox_ObjS_1011_Att_T4B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Att_T4B.IsChecked = false;
-                CheckBox_ObjS_1011_Att_T4B_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_1011_Att_B4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Att_T4B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T4B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Att_T4B.IsChecked == false)
-            {
-
-                CheckBox_ObjS_1011_Att_T4B_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_1011_Att_A5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Att_T5A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T5A_Etat = "true";
-                CheckBox_ObjS_1011_Att_T5B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Att_T5A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Att_T5A_Etat = "false";
-                CheckBox_ObjS_1011_Att_T5B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Att_T5B.IsChecked = false;
-                CheckBox_ObjS_1011_Att_T5B_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_1011_Att_B5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Att_T5B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Att_T5B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Att_T5B.IsChecked == false)
-            {
-
-                CheckBox_ObjS_1011_Att_T5B_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-
-        private void CheckBox_ObjS_1011_Def_A2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T2A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T2A_Etat = "true";
-                CheckBox_ObjS_1011_Def_T2B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Def_T2A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Def_T2A_Etat = "false";
-                CheckBox_ObjS_1011_Def_T2B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Def_T2B.IsChecked = false;
-                CheckBox_ObjS_1011_Def_T2B_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_1011_Def_B2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T2B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T2B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Def_T2B.IsChecked == false)
-            {
-
-                CheckBox_ObjS_1011_Def_T2B_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_1011_Def_A3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T3A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T3A_Etat = "true";
-                CheckBox_ObjS_1011_Def_T3B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Def_T3A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Def_T3A_Etat = "false";
-                CheckBox_ObjS_1011_Def_T3B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Def_T3B.IsChecked = false;
-                CheckBox_ObjS_1011_Def_T3B_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_1011_Def_B3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T3B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T3B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Def_T3B.IsChecked == false)
-            {
-
-                CheckBox_ObjS_1011_Def_T3B_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_1011_Def_A4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T4A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T4A_Etat = "true";
-                CheckBox_ObjS_1011_Def_T4B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Def_T4A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Def_T4A_Etat = "false";
-                CheckBox_ObjS_1011_Def_T4B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Def_T4B.IsChecked = false;
-                CheckBox_ObjS_1011_Def_T4B_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_1011_Def_B4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T4B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T4B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Def_T4B.IsChecked == false)
-            {
-
-                CheckBox_ObjS_1011_Def_T4B_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_1011_Def_A5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T5A.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T5A_Etat = "true";
-                CheckBox_ObjS_1011_Def_T5B.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_1011_Def_T5A.IsChecked == false)
-            {
-                CheckBox_ObjS_1011_Def_T5A_Etat = "false";
-                CheckBox_ObjS_1011_Def_T5B.Visibility = Visibility.Hidden;
-                CheckBox_ObjS_1011_Def_T5B.IsChecked = false;
-                CheckBox_ObjS_1011_Def_T5B_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_1011_Def_B5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_1011_Def_T5B.IsChecked == true)
-            {
-                CheckBox_ObjS_1011_Def_T5B_Etat = "true";
-            }
-            if (CheckBox_ObjS_1011_Def_T5B.IsChecked == false)
-            {
-
-                CheckBox_ObjS_1011_Def_T5B_Etat = "false";
-            }
             Calcul_Score_Defenseur();
         }
 
@@ -32335,11 +32169,28 @@ namespace CPV9
 
 
 
-        #endregion
 
         #endregion
 
-       
-    }
+        #endregion
+
+        #region DOC_OBJECTIF
+
+        private void Livres(int _Livre)
+        {
+            Windows.Livres win2 = new Windows.Livres();
+            win2.Show();
+            ///win2.Activate();
+            win2.Affich_Lives(_Livre);
+
+        }
+        private void Button_Doc_ObjS_1011_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(1011);
+        }
+
+    #endregion
+
+}
 
 }
