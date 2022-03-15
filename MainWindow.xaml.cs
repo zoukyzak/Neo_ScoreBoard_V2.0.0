@@ -32184,20 +32184,7 @@ namespace CPV9
             win2.Affich_Lives(_Livre);
 
         }
-
-        private void Button_Doc_ObjS_501_Click(object sender, RoutedEventArgs e)
-        {
-            Livres(501);
-        }
-        private void Button_Doc_ObjS_502_Click(object sender, RoutedEventArgs e)
-        {
-            Livres(502);
-        }
-        private void Button_Doc_ObjS_503_Click(object sender, RoutedEventArgs e)
-        {
-            Livres(503);
-        }
-
+        
         private void Button_Doc_ObjS_1_Click(object sender, RoutedEventArgs e)
         {
             Livres(1);
@@ -32370,9 +32357,35 @@ namespace CPV9
             Livres(135);
         }
 
+        private void Button_Doc_ObjS_501_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(501);
+        }
+        private void Button_Doc_ObjS_502_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(502);
+        }
+        private void Button_Doc_ObjS_503_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(503);
+        }
+
         private void Button_Doc_ObjS_1011_Click(object sender, RoutedEventArgs e)
         {
             Livres(1011);
+        }
+
+        private void Button_Doc_ObjS_3001_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(3001);
+        }
+        private void Button_Doc_ObjS_3002_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(3002);
+        }
+        private void Button_Doc_ObjS_3003_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(3003);
         }
         #endregion
 

@@ -3860,6 +3860,9 @@
                         <Button x:Name="Button_Visible_ObjS_3001_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_3001_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_3001_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_3001_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_3001B" Content="Marquez 5 pts si vous posseder plus d objectif B que votre adversaire" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_3001C" Content="et si vous avez plus de figurines que lui a 12 pouces dans le centre" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3918,6 +3921,9 @@
                         <Button x:Name="Button_Visible_ObjS_3002_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_3002_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_3002_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_3002_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_3002B" Content="4 pts si vous possedez les 2 objectifs de votre zone de deploiement + 1 objectif dans la zone de deploiement adverse " FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_3002C" Content="4 pts supplementaire pour le 2 ieme objectif de la zone de deploiement adverse" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3966,6 +3972,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_3003_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_3003_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_3003_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_3003_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_3003B" Content="1 pts pour l'action CHERCHER LE PORTAIL + 1 pts par Obj A" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6710,6 +6719,9 @@
                         <Button x:Name="Button_Visible_ObjS_3001_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_3001_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_3001_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_3001_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_3001B" Content="Marquez 5 pts si vous posseder plus d objectif B que votre adversaire" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_3001C" Content="et si vous avez plus de figurines que lui a 12 pouces dans le centre" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6768,6 +6780,9 @@
                         <Button x:Name="Button_Visible_ObjS_3002_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_3002_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_3002_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_3002_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_3002B" Content="4 pts si vous possedez les 2 objectifs de votre zone de deploiement + 1 objectif dans la zone de deploiement adverse " FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_3002C" Content="4 pts supplementaire pour le 2 ieme objectif de la zone de deploiement adverse" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6816,6 +6831,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_3003_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_3003_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_3003_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_3003_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_3003B" Content="1 pts pour l'action CHERCHER LE PORTAIL + 1 pts par Obj A" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
