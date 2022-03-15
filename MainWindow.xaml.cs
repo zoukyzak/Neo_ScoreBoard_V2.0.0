@@ -6505,7 +6505,7 @@ namespace CPV9
             {
                 Image_1011.Width = _Resolution[0];
                 Image_1011.Height = _Resolution[1];
-                Image_1011.Visibility = Visibility.Visible;
+                Image_1011.Visibility = Visibility.Visible;                
             }
             if (format == 1012)
             {
