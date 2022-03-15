@@ -32184,13 +32184,198 @@ namespace CPV9
             win2.Affich_Lives(_Livre);
 
         }
+
+        private void Button_Doc_ObjS_501_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(501);
+        }
+        private void Button_Doc_ObjS_502_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(502);
+        }
+        private void Button_Doc_ObjS_503_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(503);
+        }
+
+        private void Button_Doc_ObjS_1_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(1);
+        }
+        private void Button_Doc_ObjS_2_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(2);
+        }
+        private void Button_Doc_ObjS_3_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(3);
+        }
+        private void Button_Doc_ObjS_5_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(5);
+        }
+        private void Button_Doc_ObjS_6_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(6);
+        }
+        private void Button_Doc_ObjS_7_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(7);
+        }
+        private void Button_Doc_ObjS_8_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(8);
+        }
+        private void Button_Doc_ObjS_9_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(9);
+        }
+        private void Button_Doc_ObjS_10_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(10);
+        }
+        private void Button_Doc_ObjS_11_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(11);
+        }
+        private void Button_Doc_ObjS_12_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(12);
+        }
+        private void Button_Doc_ObjS_13_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(13);
+        }
+        private void Button_Doc_ObjS_14_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(14);
+        }
+        private void Button_Doc_ObjS_15_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(15);
+        }
+        private void Button_Doc_ObjS_16_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(16);
+        }
+        private void Button_Doc_ObjS_17_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(17);
+        }
+        private void Button_Doc_ObjS_18_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(18);
+        }
+        private void Button_Doc_ObjS_19_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(19);
+        }
+
+
+        private void Button_Doc_ObjS_100_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(100);
+        }
+        private void Button_Doc_ObjS_101_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(101);
+        }
+        private void Button_Doc_ObjS_102_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(102);
+        }
+        private void Button_Doc_ObjS_103_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(103);
+        }
+
+        private void Button_Doc_ObjS_110_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(110);
+        }
+        private void Button_Doc_ObjS_111_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(111);
+        }
+        private void Button_Doc_ObjS_112_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(112);
+        }
+
+
+        private void Button_Doc_ObjS_113_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(113);
+        }
+        private void Button_Doc_ObjS_114_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(114);
+        }
+        private void Button_Doc_ObjS_115_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(115);
+        }
+        private void Button_Doc_ObjS_116_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(116);
+        }
+
+
+        private void Button_Doc_ObjS_125_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(125);
+        }
+        private void Button_Doc_ObjS_126_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(126);
+        }
+        private void Button_Doc_ObjS_127_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(127);
+        }
+
+
+        private void Button_Doc_ObjS_128_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(128);
+        }
+        private void Button_Doc_ObjS_129_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(129);
+        }
+        private void Button_Doc_ObjS_130_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(130);
+        }
+        private void Button_Doc_ObjS_131_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(131);
+        }
+
+
+        private void Button_Doc_ObjS_132_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(132);
+        }
+        private void Button_Doc_ObjS_133_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(133);
+        }
+        private void Button_Doc_ObjS_134_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(134);
+        }
+        private void Button_Doc_ObjS_135_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(135);
+        }
+
         private void Button_Doc_ObjS_1011_Click(object sender, RoutedEventArgs e)
         {
             Livres(1011);
         }
+        #endregion
 
-    #endregion
-
-}
+    }
 
 }
