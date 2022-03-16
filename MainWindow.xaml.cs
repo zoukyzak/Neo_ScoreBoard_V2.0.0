@@ -32545,6 +32545,11 @@ namespace CPV9
         {
 
         }
+
+        private void CheckBox_ObjS_1022_Att_FIN_SG_Centre_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 
 }
