@@ -3260,29 +3260,62 @@
                         <Button x:Name="Button_Visible_ObjS_1021_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1021_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1021_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1021_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_1021B" Content="effectuez l action POSITION CENTRALE , a 3 pouces d un objectif A et a la fin de votre phase de mouvement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_1021C" Content="en fonction du nombres d objectif A detenu a la prochaine phase de commandement marquez 3/5 pts" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_1021D" Content="entrée le nombres d objectif A detenu (0 a 2):" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1021B" Content="Marquez 2 pts à la fin de votre tour , si vous contrôlez l'objectif dans la zone de déploiment adverse" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1021C" Content="Perdez 1 pts à la fin de votre tour , si vous ne contrôlez pas l'objectif dans votre zone de déploiment" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1021D" Content="Marquez 1 pts à la fin de votre tour , par objectif supplémentaire que vous contrôlez" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1021B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_1021E" Content="TOUR 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Att_T2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Att_1021E" Content="     " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_1021F" Content="Objectif ZDD adverse contrôlé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_1021G" Content="Objectif dans votre ZDD contrôlé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_1021H" Content="Nombres d'Objectif hors ZDD contrôlé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1021F" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Att_T3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Att_1021I" Content="TOUR 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T1A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T1B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Att_T1" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>                            
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1021G" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Att_T4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Att_1021J" Content="TOUR 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T2A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T2B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Att_T2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1021H" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Att_T5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Att_1021K" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T3A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T3B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Att_T3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Att_1021L" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T4A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T4B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Att_T4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Att_1021M" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T5A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Att_T5B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Att_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Att_T5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021F" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_1021I" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1021N" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_1021_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1021J" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1021O" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1021G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1022_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -6123,30 +6156,62 @@
                         <Button x:Name="Button_Visible_ObjS_1021_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1021_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1021_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1021_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_1021B" Content="effectuez l action POSITION CENTRALE , a 3 pouces d un objectif A et a la fin de votre phase de mouvement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_1021C" Content="en fonction du nombres d objectif A detenu a la prochaine phase de commandement marquez 3/5 pts" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_1021D" Content="entrée le nombres d objectif A detenu (0 a 2):" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1021B" Content="Marquez 2 pts à la fin de votre tour , si vous contrôlez l'objectif dans la zone de déploiment adverse" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1021C" Content="Perdez 1 pts à la fin de votre tour , si vous ne contrôlez pas l'objectif dans votre zone de déploiment" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1021D" Content="Marquez 1 pts à la fin de votre tour , par objectif supplémentaire que vous contrôlez" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1021B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_1021E" Content="TOUR 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Def_T2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Def_1021E" Content="     " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_1021F" Content="Objectif ZDD adverse contrôlé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_1021G" Content="Objectif dans votre ZDD contrôlé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_1021H" Content="Nombres d'Objectif hors ZDD contrôlé :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1021F" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Def_T3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Def_1021I" Content="TOUR 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T1A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T1B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Def_T1" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1021G" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Def_T4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Def_1021J" Content="TOUR 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T2A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T2B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Def_T2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1021H" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1021_Def_T5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Def_1021K" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T3A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T3B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Def_T3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Def_1021L" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T4A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T4B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Def_T4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="Label_Objectif_Sec_Def_1021M" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T5A" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1021_Def_T5B" Margin="0,5" VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_1021_Def_Click"/>
+                            <TextBox x:Name="TextBox_ObjS_1021_Def_T5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1021_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        </StackPanel>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021F" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
-
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_1021I" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1021N" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_1021_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1021J" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1021O" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1021G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1022_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
