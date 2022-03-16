@@ -3187,31 +3187,30 @@
                         <Button x:Name="Button_Visible_ObjS_1012_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1012_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1012_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1012_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_1012B" Content="Prenez des points pour chaque objectifs A controlé (en fin de commandement)" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_1012C" Content="Tour (2 et 3 = 2 pts/objectifs/Tours) (Tour 4 = 3 pts/objectifs.) (Tour 5 = 6 pts/objectifs.)" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_1012D" Content="la mission est réussit a la fin de votre phase de commandement" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_1012E" Content="entrée le nombres d objectifs pris (0 a 2)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1012B" Content="Prenez des points pour chaque objectifs controlé dans le No Man's Land à la fin de votre Tour" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1012C" Content="Tour 3 = 2 pts/objectifs , Tour 4 = 3 pts/objectifs , Tour 5 = 4 pts/objectifs." FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1012D" Content="Cette mission n'est pas réalisable au tour 1 et 2" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1012E" Content="entrée le nombres d objectifs pris (0 a 3)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1012B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_1012F" Content="TOUR 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1012_Att_T2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1012G" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1012F" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_1012_Att_T3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1012H" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1012G" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_1012_Att_T4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1012I" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1012H" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_1012_Att_T5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                    </StackPanel>
-
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_1012J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1012I" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_1012_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1012K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1012J" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1012D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1013_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -6048,31 +6047,31 @@
                         <Button x:Name="Button_Visible_ObjS_1012_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1012_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1012_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1012_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_1012B" Content="Prenez des points pour chaque objectifs A controlé (en fin de commandement)" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_1012C" Content="Tour (2 et 3 = 2 pts/objectifs/Tours) (Tour 4 = 3 pts/objectifs.) (Tour 5 = 6 pts/objectifs.)" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_1012D" Content="la mission est réussit a la fin de votre phase de commandement" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_1012E" Content="entrée le nombres d objectifs pris (0 a 2)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1012B" Content="Prenez des points pour chaque objectifs controlé dans le No Man's Land à la fin de votre Tour" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1012C" Content="Tour 3 = 2 pts/objectifs , Tour 4 = 3 pts/objectifs , Tour 5 = 4 pts/objectifs." FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1012D" Content="Cette mission n'est pas réalisable au tour 1 et 2" FontFamily="Arial Black" FontSize="10" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1012E" Content="entrée le nombres d objectifs pris (0 a 3)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1012B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_1012F" Content="TOUR 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1012_Def_T2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1012G" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1012F" Content="TOUR 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_1012_Def_T3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1012H" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1012G" Content="TOUR 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_1012_Def_T4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1012I" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1012H" Content="TOUR 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBox x:Name="TextBox_ObjS_1012_Def_T5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="0,0" TextChanged="TextBox_ObjS_1012_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
 
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_1012J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1012I" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_1012_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1012K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1012J" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1012D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1013_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">

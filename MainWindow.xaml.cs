@@ -1667,7 +1667,6 @@ namespace CPV9
             CheckBox_ObjS_1011_Att_T5A.IsChecked = false;
             CheckBox_ObjS_1011_Att_T5B.IsChecked = false;
             /// OBJECTIF SECONDAIRE 1012 : SECURISEZ LES SITES D ATTERRISSAGE
-            TextBox_ObjS_1012_Att_T2.Clear();
             TextBox_ObjS_1012_Att_T3.Clear();
             TextBox_ObjS_1012_Att_T4.Clear();
             TextBox_ObjS_1012_Att_T5.Clear();
@@ -2169,7 +2168,6 @@ namespace CPV9
             CheckBox_ObjS_1011_Def_T5A.IsChecked = false;
             CheckBox_ObjS_1011_Def_T5B.IsChecked = false;
             /// OBJECTIF SECONDAIRE 1012 : SECURISEZ LES SITES D ATTERRISSAGE
-            TextBox_ObjS_1012_Def_T2.Clear();
             TextBox_ObjS_1012_Def_T3.Clear();
             TextBox_ObjS_1012_Def_T4.Clear();
             TextBox_ObjS_1012_Def_T5.Clear();
@@ -2621,19 +2619,20 @@ namespace CPV9
             #endregion
             #region Transfert_Donnees_To_Mem_Attaquant_Format_Incursion
             /// OBJECTIF SECONDAIRE 1011 : PRISE DE FLAN
-            Mem_Saisie_Attaquant[0, 24] = CheckBox_ObjS_1011_Att_T2A_Etat;
-            Mem_Saisie_Attaquant[1, 24] = CheckBox_ObjS_1011_Att_T2B_Etat;
-            Mem_Saisie_Attaquant[2, 24] = CheckBox_ObjS_1011_Att_T3A_Etat;
-            Mem_Saisie_Attaquant[3, 24] = CheckBox_ObjS_1011_Att_T3B_Etat;
-            Mem_Saisie_Attaquant[4, 24] = CheckBox_ObjS_1011_Att_T4A_Etat;
-            Mem_Saisie_Attaquant[5, 24] = CheckBox_ObjS_1011_Att_T4B_Etat;
-            Mem_Saisie_Attaquant[6, 24] = CheckBox_ObjS_1011_Att_T5A_Etat;
-            Mem_Saisie_Attaquant[7, 24] = CheckBox_ObjS_1011_Att_T5B_Etat;
+            Mem_Saisie_Attaquant[0, 24] = CheckBox_ObjS_1011_Att_T1A_Etat;
+            Mem_Saisie_Attaquant[1, 24] = CheckBox_ObjS_1011_Att_T1B_Etat;
+            Mem_Saisie_Attaquant[2, 24] = CheckBox_ObjS_1011_Att_T2A_Etat;
+            Mem_Saisie_Attaquant[3, 24] = CheckBox_ObjS_1011_Att_T2B_Etat;
+            Mem_Saisie_Attaquant[4, 24] = CheckBox_ObjS_1011_Att_T3A_Etat;
+            Mem_Saisie_Attaquant[5, 24] = CheckBox_ObjS_1011_Att_T3B_Etat;
+            Mem_Saisie_Attaquant[6, 24] = CheckBox_ObjS_1011_Att_T4A_Etat;
+            Mem_Saisie_Attaquant[7, 24] = CheckBox_ObjS_1011_Att_T4B_Etat;
+            Mem_Saisie_Attaquant[8, 24] = CheckBox_ObjS_1011_Att_T5A_Etat;
+            Mem_Saisie_Attaquant[9, 24] = CheckBox_ObjS_1011_Att_T5B_Etat;
             /// OBJECTIF SECONDAIRE 1012 : SECURISEZ LES SITES D ATTERRISSAGE
-            Mem_Saisie_Attaquant[0, 25] = TextBox_ObjS_1012_Att_T2.Text;
-            Mem_Saisie_Attaquant[1, 25] = TextBox_ObjS_1012_Att_T3.Text;
-            Mem_Saisie_Attaquant[2, 25] = TextBox_ObjS_1012_Att_T4.Text;
-            Mem_Saisie_Attaquant[3, 25] = TextBox_ObjS_1012_Att_T5.Text;
+            Mem_Saisie_Attaquant[0, 25] = TextBox_ObjS_1012_Att_T3.Text;
+            Mem_Saisie_Attaquant[1, 25] = TextBox_ObjS_1012_Att_T4.Text;
+            Mem_Saisie_Attaquant[2, 25] = TextBox_ObjS_1012_Att_T5.Text;
             /// OBJECTIF SECONDAIRE 1013 : ATTAQUEZ LES LIGNES DE RAVITAILLEMENT
             Mem_Saisie_Attaquant[0, 26] = TextBox_ObjS_1013_Att_T2.Text;
             Mem_Saisie_Attaquant[1, 26] = TextBox_ObjS_1013_Att_T3.Text;
@@ -3167,19 +3166,20 @@ namespace CPV9
             #endregion
             #region Transfert_Donnees_To_Mem_Defenseur_Format_Incursion
             /// OBJECTIF SECONDAIRE 1011 : PRISE DE FLAN
-            Mem_Saisie_Defenseur[0, 24] = CheckBox_ObjS_1011_Def_T2A_Etat;
-            Mem_Saisie_Defenseur[1, 24] = CheckBox_ObjS_1011_Def_T2B_Etat;
-            Mem_Saisie_Defenseur[2, 24] = CheckBox_ObjS_1011_Def_T3A_Etat;
-            Mem_Saisie_Defenseur[3, 24] = CheckBox_ObjS_1011_Def_T3B_Etat;
-            Mem_Saisie_Defenseur[4, 24] = CheckBox_ObjS_1011_Def_T4A_Etat;
-            Mem_Saisie_Defenseur[5, 24] = CheckBox_ObjS_1011_Def_T4B_Etat;
-            Mem_Saisie_Defenseur[6, 24] = CheckBox_ObjS_1011_Def_T5A_Etat;
-            Mem_Saisie_Defenseur[7, 24] = CheckBox_ObjS_1011_Def_T5B_Etat;
+            Mem_Saisie_Defenseur[0, 24] = CheckBox_ObjS_1011_Def_T1A_Etat;
+            Mem_Saisie_Defenseur[1, 24] = CheckBox_ObjS_1011_Def_T1B_Etat;
+            Mem_Saisie_Defenseur[2, 24] = CheckBox_ObjS_1011_Def_T2A_Etat;
+            Mem_Saisie_Defenseur[3, 24] = CheckBox_ObjS_1011_Def_T2B_Etat;
+            Mem_Saisie_Defenseur[4, 24] = CheckBox_ObjS_1011_Def_T3A_Etat;
+            Mem_Saisie_Defenseur[5, 24] = CheckBox_ObjS_1011_Def_T3B_Etat;
+            Mem_Saisie_Defenseur[6, 24] = CheckBox_ObjS_1011_Def_T4A_Etat;
+            Mem_Saisie_Defenseur[7, 24] = CheckBox_ObjS_1011_Def_T4B_Etat;
+            Mem_Saisie_Defenseur[8, 24] = CheckBox_ObjS_1011_Def_T5A_Etat;
+            Mem_Saisie_Defenseur[9, 24] = CheckBox_ObjS_1011_Def_T5B_Etat;
             /// OBJECTIF SECONDAIRE 1012 : SECURISEZ LES SITES D ATTERRISSAGE
-            Mem_Saisie_Defenseur[0, 25] = TextBox_ObjS_1012_Def_T2.Text;
-            Mem_Saisie_Defenseur[1, 25] = TextBox_ObjS_1012_Def_T3.Text;
-            Mem_Saisie_Defenseur[2, 25] = TextBox_ObjS_1012_Def_T4.Text;
-            Mem_Saisie_Defenseur[3, 25] = TextBox_ObjS_1012_Def_T5.Text;
+            Mem_Saisie_Defenseur[0, 25] = TextBox_ObjS_1012_Def_T3.Text;
+            Mem_Saisie_Defenseur[1, 25] = TextBox_ObjS_1012_Def_T4.Text;
+            Mem_Saisie_Defenseur[2, 25] = TextBox_ObjS_1012_Def_T5.Text;
             /// OBJECTIF SECONDAIRE 1013 : ATTAQUEZ LES LIGNES DE RAVITAILLEMENT
             Mem_Saisie_Defenseur[0, 26] = TextBox_ObjS_1013_Def_T2.Text;
             Mem_Saisie_Defenseur[1, 26] = TextBox_ObjS_1013_Def_T3.Text;
@@ -3925,14 +3925,24 @@ namespace CPV9
             #endregion
             #region Transfert_Donnees_To_Text_Attaquant_Format_Incursion
             /// OBJECTIF SECONDAIRE 1011 : PRISE DE FLAN
-            CheckBox_ObjS_1011_Att_T2A_Etat = Mem_Saisie_Attaquant[0, 24];
-            CheckBox_ObjS_1011_Att_T2B_Etat = Mem_Saisie_Attaquant[1, 24];
-            CheckBox_ObjS_1011_Att_T3A_Etat = Mem_Saisie_Attaquant[2, 24];
-            CheckBox_ObjS_1011_Att_T3B_Etat = Mem_Saisie_Attaquant[3, 24];
-            CheckBox_ObjS_1011_Att_T4A_Etat = Mem_Saisie_Attaquant[4, 24];
-            CheckBox_ObjS_1011_Att_T4B_Etat = Mem_Saisie_Attaquant[5, 24];
-            CheckBox_ObjS_1011_Att_T5A_Etat = Mem_Saisie_Attaquant[6, 24];
-            CheckBox_ObjS_1011_Att_T5B_Etat = Mem_Saisie_Attaquant[7, 24];
+            CheckBox_ObjS_1011_Att_T1A_Etat = Mem_Saisie_Attaquant[0, 24];
+            CheckBox_ObjS_1011_Att_T1B_Etat = Mem_Saisie_Attaquant[1, 24];
+            CheckBox_ObjS_1011_Att_T2A_Etat = Mem_Saisie_Attaquant[2, 24];
+            CheckBox_ObjS_1011_Att_T2B_Etat = Mem_Saisie_Attaquant[3, 24];
+            CheckBox_ObjS_1011_Att_T3A_Etat = Mem_Saisie_Attaquant[4, 24];
+            CheckBox_ObjS_1011_Att_T3B_Etat = Mem_Saisie_Attaquant[5, 24];
+            CheckBox_ObjS_1011_Att_T4A_Etat = Mem_Saisie_Attaquant[6, 24];
+            CheckBox_ObjS_1011_Att_T4B_Etat = Mem_Saisie_Attaquant[7, 24];
+            CheckBox_ObjS_1011_Att_T5A_Etat = Mem_Saisie_Attaquant[8, 24];
+            CheckBox_ObjS_1011_Att_T5B_Etat = Mem_Saisie_Attaquant[9, 24];
+            if (CheckBox_ObjS_1011_Att_T1A_Etat == "true")
+            {
+                CheckBox_ObjS_1011_Att_T1A.IsChecked = true;
+            }
+            if (CheckBox_ObjS_1011_Att_T1B_Etat == "true")
+            {
+                CheckBox_ObjS_1011_Att_T1B.IsChecked = true;
+            }            
             if (CheckBox_ObjS_1011_Att_T2A_Etat == "true")
             {
                 CheckBox_ObjS_1011_Att_T2A.IsChecked = true;
@@ -3966,10 +3976,9 @@ namespace CPV9
                 CheckBox_ObjS_1011_Att_T5B.IsChecked = true;
             }
             /// OBJECTIF SECONDAIRE 1012 : SECURISEZ LES SITES D ATTERRISSAGE
-            TextBox_ObjS_1012_Att_T2.Text = Mem_Saisie_Attaquant[0, 25];
-            TextBox_ObjS_1012_Att_T3.Text = Mem_Saisie_Attaquant[1, 25];
-            TextBox_ObjS_1012_Att_T4.Text = Mem_Saisie_Attaquant[2, 25];
-            TextBox_ObjS_1012_Att_T5.Text = Mem_Saisie_Attaquant[3, 25];
+            TextBox_ObjS_1012_Att_T3.Text = Mem_Saisie_Attaquant[0, 25];
+            TextBox_ObjS_1012_Att_T4.Text = Mem_Saisie_Attaquant[1, 25];
+            TextBox_ObjS_1012_Att_T5.Text = Mem_Saisie_Attaquant[2, 25];
             /// OBJECTIF SECONDAIRE 1013 : ATTAQUEZ LES LIGNES DE RAVITAILLEMENT
             TextBox_ObjS_1013_Att_T2.Text = Mem_Saisie_Attaquant[0, 26];
             TextBox_ObjS_1013_Att_T3.Text = Mem_Saisie_Attaquant[1, 26];
@@ -5367,14 +5376,24 @@ namespace CPV9
             #region Transfert_Donnees_To_Text_Defenseur_Format_Incursion
 
             /// OBJECTIF SECONDAIRE 1011 : PRISE DE FLAN
-            CheckBox_ObjS_1011_Def_T2A_Etat = Mem_Saisie_Defenseur[0, 24];
-            CheckBox_ObjS_1011_Def_T2B_Etat = Mem_Saisie_Defenseur[1, 24];
-            CheckBox_ObjS_1011_Def_T3A_Etat = Mem_Saisie_Defenseur[2, 24];
-            CheckBox_ObjS_1011_Def_T3B_Etat = Mem_Saisie_Defenseur[3, 24];
-            CheckBox_ObjS_1011_Def_T4A_Etat = Mem_Saisie_Defenseur[4, 24];
-            CheckBox_ObjS_1011_Def_T4B_Etat = Mem_Saisie_Defenseur[5, 24];
-            CheckBox_ObjS_1011_Def_T5A_Etat = Mem_Saisie_Defenseur[6, 24];
-            CheckBox_ObjS_1011_Def_T5B_Etat = Mem_Saisie_Defenseur[7, 24];
+            CheckBox_ObjS_1011_Def_T1A_Etat = Mem_Saisie_Defenseur[0, 24];
+            CheckBox_ObjS_1011_Def_T1B_Etat = Mem_Saisie_Defenseur[1, 24];
+            CheckBox_ObjS_1011_Def_T2A_Etat = Mem_Saisie_Defenseur[2, 24];
+            CheckBox_ObjS_1011_Def_T2B_Etat = Mem_Saisie_Defenseur[3, 24];
+            CheckBox_ObjS_1011_Def_T3A_Etat = Mem_Saisie_Defenseur[4, 24];
+            CheckBox_ObjS_1011_Def_T3B_Etat = Mem_Saisie_Defenseur[5, 24];
+            CheckBox_ObjS_1011_Def_T4A_Etat = Mem_Saisie_Defenseur[6, 24];
+            CheckBox_ObjS_1011_Def_T4B_Etat = Mem_Saisie_Defenseur[7, 24];
+            CheckBox_ObjS_1011_Def_T5A_Etat = Mem_Saisie_Defenseur[8, 24];
+            CheckBox_ObjS_1011_Def_T5B_Etat = Mem_Saisie_Defenseur[9, 24];
+            if (CheckBox_ObjS_1011_Def_T1A_Etat == "true")
+            {
+                CheckBox_ObjS_1011_Def_T1A.IsChecked = true;
+            }
+            if (CheckBox_ObjS_1011_Def_T1B_Etat == "true")
+            {
+                CheckBox_ObjS_1011_Def_T1B.IsChecked = true;
+            }
             if (CheckBox_ObjS_1011_Def_T2A_Etat == "true")
             {
                 CheckBox_ObjS_1011_Def_T2A.IsChecked = true;
@@ -5409,10 +5428,9 @@ namespace CPV9
             }
 
             /// OBJECTIF SECONDAIRE 1012 : SECURISEZ LES SITES D ATTERRISSAGE
-            TextBox_ObjS_1012_Def_T2.Text = Mem_Saisie_Defenseur[0, 25];
-            TextBox_ObjS_1012_Def_T3.Text = Mem_Saisie_Defenseur[1, 25];
-            TextBox_ObjS_1012_Def_T4.Text = Mem_Saisie_Defenseur[2, 25];
-            TextBox_ObjS_1012_Def_T5.Text = Mem_Saisie_Defenseur[3, 25];
+            TextBox_ObjS_1012_Def_T3.Text = Mem_Saisie_Defenseur[0, 25];
+            TextBox_ObjS_1012_Def_T4.Text = Mem_Saisie_Defenseur[1, 25];
+            TextBox_ObjS_1012_Def_T5.Text = Mem_Saisie_Defenseur[2, 25];
             /// OBJECTIF SECONDAIRE 1013 : ATTAQUEZ LES LIGNES DE RAVITAILLEMENT
             TextBox_ObjS_1013_Def_T2.Text = Mem_Saisie_Defenseur[0, 26];
             TextBox_ObjS_1013_Def_T3.Text = Mem_Saisie_Defenseur[1, 26];
@@ -11574,7 +11592,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 1012          
             Classe_Score_OBJM_1012 OBJECTIF_Mission_1012_Att;
-            OBJECTIF_Mission_1012_Att = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Att_T2.Text, TextBox_ObjS_1012_Att_T3.Text, TextBox_ObjS_1012_Att_T4.Text, TextBox_ObjS_1012_Att_T5.Text);
+            OBJECTIF_Mission_1012_Att = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Att_T3.Text, TextBox_ObjS_1012_Att_T4.Text, TextBox_ObjS_1012_Att_T5.Text);
             Scores_Attaquant[25] = OBJECTIF_Mission_1012_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_1012_Att.Score_ObjS) >= 15)
             {
@@ -12687,7 +12705,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 1012          
             Classe_Score_OBJM_1012 OBJECTIF_Mission_1012_Def;
-            OBJECTIF_Mission_1012_Def = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Def_T2.Text, TextBox_ObjS_1012_Def_T3.Text, TextBox_ObjS_1012_Def_T4.Text, TextBox_ObjS_1012_Def_T5.Text);
+            OBJECTIF_Mission_1012_Def = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Def_T3.Text, TextBox_ObjS_1012_Def_T4.Text, TextBox_ObjS_1012_Def_T5.Text);
             Scores_Defenseur[25] = OBJECTIF_Mission_1012_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_1012_Def.Score_ObjS) >= 15)
             {
@@ -17568,30 +17586,23 @@ namespace CPV9
 
         private void TextBox_ObjS_1012_Att_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_1012_Att_T2.Text != "")
-            {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Att_T2.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Att_T2.Text) <= 2)
-                {
-                    Calcul_Score_Attaquant();
-                }
-            }
             if (TextBox_ObjS_1012_Att_T3.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Att_T3.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Att_T3.Text) <= 2)
+                if (Convert.ToInt16(TextBox_ObjS_1012_Att_T3.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Att_T3.Text) <= 3)
                 {
                     Calcul_Score_Attaquant();
                 }
             }
             if (TextBox_ObjS_1012_Att_T4.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Att_T4.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Att_T4.Text) <= 2)
+                if (Convert.ToInt16(TextBox_ObjS_1012_Att_T4.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Att_T4.Text) <= 3)
                 {
                     Calcul_Score_Attaquant();
                 }
             }
             if (TextBox_ObjS_1012_Att_T5.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Att_T5.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Att_T5.Text) <= 2)
+                if (Convert.ToInt16(TextBox_ObjS_1012_Att_T5.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Att_T5.Text) <= 3)
                 {
                     Calcul_Score_Attaquant();
                 }
@@ -17599,30 +17610,23 @@ namespace CPV9
         }
         private void TextBox_ObjS_1012_Def_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_1012_Def_T2.Text != "")
-            {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Def_T2.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Def_T2.Text) <= 2)
-                {
-                    Calcul_Score_Defenseur();
-                }
-            }
             if (TextBox_ObjS_1012_Def_T3.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Def_T3.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Def_T3.Text) <= 2)
+                if (Convert.ToInt16(TextBox_ObjS_1012_Def_T3.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Def_T3.Text) <= 3)
                 {
                     Calcul_Score_Defenseur();
                 }
             }
             if (TextBox_ObjS_1012_Def_T4.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Def_T4.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Def_T4.Text) <= 2)
+                if (Convert.ToInt16(TextBox_ObjS_1012_Def_T4.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Def_T4.Text) <= 3)
                 {
                     Calcul_Score_Defenseur();
                 }
             }
             if (TextBox_ObjS_1012_Def_T5.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1012_Def_T5.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Def_T5.Text) <= 2)
+                if (Convert.ToInt16(TextBox_ObjS_1012_Def_T5.Text) >= 0 && Convert.ToInt16(TextBox_ObjS_1012_Def_T5.Text) <= 3)
                 {
                     Calcul_Score_Defenseur();
                 }
@@ -21760,13 +21764,9 @@ namespace CPV9
             Label_Objectif_Sec_Att_1012F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1012G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1012H.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_1012I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1012I.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1012J.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_1012K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_1012_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_1012_Att_T2.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_1012_Att_T2.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_1012_Att_T2.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_1012_Att_T3.FontSize = Taille_texte * Multiple;
             TextBox_ObjS_1012_Att_T3.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_1012_Att_T3.Height = Hauteur_saisie * Multiple;
@@ -21781,7 +21781,6 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_1012B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_1012C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_1012D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Att_1012E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 1013
             Label_Objectif_Sec_Att_1013A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -23857,13 +23856,9 @@ namespace CPV9
             Label_Objectif_Sec_Def_1012F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1012G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1012H.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_1012I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1012I.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1012J.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_1012K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_1012_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_1012_Def_T2.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_1012_Def_T2.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_1012_Def_T2.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_1012_Def_T3.FontSize = Taille_texte * Multiple;
             TextBox_ObjS_1012_Def_T3.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_1012_Def_T3.Height = Hauteur_saisie * Multiple;
@@ -23878,7 +23873,6 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_1012B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_1012C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_1012D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Def_1012E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 1013
             Label_Objectif_Sec_Def_1013A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -32373,6 +32367,10 @@ namespace CPV9
         private void Button_Doc_ObjS_1011_Click(object sender, RoutedEventArgs e)
         {
             Livres(1011);
+        }
+        private void Button_Doc_ObjS_1012_Click(object sender, RoutedEventArgs e)
+        {
+            Livres(1012);
         }
 
         private void Button_Doc_ObjS_3001_Click(object sender, RoutedEventArgs e)
