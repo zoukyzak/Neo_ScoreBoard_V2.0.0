@@ -9,63 +9,22 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJM_1022(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String Saisie7, String Saisie8, String Saisie9, String Saisie10)
+        public Classe_Score_OBJM_1022(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String Saisie7)
         {
-            if (Saisie1 == "true")
-            {
-                Calcul_Obj(1);
-            }
-            if (Saisie2 == "true")
-            {
-                Calcul_Sg();
-            }
-            if (Saisie3 == "true")
-            {
-                Calcul_Obj(2);
-            }
-            if (Saisie4 == "true")
-            {
-                Calcul_Sg();
-            }
-            if (Saisie5 == "true")
-            {
-                Calcul_Obj(3);
-            }
-            if (Saisie6 == "true")
-            {
-                Calcul_Sg();
-            }
-            if (Saisie7 == "true")
-            {
-                Calcul_Obj(4);
-            }
-            if (Saisie8 == "true")
-            {
-                Calcul_Sg();
-            }
-            if (Saisie9 == "true")
-            {
-                Calcul_Obj(5);
-            }
-            if (Saisie10 == "true")
-            {
-                Calcul_Sg();
-            }
+            if (Saisie1 == "true") { Score += 2; };
+            if (Saisie2 == "true") { Score += 2; };
+            if (Saisie3 == "true") { Score += 2; };
+            if (Saisie4 == "true") { Score += 2; };
+            if (Saisie5 == "true") { Score += 2; };
+            if (Saisie6 == "true") { Score += 3; };
+            if (Saisie7 == "true") { Score += 3; };
+            
             Score_ObjS = Score;
             if (Score >= 15)
             {
                 Score = 15;
             }
             Scores_Joueur = Score;
-        }
-
-        private void Calcul_Obj(int DonneeA)
-        {
-            Score += (DonneeA);
-        }
-        private void Calcul_Sg()
-        {
-            Score += 1;
-        }
+        }       
     }
 }
