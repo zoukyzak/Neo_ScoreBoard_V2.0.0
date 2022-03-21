@@ -3371,6 +3371,9 @@
                         <Button x:Name="Button_Visible_ObjS_1023_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1023_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1023_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1023_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_1023B" Content="Marquez les points en fonction de  l objectif ou vous effectuez l action : IRRUPTION. (1 unitée)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1023B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
@@ -3439,6 +3442,9 @@
                         <Button x:Name="Button_Visible_ObjS_1031_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1031_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1031_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1031_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_1031B" Content="Action TELECHARGER LE DATA-SPAUME ,debutez a la fin de votre phase de mouvement," FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_1031C" Content="réussit a la fin de votre prochaine phase de commandment" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3474,6 +3480,9 @@
                         <Button x:Name="Button_Visible_ObjS_1032_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1032_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1032_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1032_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_1032B" Content="comptabilisez les unités de votre armée encore en vie a la fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_1032C" Content="+ 75% (15 pts) , de 50% a 75% (10 pts) , de 25% a 50% (5 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3500,6 +3509,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_1033_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1033_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_1033_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1033_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_1033B" Content="Faite l action BALAYAGE DE RECONNAISSANCE dans chacun des quarts de table" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3531,6 +3543,9 @@
                         <Button x:Name="Button_Visible_ObjS_2011_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2011_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2011_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2011_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2011B" Content="comptabilisez les unités de votre armée encore en vie a la fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_2011C" Content="+ 75% (15 pts) , de 50% a 75% (10 pts) , de 25% a 50% (5 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3558,6 +3573,9 @@
                         <Button x:Name="Button_Visible_ObjS_2012_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2012_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2012_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2012_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2012B" Content="raser les objectifs qui se trouvent dans la zone de deploiement ennemie" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_2012C" Content="1 objectif raser (5 pts) , 2 objectif raser (15 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3581,6 +3599,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2013_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2013_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2013_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2013_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2013B" Content="Action d INTERCEPTION DE DONNEES , prennez autant de pts que vous avez pris d objectif." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3615,6 +3636,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2021_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2021_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2021_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2021_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2021B" Content="A votre phase de commandement, Marquez 4 pts si vous controlez les 2 objectifs de votre zone et 1 objectif de la zone ennemie" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3671,6 +3695,9 @@
                         <Button x:Name="Button_Visible_ObjS_2022_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2022_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2022_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2022_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2022B" Content="Marquez 3 pts si vous controlez l'objectif ennemie a votre phase de commandement." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_2022C" Content="Marquez 2 pts par objectif controlé,a votre phase de commandement, qui ne se trouve pas dans une zone de deploiement." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3723,6 +3750,9 @@
                         <Button x:Name="Button_Visible_ObjS_2023_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2023_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2023_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2023_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2023B" Content="Action :SCAN STRATEGIQUE , 1 seul fois par objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_2023C" Content="peu etre réalisé plusieurs fois en meme temps par differentes unitées." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3754,6 +3784,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2031_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2031_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2031_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2031_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2031B" Content="1 objectif = 2 pts , 2 objectifs = 3 pts , 3 objectifs = 5 pts" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3788,6 +3821,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2032_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2032_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2032_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2032_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2032B" Content="objectif central ou Zone de deploiement ennemie = 3 pts ,objectif central et Zone de deploiement ennemie = 5 pts ." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -3845,6 +3881,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2033_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2033_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2033_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2033_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2033B" Content="Marquez 3 pts pour 1 objectif prioritaire pris et 5 pts pour les 2 objectifs prioritaires." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6259,6 +6298,9 @@
                         <Button x:Name="Button_Visible_ObjS_1023_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1023_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1023_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1023_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_1023B" Content="Marquez les points en fonction de  l objectif ou vous effectuez l action : IRRUPTION. (1 unitée)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1023B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
@@ -6327,6 +6369,9 @@
                         <Button x:Name="Button_Visible_ObjS_1031_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1031_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1031_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1031_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_1031B" Content="Action TELECHARGER LE DATA-SPAUME ,debutez a la fin de votre phase de mouvement," FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_1031C" Content="réussit a la fin de votre prochaine phase de commandment" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6362,6 +6407,9 @@
                         <Button x:Name="Button_Visible_ObjS_1032_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1032_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_1032_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1032_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_1032B" Content="comptabilisez les unités de votre armée encore en vie a la fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_1032C" Content="+ 75% (15 pts) , de 50% a 75% (10 pts) , de 25% a 50% (5 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6388,6 +6436,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_1033_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_1033_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_1033_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_1033_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_1033B" Content="Faite l action BALAYAGE DE RECONNAISSANCE dans chacun des quarts de table" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6419,6 +6470,9 @@
                         <Button x:Name="Button_Visible_ObjS_2011_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2011_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2011_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2011_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2011B" Content="comptabilisez les unités de votre armée encore en vie a la fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_2011C" Content="+ 75% (15 pts) , de 50% a 75% (10 pts) , de 25% a 50% (5 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6446,6 +6500,9 @@
                         <Button x:Name="Button_Visible_ObjS_2012_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2012_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2012_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2012_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2012B" Content="raser les objectifs qui se trouvent dans la zone de deploiement ennemie" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_2012C" Content="1 objectif raser (5 pts) , 2 objectif raser (15 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6469,6 +6526,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2013_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2013_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2013_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2013_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2013B" Content="Action d INTERCEPTION DE DONNEES , prennez autant de pts que vous avez pris d objectif." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6503,6 +6563,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2021_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2021_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2021_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2021_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2021B" Content="A votre phase de commandement, Marquez 4 pts si vous controlez les 2 objectifs de votre zone et 1 objectif de la zone ennemie" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6552,6 +6615,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2022_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2022_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2022_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2022_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2022B" Content="Marquez 3 pts si vous controlez l'objectif ennemie a votre phase de commandement." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6605,6 +6671,9 @@
                         <Button x:Name="Button_Visible_ObjS_2023_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2023_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2023_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2023_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2023B" Content="Action :SCAN STRATEGIQUE , 1 seul fois par objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_2023C" Content="peu etre réalisé plusieurs fois en meme temps par differentes unitées." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6640,6 +6709,9 @@
                         <Button x:Name="Button_Visible_ObjS_2031_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2031_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
+                        <Button x:Name="Button_Doc_ObjS_2031_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2031_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2031B" Content="1 objectif = 2 pts , 2 objectifs = 3 pts , 3 objectifs = 5 pts" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_2031C" Content="pts pris a votre phase de commandement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6673,6 +6745,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2032_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2032_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2032_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2032_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2032B" Content="objectif central ou Zone de deploiement ennemie = 3 pts ,objectif central et Zone de deploiement ennemie = 5 pts ." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
@@ -6730,6 +6805,9 @@
                         </Button>
                         <Button x:Name="Button_Visible_ObjS_2033_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_2033_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
                             <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Button>
+                        <Button x:Name="Button_Doc_ObjS_2033_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_2033_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                            <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2033B" Content="Marquez 3 pts pour 1 objectif prioritaire pris et 5 pts pour les 2 objectifs prioritaires." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
