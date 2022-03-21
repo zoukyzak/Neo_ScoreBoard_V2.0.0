@@ -3375,19 +3375,18 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_1023B" Content="Marquez les points en fonction de  l objectif ou vous effectuez l action : IRRUPTION. (1 unitée)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1023B" Content="Marquez les points en fonction de  l objectif ou vous effectuez l action : ELAN DE FOI." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1023C" Content="En début de phase de mouvement ou en fin de phase de mouvement si votre unité est Objectif Sécurisé " FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1023B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <StackPanel Orientation="Vertical">
-                            <Label x:Name="Label_Objectif_Sec_Att_1023C" HorizontalAlignment="Left" Content="   " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_1023D" HorizontalAlignment="Left" Content="1 pts - objectif dans votre zone de deploiement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_1023E" HorizontalAlignment="Left" Content="2 pts - objectif le plus proche de votre zone de deploiement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_1023F" HorizontalAlignment="Left" Content="4 pts - objectif le plus proche de la zone de deploiement ennemi" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_1023G" HorizontalAlignment="Left" Content="8 pts - objectif dans la zone de deploiement ennemi" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                        </StackPanel>
+                            <Label x:Name="Label_Objectif_Sec_Att_1023D" HorizontalAlignment="Left" Content="   " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_1023E" HorizontalAlignment="Left" Content="2 pts - objectif B" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_1023F" HorizontalAlignment="Left" Content="3 pts - objectif C" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_1023G" HorizontalAlignment="Left" Content="4 pts - objectif D" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1023A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Att_1023H" Content="TOUR 1:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Att_T1_A" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T1_A_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T1_B" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T1_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T1_C" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T1_C_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T1_D" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T1_D_Click"/>
@@ -3395,7 +3394,6 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1023B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Att_1023I" Content="TOUR 2:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Att_T2_A" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T2_A_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T2_B" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T2_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T2_C" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T2_C_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T2_D" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T2_D_Click"/>
@@ -3403,7 +3401,6 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1023C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Att_1023J" Content="TOUR 3:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Att_T3_A" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T3_A_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T3_B" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T3_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T3_C" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T3_C_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T3_D" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T3_D_Click"/>
@@ -3411,7 +3408,6 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1023D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Att_1023K" Content="Tour 4:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Att_T4_A" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T4_A_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T4_B" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T4_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T4_C" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T4_C_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T4_D" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T4_D_Click"/>
@@ -3419,7 +3415,6 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1023E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Att_1023L" Content="TOUR 5:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Att_T5_A" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T5_A_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T5_B" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T5_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T5_C" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T5_C_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Att_T5_D" VerticalAlignment="Center" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Att_T5_D_Click"/>
@@ -6302,54 +6297,49 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_1023B" Content="Marquez les points en fonction de  l objectif ou vous effectuez l action : IRRUPTION. (1 unitée)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1023B" Content="Marquez les points en fonction de  l objectif ou vous effectuez l action : ELAN DE FOI." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1023C" Content="En début de phase de mouvement ou en fin de phase de mouvement si votre unité est Objectif Sécurisé " FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1023B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <StackPanel Orientation="Vertical">
-                            <Label x:Name="Label_Objectif_Sec_Def_1023C" Content="   " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_1023D" Content="1 pts - objectif dans votre zone de deploiement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_1023E" Content="2 pts - objectif le plus proche de votre zone de deploiement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_1023F" Content="4 pts - objectif le plus proche de la zone de deploiement ennemi" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_1023G" Content="8 pts - objectif dans la zone de deploiement ennemi" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                        </StackPanel>
+                            <Label x:Name="Label_Objectif_Sec_Def_1023D" Content="   " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_1023E" Content="2 pts - objectif C" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_1023F" Content="3 pts - objectif B" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_1023G" Content="4 pts - objectif A" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1023A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Def_1023H" Content="TOUR 1:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T1_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T1_A_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T1_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T1_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Def_T1_C" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T1_C_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T1_D" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T1_D_Click"/>
-                        </StackPanel>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T1_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T1_B_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T1_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T1_A_Click"/>
+                            </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1023B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Def_1023I" Content="TOUR 2:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T2_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T2_A_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T2_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T2_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Def_T2_C" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T2_C_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T2_D" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T2_D_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T2_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T2_B_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T2_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T2_A_Click"/>
                         </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1023C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Def_1023J" Content="TOUR 3:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T3_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T3_A_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T3_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T3_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Def_T3_C" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T3_C_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T3_D" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T3_D_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T3_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T3_B_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T3_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T3_A_Click"/>
                         </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1023D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Def_1023K" Content="Tour 4:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T4_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T4_A_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T4_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T4_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Def_T4_C" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T4_C_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T4_D" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T4_D_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T4_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T4_B_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T4_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T4_A_Click"/>
                         </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1023E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         <StackPanel Orientation="Vertical">
                             <Label x:Name="Label_Objectif_Sec_Def_1023L" Content="TOUR 5:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T5_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T5_A_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T5_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T5_B_Click"/>
                             <CheckBox x:Name="CheckBox_ObjS_1023_Def_T5_C" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T5_C_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T5_D" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T5_D_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T5_B" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T5_B_Click"/>
+                            <CheckBox x:Name="CheckBox_ObjS_1023_Def_T5_A" HorizontalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="15" Click="CheckBox_ObjS_1023_Def_T5_A_Click"/>
                         </StackPanel>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1023F" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
