@@ -18290,28 +18290,28 @@ namespace CPV9
         {
             if (TextBox_ObjS_1031_Att_T2.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T2.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Att_T2.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T2.Text) >= 1)
                 {
                     Calcul_Score_Attaquant();
                 }
             }
             if (TextBox_ObjS_1031_Att_T3.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T3.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Att_T3.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T3.Text) >= 1)
                 {
                     Calcul_Score_Attaquant();
                 }
             }
             if (TextBox_ObjS_1031_Att_T4.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T4.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Att_T4.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T4.Text) >= 1)
                 {
                     Calcul_Score_Attaquant();
                 }
             }
             if (TextBox_ObjS_1031_Att_T5.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T5.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Att_T5.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Att_T5.Text) >= 1)
                 {
                     Calcul_Score_Attaquant();
                 }
@@ -18321,28 +18321,28 @@ namespace CPV9
         {
             if (TextBox_ObjS_1031_Def_T2.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T2.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Def_T2.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T2.Text) >= 1)
                 {
                     Calcul_Score_Defenseur();
                 }
             }
             if (TextBox_ObjS_1031_Def_T3.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T3.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Def_T3.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T3.Text) >= 1)
                 {
                     Calcul_Score_Defenseur();
                 }
             }
             if (TextBox_ObjS_1031_Def_T4.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T4.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Def_T4.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T4.Text) >= 1)
                 {
                     Calcul_Score_Defenseur();
                 }
             }
             if (TextBox_ObjS_1031_Def_T5.Text != "")
             {
-                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T5.Text) >= 1 && Convert.ToInt16(TextBox_ObjS_1031_Def_T5.Text) <= 4)
+                if (Convert.ToInt16(TextBox_ObjS_1031_Def_T5.Text) >= 1)
                 {
                     Calcul_Score_Defenseur();
                 }
