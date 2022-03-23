@@ -3479,21 +3479,31 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_1032B" Content="comptabilisez les unités de votre armée encore en vie a la fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_1032C" Content="+ 75% (15 pts) , de 50% a 75% (10 pts) , de 25% a 50% (5 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1032B" Content="Gagnez 1 pts de victoire à la fin du round par unité ennemie détruite." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_1032C" Content="pour un maximum de 3 pts par round" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1032B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_1032D" Content="Nbre d unitées de depart:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1032_Att_UD" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032D" Content="Nbre d unitées ennemie détruite :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032E" Content="Round 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Att_R1" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1032A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1032E" Content="Nbre d unitées restantes:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1032_Att_UR" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032F" Content="Round 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Att_R2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1032B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032G" Content="Round 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Att_R3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1032C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032H" Content="Round 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Att_R4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1032D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032I" Content="Round 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Att_R5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1032E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_1032F" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_1032_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_1032G" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1032C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_1032K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_1032F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1033_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -6401,21 +6411,31 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_1032B" Content="comptabilisez les unités de votre armée encore en vie a la fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_1032C" Content="+ 75% (15 pts) , de 50% a 75% (10 pts) , de 25% a 50% (5 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1032B" Content="Gagnez 1 pts de victoire à la fin du round par unité ennemie détruite." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_1032C" Content="pour un maximum de 3 pts par round" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_1032B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_1032D" Content="Nbre d unitées de depart:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1032_Def_UD" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter  x:Name="GridSplitter_Objectif_Sec_Def_1032A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1032E" Content="Nbre d unitées restantes:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_1032_Def_UR" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032D" Content="Nbre d unitées ennemie détruite :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032E" Content="Round 1 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Def_R1" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1032A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032F" Content="Round 2 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Def_R2" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1032B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032G" Content="Round 3 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Def_R3" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1032C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032H" Content="Round 4 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Def_R4" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1032D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032I" Content="Round 5 :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_1032_Def_R5" Width="30" Height="20" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="2,0" TextChanged="TextBox_ObjS_1032_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1032E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_1032F" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_1032_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_1032G" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1032C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_1032K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_1032F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_1033_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">

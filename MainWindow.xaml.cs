@@ -1743,9 +1743,12 @@ namespace CPV9
             TextBox_ObjS_1031_Att_T3.Clear();
             TextBox_ObjS_1031_Att_T4.Clear();
             TextBox_ObjS_1031_Att_T5.Clear();
-            /// OBJECTIF SECONDAIRE 1032 : MINIMISER LES PERTES
-            TextBox_ObjS_1032_Att_UD.Clear();
-            TextBox_ObjS_1032_Att_UR.Clear();
+            /// OBJECTIF SECONDAIRE 1032 : BRISEZ-LES CORPS ET AME
+            TextBox_ObjS_1032_Att_R1.Clear();
+            TextBox_ObjS_1032_Att_R2.Clear();
+            TextBox_ObjS_1032_Att_R3.Clear();
+            TextBox_ObjS_1032_Att_R4.Clear();
+            TextBox_ObjS_1032_Att_R5.Clear();
             /// OBJECTIF SECONDAIRE 1033 : BALAYAGE DE RECONNAISSANCE
             CheckBox_ObjS_1033_Att_Q1.IsChecked = false;
             CheckBox_ObjS_1033_Att_Q2.IsChecked = false;
@@ -2238,9 +2241,12 @@ namespace CPV9
             TextBox_ObjS_1031_Def_T3.Clear();
             TextBox_ObjS_1031_Def_T4.Clear();
             TextBox_ObjS_1031_Def_T5.Clear();
-            /// OBJECTIF SECONDAIRE 1032 : MINIMISER LES PERTES
-            TextBox_ObjS_1032_Def_UD.Clear();
-            TextBox_ObjS_1032_Def_UR.Clear();
+            /// OBJECTIF SECONDAIRE 1032 : BRISEZ-LES CORPS ET AME
+            TextBox_ObjS_1032_Def_R1.Clear();
+            TextBox_ObjS_1032_Def_R2.Clear();
+            TextBox_ObjS_1032_Def_R3.Clear();
+            TextBox_ObjS_1032_Def_R4.Clear();
+            TextBox_ObjS_1032_Def_R5.Clear();
             /// OBJECTIF SECONDAIRE 1033 : BALAYAGE DE RECONNAISSANCE
             CheckBox_ObjS_1033_Def_Q1.IsChecked = false;
             CheckBox_ObjS_1033_Def_Q2.IsChecked = false;
@@ -2709,9 +2715,15 @@ namespace CPV9
             Mem_Saisie_Attaquant[1, 30] = TextBox_ObjS_1031_Att_T3.Text;
             Mem_Saisie_Attaquant[2, 30] = TextBox_ObjS_1031_Att_T4.Text;
             Mem_Saisie_Attaquant[3, 30] = TextBox_ObjS_1031_Att_T5.Text;
-            /// OBJECTIF SECONDAIRE 1032 : MINIMISER LES PERTES
-            Mem_Saisie_Attaquant[0, 31] = TextBox_ObjS_1032_Att_UD.Text;
-            Mem_Saisie_Attaquant[1, 31] = TextBox_ObjS_1032_Att_UR.Text;
+
+            /// OBJECTIF SECONDAIRE 1032 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            Mem_Saisie_Attaquant[n, 31] = TextBox_ObjS_1032_Att_R1.Text; n++;
+            Mem_Saisie_Attaquant[n, 31] = TextBox_ObjS_1032_Att_R2.Text; n++;
+            Mem_Saisie_Attaquant[n, 31] = TextBox_ObjS_1032_Att_R3.Text; n++;
+            Mem_Saisie_Attaquant[n, 31] = TextBox_ObjS_1032_Att_R4.Text; n++;
+            Mem_Saisie_Attaquant[n, 31] = TextBox_ObjS_1032_Att_R5.Text; n++;
+
             /// OBJECTIF SECONDAIRE 1033 : BALAYAGE DE RECONNAISSANCE
             Mem_Saisie_Attaquant[0, 32] = CheckBox_ObjS_1033_Att_Q1_Etat;
             Mem_Saisie_Attaquant[1, 32] = CheckBox_ObjS_1033_Att_Q2_Etat;
@@ -3261,9 +3273,14 @@ namespace CPV9
             Mem_Saisie_Defenseur[1, 30] = TextBox_ObjS_1031_Def_T3.Text;
             Mem_Saisie_Defenseur[2, 30] = TextBox_ObjS_1031_Def_T4.Text;
             Mem_Saisie_Defenseur[3, 30] = TextBox_ObjS_1031_Def_T5.Text;
-            /// OBJECTIF SECONDAIRE 1032 : MINIMISER LES PERTES
-            Mem_Saisie_Defenseur[0, 31] = TextBox_ObjS_1032_Def_UD.Text;
-            Mem_Saisie_Defenseur[1, 31] = TextBox_ObjS_1032_Def_UR.Text;
+            /// OBJECTIF SECONDAIRE 1032 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            Mem_Saisie_Defenseur[n, 31] = TextBox_ObjS_1032_Def_R1.Text; n++;
+            Mem_Saisie_Defenseur[n, 31] = TextBox_ObjS_1032_Def_R2.Text; n++;
+            Mem_Saisie_Defenseur[n, 31] = TextBox_ObjS_1032_Def_R3.Text; n++;
+            Mem_Saisie_Defenseur[n, 31] = TextBox_ObjS_1032_Def_R4.Text; n++;
+            Mem_Saisie_Defenseur[n, 31] = TextBox_ObjS_1032_Def_R5.Text;
+
             /// OBJECTIF SECONDAIRE 1033 : BALAYAGE DE RECONNAISSANCE
             Mem_Saisie_Defenseur[0, 32] = CheckBox_ObjS_1033_Def_Q1_Etat;
             Mem_Saisie_Defenseur[1, 32] = CheckBox_ObjS_1033_Def_Q2_Etat;
@@ -4156,9 +4173,15 @@ namespace CPV9
             TextBox_ObjS_1031_Att_T3.Text = Mem_Saisie_Attaquant[1, 30];
             TextBox_ObjS_1031_Att_T4.Text = Mem_Saisie_Attaquant[2, 30];
             TextBox_ObjS_1031_Att_T5.Text = Mem_Saisie_Attaquant[3, 30];
-            /// OBJECTIF SECONDAIRE 1032 : MINIMISER LES PERTES
-            TextBox_ObjS_1032_Att_UD.Text = Mem_Saisie_Attaquant[0, 31];
-            TextBox_ObjS_1032_Att_UR.Text = Mem_Saisie_Attaquant[1, 31];
+
+            /// OBJECTIF SECONDAIRE 1032 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            TextBox_ObjS_1032_Att_R1.Text = Mem_Saisie_Attaquant[n, 31]; n++;
+            TextBox_ObjS_1032_Att_R2.Text = Mem_Saisie_Attaquant[n, 31]; n++;
+            TextBox_ObjS_1032_Att_R3.Text = Mem_Saisie_Attaquant[n, 31]; n++;
+            TextBox_ObjS_1032_Att_R4.Text = Mem_Saisie_Attaquant[n, 31]; n++;
+            TextBox_ObjS_1032_Att_R5.Text = Mem_Saisie_Attaquant[n, 31];
+
             /// OBJECTIF SECONDAIRE 1033 : BALAYAGE DE RECONNAISSANCE
             CheckBox_ObjS_1033_Att_Q1_Etat = Mem_Saisie_Attaquant[0, 32];
             CheckBox_ObjS_1033_Att_Q2_Etat = Mem_Saisie_Attaquant[1, 32];
@@ -5582,9 +5605,15 @@ namespace CPV9
             TextBox_ObjS_1031_Def_T3.Text = Mem_Saisie_Defenseur[1, 30];
             TextBox_ObjS_1031_Def_T4.Text = Mem_Saisie_Defenseur[2, 30];
             TextBox_ObjS_1031_Def_T5.Text = Mem_Saisie_Defenseur[3, 30];
-            /// OBJECTIF SECONDAIRE 1032 : MINIMISER LES PERTES
-            TextBox_ObjS_1032_Def_UD.Text = Mem_Saisie_Defenseur[0, 31];
-            TextBox_ObjS_1032_Def_UR.Text = Mem_Saisie_Defenseur[1, 31];
+
+            /// OBJECTIF SECONDAIRE 1032 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            TextBox_ObjS_1032_Def_R1.Text = Mem_Saisie_Defenseur[n, 31]; n++;
+            TextBox_ObjS_1032_Def_R2.Text = Mem_Saisie_Defenseur[n, 31]; n++;
+            TextBox_ObjS_1032_Def_R3.Text = Mem_Saisie_Defenseur[n, 31]; n++;
+            TextBox_ObjS_1032_Def_R4.Text = Mem_Saisie_Defenseur[n, 31]; n++;
+            TextBox_ObjS_1032_Def_R5.Text = Mem_Saisie_Defenseur[n, 31];
+
             /// OBJECTIF SECONDAIRE 1033 : BALAYAGE DE RECONNAISSANCE
             CheckBox_ObjS_1033_Def_Q1_Etat = Mem_Saisie_Defenseur[0, 32];
             CheckBox_ObjS_1033_Def_Q2_Etat = Mem_Saisie_Defenseur[1, 32];
@@ -11671,24 +11700,22 @@ namespace CPV9
                 TextBlock_ObjS_1031_Att.Text = Convert.ToString(OBJECTIF_Mission_1031_Att.Score_ObjS);
             }
 
-            ///CALCUL SCORE OBJECTIF MISSION 1032
-            if (TextBox_ObjS_1032_Att_UD.Text != "" && TextBox_ObjS_1032_Att_UR.Text != "")
+            ///CALCUL SCORE OBJECTIF MISSION 1032            
+            Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Att;
+            OBJECTIF_Mission_1032_Att = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Att_R1.Text, TextBox_ObjS_1032_Att_R2.Text, TextBox_ObjS_1032_Att_R3.Text, TextBox_ObjS_1032_Att_R4.Text, TextBox_ObjS_1032_Att_R5.Text);
+            Scores_Attaquant[31] = OBJECTIF_Mission_1032_Att.Scores_Joueur;
+            if (Convert.ToInt32(OBJECTIF_Mission_1032_Att.Score_ObjS) >= 15)
             {
-                Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Att;
-                OBJECTIF_Mission_1032_Att = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Att_UD.Text, TextBox_ObjS_1032_Att_UR.Text);
-                Scores_Attaquant[31] = OBJECTIF_Mission_1032_Att.Scores_Joueur;
-                if (Convert.ToInt32(OBJECTIF_Mission_1032_Att.Score_ObjS) >= 15)
-                {
-                    Label_Score_ObjS_1032_Cape_Player_1.Visibility = Visibility.Visible;
-                    win._Capes_Tv[1, 31] = 1;
-                }
-                else
-                {
-                    Label_Score_ObjS_1032_Cape_Player_1.Visibility = Visibility.Collapsed;
-                    win._Capes_Tv[1, 31] = 0;
-                }
-            TextBlock_ObjS_1032_Att.Text = Convert.ToString(OBJECTIF_Mission_1032_Att.Score_ObjS);
+                Label_Score_ObjS_1032_Cape_Player_1.Visibility = Visibility.Visible;
+                win._Capes_Tv[1, 31] = 1;
             }
+            else
+            {
+                Label_Score_ObjS_1032_Cape_Player_1.Visibility = Visibility.Collapsed;
+                win._Capes_Tv[1, 31] = 0;
+            }
+            TextBlock_ObjS_1032_Att.Text = Convert.ToString(OBJECTIF_Mission_1032_Att.Score_ObjS);
+            
 
             ///CALCUL SCORE OBJECTIF MISSION 1033           
             Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Att;
@@ -12785,23 +12812,22 @@ namespace CPV9
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 1032  
-            if (TextBox_ObjS_1032_Def_UD.Text != "" && TextBox_ObjS_1032_Def_UR.Text != "")
+            
+            Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Def;
+            OBJECTIF_Mission_1032_Def = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Def_R1.Text, TextBox_ObjS_1032_Def_R2.Text, TextBox_ObjS_1032_Def_R3.Text, TextBox_ObjS_1032_Def_R4.Text, TextBox_ObjS_1032_Def_R5.Text);
+            Scores_Defenseur[31] = OBJECTIF_Mission_1032_Def.Scores_Joueur;
+            if (Convert.ToInt32(OBJECTIF_Mission_1032_Def.Score_ObjS) >= 15)
             {
-                Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Def;
-                OBJECTIF_Mission_1032_Def = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Def_UD.Text, TextBox_ObjS_1032_Def_UR.Text);
-                Scores_Defenseur[31] = OBJECTIF_Mission_1032_Def.Scores_Joueur;
-                if (Convert.ToInt32(OBJECTIF_Mission_1032_Def.Score_ObjS) >= 15)
-                {
-                    Label_Score_ObjS_1032_Cape_Player_2.Visibility = Visibility.Visible;
-                    win._Capes_Tv[1, 31] = 1;
-                }
-                else
-                {
-                    Label_Score_ObjS_1032_Cape_Player_2.Visibility = Visibility.Collapsed;
-                    win._Capes_Tv[1, 31] = 0;
-                }
-                TextBlock_ObjS_1032_Def.Text = Convert.ToString(OBJECTIF_Mission_1032_Def.Score_ObjS);
+                Label_Score_ObjS_1032_Cape_Player_2.Visibility = Visibility.Visible;
+                win._Capes_Tv[1, 31] = 1;
             }
+            else
+            {
+                Label_Score_ObjS_1032_Cape_Player_2.Visibility = Visibility.Collapsed;
+                win._Capes_Tv[1, 31] = 0;
+            }
+            TextBlock_ObjS_1032_Def.Text = Convert.ToString(OBJECTIF_Mission_1032_Def.Score_ObjS);
+            
 
             ///CALCUL SCORE OBJECTIF MISSION 1033     
             Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Def;
@@ -18350,18 +18376,12 @@ namespace CPV9
         }
 
         private void TextBox_ObjS_1032_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_1032_Att_UD.Text != "" && TextBox_ObjS_1032_Att_UR.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
+        {           
+                Calcul_Score_Attaquant();            
         }
         private void TextBox_ObjS_1032_Def_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_1032_Def_UD.Text != "" && TextBox_ObjS_1032_Def_UR.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
+            Calcul_Score_Defenseur();
         }
 
         private void CheckBox_ObjS_1033_Att_Q1_Click(object sender, RoutedEventArgs e)
@@ -21543,19 +21563,35 @@ namespace CPV9
             Label_Objectif_Sec_Att_1032C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1032D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_1032E.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_1032F.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_1032G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1032F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1032G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1032H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1032I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1032J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_1032K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_1032_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_1032_Att_UD.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_1032_Att_UD.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_1032_Att_UD.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_1032_Att_UR.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_1032_Att_UR.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_1032_Att_UR.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Att_R1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Att_R2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Att_R3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Att_R4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Att_R5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Att_R5.Height = Hauteur_saisie * Multiple;
 
             GridSplitter_Objectif_Sec_Att_1032A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_1032B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_1032C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_1032D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_1032E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_1032F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 1033
             Label_Objectif_Sec_Att_1033A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -23638,19 +23674,36 @@ namespace CPV9
             Label_Objectif_Sec_Def_1032C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1032D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_1032E.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_1032F.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_1032G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1032F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1032G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1032H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1032I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1032J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_1032K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_1032_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_1032_Def_UD.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_1032_Def_UD.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_1032_Def_UD.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_1032_Def_UR.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_1032_Def_UR.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_1032_Def_UR.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Def_R1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Def_R2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Def_R3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Def_R4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_1032_Def_R5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_1032_Def_R5.Height = Hauteur_saisie * Multiple;
 
             GridSplitter_Objectif_Sec_Def_1032A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_1032B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_1032C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_1032D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_1032E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_1032F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+
 
             /// OBJECTIF SECONDAIRE MISSION 1033
             Label_Objectif_Sec_Def_1033A.FontSize = 1.2 * Taille_texte * Multiple;
