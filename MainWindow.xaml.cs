@@ -1824,9 +1824,13 @@ namespace CPV9
             CheckBox_ObjS_1033_Att_OBJ5_4.IsEnabled = true;
             #endregion
             #region INIT_OBJ_ATTAQUANT_FORMAT_FORCE DE FRAPPE
-            /// OBJECTIF SECONDAIRE 2011 : MINIMISER LES PERTES
-            TextBox_ObjS_2011_Att_UD.Clear();
-            TextBox_ObjS_2011_Att_UR.Clear();
+
+            /// OBJECTIF SECONDAIRE 2011 : BRISEZ-LES CORPS ET AME
+            TextBox_ObjS_2011_Att_R1.Clear();
+            TextBox_ObjS_2011_Att_R2.Clear();
+            TextBox_ObjS_2011_Att_R3.Clear();
+            TextBox_ObjS_2011_Att_R4.Clear();
+            TextBox_ObjS_2011_Att_R5.Clear();
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Att.Text = Mem_Saisie_Attaquant[0, 31];
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
@@ -2358,9 +2362,13 @@ namespace CPV9
             CheckBox_ObjS_1033_Def_OBJ5_4.IsEnabled = true;
             #endregion
             #region INIT_OBJ_DEFENSEUR_FORMAT_FORCE DE FRAPPE
-            /// OBJECTIF SECONDAIRE 2011 : MINIMISER LES PERTES
-            TextBox_ObjS_2011_Def_UD.Clear();
-            TextBox_ObjS_2011_Def_UR.Clear();
+
+            /// OBJECTIF SECONDAIRE 2011 : BRISEZ-LES CORPS ET AME
+            TextBox_ObjS_2011_Def_R1.Clear();
+            TextBox_ObjS_2011_Def_R2.Clear();
+            TextBox_ObjS_2011_Def_R3.Clear();
+            TextBox_ObjS_2011_Def_R4.Clear();
+            TextBox_ObjS_2011_Def_R5.Clear();
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Def.Clear();
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
@@ -2852,9 +2860,14 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 32] = CheckBox_ObjS_1033_Att_OBJ5_4_Etat;
             #endregion
             #region Transfert_Donnees_To_Mem_Attaquant_format_Force de frappe
-            /// OBJECTIF SECONDAIRE 2011 : MINIMISER LES PERTES
-            Mem_Saisie_Attaquant[0, 33] = TextBox_ObjS_2011_Att_UD.Text;
-            Mem_Saisie_Attaquant[1, 33] = TextBox_ObjS_2011_Att_UR.Text;
+            /// OBJECTIF SECONDAIRE 2011 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            Mem_Saisie_Attaquant[n, 33] = TextBox_ObjS_2011_Att_R1.Text; n++;
+            Mem_Saisie_Attaquant[n, 33] = TextBox_ObjS_2011_Att_R2.Text; n++;
+            Mem_Saisie_Attaquant[n, 33] = TextBox_ObjS_2011_Att_R3.Text; n++;
+            Mem_Saisie_Attaquant[n, 33] = TextBox_ObjS_2011_Att_R4.Text; n++;
+            Mem_Saisie_Attaquant[n, 33] = TextBox_ObjS_2011_Att_R5.Text;
+
             /// OBJECTIF SECONDAIRE 2012 : RASER
             Mem_Saisie_Attaquant[0, 34] = TextBox_ObjS_2012_Att.Text;
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
@@ -3426,9 +3439,13 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 32] = CheckBox_ObjS_1033_Def_OBJ5_4_Etat;
             #endregion
             #region Transfert_Donnees_To_Mem_Defenseur_Format_Force de frappe
-            /// OBJECTIF SECONDAIRE 2011 : MINIMISER LES PERTES
-            Mem_Saisie_Defenseur[0, 33] = TextBox_ObjS_2011_Def_UD.Text;
-            Mem_Saisie_Defenseur[1, 33] = TextBox_ObjS_2011_Def_UR.Text;
+            /// OBJECTIF SECONDAIRE 2011 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R1.Text; n++;
+            Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R2.Text; n++;
+            Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R3.Text; n++;
+            Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R4.Text; n++;
+            Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R5.Text;
             /// OBJECTIF SECONDAIRE 2012 : RASER
             Mem_Saisie_Defenseur[0, 34] = TextBox_ObjS_2012_Def.Text;
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
@@ -4366,9 +4383,14 @@ namespace CPV9
 
             #endregion
             #region Transfert_Donnees_To_Text_Attaquant_Format_Force de frappe
-            /// OBJECTIF SECONDAIRE 2011 : MINIMISER LES PERTES
-            TextBox_ObjS_2011_Att_UD.Text = Mem_Saisie_Attaquant[0, 33];
-            TextBox_ObjS_2011_Att_UR.Text = Mem_Saisie_Attaquant[1, 33];
+            /// OBJECTIF SECONDAIRE 2011 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            TextBox_ObjS_2011_Att_R1.Text = Mem_Saisie_Attaquant[n, 33]; n++;
+            TextBox_ObjS_2011_Att_R2.Text = Mem_Saisie_Attaquant[n, 33]; n++;
+            TextBox_ObjS_2011_Att_R3.Text = Mem_Saisie_Attaquant[n, 33]; n++;
+            TextBox_ObjS_2011_Att_R4.Text = Mem_Saisie_Attaquant[n, 33]; n++;
+            TextBox_ObjS_2011_Att_R5.Text = Mem_Saisie_Attaquant[n, 33];
+
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Att.Text = Mem_Saisie_Attaquant[0, 34];
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
@@ -5819,9 +5841,14 @@ namespace CPV9
             if (CheckBox_ObjS_1033_Def_OBJ5_4_Etat == "true") { CheckBox_ObjS_1033_Def_OBJ5_4.IsChecked = true; Check_ObjS_1033_Def_OBJ5_4(); };
             #endregion
             #region Transfert_Donnees_To_Text_Defenseur_Format_Force de frappe
-            /// OBJECTIF SECONDAIRE 2011 : MINIMISER LES PERTES
-            TextBox_ObjS_2011_Def_UD.Text = Mem_Saisie_Defenseur[0, 33];
-            TextBox_ObjS_2011_Def_UR.Text = Mem_Saisie_Defenseur[1, 33];
+            /// OBJECTIF SECONDAIRE 2011 : BRISEZ-LES CORPS ET AME
+            n = 0;
+            TextBox_ObjS_2011_Def_R1.Text = Mem_Saisie_Defenseur[n, 33]; n++;
+            TextBox_ObjS_2011_Def_R2.Text = Mem_Saisie_Defenseur[n, 33]; n++;
+            TextBox_ObjS_2011_Def_R3.Text = Mem_Saisie_Defenseur[n, 33]; n++;
+            TextBox_ObjS_2011_Def_R4.Text = Mem_Saisie_Defenseur[n, 33]; n++;
+            TextBox_ObjS_2011_Def_R5.Text = Mem_Saisie_Defenseur[n, 33];
+
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Def.Text = Mem_Saisie_Defenseur[0, 34];
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
@@ -11918,7 +11945,7 @@ namespace CPV9
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
             ///CALCUL SCORE OBJECTIF MISSION 2011           
             Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Att;
-            OBJECTIF_Mission_2011_Att = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Att_UD.Text, TextBox_ObjS_2011_Att_UR.Text);
+            OBJECTIF_Mission_2011_Att = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Att_R1.Text, TextBox_ObjS_2011_Att_R2.Text, TextBox_ObjS_2011_Att_R3.Text, TextBox_ObjS_2011_Att_R4.Text, TextBox_ObjS_2011_Att_R5.Text);
             Scores_Attaquant[33] = OBJECTIF_Mission_2011_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2011_Att.Score_ObjS) >= 15)
             {
@@ -13030,7 +13057,7 @@ namespace CPV9
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
             ///CALCUL SCORE OBJECTIF MISSION 2011           
             Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Def;
-            OBJECTIF_Mission_2011_Def = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Def_UD.Text, TextBox_ObjS_2011_Def_UR.Text);
+            OBJECTIF_Mission_2011_Def = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Def_R1.Text, TextBox_ObjS_2011_Def_R2.Text, TextBox_ObjS_2011_Def_R3.Text, TextBox_ObjS_2011_Def_R4.Text, TextBox_ObjS_2011_Def_R5.Text);
             Scores_Defenseur[33] = OBJECTIF_Mission_2011_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2011_Def.Score_ObjS) >= 15)
             {
@@ -19528,21 +19555,14 @@ namespace CPV9
         }
         #endregion
 
-        #region TextChanged objectif Mission Force de Frappe
-
+        #region TextChanged objectif Mission Force de Frappe       
         private void TextBox_ObjS_2011_Att_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_2011_Att_UD.Text != "" && TextBox_ObjS_2011_Att_UR.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
+            Calcul_Score_Attaquant();
         }
         private void TextBox_ObjS_2011_Def_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_2011_Def_UD.Text != "" && TextBox_ObjS_2011_Def_UR.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
+            Calcul_Score_Defenseur();
         }
 
         private void TextBox_ObjS_2012_Att_TextChanged(object sender, TextChangedEventArgs e)
@@ -22679,25 +22699,42 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_1033F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             #endregion
             #region mission FORCE DE FRAPPE
+
             /// OBJECTIF SECONDAIRE MISSION 2011
             Label_Objectif_Sec_Att_2011A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2011B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2011C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2011D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2011E.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2011F.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2011G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2011F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2011G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2011H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2011I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2011J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2011K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2011_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_2011_Att_UD.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2011_Att_UD.Width = Largeur_saisie * Multiple * 2;
-            TextBox_ObjS_2011_Att_UD.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2011_Att_UR.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2011_Att_UR.Width = Largeur_saisie * Multiple * 2;
-            TextBox_ObjS_2011_Att_UR.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Att_R1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Att_R2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Att_R3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Att_R4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Att_R5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Att_R5.Height = Hauteur_saisie * Multiple;
 
             GridSplitter_Objectif_Sec_Att_2011A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2011B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2011C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2011D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2011E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2011F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2012
             Label_Objectif_Sec_Att_2012A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -24813,25 +24850,42 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_1033F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             #endregion
             #region mission FORCE DE FRAPPE
+
             /// OBJECTIF SECONDAIRE MISSION 2011
             Label_Objectif_Sec_Def_2011A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2011B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2011C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2011D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2011E.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2011F.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2011G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2011F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2011G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2011H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2011I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2011J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2011K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2011_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_2011_Def_UD.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2011_Def_UD.Width = Largeur_saisie * Multiple * 2;
-            TextBox_ObjS_2011_Def_UD.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2011_Def_UR.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2011_Def_UR.Width = Largeur_saisie * Multiple * 2;
-            TextBox_ObjS_2011_Def_UR.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Def_R1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Def_R2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Def_R3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Def_R4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2011_Def_R5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2011_Def_R5.Height = Hauteur_saisie * Multiple;
 
             GridSplitter_Objectif_Sec_Def_2011A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2011B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2011C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2011D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2011E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2011F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2012
             Label_Objectif_Sec_Def_2012A.FontSize = 1.2 * Taille_texte * Multiple;
