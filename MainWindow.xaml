@@ -3651,28 +3651,31 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_2013B" Content="Action d INTERCEPTION DE DONNEES , prennez autant de pts que vous avez pris d objectif." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_2013C" Content="L action debut en fin de phase de mouvement , et se termine a la prochaine phase de commandement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2013B" Content="Faite l'action d'INTERCEPTION DE DONNEES en fin de phase de mouvement, l'acction est accompli à la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2013C" Content="Prenez 1 points par objectif dans le no Man's Land que vous contrôlez (Maxi 3 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2013B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_2013D" Content="Nbre d objectif pris:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2013E" Content="ROUND 2:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Att_T2" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013D" Content="Nombre d'objectif No Man's Land pris : " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013E" Content="ROUND 1: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Att_T1" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2013A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2013F" Content="ROUND 3:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Att_T3" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013F" Content="ROUND 2: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Att_T2" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2013B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2013G" Content="ROUND 4:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Att_T4" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013G" Content="ROUND 3: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Att_T3" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2013C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2013H" Content="ROUND 5:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Att_T5" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013H" Content="ROUND 4: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Att_T4" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2013D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013I" Content="ROUND 5: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Att_T5" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2013E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_2013I" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_2013_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2013J" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2013E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2013K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2013F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2021_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -6628,25 +6631,28 @@
                     <Label x:Name="Label_Objectif_Sec_Def_2013B" Content="Action d INTERCEPTION DE DONNEES , prennez autant de pts que vous avez pris d objectif." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Def_2013C" Content="L action debut en fin de phase de mouvement , et se termine a la prochaine phase de commandement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2013B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_2013D" Content="Nbre d objectif pris:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2013E" Content="ROUND 2:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Def_T2" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013D" Content="Nombre d'objectif No Man's Land pris: " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013E" Content="ROUND 1: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Def_T1" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2013A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2013F" Content="ROUND 3:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Def_T3" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013F" Content="ROUND 2: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Def_T2" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2013B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2013G" Content="ROUND 4:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Def_T4" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013G" Content="ROUND 3: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Def_T3" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2013C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2013H" Content="ROUND 5:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2013_Def_T5" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013H" Content="ROUND 4: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Def_T4" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2013D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013I" Content="ROUND 5: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <TextBox x:Name="TextBox_ObjS_2013_Def_T5" Width="25" Height="16" FontFamily="Arial Black" FontSize="12" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2013_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2013E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_2013I" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_2013_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2013J" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2013E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2013K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2013F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2021_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">

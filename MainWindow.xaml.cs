@@ -1834,6 +1834,7 @@ namespace CPV9
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Att.Text = Mem_Saisie_Attaquant[0, 31];
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
+            TextBox_ObjS_2013_Att_T1.Clear();
             TextBox_ObjS_2013_Att_T2.Clear();
             TextBox_ObjS_2013_Att_T3.Clear();
             TextBox_ObjS_2013_Att_T4.Clear();
@@ -2372,6 +2373,7 @@ namespace CPV9
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Def.Clear();
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
+            TextBox_ObjS_2013_Def_T1.Clear();
             TextBox_ObjS_2013_Def_T2.Clear();
             TextBox_ObjS_2013_Def_T3.Clear();
             TextBox_ObjS_2013_Def_T4.Clear();
@@ -2772,11 +2774,12 @@ namespace CPV9
             Mem_Saisie_Attaquant[1, 25] = TextBox_ObjS_1012_Att_T4.Text;
             Mem_Saisie_Attaquant[2, 25] = TextBox_ObjS_1012_Att_T5.Text;
             /// OBJECTIF SECONDAIRE 1013 : ATTAQUEZ LES LIGNES DE RAVITAILLEMENT
-            Mem_Saisie_Attaquant[0, 26] = CheckBox_ObjS_1013_Att_T1_Etat;
-            Mem_Saisie_Attaquant[1, 26] = CheckBox_ObjS_1013_Att_T2_Etat;
-            Mem_Saisie_Attaquant[2, 26] = CheckBox_ObjS_1013_Att_T3_Etat;
-            Mem_Saisie_Attaquant[3, 26] = CheckBox_ObjS_1013_Att_T4_Etat;
-            Mem_Saisie_Attaquant[4, 26] = CheckBox_ObjS_1013_Att_T5_Etat;
+            n = 0;
+            Mem_Saisie_Attaquant[n, 26] = CheckBox_ObjS_1013_Att_T1_Etat; n++;
+            Mem_Saisie_Attaquant[n, 26] = CheckBox_ObjS_1013_Att_T2_Etat; n++;
+            Mem_Saisie_Attaquant[n, 26] = CheckBox_ObjS_1013_Att_T3_Etat; n++;
+            Mem_Saisie_Attaquant[n, 26] = CheckBox_ObjS_1013_Att_T4_Etat; n++;
+            Mem_Saisie_Attaquant[n, 26] = CheckBox_ObjS_1013_Att_T5_Etat;
 
             /// OBJECTIF SECONDAIRE 1021 : LA SAGESSE EST LE PILIER DE LA FOI
             n = 0;
@@ -2870,11 +2873,15 @@ namespace CPV9
 
             /// OBJECTIF SECONDAIRE 2012 : RASER
             Mem_Saisie_Attaquant[0, 34] = TextBox_ObjS_2012_Att.Text;
+
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
-            Mem_Saisie_Attaquant[0, 35] = TextBox_ObjS_2013_Att_T2.Text;
-            Mem_Saisie_Attaquant[1, 35] = TextBox_ObjS_2013_Att_T3.Text;
-            Mem_Saisie_Attaquant[2, 35] = TextBox_ObjS_2013_Att_T4.Text;
-            Mem_Saisie_Attaquant[3, 35] = TextBox_ObjS_2013_Att_T5.Text;
+            n = 0;
+            Mem_Saisie_Attaquant[n, 35] = TextBox_ObjS_2013_Att_T1.Text; n++;
+            Mem_Saisie_Attaquant[n, 35] = TextBox_ObjS_2013_Att_T2.Text; n++;
+            Mem_Saisie_Attaquant[n, 35] = TextBox_ObjS_2013_Att_T3.Text; n++;
+            Mem_Saisie_Attaquant[n, 35] = TextBox_ObjS_2013_Att_T4.Text; n++;
+            Mem_Saisie_Attaquant[n, 35] = TextBox_ObjS_2013_Att_T5.Text;
+
             /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
             Mem_Saisie_Attaquant[0, 36] = TextBox_ObjS_2021_Att_T2.Text;
             Mem_Saisie_Attaquant[1, 36] = TextBox_ObjS_2021_Att_T3.Text;
@@ -3446,13 +3453,18 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R3.Text; n++;
             Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R4.Text; n++;
             Mem_Saisie_Defenseur[n, 33] = TextBox_ObjS_2011_Def_R5.Text;
+
             /// OBJECTIF SECONDAIRE 2012 : RASER
             Mem_Saisie_Defenseur[0, 34] = TextBox_ObjS_2012_Def.Text;
+
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
-            Mem_Saisie_Defenseur[0, 35] = TextBox_ObjS_2013_Def_T2.Text;
-            Mem_Saisie_Defenseur[1, 35] = TextBox_ObjS_2013_Def_T3.Text;
-            Mem_Saisie_Defenseur[2, 35] = TextBox_ObjS_2013_Def_T4.Text;
-            Mem_Saisie_Defenseur[3, 35] = TextBox_ObjS_2013_Def_T5.Text;
+            n = 0;
+            Mem_Saisie_Defenseur[n, 35] = TextBox_ObjS_2013_Def_T1.Text; n++;
+            Mem_Saisie_Defenseur[n, 35] = TextBox_ObjS_2013_Def_T2.Text; n++;
+            Mem_Saisie_Defenseur[n, 35] = TextBox_ObjS_2013_Def_T3.Text; n++;
+            Mem_Saisie_Defenseur[n, 35] = TextBox_ObjS_2013_Def_T4.Text; n++;
+            Mem_Saisie_Defenseur[n, 35] = TextBox_ObjS_2013_Def_T5.Text;
+
             /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
             Mem_Saisie_Defenseur[0, 36] = TextBox_ObjS_2021_Def_T2.Text;
             Mem_Saisie_Defenseur[1, 36] = TextBox_ObjS_2021_Def_T3.Text;
@@ -4393,11 +4405,15 @@ namespace CPV9
 
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Att.Text = Mem_Saisie_Attaquant[0, 34];
+
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
-            TextBox_ObjS_2013_Att_T2.Text = Mem_Saisie_Attaquant[0, 35];
-            TextBox_ObjS_2013_Att_T3.Text = Mem_Saisie_Attaquant[1, 35];
-            TextBox_ObjS_2013_Att_T4.Text = Mem_Saisie_Attaquant[2, 35];
-            TextBox_ObjS_2013_Att_T5.Text = Mem_Saisie_Attaquant[3, 35];
+            n = 0;
+            TextBox_ObjS_2013_Att_T1.Text = Mem_Saisie_Attaquant[n, 35]; n++;
+            TextBox_ObjS_2013_Att_T2.Text = Mem_Saisie_Attaquant[n, 35]; n++;
+            TextBox_ObjS_2013_Att_T3.Text = Mem_Saisie_Attaquant[n, 35]; n++;
+            TextBox_ObjS_2013_Att_T4.Text = Mem_Saisie_Attaquant[n, 35]; n++;
+            TextBox_ObjS_2013_Att_T5.Text = Mem_Saisie_Attaquant[n, 35];
+
             /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
             TextBox_ObjS_2021_Att_T2.Text = Mem_Saisie_Attaquant[0, 36];
             TextBox_ObjS_2021_Att_T3.Text = Mem_Saisie_Attaquant[1, 36];
@@ -5851,11 +5867,15 @@ namespace CPV9
 
             /// OBJECTIF SECONDAIRE 2012 : RASER
             TextBox_ObjS_2012_Def.Text = Mem_Saisie_Defenseur[0, 34];
+
             /// OBJECTIF SECONDAIRE 2013 : INTERCEPTION DE DONNEES
-            TextBox_ObjS_2013_Def_T2.Text = Mem_Saisie_Defenseur[0, 35];
-            TextBox_ObjS_2013_Def_T3.Text = Mem_Saisie_Defenseur[1, 35];
-            TextBox_ObjS_2013_Def_T4.Text = Mem_Saisie_Defenseur[2, 35];
-            TextBox_ObjS_2013_Def_T5.Text = Mem_Saisie_Defenseur[3, 35];
+            n = 0;
+            TextBox_ObjS_2013_Def_T1.Text = Mem_Saisie_Defenseur[n, 35]; n++;
+            TextBox_ObjS_2013_Def_T2.Text = Mem_Saisie_Defenseur[n, 35]; n++;
+            TextBox_ObjS_2013_Def_T3.Text = Mem_Saisie_Defenseur[n, 35]; n++;
+            TextBox_ObjS_2013_Def_T4.Text = Mem_Saisie_Defenseur[n, 35]; n++;
+            TextBox_ObjS_2013_Def_T5.Text = Mem_Saisie_Defenseur[n, 35];
+
             /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
             TextBox_ObjS_2021_Def_T2.Text = Mem_Saisie_Defenseur[0, 36];
             TextBox_ObjS_2021_Def_T3.Text = Mem_Saisie_Defenseur[1, 36];
@@ -11977,7 +11997,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2013           
             Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Att;
-            OBJECTIF_Mission_2013_Att = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Att_T2.Text, TextBox_ObjS_2013_Att_T3.Text, TextBox_ObjS_2013_Att_T4.Text, TextBox_ObjS_2013_Att_T5.Text);
+            OBJECTIF_Mission_2013_Att = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Att_T1.Text, TextBox_ObjS_2013_Att_T2.Text, TextBox_ObjS_2013_Att_T3.Text, TextBox_ObjS_2013_Att_T4.Text, TextBox_ObjS_2013_Att_T5.Text);
             Scores_Attaquant[35] = OBJECTIF_Mission_2013_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2013_Att.Score_ObjS) >= 15)
             {
@@ -13089,7 +13109,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2013           
             Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Def;
-            OBJECTIF_Mission_2013_Def = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Def_T2.Text, TextBox_ObjS_2013_Def_T3.Text, TextBox_ObjS_2013_Def_T4.Text, TextBox_ObjS_2013_Def_T5.Text);
+            OBJECTIF_Mission_2013_Def = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Def_T1.Text, TextBox_ObjS_2013_Def_T2.Text, TextBox_ObjS_2013_Def_T3.Text, TextBox_ObjS_2013_Def_T4.Text, TextBox_ObjS_2013_Def_T5.Text);
             Scores_Defenseur[35] = OBJECTIF_Mission_2013_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2013_Def.Score_ObjS) >= 15)
             {
@@ -19582,14 +19602,14 @@ namespace CPV9
 
         private void TextBox_ObjS_2013_Att_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_2013_Att_T2.Text != "" || TextBox_ObjS_2013_Att_T3.Text != "" || TextBox_ObjS_2013_Att_T4.Text != "" || TextBox_ObjS_2013_Att_T5.Text != "")
+            if (TextBox_ObjS_2013_Att_T1.Text != "" || TextBox_ObjS_2013_Att_T2.Text != "" || TextBox_ObjS_2013_Att_T3.Text != "" || TextBox_ObjS_2013_Att_T4.Text != "" || TextBox_ObjS_2013_Att_T5.Text != "")
             {
                 Calcul_Score_Attaquant();
             }
         }
         private void TextBox_ObjS_2013_Def_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_2013_Def_T2.Text != "" || TextBox_ObjS_2013_Def_T3.Text != "" || TextBox_ObjS_2013_Def_T4.Text != "" || TextBox_ObjS_2013_Def_T5.Text != "")
+            if (TextBox_ObjS_2013_Def_T1.Text != "" || TextBox_ObjS_2013_Def_T2.Text != "" || TextBox_ObjS_2013_Def_T3.Text != "" || TextBox_ObjS_2013_Def_T4.Text != "" || TextBox_ObjS_2013_Def_T5.Text != "")
             {
                 Calcul_Score_Defenseur();
             }
@@ -22760,9 +22780,13 @@ namespace CPV9
             Label_Objectif_Sec_Att_2013F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2013G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2013H.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2013I.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2013I.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2013J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2013K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2013_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_2013_Att_T1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2013_Att_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2013_Att_T1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_2013_Att_T2.FontSize = Taille_texte * Multiple;
             TextBox_ObjS_2013_Att_T2.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_2013_Att_T2.Height = Hauteur_saisie * Multiple;
@@ -22781,6 +22805,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_2013C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2013D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2013E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2013F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2021
             Label_Objectif_Sec_Att_2021A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -24911,9 +24936,13 @@ namespace CPV9
             Label_Objectif_Sec_Def_2013F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2013G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2013H.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2013I.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2013I.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2013J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2013K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2013_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_2013_Def_T1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_2013_Def_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_2013_Def_T1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_2013_Def_T2.FontSize = Taille_texte * Multiple;
             TextBox_ObjS_2013_Def_T2.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_2013_Def_T2.Height = Hauteur_saisie * Multiple;
@@ -24932,6 +24961,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_2013C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2013D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2013E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2013F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2021
             Label_Objectif_Sec_Def_2021A.FontSize = 1.2 * Taille_texte * Multiple;
