@@ -9,62 +9,30 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJM_2022(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String Saisie7, String Saisie8)
+        public Classe_Score_OBJM_2022(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String Saisie7, String Saisie8, String Saisie9, String Saisie10, String Saisie11, String Saisie12, String Saisie13, String Saisie14, String Saisie15)
         {
-            if (Saisie1 != "")
-            {
-                calcul(Convert.ToInt32(Saisie1));
-            }
-            if (Saisie2 != "")
-            {
-                calcul(Convert.ToInt32(Saisie2));
-            }
-            if (Saisie3 != "")
-            {
-                calcul(Convert.ToInt32(Saisie3));
-            }
-            if (Saisie4 != "")
-            {
-                calcul(Convert.ToInt32(Saisie4));
-            }
-            if (Saisie5 == "true")
-            {
-                calcul2();
-            }
-            if (Saisie6 == "true")
-            {
-                calcul2();
-            }
-            if (Saisie7 == "true")
-            {
-                calcul2();
-            }
-            if (Saisie8 == "true")
-            {
-                calcul2();
-            }
+            Control(Saisie1, Saisie2, Saisie3);
+            Control(Saisie4, Saisie5, Saisie6);
+            Control(Saisie7, Saisie8, Saisie9);
+            Control(Saisie10, Saisie11, Saisie12);
+            Control(Saisie13, Saisie14, Saisie15);
 
             Score_ObjS = Score;
-            if (Score >= 7)
+            if (Score >= 15)
             {
-                Score = 7;
+                Score = 15;
             }
             Scores_Joueur = Score;
         }
 
-        private void calcul(int Donne)
+        private void Control(String DonneeZDDE, String DonneeNML, String DonneeZDDA)
         {
-            if (Donne == 1 || Donne == 2)
-            {
-                Score += (Donne * 2);
-                return;
-            }
-        }
-
-        private void calcul2()
-        {
-            Score += 3;
-            return;
+            int ScoreControl = 0;
+            if (DonneeZDDE == "true") { ScoreControl += 4; };
+            if (DonneeNML == "true") { ScoreControl += 2; };
+            if (DonneeZDDA == "false") { ScoreControl-- ; };
+            if (ScoreControl < 0) { ScoreControl = 0; };
+            Score += ScoreControl;
         }
     }
 }

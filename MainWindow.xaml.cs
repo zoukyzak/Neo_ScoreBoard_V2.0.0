@@ -589,14 +589,36 @@ namespace CPV9
         public string CheckBox_ObjS_2021_Def_T5_Etat = "false";
         public string CheckBox_ObjS_2021_Def_Fin_Etat = "false";
 
-        public string CheckBox_ObjS_2022_Att_T2_Etat = "false";
-        public string CheckBox_ObjS_2022_Att_T3_Etat = "false";
-        public string CheckBox_ObjS_2022_Att_T4_Etat = "false";
-        public string CheckBox_ObjS_2022_Att_T5_Etat = "false";
-        public string CheckBox_ObjS_2022_Def_T2_Etat = "false";
-        public string CheckBox_ObjS_2022_Def_T3_Etat = "false";
-        public string CheckBox_ObjS_2022_Def_T4_Etat = "false";
-        public string CheckBox_ObjS_2022_Def_T5_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T1_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T1_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T1_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T2_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T2_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T2_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T3_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T3_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T3_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T4_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T4_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T4_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T5_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T5_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T1_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T2_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T3_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T4_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T5_NML_Etat = "false";
+        public string CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = "false";
 
         public string CheckBox_ObjS_2023_Att_A1_Etat = "false";
         public string CheckBox_ObjS_2023_Att_A2_Etat = "false";
@@ -1848,15 +1870,22 @@ namespace CPV9
             CheckBox_ObjS_2021_Att_T4.IsChecked = false;
             CheckBox_ObjS_2021_Att_T5.IsChecked = false;
             CheckBox_ObjS_2021_Att_Fin.IsChecked = false;
-            /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
-            TextBox_ObjS_2022_Att_T2_N.Clear();
-            TextBox_ObjS_2022_Att_T3_N.Clear();
-            TextBox_ObjS_2022_Att_T4_N.Clear();
-            TextBox_ObjS_2022_Att_T5_N.Clear();
-            CheckBox_ObjS_2022_Att_T2.IsChecked = false;
-            CheckBox_ObjS_2022_Att_T3.IsChecked = false;
-            CheckBox_ObjS_2022_Att_T4.IsChecked = false;
-            CheckBox_ObjS_2022_Att_T5.IsChecked = false;
+            /// OBJECTIF SECONDAIRE 2022 : SOL CORROMPU
+            CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T1_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T2_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T3_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T4_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T5_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked = false;
             /// OBJECTIF SECONDAIRE 2023 : SCAN STRATEGIQUE
             CheckBox_ObjS_2023_Att_A1.IsChecked = false;
             CheckBox_ObjS_2023_Att_A2.IsChecked = false;
@@ -2383,15 +2412,22 @@ namespace CPV9
             CheckBox_ObjS_2021_Def_T4.IsChecked = false;
             CheckBox_ObjS_2021_Def_T5.IsChecked = false;
             CheckBox_ObjS_2021_Def_Fin.IsChecked = false;
-            /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
-            TextBox_ObjS_2022_Def_T2_N.Clear();
-            TextBox_ObjS_2022_Def_T3_N.Clear();
-            TextBox_ObjS_2022_Def_T4_N.Clear();
-            TextBox_ObjS_2022_Def_T5_N.Clear();
-            CheckBox_ObjS_2022_Def_T2.IsChecked = false;
-            CheckBox_ObjS_2022_Def_T3.IsChecked = false;
-            CheckBox_ObjS_2022_Def_T4.IsChecked = false;
-            CheckBox_ObjS_2022_Def_T5.IsChecked = false;
+            /// OBJECTIF SECONDAIRE 2022 : SOL CORROMPU
+            CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T1_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T1_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T2_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T2_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T2_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T3_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T3_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T3_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T4_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T4_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T4_ZDDA.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T5_ZDDE.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T5_NML.IsChecked = false;
+            CheckBox_ObjS_2022_Def_T5_ZDDA.IsChecked = false;
             /// OBJECTIF SECONDAIRE 2023 : SCAN STRATEGIQUE
             CheckBox_ObjS_2023_Def_A1.IsChecked = false;
             CheckBox_ObjS_2023_Def_A2.IsChecked = false;
@@ -2884,15 +2920,23 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_T4_Etat; n++;
             Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_T5_Etat; n++;
             Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_Fin_Etat;
-            /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
-            Mem_Saisie_Attaquant[0, 37] = TextBox_ObjS_2022_Att_T2_N.Text;
-            Mem_Saisie_Attaquant[1, 37] = TextBox_ObjS_2022_Att_T3_N.Text;
-            Mem_Saisie_Attaquant[2, 37] = TextBox_ObjS_2022_Att_T4_N.Text;
-            Mem_Saisie_Attaquant[3, 37] = TextBox_ObjS_2022_Att_T5_N.Text;
-            Mem_Saisie_Attaquant[4, 37] = CheckBox_ObjS_2022_Att_T2_Etat;
-            Mem_Saisie_Attaquant[5, 37] = CheckBox_ObjS_2022_Att_T3_Etat;
-            Mem_Saisie_Attaquant[6, 37] = CheckBox_ObjS_2022_Att_T4_Etat;
-            Mem_Saisie_Attaquant[7, 37] = CheckBox_ObjS_2022_Att_T5_Etat;
+            /// OBJECTIF SECONDAIRE 2022 : SOL CORROMPU
+            n = 0;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T1_ZDDE_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T1_NML_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T1_ZDDA_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T2_ZDDE_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T2_NML_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T2_ZDDA_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T3_ZDDE_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T3_NML_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T3_ZDDA_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T4_ZDDE_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T4_NML_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T4_ZDDA_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T5_ZDDE_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T5_NML_Etat; n++;
+            Mem_Saisie_Attaquant[n, 37] = CheckBox_ObjS_2022_Att_T5_ZDDA_Etat;
             /// OBJECTIF SECONDAIRE 2023 : SCAN STRATEGIQUE
             Mem_Saisie_Attaquant[0, 38] = CheckBox_ObjS_2023_Att_A1_Etat;
             Mem_Saisie_Attaquant[1, 38] = CheckBox_ObjS_2023_Att_A2_Etat;
@@ -3464,15 +3508,23 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_T4_Etat; n++;
             Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_T5_Etat; n++;
             Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_Fin_Etat;
-            /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
-            Mem_Saisie_Defenseur[0, 37] = TextBox_ObjS_2022_Def_T2_N.Text;
-            Mem_Saisie_Defenseur[1, 37] = TextBox_ObjS_2022_Def_T3_N.Text;
-            Mem_Saisie_Defenseur[2, 37] = TextBox_ObjS_2022_Def_T4_N.Text;
-            Mem_Saisie_Defenseur[3, 37] = TextBox_ObjS_2022_Def_T5_N.Text;
-            Mem_Saisie_Defenseur[4, 37] = CheckBox_ObjS_2022_Def_T2_Etat;
-            Mem_Saisie_Defenseur[5, 37] = CheckBox_ObjS_2022_Def_T3_Etat;
-            Mem_Saisie_Defenseur[6, 37] = CheckBox_ObjS_2022_Def_T4_Etat;
-            Mem_Saisie_Defenseur[7, 37] = CheckBox_ObjS_2022_Def_T5_Etat;
+            /// OBJECTIF SECONDAIRE 2022 : SOL CORROMPU
+            n = 0;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T1_ZDDE_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T1_NML_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T1_ZDDA_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T2_ZDDE_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T2_NML_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T2_ZDDA_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T3_ZDDE_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T3_NML_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T3_ZDDA_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T4_ZDDE_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T4_NML_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T4_ZDDA_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T5_ZDDE_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T5_NML_Etat; n++;
+            Mem_Saisie_Defenseur[n, 37] = CheckBox_ObjS_2022_Def_T5_ZDDA_Etat;
             /// OBJECTIF SECONDAIRE 2023 : SCAN STRATEGIQUE
             Mem_Saisie_Defenseur[0, 38] = CheckBox_ObjS_2023_Def_A1_Etat;
             Mem_Saisie_Defenseur[1, 38] = CheckBox_ObjS_2023_Def_A2_Etat;
@@ -4435,31 +4487,39 @@ namespace CPV9
                 CheckBox_ObjS_2021_Att_Fin.IsChecked = true;
             }
 
-            /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
-            TextBox_ObjS_2022_Att_T2_N.Text = Mem_Saisie_Attaquant[0, 37];
-            TextBox_ObjS_2022_Att_T3_N.Text = Mem_Saisie_Attaquant[1, 37];
-            TextBox_ObjS_2022_Att_T4_N.Text = Mem_Saisie_Attaquant[2, 37];
-            TextBox_ObjS_2022_Att_T5_N.Text = Mem_Saisie_Attaquant[3, 37];
-            CheckBox_ObjS_2022_Att_T2_Etat = Mem_Saisie_Attaquant[4, 37];
-            CheckBox_ObjS_2022_Att_T3_Etat = Mem_Saisie_Attaquant[5, 37];
-            CheckBox_ObjS_2022_Att_T4_Etat = Mem_Saisie_Attaquant[6, 37];
-            CheckBox_ObjS_2022_Att_T5_Etat = Mem_Saisie_Attaquant[7, 37];
-            if (CheckBox_ObjS_2022_Att_T2_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Att_T2.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2022_Att_T3_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Att_T3.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2022_Att_T4_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Att_T4.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2022_Att_T5_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Att_T5.IsChecked = true;
-            }
+            /// OBJECTIF SECONDAIRE 2022 : SOL CORROMPU
+            n = 0;
+            CheckBox_ObjS_2022_Att_T1_ZDDE_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T1_NML_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T1_ZDDA_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T2_ZDDE_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T2_NML_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T2_ZDDA_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T3_ZDDE_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T3_NML_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T3_ZDDA_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T4_ZDDE_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T4_NML_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T4_ZDDA_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T5_ZDDE_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T5_NML_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
+            CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = Mem_Saisie_Attaquant[n, 37];
+            if (CheckBox_ObjS_2022_Att_T1_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T1_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T1_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T1_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T2_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T2_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T3_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T3_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T4_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T4_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T5_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T5_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked = true; };
+
             /// OBJECTIF SECONDAIRE 2023 : SCAN STRATEGIQUE
             CheckBox_ObjS_2023_Att_A1_Etat = Mem_Saisie_Attaquant[0, 38];
             CheckBox_ObjS_2023_Att_A2_Etat = Mem_Saisie_Attaquant[1, 38];
@@ -5894,31 +5954,38 @@ namespace CPV9
             }
 
 
-            /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
-            TextBox_ObjS_2022_Def_T2_N.Text = Mem_Saisie_Defenseur[0, 37];
-            TextBox_ObjS_2022_Def_T3_N.Text = Mem_Saisie_Defenseur[1, 37];
-            TextBox_ObjS_2022_Def_T4_N.Text = Mem_Saisie_Defenseur[2, 37];
-            TextBox_ObjS_2022_Def_T5_N.Text = Mem_Saisie_Defenseur[3, 37];
-            CheckBox_ObjS_2022_Def_T2_Etat = Mem_Saisie_Defenseur[4, 37];
-            CheckBox_ObjS_2022_Def_T3_Etat = Mem_Saisie_Defenseur[5, 37];
-            CheckBox_ObjS_2022_Def_T4_Etat = Mem_Saisie_Defenseur[6, 37];
-            CheckBox_ObjS_2022_Def_T5_Etat = Mem_Saisie_Defenseur[7, 37];
-            if (CheckBox_ObjS_2022_Def_T2_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Def_T2.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2022_Def_T3_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Def_T3.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2022_Def_T4_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Def_T4.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2022_Def_T5_Etat == "true")
-            {
-                CheckBox_ObjS_2022_Def_T5.IsChecked = true;
-            }
+            /// OBJECTIF SECONDAIRE 2022 : SOL CORROMPU
+            n = 0;
+            CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T1_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T2_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T3_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T4_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T5_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37];
+            if (CheckBox_ObjS_2022_Def_T1_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T1_NML_Etat == "true") { CheckBox_ObjS_2022_Def_T1_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T1_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Def_T1_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Def_T2_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T2_NML_Etat == "true") { CheckBox_ObjS_2022_Def_T2_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Def_T2_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Def_T3_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T3_NML_Etat == "true") { CheckBox_ObjS_2022_Def_T3_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Def_T3_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Def_T4_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T4_NML_Etat == "true") { CheckBox_ObjS_2022_Def_T4_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Def_T4_ZDDA.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Def_T5_ZDDE.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T5_NML_Etat == "true") { CheckBox_ObjS_2022_Def_T5_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Def_T5_ZDDA.IsChecked = true; };
             /// OBJECTIF SECONDAIRE 2023 : SCAN STRATEGIQUE
             CheckBox_ObjS_2023_Def_A1_Etat = Mem_Saisie_Defenseur[0, 38];
             CheckBox_ObjS_2023_Def_A2_Etat = Mem_Saisie_Defenseur[1, 38];
@@ -12009,9 +12076,9 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2022           
             Classe_Score_OBJM_2022 OBJECTIF_Mission_2022_Att;
-            OBJECTIF_Mission_2022_Att = new Classe_Score_OBJM_2022(TextBox_ObjS_2022_Att_T2_N.Text, TextBox_ObjS_2022_Att_T3_N.Text, TextBox_ObjS_2022_Att_T4_N.Text, TextBox_ObjS_2022_Att_T5_N.Text, CheckBox_ObjS_2022_Att_T2_Etat, CheckBox_ObjS_2022_Att_T3_Etat, CheckBox_ObjS_2022_Att_T4_Etat, CheckBox_ObjS_2022_Att_T5_Etat);
+            OBJECTIF_Mission_2022_Att = new Classe_Score_OBJM_2022(CheckBox_ObjS_2022_Att_T1_ZDDE_Etat, CheckBox_ObjS_2022_Att_T1_NML_Etat, CheckBox_ObjS_2022_Att_T1_ZDDA_Etat, CheckBox_ObjS_2022_Att_T2_ZDDE_Etat, CheckBox_ObjS_2022_Att_T2_NML_Etat, CheckBox_ObjS_2022_Att_T2_ZDDA_Etat, CheckBox_ObjS_2022_Att_T3_ZDDE_Etat, CheckBox_ObjS_2022_Att_T3_NML_Etat, CheckBox_ObjS_2022_Att_T3_ZDDA_Etat, CheckBox_ObjS_2022_Att_T4_ZDDE_Etat, CheckBox_ObjS_2022_Att_T4_NML_Etat, CheckBox_ObjS_2022_Att_T4_ZDDA_Etat, CheckBox_ObjS_2022_Att_T5_ZDDE_Etat, CheckBox_ObjS_2022_Att_T5_NML_Etat, CheckBox_ObjS_2022_Att_T5_ZDDA_Etat);
             Scores_Attaquant[37] = OBJECTIF_Mission_2022_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2022_Att.Score_ObjS) >= 7)
+            if (Convert.ToInt32(OBJECTIF_Mission_2022_Att.Score_ObjS) >= 15)
             {
                 Label_Score_ObjS_2022_Cape_Player_1.Visibility = Visibility.Visible;
                 win._Capes_Tv[1, 37] = 1;
@@ -13121,9 +13188,9 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2022           
             Classe_Score_OBJM_2022 OBJECTIF_Mission_2022_Def;
-            OBJECTIF_Mission_2022_Def = new Classe_Score_OBJM_2022(TextBox_ObjS_2022_Def_T2_N.Text, TextBox_ObjS_2022_Def_T3_N.Text, TextBox_ObjS_2022_Def_T4_N.Text, TextBox_ObjS_2022_Def_T5_N.Text, CheckBox_ObjS_2022_Def_T2_Etat, CheckBox_ObjS_2022_Def_T3_Etat, CheckBox_ObjS_2022_Def_T4_Etat, CheckBox_ObjS_2022_Def_T5_Etat);
+            OBJECTIF_Mission_2022_Def = new Classe_Score_OBJM_2022(CheckBox_ObjS_2022_Def_T1_ZDDE_Etat, CheckBox_ObjS_2022_Def_T1_NML_Etat, CheckBox_ObjS_2022_Def_T1_ZDDA_Etat, CheckBox_ObjS_2022_Def_T2_ZDDE_Etat, CheckBox_ObjS_2022_Def_T2_NML_Etat, CheckBox_ObjS_2022_Def_T2_ZDDA_Etat, CheckBox_ObjS_2022_Def_T3_ZDDE_Etat, CheckBox_ObjS_2022_Def_T3_NML_Etat, CheckBox_ObjS_2022_Def_T3_ZDDA_Etat, CheckBox_ObjS_2022_Def_T4_ZDDE_Etat, CheckBox_ObjS_2022_Def_T4_NML_Etat, CheckBox_ObjS_2022_Def_T4_ZDDA_Etat, CheckBox_ObjS_2022_Def_T5_ZDDE_Etat, CheckBox_ObjS_2022_Def_T5_NML_Etat, CheckBox_ObjS_2022_Def_T5_ZDDA_Etat);
             Scores_Defenseur[37] = OBJECTIF_Mission_2022_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2022_Def.Score_ObjS) >= 7)
+            if (Convert.ToInt32(OBJECTIF_Mission_2022_Def.Score_ObjS) >= 15)
             {
                 Label_Score_ObjS_2022_Cape_Player_2.Visibility = Visibility.Visible;
                 win._Capes_Tv[2, 37] = 1;
@@ -19628,108 +19695,73 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_2022_Att_TextChanged(object sender, TextChangedEventArgs e)
+        private void CheckBox_ObjS_2022_Att_Click(object sender, RoutedEventArgs e)
         {
+            if (CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T1_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T1_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T2_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T2_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T3_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T3_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T4_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T4_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T5_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T5_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T1_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T1_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T1_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T1_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T2_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T2_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T2_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T2_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T3_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T3_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T3_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T3_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T4_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T4_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T4_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T4_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T5_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T5_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T5_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T5_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T1_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T1_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T2_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T2_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T3_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T3_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T4_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T4_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = "false"; };            
             Calcul_Score_Attaquant();
         }
-        private void CheckBox_ObjS_2022_Att_T2_Click(object sender, RoutedEventArgs e)
+        private void CheckBox_ObjS_2022_Def_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_2022_Att_T2.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Att_T2_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Att_T2.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Att_T2_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2022_Att_T3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2022_Att_T3.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Att_T3_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Att_T3.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Att_T3_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2022_Att_T4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2022_Att_T4.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Att_T4_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Att_T4.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Att_T4_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2022_Att_T5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2022_Att_T5.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Att_T5_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Att_T5.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Att_T5_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_2022_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2022_Def_T2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2022_Def_T2.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Def_T2_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Def_T2.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Def_T2_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2022_Def_T3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2022_Def_T3.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Def_T3_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Def_T3.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Def_T3_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2022_Def_T4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2022_Def_T4.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Def_T4_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Def_T4.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Def_T4_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2022_Def_T5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2022_Def_T5.IsChecked == true)
-            {
-                CheckBox_ObjS_2022_Def_T5_Etat = "true";
-            }
-            if (CheckBox_ObjS_2022_Def_T5.IsChecked == false)
-            {
-                CheckBox_ObjS_2022_Def_T5_Etat = "false";
-            }
+
+            if (CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T1_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T1_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T1_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T1_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T2_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T2_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T2_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T2_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T3_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T3_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T3_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T3_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T4_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T4_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T4_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T4_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T5_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T5_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T5_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T5_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T1_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T1_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
 
@@ -22691,25 +22723,27 @@ namespace CPV9
             Label_Objectif_Sec_Att_2022I.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2022J.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2022K.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2022L.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2022M.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2022L.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2022M.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2022N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2022O.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2022_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_2022_Att_T2_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Att_T2_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Att_T2_N.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2022_Att_T3_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Att_T3_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Att_T3_N.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2022_Att_T4_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Att_T4_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Att_T4_N.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2022_Att_T5_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Att_T5_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Att_T5_N.Height = Hauteur_saisie * Multiple;
-            CheckBox_ObjS_2022_Att_T2.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2022_Att_T3.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2022_Att_T4.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2022_Att_T5.FontSize = Taille_texte * Multiple;
+
+            CheckBox_ObjS_2022_Att_T1_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T1_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T1_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T2_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T2_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T2_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T3_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T3_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T3_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T4_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T4_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T4_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T5_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T5_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Att_T5_ZDDA.FontSize = Taille_texte * Multiple;
 
             GridSplitter_Objectif_Sec_Att_2022A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2022B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -22717,6 +22751,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_2022D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2022E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2022F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2022G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2023
             Label_Objectif_Sec_Att_2023A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -24829,25 +24864,27 @@ namespace CPV9
             Label_Objectif_Sec_Def_2022I.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2022J.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2022K.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2022L.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2022M.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2022L.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2022M.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2022N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2022O.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2022_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_2022_Def_T2_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Def_T2_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Def_T2_N.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2022_Def_T3_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Def_T3_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Def_T3_N.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2022_Def_T4_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Def_T4_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Def_T4_N.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2022_Def_T5_N.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2022_Def_T5_N.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2022_Def_T5_N.Height = Hauteur_saisie * Multiple;
-            CheckBox_ObjS_2022_Def_T2.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2022_Def_T3.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2022_Def_T4.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2022_Def_T5.FontSize = Taille_texte * Multiple;
+
+            CheckBox_ObjS_2022_Def_T1_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T1_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T1_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T2_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T2_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T2_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T3_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T3_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T3_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T4_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T4_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T4_ZDDA.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T5_ZDDE.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T5_NML.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2022_Def_T5_ZDDA.FontSize = Taille_texte * Multiple;
 
             GridSplitter_Objectif_Sec_Def_2022A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2022B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -24855,6 +24892,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_2022D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2022E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2022F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2022G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2023
             Label_Objectif_Sec_Def_2023A.FontSize = 1.2 * Taille_texte * Multiple;
