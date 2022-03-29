@@ -3651,7 +3651,7 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_2013B" Content="Faite l'action d'INTERCEPTION DE DONNEES en fin de phase de mouvement, l'acction est accompli à la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2013B" Content="Faite l'action d'INTERCEPTION DE DONNEES en fin de phase de mouvement, l'action est accompli à la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <Label x:Name="Label_Objectif_Sec_Att_2013C" Content="Prenez 1 points par objectif dans le no Man's Land que vous contrôlez (Maxi 3 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2013B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Att_2013D" Content="Nombre d'objectif No Man's Land pris : " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
@@ -6628,8 +6628,8 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_2013B" Content="Action d INTERCEPTION DE DONNEES , prennez autant de pts que vous avez pris d objectif." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_2013C" Content="L action debut en fin de phase de mouvement , et se termine a la prochaine phase de commandement" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2013B" Content="Faite l'action d'INTERCEPTION DE DONNEES en fin de phase de mouvement, l'action est accompli à la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2013C" Content="Prenez 1 points par objectif dans le no Man's Land que vous contrôlez (Maxi 3 pts)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2013B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Def_2013D" Content="Nombre d'objectif No Man's Land pris: " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <Label x:Name="Label_Objectif_Sec_Def_2013E" Content="ROUND 1: " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
