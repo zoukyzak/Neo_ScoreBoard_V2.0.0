@@ -29,21 +29,21 @@ namespace CPV9.Windows
             Label_OBJ_Livres_13.Content = CetObjectif.L13;
             Label_OBJ_Livres_14.Content = CetObjectif.L14;
 
-            double Rapport_Taille = (this.ActualHeight * this.ActualWidth * 12) / (800 * 600);
+            double Rapport_Taille = (this.ActualHeight * this.ActualWidth * 10) / (800 * 600);
             Label_OBJ_Livres_1.FontSize = 1.2 * Rapport_Taille;
-            Label_OBJ_Livres_2.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_3.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_4.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_5.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_6.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_7.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_8.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_9.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_10.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_11.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_12.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_13.FontSize = 0.9 * Rapport_Taille;
-            Label_OBJ_Livres_14.FontSize = 0.9 * Rapport_Taille;
+            Label_OBJ_Livres_2.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_3.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_4.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_5.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_6.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_7.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_8.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_9.FontSize  = Rapport_Taille;
+            Label_OBJ_Livres_10.FontSize = Rapport_Taille;
+            Label_OBJ_Livres_11.FontSize = Rapport_Taille;
+            Label_OBJ_Livres_12.FontSize = Rapport_Taille;
+            Label_OBJ_Livres_13.FontSize = Rapport_Taille;
+            Label_OBJ_Livres_14.FontSize = Rapport_Taille;
         }
     }
 }

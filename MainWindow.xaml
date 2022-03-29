@@ -3691,49 +3691,34 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_2021B" Content="A votre phase de commandement, Marquez 4 pts si vous controlez les 2 objectifs de votre zone et 1 objectif de la zone ennemie" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_2021C" Content="Marquez 8 pts si vous controlez les 4 objectifs des zones de deploiement." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_2021D" Content="Marquez aussi ces pts a la fin de la bataille" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <StackPanel x:Name="StackPanel_ObjS_2021B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                            <Label x:Name="Label_Objectif_Sec_Att_2021E" Content="ROUND   " VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_2021F" Content="ROUND 2:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_2021G" Content="ROUND 3:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_2021H" Content="ROUND 4:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_2021I" Content="ROUND 5:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_2021J" Content="FIN :" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2021B" Content="A la fin de votre tour, Marquez 2 pts si vous réalisez une des conditions suivantes :" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2021C" Content="A = Controlez l'objectif central ; B = Détruire une unité ennemie à 6 pouces du centre au début de son tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2021D" Content="Marquez 5 pts à la fin de la bataille si vous contrôlez l'objectif central" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <StackPanel x:Name="StackPanel_ObjS_2021B_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                        <Label x:Name="Label_Objectif_Sec_Att_2021E" Content="Action Sécuriser les sanctuaires réussit : " VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>                        
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T1" Content=" Round 1 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T2" Content=" Round 2 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T3" Content=" Round 3 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T4" Content=" Round 4 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T5" Content=" Round 5 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         </StackPanel>
-
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-
-                        <StackPanel Orientation="Vertical">
-                            <Label x:Name="Label_Objectif_Sec_Att_2021K" Content="OCCUPER LES 2 OBJECTIFS DE SA ZDD " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T2" VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_T2_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T3" VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_T3_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T4" VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_T4_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_T5" VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_T5_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_Fin" VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_Fin_Click"/>
-                        </StackPanel>
-
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-
-                        <StackPanel Orientation="Vertical">
-                            <Label x:Name="Label_Objectif_Sec_Att_2021L" Content="NOMBRE D OBJECTIF AQUIS EN ZDD ennemi" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Att_T2" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Att_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Att_T3" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Att_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Att_T4" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Att_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Att_T5" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Att_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Att_Fin" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Att_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-
-                        </StackPanel>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Label x:Name="Label_Objectif_Sec_Att_2021F" Content="Contrôlez l'objectif central à la fin de la bataille : " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Att_Fin" VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Att_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021F" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
+                        </StackPanel>                        
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_2021M" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2021G" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_2021_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2021N" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2021H" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2021G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2022_Att" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">
@@ -6668,43 +6653,34 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_2021B" Content="A votre phase de commandement, Marquez 4 pts si vous controlez les 2 objectifs de votre zone et 1 objectif de la zone ennemie" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_2021C" Content="Marquez 8 pts si vous controlez les 4 objectifs des zones de deploiement." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_2021D" Content="Marquez aussi ces pts a la fin de la bataille" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <StackPanel x:Name="StackPanel_ObjS_2021B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
-                            <Label x:Name="Label_Objectif_Sec_Def_2021E" Content="ROUND   " VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_2021F" Content="ROUND 2:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_2021G" Content="ROUND 3:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_2021H" Content="ROUND 4:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_2021I" Content="ROUND 5:" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_2021J" Content="FIN :" VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2021B" Content="A la fin de votre tour, Marquez 2 pts si vous réalisez une des conditions suivantes :" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2021C" Content="A = Controlez l'objectif central ; B = Détruire une unité ennemie à 6 pouces du centre au début de son tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2021D" Content="Marquez 5 pts à la fin de la bataille si vous contrôlez l'objectif central" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <StackPanel x:Name="StackPanel_ObjS_2021B_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                        <Label x:Name="Label_Objectif_Sec_Def_2021E" Content="Action Sécuriser les sanctuaires réussit : " VerticalAlignment="Center" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T1" Content=" Round 1 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                             
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T2" Content=" Round 2 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                             
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T3" Content=" Round 3 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                             
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T4" Content=" Round 4 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                             
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T5" Content=" Round 5 " VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021E" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         </StackPanel>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <StackPanel Orientation="Vertical">
-                            <Label x:Name="Label_Objectif_Sec_Def_2021K" Content="OCCUPER LES 2 OBJECTIFS DE SA ZDD " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T2" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_T2_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T3" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_T3_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T4" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_T4_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_T5" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_T5_Click"/>
-                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_Fin" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_Fin_Click"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Label x:Name="Label_Objectif_Sec_Def_2021F" Content="Contrôlez l'objectif central à la fin de la bataille : " FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <CheckBox x:Name="CheckBox_ObjS_2021_Def_Fin" VerticalAlignment="Center" Margin="0,4" BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" Click="CheckBox_ObjS_2021_Def_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021F" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                         </StackPanel>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <StackPanel Orientation="Vertical">
-                            <Label x:Name="Label_Objectif_Sec_Def_2021L" Content="NOMBRE D OBJECTIF AQUIS EN ZDD ennemi" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Def_T2" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Def_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Def_T3" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Def_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Def_T4" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Def_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Def_T5" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Def_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                            <TextBox x:Name="TextBox_ObjS_2021_Def_Fin" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,5" TextChanged="TextBox_ObjS_2021_Def_TextChanged" KeyDown="Controle_Key_KeyDown" Visibility="Hidden"/>
-                        </StackPanel>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_2021M" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2021G" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_2021_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2021N" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021D" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2021H" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2021G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel x:Name="StackPanel_ObjS_2022_Def" Height="Auto" Orientation="Vertical" Margin="0,0" Visibility="Collapsed">

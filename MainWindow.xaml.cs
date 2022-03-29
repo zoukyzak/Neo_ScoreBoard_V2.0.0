@@ -576,11 +576,13 @@ namespace CPV9
         #endregion
         #region Variables_Objectif_Missions_Force_de_Frappe_2011_2033
 
+        public string CheckBox_ObjS_2021_Att_T1_Etat = "false";
         public string CheckBox_ObjS_2021_Att_T2_Etat = "false";
         public string CheckBox_ObjS_2021_Att_T3_Etat = "false";
         public string CheckBox_ObjS_2021_Att_T4_Etat = "false";
         public string CheckBox_ObjS_2021_Att_T5_Etat = "false";
         public string CheckBox_ObjS_2021_Att_Fin_Etat = "false";
+        public string CheckBox_ObjS_2021_Def_T1_Etat = "false";
         public string CheckBox_ObjS_2021_Def_T2_Etat = "false";
         public string CheckBox_ObjS_2021_Def_T3_Etat = "false";
         public string CheckBox_ObjS_2021_Def_T4_Etat = "false";
@@ -1839,12 +1841,8 @@ namespace CPV9
             TextBox_ObjS_2013_Att_T3.Clear();
             TextBox_ObjS_2013_Att_T4.Clear();
             TextBox_ObjS_2013_Att_T5.Clear();
-            /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
-            TextBox_ObjS_2021_Att_T2.Clear();
-            TextBox_ObjS_2021_Att_T3.Clear();
-            TextBox_ObjS_2021_Att_T4.Clear();
-            TextBox_ObjS_2021_Att_T5.Clear();
-            TextBox_ObjS_2021_Att_Fin.Clear();
+            /// OBJECTIF SECONDAIRE 2021 : SECURISER LES SANCTUAIRES            
+            CheckBox_ObjS_2021_Att_T1.IsChecked = false;
             CheckBox_ObjS_2021_Att_T2.IsChecked = false;
             CheckBox_ObjS_2021_Att_T3.IsChecked = false;
             CheckBox_ObjS_2021_Att_T4.IsChecked = false;
@@ -2378,12 +2376,8 @@ namespace CPV9
             TextBox_ObjS_2013_Def_T3.Clear();
             TextBox_ObjS_2013_Def_T4.Clear();
             TextBox_ObjS_2013_Def_T5.Clear();
-            /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
-            TextBox_ObjS_2021_Def_T2.Clear();
-            TextBox_ObjS_2021_Def_T3.Clear();
-            TextBox_ObjS_2021_Def_T4.Clear();
-            TextBox_ObjS_2021_Def_T5.Clear();
-            TextBox_ObjS_2021_Def_Fin.Clear();
+            /// OBJECTIF SECONDAIRE 2021 : SECURISER LES SANCTUAIRES            
+            CheckBox_ObjS_2021_Def_T1.IsChecked = false;
             CheckBox_ObjS_2021_Def_T2.IsChecked = false;
             CheckBox_ObjS_2021_Def_T3.IsChecked = false;
             CheckBox_ObjS_2021_Def_T4.IsChecked = false;
@@ -2882,17 +2876,14 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 35] = TextBox_ObjS_2013_Att_T4.Text; n++;
             Mem_Saisie_Attaquant[n, 35] = TextBox_ObjS_2013_Att_T5.Text;
 
-            /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
-            Mem_Saisie_Attaquant[0, 36] = TextBox_ObjS_2021_Att_T2.Text;
-            Mem_Saisie_Attaquant[1, 36] = TextBox_ObjS_2021_Att_T3.Text;
-            Mem_Saisie_Attaquant[2, 36] = TextBox_ObjS_2021_Att_T4.Text;
-            Mem_Saisie_Attaquant[3, 36] = TextBox_ObjS_2021_Att_T5.Text;
-            Mem_Saisie_Attaquant[4, 36] = TextBox_ObjS_2021_Att_Fin.Text;
-            Mem_Saisie_Attaquant[5, 36] = CheckBox_ObjS_2021_Att_T2_Etat;
-            Mem_Saisie_Attaquant[6, 36] = CheckBox_ObjS_2021_Att_T3_Etat;
-            Mem_Saisie_Attaquant[7, 36] = CheckBox_ObjS_2021_Att_T4_Etat;
-            Mem_Saisie_Attaquant[8, 36] = CheckBox_ObjS_2021_Att_T5_Etat;
-            Mem_Saisie_Attaquant[9, 36] = CheckBox_ObjS_2021_Att_Fin_Etat;
+            /// OBJECTIF SECONDAIRE 2021 : SECURISER LES SANCTUAIRES
+            n = 0;
+            Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_T1_Etat; n++;
+            Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_T2_Etat; n++;
+            Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_T3_Etat; n++;
+            Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_T4_Etat; n++;
+            Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_T5_Etat; n++;
+            Mem_Saisie_Attaquant[n, 36] = CheckBox_ObjS_2021_Att_Fin_Etat;
             /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
             Mem_Saisie_Attaquant[0, 37] = TextBox_ObjS_2022_Att_T2_N.Text;
             Mem_Saisie_Attaquant[1, 37] = TextBox_ObjS_2022_Att_T3_N.Text;
@@ -3465,17 +3456,14 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 35] = TextBox_ObjS_2013_Def_T4.Text; n++;
             Mem_Saisie_Defenseur[n, 35] = TextBox_ObjS_2013_Def_T5.Text;
 
-            /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
-            Mem_Saisie_Defenseur[0, 36] = TextBox_ObjS_2021_Def_T2.Text;
-            Mem_Saisie_Defenseur[1, 36] = TextBox_ObjS_2021_Def_T3.Text;
-            Mem_Saisie_Defenseur[2, 36] = TextBox_ObjS_2021_Def_T4.Text;
-            Mem_Saisie_Defenseur[3, 36] = TextBox_ObjS_2021_Def_T5.Text;
-            Mem_Saisie_Defenseur[4, 36] = TextBox_ObjS_2021_Def_Fin.Text;
-            Mem_Saisie_Defenseur[5, 36] = CheckBox_ObjS_2021_Def_T2_Etat;
-            Mem_Saisie_Defenseur[6, 36] = CheckBox_ObjS_2021_Def_T3_Etat;
-            Mem_Saisie_Defenseur[7, 36] = CheckBox_ObjS_2021_Def_T4_Etat;
-            Mem_Saisie_Defenseur[8, 36] = CheckBox_ObjS_2021_Def_T5_Etat;
-            Mem_Saisie_Defenseur[9, 36] = CheckBox_ObjS_2021_Def_Fin_Etat;
+            /// OBJECTIF SECONDAIRE 2021 : SECURISER LES SANCTUAIRES
+            n = 0;
+            Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_T1_Etat; n++;
+            Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_T2_Etat; n++;
+            Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_T3_Etat; n++;
+            Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_T4_Etat; n++;
+            Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_T5_Etat; n++;
+            Mem_Saisie_Defenseur[n, 36] = CheckBox_ObjS_2021_Def_Fin_Etat;
             /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
             Mem_Saisie_Defenseur[0, 37] = TextBox_ObjS_2022_Def_T2_N.Text;
             Mem_Saisie_Defenseur[1, 37] = TextBox_ObjS_2022_Def_T3_N.Text;
@@ -4414,41 +4402,37 @@ namespace CPV9
             TextBox_ObjS_2013_Att_T4.Text = Mem_Saisie_Attaquant[n, 35]; n++;
             TextBox_ObjS_2013_Att_T5.Text = Mem_Saisie_Attaquant[n, 35];
 
-            /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
-            TextBox_ObjS_2021_Att_T2.Text = Mem_Saisie_Attaquant[0, 36];
-            TextBox_ObjS_2021_Att_T3.Text = Mem_Saisie_Attaquant[1, 36];
-            TextBox_ObjS_2021_Att_T4.Text = Mem_Saisie_Attaquant[2, 36];
-            TextBox_ObjS_2021_Att_T5.Text = Mem_Saisie_Attaquant[3, 36];
-            TextBox_ObjS_2021_Att_Fin.Text = Mem_Saisie_Attaquant[4, 36];
-            CheckBox_ObjS_2021_Att_T2_Etat = Mem_Saisie_Attaquant[5, 36];
-            CheckBox_ObjS_2021_Att_T3_Etat = Mem_Saisie_Attaquant[6, 36];
-            CheckBox_ObjS_2021_Att_T4_Etat = Mem_Saisie_Attaquant[7, 36];
-            CheckBox_ObjS_2021_Att_T5_Etat = Mem_Saisie_Attaquant[8, 36];
-            CheckBox_ObjS_2021_Att_Fin_Etat = Mem_Saisie_Attaquant[9, 36];
+            /// OBJECTIF SECONDAIRE 2021 : SECURISER LES SANCTUAIRES
+            n = 0;
+            CheckBox_ObjS_2021_Att_T1_Etat = Mem_Saisie_Attaquant[n, 36];n++;
+            CheckBox_ObjS_2021_Att_T2_Etat = Mem_Saisie_Attaquant[n, 36];n++;
+            CheckBox_ObjS_2021_Att_T3_Etat = Mem_Saisie_Attaquant[n, 36];n++;
+            CheckBox_ObjS_2021_Att_T4_Etat = Mem_Saisie_Attaquant[n, 36];n++;
+            CheckBox_ObjS_2021_Att_T5_Etat = Mem_Saisie_Attaquant[n, 36];n++;
+            CheckBox_ObjS_2021_Att_Fin_Etat = Mem_Saisie_Attaquant[n, 36];
+            if (CheckBox_ObjS_2021_Att_T1_Etat == "true")
+            {
+                CheckBox_ObjS_2021_Att_T1.IsChecked = true;
+            }
             if (CheckBox_ObjS_2021_Att_T2_Etat == "true")
             {
                 CheckBox_ObjS_2021_Att_T2.IsChecked = true;
-                TextBox_ObjS_2021_Att_T2.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Att_T3_Etat == "true")
             {
                 CheckBox_ObjS_2021_Att_T3.IsChecked = true;
-                TextBox_ObjS_2021_Att_T3.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Att_T4_Etat == "true")
             {
                 CheckBox_ObjS_2021_Att_T4.IsChecked = true;
-                TextBox_ObjS_2021_Att_T4.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Att_T5_Etat == "true")
             {
                 CheckBox_ObjS_2021_Att_T5.IsChecked = true;
-                TextBox_ObjS_2021_Att_T5.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Att_Fin_Etat == "true")
             {
                 CheckBox_ObjS_2021_Att_Fin.IsChecked = true;
-                TextBox_ObjS_2021_Att_Fin.Visibility = Visibility.Visible;
             }
 
             /// OBJECTIF SECONDAIRE 2022 : TERRAIN VITAL
@@ -5876,41 +5860,37 @@ namespace CPV9
             TextBox_ObjS_2013_Def_T4.Text = Mem_Saisie_Defenseur[n, 35]; n++;
             TextBox_ObjS_2013_Def_T5.Text = Mem_Saisie_Defenseur[n, 35];
 
-            /// OBJECTIF SECONDAIRE 2021 : ENCERCLEZ - LES
-            TextBox_ObjS_2021_Def_T2.Text = Mem_Saisie_Defenseur[0, 36];
-            TextBox_ObjS_2021_Def_T3.Text = Mem_Saisie_Defenseur[1, 36];
-            TextBox_ObjS_2021_Def_T4.Text = Mem_Saisie_Defenseur[2, 36];
-            TextBox_ObjS_2021_Def_T5.Text = Mem_Saisie_Defenseur[3, 36];
-            TextBox_ObjS_2021_Def_Fin.Text = Mem_Saisie_Defenseur[4, 36];
-            CheckBox_ObjS_2021_Def_T2_Etat = Mem_Saisie_Defenseur[5, 36];
-            CheckBox_ObjS_2021_Def_T3_Etat = Mem_Saisie_Defenseur[6, 36];
-            CheckBox_ObjS_2021_Def_T4_Etat = Mem_Saisie_Defenseur[7, 36];
-            CheckBox_ObjS_2021_Def_T5_Etat = Mem_Saisie_Defenseur[8, 36];
-            CheckBox_ObjS_2021_Def_Fin_Etat = Mem_Saisie_Defenseur[9, 36];
+            /// OBJECTIF SECONDAIRE 2021 : SECURISER LES SANCTUAIRES
+            n = 0;
+            CheckBox_ObjS_2021_Def_T1_Etat = Mem_Saisie_Defenseur[n, 36]; n++;
+            CheckBox_ObjS_2021_Def_T2_Etat = Mem_Saisie_Defenseur[n, 36]; n++;
+            CheckBox_ObjS_2021_Def_T3_Etat = Mem_Saisie_Defenseur[n, 36]; n++;
+            CheckBox_ObjS_2021_Def_T4_Etat = Mem_Saisie_Defenseur[n, 36]; n++;
+            CheckBox_ObjS_2021_Def_T5_Etat = Mem_Saisie_Defenseur[n, 36]; n++;
+            CheckBox_ObjS_2021_Def_Fin_Etat = Mem_Saisie_Defenseur[n, 36];
+            if (CheckBox_ObjS_2021_Def_T1_Etat == "true")
+            {
+                CheckBox_ObjS_2021_Def_T1.IsChecked = true;
+            }
             if (CheckBox_ObjS_2021_Def_T2_Etat == "true")
             {
                 CheckBox_ObjS_2021_Def_T2.IsChecked = true;
-                TextBox_ObjS_2021_Def_T2.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Def_T3_Etat == "true")
             {
                 CheckBox_ObjS_2021_Def_T3.IsChecked = true;
-                TextBox_ObjS_2021_Def_T3.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Def_T4_Etat == "true")
             {
                 CheckBox_ObjS_2021_Def_T4.IsChecked = true;
-                TextBox_ObjS_2021_Def_T4.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Def_T5_Etat == "true")
             {
                 CheckBox_ObjS_2021_Def_T5.IsChecked = true;
-                TextBox_ObjS_2021_Def_T5.Visibility = Visibility.Visible;
             }
             if (CheckBox_ObjS_2021_Def_Fin_Etat == "true")
             {
                 CheckBox_ObjS_2021_Def_Fin.IsChecked = true;
-                TextBox_ObjS_2021_Def_Fin.Visibility = Visibility.Visible;
             }
 
 
@@ -12013,7 +11993,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2021           
             Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Att;
-            OBJECTIF_Mission_2021_Att = new Classe_Score_OBJM_2021(TextBox_ObjS_2021_Att_T2.Text, TextBox_ObjS_2021_Att_T3.Text, TextBox_ObjS_2021_Att_T4.Text, TextBox_ObjS_2021_Att_T5.Text, TextBox_ObjS_2021_Att_Fin.Text);
+            OBJECTIF_Mission_2021_Att = new Classe_Score_OBJM_2021(CheckBox_ObjS_2021_Att_T1_Etat, CheckBox_ObjS_2021_Att_T2_Etat, CheckBox_ObjS_2021_Att_T3_Etat, CheckBox_ObjS_2021_Att_T4_Etat, CheckBox_ObjS_2021_Att_T5_Etat, CheckBox_ObjS_2021_Att_Fin_Etat);
             Scores_Attaquant[36] = OBJECTIF_Mission_2021_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2021_Att.Score_ObjS) >= 15)
             {
@@ -13125,7 +13105,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2021           
             Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Def;
-            OBJECTIF_Mission_2021_Def = new Classe_Score_OBJM_2021(TextBox_ObjS_2021_Def_T2.Text, TextBox_ObjS_2021_Def_T3.Text, TextBox_ObjS_2021_Def_T4.Text, TextBox_ObjS_2021_Att_T5.Text, TextBox_ObjS_2021_Def_Fin.Text);
+            OBJECTIF_Mission_2021_Def = new Classe_Score_OBJM_2021(CheckBox_ObjS_2021_Def_T1_Etat, CheckBox_ObjS_2021_Def_T2_Etat, CheckBox_ObjS_2021_Def_T3_Etat, CheckBox_ObjS_2021_Def_T4_Etat, CheckBox_ObjS_2021_Def_T5_Etat, CheckBox_ObjS_2021_Def_Fin_Etat);
             Scores_Defenseur[36] = OBJECTIF_Mission_2021_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2021_Def.Score_ObjS) >= 15)
             {
@@ -19615,169 +19595,37 @@ namespace CPV9
             }
         }
 
-        private void TextBox_ObjS_2021_Att_TextChanged(object sender, TextChangedEventArgs e)
+        private void CheckBox_ObjS_2021_Att_Click(object sender, RoutedEventArgs e)
         {
-            if (TextBox_ObjS_2021_Att_T2.Text != "" || TextBox_ObjS_2021_Att_T3.Text != "" || TextBox_ObjS_2021_Att_T4.Text != "" || TextBox_ObjS_2021_Att_T5.Text != "" || TextBox_ObjS_2021_Att_Fin.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-        }
-        private void CheckBox_ObjS_2021_Att_T2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Att_T2.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Att_T2_Etat = "true";
-                TextBox_ObjS_2021_Att_T2.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Att_T2.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Att_T2_Etat = "false";
-                TextBox_ObjS_2021_Att_T2.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Att_T2.Text = "";
-            }
+            if (CheckBox_ObjS_2021_Att_T1.IsChecked == true) { CheckBox_ObjS_2021_Att_T1_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Att_T2.IsChecked == true) { CheckBox_ObjS_2021_Att_T2_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Att_T3.IsChecked == true) { CheckBox_ObjS_2021_Att_T3_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Att_T4.IsChecked == true) { CheckBox_ObjS_2021_Att_T4_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Att_T5.IsChecked == true) { CheckBox_ObjS_2021_Att_T5_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Att_Fin.IsChecked == true) { CheckBox_ObjS_2021_Att_Fin_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Att_T1.IsChecked == false) { CheckBox_ObjS_2021_Att_T1_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Att_T2.IsChecked == false) { CheckBox_ObjS_2021_Att_T2_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Att_T3.IsChecked == false) { CheckBox_ObjS_2021_Att_T3_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Att_T4.IsChecked == false) { CheckBox_ObjS_2021_Att_T4_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Att_T5.IsChecked == false) { CheckBox_ObjS_2021_Att_T5_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Att_Fin.IsChecked == false) { CheckBox_ObjS_2021_Att_Fin_Etat = "false"; };
             Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Att_T3_Click(object sender, RoutedEventArgs e)
+        }        
+        private void CheckBox_ObjS_2021_Def_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_2021_Att_T3.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Att_T3_Etat = "true";
-                TextBox_ObjS_2021_Att_T3.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Att_T3.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Att_T3_Etat = "false";
-                TextBox_ObjS_2021_Att_T3.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Att_T3.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Att_T4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Att_T4.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Att_T4_Etat = "true";
-                TextBox_ObjS_2021_Att_T4.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Att_T4.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Att_T4_Etat = "false";
-                TextBox_ObjS_2021_Att_T4.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Att_T4.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Att_T5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Att_T5.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Att_T5_Etat = "true";
-                TextBox_ObjS_2021_Att_T5.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Att_T5.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Att_T5_Etat = "false";
-                TextBox_ObjS_2021_Att_T5.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Att_T5.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Att_Fin_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Att_Fin.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Att_Fin_Etat = "true";
-                TextBox_ObjS_2021_Att_Fin.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Att_Fin.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Att_Fin_Etat = "false";
-                TextBox_ObjS_2021_Att_Fin.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Att_Fin.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_2021_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2021_Def_T2.Text != "" || TextBox_ObjS_2021_Def_T3.Text != "" || TextBox_ObjS_2021_Def_T4.Text != "" || TextBox_ObjS_2021_Def_T5.Text != "" || TextBox_ObjS_2021_Def_Fin.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-        }
-        private void CheckBox_ObjS_2021_Def_T2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Def_T2.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Def_T2_Etat = "true";
-                TextBox_ObjS_2021_Def_T2.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Def_T2.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Def_T2_Etat = "false";
-                TextBox_ObjS_2021_Def_T2.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Def_T2.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Def_T3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Def_T3.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Def_T3_Etat = "true";
-                TextBox_ObjS_2021_Def_T3.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Def_T3.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Def_T3_Etat = "false";
-                TextBox_ObjS_2021_Def_T3.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Def_T3.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Def_T4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Def_T4.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Def_T4_Etat = "true";
-                TextBox_ObjS_2021_Def_T4.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Def_T4.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Def_T4_Etat = "false";
-                TextBox_ObjS_2021_Def_T4.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Def_T4.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Def_T5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Def_T5.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Def_T5_Etat = "true";
-                TextBox_ObjS_2021_Def_T5.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Def_T5.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Def_T5_Etat = "false";
-                TextBox_ObjS_2021_Def_T5.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Def_T5.Text = "";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2021_Def_Fin_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2021_Def_Fin.IsChecked == true)
-            {
-                CheckBox_ObjS_2021_Def_Fin_Etat = "true";
-                TextBox_ObjS_2021_Def_Fin.Visibility = Visibility.Visible;
-            }
-            if (CheckBox_ObjS_2021_Def_Fin.IsChecked == false)
-            {
-                CheckBox_ObjS_2021_Def_Fin_Etat = "false";
-                TextBox_ObjS_2021_Def_Fin.Visibility = Visibility.Hidden;
-                TextBox_ObjS_2021_Def_Fin.Text = "";
-            }
-            Calcul_Score_Attaquant();
+            if (CheckBox_ObjS_2021_Def_T1.IsChecked == true) { CheckBox_ObjS_2021_Def_T1_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Def_T2.IsChecked == true) { CheckBox_ObjS_2021_Def_T2_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Def_T3.IsChecked == true) { CheckBox_ObjS_2021_Def_T3_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Def_T4.IsChecked == true) { CheckBox_ObjS_2021_Def_T4_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Def_T5.IsChecked == true) { CheckBox_ObjS_2021_Def_T5_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Def_Fin.IsChecked == true) { CheckBox_ObjS_2021_Def_Fin_Etat = "true"; };
+            if (CheckBox_ObjS_2021_Def_T1.IsChecked == false) { CheckBox_ObjS_2021_Def_T1_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Def_T2.IsChecked == false) { CheckBox_ObjS_2021_Def_T2_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Def_T3.IsChecked == false) { CheckBox_ObjS_2021_Def_T3_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Def_T4.IsChecked == false) { CheckBox_ObjS_2021_Def_T4_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Def_T5.IsChecked == false) { CheckBox_ObjS_2021_Def_T5_Etat = "false"; };
+            if (CheckBox_ObjS_2021_Def_Fin.IsChecked == false) { CheckBox_ObjS_2021_Def_Fin_Etat = "false"; };
+            Calcul_Score_Defenseur();
         }
 
         private void TextBox_ObjS_2022_Att_TextChanged(object sender, TextChangedEventArgs e)
@@ -22814,40 +22662,22 @@ namespace CPV9
             Label_Objectif_Sec_Att_2021D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2021E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2021F.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021G.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021H.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021I.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021J.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021K.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021L.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021M.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2021N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2021G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2021H.FontSize = 1.2 * Taille_texte * Multiple;
+            CheckBox_ObjS_2021_Att_T1.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Att_T2.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Att_T3.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Att_T4.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Att_T5.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Att_Fin.FontSize = Taille_texte * Multiple;
             TextBlock_ObjS_2021_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_2021_Att_T2.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Att_T2.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_T2.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_T3.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Att_T3.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_T3.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_T4.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Att_T4.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_T4.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_T5.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Att_T5.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_T5.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_Fin.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Att_Fin.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Att_Fin.Height = Hauteur_saisie * Multiple;
-
             GridSplitter_Objectif_Sec_Att_2021A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2021B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2021C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2021D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2021E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2021F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_2021G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2022
             Label_Objectif_Sec_Att_2022A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -24970,40 +24800,22 @@ namespace CPV9
             Label_Objectif_Sec_Def_2021D.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2021E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2021F.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021G.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021H.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021I.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021J.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021K.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021L.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021M.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2021N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2021G.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2021H.FontSize = 1.2 * Taille_texte * Multiple;
+            CheckBox_ObjS_2021_Def_T1.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Def_T2.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Def_T3.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Def_T4.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Def_T5.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Def_Fin.FontSize = Taille_texte * Multiple;
-            TextBlock_ObjS_2021_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_2021_Def_T2.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Def_T2.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_T2.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_T3.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Def_T3.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_T3.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_T4.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Def_T4.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_T4.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_T5.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Def_T5.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_T5.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_Fin.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_2021_Def_Fin.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_2021_Def_Fin.Height = Hauteur_saisie * Multiple;
-
+            TextBlock_ObjS_2021_Def.FontSize = 1.2 * Taille_texte * Multiple;            
             GridSplitter_Objectif_Sec_Def_2021A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2021B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2021C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2021D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2021E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2021F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_2021G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE MISSION 2022
             Label_Objectif_Sec_Def_2022A.FontSize = 1.2 * Taille_texte * Multiple;
@@ -32950,9 +32762,7 @@ namespace CPV9
         {
             Windows.Livres win2 = new Windows.Livres();
             win2.Show();
-            ///win2.Activate();
             win2.Affich_Lives(_Livre);
-
         }
         
         private void Button_Doc_ObjS_1_Click(object sender, RoutedEventArgs e)

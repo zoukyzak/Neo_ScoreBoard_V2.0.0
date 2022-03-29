@@ -623,15 +623,18 @@ namespace CPV9.Classes
 
                 case 2013:
                     l1 = "INTERCEPTION DE DONNEES";
-                    l3 = "Chaque fois qu'une unité de votre armée accomplit l'action Interception de Données, vous marquez autant de points de victoire que le nombre de pions objectif situés";
+                    l2 = "Chaque fois qu'une unité de votre armée accomplit l'action Interception de Données,";
+                    l3 = " vous marquez autant de points de victoire que le nombre de pions objectif situés";
                     l4 = "dans le no Man's Land que vous contrôlez actuellement, jusqu'à un maximum de 3 points de victoire par action.";
-                    l6 = "INTERCEPTION DE DONNEES (Action):";
-                    l7 = "1 unité de votre armée peut entreprendre cette action à la fin de votre phase de Mouvement si elle est à portée du pion objectif dans sa zone de déploiement et";
+                    l5 = "INTERCEPTION DE DONNEES (Action):";
+                    l6 = "1 unité de votre armée peut entreprendre cette action à la fin de votre phase de Mouvement si";
+                    l7 = " elle est à portée du pion objectif dans sa zone de déploiement et";
                     l8 = "si aucune unité ennemie ( hormis les Aérodynes ) n'est à portée du pion objectif";
                     l9 = "Cette action est accomplie à la fin de votre tour, à condition que l'unité qui l'entreprend soit toujours à portée du pion objectif.";
-                    l11 = "TERMINAUX DE DONNEES";
-                    l12 = "Dans cette mission, si un joueur contrôle un pion objectif qui est dans le no Man's Land à la fin de sa phase de Commandement et si une ou plusieurs des ses unités";
-                    l13 = "qui sont à portée de celui-ci ont l'aptitude Objectif Sécurisé ou une règle similaire, il reste sous le contrôle du joueur même s'il n'y a pas de figurines à portée,";
+                    l10 = "TERMINAUX DE DONNEES";
+                    l11 = "Dans cette mission, si un joueur contrôle un pion objectif qui est dans le no Man's Land à la fin de sa phase de Commandement et";
+                    l12 = " si une ou plusieurs des ses unités qui sont à portée de celui-ci ont l'aptitude Objectif Sécurisé ou une règle similaire,";
+                    l13 = " il reste sous le contrôle du joueur même s'il n'y a pas de figurines à portée,";
                     l14 = "à moins que son adversaire en prenne le contrôle à la fin d'une phase ultérieure.";
                     break;
 
