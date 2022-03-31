@@ -8,7 +8,6 @@ namespace CPV9.Classes
         public int Score_ObjS { get; set; }
 
         private int Score = 0;
-        private int Donne = 0;
 
         public Classe_Score_OBJM_2023(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5)
         {
