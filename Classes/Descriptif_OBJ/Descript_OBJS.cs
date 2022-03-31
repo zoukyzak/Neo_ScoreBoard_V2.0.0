@@ -399,71 +399,52 @@ namespace CPV9.Classes
                 #endregion
                 #region OBJC Orks
                 case 136:
-                    l1 = "PAS DE PITIE, PAS DE REPIT";
-                    l2 = "";
-                    l3 = "KRAZEZ-LES";
-                    l4 = "";
-                    l5 = "-Marquez 3 points de victoire à la fin de chaque round de bataille si le nombre d'unité";
-                    l6 = "ennemie détruites par des attaques de mêlée d'unités Orks de votre armée est supérieur";
-                    l7 = "au nombre d'unités non-Gretchins amies détruites par des attaques de mêlée pendant";
-                    l8 = "ce round de bataille.";
-                    l9 = "";
-                    l10 = "-Marquez 1 point de victoire supplémentaire à la fin de chaque round de bataille si le";
-                    l11 = "nombre d'unités ennemies détruites par les attaques de mélée d'unités Orks de votre";
-                    l12 = "armée est au moins 2 et le double du nombre d'unités non-Gretchins amies détruites";
-                    l13 = "par des attaques de mêlée pendant ce round de bataille.";
-                    l14 = "";
+                    l1 = "KRAZEZ-LES";                    
+                    l3 = "Marquez 3 points de victoire à la fin de chaque round de bataille";
+                    l4 = "si le nombre d'unité ennemie détruites par des attaques de mêlée d'unités Orks de votre armée";
+                    l5 = "est supérieur au nombre d'unités non-Gretchins amies détruites par des attaques de mêlée";
+                    l6 = "pendant ce round de bataille.";
+                    l10 = "Marquez 1 point de victoire supplémentaire à la fin de chaque round de bataille";
+                    l11 = "si le nombre d'unités ennemies détruites par les attaques de mélée d'unités Orks de votre armée";
+                    l12 = "est au moins 2 et le double du nombre d'unités non-Gretchins amies détruites par des attaques de mêlée";
+                    l13 = "pendant ce round de bataille.";
                     break;
 
                 case 137:
-                    l1 = "ELIMINER L'ENNEMI";
-                    l2 = "";
-                    l3 = "LES PLUS GROS ET LES PLUS MIEUX";
-                    l4 = "";
-                    l5 = "Si vous avez choisi cet objectif secondaire, vous marquez 3 points de victoire à la fin de chaque";
-                    l6 = "round de bataille pour chacune des conditions suivantes remplies par votre Seigneur de Guerre Orks,";
-                    l7 = "jusqu'à un maximum de 5 points de victoire:";
-                    l8 = "";
-                    l9 = "-Une unité Monstre ou Véhicule ennemie est détruite suite à une attaque de mêlée de ce Seigneur de Guerre.";
-                    l10 = "";
-                    l11 = "-Un Personnage ennemie est détruit suite à une attaque de mêlée de ce Seigneur de Guerre.";
-                    l12 = "";
-                    l13 = "-5 figurines ennemies ou plus ont été détruites suite à des attaques de ce Seigneur de Guerre.";
-                    l14 = "";
+                    l1 = "LES PLUS GROS ET LES PLUS MIEUX";
+                    l3 = "Si vous avez choisi cet objectif secondaire,";
+                    l4 = "vous marquez 3 points de victoire à la fin de chaque round de bataille";
+                    l5 = "pour chacune des conditions suivantes remplies par votre Seigneur de Guerre Orks ,";
+                    l6 = "jusqu'à un maximum de 5 points de victoire :";
+                    l9 = "Une unité Monstre ou Véhicule ennemie est détruite suite à une attaque de mêlée de ce Seigneur de Guerre.";
+                    l11 = "Un Personnage ennemie est détruit suite à une attaque de mêlée de ce Seigneur de Guerre.";
+                    l13 = "5 figurines ennemies ou plus ont été détruites suite à des attaques de ce Seigneur de Guerre.";
                     break;
 
                 case 138:
-                    l1 = "OPERATIONS CLANDESTINES";
-                    l2 = "PRENEZ LES MORCEAUX D'CHOIX";
-                    l3 = "Si vous avez choisi cet objectif secondaire, après le déploiement des deux camps, les joueurs";
-                    l4 = "choisissent à tour de rôle les pions objectifs qui ne sont dans la zone de déploiement d'aucun joueur";
-                    l5 = "pour être des pions objectif de Morceaux d'Choix, jusqu'à ce que 3 pions objectif aient été choisis";
-                    l6 = "(s'il n'y a qu'un pion objectif de cette sorte, seul celui-ci est un pion objectif de Morceaux d'Choix).";
+                    l1 = "PRENEZ LES MORCEAUX D'CHOIX";
+                    l2 = "Si vous avez choisi cet objectif secondaire, après le déploiement des deux camps, ";
+                    l3 = "les joueurs choisissent à tour de rôle les pions objectifs qui ne sont dans la zone de déploiement d'aucun joueur";
+                    l4 = "pour être des pions objectif de Morceaux d'Choix, jusqu'à ce que 3 pions objectif aient été choisis";
+                    l5 = "(s'il n'y a qu'un pion objectif de cette sorte, seul celui-ci est un pion objectif de Morceaux d'Choix).";
                     l7 = "Les unités Base Orks de votre armée peuvent tenter l'action suivante:";
                     l8 = "Prenez les Morceaux d'Choix (Action):";
-                    l9 = "A la fin de votre phase de Mouvement, une ou plusieurs unités Base Orks de votre armée peuvent";
-                    l10 = "commencer à accomplir cette action. Chaque unité qui commence cette action doit être à portée d'un pion";
-                    l11 = "objectif de Morceaux d'Choix différent. Une unité ennemie (hormis Aérodyne) à portée du même pion.";
+                    l9 = "A la fin de votre phase de Mouvement, une ou plusieurs unités Base Orks de votre armée peuvent commencer à accomplir cette action.";
+                    l10 = "Chaque unité qui commence cette action doit être à portée d'un pion objectif de Morceaux d'Choix différent.";
+                    l11 = "Une unité ennemie (hormis Aérodyne) à portée du même pion.";
                     l12 = "L'action est accomplie à la fin de votre prochaine phase de Commandement, tant que l'unité tentant l'action";
                     l13 = "est toujours à portée du même pion objectif de Morceaux d'Choix.";
                     l14 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action Prenez les Morceaux d'Choix.";
                     break;
 
                 case 139:
-                    l1 = "SUPREMATIE MILITAIRE";
-                    l2 = "";
-                    l3 = "MAREE VERTE";
-                    l4 = "";
+                    l1 = "MAREE VERTE";
                     l5 = "Au début de la bataille, divisez le champ de bataille en quarts égaux.";
-                    l6 = "";
                     l7 = "Marquez 3 points de victoire à la fin du round de bataille si deux quarts de champ de bataille";
                     l8 = "ou plus ont une unité Orks de votre armée contenant 11 figurines ou plus entièrement à l'intérieur";
                     l9 = "de chacun d'eux.";
-                    l10 = "";
                     l11 = "Marquez à la place 5 points de victoire à la fin du round de bataille si les quatre quarts ont une unité";
                     l12 = "Orks de votre armée contenant 11 figurines ou plus entièrement à l'intérieur de chacun d'eux.";
-                    l13 = "";
-                    l14 = "";
                     break;
 
 

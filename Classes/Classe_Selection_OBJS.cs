@@ -213,6 +213,12 @@
                 text_Objectif = "135-Défendez le sanctuaire , ";
             }
 
+            /**  Ork **/
+            if (Choix_ObjS == 136) { text_Objectif = "136-Krazez-les , "; };
+            if (Choix_ObjS == 137) { text_Objectif = "137-Les plus gros ... , "; };
+            if (Choix_ObjS == 138) { text_Objectif = "138-Prenez les morçeaux d'choix , "; };
+            if (Choix_ObjS == 139) { text_Objectif = "139-Marée verte , "; };
+
             /**  PATROUILLE  **/
             if (Choix_ObjS == 501)
             {
