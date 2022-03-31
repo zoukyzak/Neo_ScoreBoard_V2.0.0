@@ -3802,8 +3802,8 @@
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Att_2023B" Content="Action :SCAN STRATEGIQUE , 1 seul fois par objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_2023C" Content="peu etre réalisé plusieurs fois en meme temps par differentes unitées." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_2023D" Content="debute a la fin de la phase de mouvement , se termine a la prochaine phase de commandement ou fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2023C" Content="peu être réalisé plusieurs fois en même temps par differentes unitées." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2023D" Content="débute à la fin de la phase de mouvement , se termine à la prochaine phase de commandement ou fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2023B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <CheckBox x:Name="CheckBox_ObjS_2023_Att_A1" Content="Objectif A1 " BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2023_Att_A1_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2023A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
@@ -6776,8 +6776,8 @@
                         </Button>
                     </StackPanel>
                     <Label x:Name="Label_Objectif_Sec_Def_2023B" Content="Action :SCAN STRATEGIQUE , 1 seul fois par objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_2023C" Content="peu etre réalisé plusieurs fois en meme temps par differentes unitées." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_2023D" Content="debute a la fin de la phase de mouvement , se termine a la prochaine phase de commandement ou fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2023C" Content="peu être réalisé plusieurs fois en même temps par differentes unitées." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2023D" Content="débute à la fin de la phase de mouvement , se termine à la prochaine phase de commandement ou fin de la bataille." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2023B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <CheckBox x:Name="CheckBox_ObjS_2023_Def_A1" Content="Objectif A1 " BorderBrush="#FF48F109" Padding="0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2023_Def_A1_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2023A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
