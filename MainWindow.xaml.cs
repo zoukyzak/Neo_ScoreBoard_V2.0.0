@@ -642,26 +642,26 @@ namespace CPV9
         public string CheckBox_ObjS_2031_Def_T4_Etat = "false";
         public string CheckBox_ObjS_2031_Def_Fin_Etat = "false";
 
-        public string CheckBox_ObjS_2032_Att_Centre1_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Centre2_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Centre3_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Centre4_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Centre5_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Zdd1_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Zdd2_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Zdd3_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Zdd4_Etat = "false";
-        public string CheckBox_ObjS_2032_Att_Zdd5_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Centre1_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Centre2_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Centre3_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Centre4_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Centre5_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Zdd1_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Zdd2_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Zdd3_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Zdd4_Etat = "false";
-        public string CheckBox_ObjS_2032_Def_Zdd5_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_Obj1_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_Obj2_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_Obj3_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_Obj4_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_Obj5_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_E1_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_E2_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_E3_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_E4_Etat = "false";
+        public string CheckBox_ObjS_2032_Att_E5_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_Obj1_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_Obj2_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_Obj3_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_Obj4_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_Obj5_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_E1_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_E2_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_E3_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_E4_Etat = "false";
+        public string CheckBox_ObjS_2032_Def_E5_Etat = "false";
 
         #endregion
         #region Variables_Objectifs_Missions_Incursion_3001_3003
@@ -1911,16 +1911,16 @@ namespace CPV9
             CheckBox_ObjS_2031_Att_Fin.IsChecked = false;
             TextBox_ObjS_2031_Att_Fin.Clear();
             /// OBJECTIF SECONDAIRE 2032 : ASSAUT DIRECT
-            CheckBox_ObjS_2032_Att_Centre1.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Centre2.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Centre3.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Centre4.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Centre5.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Zdd1.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Zdd2.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Zdd3.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Zdd4.IsChecked = false;
-            CheckBox_ObjS_2032_Att_Zdd5.IsChecked = false;
+            CheckBox_ObjS_2032_Att_Obj1.IsChecked = false;
+            CheckBox_ObjS_2032_Att_Obj2.IsChecked = false;
+            CheckBox_ObjS_2032_Att_Obj3.IsChecked = false;
+            CheckBox_ObjS_2032_Att_Obj4.IsChecked = false;
+            CheckBox_ObjS_2032_Att_Obj5.IsChecked = false;
+            CheckBox_ObjS_2032_Att_E1.IsChecked = false;
+            CheckBox_ObjS_2032_Att_E2.IsChecked = false;
+            CheckBox_ObjS_2032_Att_E3.IsChecked = false;
+            CheckBox_ObjS_2032_Att_E4.IsChecked = false;
+            CheckBox_ObjS_2032_Att_E5.IsChecked = false;
             /// OBJECTIF SECONDAIRE 2033 : CIBLES PRIORITAIRES
             TextBox_ObjS_2033_Att_R1.Clear();
             TextBox_ObjS_2033_Att_R2.Clear();
@@ -2455,16 +2455,16 @@ namespace CPV9
             CheckBox_ObjS_2031_Def_Fin.IsChecked = false;
             TextBox_ObjS_2031_Att_Fin.Clear();
             /// OBJECTIF SECONDAIRE 2032 : ASSAUT DIRECT
-            CheckBox_ObjS_2032_Def_Centre1.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Centre2.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Centre3.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Centre4.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Centre5.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Zdd1.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Zdd2.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Zdd3.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Zdd4.IsChecked = false;
-            CheckBox_ObjS_2032_Def_Zdd5.IsChecked = false;
+            CheckBox_ObjS_2032_Def_Obj1.IsChecked = false;
+            CheckBox_ObjS_2032_Def_Obj2.IsChecked = false;
+            CheckBox_ObjS_2032_Def_Obj3.IsChecked = false;
+            CheckBox_ObjS_2032_Def_Obj4.IsChecked = false;
+            CheckBox_ObjS_2032_Def_Obj5.IsChecked = false;
+            CheckBox_ObjS_2032_Def_E1.IsChecked = false;
+            CheckBox_ObjS_2032_Def_E2.IsChecked = false;
+            CheckBox_ObjS_2032_Def_E3.IsChecked = false;
+            CheckBox_ObjS_2032_Def_E4.IsChecked = false;
+            CheckBox_ObjS_2032_Def_E5.IsChecked = false;
             /// OBJECTIF SECONDAIRE 2033 : CIBLES PRIORITAIRES
             TextBox_ObjS_2033_Def_R1.Clear();
             TextBox_ObjS_2033_Def_R2.Clear();
@@ -2969,16 +2969,18 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 39] = CheckBox_ObjS_2031_Att_Fin_Etat;
 
             /// OBJECTIF SECONDAIRE 2032 : ASSAUT DIRECT
-            Mem_Saisie_Attaquant[0, 40] = CheckBox_ObjS_2032_Att_Centre1_Etat;
-            Mem_Saisie_Attaquant[1, 40] = CheckBox_ObjS_2032_Att_Centre2_Etat;
-            Mem_Saisie_Attaquant[2, 40] = CheckBox_ObjS_2032_Att_Centre3_Etat;
-            Mem_Saisie_Attaquant[3, 40] = CheckBox_ObjS_2032_Att_Centre4_Etat;
-            Mem_Saisie_Attaquant[4, 40] = CheckBox_ObjS_2032_Att_Centre5_Etat;
-            Mem_Saisie_Attaquant[5, 40] = CheckBox_ObjS_2032_Att_Zdd1_Etat;
-            Mem_Saisie_Attaquant[6, 40] = CheckBox_ObjS_2032_Att_Zdd2_Etat;
-            Mem_Saisie_Attaquant[7, 40] = CheckBox_ObjS_2032_Att_Zdd3_Etat;
-            Mem_Saisie_Attaquant[8, 40] = CheckBox_ObjS_2032_Att_Zdd4_Etat;
-            Mem_Saisie_Attaquant[9, 40] = CheckBox_ObjS_2032_Att_Zdd5_Etat;
+            n = 0;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_Obj1_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_Obj2_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_Obj3_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_Obj4_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_Obj5_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_E1_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_E2_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_E3_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_E4_Etat; n++;
+            Mem_Saisie_Attaquant[n, 40] = CheckBox_ObjS_2032_Att_E5_Etat;
+
             /// OBJECTIF SECONDAIRE 2033 : CIBLES PRIORITAIRES
             Mem_Saisie_Attaquant[0, 41] = TextBox_ObjS_2033_Att_R1.Text;
             Mem_Saisie_Attaquant[1, 41] = TextBox_ObjS_2033_Att_R2.Text;
@@ -3560,16 +3562,17 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 39] = CheckBox_ObjS_2031_Def_Fin_Etat;
 
             /// OBJECTIF SECONDAIRE 2032 : ASSAUT DIRECT
-            Mem_Saisie_Defenseur[0, 40] = CheckBox_ObjS_2032_Def_Centre1_Etat;
-            Mem_Saisie_Defenseur[1, 40] = CheckBox_ObjS_2032_Def_Centre2_Etat;
-            Mem_Saisie_Defenseur[2, 40] = CheckBox_ObjS_2032_Def_Centre3_Etat;
-            Mem_Saisie_Defenseur[3, 40] = CheckBox_ObjS_2032_Def_Centre4_Etat;
-            Mem_Saisie_Defenseur[4, 40] = CheckBox_ObjS_2032_Def_Centre5_Etat;
-            Mem_Saisie_Defenseur[5, 40] = CheckBox_ObjS_2032_Def_Zdd1_Etat;
-            Mem_Saisie_Defenseur[6, 40] = CheckBox_ObjS_2032_Def_Zdd2_Etat;
-            Mem_Saisie_Defenseur[7, 40] = CheckBox_ObjS_2032_Def_Zdd3_Etat;
-            Mem_Saisie_Defenseur[8, 40] = CheckBox_ObjS_2032_Def_Zdd4_Etat;
-            Mem_Saisie_Defenseur[9, 40] = CheckBox_ObjS_2032_Def_Zdd5_Etat;
+            n = 0;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_Obj1_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_Obj2_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_Obj3_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_Obj4_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_Obj5_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_E1_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_E2_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_E3_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_E4_Etat; n++;
+            Mem_Saisie_Defenseur[n, 40] = CheckBox_ObjS_2032_Def_E5_Etat;
             /// OBJECTIF SECONDAIRE 2033 : CIBLES PRIORITAIRES
             Mem_Saisie_Defenseur[0, 41] = TextBox_ObjS_2033_Def_R1.Text;
             Mem_Saisie_Defenseur[1, 41] = TextBox_ObjS_2033_Def_R2.Text;
@@ -4584,56 +4587,28 @@ namespace CPV9
             if (CheckBox_ObjS_2031_Att_Fin_Etat == "true") { CheckBox_ObjS_2031_Att_Fin.IsChecked = true; };
 
             /// OBJECTIF SECONDAIRE 2032 : ASSAUT DIRECT
-            CheckBox_ObjS_2032_Att_Centre1_Etat = Mem_Saisie_Attaquant[0, 40];
-            CheckBox_ObjS_2032_Att_Centre2_Etat = Mem_Saisie_Attaquant[1, 40];
-            CheckBox_ObjS_2032_Att_Centre3_Etat = Mem_Saisie_Attaquant[2, 40];
-            CheckBox_ObjS_2032_Att_Centre4_Etat = Mem_Saisie_Attaquant[3, 40];
-            CheckBox_ObjS_2032_Att_Centre5_Etat = Mem_Saisie_Attaquant[4, 40];
-            CheckBox_ObjS_2032_Att_Zdd1_Etat = Mem_Saisie_Attaquant[5, 40];
-            CheckBox_ObjS_2032_Att_Zdd2_Etat = Mem_Saisie_Attaquant[6, 40];
-            CheckBox_ObjS_2032_Att_Zdd3_Etat = Mem_Saisie_Attaquant[7, 40];
-            CheckBox_ObjS_2032_Att_Zdd4_Etat = Mem_Saisie_Attaquant[8, 40];
-            CheckBox_ObjS_2032_Att_Zdd5_Etat = Mem_Saisie_Attaquant[9, 40];
-            if (CheckBox_ObjS_2032_Att_Centre1_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Centre1.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Centre2_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Centre2.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Centre3_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Centre3.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Centre4_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Centre4.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Centre5_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Centre5.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd1_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Zdd1.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd2_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Zdd2.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd3_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Zdd3.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd4_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Zdd4.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd5_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Att_Zdd5.IsChecked = true;
-            }
+            n = 0;
+            CheckBox_ObjS_2032_Att_Obj1_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_Obj2_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_Obj3_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_Obj4_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_Obj5_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_E1_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_E2_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_E3_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_E4_Etat = Mem_Saisie_Attaquant[n, 40]; n++;
+            CheckBox_ObjS_2032_Att_E5_Etat = Mem_Saisie_Attaquant[n, 40];
+            if (CheckBox_ObjS_2032_Att_Obj1_Etat == "true") { CheckBox_ObjS_2032_Att_Obj1.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_Obj2_Etat == "true") { CheckBox_ObjS_2032_Att_Obj2.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_Obj3_Etat == "true") { CheckBox_ObjS_2032_Att_Obj3.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_Obj4_Etat == "true") { CheckBox_ObjS_2032_Att_Obj4.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_Obj5_Etat == "true") { CheckBox_ObjS_2032_Att_Obj5.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_E1_Etat == "true") { CheckBox_ObjS_2032_Att_E1.IsChecked = true; };                         
+            if (CheckBox_ObjS_2032_Att_E2_Etat == "true") { CheckBox_ObjS_2032_Att_E2.IsChecked = true; };                        
+            if (CheckBox_ObjS_2032_Att_E3_Etat == "true") { CheckBox_ObjS_2032_Att_E3.IsChecked = true; };                
+            if (CheckBox_ObjS_2032_Att_E4_Etat == "true") { CheckBox_ObjS_2032_Att_E4.IsChecked = true; };                        
+            if (CheckBox_ObjS_2032_Att_E5_Etat == "true") { CheckBox_ObjS_2032_Att_E5.IsChecked = true; };
+
             /// OBJECTIF SECONDAIRE 2033 : CIBLES PRIORITAIRES
             TextBox_ObjS_2033_Att_R1.Text = Mem_Saisie_Attaquant[0, 41];
             TextBox_ObjS_2033_Att_R2.Text = Mem_Saisie_Attaquant[1, 41];
@@ -6059,56 +6034,28 @@ namespace CPV9
             if (CheckBox_ObjS_2031_Def_Fin_Etat == "true") { CheckBox_ObjS_2031_Def_Fin.IsChecked = true; };
 
             /// OBJECTIF SECONDAIRE 2032 : ASSAUT DIRECT
-            CheckBox_ObjS_2032_Def_Centre1_Etat = Mem_Saisie_Defenseur[0, 40];
-            CheckBox_ObjS_2032_Def_Centre2_Etat = Mem_Saisie_Defenseur[1, 40];
-            CheckBox_ObjS_2032_Def_Centre3_Etat = Mem_Saisie_Defenseur[2, 40];
-            CheckBox_ObjS_2032_Def_Centre4_Etat = Mem_Saisie_Defenseur[3, 40];
-            CheckBox_ObjS_2032_Def_Centre5_Etat = Mem_Saisie_Defenseur[4, 40];
-            CheckBox_ObjS_2032_Def_Zdd1_Etat = Mem_Saisie_Defenseur[5, 40];
-            CheckBox_ObjS_2032_Def_Zdd2_Etat = Mem_Saisie_Defenseur[6, 40];
-            CheckBox_ObjS_2032_Def_Zdd3_Etat = Mem_Saisie_Defenseur[7, 40];
-            CheckBox_ObjS_2032_Def_Zdd4_Etat = Mem_Saisie_Defenseur[8, 40];
-            CheckBox_ObjS_2032_Def_Zdd5_Etat = Mem_Saisie_Defenseur[9, 40];
-            if (CheckBox_ObjS_2032_Def_Centre1_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Centre1.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Centre2_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Centre2.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Centre3_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Centre3.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Centre4_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Centre4.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Centre5_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Centre5.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd1_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Zdd1.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd2_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Zdd2.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd3_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Zdd3.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd4_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Zdd4.IsChecked = true;
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd5_Etat == "true")
-            {
-                CheckBox_ObjS_2032_Def_Zdd5.IsChecked = true;
-            }
+            n = 0;
+            CheckBox_ObjS_2032_Def_Obj1_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_Obj2_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_Obj3_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_Obj4_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_Obj5_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_E1_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_E2_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_E3_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_E4_Etat = Mem_Saisie_Defenseur[n, 40]; n++;
+            CheckBox_ObjS_2032_Def_E5_Etat = Mem_Saisie_Defenseur[n, 40];
+            if (CheckBox_ObjS_2032_Def_Obj1_Etat == "true") { CheckBox_ObjS_2032_Def_Obj1.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_Obj2_Etat == "true") { CheckBox_ObjS_2032_Def_Obj2.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_Obj3_Etat == "true") { CheckBox_ObjS_2032_Def_Obj3.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_Obj4_Etat == "true") { CheckBox_ObjS_2032_Def_Obj4.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_Obj5_Etat == "true") { CheckBox_ObjS_2032_Def_Obj5.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_E1_Etat == "true") { CheckBox_ObjS_2032_Def_E1.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_E2_Etat == "true") { CheckBox_ObjS_2032_Def_E2.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_E3_Etat == "true") { CheckBox_ObjS_2032_Def_E3.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_E4_Etat == "true") { CheckBox_ObjS_2032_Def_E4.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Def_E5_Etat == "true") { CheckBox_ObjS_2032_Def_E5.IsChecked = true; };
+
             /// OBJECTIF SECONDAIRE 2033 : CIBLES PRIORITAIRES
             TextBox_ObjS_2033_Def_R1.Text = Mem_Saisie_Defenseur[0, 41];
             TextBox_ObjS_2033_Def_R2.Text = Mem_Saisie_Defenseur[1, 41];
@@ -12165,7 +12112,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2032        
             Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Att;
-            OBJECTIF_Mission_2032_Att = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Att_Centre1_Etat, CheckBox_ObjS_2032_Att_Centre2_Etat, CheckBox_ObjS_2032_Att_Centre3_Etat, CheckBox_ObjS_2032_Att_Centre4_Etat, CheckBox_ObjS_2032_Att_Centre5_Etat, CheckBox_ObjS_2032_Att_Zdd1_Etat, CheckBox_ObjS_2032_Att_Zdd2_Etat, CheckBox_ObjS_2032_Att_Zdd3_Etat, CheckBox_ObjS_2032_Att_Zdd4_Etat, CheckBox_ObjS_2032_Att_Zdd5_Etat);
+            OBJECTIF_Mission_2032_Att = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Att_Obj1_Etat, CheckBox_ObjS_2032_Att_Obj2_Etat, CheckBox_ObjS_2032_Att_Obj3_Etat, CheckBox_ObjS_2032_Att_Obj4_Etat, CheckBox_ObjS_2032_Att_Obj5_Etat, CheckBox_ObjS_2032_Att_E1_Etat, CheckBox_ObjS_2032_Att_E2_Etat, CheckBox_ObjS_2032_Att_E3_Etat, CheckBox_ObjS_2032_Att_E4_Etat, CheckBox_ObjS_2032_Att_E5_Etat);
             Scores_Attaquant[40] = OBJECTIF_Mission_2032_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2032_Att.Score_ObjS) >= 15)
             {
@@ -13277,7 +13224,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 2032        
             Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Def;
-            OBJECTIF_Mission_2032_Def = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Def_Centre1_Etat, CheckBox_ObjS_2032_Def_Centre2_Etat, CheckBox_ObjS_2032_Def_Centre3_Etat, CheckBox_ObjS_2032_Def_Centre4_Etat, CheckBox_ObjS_2032_Def_Centre5_Etat, CheckBox_ObjS_2032_Def_Zdd1_Etat, CheckBox_ObjS_2032_Def_Zdd2_Etat, CheckBox_ObjS_2032_Def_Zdd3_Etat, CheckBox_ObjS_2032_Def_Zdd4_Etat, CheckBox_ObjS_2032_Def_Zdd5_Etat);
+            OBJECTIF_Mission_2032_Def = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Def_Obj1_Etat, CheckBox_ObjS_2032_Def_Obj2_Etat, CheckBox_ObjS_2032_Def_Obj3_Etat, CheckBox_ObjS_2032_Def_Obj4_Etat, CheckBox_ObjS_2032_Def_Obj5_Etat, CheckBox_ObjS_2032_Def_E1_Etat, CheckBox_ObjS_2032_Def_E2_Etat, CheckBox_ObjS_2032_Def_E3_Etat, CheckBox_ObjS_2032_Def_E4_Etat, CheckBox_ObjS_2032_Def_E5_Etat);
             Scores_Defenseur[40] = OBJECTIF_Mission_2032_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Mission_2032_Def.Score_ObjS) >= 15)
             {
@@ -19964,244 +19911,52 @@ namespace CPV9
             if (TextBox_ObjS_2031_Def_Fin.Text != "") { Calcul_Score_Defenseur(); };
         }
 
-        private void CheckBox_ObjS_2032_Att_Centre1_Click(object sender, RoutedEventArgs e)
+        private void CheckBox_ObjS_2032_Att_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_2032_Att_Centre1.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Centre1_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Centre1.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Centre1_Etat = "false";
-            }
+            if (CheckBox_ObjS_2032_Att_Obj1.IsChecked == true) { CheckBox_ObjS_2032_Att_Obj1_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_Obj2.IsChecked == true) { CheckBox_ObjS_2032_Att_Obj2_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_Obj3.IsChecked == true) { CheckBox_ObjS_2032_Att_Obj3_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_Obj4.IsChecked == true) { CheckBox_ObjS_2032_Att_Obj4_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_Obj5.IsChecked == true) { CheckBox_ObjS_2032_Att_Obj5_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_Obj1.IsChecked == false) { CheckBox_ObjS_2032_Att_Obj1_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_Obj2.IsChecked == false) { CheckBox_ObjS_2032_Att_Obj2_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_Obj3.IsChecked == false) { CheckBox_ObjS_2032_Att_Obj3_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_Obj4.IsChecked == false) { CheckBox_ObjS_2032_Att_Obj4_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_Obj5.IsChecked == false) { CheckBox_ObjS_2032_Att_Obj5_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_E1.IsChecked == true) { CheckBox_ObjS_2032_Att_E1_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_E2.IsChecked == true) { CheckBox_ObjS_2032_Att_E2_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_E3.IsChecked == true) { CheckBox_ObjS_2032_Att_E3_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_E4.IsChecked == true) { CheckBox_ObjS_2032_Att_E4_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_E5.IsChecked == true) { CheckBox_ObjS_2032_Att_E5_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Att_E1.IsChecked == false) { CheckBox_ObjS_2032_Att_E1_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_E2.IsChecked == false) { CheckBox_ObjS_2032_Att_E2_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_E3.IsChecked == false) { CheckBox_ObjS_2032_Att_E3_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_E4.IsChecked == false) { CheckBox_ObjS_2032_Att_E4_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Att_E5.IsChecked == false) { CheckBox_ObjS_2032_Att_E5_Etat = "false"; };
             Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Centre2_Click(object sender, RoutedEventArgs e)
+        }       
+        private void CheckBox_ObjS_2032_Def_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_2032_Att_Centre2.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Centre2_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Centre2.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Centre2_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Centre3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Centre3.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Centre3_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Centre3.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Centre3_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Centre4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Centre4.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Centre4_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Centre4.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Centre4_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Centre5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Centre5.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Centre5_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Centre5.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Centre5_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Zdd1_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Zdd1.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Zdd1_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd1.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Zdd1_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Zdd2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Zdd2.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Zdd2_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd2.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Zdd2_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Zdd3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Zdd3.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Zdd3_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd3.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Zdd3_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Zdd4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Zdd4.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Zdd4_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd4.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Zdd4_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Att_Zdd5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Att_Zdd5.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Att_Zdd5_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Att_Zdd5.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Att_Zdd5_Etat = "false";
-            }
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_ObjS_2032_Def_Centre1_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Centre1.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Centre1_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Centre1.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Centre1_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Centre2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Centre2.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Centre2_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Centre2.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Centre2_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Centre3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Centre3.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Centre3_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Centre3.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Centre3_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Centre4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Centre4.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Centre4_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Centre4.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Centre4_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Centre5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Centre5.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Centre5_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Centre5.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Centre5_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Zdd1_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Zdd1.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Zdd1_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd1.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Zdd1_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Zdd2_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Zdd2.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Zdd2_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd2.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Zdd2_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Zdd3_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Zdd3.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Zdd3_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd3.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Zdd3_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Zdd4_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Zdd4.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Zdd4_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd4.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Zdd4_Etat = "false";
-            }
-            Calcul_Score_Defenseur();
-        }
-        private void CheckBox_ObjS_2032_Def_Zdd5_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_ObjS_2032_Def_Zdd5.IsChecked == true)
-            {
-                CheckBox_ObjS_2032_Def_Zdd5_Etat = "true";
-            }
-            if (CheckBox_ObjS_2032_Def_Zdd5.IsChecked == false)
-            {
-                CheckBox_ObjS_2032_Def_Zdd5_Etat = "false";
-            }
+            if (CheckBox_ObjS_2032_Def_Obj1.IsChecked == true) { CheckBox_ObjS_2032_Def_Obj1_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_Obj2.IsChecked == true) { CheckBox_ObjS_2032_Def_Obj2_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_Obj3.IsChecked == true) { CheckBox_ObjS_2032_Def_Obj3_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_Obj4.IsChecked == true) { CheckBox_ObjS_2032_Def_Obj4_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_Obj5.IsChecked == true) { CheckBox_ObjS_2032_Def_Obj5_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_Obj1.IsChecked == false) { CheckBox_ObjS_2032_Def_Obj1_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_Obj2.IsChecked == false) { CheckBox_ObjS_2032_Def_Obj2_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_Obj3.IsChecked == false) { CheckBox_ObjS_2032_Def_Obj3_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_Obj4.IsChecked == false) { CheckBox_ObjS_2032_Def_Obj4_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_Obj5.IsChecked == false) { CheckBox_ObjS_2032_Def_Obj5_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_E1.IsChecked == true) { CheckBox_ObjS_2032_Def_E1_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_E2.IsChecked == true) { CheckBox_ObjS_2032_Def_E2_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_E3.IsChecked == true) { CheckBox_ObjS_2032_Def_E3_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_E4.IsChecked == true) { CheckBox_ObjS_2032_Def_E4_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_E5.IsChecked == true) { CheckBox_ObjS_2032_Def_E5_Etat = "true"; };
+            if (CheckBox_ObjS_2032_Def_E1.IsChecked == false) { CheckBox_ObjS_2032_Def_E1_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_E2.IsChecked == false) { CheckBox_ObjS_2032_Def_E2_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_E3.IsChecked == false) { CheckBox_ObjS_2032_Def_E3_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_E4.IsChecked == false) { CheckBox_ObjS_2032_Def_E4_Etat = "false"; };
+            if (CheckBox_ObjS_2032_Def_E5.IsChecked == false) { CheckBox_ObjS_2032_Def_E5_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
 
@@ -22872,19 +22627,21 @@ namespace CPV9
             Label_Objectif_Sec_Att_2032G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2032H.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_2032I.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2032J.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_2032K.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2032J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2032K.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2032L.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_2032M.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2032_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Centre1.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Centre2.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Centre3.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Centre4.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Centre5.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Zdd1.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Zdd2.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Zdd3.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Zdd4.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Att_Zdd5.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_Obj1.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_Obj2.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_Obj3.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_Obj4.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_Obj5.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_E1.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_E2.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_E3.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_E4.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Att_E5.FontSize = Taille_texte * Multiple;
 
             GridSplitter_Objectif_Sec_Att_2032A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_2032B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -25007,19 +24764,21 @@ namespace CPV9
             Label_Objectif_Sec_Def_2032G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2032H.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_2032I.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2032J.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_2032K.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2032J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2032K.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2032L.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_2032M.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_2032_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Centre1.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Centre2.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Centre3.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Centre4.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Centre5.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Zdd1.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Zdd2.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Zdd3.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Zdd4.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_2032_Def_Zdd5.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_Obj1.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_Obj2.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_Obj3.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_Obj4.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_Obj5.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_E1.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_E2.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_E3.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_E4.FontSize = Taille_texte * Multiple;
+            CheckBox_ObjS_2032_Def_E5.FontSize = Taille_texte * Multiple;
 
             GridSplitter_Objectif_Sec_Def_2032A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2032B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
