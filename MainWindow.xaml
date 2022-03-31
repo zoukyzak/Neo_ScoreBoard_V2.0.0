@@ -3936,30 +3936,25 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Att_2033B" Content="Marquez 3 pts pour 1 objectif prioritaire pris et 5 pts pour les 2 objectifs prioritaires." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Att_2033C" Content="prenez les points a la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2033B" Content="Marquez 3 pts si vous contrôlez votre objectif prioritaire." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Att_2033C" Content="prenez les points à la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2033B_Att" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_2033D" Content="Nbre d'objectif prioritaire pris:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2033E" Content="ROUND 1:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Att_R1" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2033D" Content="Objectif prioritaire pris : " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Att_Obj1" Content=" Tour 1 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Att_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2033F" Content="ROUND 2:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Att_R2" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Att_Obj2" Content=" Tour 2 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Att_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2033G" Content="ROUND 3:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Att_R3" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Att_Obj3" Content=" Tour 3 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Att_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2033H" Content="ROUND 4:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Att_R4" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Att_Obj4" Content=" Tour 4 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Att_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2033I" Content="ROUND 5:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Att_R5" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Att_Obj5" Content=" Tour 5 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Att_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033E" Width="5" Margin="5,0,30,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Att_2033J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2033E" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_2033_Att" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_2033K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_2033F" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_2033F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
@@ -6916,30 +6911,25 @@
                             <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Button>
                     </StackPanel>
-                    <Label x:Name="Label_Objectif_Sec_Def_2033B" Content="Marquez 3 pts pour 1 objectif prioritaire pris et 5 pts pour les 2 objectifs prioritaires." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                    <Label x:Name="Label_Objectif_Sec_Def_2033C" Content="prenez les points a la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2033B" Content="Marquez 3 pts si vous contrôlez votre objectif prioritaire." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                    <Label x:Name="Label_Objectif_Sec_Def_2033C" Content="prenez les points à la fin de votre tour." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                     <StackPanel x:Name="StackPanel_ObjS_2033B_Def" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_2033D" Content="Nbre d'objectif prioritaire pris:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2033E" Content="ROUND 1:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Def_R1" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2033F" Content="ROUND 2:" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Def_R2" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2033G" Content="ROUND 3:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Def_R3" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2033H" Content="ROUND 4:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Def_R4" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2033I" Content="ROUND 5:" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                        <TextBox x:Name="TextBox_ObjS_2033_Def_R5" Width="25" Height="16" FontFamily="Arial Black" FontSize="14" TextAlignment="Center" Margin="5,0" TextChanged="TextBox_ObjS_2033_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2033D" Content="Objectif prioritaire pris : " FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Def_Obj1" Content=" Tour 1 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033A" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                                                          
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Def_Obj2" Content=" Tour 2 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033B" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                                                          
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Def_Obj3" Content=" Tour 3 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033C" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                                                          
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Def_Obj4" Content=" Tour 4 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Def_Click"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033D" Width="5" Margin="5,0,0,0" HorizontalAlignment="Center" Background="Green"/>                                                                                                                                                                                          
+                        <CheckBox x:Name="CheckBox_ObjS_2033_Def_Obj5" Content=" Tour 5 " VerticalAlignment="Center" BorderBrush="#FF48F109" Padding="0" Margin="0,5" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" FontSize="10" HorizontalAlignment="Center" FlowDirection="RightToLeft" Click="CheckBox_ObjS_2033_Def_Click"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033E" Width="5" Margin="5,0,30,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                        <Label x:Name="Label_Objectif_Sec_Def_2033J" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2033E" Content="Points :" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_2033_Def" FontFamily="Arial Black" FontSize="14" Margin="0,0" VerticalAlignment="Center"/>
-                        <Label x:Name="Label_Objectif_Sec_Def_2033K" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_2033F" Content="/15" FontFamily="Arial Black" FontSize="14" Margin="0,0"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_2033F" Width="5" Margin="0,0,10,0" HorizontalAlignment="Center" Background="Green"/>
                     </StackPanel>
                 </StackPanel>
