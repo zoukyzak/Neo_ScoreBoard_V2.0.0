@@ -361,6 +361,15 @@ namespace CPV9.Windows
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_AdeptaS_134_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
             if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_AdeptaS_135_Cape_Player_1.Visibility = Visibility.Visible; };///74
             if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_AdeptaS_135_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
+
+            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Ork_136_Cape_Player_1.Visibility = Visibility.Visible; };///75 OBJECTIF DE CODEX ORK
+            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Ork_136_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
+            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Ork_137_Cape_Player_1.Visibility = Visibility.Visible; };///76
+            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Ork_137_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
+            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Ork_138_Cape_Player_1.Visibility = Visibility.Visible; };///77
+            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Ork_138_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
+            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Ork_139_Cape_Player_1.Visibility = Visibility.Visible; };///78
+            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Ork_139_Cape_Player_2.Visibility = Visibility.Visible; }; n++;           
         }
 
         private void _Tables(int Table_Tv)
@@ -536,6 +545,14 @@ namespace CPV9.Windows
             Label_Score_ObjC_AdeptaS_134_Cape_Player_2.FontSize = 8 * _Taille;
             Label_Score_ObjC_AdeptaS_135_Cape_Player_1.FontSize = 8 * _Taille;
             Label_Score_ObjC_AdeptaS_135_Cape_Player_2.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_136_Cape_Player_1.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_136_Cape_Player_2.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_137_Cape_Player_1.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_137_Cape_Player_2.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_138_Cape_Player_1.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_138_Cape_Player_2.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_139_Cape_Player_1.FontSize = 8 * _Taille;
+            Label_Score_ObjC_Ork_139_Cape_Player_2.FontSize = 8 * _Taille;
         }
 
         private void Window_Tv_SizeChanged(object sender, SizeChangedEventArgs e)

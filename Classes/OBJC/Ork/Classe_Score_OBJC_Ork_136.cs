@@ -19,12 +19,8 @@ namespace CPV9.Classes
             Comparatif(Saisie5, Saisie6);
             Comparatif(Saisie7, Saisie8);
             Comparatif(Saisie9, Saisie10);
-
             Score_ObjS = Score;
-            if (Score >= 15)
-            {
-                Score = 15;
-            }
+            if (Score >= 15) { Score = 15;};
             Scores_Joueur = Score;
         }
 
@@ -32,8 +28,8 @@ namespace CPV9.Classes
         {           
             if (Donnée1 !="" && Donnée2 !="")
             {
-                if (Convert.ToInt32(Donnée2) > Convert.ToInt32(Donnée1)) { Score += 3; };
-                if (Convert.ToInt32(Donnée2) >= 2 && Convert.ToInt32(Donnée1) >= (2 * Convert.ToInt32(Donnée2))) { Score++; };
+                if (Convert.ToInt32(Donnée1) > Convert.ToInt32(Donnée2)) { Score += 3; };
+                if (Convert.ToInt32(Donnée1) >= 2 && Convert.ToInt32(Donnée1) >= (2 * Convert.ToInt32(Donnée2))) { Score++; };
             }            
         }
     }

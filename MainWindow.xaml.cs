@@ -9269,6 +9269,7 @@ namespace CPV9
         }
         public void Button_Affichage_Tv_Click(object sender, RoutedEventArgs e)
         {
+            Windows.Tv win = new Windows.Tv();
             if (_win == false)
             {
                 win.Show();
@@ -11606,7 +11607,7 @@ namespace CPV9
             }
             else
             {
-                Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Collapsed;
+                Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Collapsed;                
                 win._Capes_Tv[1,0] = 0;
             }
             TextBlock_ObjP_Att.Text = Convert.ToString(OBJECTIF_Principal_Att.Score_ObjP);            
@@ -23808,23 +23809,40 @@ namespace CPV9
             Label_Objectif_Sec_Att_136M.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_136_Att.FontSize = 1.2 * Taille_texte * Multiple;
             TextBox_ObjS_136_Att_E1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_E1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_E1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_A1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_A1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_A1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_E2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_E2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_E2.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_A2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_A2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_A2.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_E3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_E3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_E3.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_A3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_A3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_A3.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_E4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_E4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_E4.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_A4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_A4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_A4.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_E5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_E5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_E5.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Att_A5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Att_A5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Att_A5.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Att_136A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_136B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_136C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_136D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_136E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Att_136F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Att_136G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Att_136H.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             #endregion
 
@@ -25965,24 +25983,43 @@ namespace CPV9
             Label_Objectif_Sec_Def_136L.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_136M.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_136_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBlock_ObjS_136_Def.Width = Largeur_saisie * Multiple;
+            TextBlock_ObjS_136_Def.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_E1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_E1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_E1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_A1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_A1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_A1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_E2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_E2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_E2.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_A2.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_A2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_A2.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_E3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_E3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_E3.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_A3.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_A3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_A3.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_E4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_E4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_E4.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_A4.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_A4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_A4.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_E5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_E5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_E5.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_136_Def_A5.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_136_Def_A5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_136_Def_A5.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Def_136A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_136B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_136C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_136D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_136E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Def_136F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Def_136G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
-            GridSplitter_Objectif_Sec_Def_136H.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             #endregion
 
             #region AFFICHAGE_SAISIE_SCORES_PEINTURES_DEFENSEUR
