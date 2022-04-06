@@ -148,6 +148,10 @@ namespace CPV9
         public int Choix_ObjS_Att = 0;
         public int[] Choix_ObjS_Defenseur = new int[3];
         public int Choix_ObjS_Def = 0;
+
+        public int[] ID_Cape_Attaquant = new int[4];
+        public int[] ID_Cape_Defenseur = new int[4];
+
         public string[,] Mem_Saisie_Attaquant = new string[20, 100];
         public string[,] Mem_Saisie_Defenseur = new string[20, 100];
         #region Variables_bool_Oeil
@@ -1449,6 +1453,11 @@ namespace CPV9
             {
                 Choix_ObjS_Attaquant[i] = 0;
                 Choix_ObjS_Defenseur[i] = 0;
+            }
+            for (int i = 0; i < 4; i++)
+            {
+                ID_Cape_Attaquant[i] = 0;
+                ID_Cape_Defenseur[i] = 0;
             }
             TextBox_Nom_Attaquant.Clear();
             TextBox_Nom_Attaquant_SG.Clear();
@@ -11594,6 +11603,11 @@ namespace CPV9
 
         private void Calcul_Score_Attaquant()
         {
+            for (int h = 0; h < 4; h++)
+            {
+                ID_Cape_Attaquant[h] = 0;
+            }
+            int s = 0;
 
             #region Calcul_Objectif_Principaux
             /// CALCUL SCORE OBJECTIF PRINCIPAL
@@ -11601,13 +11615,15 @@ namespace CPV9
             OBJECTIF_Principal_Att = new Classe_Score_Obj_Principaux(formatBis, Convert.ToString(TextBox_OBJP_2_Att_Att.Text), Convert.ToString(TextBox_OBJP_2_Att_Def.Text), Convert.ToString(TextBox_OBJP_3_Att_Att.Text), Convert.ToString(TextBox_OBJP_3_Att_Def.Text), Convert.ToString(TextBox_OBJP_4_Att_Att.Text), Convert.ToString(TextBox_OBJP_4_Att_Def.Text), Convert.ToString(TextBox_OBJP_5_Att_Att.Text), Convert.ToString(TextBox_OBJP_5_Att_Def.Text));
             Scores_Attaquant[0] = OBJECTIF_Principal_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Principal_Att.Score_ObjP) >= 45)
-            { 
-                Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Visible;
+            {
+                ID_Cape_Attaquant[s] = 1000;
+                s++;
+                ///Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Visible;
                 win._Capes_Tv[1,0] = 1; 
             }
             else
-            {
-                Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Collapsed;                
+            {     
+                ///Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Collapsed;                
                 win._Capes_Tv[1,0] = 0;
             }
             TextBlock_ObjP_Att.Text = Convert.ToString(OBJECTIF_Principal_Att.Score_ObjP);            
@@ -11623,7 +11639,9 @@ namespace CPV9
                 Scores_Attaquant[1] = OBJECTIF_Secondaire_001_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Secondaire_001_Att.Score_ObjS_001) >= 15)
                 {
-                    Label_Score_ObjS_1_Cape_Player_1.Visibility = Visibility.Visible;
+                    ID_Cape_Attaquant[s] = 1;
+                    s++;
+                    ///Label_Score_ObjS_1_Cape_Player_1.Visibility = Visibility.Visible;
                     win._Capes_Tv[1, 1] = 1;
                 }
                 else
@@ -11643,7 +11661,9 @@ namespace CPV9
                 Scores_Attaquant[2] = OBJECTIF_Secondaire_002_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Secondaire_002_Att.Score_ObjS_002) >= 15)
                 {
-                    Label_Score_ObjS_2_Cape_Player_1.Visibility = Visibility.Visible;
+                    ID_Cape_Attaquant[s] = 2;
+                    s++;
+                    ///  Label_Score_ObjS_2_Cape_Player_1.Visibility = Visibility.Visible;
                     win._Capes_Tv[1, 2] = 1;
                 }
                 else
@@ -12701,12 +12721,13 @@ namespace CPV9
             Scores_Attaquant[75] = OBJECTIF_Codex_136_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_136_Att.Score_ObjS) >= 15)
             {
-                Label_Score_ObjC_Ork_136_Cape_Player_1.Visibility = Visibility.Visible;
+                ID_Cape_Attaquant[s] = 136;
+                ///Label_Score_ObjC_Ork_136_Cape_Player_1.Visibility = Visibility.Visible;
                 win._Capes_Tv[1, 75] = 1;
             }
             else
-            {
-                Label_Score_ObjC_Ork_136_Cape_Player_1.Visibility = Visibility.Collapsed;
+            {                
+                ///Label_Score_ObjC_Ork_136_Cape_Player_1.Visibility = Visibility.Collapsed;
                 win._Capes_Tv[1, 75] = 0;
             }
             TextBlock_ObjS_136_Att.Text = Convert.ToString(OBJECTIF_Codex_136_Att.Score_ObjS);
@@ -12719,6 +12740,60 @@ namespace CPV9
             {
                 Scores_Attaquant[0] = Scores_Attaquant[0] + Scores_Attaquant[i];
             }
+
+            string texte = "";
+            
+            if (ID_Cape_Attaquant[0] != 0)
+                {
+                    Classe_Cape ID_Cape_Selected;
+                    ID_Cape_Selected = new Classe_Cape(ID_Cape_Attaquant[0], texte);
+                    Label_Cape_Player_Attaquant_1.Content = ID_Cape_Selected.Cape_Selected;
+                    Label_Cape_Player_Attaquant_1.Visibility = Visibility.Visible;
+                    ///win.Collect_Cape_Tv(1, ID_Cape_Selected.Cape_Selected);
+                }
+            else
+                {
+                    Label_Cape_Player_Attaquant_1.Content = "";
+                    Label_Cape_Player_Attaquant_1.Visibility = Visibility.Collapsed;
+                    ///win.Collect_Cape_Tv(1, "");
+            }
+            if (ID_Cape_Attaquant[1] != 0)
+            {
+                Classe_Cape ID_Cape_Selected;
+                ID_Cape_Selected = new Classe_Cape(ID_Cape_Attaquant[1], texte);
+                Label_Cape_Player_Attaquant_2.Content = ID_Cape_Selected.Cape_Selected;
+                Label_Cape_Player_Attaquant_2.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Label_Cape_Player_Attaquant_2.Content = "";
+                Label_Cape_Player_Attaquant_2.Visibility = Visibility.Collapsed;
+            }
+            if (ID_Cape_Attaquant[2] != 0)
+            {
+                Classe_Cape ID_Cape_Selected;
+                ID_Cape_Selected = new Classe_Cape(ID_Cape_Attaquant[2], texte);
+                Label_Cape_Player_Attaquant_3.Content = ID_Cape_Selected.Cape_Selected;
+                Label_Cape_Player_Attaquant_3.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Label_Cape_Player_Attaquant_3.Content = "";
+                Label_Cape_Player_Attaquant_3.Visibility = Visibility.Collapsed;
+            }
+            if (ID_Cape_Attaquant[3] != 0)
+            {
+                Classe_Cape ID_Cape_Selected;
+                ID_Cape_Selected = new Classe_Cape(ID_Cape_Attaquant[0], texte);
+                Label_Cape_Player_Attaquant_4.Content = ID_Cape_Selected.Cape_Selected;
+                Label_Cape_Player_Attaquant_4.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                Label_Cape_Player_Attaquant_4.Content = "";
+                Label_Cape_Player_Attaquant_4.Visibility = Visibility.Collapsed;
+            }
+
 
             win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);
             win.Capes_Tv();
@@ -26043,6 +26118,11 @@ namespace CPV9
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3.3);
             StackPanel_Cape_Player_1.Margin = new Thickness(3 * Rapport_Taille_X, 40 * Rapport_Taille_Y, 0, 0);
             Double z = 1.5;
+            Label_Cape_Player_Attaquant_1.FontSize = z * x;
+            Label_Cape_Player_Attaquant_2.FontSize = z * x;
+            Label_Cape_Player_Attaquant_3.FontSize = z * x;
+            Label_Cape_Player_Attaquant_4.FontSize = z * x;
+
             Label_Score_ObjP_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_1_Cape_Player_1.FontSize = z * x;
             Label_Score_ObjS_2_Cape_Player_1.FontSize = z * x;

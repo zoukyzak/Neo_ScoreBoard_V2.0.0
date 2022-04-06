@@ -28,6 +28,7 @@ namespace CPV9.Windows
         bool style_Tv = false;
 
         public int[,] _Capes_Tv = new int[3,300];
+        public string Text_Capes_Tv = "";
         public Tv()
         {
             InitializeComponent();
@@ -179,6 +180,20 @@ namespace CPV9.Windows
             Label_Score_ObjC_AdeptaS_135_Cape_Player_1.Visibility = Visibility.Collapsed;
             Label_Score_ObjC_AdeptaS_135_Cape_Player_2.Visibility = Visibility.Collapsed;
         }
+
+       /// public void Collect_Cape_Tv(int ID_Cape_Tv, string text_Cape_Tv)
+       /// {
+       ///     if (ID_Cape_Tv == 1)
+       ///     {
+       ///         Label_Tv_Cape_Player_Attaquant_1.Content = text_Cape_Tv;
+       ///         Label_Tv_Cape_Player_Attaquant_1.Visibility = Visibility.Visible;
+       ///     }
+       ///     else
+       ///     {
+       ///         Label_Tv_Cape_Player_Attaquant_1.Content = "";
+       ///         Label_Tv_Cape_Player_Attaquant_1.Visibility = Visibility.Collapsed;
+       ///     }            
+       /// }
 
         public void Actu_Tv(int Table_Tv, String Image_Pl1, String Image_Pl2, String Pseudo_P1, string Pseudo_P2, String SG_P1, string SG_P2, int Score_P1, int Score_P2)
         {
@@ -378,7 +393,6 @@ namespace CPV9.Windows
             if (Table_Tv == 2) { Table = "Highlands"; };
             if (Table_Tv == 3) { Table = "Quarantaine"; };
         }
-
         public void Round_Tv(int _Round)
         {
             TextBlock_Round.Text = Convert.ToString(_Round);

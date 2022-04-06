@@ -82,6 +82,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\Classe_Cape.cs" />
     <Compile Include="Classes\Descriptif_OBJ\Descript_OBJS.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_132.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_133.cs" />
