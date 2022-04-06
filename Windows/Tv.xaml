@@ -853,6 +853,11 @@
                 <Label x:Name="Label_Score_ObjC_AdeptaS_134_Cape_Player_1" Content="Adepta S 134-SOL SACRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
                 <Label x:Name="Label_Score_ObjC_AdeptaS_135_Cape_Player_1" Content="Adepta S 135-DEFENDEZ LE SANCTUAIRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
 
+                <Label x:Name="Label_Score_ObjC_Ork_136_Cape_Player_1" Content="Ork 136-KRAZEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Ork_137_Cape_Player_1" Content="Ork 137-LES PLUS GROS ET LES PLUS MIEUX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Ork_138_Cape_Player_1" Content="Ork 138-PRENEZ LES MORCEAUX D'CHOIX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Ork_139_Cape_Player_1" Content="Ork 139-MAREE VERTE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+            
             </StackPanel>
 
         </StackPanel>
@@ -981,6 +986,11 @@
                 <Label x:Name="Label_Score_ObjC_AdeptaS_133_Cape_Player_2" Content="Adepta S 133-TUEZ L'HERETIQUE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
                 <Label x:Name="Label_Score_ObjC_AdeptaS_134_Cape_Player_2" Content="Adepta S 134-SOL SACRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
                 <Label x:Name="Label_Score_ObjC_AdeptaS_135_Cape_Player_2" Content="Adepta S 135-DEFENDEZ LE SANCTUAIRE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+
+                <Label x:Name="Label_Score_ObjC_Ork_136_Cape_Player_2" Content="Ork 136-KRAZEZ-LES capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Ork_137_Cape_Player_2" Content="Ork 137-LES PLUS GROS ET LES PLUS MIEUX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Ork_138_Cape_Player_2" Content="Ork 138-PRENEZ LES MORCEAUX D'CHOIX capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
+                <Label x:Name="Label_Score_ObjC_Ork_139_Cape_Player_2" Content="Ork 139-MAREE VERTE capé" HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="DarkBlue" Visibility="Collapsed"/>
             </StackPanel>
 
         </StackPanel>
