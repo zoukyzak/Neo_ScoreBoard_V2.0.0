@@ -746,7 +746,7 @@
                     </TransformGroup>
                 </TextBlock.RenderTransform>
             </TextBlock>
-            <TextBlock x:Name="TextBlock_Nom_SG_1_Tv" HorizontalAlignment="Left" Margin="10,-10,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de gerre" AllowDrop="True">
+            <TextBlock x:Name="TextBlock_Nom_SG_1_Tv" HorizontalAlignment="Left" Margin="10,-20,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de gerre" AllowDrop="True">
                 <TextBlock.Foreground>
                     <RadialGradientBrush>
                         <GradientStop Color="#FFE2DA2F" Offset="0"/>

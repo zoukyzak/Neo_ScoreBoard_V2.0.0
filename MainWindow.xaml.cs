@@ -21316,7 +21316,7 @@ namespace CPV9
             TextBlock_Nom_Player_2.Margin = new Thickness(0, 10 * x, 3 * x, 0);
 
             TextBlock_Nom_SG_2.FontSize = 3 * x;
-            TextBlock_Nom_SG_2.Margin = new Thickness(0, 18 * x, 5 * x, 0);
+            TextBlock_Nom_SG_2.Margin = new Thickness(0, 15 * x, 5 * x, 0);
         }
         private void Affichage_Bouton_Pages()
         {
@@ -25938,14 +25938,14 @@ namespace CPV9
         private void Affichage_Capé()
         {
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3.3);
-            StackPanel_Cape_Player_1.Margin = new Thickness(3 * Rapport_Taille_X, 40 * Rapport_Taille_Y, 0, 0);
+            StackPanel_Cape_Player_1.Margin = new Thickness(3 * Rapport_Taille_X, 45 * Rapport_Taille_Y, 0, 0);
             Double z = 1.5;
             Label_Cape_Player_Attaquant_1.FontSize = z * x;
             Label_Cape_Player_Attaquant_2.FontSize = z * x;
             Label_Cape_Player_Attaquant_3.FontSize = z * x;
             Label_Cape_Player_Attaquant_4.FontSize = z * x;
 
-            StackPanel_Cape_Player_2.Margin = new Thickness(0, 40 * Rapport_Taille_Y, 3 * Rapport_Taille_X, 0);
+            StackPanel_Cape_Player_2.Margin = new Thickness(0, 45 * Rapport_Taille_Y, 3 * Rapport_Taille_X, 0);
             Label_Cape_Player_Defenseur_1.FontSize = z * x;
             Label_Cape_Player_Defenseur_2.FontSize = z * x;
             Label_Cape_Player_Defenseur_3.FontSize = z * x;
