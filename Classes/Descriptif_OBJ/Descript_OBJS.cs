@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CPV9.Classes
+﻿namespace CPV9.Classes
 {
     class Descript_OBJS
     {
@@ -816,35 +810,35 @@ namespace CPV9.Classes
             }
         }
 
-            private string l1;
-            private string l2;
-            private string l3;
-            private string l4;
-            private string l5;
-            private string l6;
-            private string l7;
-            private string l8;
-            private string l9;
-            private string l10;
-            private string l11;
-            private string l12;
-            private string l13;
-            private string l14;
+        private string l1;
+        private string l2;
+        private string l3;
+        private string l4;
+        private string l5;
+        private string l6;
+        private string l7;
+        private string l8;
+        private string l9;
+        private string l10;
+        private string l11;
+        private string l12;
+        private string l13;
+        private string l14;
 
-            public string L1 { get { return l1; } }
-            public string L2 { get { return l2; } }
-            public string L3 { get { return l3; } }
-            public string L4 { get { return l4; } }
-            public string L5 { get { return l5; } }
-            public string L6 { get { return l6; } }
-            public string L7 { get { return l7; } }
-            public string L8 { get { return l8; } }
-            public string L9 { get { return l9; } }
-            public string L10 { get { return l10; } }
-            public string L11 { get { return l11; } }
-            public string L12 { get { return l12; } }
-            public string L13 { get { return l13; } }
-            public string L14 { get { return l14; } }
+        public string L1 { get { return l1; } }
+        public string L2 { get { return l2; } }
+        public string L3 { get { return l3; } }
+        public string L4 { get { return l4; } }
+        public string L5 { get { return l5; } }
+        public string L6 { get { return l6; } }
+        public string L7 { get { return l7; } }
+        public string L8 { get { return l8; } }
+        public string L9 { get { return l9; } }
+        public string L10 { get { return l10; } }
+        public string L11 { get { return l11; } }
+        public string L12 { get { return l12; } }
+        public string L13 { get { return l13; } }
+        public string L14 { get { return l14; } }
     }
-    }
+}
 

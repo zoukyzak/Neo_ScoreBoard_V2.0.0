@@ -32,8 +32,7 @@ namespace CPV9.Classes
                 if (Donnée2 == "true") { compta++;  };
                 if (Donnée3 == "true") { compta++;  };
             if (compta == 1) { Score += 3; };
-            if (compta > 1) { Score += 5; };
-            
+            if (compta > 1) { Score += 5; };            
         }
     }
 }

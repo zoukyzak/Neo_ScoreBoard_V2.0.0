@@ -855,7 +855,7 @@ namespace CPV9
         public string CheckBox_Objectif_Sec_Att_130_R3_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_130_R4_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_130_R5_Etat = "false";
-                                                 
+
         public string CheckBox_Objectif_Sec_Def_130_R1_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_130_R2_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_130_R3_Etat = "false";
@@ -1131,7 +1131,7 @@ namespace CPV9
             Button_Obj_Codex_Ork_138_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Ork_139_Att.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Ork_139_Def.Visibility = Visibility.Collapsed;
-           
+
             Label_Objectif_Principal_Att_message.Visibility = Visibility.Collapsed;
             Label_Objectif_Principal_Def_message.Visibility = Visibility.Collapsed;
             TextBlock_Nom_Player_1.Visibility = Visibility.Collapsed;
@@ -1145,7 +1145,7 @@ namespace CPV9
             StackPanel_Cape_Player_1.Visibility = Visibility.Collapsed;
             StackPanel_Cape_Player_2.Visibility = Visibility.Collapsed;
             StackPanel_Valid_Choix_ObjS_Att.Visibility = Visibility.Collapsed;
-            StackPanel_Valid_Choix_ObjS_Def.Visibility = Visibility.Collapsed;            
+            StackPanel_Valid_Choix_ObjS_Def.Visibility = Visibility.Collapsed;
 
             StackPanel_Obj_FIG_Att.Visibility = Visibility.Collapsed;
             StackPanel_Obj_FIG_Def.Visibility = Visibility.Collapsed;
@@ -1306,7 +1306,7 @@ namespace CPV9
                     Mem_Saisie_Defenseur[i, t] = "0";
                 }
             }
-            
+
             TextBlock_ObjS_Att_1.Text = null;
             TextBlock_ObjS_Att_2.Text = null;
             TextBlock_ObjS_Att_3.Text = null;
@@ -1389,7 +1389,7 @@ namespace CPV9
             CheckBox_ObjS_7_Att_Unité_1_Spit.IsChecked = false;
             CheckBox_ObjS_7_Att_Unité_2_Spit.IsChecked = false;
             CheckBox_ObjS_7_Att_Unité_3_Spit.IsChecked = false;
-            
+
             /// OBJECTIF SECONDAIRE 9 : SUR TOUS LES FRONTS
             TextBox_ObjS_9_Att_R1.Clear();
             TextBox_ObjS_9_Att_R2.Clear();
@@ -1660,6 +1660,11 @@ namespace CPV9
             CheckBox_Objectif_Sec_Att_137_C4.IsChecked = false;
             CheckBox_Objectif_Sec_Att_137_C5.IsChecked = false;
 
+            /// OBJECTIF SECONDAIRE 138PRENEZ LES MORCEAUX D'CHOIX
+            TextBox_ObjS_138_Att_T2.Clear();
+            TextBox_ObjS_138_Att_T3.Clear();
+            TextBox_ObjS_138_Att_T4.Clear();
+            TextBox_ObjS_138_Att_T5.Clear();
             #endregion
             #endregion
             #region INIT_OBJ_ATTAQUANT_FORMAT
@@ -1956,7 +1961,7 @@ namespace CPV9
             CheckBox_ObjS_7_Def_Unité_1_Spit.IsChecked = false;
             CheckBox_ObjS_7_Def_Unité_2_Spit.IsChecked = false;
             CheckBox_ObjS_7_Def_Unité_3_Spit.IsChecked = false;
-            
+
             /// OBJECTIF SECONDAIRE 9 : SUR TOUS LES FRONTS
             TextBox_ObjS_9_Def_R1.Clear();
             TextBox_ObjS_9_Def_R2.Clear();
@@ -2225,6 +2230,12 @@ namespace CPV9
             CheckBox_Objectif_Sec_Def_137_C3.IsChecked = false;
             CheckBox_Objectif_Sec_Def_137_C4.IsChecked = false;
             CheckBox_Objectif_Sec_Def_137_C5.IsChecked = false;
+
+            /// OBJECTIF SECONDAIRE 138PRENEZ LES MORCEAUX D'CHOIX
+            TextBox_ObjS_138_Def_T2.Clear();
+            TextBox_ObjS_138_Def_T3.Clear();
+            TextBox_ObjS_138_Def_T4.Clear();
+            TextBox_ObjS_138_Def_T5.Clear();
             #endregion
             #endregion
             #region INIT_OBJ_DEFENSEUR_FORMAT
@@ -2832,7 +2843,7 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 29] = CheckBox_ObjS_1023_Att_T4_D_Etat; n++;
             Mem_Saisie_Attaquant[n, 29] = CheckBox_ObjS_1023_Att_T5_B_Etat; n++;
             Mem_Saisie_Attaquant[n, 29] = CheckBox_ObjS_1023_Att_T5_C_Etat; n++;
-            Mem_Saisie_Attaquant[n, 29] = CheckBox_ObjS_1023_Att_T5_D_Etat; 
+            Mem_Saisie_Attaquant[n, 29] = CheckBox_ObjS_1023_Att_T5_D_Etat;
 
             /// OBJECTIF SECONDAIRE 1031 : TELECHARGER LE DATA-SPAUME
             Mem_Saisie_Attaquant[0, 30] = TextBox_ObjS_1031_Att_T2.Text;
@@ -3245,6 +3256,12 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 76] = CheckBox_Objectif_Sec_Att_137_C3_Etat; n++;
             Mem_Saisie_Attaquant[n, 76] = CheckBox_Objectif_Sec_Att_137_C4_Etat; n++;
             Mem_Saisie_Attaquant[n, 76] = CheckBox_Objectif_Sec_Att_137_C5_Etat;
+            /// OBJECTIF SECONDAIRE 138
+            n = 0;
+            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T2.Text; n++;
+            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T3.Text; n++;
+            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T4.Text; n++;
+            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T5.Text;
             #endregion
             #endregion
             #endregion
@@ -3419,21 +3436,21 @@ namespace CPV9
             Mem_Saisie_Defenseur[4, 26] = CheckBox_ObjS_1013_Def_T5_Etat;
             /// OBJECTIF SECONDAIRE 1021 : LA SAGESSE EST LE PILIER DE LA FOI
             n = 0;
-            Mem_Saisie_Defenseur[n, 27] =   CheckBox_ObjS_1021_Def_T1A_Etat; n++;
+            Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T1A_Etat; n++;
             Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T1B_Etat; n++;
-            Mem_Saisie_Defenseur[n, 27] =  TextBox_ObjS_1021_Def_T1.Text; n++;
-            Mem_Saisie_Defenseur[n, 27] =   CheckBox_ObjS_1021_Def_T2A_Etat; n++;
+            Mem_Saisie_Defenseur[n, 27] = TextBox_ObjS_1021_Def_T1.Text; n++;
+            Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T2A_Etat; n++;
             Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T2B_Etat; n++;
-            Mem_Saisie_Defenseur[n, 27] =  TextBox_ObjS_1021_Def_T2.Text; n++;
-            Mem_Saisie_Defenseur[n, 27] =   CheckBox_ObjS_1021_Def_T3A_Etat; n++;
+            Mem_Saisie_Defenseur[n, 27] = TextBox_ObjS_1021_Def_T2.Text; n++;
+            Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T3A_Etat; n++;
             Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T3B_Etat; n++;
-            Mem_Saisie_Defenseur[n, 27] =  TextBox_ObjS_1021_Def_T3.Text; n++;
-            Mem_Saisie_Defenseur[n, 27] =   CheckBox_ObjS_1021_Def_T4A_Etat; n++;
+            Mem_Saisie_Defenseur[n, 27] = TextBox_ObjS_1021_Def_T3.Text; n++;
+            Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T4A_Etat; n++;
             Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T4B_Etat; n++;
-            Mem_Saisie_Defenseur[n, 27] =  TextBox_ObjS_1021_Def_T4.Text; n++;
-            Mem_Saisie_Defenseur[n, 27] =   CheckBox_ObjS_1021_Def_T5A_Etat; n++;
+            Mem_Saisie_Defenseur[n, 27] = TextBox_ObjS_1021_Def_T4.Text; n++;
+            Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T5A_Etat; n++;
             Mem_Saisie_Defenseur[n, 27] = CheckBox_ObjS_1021_Def_T5B_Etat; n++;
-            Mem_Saisie_Defenseur[n, 27] =  TextBox_ObjS_1021_Def_T5.Text;
+            Mem_Saisie_Defenseur[n, 27] = TextBox_ObjS_1021_Def_T5.Text;
             /// OBJECTIF SECONDAIRE 1022 : ASCENSION
             n = 0;
             Mem_Saisie_Defenseur[n, 28] = CheckBox_ObjS_1022_Def_T1_Obj_Etat; n++;
@@ -3868,6 +3885,12 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 76] = CheckBox_Objectif_Sec_Def_137_C3_Etat; n++;
             Mem_Saisie_Defenseur[n, 76] = CheckBox_Objectif_Sec_Def_137_C4_Etat; n++;
             Mem_Saisie_Defenseur[n, 76] = CheckBox_Objectif_Sec_Def_137_C5_Etat;
+            /// OBJECTIF SECONDAIRE 138
+            n = 0;
+            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T2.Text; n++;
+            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T3.Text; n++;
+            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T4.Text; n++;
+            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T5.Text;
             #endregion
             #endregion
             #endregion
@@ -3895,7 +3918,7 @@ namespace CPV9
             TextBox_ObjS_1_Att.Text = Mem_Saisie_Attaquant[0, 1];
             CheckBox_ObjS_1_Att_SG_Etat = Mem_Saisie_Attaquant[1, 1];
             if (CheckBox_ObjS_1_Att_SG_Etat == "true")
-            {                       
+            {
                 CheckBox_ObjS_1_Att_SG.IsChecked = true;
             }
             /// OBJECTIF SECONDAIRE 2 : ABATTEZ LE
@@ -4253,7 +4276,7 @@ namespace CPV9
             if (CheckBox_ObjS_1011_Att_T1B_Etat == "true")
             {
                 CheckBox_ObjS_1011_Att_T1B.IsChecked = true;
-            }            
+            }
             if (CheckBox_ObjS_1011_Att_T2A_Etat == "true")
             {
                 CheckBox_ObjS_1011_Att_T2A.IsChecked = true;
@@ -4335,7 +4358,7 @@ namespace CPV9
             CheckBox_ObjS_1022_Att_T3_Obj_Etat = Mem_Saisie_Attaquant[n, 28]; n++;
             CheckBox_ObjS_1022_Att_T4_Obj_Etat = Mem_Saisie_Attaquant[n, 28]; n++;
             CheckBox_ObjS_1022_Att_T5_Obj_Etat = Mem_Saisie_Attaquant[n, 28]; n++;
-            CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat =  Mem_Saisie_Attaquant[n, 28]; n++;
+            CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat = Mem_Saisie_Attaquant[n, 28]; n++;
             CheckBox_ObjS_1022_Att_FIN_SG_Adverse_Etat = Mem_Saisie_Attaquant[n, 28];
             if (CheckBox_ObjS_1022_Att_T1_Obj_Etat == "true") { CheckBox_ObjS_1022_Att_T1_Obj.IsChecked = true; };
             if (CheckBox_ObjS_1022_Att_T2_Obj_Etat == "true") { CheckBox_ObjS_1022_Att_T2_Obj.IsChecked = true; };
@@ -4362,7 +4385,7 @@ namespace CPV9
             CheckBox_ObjS_1023_Att_T5_B_Etat = Mem_Saisie_Attaquant[n, 29]; n++;
             CheckBox_ObjS_1023_Att_T5_C_Etat = Mem_Saisie_Attaquant[n, 29]; n++;
             CheckBox_ObjS_1023_Att_T5_D_Etat = Mem_Saisie_Attaquant[n, 29];
-            
+
             if (CheckBox_ObjS_1023_Att_T1_B_Etat == "true")
             {
                 CheckBox_ObjS_1023_Att_T1_B.IsChecked = true;
@@ -4375,7 +4398,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Att_T1_D.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Att_T2_B_Etat == "true")
             {
                 CheckBox_ObjS_1023_Att_T2_B.IsChecked = true;
@@ -4388,7 +4411,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Att_T2_D.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Att_T3_B_Etat == "true")
             {
                 CheckBox_ObjS_1023_Att_T3_B.IsChecked = true;
@@ -4401,7 +4424,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Att_T3_D.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Att_T4_B_Etat == "true")
             {
                 CheckBox_ObjS_1023_Att_T4_B.IsChecked = true;
@@ -4414,7 +4437,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Att_T4_D.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Att_T5_B_Etat == "true")
             {
                 CheckBox_ObjS_1023_Att_T5_B.IsChecked = true;
@@ -4509,11 +4532,11 @@ namespace CPV9
 
             /// OBJECTIF SECONDAIRE 2021 : SECURISER LES SANCTUAIRES
             n = 0;
-            CheckBox_ObjS_2021_Att_T1_Etat = Mem_Saisie_Attaquant[n, 36];n++;
-            CheckBox_ObjS_2021_Att_T2_Etat = Mem_Saisie_Attaquant[n, 36];n++;
-            CheckBox_ObjS_2021_Att_T3_Etat = Mem_Saisie_Attaquant[n, 36];n++;
-            CheckBox_ObjS_2021_Att_T4_Etat = Mem_Saisie_Attaquant[n, 36];n++;
-            CheckBox_ObjS_2021_Att_T5_Etat = Mem_Saisie_Attaquant[n, 36];n++;
+            CheckBox_ObjS_2021_Att_T1_Etat = Mem_Saisie_Attaquant[n, 36]; n++;
+            CheckBox_ObjS_2021_Att_T2_Etat = Mem_Saisie_Attaquant[n, 36]; n++;
+            CheckBox_ObjS_2021_Att_T3_Etat = Mem_Saisie_Attaquant[n, 36]; n++;
+            CheckBox_ObjS_2021_Att_T4_Etat = Mem_Saisie_Attaquant[n, 36]; n++;
+            CheckBox_ObjS_2021_Att_T5_Etat = Mem_Saisie_Attaquant[n, 36]; n++;
             CheckBox_ObjS_2021_Att_Fin_Etat = Mem_Saisie_Attaquant[n, 36];
             if (CheckBox_ObjS_2021_Att_T1_Etat == "true")
             {
@@ -4558,19 +4581,19 @@ namespace CPV9
             CheckBox_ObjS_2022_Att_T5_NML_Etat = Mem_Saisie_Attaquant[n, 37]; n++;
             CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = Mem_Saisie_Attaquant[n, 37];
             if (CheckBox_ObjS_2022_Att_T1_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked = true; };
-            if (CheckBox_ObjS_2022_Att_T1_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T1_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T1_NML_Etat == "true") { CheckBox_ObjS_2022_Att_T1_NML.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T1_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T2_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked = true; };
-            if (CheckBox_ObjS_2022_Att_T2_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T2_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T2_NML_Etat == "true") { CheckBox_ObjS_2022_Att_T2_NML.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T2_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T3_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked = true; };
-            if (CheckBox_ObjS_2022_Att_T3_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T3_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T3_NML_Etat == "true") { CheckBox_ObjS_2022_Att_T3_NML.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T3_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T4_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked = true; };
-            if (CheckBox_ObjS_2022_Att_T4_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T4_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T4_NML_Etat == "true") { CheckBox_ObjS_2022_Att_T4_NML.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T4_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T5_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked = true; };
-            if (CheckBox_ObjS_2022_Att_T5_NML_Etat == "true")  { CheckBox_ObjS_2022_Att_T5_NML.IsChecked = true; };
+            if (CheckBox_ObjS_2022_Att_T5_NML_Etat == "true") { CheckBox_ObjS_2022_Att_T5_NML.IsChecked = true; };
             if (CheckBox_ObjS_2022_Att_T5_ZDDA_Etat == "true") { CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked = true; };
 
             /// OBJECTIF SECONDAIRE 2023 : SCAN STRATEGIQUE
@@ -4630,10 +4653,10 @@ namespace CPV9
             if (CheckBox_ObjS_2032_Att_Obj3_Etat == "true") { CheckBox_ObjS_2032_Att_Obj3.IsChecked = true; };
             if (CheckBox_ObjS_2032_Att_Obj4_Etat == "true") { CheckBox_ObjS_2032_Att_Obj4.IsChecked = true; };
             if (CheckBox_ObjS_2032_Att_Obj5_Etat == "true") { CheckBox_ObjS_2032_Att_Obj5.IsChecked = true; };
-            if (CheckBox_ObjS_2032_Att_E1_Etat == "true") { CheckBox_ObjS_2032_Att_E1.IsChecked = true; };                         
-            if (CheckBox_ObjS_2032_Att_E2_Etat == "true") { CheckBox_ObjS_2032_Att_E2.IsChecked = true; };                        
-            if (CheckBox_ObjS_2032_Att_E3_Etat == "true") { CheckBox_ObjS_2032_Att_E3.IsChecked = true; };                
-            if (CheckBox_ObjS_2032_Att_E4_Etat == "true") { CheckBox_ObjS_2032_Att_E4.IsChecked = true; };                        
+            if (CheckBox_ObjS_2032_Att_E1_Etat == "true") { CheckBox_ObjS_2032_Att_E1.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_E2_Etat == "true") { CheckBox_ObjS_2032_Att_E2.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_E3_Etat == "true") { CheckBox_ObjS_2032_Att_E3.IsChecked = true; };
+            if (CheckBox_ObjS_2032_Att_E4_Etat == "true") { CheckBox_ObjS_2032_Att_E4.IsChecked = true; };
             if (CheckBox_ObjS_2032_Att_E5_Etat == "true") { CheckBox_ObjS_2032_Att_E5.IsChecked = true; };
 
             /// OBJECTIF SECONDAIRE 2033 : ARTEFACTS PRECIEUX
@@ -5222,12 +5245,12 @@ namespace CPV9
                 CheckBox_Objectif_Sec_Att_131_R5.Visibility = Visibility.Visible;
                 CheckBox_Objectif_Sec_Att_131_R6.Visibility = Visibility.Visible;
             }
-            if (CheckBox_Objectif_Sec_Att_131_R1_Etat == "true"){CheckBox_Objectif_Sec_Att_131_R1.IsChecked = true;};
-            if (CheckBox_Objectif_Sec_Att_131_R2_Etat == "true"){CheckBox_Objectif_Sec_Att_131_R2.IsChecked = true;};
-            if (CheckBox_Objectif_Sec_Att_131_R3_Etat == "true"){CheckBox_Objectif_Sec_Att_131_R3.IsChecked = true;};
-            if (CheckBox_Objectif_Sec_Att_131_R4_Etat == "true"){CheckBox_Objectif_Sec_Att_131_R4.IsChecked = true;};
-            if (CheckBox_Objectif_Sec_Att_131_R5_Etat == "true"){CheckBox_Objectif_Sec_Att_131_R5.IsChecked = true;};
-            if (CheckBox_Objectif_Sec_Att_131_R6_Etat == "true"){CheckBox_Objectif_Sec_Att_131_R6.IsChecked = true;};
+            if (CheckBox_Objectif_Sec_Att_131_R1_Etat == "true") { CheckBox_Objectif_Sec_Att_131_R1.IsChecked = true; };
+            if (CheckBox_Objectif_Sec_Att_131_R2_Etat == "true") { CheckBox_Objectif_Sec_Att_131_R2.IsChecked = true; };
+            if (CheckBox_Objectif_Sec_Att_131_R3_Etat == "true") { CheckBox_Objectif_Sec_Att_131_R3.IsChecked = true; };
+            if (CheckBox_Objectif_Sec_Att_131_R4_Etat == "true") { CheckBox_Objectif_Sec_Att_131_R4.IsChecked = true; };
+            if (CheckBox_Objectif_Sec_Att_131_R5_Etat == "true") { CheckBox_Objectif_Sec_Att_131_R5.IsChecked = true; };
+            if (CheckBox_Objectif_Sec_Att_131_R6_Etat == "true") { CheckBox_Objectif_Sec_Att_131_R6.IsChecked = true; };
 
 
             #endregion
@@ -5280,18 +5303,18 @@ namespace CPV9
 
             /// OBJECTIF SECONDAIRE 134
             n = 0;
-             CheckBox_Objectif_Sec_Att_134_1ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_2ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_3ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_4ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_5ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_6ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_OBJ1_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_OBJ2_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_OBJ3_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_OBJ4_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_OBJ5_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
-             CheckBox_Objectif_Sec_Att_134_OBJ6_Etat = Mem_Saisie_Attaquant[n, 73];
+            CheckBox_Objectif_Sec_Att_134_1ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_2ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_3ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_4ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_5ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_6ZDD_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_OBJ1_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_OBJ2_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_OBJ3_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_OBJ4_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_OBJ5_Etat = Mem_Saisie_Attaquant[n, 73]; n++;
+            CheckBox_Objectif_Sec_Att_134_OBJ6_Etat = Mem_Saisie_Attaquant[n, 73];
             if (CheckBox_Objectif_Sec_Att_134_1ZDD_Etat == "true") { CheckBox_Objectif_Sec_Att_134_1ZDD.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_134_2ZDD_Etat == "true") { CheckBox_Objectif_Sec_Att_134_2ZDD.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_134_3ZDD_Etat == "true") { CheckBox_Objectif_Sec_Att_134_3ZDD.IsChecked = true; };
@@ -5339,7 +5362,7 @@ namespace CPV9
             TextBox_ObjS_136_Att_A4.Text = Mem_Saisie_Attaquant[n, 75]; n++;
             TextBox_ObjS_136_Att_E5.Text = Mem_Saisie_Attaquant[n, 75]; n++;
             TextBox_ObjS_136_Att_A5.Text = Mem_Saisie_Attaquant[n, 75];
-            
+
             /// OBJECTIF SECONDAIRE 137
             n = 0;
             CheckBox_Objectif_Sec_Att_137_A1_Etat = Mem_Saisie_Attaquant[n, 76]; n++;
@@ -5372,6 +5395,12 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Att_137_C3_Etat == "true") { CheckBox_Objectif_Sec_Att_137_C3.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_137_C4_Etat == "true") { CheckBox_Objectif_Sec_Att_137_C4.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_137_C5_Etat == "true") { CheckBox_Objectif_Sec_Att_137_C5.IsChecked = true; };
+            /// OBJECTIF SECONDAIRE 138
+            n = 0;
+            TextBox_ObjS_138_Att_T2.Text = Mem_Saisie_Attaquant[n, 77]; n++;
+            TextBox_ObjS_138_Att_T3.Text = Mem_Saisie_Attaquant[n, 77]; n++;
+            TextBox_ObjS_138_Att_T4.Text = Mem_Saisie_Attaquant[n, 77]; n++;
+            TextBox_ObjS_138_Att_T5.Text = Mem_Saisie_Attaquant[n, 77];
             #endregion
             #endregion
 
@@ -5808,19 +5837,19 @@ namespace CPV9
             n = 0;
             CheckBox_ObjS_1021_Def_T1A_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T1B_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
-             TextBox_ObjS_1021_Def_T1.Text =  Mem_Saisie_Defenseur[n, 27]; n++;
+            TextBox_ObjS_1021_Def_T1.Text = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T2A_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T2B_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
-             TextBox_ObjS_1021_Def_T2.Text =  Mem_Saisie_Defenseur[n, 27]; n++;
+            TextBox_ObjS_1021_Def_T2.Text = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T3A_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T3B_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
-             TextBox_ObjS_1021_Def_T3.Text =  Mem_Saisie_Defenseur[n, 27]; n++;
+            TextBox_ObjS_1021_Def_T3.Text = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T4A_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T4B_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
-             TextBox_ObjS_1021_Def_T4.Text =  Mem_Saisie_Defenseur[n, 27]; n++;
+            TextBox_ObjS_1021_Def_T4.Text = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T5A_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
             CheckBox_ObjS_1021_Def_T5B_Etat = Mem_Saisie_Defenseur[n, 27]; n++;
-             TextBox_ObjS_1021_Def_T5.Text =  Mem_Saisie_Defenseur[n, 27];
+            TextBox_ObjS_1021_Def_T5.Text = Mem_Saisie_Defenseur[n, 27];
             if (CheckBox_ObjS_1021_Def_T1A_Etat == "true") { CheckBox_ObjS_1021_Def_T1A.IsChecked = true; };
             if (CheckBox_ObjS_1021_Def_T1B_Etat == "true") { CheckBox_ObjS_1021_Def_T1B.IsChecked = true; };
             if (CheckBox_ObjS_1021_Def_T2A_Etat == "true") { CheckBox_ObjS_1021_Def_T2A.IsChecked = true; };
@@ -5877,7 +5906,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Def_T1_C.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Def_T2_A_Etat == "true")
             {
                 CheckBox_ObjS_1023_Def_T2_A.IsChecked = true;
@@ -5890,7 +5919,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Def_T2_C.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Def_T3_A_Etat == "true")
             {
                 CheckBox_ObjS_1023_Def_T3_A.IsChecked = true;
@@ -5903,7 +5932,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Def_T3_C.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Def_T4_A_Etat == "true")
             {
                 CheckBox_ObjS_1023_Def_T4_A.IsChecked = true;
@@ -5916,7 +5945,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Def_T4_C.IsChecked = true;
             }
-            
+
             if (CheckBox_ObjS_1023_Def_T5_A_Etat == "true")
             {
                 CheckBox_ObjS_1023_Def_T5_A.IsChecked = true;
@@ -5929,7 +5958,7 @@ namespace CPV9
             {
                 CheckBox_ObjS_1023_Def_T5_C.IsChecked = true;
             }
-            
+
             /// OBJECTIF SECONDAIRE 1031 : TELECHARGER LE DATA-SPAUME
             TextBox_ObjS_1031_Def_T2.Text = Mem_Saisie_Defenseur[0, 30];
             TextBox_ObjS_1031_Def_T3.Text = Mem_Saisie_Defenseur[1, 30];
@@ -6044,19 +6073,19 @@ namespace CPV9
             /// OBJECTIF SECONDAIRE 2022 : SOL CORROMPU
             n = 0;
             CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
-            CheckBox_ObjS_2022_Def_T1_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T1_NML_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
-            CheckBox_ObjS_2022_Def_T2_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T2_NML_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
-            CheckBox_ObjS_2022_Def_T3_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T3_NML_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
-            CheckBox_ObjS_2022_Def_T4_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T4_NML_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
-            CheckBox_ObjS_2022_Def_T5_NML_Etat =  Mem_Saisie_Defenseur[n, 37]; n++;
+            CheckBox_ObjS_2022_Def_T5_NML_Etat = Mem_Saisie_Defenseur[n, 37]; n++;
             CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = Mem_Saisie_Defenseur[n, 37];
             if (CheckBox_ObjS_2022_Def_T1_ZDDE_Etat == "true") { CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked = true; };
             if (CheckBox_ObjS_2022_Def_T1_NML_Etat == "true") { CheckBox_ObjS_2022_Def_T1_NML.IsChecked = true; };
@@ -6682,7 +6711,7 @@ namespace CPV9
             if (TextBox_ObjS_130_Def_R4.Text == "")
             {
                 CheckBox_Objectif_Sec_Def_130_R4.Visibility = Visibility.Hidden;
-            }                      
+            }
             if (TextBox_ObjS_130_Def_R4.Text != "" && CheckBox_Objectif_Sec_Def_130_R4_Etat == "true")
             {
                 CheckBox_Objectif_Sec_Def_130_R4.IsChecked = true;
@@ -6692,7 +6721,7 @@ namespace CPV9
             if (TextBox_ObjS_130_Def_R5.Text == "")
             {
                 CheckBox_Objectif_Sec_Def_130_R5.Visibility = Visibility.Hidden;
-            }                      
+            }
             if (TextBox_ObjS_130_Def_R5.Text != "" && CheckBox_Objectif_Sec_Def_130_R5_Etat == "true")
             {
                 CheckBox_Objectif_Sec_Def_130_R5.IsChecked = true;
@@ -6867,6 +6896,12 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_137_C3_Etat == "true") { CheckBox_Objectif_Sec_Def_137_C3.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Def_137_C4_Etat == "true") { CheckBox_Objectif_Sec_Def_137_C4.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Def_137_C5_Etat == "true") { CheckBox_Objectif_Sec_Def_137_C5.IsChecked = true; };
+            /// OBJECTIF SECONDAIRE 138
+            n = 0;
+            TextBox_ObjS_138_Def_T2.Text = Mem_Saisie_Defenseur[n, 77]; n++;
+            TextBox_ObjS_138_Def_T3.Text = Mem_Saisie_Defenseur[n, 77]; n++;
+            TextBox_ObjS_138_Def_T4.Text = Mem_Saisie_Defenseur[n, 77]; n++;
+            TextBox_ObjS_138_Def_T5.Text = Mem_Saisie_Defenseur[n, 77];
 
             #endregion
             #endregion
@@ -6950,8 +6985,8 @@ namespace CPV9
             if (format == 1011)
             {
                 Image_1011.Width = this.Width;
-                Image_1011.Height =this.Height;
-                Image_1011.Visibility = Visibility.Visible;                
+                Image_1011.Height = this.Height;
+                Image_1011.Visibility = Visibility.Visible;
             }
             if (format == 1012)
             {
@@ -7339,7 +7374,7 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 5 || Choix_ObjS_Attaquant[1] == 5 || Choix_ObjS_Attaquant[2] == 5) { StackPanel_ObjS_5_Att.Visibility = Visibility.Visible; oeil_OBJS_5_Att(); };
             if (Choix_ObjS_Attaquant[0] == 6 || Choix_ObjS_Attaquant[1] == 6 || Choix_ObjS_Attaquant[2] == 6) { StackPanel_ObjS_6_Att.Visibility = Visibility.Visible; oeil_OBJS_6_Att(); };
             if (Choix_ObjS_Attaquant[0] == 7 || Choix_ObjS_Attaquant[1] == 7 || Choix_ObjS_Attaquant[2] == 7) { StackPanel_ObjS_7_Att.Visibility = Visibility.Visible; oeil_OBJS_7_Att(); };
-            
+
             if (Choix_ObjS_Attaquant[0] == 9 || Choix_ObjS_Attaquant[1] == 9 || Choix_ObjS_Attaquant[2] == 9) { StackPanel_ObjS_9_Att.Visibility = Visibility.Visible; oeil_OBJS_9_Att(); };
             if (Choix_ObjS_Attaquant[0] == 10 || Choix_ObjS_Attaquant[1] == 10 || Choix_ObjS_Attaquant[2] == 10) { StackPanel_ObjS_10_Att.Visibility = Visibility.Visible; oeil_OBJS_10_Att(); };
             if (Choix_ObjS_Attaquant[0] == 11 || Choix_ObjS_Attaquant[1] == 11 || Choix_ObjS_Attaquant[2] == 11) { StackPanel_ObjS_11_Att.Visibility = Visibility.Visible; oeil_OBJS_11_Att(); };
@@ -7386,7 +7421,7 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 135 || Choix_ObjS_Attaquant[1] == 135 || Choix_ObjS_Attaquant[2] == 135) { StackPanel_ObjS_135_Att.Visibility = Visibility.Visible; oeil_OBJS_135_Att(); };
             if (Choix_ObjS_Attaquant[0] == 136 || Choix_ObjS_Attaquant[1] == 136 || Choix_ObjS_Attaquant[2] == 136) { StackPanel_ObjS_136_Att.Visibility = Visibility.Visible; oeil_OBJS_136_Att(); };
             if (Choix_ObjS_Attaquant[0] == 137 || Choix_ObjS_Attaquant[1] == 137 || Choix_ObjS_Attaquant[2] == 137) { StackPanel_ObjS_137_Att.Visibility = Visibility.Visible; oeil_OBJS_137_Att(); };
-            ///if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { StackPanel_ObjS_138_Att.Visibility = Visibility.Visible; oeil_OBJS_138_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { StackPanel_ObjS_138_Att.Visibility = Visibility.Visible; oeil_OBJS_138_Att(); };
             ///if (Choix_ObjS_Attaquant[0] == 139 || Choix_ObjS_Attaquant[1] == 139 || Choix_ObjS_Attaquant[2] == 139) { StackPanel_ObjS_139_Att.Visibility = Visibility.Visible; oeil_OBJS_139_Att(); };
             if (Choix_ObjS_Attaquant[0] == 501 || Choix_ObjS_Attaquant[1] == 501 || Choix_ObjS_Attaquant[2] == 501) { StackPanel_ObjS_501_Att.Visibility = Visibility.Visible; oeil_OBJS_501_Att(); };
             if (Choix_ObjS_Attaquant[0] == 502 || Choix_ObjS_Attaquant[1] == 502 || Choix_ObjS_Attaquant[2] == 502) { StackPanel_ObjS_502_Att.Visibility = Visibility.Visible; oeil_OBJS_502_Att(); };
@@ -7466,7 +7501,7 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 5 || Choix_ObjS_Defenseur[1] == 5 || Choix_ObjS_Defenseur[2] == 5) { StackPanel_ObjS_5_Def.Visibility = Visibility.Visible; oeil_OBJS_5_Def(); };
             if (Choix_ObjS_Defenseur[0] == 6 || Choix_ObjS_Defenseur[1] == 6 || Choix_ObjS_Defenseur[2] == 6) { StackPanel_ObjS_6_Def.Visibility = Visibility.Visible; oeil_OBJS_6_Def(); };
             if (Choix_ObjS_Defenseur[0] == 7 || Choix_ObjS_Defenseur[1] == 7 || Choix_ObjS_Defenseur[2] == 7) { StackPanel_ObjS_7_Def.Visibility = Visibility.Visible; oeil_OBJS_7_Def(); };
-            
+
             if (Choix_ObjS_Defenseur[0] == 9 || Choix_ObjS_Defenseur[1] == 9 || Choix_ObjS_Defenseur[2] == 9) { StackPanel_ObjS_9_Def.Visibility = Visibility.Visible; oeil_OBJS_9_Def(); };
             if (Choix_ObjS_Defenseur[0] == 10 || Choix_ObjS_Defenseur[1] == 10 || Choix_ObjS_Defenseur[2] == 10) { StackPanel_ObjS_10_Def.Visibility = Visibility.Visible; oeil_OBJS_10_Def(); };
             if (Choix_ObjS_Defenseur[0] == 11 || Choix_ObjS_Defenseur[1] == 11 || Choix_ObjS_Defenseur[2] == 11) { StackPanel_ObjS_11_Def.Visibility = Visibility.Visible; oeil_OBJS_11_Def(); };
@@ -7513,7 +7548,7 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 135 || Choix_ObjS_Defenseur[1] == 135 || Choix_ObjS_Defenseur[2] == 135) { StackPanel_ObjS_135_Def.Visibility = Visibility.Visible; oeil_OBJS_135_Def(); };
             if (Choix_ObjS_Defenseur[0] == 136 || Choix_ObjS_Defenseur[1] == 136 || Choix_ObjS_Defenseur[2] == 136) { StackPanel_ObjS_136_Def.Visibility = Visibility.Visible; oeil_OBJS_136_Def(); };
             if (Choix_ObjS_Defenseur[0] == 137 || Choix_ObjS_Defenseur[1] == 137 || Choix_ObjS_Defenseur[2] == 137) { StackPanel_ObjS_137_Def.Visibility = Visibility.Visible; oeil_OBJS_137_Def(); };
-            ///if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { StackPanel_ObjS_138_Def.Visibility = Visibility.Visible; oeil_OBJS_138_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { StackPanel_ObjS_138_Def.Visibility = Visibility.Visible; oeil_OBJS_138_Def(); };
             ///if (Choix_ObjS_Defenseur[0] == 139 || Choix_ObjS_Defenseur[1] == 139 || Choix_ObjS_Defenseur[2] == 139) { StackPanel_ObjS_139_Def.Visibility = Visibility.Visible; oeil_OBJS_139_Def(); };
             if (Choix_ObjS_Defenseur[0] == 501 || Choix_ObjS_Defenseur[1] == 501 || Choix_ObjS_Defenseur[2] == 501) { StackPanel_ObjS_501_Def.Visibility = Visibility.Visible; oeil_OBJS_501_Def(); };
             if (Choix_ObjS_Defenseur[0] == 502 || Choix_ObjS_Defenseur[1] == 502 || Choix_ObjS_Defenseur[2] == 502) { StackPanel_ObjS_502_Def.Visibility = Visibility.Visible; oeil_OBJS_502_Def(); };
@@ -9144,7 +9179,7 @@ namespace CPV9
                     int dé_Dizaine;
                     int dé_Unité;
                     dé_Dizaine = (Convert.ToInt16(TextBox_Map_A.Text) / 10);
-                    dé_Unité = (Convert.ToInt16(TextBox_Map_A.Text) - (dé_Dizaine * 10)) ;
+                    dé_Unité = (Convert.ToInt16(TextBox_Map_A.Text) - (dé_Dizaine * 10));
                     dé_Dizaine = D3(dé_Dizaine);
                     dé_Unité = D3(dé_Unité);
                     map = (dé_Dizaine * 10) + dé_Unité;
@@ -9355,7 +9390,7 @@ namespace CPV9
         /// 4-operations clandestines
         /// 5-art du warp
         /// 
-        
+
         ///Pour remettre la selection du choix attanquant ou defenseur
         #region Selection objectif secondaire
         private void Button_Valid_Choix_ObsS_Att_Ok_Click(object sender, RoutedEventArgs e)
@@ -9410,11 +9445,11 @@ namespace CPV9
         {
             Select_Camps = Camps;
             Select_Objectif = Objectif;
-            if (Camps =="Att"){ StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed; };
-            if (Camps =="Def"){ StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed; };
-            
+            if (Camps == "Att") { StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed; };
+            if (Camps == "Def") { StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed; };
+
             StackPanel_OBJ_Uniform.Visibility = Visibility.Visible;
-           
+
             CPV9.Classes.Descript_OBJS CetObjectif = new CPV9.Classes.Descript_OBJS(Objectif);
 
             Label_OBJ_Uniform_1.Content = CetObjectif.L1;
@@ -9464,25 +9499,25 @@ namespace CPV9
                 StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
                 Select_ObjS_Attaquant(Select_Objectif);
                 if (Select_Objectif >= 1 && Select_Objectif <= 3 || Select_Objectif == 110 || Select_Objectif == 113 || Select_Objectif == 128 || Select_Objectif == 133 || Select_Objectif == 137)
-                    {
-                        StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden; 
-                    }                
+                {
+                    StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
+                }
                 if (Select_Objectif >= 5 && Select_Objectif <= 7 || Select_Objectif == 100 || Select_Objectif == 112 || Select_Objectif == 114 || Select_Objectif == 115 || Select_Objectif == 125 || Select_Objectif == 129 || Select_Objectif == 132 || Select_Objectif == 136)
-                    {
-                        StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden; 
-                    }               
+                {
+                    StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
+                }
                 if (Select_Objectif >= 9 && Select_Objectif <= 11 || Select_Objectif == 101 || Select_Objectif == 102 || Select_Objectif == 111 || Select_Objectif == 116 || Select_Objectif == 126 || Select_Objectif == 130 || Select_Objectif == 131 || Select_Objectif == 135 || Select_Objectif == 139)
-                    {
-                        StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
-                    }                
+                {
+                    StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
+                }
                 if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18 || Select_Objectif == 103 || Select_Objectif == 127 || Select_Objectif == 134 || Select_Objectif == 138)
-                    {
-                        StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden; 
-                    }             
+                {
+                    StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden;
+                }
                 if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19)
-                    {
-                        StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden; 
-                    }
+                {
+                    StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden;
+                }
 
                 if (Select_Objectif >= 100 && Select_Objectif <= 103)
                 {
@@ -9540,25 +9575,25 @@ namespace CPV9
                 StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
                 Select_ObjS_Defenseur(Select_Objectif);
                 if (Select_Objectif >= 1 && Select_Objectif <= 3 || Select_Objectif == 110 || Select_Objectif == 113 || Select_Objectif == 128 || Select_Objectif == 133 || Select_Objectif == 137)
-                    {   
-                        StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
-                    }
+                {
+                    StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
+                }
                 if (Select_Objectif >= 5 && Select_Objectif <= 7 || Select_Objectif == 100 || Select_Objectif == 112 || Select_Objectif == 114 || Select_Objectif == 115 || Select_Objectif == 125 || Select_Objectif == 129 || Select_Objectif == 132 || Select_Objectif == 136)
-                    {
-                        StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-                    }
-                if (Select_Objectif >=9 && Select_Objectif <= 11 || Select_Objectif == 101 || Select_Objectif == 102 || Select_Objectif == 111 || Select_Objectif == 116 || Select_Objectif == 126 || Select_Objectif == 130 || Select_Objectif == 131 || Select_Objectif == 135 || Select_Objectif == 139)
-                    {
-                        StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
-                    }
+                {
+                    StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
+                }
+                if (Select_Objectif >= 9 && Select_Objectif <= 11 || Select_Objectif == 101 || Select_Objectif == 102 || Select_Objectif == 111 || Select_Objectif == 116 || Select_Objectif == 126 || Select_Objectif == 130 || Select_Objectif == 131 || Select_Objectif == 135 || Select_Objectif == 139)
+                {
+                    StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
+                }
                 if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18 || Select_Objectif == 103 || Select_Objectif == 127 || Select_Objectif == 134 || Select_Objectif == 138)
-                    { 
-                        StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
-                    }
+                {
+                    StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
+                }
                 if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19)
-                    {
-                        StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden;
-                    }
+                {
+                    StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden;
+                }
 
                 if (Select_Objectif >= 100 && Select_Objectif <= 103)
                 {
@@ -9610,7 +9645,7 @@ namespace CPV9
                     StackPanel_Obj_M_Def.Visibility = Visibility.Hidden;
                 }
             }
-            
+
         }
         private void Button_Obj_Uniform_non_Click(object sender, RoutedEventArgs e)
         {
@@ -9619,12 +9654,12 @@ namespace CPV9
             {
                 StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
             }
-            if (Select_Camps =="Def")
+            if (Select_Camps == "Def")
             {
 
                 StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
             }
-            
+
         }
 
 
@@ -9632,12 +9667,12 @@ namespace CPV9
 
         public void Button_Obj_Sec_Att_1_Click(object sender, RoutedEventArgs e)
         {
-            Affich_Descript_OBJ( 1 , "Att");
+            Affich_Descript_OBJ(1, "Att");
         }
-        
+
         private void Button_Obj_Sec_Att_2_Click(object sender, RoutedEventArgs e)
         {
-            Affich_Descript_OBJ( 2, "Att");
+            Affich_Descript_OBJ(2, "Att");
         }
 
         private void Button_Obj_Sec_Att_3_Click(object sender, RoutedEventArgs e)
@@ -9648,7 +9683,7 @@ namespace CPV9
 
         private void Button_Obj_Sec_Att_5_Click(object sender, RoutedEventArgs e)
         {
-            Affich_Descript_OBJ(5, "Att");            
+            Affich_Descript_OBJ(5, "Att");
         }
 
         private void Button_Obj_Sec_Att_6_Click(object sender, RoutedEventArgs e)
@@ -10045,7 +10080,7 @@ namespace CPV9
         private void Button_Obj_Codex_Necron_100_Def_1_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(100, "Def");
-        }        
+        }
         private void Button_Obj_Codex_Necron_101_Def_1_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(101, "Def");
@@ -10058,7 +10093,7 @@ namespace CPV9
         {
             Affich_Descript_OBJ(103, "Def");
         }
-        
+
         #endregion
 
         #endregion
@@ -11618,8 +11653,8 @@ namespace CPV9
                 s++;
             }
 
-            TextBlock_ObjP_Att.Text = Convert.ToString(OBJECTIF_Principal_Att.Score_ObjP);            
-           
+            TextBlock_ObjP_Att.Text = Convert.ToString(OBJECTIF_Principal_Att.Score_ObjP);
+
             #endregion
 
             #region Calcul_Objectif_Secondaire
@@ -11712,7 +11747,7 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_7_Att.Text = Convert.ToString(OBJECTIF_Secondaire_007_Att.Score_ObjS);
-            }            
+            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 009
             if (TextBox_ObjS_9_Att_R1.Text != "" || TextBox_ObjS_9_Att_R2.Text != "" || TextBox_ObjS_9_Att_R3.Text != "" || TextBox_ObjS_9_Att_R4.Text != "" || TextBox_ObjS_9_Att_R5.Text != "")
@@ -11743,7 +11778,7 @@ namespace CPV9
             }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 011
-            if ((TextBox_ObjS_11_Att_R1_Att.Text != "" && TextBox_ObjS_11_Att_R1_Def.Text != "") || (TextBox_ObjS_11_Att_R2_Att.Text != "" && TextBox_ObjS_11_Att_R2_Def.Text != "" ) || (TextBox_ObjS_11_Att_R3_Att.Text != "" && TextBox_ObjS_11_Att_R3_Def.Text != "") || (TextBox_ObjS_11_Att_R4_Att.Text != "" && TextBox_ObjS_11_Att_R4_Def.Text != "") || (TextBox_ObjS_11_Att_R5_Att.Text != "" && TextBox_ObjS_11_Att_R5_Att.Text != ""))
+            if ((TextBox_ObjS_11_Att_R1_Att.Text != "" && TextBox_ObjS_11_Att_R1_Def.Text != "") || (TextBox_ObjS_11_Att_R2_Att.Text != "" && TextBox_ObjS_11_Att_R2_Def.Text != "") || (TextBox_ObjS_11_Att_R3_Att.Text != "" && TextBox_ObjS_11_Att_R3_Def.Text != "") || (TextBox_ObjS_11_Att_R4_Att.Text != "" && TextBox_ObjS_11_Att_R4_Def.Text != "") || (TextBox_ObjS_11_Att_R5_Att.Text != "" && TextBox_ObjS_11_Att_R5_Att.Text != ""))
             {
                 Classe_Score_OBJS_011 OBJECTIF_Secondaire_011_Att;
                 OBJECTIF_Secondaire_011_Att = new Classe_Score_OBJS_011(Convert.ToString(TextBox_ObjS_11_Att_R1_Att.Text), Convert.ToString(TextBox_ObjS_11_Att_R2_Att.Text), Convert.ToString(TextBox_ObjS_11_Att_R3_Att.Text), Convert.ToString(TextBox_ObjS_11_Att_R4_Att.Text), Convert.ToString(TextBox_ObjS_11_Att_R5_Att.Text), Convert.ToString(TextBox_ObjS_11_Att_R1_Def.Text), Convert.ToString(TextBox_ObjS_11_Att_R2_Def.Text), Convert.ToString(TextBox_ObjS_11_Att_R3_Def.Text), Convert.ToString(TextBox_ObjS_11_Att_R4_Def.Text), Convert.ToString(TextBox_ObjS_11_Att_R5_Def.Text));
@@ -11988,7 +12023,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1032_Att.Text = Convert.ToString(OBJECTIF_Mission_1032_Att.Score_ObjS);
-            
+
 
             ///CALCUL SCORE OBJECTIF MISSION 1033           
             Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Att;
@@ -12410,6 +12445,17 @@ namespace CPV9
             }
             TextBlock_ObjS_137_Att.Text = Convert.ToString(OBJECTIF_Codex_137_Att.Score_ObjS);
 
+            ///CALCUL SCORE OBJECTIF MISSION 138
+            Classe_Score_OBJC_Ork_138 OBJECTIF_Codex_138_Att;
+            OBJECTIF_Codex_138_Att = new Classe_Score_OBJC_Ork_138(TextBox_ObjS_138_Att_T2.Text, TextBox_ObjS_138_Att_T3.Text, TextBox_ObjS_138_Att_T4.Text, TextBox_ObjS_138_Att_T5.Text);
+            Scores_Attaquant[77] = OBJECTIF_Codex_138_Att.Scores_Joueur;
+            if (Convert.ToInt32(OBJECTIF_Codex_138_Att.Score_ObjS) >= 15)
+            {
+                ID_Cape_Attaquant[s] = 138;
+                s++;
+            }
+            TextBlock_ObjS_138_Att.Text = Convert.ToString(OBJECTIF_Codex_138_Att.Score_ObjS);
+
             #endregion
             #endregion
 
@@ -12478,7 +12524,7 @@ namespace CPV9
             }
 
             win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);
-            
+
 
         }
         private void Calcul_Score_Defenseur()
@@ -12631,7 +12677,7 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_11_Def.Text = Convert.ToString(OBJECTIF_Secondaire_011_Def.Score_ObjS);
-            }        
+            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 012           
             Classe_Score_OBJS_012 OBJECTIF_Secondaire_012_Def;
@@ -12856,7 +12902,7 @@ namespace CPV9
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 1032  
-            
+
             Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Def;
             OBJECTIF_Mission_1032_Def = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Def_R1.Text, TextBox_ObjS_1032_Def_R2.Text, TextBox_ObjS_1032_Def_R3.Text, TextBox_ObjS_1032_Def_R4.Text, TextBox_ObjS_1032_Def_R5.Text);
             Scores_Defenseur[31] = OBJECTIF_Mission_1032_Def.Scores_Joueur;
@@ -12866,7 +12912,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1032_Def.Text = Convert.ToString(OBJECTIF_Mission_1032_Def.Score_ObjS);
-            
+
 
             ///CALCUL SCORE OBJECTIF MISSION 1033     
             Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Def;
@@ -13285,6 +13331,17 @@ namespace CPV9
             }
             TextBlock_ObjS_137_Def.Text = Convert.ToString(OBJECTIF_Codex_137_Def.Score_ObjS);
 
+            ///CALCUL SCORE OBJECTIF MISSION 138
+            Classe_Score_OBJC_Ork_138 OBJECTIF_Codex_138_Def;
+            OBJECTIF_Codex_138_Def = new Classe_Score_OBJC_Ork_138(TextBox_ObjS_138_Def_T2.Text, TextBox_ObjS_138_Def_T3.Text, TextBox_ObjS_138_Def_T4.Text, TextBox_ObjS_138_Def_T5.Text);
+            Scores_Defenseur[77] = OBJECTIF_Codex_138_Def.Scores_Joueur;
+            if (Convert.ToInt32(OBJECTIF_Codex_138_Def.Score_ObjS) >= 15)
+            {
+                ID_Cape_Defenseur[s] = 138;
+                s++;
+            }
+            TextBlock_ObjS_138_Def.Text = Convert.ToString(OBJECTIF_Codex_138_Def.Score_ObjS);
+
             #endregion
             #endregion
 
@@ -13352,7 +13409,7 @@ namespace CPV9
                 win.Collect_Cape_Tv("Def", 4, "");
             }
 
-            win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);            
+            win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);
         }
 
 
@@ -13435,8 +13492,8 @@ namespace CPV9
 
 
         private void ComboBox_Choix_Armee_Imperium_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {            
-            if ( ComboBox_Choix_Armee_Imperium.SelectedIndex != 0)
+        {
+            if (ComboBox_Choix_Armee_Imperium.SelectedIndex != 0)
             {
                 if (ComboBox_Choix_Armee_Chaos.SelectedIndex != 0)
                 {
@@ -13578,11 +13635,11 @@ namespace CPV9
             if (TextBox_ObjS_1_Def.Text != "")
             {
                 if (CheckBox_ObjS_1_Def_SG.IsChecked == true)
-                {                   
+                {
                     CheckBox_ObjS_1_Def_SG_Etat = "true";
-                }                   
+                }
                 if (CheckBox_ObjS_1_Def_SG.IsChecked == false)
-                {                   
+                {
                     CheckBox_ObjS_1_Def_SG_Etat = "false";
                 }
             }
@@ -13733,7 +13790,7 @@ namespace CPV9
         private void CheckBox_ObjS_7_Att_Unité_Spit_Click(object sender, RoutedEventArgs e)
         {
             if (TextBox_ObjS_7_Att_Unité_1.Text != "" && TextBox_ObjS_7_Att_Unité_2.Text != "" && TextBox_ObjS_7_Att_Unité_3.Text != "")
-            {                
+            {
                 if (CheckBox_ObjS_7_Att_Unité_1_Spit.IsChecked == true)
                 {
                     CheckBox_ObjS_7_Att_Unité_1_Spit_Etat = "true";
@@ -14131,43 +14188,43 @@ namespace CPV9
         private void CheckBox_ObjS_13_Def_In_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_13_Def_In_R2.IsChecked == true)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R2_Etat = "true";
                 CheckBox_ObjS_13_Def_Out_R2.IsChecked = false;
                 CheckBox_ObjS_13_Def_Out_R2_Etat = "false";
-            }                       
+            }
             if (CheckBox_ObjS_13_Def_In_R2.IsChecked == false)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R2_Etat = "false";
-            }                       
+            }
             if (CheckBox_ObjS_13_Def_In_R3.IsChecked == true)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R3_Etat = "true";
                 CheckBox_ObjS_13_Def_Out_R3.IsChecked = false;
                 CheckBox_ObjS_13_Def_Out_R3_Etat = "false";
-            }                       
+            }
             if (CheckBox_ObjS_13_Def_In_R3.IsChecked == false)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R3_Etat = "false";
-            }                       
+            }
             if (CheckBox_ObjS_13_Def_In_R4.IsChecked == true)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R4_Etat = "true";
                 CheckBox_ObjS_13_Def_Out_R4.IsChecked = false;
                 CheckBox_ObjS_13_Def_Out_R4_Etat = "false";
-            }                       
+            }
             if (CheckBox_ObjS_13_Def_In_R4.IsChecked == false)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R4_Etat = "false";
-            }                       
+            }
             if (CheckBox_ObjS_13_Def_In_R5.IsChecked == true)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R5_Etat = "true";
                 CheckBox_ObjS_13_Def_Out_R5.IsChecked = false;
                 CheckBox_ObjS_13_Def_Out_R5_Etat = "false";
-            }                       
+            }
             if (CheckBox_ObjS_13_Def_In_R5.IsChecked == false)
-            {                       
+            {
                 CheckBox_ObjS_13_Def_In_R5_Etat = "false";
             }
             else
@@ -14179,43 +14236,43 @@ namespace CPV9
         private void CheckBox_ObjS_13_Def_Out_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_13_Def_Out_R2.IsChecked == true)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R2_Etat = "true";
                 CheckBox_ObjS_13_Def_In_R2.IsChecked = false;
                 CheckBox_ObjS_13_Def_In_R2_Etat = "false";
-            }                        
+            }
             if (CheckBox_ObjS_13_Def_Out_R2.IsChecked == false)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R2_Etat = "false";
-            }                        
+            }
             if (CheckBox_ObjS_13_Def_Out_R3.IsChecked == true)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R3_Etat = "true";
                 CheckBox_ObjS_13_Def_In_R3.IsChecked = false;
                 CheckBox_ObjS_13_Def_In_R3_Etat = "false";
-            }                        
+            }
             if (CheckBox_ObjS_13_Def_Out_R3.IsChecked == false)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R3_Etat = "false";
-            }                        
+            }
             if (CheckBox_ObjS_13_Def_Out_R4.IsChecked == true)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R4_Etat = "true";
                 CheckBox_ObjS_13_Def_In_R4.IsChecked = false;
                 CheckBox_ObjS_13_Def_In_R4_Etat = "false";
-            }                        
+            }
             if (CheckBox_ObjS_13_Def_Out_R4.IsChecked == false)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R4_Etat = "false";
-            }                        
+            }
             if (CheckBox_ObjS_13_Def_Out_R5.IsChecked == true)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R5_Etat = "true";
                 CheckBox_ObjS_13_Def_In_R5.IsChecked = false;
                 CheckBox_ObjS_13_Def_In_R5_Etat = "false";
-            }                        
+            }
             if (CheckBox_ObjS_13_Def_Out_R5.IsChecked == false)
-            {                        
+            {
                 CheckBox_ObjS_13_Def_Out_R5_Etat = "false";
             }
             else
@@ -14388,7 +14445,7 @@ namespace CPV9
                 CheckBox_ObjS_16_Att_R5_Etat = "false";
             }
             Calcul_Score_Attaquant();
-        }       
+        }
         private void CheckBox_ObjS_16_Def_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_16_Def_R1.IsChecked == true)
@@ -14476,11 +14533,11 @@ namespace CPV9
                 CheckBox_ObjS_18_Att_C_Etat = "false";
             }
             if (CheckBox_ObjS_18_Att_D.IsChecked == true)
-            {                        
+            {
                 CheckBox_ObjS_18_Att_D_Etat = "true";
-            }                        
+            }
             if (CheckBox_ObjS_18_Att_D.IsChecked == false)
-            {                        
+            {
                 CheckBox_ObjS_18_Att_D_Etat = "false";
             }
             else
@@ -14516,11 +14573,11 @@ namespace CPV9
                 CheckBox_ObjS_18_Def_C_Etat = "false";
             }
             if (CheckBox_ObjS_18_Def_D.IsChecked == true)
-            {                        
+            {
                 CheckBox_ObjS_18_Def_D_Etat = "true";
-            }                        
+            }
             if (CheckBox_ObjS_18_Def_D.IsChecked == false)
-            {                        
+            {
                 CheckBox_ObjS_18_Def_D_Etat = "false";
             }
             else
@@ -16798,58 +16855,58 @@ namespace CPV9
 
         private void CheckBox_Objectif_Sec_Att_134_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_Objectif_Sec_Att_134_1ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_1ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_1ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_1ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_1ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_1ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_2ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_2ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_2ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_2ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_2ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_2ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_3ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_3ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_3ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_3ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_3ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_3ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_4ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_4ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_4ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_4ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_4ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_4ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_5ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_5ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_5ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_5ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_5ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_5ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_6ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_6ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_6ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_6ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_6ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_6ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_OBJ1.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_OBJ1_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_OBJ1.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_OBJ1_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_OBJ1.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_OBJ1_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_OBJ2.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_OBJ2_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_OBJ2.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_OBJ2_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_OBJ2.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_OBJ2_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_OBJ3.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_OBJ3_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_OBJ3.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_OBJ3_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_OBJ3.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_OBJ3_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_OBJ4.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_OBJ4_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_OBJ4.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_OBJ4_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_OBJ4.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_OBJ4_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_OBJ5.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_OBJ5_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_OBJ5.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_OBJ5_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_OBJ5.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_OBJ5_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_134_OBJ6.IsChecked == true)  { CheckBox_Objectif_Sec_Att_134_OBJ6_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_134_OBJ6.IsChecked == true) { CheckBox_Objectif_Sec_Att_134_OBJ6_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_134_OBJ6.IsChecked == false) { CheckBox_Objectif_Sec_Att_134_OBJ6_Etat = "false"; };
 
             Calcul_Score_Attaquant();
         }
         private void CheckBox_Objectif_Sec_Def_134_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_Objectif_Sec_Def_134_1ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_1ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_1ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_1ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_1ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_1ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_2ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_2ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_2ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_2ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_2ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_2ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_3ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_3ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_3ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_3ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_3ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_3ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_4ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_4ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_4ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_4ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_4ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_4ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_5ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_5ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_5ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_5ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_5ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_5ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_6ZDD.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_6ZDD_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_6ZDD.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_6ZDD_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_6ZDD.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_6ZDD_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_OBJ1.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_OBJ1_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_OBJ1.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_OBJ1_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_OBJ1.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_OBJ1_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_OBJ2.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_OBJ2_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_OBJ2.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_OBJ2_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_OBJ2.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_OBJ2_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_OBJ3.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_OBJ3_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_OBJ3.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_OBJ3_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_OBJ3.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_OBJ3_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_OBJ4.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_OBJ4_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_OBJ4.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_OBJ4_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_OBJ4.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_OBJ4_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_OBJ5.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_OBJ5_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_OBJ5.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_OBJ5_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_OBJ5.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_OBJ5_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_134_OBJ6.IsChecked == true)  { CheckBox_Objectif_Sec_Def_134_OBJ6_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_134_OBJ6.IsChecked == true) { CheckBox_Objectif_Sec_Def_134_OBJ6_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_134_OBJ6.IsChecked == false) { CheckBox_Objectif_Sec_Def_134_OBJ6_Etat = "false"; };
 
             Calcul_Score_Defenseur();
@@ -16857,7 +16914,7 @@ namespace CPV9
 
         private void TextBox_ObjS_135_Att_Sanctuaire_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (TextBox_ObjS_135_Att_Sanctuaire.Text !="")
+            if (TextBox_ObjS_135_Att_Sanctuaire.Text != "")
             {
                 StackPanel_objS_135_Att_2.Visibility = Visibility.Visible;
                 StackPanel_objS_135_Att_3.Visibility = Visibility.Visible;
@@ -16883,48 +16940,48 @@ namespace CPV9
         }
         private void CheckBox_Objectif_Sec_Att_135_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_Objectif_Sec_Att_135_T1.IsChecked == true)  { CheckBox_Objectif_Sec_Att_135_T1_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_135_T1.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T1_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_135_T1.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T1_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_135_T2.IsChecked == true)  { CheckBox_Objectif_Sec_Att_135_T2_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_135_T2.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T2_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_135_T2.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T2_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_135_T3.IsChecked == true)  { CheckBox_Objectif_Sec_Att_135_T3_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_135_T3.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T3_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_135_T3.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T3_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_135_T4.IsChecked == true)  { CheckBox_Objectif_Sec_Att_135_T4_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_135_T4.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T4_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_135_T4.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T4_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_135_T5.IsChecked == true)  { CheckBox_Objectif_Sec_Att_135_T5_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Att_135_T5.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T5_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_135_T5.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T5_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Att_135_T6.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T6_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_135_T6.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T6_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Att_135_Fin_Vous.IsChecked == true)
-                {
-                    CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "true";
-                    CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat = "false";
-                    CheckBox_Objectif_Sec_Att_135_Fin_Adv.IsChecked = false;
-                    Calcul_Score_Attaquant();
-                    return;
-                }
+            {
+                CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "true";
+                CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat = "false";
+                CheckBox_Objectif_Sec_Att_135_Fin_Adv.IsChecked = false;
+                Calcul_Score_Attaquant();
+                return;
+            }
             if (CheckBox_Objectif_Sec_Att_135_Fin_Vous.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Att_135_Fin_Adv.IsChecked == true)
-                {
-                    CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat = "true";
-                    CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "false";
-                    CheckBox_Objectif_Sec_Att_135_Fin_Vous.IsChecked = false;               
-                }
+            {
+                CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat = "true";
+                CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "false";
+                CheckBox_Objectif_Sec_Att_135_Fin_Vous.IsChecked = false;
+            }
             if (CheckBox_Objectif_Sec_Att_135_Fin_Adv.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat = "false"; };
 
             Calcul_Score_Attaquant();
         }
         private void CheckBox_Objectif_Sec_Def_135_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_Objectif_Sec_Def_135_T1.IsChecked == true)  { CheckBox_Objectif_Sec_Def_135_T1_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_135_T1.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T1_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_135_T1.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T1_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_135_T2.IsChecked == true)  { CheckBox_Objectif_Sec_Def_135_T2_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_135_T2.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T2_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_135_T2.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T2_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_135_T3.IsChecked == true)  { CheckBox_Objectif_Sec_Def_135_T3_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_135_T3.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T3_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_135_T3.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T3_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_135_T4.IsChecked == true)  { CheckBox_Objectif_Sec_Def_135_T4_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_135_T4.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T4_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_135_T4.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T4_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_135_T5.IsChecked == true)  { CheckBox_Objectif_Sec_Def_135_T5_Etat = "true"; };
+            if (CheckBox_Objectif_Sec_Def_135_T5.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T5_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_135_T5.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T5_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Def_135_T6.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T6_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_135_T6.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T6_Etat = "false"; };
@@ -16948,7 +17005,7 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
         private void CheckBox_Objectif_Sec_Att_135_Vous_Click(object sender, RoutedEventArgs e)
-        {            
+        {
             if (CheckBox_Objectif_Sec_Att_135_Fin_Vous.IsChecked == true)
             {
                 CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "true";
@@ -17004,7 +17061,7 @@ namespace CPV9
             }
             Calcul_Score_Defenseur();
         }
-        
+
         private void TextBox_ObjS_136_Att_TextChanged(object sender, TextChangedEventArgs e)
         {
             Calcul_Score_Attaquant();
@@ -17013,7 +17070,7 @@ namespace CPV9
         {
             Calcul_Score_Defenseur();
         }
-        
+
         private void CheckBox_Objectif_Sec_Att_137_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_Objectif_Sec_Att_137_A1.IsChecked == true) { CheckBox_Objectif_Sec_Att_137_A1_Etat = "true"; } else { CheckBox_Objectif_Sec_Att_137_A1_Etat = "false"; };
@@ -17052,6 +17109,28 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_137_C5.IsChecked == true) { CheckBox_Objectif_Sec_Def_137_C5_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_137_C5_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
+
+        private void TextBox_ObjS_138_Att_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Calcul_Score_Attaquant();
+        }
+        private void TextBox_ObjS_138_Def_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Calcul_Score_Defenseur();
+        }
+
+
+        private void TextBox_General_Att_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Calcul_Score_Attaquant();
+        }
+        private void TextBox_General_Def_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Calcul_Score_Defenseur();
+        }
+
+
+
 
         #endregion
 
@@ -17544,7 +17623,7 @@ namespace CPV9
             if (CheckBox_ObjS_1011_Att_T2A.IsChecked == true) { CheckBox_ObjS_1011_Att_T2A_Etat = "true"; };
             if (CheckBox_ObjS_1011_Att_T2A.IsChecked == false) { CheckBox_ObjS_1011_Att_T2A_Etat = "false"; };
             if (CheckBox_ObjS_1011_Att_T2B.IsChecked == true) { CheckBox_ObjS_1011_Att_T2B_Etat = "true"; };
-            if (CheckBox_ObjS_1011_Att_T2B.IsChecked == false) { CheckBox_ObjS_1011_Att_T2B_Etat = "false"; };            
+            if (CheckBox_ObjS_1011_Att_T2B.IsChecked == false) { CheckBox_ObjS_1011_Att_T2B_Etat = "false"; };
             if (CheckBox_ObjS_1011_Att_T3A.IsChecked == true) { CheckBox_ObjS_1011_Att_T3A_Etat = "true"; };
             if (CheckBox_ObjS_1011_Att_T3A.IsChecked == false) { CheckBox_ObjS_1011_Att_T3A_Etat = "false"; };
             if (CheckBox_ObjS_1011_Att_T3B.IsChecked == true) { CheckBox_ObjS_1011_Att_T3B_Etat = "true"; };
@@ -17562,25 +17641,25 @@ namespace CPV9
         }
         private void CheckBox_ObjS_1011_Def_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_1011_Def_T1A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T1A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T1A.IsChecked == true) { CheckBox_ObjS_1011_Def_T1A_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T1A.IsChecked == false) { CheckBox_ObjS_1011_Def_T1A_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T1B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T1B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T1B.IsChecked == true) { CheckBox_ObjS_1011_Def_T1B_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T1B.IsChecked == false) { CheckBox_ObjS_1011_Def_T1B_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T2A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T2A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T2A.IsChecked == true) { CheckBox_ObjS_1011_Def_T2A_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T2A.IsChecked == false) { CheckBox_ObjS_1011_Def_T2A_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T2B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T2B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T2B.IsChecked == true) { CheckBox_ObjS_1011_Def_T2B_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T2B.IsChecked == false) { CheckBox_ObjS_1011_Def_T2B_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T3A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T3A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T3A.IsChecked == true) { CheckBox_ObjS_1011_Def_T3A_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T3A.IsChecked == false) { CheckBox_ObjS_1011_Def_T3A_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T3B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T3B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T3B.IsChecked == true) { CheckBox_ObjS_1011_Def_T3B_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T3B.IsChecked == false) { CheckBox_ObjS_1011_Def_T3B_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T4A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T4A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T4A.IsChecked == true) { CheckBox_ObjS_1011_Def_T4A_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T4A.IsChecked == false) { CheckBox_ObjS_1011_Def_T4A_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T4B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T4B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T4B.IsChecked == true) { CheckBox_ObjS_1011_Def_T4B_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T4B.IsChecked == false) { CheckBox_ObjS_1011_Def_T4B_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T5A.IsChecked == true)  { CheckBox_ObjS_1011_Def_T5A_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T5A.IsChecked == true) { CheckBox_ObjS_1011_Def_T5A_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T5A.IsChecked == false) { CheckBox_ObjS_1011_Def_T5A_Etat = "false"; };
-            if (CheckBox_ObjS_1011_Def_T5B.IsChecked == true)  { CheckBox_ObjS_1011_Def_T5B_Etat = "true"; };
+            if (CheckBox_ObjS_1011_Def_T5B.IsChecked == true) { CheckBox_ObjS_1011_Def_T5B_Etat = "true"; };
             if (CheckBox_ObjS_1011_Def_T5B.IsChecked == false) { CheckBox_ObjS_1011_Def_T5B_Etat = "false"; };
 
             Calcul_Score_Defenseur();
@@ -17666,25 +17745,25 @@ namespace CPV9
 
         private void CheckBox_ObjS_1021_Att_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_1021_Att_T1A.IsChecked == true)  { CheckBox_ObjS_1021_Att_T1A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T1A.IsChecked == true) { CheckBox_ObjS_1021_Att_T1A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T1A.IsChecked == false) { CheckBox_ObjS_1021_Att_T1A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T2A.IsChecked == true)  { CheckBox_ObjS_1021_Att_T2A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T2A.IsChecked == true) { CheckBox_ObjS_1021_Att_T2A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T2A.IsChecked == false) { CheckBox_ObjS_1021_Att_T2A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T3A.IsChecked == true)  { CheckBox_ObjS_1021_Att_T3A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T3A.IsChecked == true) { CheckBox_ObjS_1021_Att_T3A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T3A.IsChecked == false) { CheckBox_ObjS_1021_Att_T3A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T4A.IsChecked == true)  { CheckBox_ObjS_1021_Att_T4A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T4A.IsChecked == true) { CheckBox_ObjS_1021_Att_T4A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T4A.IsChecked == false) { CheckBox_ObjS_1021_Att_T4A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T5A.IsChecked == true)  { CheckBox_ObjS_1021_Att_T5A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T5A.IsChecked == true) { CheckBox_ObjS_1021_Att_T5A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T5A.IsChecked == false) { CheckBox_ObjS_1021_Att_T5A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T1B.IsChecked == true)  { CheckBox_ObjS_1021_Att_T1B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T1B.IsChecked == true) { CheckBox_ObjS_1021_Att_T1B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T1B.IsChecked == false) { CheckBox_ObjS_1021_Att_T1B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T2B.IsChecked == true)  { CheckBox_ObjS_1021_Att_T2B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T2B.IsChecked == true) { CheckBox_ObjS_1021_Att_T2B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T2B.IsChecked == false) { CheckBox_ObjS_1021_Att_T2B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T3B.IsChecked == true)  { CheckBox_ObjS_1021_Att_T3B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T3B.IsChecked == true) { CheckBox_ObjS_1021_Att_T3B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T3B.IsChecked == false) { CheckBox_ObjS_1021_Att_T3B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T4B.IsChecked == true)  { CheckBox_ObjS_1021_Att_T4B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T4B.IsChecked == true) { CheckBox_ObjS_1021_Att_T4B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T4B.IsChecked == false) { CheckBox_ObjS_1021_Att_T4B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Att_T5B.IsChecked == true)  { CheckBox_ObjS_1021_Att_T5B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Att_T5B.IsChecked == true) { CheckBox_ObjS_1021_Att_T5B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Att_T5B.IsChecked == false) { CheckBox_ObjS_1021_Att_T5B_Etat = "false"; };
             Calcul_Score_Attaquant();
         }
@@ -17728,25 +17807,25 @@ namespace CPV9
         }
         private void CheckBox_ObjS_1021_Def_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_1021_Def_T1A.IsChecked == true)  { CheckBox_ObjS_1021_Def_T1A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T1A.IsChecked == true) { CheckBox_ObjS_1021_Def_T1A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T1A.IsChecked == false) { CheckBox_ObjS_1021_Def_T1A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T2A.IsChecked == true)  { CheckBox_ObjS_1021_Def_T2A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T2A.IsChecked == true) { CheckBox_ObjS_1021_Def_T2A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T2A.IsChecked == false) { CheckBox_ObjS_1021_Def_T2A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T3A.IsChecked == true)  { CheckBox_ObjS_1021_Def_T3A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T3A.IsChecked == true) { CheckBox_ObjS_1021_Def_T3A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T3A.IsChecked == false) { CheckBox_ObjS_1021_Def_T3A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T4A.IsChecked == true)  { CheckBox_ObjS_1021_Def_T4A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T4A.IsChecked == true) { CheckBox_ObjS_1021_Def_T4A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T4A.IsChecked == false) { CheckBox_ObjS_1021_Def_T4A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T5A.IsChecked == true)  { CheckBox_ObjS_1021_Def_T5A_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T5A.IsChecked == true) { CheckBox_ObjS_1021_Def_T5A_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T5A.IsChecked == false) { CheckBox_ObjS_1021_Def_T5A_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T1B.IsChecked == true)  { CheckBox_ObjS_1021_Def_T1B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T1B.IsChecked == true) { CheckBox_ObjS_1021_Def_T1B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T1B.IsChecked == false) { CheckBox_ObjS_1021_Def_T1B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T2B.IsChecked == true)  { CheckBox_ObjS_1021_Def_T2B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T2B.IsChecked == true) { CheckBox_ObjS_1021_Def_T2B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T2B.IsChecked == false) { CheckBox_ObjS_1021_Def_T2B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T3B.IsChecked == true)  { CheckBox_ObjS_1021_Def_T3B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T3B.IsChecked == true) { CheckBox_ObjS_1021_Def_T3B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T3B.IsChecked == false) { CheckBox_ObjS_1021_Def_T3B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T4B.IsChecked == true)  { CheckBox_ObjS_1021_Def_T4B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T4B.IsChecked == true) { CheckBox_ObjS_1021_Def_T4B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T4B.IsChecked == false) { CheckBox_ObjS_1021_Def_T4B_Etat = "false"; };
-            if (CheckBox_ObjS_1021_Def_T5B.IsChecked == true)  { CheckBox_ObjS_1021_Def_T5B_Etat = "true"; };
+            if (CheckBox_ObjS_1021_Def_T5B.IsChecked == true) { CheckBox_ObjS_1021_Def_T5B_Etat = "true"; };
             if (CheckBox_ObjS_1021_Def_T5B.IsChecked == false) { CheckBox_ObjS_1021_Def_T5B_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
@@ -17794,19 +17873,19 @@ namespace CPV9
             if (CheckBox_ObjS_1022_Att_T1_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T1_Obj_Etat = "true"; };
             if (CheckBox_ObjS_1022_Att_T1_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T1_Obj_Etat = "false"; };
             if (CheckBox_ObjS_1022_Att_T2_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T2_Obj_Etat = "true"; };
-            if (CheckBox_ObjS_1022_Att_T2_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T2_Obj_Etat = "false";};
-            if (CheckBox_ObjS_1022_Att_T3_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T3_Obj_Etat = "true";};
-            if (CheckBox_ObjS_1022_Att_T3_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T3_Obj_Etat = "false";};
-            if (CheckBox_ObjS_1022_Att_T4_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T4_Obj_Etat = "true";};
-            if (CheckBox_ObjS_1022_Att_T4_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T4_Obj_Etat = "false";};
-            if (CheckBox_ObjS_1022_Att_T5_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T5_Obj_Etat = "true";};
-            if (CheckBox_ObjS_1022_Att_T5_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T5_Obj_Etat = "false";};
-            if (CheckBox_ObjS_1022_Att_FIN_SG_Centre.IsChecked == true) { CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat = "true";};
-            if (CheckBox_ObjS_1022_Att_FIN_SG_Centre.IsChecked == false) { CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat = "false";};
-            if (CheckBox_ObjS_1022_Att_FIN_SG_Adverse.IsChecked == true) { CheckBox_ObjS_1022_Att_FIN_SG_Adverse_Etat = "true";};
-            if (CheckBox_ObjS_1022_Att_FIN_SG_Adverse.IsChecked == false) { CheckBox_ObjS_1022_Att_FIN_SG_Adverse_Etat = "false";};
+            if (CheckBox_ObjS_1022_Att_T2_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T2_Obj_Etat = "false"; };
+            if (CheckBox_ObjS_1022_Att_T3_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T3_Obj_Etat = "true"; };
+            if (CheckBox_ObjS_1022_Att_T3_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T3_Obj_Etat = "false"; };
+            if (CheckBox_ObjS_1022_Att_T4_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T4_Obj_Etat = "true"; };
+            if (CheckBox_ObjS_1022_Att_T4_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T4_Obj_Etat = "false"; };
+            if (CheckBox_ObjS_1022_Att_T5_Obj.IsChecked == true) { CheckBox_ObjS_1022_Att_T5_Obj_Etat = "true"; };
+            if (CheckBox_ObjS_1022_Att_T5_Obj.IsChecked == false) { CheckBox_ObjS_1022_Att_T5_Obj_Etat = "false"; };
+            if (CheckBox_ObjS_1022_Att_FIN_SG_Centre.IsChecked == true) { CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat = "true"; };
+            if (CheckBox_ObjS_1022_Att_FIN_SG_Centre.IsChecked == false) { CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat = "false"; };
+            if (CheckBox_ObjS_1022_Att_FIN_SG_Adverse.IsChecked == true) { CheckBox_ObjS_1022_Att_FIN_SG_Adverse_Etat = "true"; };
+            if (CheckBox_ObjS_1022_Att_FIN_SG_Adverse.IsChecked == false) { CheckBox_ObjS_1022_Att_FIN_SG_Adverse_Etat = "false"; };
             Calcul_Score_Attaquant();
-        }       
+        }
         private void CheckBox_ObjS_1022_Def_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_1022_Def_T1_Obj.IsChecked == true) { CheckBox_ObjS_1022_Def_T1_Obj_Etat = "true"; };
@@ -17825,7 +17904,7 @@ namespace CPV9
             if (CheckBox_ObjS_1022_Def_FIN_SG_Adverse.IsChecked == false) { CheckBox_ObjS_1022_Def_FIN_SG_Adverse_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
-        
+
         private void CheckBox_ObjS_1023_Att_T1_B_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_1023_Att_T1_B.IsChecked == true)
@@ -18370,8 +18449,8 @@ namespace CPV9
         }
 
         private void TextBox_ObjS_1032_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {           
-                Calcul_Score_Attaquant();            
+        {
+            Calcul_Score_Attaquant();
         }
         private void TextBox_ObjS_1032_Def_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -18380,7 +18459,7 @@ namespace CPV9
 
         private void CheckBox_ObjS_1033_Att_OBJ1_1_Click(object sender, RoutedEventArgs e)
         {
-            Check_ObjS_1033_Att_OBJ1_1();            
+            Check_ObjS_1033_Att_OBJ1_1();
         }
         private void Check_ObjS_1033_Att_OBJ1_1()
         {
@@ -19395,7 +19474,7 @@ namespace CPV9
             if (CheckBox_ObjS_2021_Att_T5.IsChecked == false) { CheckBox_ObjS_2021_Att_T5_Etat = "false"; };
             if (CheckBox_ObjS_2021_Att_Fin.IsChecked == false) { CheckBox_ObjS_2021_Att_Fin_Etat = "false"; };
             Calcul_Score_Attaquant();
-        }        
+        }
         private void CheckBox_ObjS_2021_Def_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_2021_Def_T1.IsChecked == true) { CheckBox_ObjS_2021_Def_T1_Etat = "true"; };
@@ -19415,70 +19494,70 @@ namespace CPV9
 
         private void CheckBox_ObjS_2022_Att_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T1_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Att_T1_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T1_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T1_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T2_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Att_T2_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T2_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T2_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T3_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Att_T3_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T3_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T3_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T4_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Att_T4_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T4_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T4_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Att_T5_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Att_T5_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T5_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Att_T5_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T1_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T1_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T1_NML.IsChecked == true) { CheckBox_ObjS_2022_Att_T1_NML_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T1_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T1_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T2_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T2_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T2_NML.IsChecked == true) { CheckBox_ObjS_2022_Att_T2_NML_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T2_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T2_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T3_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T3_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T3_NML.IsChecked == true) { CheckBox_ObjS_2022_Att_T3_NML_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T3_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T3_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T4_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T4_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T4_NML.IsChecked == true) { CheckBox_ObjS_2022_Att_T4_NML_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T4_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T4_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T5_NML.IsChecked == true)  { CheckBox_ObjS_2022_Att_T5_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T5_NML.IsChecked == true) { CheckBox_ObjS_2022_Att_T5_NML_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T5_NML.IsChecked == false) { CheckBox_ObjS_2022_Att_T5_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T1_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Att_T1_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T1_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T1_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T2_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Att_T2_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T2_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T2_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T3_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Att_T3_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T3_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T3_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T4_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Att_T4_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Att_T4_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T4_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = "true"; };
-            if (CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = "false"; };            
+            if (CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Att_T5_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Att_T5_ZDDA_Etat = "false"; };
             Calcul_Score_Attaquant();
         }
         private void CheckBox_ObjS_2022_Def_Click(object sender, RoutedEventArgs e)
         {
 
-            if (CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T1_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T1_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T2_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T2_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T2_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T3_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T3_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T3_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T4_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T4_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T4_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T5_ZDDE.IsChecked == true)  { CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDE.IsChecked == true) { CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T5_ZDDE.IsChecked == false) { CheckBox_ObjS_2022_Def_T5_ZDDE_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T1_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T1_NML_Etat = "true"; };
-            if (CheckBox_ObjS_2022_Def_T1_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T1_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T2_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T2_NML_Etat = "true"; };
-            if (CheckBox_ObjS_2022_Def_T2_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T2_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T3_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T3_NML_Etat = "true"; };
-            if (CheckBox_ObjS_2022_Def_T3_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T3_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T4_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T4_NML_Etat = "true"; };
-            if (CheckBox_ObjS_2022_Def_T4_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T4_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T5_NML.IsChecked == true)   { CheckBox_ObjS_2022_Def_T5_NML_Etat = "true"; };
-            if (CheckBox_ObjS_2022_Def_T5_NML.IsChecked == false)  { CheckBox_ObjS_2022_Def_T5_NML_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T1_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T1_NML.IsChecked == true) { CheckBox_ObjS_2022_Def_T1_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T1_NML.IsChecked == false) { CheckBox_ObjS_2022_Def_T1_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T2_NML.IsChecked == true) { CheckBox_ObjS_2022_Def_T2_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T2_NML.IsChecked == false) { CheckBox_ObjS_2022_Def_T2_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T3_NML.IsChecked == true) { CheckBox_ObjS_2022_Def_T3_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T3_NML.IsChecked == false) { CheckBox_ObjS_2022_Def_T3_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T4_NML.IsChecked == true) { CheckBox_ObjS_2022_Def_T4_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T4_NML.IsChecked == false) { CheckBox_ObjS_2022_Def_T4_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T5_NML.IsChecked == true) { CheckBox_ObjS_2022_Def_T5_NML_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T5_NML.IsChecked == false) { CheckBox_ObjS_2022_Def_T5_NML_Etat = "false"; };
+            if (CheckBox_ObjS_2022_Def_T1_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T1_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T1_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T2_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T2_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T2_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T2_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T3_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T3_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T3_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T3_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T4_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T4_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T4_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T4_ZDDA_Etat = "false"; };
-            if (CheckBox_ObjS_2022_Def_T5_ZDDA.IsChecked == true)  { CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = "true"; };
+            if (CheckBox_ObjS_2022_Def_T5_ZDDA.IsChecked == true) { CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = "true"; };
             if (CheckBox_ObjS_2022_Def_T5_ZDDA.IsChecked == false) { CheckBox_ObjS_2022_Def_T5_ZDDA_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
@@ -19606,13 +19685,13 @@ namespace CPV9
 
         private void CheckBox_ObjS_2031_Att_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_2031_Att_T1.IsChecked == true)  { CheckBox_ObjS_2031_Att_T1_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Att_T1.IsChecked == true) { CheckBox_ObjS_2031_Att_T1_Etat = "true"; };
             if (CheckBox_ObjS_2031_Att_T1.IsChecked == false) { CheckBox_ObjS_2031_Att_T1_Etat = "false"; };
-            if (CheckBox_ObjS_2031_Att_T2.IsChecked == true)  { CheckBox_ObjS_2031_Att_T2_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Att_T2.IsChecked == true) { CheckBox_ObjS_2031_Att_T2_Etat = "true"; };
             if (CheckBox_ObjS_2031_Att_T2.IsChecked == false) { CheckBox_ObjS_2031_Att_T2_Etat = "false"; };
-            if (CheckBox_ObjS_2031_Att_T3.IsChecked == true)  { CheckBox_ObjS_2031_Att_T3_Etat = "true"; };
-            if (CheckBox_ObjS_2031_Att_T3.IsChecked == false) { CheckBox_ObjS_2031_Att_T3_Etat = "false"; }; 
-            if (CheckBox_ObjS_2031_Att_T4.IsChecked == true)  { CheckBox_ObjS_2031_Att_T4_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Att_T3.IsChecked == true) { CheckBox_ObjS_2031_Att_T3_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Att_T3.IsChecked == false) { CheckBox_ObjS_2031_Att_T3_Etat = "false"; };
+            if (CheckBox_ObjS_2031_Att_T4.IsChecked == true) { CheckBox_ObjS_2031_Att_T4_Etat = "true"; };
             if (CheckBox_ObjS_2031_Att_T4.IsChecked == false) { CheckBox_ObjS_2031_Att_T4_Etat = "false"; };
             if (CheckBox_ObjS_2031_Att_Fin.IsChecked == true) { CheckBox_ObjS_2031_Att_Fin_Etat = "true"; };
             if (CheckBox_ObjS_2031_Att_Fin.IsChecked == false) { CheckBox_ObjS_2031_Att_Fin_Etat = "false"; };
@@ -19620,13 +19699,13 @@ namespace CPV9
         }
         private void CheckBox_ObjS_2031_Def_Click(object sender, RoutedEventArgs e)
         {
-            if (CheckBox_ObjS_2031_Def_T1.IsChecked == true)  { CheckBox_ObjS_2031_Def_T1_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Def_T1.IsChecked == true) { CheckBox_ObjS_2031_Def_T1_Etat = "true"; };
             if (CheckBox_ObjS_2031_Def_T1.IsChecked == false) { CheckBox_ObjS_2031_Def_T1_Etat = "false"; };
-            if (CheckBox_ObjS_2031_Def_T2.IsChecked == true)  { CheckBox_ObjS_2031_Def_T2_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Def_T2.IsChecked == true) { CheckBox_ObjS_2031_Def_T2_Etat = "true"; };
             if (CheckBox_ObjS_2031_Def_T2.IsChecked == false) { CheckBox_ObjS_2031_Def_T2_Etat = "false"; };
-            if (CheckBox_ObjS_2031_Def_T3.IsChecked == true)  { CheckBox_ObjS_2031_Def_T3_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Def_T3.IsChecked == true) { CheckBox_ObjS_2031_Def_T3_Etat = "true"; };
             if (CheckBox_ObjS_2031_Def_T3.IsChecked == false) { CheckBox_ObjS_2031_Def_T3_Etat = "false"; };
-            if (CheckBox_ObjS_2031_Def_T4.IsChecked == true)  { CheckBox_ObjS_2031_Def_T4_Etat = "true"; };
+            if (CheckBox_ObjS_2031_Def_T4.IsChecked == true) { CheckBox_ObjS_2031_Def_T4_Etat = "true"; };
             if (CheckBox_ObjS_2031_Def_T4.IsChecked == false) { CheckBox_ObjS_2031_Def_T4_Etat = "false"; };
             if (CheckBox_ObjS_2031_Def_Fin.IsChecked == true) { CheckBox_ObjS_2031_Def_Fin_Etat = "true"; };
             if (CheckBox_ObjS_2031_Def_Fin.IsChecked == false) { CheckBox_ObjS_2031_Def_Fin_Etat = "false"; };
@@ -19664,7 +19743,7 @@ namespace CPV9
             if (CheckBox_ObjS_2032_Att_E4.IsChecked == false) { CheckBox_ObjS_2032_Att_E4_Etat = "false"; };
             if (CheckBox_ObjS_2032_Att_E5.IsChecked == false) { CheckBox_ObjS_2032_Att_E5_Etat = "false"; };
             Calcul_Score_Attaquant();
-        }       
+        }
         private void CheckBox_ObjS_2032_Def_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_2032_Def_Obj1.IsChecked == true) { CheckBox_ObjS_2032_Def_Obj1_Etat = "true"; };
@@ -20154,7 +20233,7 @@ namespace CPV9
 
             StackPanel_CPV9_Droit.Visibility = Visibility.Visible;
             CDV9_droit_Neo.FontSize = 5 * Rapport_Taille_X;
-            CDV9_droit_ScoreBoard.FontSize = Rapport_Taille_X;            
+            CDV9_droit_ScoreBoard.FontSize = Rapport_Taille_X;
         }
         private void Affichage_Version()
         {
@@ -21327,7 +21406,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_3B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 4
-            
+
             /// OBJECTIF SECONDAIRE 5
             Label_Objectif_Sec_Att_5A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_5B.FontSize = Taille_texte * Multiple;
@@ -21951,7 +22030,7 @@ namespace CPV9
             CheckBox_ObjS_1013_Att_T2.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1013_Att_T3.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_1013_Att_T4.FontSize = Taille_texte * Multiple;
-            CheckBox_ObjS_1013_Att_T5.FontSize = Taille_texte * Multiple;           
+            CheckBox_ObjS_1013_Att_T5.FontSize = Taille_texte * Multiple;
 
             GridSplitter_Objectif_Sec_Att_1013A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_1013B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -23427,6 +23506,38 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_137D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_137E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_137F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+
+            /// OBJECTIF SECONDAIRE 138
+            StackPanel_ObjS_Att.Width = Multiple * 110;
+            Label_Objectif_Sec_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138A.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138B.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138H.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138I.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBlock_ObjS_138_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_T2.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_T2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T3.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_T3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T4.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_T4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T5.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_T5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T5.Height = Hauteur_saisie * Multiple;
+            GridSplitter_Objectif_Sec_Att_138A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_138B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_138C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_138D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_138E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_138F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             #endregion
 
             #region AFFICHAGE_SAISIE_SCORES_PEINTURES_ATTAQUANT
@@ -23707,7 +23818,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_7C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_7D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
-                        /// OBJECTIF SECONDAIRE 9
+            /// OBJECTIF SECONDAIRE 9
             Label_Objectif_Sec_Def_9A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_9B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_9C.FontSize = Taille_texte * Multiple;
@@ -24505,7 +24616,7 @@ namespace CPV9
             CheckBox_ObjS_2021_Def_T4.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Def_T5.FontSize = Taille_texte * Multiple;
             CheckBox_ObjS_2021_Def_Fin.FontSize = Taille_texte * Multiple;
-            TextBlock_ObjS_2021_Def.FontSize = 1.2 * Taille_texte * Multiple;            
+            TextBlock_ObjS_2021_Def.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_Objectif_Sec_Def_2021A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2021B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_2021C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -25499,7 +25610,7 @@ namespace CPV9
             Label_Objectif_Sec_Def_134B.FontSize = 0.8 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_134C.FontSize = 0.8 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_134D.FontSize = 0.8 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_134E.FontSize = 0.8 *Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_134E.FontSize = 0.8 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_134F.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_134G.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_134_Def.FontSize = 1.2 * Taille_texte * Multiple;
@@ -25644,6 +25755,38 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_137D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_137E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_137F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+
+            /// OBJECTIF SECONDAIRE 138
+            StackPanel_ObjS_Def.Width = Multiple * 110;
+            Label_Objectif_Sec_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138A.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138B.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138H.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138I.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBlock_ObjS_138_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_T2.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_T2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T3.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_T3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T4.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_T4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T5.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_T5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T5.Height = Hauteur_saisie * Multiple;
+            GridSplitter_Objectif_Sec_Def_138A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_138B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_138C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_138D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_138E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_138F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             #endregion
 
@@ -26541,7 +26684,7 @@ namespace CPV9
 
         #endregion
 
-       
+
 
         #region Oeil_OBJS_9 Att & Def
         private void Affichage_Button_oeil_ObjS_9_Att()
@@ -29951,6 +30094,103 @@ namespace CPV9
         }
         #endregion
 
+        #region Oeil_OBJS_138 Att & Def
+        private void Affichage_Button_oeil_ObjS_138_Att()
+        {
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
+            Button_Caché_ObjS_138_Att.Width = x;
+            Button_Caché_ObjS_138_Att.Height = x;
+            Button_Visible_ObjS_138_Att.Width = x;
+            Button_Visible_ObjS_138_Att.Height = x;
+        }
+        private void Button_Caché_ObjS_138_Att_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_138_Att();
+            StackPanel_ObjS_138B_Att.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Att_138B.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Att_138C.Visibility = Visibility.Collapsed;
+            Button_Caché_ObjS_138_Att.Visibility = Visibility.Collapsed;
+            Button_Visible_ObjS_138_Att.Visibility = Visibility.Visible;
+            Oeil_OBJS_138_Att = true;
+        }
+        private void Button_Visible_ObjS_138_Att_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_138_Att();
+            StackPanel_ObjS_138B_Att.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Att_138B.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Att_138C.Visibility = Visibility.Visible;
+            Button_Caché_ObjS_138_Att.Visibility = Visibility.Visible;
+            Button_Visible_ObjS_138_Att.Visibility = Visibility.Collapsed;
+            Oeil_OBJS_138_Att = false;
+        }
+        private void oeil_OBJS_138_Att()
+        {
+            Affichage_Button_oeil_ObjS_138_Att();
+            if (Oeil_OBJS_138_Att == true)
+            {
+                StackPanel_ObjS_138B_Att.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_138B.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_138C.Visibility = Visibility.Collapsed;
+                Button_Visible_ObjS_138_Att.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                StackPanel_ObjS_138B_Att.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_138B.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_138C.Visibility = Visibility.Visible;
+                Button_Caché_ObjS_138_Att.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Affichage_Button_oeil_ObjS_138_Def()
+        {
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
+            Button_Caché_ObjS_138_Def.Width = x;
+            Button_Caché_ObjS_138_Def.Height = x;
+            Button_Visible_ObjS_138_Def.Width = x;
+            Button_Visible_ObjS_138_Def.Height = x;
+        }
+        private void Button_Caché_ObjS_138_Def_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_138_Def();
+            StackPanel_ObjS_138B_Def.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Def_138B.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Def_138C.Visibility = Visibility.Collapsed;
+            Button_Caché_ObjS_138_Def.Visibility = Visibility.Collapsed;
+            Button_Visible_ObjS_138_Def.Visibility = Visibility.Visible;
+            Oeil_OBJS_138_Def = true;
+        }
+        private void Button_Visible_ObjS_138_Def_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_138_Def();
+            StackPanel_ObjS_138B_Def.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Def_138B.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Def_138C.Visibility = Visibility.Visible;
+            Button_Caché_ObjS_138_Def.Visibility = Visibility.Visible;
+            Button_Visible_ObjS_138_Def.Visibility = Visibility.Collapsed;
+            Oeil_OBJS_138_Def = false;
+        }
+        private void oeil_OBJS_138_Def()
+        {
+            Affichage_Button_oeil_ObjS_138_Def();
+            if (Oeil_OBJS_138_Def == true)
+            {
+                StackPanel_ObjS_138B_Def.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_138B.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_138C.Visibility = Visibility.Collapsed;
+                Button_Visible_ObjS_138_Def.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                StackPanel_ObjS_138B_Def.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_138B.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_138C.Visibility = Visibility.Visible;
+                Button_Caché_ObjS_138_Def.Visibility = Visibility.Visible;
+            }
+        }
+        #endregion
+
+
         #region Oeil_OBJS_501 Att & Def
         private void Affichage_Button_oeil_ObjS_501_Att()
         {
@@ -32603,7 +32843,7 @@ namespace CPV9
             win2.Show();
             win2.Affich_Lives(_Livre);
         }
-        
+
         private void Button_Doc_ObjS_1_Click(object sender, RoutedEventArgs e)
         {
             Livres(1);
