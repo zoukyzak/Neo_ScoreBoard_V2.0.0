@@ -11,41 +11,11 @@ namespace CPV9.Classes
 
         public Classe_Score_OBJS_006(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String Saisie7, String Saisie8, String Saisie9, String Saisie10)
         {
-            if (Saisie1 != "" & Saisie2 != "")
-            {
-                if (Convert.ToInt32(Saisie1) > Convert.ToInt32(Saisie2))
-                {
-                    Score = Score + 3;
-                }
-            }
-            if (Saisie3 != "" & Saisie4 != "")
-            {
-                if (Convert.ToInt32(Saisie3) > Convert.ToInt32(Saisie4))
-                {
-                    Score = Score + 3;
-                }
-            }
-            if (Saisie5 != "" & Saisie6 != "")
-            {
-                if (Convert.ToInt32(Saisie5) > Convert.ToInt32(Saisie6))
-                {
-                    Score = Score + 3;
-                }
-            }
-            if (Saisie7 != "" & Saisie8 != "")
-            {
-                if (Convert.ToInt32(Saisie7) > Convert.ToInt32(Saisie8))
-                {
-                    Score = Score + 3;
-                }
-            }
-            if (Saisie9 != "" & Saisie10 != "")
-            {
-                if (Convert.ToInt32(Saisie9) > Convert.ToInt32(Saisie10))
-                {
-                    Score = Score + 3;
-                }
-            }
+            Compare(Saisie1, Saisie2);
+            Compare(Saisie3, Saisie4);
+            Compare(Saisie5, Saisie6);
+            Compare(Saisie7, Saisie8);
+            Compare(Saisie9, Saisie10);
             Score_ObjS = Score;
             if (Score >= 15)
             {
@@ -53,5 +23,20 @@ namespace CPV9.Classes
             }
             Scores_Joueur = Score;
         }
+
+         void Compare(string Donnée1, string donnée2)
+        {
+            if (Donnée1 != "" & donnée2 != "")
+            {
+                if (Convert.ToInt32(Donnée1) > Convert.ToInt32(donnée2))
+                {
+                    Score = Score + 3;
+                }
+            }            
+        }
+
     }
+
+
+    
 }

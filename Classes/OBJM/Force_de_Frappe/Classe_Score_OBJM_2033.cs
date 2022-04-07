@@ -11,51 +11,20 @@ namespace CPV9.Classes
 
         public Classe_Score_OBJM_2033(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5)
         {
-            if (Saisie1 != "")
-            {
-                calcul(Convert.ToInt32(Saisie1));
-            }
-            if (Saisie2 != "")
-            {
-                calcul(Convert.ToInt32(Saisie2));
-            }
-            if (Saisie3 != "")
-            {
-                calcul(Convert.ToInt32(Saisie3));
-            }
-            if (Saisie4 != "")
-            {
-                calcul(Convert.ToInt32(Saisie4));
-            }
-            if (Saisie5 != "")
-            {
-                calcul(Convert.ToInt32(Saisie5));
-            }
+            calcul(Convert.ToBoolean(Saisie1));
+            calcul(Convert.ToBoolean(Saisie2));
+            calcul(Convert.ToBoolean(Saisie3));
+            calcul(Convert.ToBoolean(Saisie4));
+            calcul(Convert.ToBoolean(Saisie5));
 
             Score_ObjS = Score;
-            if (Score >= 15)
-            {
-                Score = 15;
-            }
+            if (Score >= 15) { Score = 15; };
             Scores_Joueur = Score;
         }
 
-        private void calcul(int Donne1)
+        private void calcul(Boolean Donne)
         {
-            if (Donne1 == 1)
-            {
-                Score += 3;
-                return;
-            }
-            if (Donne1 == 2)
-            {
-                Score += 5;
-                return;
-            }
-            else
-            {
-                return;
-            }
+            if (Donne == true) { Score += 3; };            
         }
     }
 }

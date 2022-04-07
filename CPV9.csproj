@@ -82,10 +82,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Classes\Classe_Cape.cs" />
+    <Compile Include="Classes\Descriptif_OBJ\Descript_OBJS.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_132.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_133.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_134.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_135.cs" />
+    <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_136.cs" />
+    <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_137.cs" />
+    <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_138.cs" />
+    <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_139.cs" />
+    <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1021.cs" />
+    <Compile Include="Windows\Livres.xaml.cs">
+      <DependentUpon>Livres.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Tv.xaml.cs">
       <DependentUpon>Tv.xaml</DependentUpon>
     </Compile>
@@ -135,7 +145,7 @@
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1013.cs" />
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1012.cs" />
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1011.cs" />
-    <Compile Include="Classes\OBJS\Classe_Selection_OBJS.cs" />
+    <Compile Include="Classes\Classe_Selection_OBJS.cs" />
     <Compile Include="Classes\OBJM\Patrouille\Classe_Score_OBJM_503.cs" />
     <Compile Include="Classes\OBJM\Patrouille\Classe_Score_OBJM_501.cs" />
     <Compile Include="Classes\OBJM\Patrouille\Classe_Score_OBJM_502.cs" />
@@ -146,11 +156,9 @@
     <Compile Include="Classes\Sauvegarde\Classe_Sauvegardes_Mars_T1.cs" />
     <Compile Include="Classes\Sauvegarde\Classe_Sauvegardes_Quarantaine_T1.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_003.cs" />
-    <Compile Include="Classes\OBJS\Classe_Score_OBJS_004.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_005.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_006.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_007.cs" />
-    <Compile Include="Classes\OBJS\Classe_Score_OBJS_008.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_009.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_010.cs" />
     <Compile Include="Classes\OBJS\Classe_Score_OBJS_011.cs" />
@@ -168,6 +176,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\Livres.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\Tv.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -399,6 +411,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images_Fond\CA22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ArtDuWarp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\EiminezLEnnemi.jpg" />
+    <Resource Include="Images\Operationsclandestines.jpg" />
+    <Resource Include="Images\PasDePitier.jpg" />
+    <Resource Include="Images\SuprematiMilitaire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\livre.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

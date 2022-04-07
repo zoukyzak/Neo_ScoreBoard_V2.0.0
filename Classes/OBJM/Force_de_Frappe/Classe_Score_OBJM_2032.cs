@@ -17,10 +17,7 @@ namespace CPV9.Classes
             calcul(Saisie4, Saisie9);
             calcul(Saisie5, Saisie10);
             Score_ObjS = Score;
-            if (Score >= 15)
-            {
-                Score = 15;
-            }
+            if (Score >= 15) { Score = 15; };
             Scores_Joueur = Score;
         }
 
@@ -28,12 +25,12 @@ namespace CPV9.Classes
         {
             if (Donne1 == "true" && Donne2 == "true")
             {
-                Score += 5;
+                Score += 3;
                 return;
             }
             if (Donne1 == "true" || Donne2 == "true")
             {
-                Score += 3;
+                Score += 2;
                 return;
             }
             else

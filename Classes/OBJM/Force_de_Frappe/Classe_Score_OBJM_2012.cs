@@ -14,18 +14,10 @@ namespace CPV9.Classes
         {
             if (Saisie1 != "")
             {
-                if (Convert.ToInt32(Saisie1) == 1)
-                {
-                    Score = 5;
-                }
-                if (Convert.ToInt32(Saisie1) == 2)
-                {
-                    Score = 15;
-                }
+                Score = 4 * Convert.ToInt32(Saisie1);                
             }
-
-
             Score_ObjS = Score;
+            if (Score > 15) { Score = 15; };
             Scores_Joueur = Score;
         }
     }

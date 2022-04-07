@@ -12,7 +12,7 @@ namespace CPV9.Classes
         private int seuil_Bas = 0;
         private int seuil_Haut = 0;
 
-        public Classe_Score_Obj_Principaux(int Formatbis, string Saisie1, string Saisie2, string Saisie3, string Saisie4, string Saisie5, string Saisie6, string Saisie7, string Saisie8, string Saisie9, string Saisie10)
+        public Classe_Score_Obj_Principaux(int Formatbis, string Saisie1, string Saisie2, string Saisie3, string Saisie4, string Saisie5, string Saisie6, string Saisie7, string Saisie8)
         {
             if (Formatbis == 1)/// Formatbis , identification du scoring a partir de 2 objectifs pris
             {
@@ -29,7 +29,6 @@ namespace CPV9.Classes
             Control(Saisie3, Saisie4);
             Control(Saisie5, Saisie6);
             Control(Saisie7, Saisie8);
-            Control(Saisie9, Saisie10);
 
             Score_ObjP = Score;
             if (Score >= 45)

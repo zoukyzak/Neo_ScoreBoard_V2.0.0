@@ -28,6 +28,7 @@ namespace CPV9.Windows
         bool style_Tv = false;
 
         public int[,] _Capes_Tv = new int[3,300];
+        public string Text_Capes_Tv = "";
         public Tv()
         {
             InitializeComponent();
@@ -36,150 +37,121 @@ namespace CPV9.Windows
         }
         private void Init_Capes()
         {
-            Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjP_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_3_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_3_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_4_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_4_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_5_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_5_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_6_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_6_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_7_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_7_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_8_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_8_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_9_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_9_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_10_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_10_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_11_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_11_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_12_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_12_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_13_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_13_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_14_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_14_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_15_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_15_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_16_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_16_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_17_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_17_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_18_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_18_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_19_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_19_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_501_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_501_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_502_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_502_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_503_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_503_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1011_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1011_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1012_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1012_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1013_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1013_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1021_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1021_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1022_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1022_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1023_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1023_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1031_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1031_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1032_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1032_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1033_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_1033_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2011_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2011_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2012_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2012_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2013_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2013_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2021_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2021_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2022_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2022_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2023_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2023_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2031_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2031_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2032_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2032_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2033_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjS_2033_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_100_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_100_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_101_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_101_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_102_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_102_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_103_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Necron_103_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SM_110_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SM_110_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SM_111_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SM_111_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SM_112_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SM_112_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_113_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_113_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_114_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_114_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_115_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_115_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_116_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_BA_116_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_117_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_117_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_118_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_118_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_119_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_119_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_120_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Deathwatch_120_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_121_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_121_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_122_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_122_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_123_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_123_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_124_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_SW_124_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_DG_125_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_DG_125_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_DG_126_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_DG_126_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_DG_127_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_DG_127_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_128_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_128_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_129_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_129_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_130_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_130_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_131_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_Admech_131_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_132_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_132_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_133_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_133_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_134_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_134_Cape_Player_2.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_135_Cape_Player_1.Visibility = Visibility.Collapsed;
-            Label_Score_ObjC_AdeptaS_135_Cape_Player_2.Visibility = Visibility.Collapsed;
-        }
+            Label_Tv_Cape_Player_Attaquant_1.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Attaquant_2.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Attaquant_3.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Attaquant_4.Visibility = Visibility.Collapsed;
 
+            Label_Tv_Cape_Player_Defenseur_1.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Defenseur_2.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Defenseur_3.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Defenseur_4.Visibility = Visibility.Collapsed;
+        }
+        public void Collect_Cape_Tv(string Player, int ID_Cape_Tv, string text_Cape_Tv)
+         {
+            if (Player == "Att")
+            {
+                if (ID_Cape_Tv == 1)
+                {
+                    Label_Tv_Cape_Player_Attaquant_1.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_1.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_1.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 2)
+                {
+                    Label_Tv_Cape_Player_Attaquant_2.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_2.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_2.Visibility = Visibility.Visible;
+                    }
+                }                
+                if (ID_Cape_Tv == 3)
+                {
+                    Label_Tv_Cape_Player_Attaquant_3.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_3.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_3.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 4)
+                {
+                    Label_Tv_Cape_Player_Attaquant_4.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_4.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_4.Visibility = Visibility.Visible;
+                    }
+                }
+            }
+            if (Player == "Def")
+            {
+                if (ID_Cape_Tv == 1)
+                {                    
+                    Label_Tv_Cape_Player_Defenseur_1.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_1.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_1.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 2)
+                {
+                    Label_Tv_Cape_Player_Defenseur_2.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_2.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_2.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 3)
+                {
+                    Label_Tv_Cape_Player_Defenseur_3.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_3.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_3.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 4)
+                {
+                    Label_Tv_Cape_Player_Defenseur_4.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_4.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_4.Visibility = Visibility.Visible;
+                    }
+                }
+            }
+        }
         public void Actu_Tv(int Table_Tv, String Image_Pl1, String Image_Pl2, String Pseudo_P1, string Pseudo_P2, String SG_P1, string SG_P2, int Score_P1, int Score_P2)
         {
             _Tables(Table_Tv);
@@ -196,173 +168,7 @@ namespace CPV9.Windows
             Selection_Image_Attaquant_Tv(Image_Pl1);
             Selection_Image_Defenseur_Tv(Image_Pl2);
         }
-        public void Capes_Tv()
-        {
-            Init_Capes();
-            int n = 0;
-            if (_Capes_Tv[1,n] == 1){Label_Score_ObjP_Cape_Player_1.Visibility = Visibility.Visible;};///0 OBJECTIF PRIMAIRE
-            if (_Capes_Tv[2,n] == 1){Label_Score_ObjP_Cape_Player_2.Visibility = Visibility.Visible;};n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1_Cape_Player_1.Visibility = Visibility.Visible; };///1 OBJECTIF SECONDAIRE
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2_Cape_Player_1.Visibility = Visibility.Visible; };///2
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_3_Cape_Player_1.Visibility = Visibility.Visible; };///3
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_3_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_4_Cape_Player_1.Visibility = Visibility.Visible; };///4
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_4_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_5_Cape_Player_1.Visibility = Visibility.Visible; };///5
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_5_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_6_Cape_Player_1.Visibility = Visibility.Visible; };///6
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_6_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_7_Cape_Player_1.Visibility = Visibility.Visible; };///7
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_7_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_8_Cape_Player_1.Visibility = Visibility.Visible; };///8
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_8_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_9_Cape_Player_1.Visibility = Visibility.Visible; };///9
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_9_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_10_Cape_Player_1.Visibility = Visibility.Visible; };///10
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_10_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_11_Cape_Player_1.Visibility = Visibility.Visible; };///11
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_11_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_12_Cape_Player_1.Visibility = Visibility.Visible; };///12
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_12_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_13_Cape_Player_1.Visibility = Visibility.Visible; };///13
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_13_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_14_Cape_Player_1.Visibility = Visibility.Visible; };///14
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_14_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_15_Cape_Player_1.Visibility = Visibility.Visible; };///15
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_15_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_16_Cape_Player_1.Visibility = Visibility.Visible; };///16
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_16_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_17_Cape_Player_1.Visibility = Visibility.Visible; };///17
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_17_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_18_Cape_Player_1.Visibility = Visibility.Visible; };///18
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_18_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_19_Cape_Player_1.Visibility = Visibility.Visible; };///19
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_19_Cape_Player_2.Visibility = Visibility.Visible; }; n = 21;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_501_Cape_Player_1.Visibility = Visibility.Visible; };///21 OBJECTIF DE MISSION PATROUILLE
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_501_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_502_Cape_Player_1.Visibility = Visibility.Visible; };///22
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_502_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_503_Cape_Player_1.Visibility = Visibility.Visible; };///23
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_503_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1011_Cape_Player_1.Visibility = Visibility.Visible; };///24 OBJECTIF DE MISSION INCURSION
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1011_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1012_Cape_Player_1.Visibility = Visibility.Visible; };///25
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1012_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1013_Cape_Player_1.Visibility = Visibility.Visible; };///26
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1013_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1021_Cape_Player_1.Visibility = Visibility.Visible; };///27
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1021_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1022_Cape_Player_1.Visibility = Visibility.Visible; };///28
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1022_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1023_Cape_Player_1.Visibility = Visibility.Visible; };///29
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1023_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1031_Cape_Player_1.Visibility = Visibility.Visible; };///30
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1031_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1032_Cape_Player_1.Visibility = Visibility.Visible; };///31
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1032_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_1033_Cape_Player_1.Visibility = Visibility.Visible; };///32
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_1033_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2011_Cape_Player_1.Visibility = Visibility.Visible; };///33 OBJECTIF DE MISSION FORCE DE FRAPPE
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2011_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2012_Cape_Player_1.Visibility = Visibility.Visible; };///34
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2012_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2013_Cape_Player_1.Visibility = Visibility.Visible; };///35
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2013_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2021_Cape_Player_1.Visibility = Visibility.Visible; };///36
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2021_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2022_Cape_Player_1.Visibility = Visibility.Visible; };///37
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2022_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2023_Cape_Player_1.Visibility = Visibility.Visible; };///38
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2023_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2031_Cape_Player_1.Visibility = Visibility.Visible; };///39
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2031_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2032_Cape_Player_1.Visibility = Visibility.Visible; };///40
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2032_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2033_Cape_Player_1.Visibility = Visibility.Visible; };///41
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2033_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2011_Cape_Player_1.Visibility = Visibility.Visible; };///42 OBJECTIF DE MISSION APPOCALYPSE
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2011_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2012_Cape_Player_1.Visibility = Visibility.Visible; };///43
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjS_2012_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2013_Cape_Player_1.Visibility = Visibility.Visible; };///44
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjS_2013_Cape_Player_2.Visibility = Visibility.Visible; };n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_100_Cape_Player_1.Visibility = Visibility.Visible; };///45 OBJECTIF DE CODEX NECRONS
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_100_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_101_Cape_Player_1.Visibility = Visibility.Visible; };///46
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_101_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_102_Cape_Player_1.Visibility = Visibility.Visible; };///47
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_102_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_103_Cape_Player_1.Visibility = Visibility.Visible; };///48
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_103_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_SM_110_Cape_Player_1.Visibility = Visibility.Visible; };///49 OBJECTIF DE CODEX SPACE MARINE
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_SM_110_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_SM_111_Cape_Player_1.Visibility = Visibility.Visible; };///50
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_SM_111_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_SM_112_Cape_Player_1.Visibility = Visibility.Visible; };///51
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_SM_112_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_100_Cape_Player_1.Visibility = Visibility.Visible; };///52 OBJECTIF DE CODEX BLOOD ANGEL
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_100_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_101_Cape_Player_1.Visibility = Visibility.Visible; };///53
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_101_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_102_Cape_Player_1.Visibility = Visibility.Visible; };///54
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_102_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Necron_103_Cape_Player_1.Visibility = Visibility.Visible; };///55
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Necron_103_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Deathwatch_117_Cape_Player_1.Visibility = Visibility.Visible; };///56 OBJECTIF DE CODEX DEATHWATCH
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Deathwatch_117_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Deathwatch_118_Cape_Player_1.Visibility = Visibility.Visible; };///57
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Deathwatch_118_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Deathwatch_119_Cape_Player_1.Visibility = Visibility.Visible; };///58
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Deathwatch_119_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Deathwatch_120_Cape_Player_1.Visibility = Visibility.Visible; };///59
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Deathwatch_120_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_SW_121_Cape_Player_1.Visibility = Visibility.Visible; };///60 OBJECTIF DE CODEX SPACE WOLVES
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_SW_121_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_SW_122_Cape_Player_1.Visibility = Visibility.Visible; };///61
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_SW_122_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_SW_123_Cape_Player_1.Visibility = Visibility.Visible; };///62
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_SW_123_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_SW_124_Cape_Player_1.Visibility = Visibility.Visible; };///63
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_SW_124_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_DG_125_Cape_Player_1.Visibility = Visibility.Visible; };///64 OBJECTIF DE CODEX DEATH GUARD
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_DG_125_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_DG_126_Cape_Player_1.Visibility = Visibility.Visible; };///65
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_DG_126_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_DG_127_Cape_Player_1.Visibility = Visibility.Visible; };///66
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_DG_127_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Admech_128_Cape_Player_1.Visibility = Visibility.Visible; };///67 OBJECTIF DE CODEX ADEPTUS MECHANICUS
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Admech_128_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Admech_129_Cape_Player_1.Visibility = Visibility.Visible; };///68
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Admech_129_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Admech_130_Cape_Player_1.Visibility = Visibility.Visible; };///69
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Admech_130_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_Admech_131_Cape_Player_1.Visibility = Visibility.Visible; };///70
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_Admech_131_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_AdeptaS_132_Cape_Player_1.Visibility = Visibility.Visible; };///71 OBJECTIF DE CODEX ADEPTA SORORITAS
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_AdeptaS_132_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_AdeptaS_133_Cape_Player_1.Visibility = Visibility.Visible; };///72
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_AdeptaS_133_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_AdeptaS_134_Cape_Player_1.Visibility = Visibility.Visible; };///73
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_AdeptaS_134_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-            if (_Capes_Tv[1, n] == 1) { Label_Score_ObjC_AdeptaS_135_Cape_Player_1.Visibility = Visibility.Visible; };///74
-            if (_Capes_Tv[2, n] == 1) { Label_Score_ObjC_AdeptaS_135_Cape_Player_2.Visibility = Visibility.Visible; }; n++;
-        }
-
+        
         private void _Tables(int Table_Tv)
         {
             if (Table_Tv == 1) { Table = "Mars"; };
@@ -398,148 +204,14 @@ namespace CPV9.Windows
             StackPanel_Cape_Player_1_Tv.Margin = new Thickness (5, 150 * _Taille, 0, 0);
             StackPanel_Cape_Player_2_Tv.Margin = new Thickness (0, 170 * _Taille, 5, 0);
 
-            Label_Score_ObjP_Cape_Player_1.FontSize= 8 * _Taille;
-            Label_Score_ObjP_Cape_Player_2.FontSize= 8 * _Taille;
-            Label_Score_ObjS_1_Cape_Player_1.FontSize= 8 * _Taille;
-            Label_Score_ObjS_1_Cape_Player_2.FontSize= 8 * _Taille;
-            Label_Score_ObjS_2_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_3_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_3_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_4_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_4_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_5_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_5_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_6_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_6_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_7_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_7_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_8_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_8_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_9_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_9_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_10_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_10_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_11_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_11_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_12_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_12_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_13_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_13_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_14_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_14_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_15_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_15_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_16_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_16_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_17_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_17_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_18_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_18_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_19_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_19_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_501_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_501_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_502_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_502_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_503_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_503_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1011_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1011_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1012_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1012_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1013_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1013_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1021_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1021_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1022_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1022_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1023_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1023_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1031_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1031_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1032_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1032_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1033_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_1033_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2011_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2011_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2012_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2012_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2013_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2013_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2021_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2021_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2022_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2022_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2023_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2023_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2031_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2031_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2032_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2032_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2033_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjS_2033_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_100_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_100_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_101_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_101_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_102_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_102_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_103_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Necron_103_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SM_110_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SM_110_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SM_111_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SM_111_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SM_112_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SM_112_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_113_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_113_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_114_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_114_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_115_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_115_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_116_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_BA_116_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_117_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_117_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_118_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_118_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_119_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_119_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_120_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Deathwatch_120_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_121_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_121_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_122_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_122_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_123_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_123_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_124_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_SW_124_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_DG_125_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_DG_125_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_DG_126_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_DG_126_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_DG_127_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_DG_127_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_128_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_128_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_129_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_129_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_130_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_130_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_131_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_Admech_131_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_132_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_132_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_133_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_133_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_134_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_134_Cape_Player_2.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_135_Cape_Player_1.FontSize = 8 * _Taille;
-            Label_Score_ObjC_AdeptaS_135_Cape_Player_2.FontSize = 8 * _Taille;
+            Label_Tv_Cape_Player_Attaquant_1.FontSize= 8 * _Taille;
+            Label_Tv_Cape_Player_Attaquant_2.FontSize= 8 * _Taille;
+            Label_Tv_Cape_Player_Attaquant_3.FontSize= 8 * _Taille;
+            Label_Tv_Cape_Player_Attaquant_4.FontSize= 8 * _Taille;
+            Label_Tv_Cape_Player_Defenseur_1.FontSize = 8 * _Taille;
+            Label_Tv_Cape_Player_Defenseur_2.FontSize = 8 * _Taille;
+            Label_Tv_Cape_Player_Defenseur_3.FontSize = 8 * _Taille;
+            Label_Tv_Cape_Player_Defenseur_4.FontSize = 8 * _Taille;
         }
 
         private void Window_Tv_SizeChanged(object sender, SizeChangedEventArgs e)
