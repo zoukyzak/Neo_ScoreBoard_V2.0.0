@@ -91,6 +91,7 @@
     <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_136.cs" />
     <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_137.cs" />
     <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_138.cs" />
+    <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_139.cs" />
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1021.cs" />
     <Compile Include="Windows\Livres.xaml.cs">
       <DependentUpon>Livres.xaml</DependentUpon>

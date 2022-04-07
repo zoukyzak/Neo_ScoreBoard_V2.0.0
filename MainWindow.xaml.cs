@@ -1660,11 +1660,18 @@ namespace CPV9
             CheckBox_Objectif_Sec_Att_137_C4.IsChecked = false;
             CheckBox_Objectif_Sec_Att_137_C5.IsChecked = false;
 
-            /// OBJECTIF SECONDAIRE 138PRENEZ LES MORCEAUX D'CHOIX
+            /// OBJECTIF SECONDAIRE 138 PRENEZ LES MORCEAUX D'CHOIX
             TextBox_ObjS_138_Att_T2.Clear();
             TextBox_ObjS_138_Att_T3.Clear();
             TextBox_ObjS_138_Att_T4.Clear();
             TextBox_ObjS_138_Att_T5.Clear();
+
+            /// OBJECTIF SECONDAIRE 139 MAREE VERTE
+            TextBox_ObjS_139_Att_T1.Clear();
+            TextBox_ObjS_139_Att_T2.Clear();
+            TextBox_ObjS_139_Att_T3.Clear();
+            TextBox_ObjS_139_Att_T4.Clear();
+            TextBox_ObjS_139_Att_T5.Clear();
             #endregion
             #endregion
             #region INIT_OBJ_ATTAQUANT_FORMAT
@@ -2236,6 +2243,13 @@ namespace CPV9
             TextBox_ObjS_138_Def_T3.Clear();
             TextBox_ObjS_138_Def_T4.Clear();
             TextBox_ObjS_138_Def_T5.Clear();
+
+            /// OBJECTIF SECONDAIRE 139 MAREE VERTE
+            TextBox_ObjS_139_Def_T1.Clear();
+            TextBox_ObjS_139_Def_T2.Clear();
+            TextBox_ObjS_139_Def_T3.Clear();
+            TextBox_ObjS_139_Def_T4.Clear();
+            TextBox_ObjS_139_Def_T5.Clear();
             #endregion
             #endregion
             #region INIT_OBJ_DEFENSEUR_FORMAT
@@ -3262,6 +3276,14 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T3.Text; n++;
             Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T4.Text; n++;
             Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T5.Text;
+            /// OBJECTIF SECONDAIRE 139
+            n = 0;
+            Mem_Saisie_Attaquant[n, 78] = TextBox_ObjS_139_Att_T1.Text; n++;
+            Mem_Saisie_Attaquant[n, 78] = TextBox_ObjS_139_Att_T2.Text; n++;
+            Mem_Saisie_Attaquant[n, 78] = TextBox_ObjS_139_Att_T3.Text; n++;
+            Mem_Saisie_Attaquant[n, 78] = TextBox_ObjS_139_Att_T4.Text; n++;
+            Mem_Saisie_Attaquant[n, 78] = TextBox_ObjS_139_Att_T5.Text;
+
             #endregion
             #endregion
             #endregion
@@ -3891,6 +3913,13 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T3.Text; n++;
             Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T4.Text; n++;
             Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T5.Text;
+            /// OBJECTIF SECONDAIRE 139
+            n = 0;
+            Mem_Saisie_Defenseur[n, 78] = TextBox_ObjS_139_Def_T1.Text; n++;
+            Mem_Saisie_Defenseur[n, 78] = TextBox_ObjS_139_Def_T2.Text; n++;
+            Mem_Saisie_Defenseur[n, 78] = TextBox_ObjS_139_Def_T3.Text; n++;
+            Mem_Saisie_Defenseur[n, 78] = TextBox_ObjS_139_Def_T4.Text; n++;
+            Mem_Saisie_Defenseur[n, 78] = TextBox_ObjS_139_Def_T5.Text;
             #endregion
             #endregion
             #endregion
@@ -5401,6 +5430,13 @@ namespace CPV9
             TextBox_ObjS_138_Att_T3.Text = Mem_Saisie_Attaquant[n, 77]; n++;
             TextBox_ObjS_138_Att_T4.Text = Mem_Saisie_Attaquant[n, 77]; n++;
             TextBox_ObjS_138_Att_T5.Text = Mem_Saisie_Attaquant[n, 77];
+            /// OBJECTIF SECONDAIRE 139
+            n = 0;
+            TextBox_ObjS_139_Att_T1.Text = Mem_Saisie_Attaquant[n, 78]; n++;
+            TextBox_ObjS_139_Att_T2.Text = Mem_Saisie_Attaquant[n, 78]; n++;
+            TextBox_ObjS_139_Att_T3.Text = Mem_Saisie_Attaquant[n, 78]; n++;
+            TextBox_ObjS_139_Att_T4.Text = Mem_Saisie_Attaquant[n, 78]; n++;
+            TextBox_ObjS_139_Att_T5.Text = Mem_Saisie_Attaquant[n, 78];
             #endregion
             #endregion
 
@@ -6902,6 +6938,13 @@ namespace CPV9
             TextBox_ObjS_138_Def_T3.Text = Mem_Saisie_Defenseur[n, 77]; n++;
             TextBox_ObjS_138_Def_T4.Text = Mem_Saisie_Defenseur[n, 77]; n++;
             TextBox_ObjS_138_Def_T5.Text = Mem_Saisie_Defenseur[n, 77];
+            /// OBJECTIF SECONDAIRE 139
+            n = 0;
+            TextBox_ObjS_139_Def_T1.Text = Mem_Saisie_Defenseur[n, 78]; n++;
+            TextBox_ObjS_139_Def_T2.Text = Mem_Saisie_Defenseur[n, 78]; n++;
+            TextBox_ObjS_139_Def_T3.Text = Mem_Saisie_Defenseur[n, 78]; n++;
+            TextBox_ObjS_139_Def_T4.Text = Mem_Saisie_Defenseur[n, 78]; n++;
+            TextBox_ObjS_139_Def_T5.Text = Mem_Saisie_Defenseur[n, 78];
 
             #endregion
             #endregion
@@ -7422,7 +7465,7 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 136 || Choix_ObjS_Attaquant[1] == 136 || Choix_ObjS_Attaquant[2] == 136) { StackPanel_ObjS_136_Att.Visibility = Visibility.Visible; oeil_OBJS_136_Att(); };
             if (Choix_ObjS_Attaquant[0] == 137 || Choix_ObjS_Attaquant[1] == 137 || Choix_ObjS_Attaquant[2] == 137) { StackPanel_ObjS_137_Att.Visibility = Visibility.Visible; oeil_OBJS_137_Att(); };
             if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { StackPanel_ObjS_138_Att.Visibility = Visibility.Visible; oeil_OBJS_138_Att(); };
-            ///if (Choix_ObjS_Attaquant[0] == 139 || Choix_ObjS_Attaquant[1] == 139 || Choix_ObjS_Attaquant[2] == 139) { StackPanel_ObjS_139_Att.Visibility = Visibility.Visible; oeil_OBJS_139_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 139 || Choix_ObjS_Attaquant[1] == 139 || Choix_ObjS_Attaquant[2] == 139) { StackPanel_ObjS_139_Att.Visibility = Visibility.Visible; oeil_OBJS_139_Att(); };
             if (Choix_ObjS_Attaquant[0] == 501 || Choix_ObjS_Attaquant[1] == 501 || Choix_ObjS_Attaquant[2] == 501) { StackPanel_ObjS_501_Att.Visibility = Visibility.Visible; oeil_OBJS_501_Att(); };
             if (Choix_ObjS_Attaquant[0] == 502 || Choix_ObjS_Attaquant[1] == 502 || Choix_ObjS_Attaquant[2] == 502) { StackPanel_ObjS_502_Att.Visibility = Visibility.Visible; oeil_OBJS_502_Att(); };
             if (Choix_ObjS_Attaquant[0] == 503 || Choix_ObjS_Attaquant[1] == 503 || Choix_ObjS_Attaquant[2] == 503) { StackPanel_ObjS_503_Att.Visibility = Visibility.Visible; oeil_OBJS_503_Att(); };
@@ -7549,7 +7592,7 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 136 || Choix_ObjS_Defenseur[1] == 136 || Choix_ObjS_Defenseur[2] == 136) { StackPanel_ObjS_136_Def.Visibility = Visibility.Visible; oeil_OBJS_136_Def(); };
             if (Choix_ObjS_Defenseur[0] == 137 || Choix_ObjS_Defenseur[1] == 137 || Choix_ObjS_Defenseur[2] == 137) { StackPanel_ObjS_137_Def.Visibility = Visibility.Visible; oeil_OBJS_137_Def(); };
             if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { StackPanel_ObjS_138_Def.Visibility = Visibility.Visible; oeil_OBJS_138_Def(); };
-            ///if (Choix_ObjS_Defenseur[0] == 139 || Choix_ObjS_Defenseur[1] == 139 || Choix_ObjS_Defenseur[2] == 139) { StackPanel_ObjS_139_Def.Visibility = Visibility.Visible; oeil_OBJS_139_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 139 || Choix_ObjS_Defenseur[1] == 139 || Choix_ObjS_Defenseur[2] == 139) { StackPanel_ObjS_139_Def.Visibility = Visibility.Visible; oeil_OBJS_139_Def(); };
             if (Choix_ObjS_Defenseur[0] == 501 || Choix_ObjS_Defenseur[1] == 501 || Choix_ObjS_Defenseur[2] == 501) { StackPanel_ObjS_501_Def.Visibility = Visibility.Visible; oeil_OBJS_501_Def(); };
             if (Choix_ObjS_Defenseur[0] == 502 || Choix_ObjS_Defenseur[1] == 502 || Choix_ObjS_Defenseur[2] == 502) { StackPanel_ObjS_502_Def.Visibility = Visibility.Visible; oeil_OBJS_502_Def(); };
             if (Choix_ObjS_Defenseur[0] == 503 || Choix_ObjS_Defenseur[1] == 503 || Choix_ObjS_Defenseur[2] == 503) { StackPanel_ObjS_503_Def.Visibility = Visibility.Visible; oeil_OBJS_503_Def(); };
@@ -12456,6 +12499,16 @@ namespace CPV9
             }
             TextBlock_ObjS_138_Att.Text = Convert.ToString(OBJECTIF_Codex_138_Att.Score_ObjS);
 
+            ///CALCUL SCORE OBJECTIF MISSION 139
+            Classe_Score_OBJC_Ork_139 OBJECTIF_Codex_139_Att;
+            OBJECTIF_Codex_139_Att = new Classe_Score_OBJC_Ork_139(TextBox_ObjS_139_Att_T1.Text, TextBox_ObjS_139_Att_T2.Text, TextBox_ObjS_139_Att_T3.Text, TextBox_ObjS_139_Att_T4.Text, TextBox_ObjS_139_Att_T5.Text);
+            Scores_Attaquant[78] = OBJECTIF_Codex_139_Att.Scores_Joueur;
+            if (Convert.ToInt32(OBJECTIF_Codex_139_Att.Score_ObjS) >= 15)
+            {
+                ID_Cape_Attaquant[s] = 139;
+                s++;
+            }
+            TextBlock_ObjS_139_Att.Text = Convert.ToString(OBJECTIF_Codex_139_Att.Score_ObjS);
             #endregion
             #endregion
 
@@ -13341,6 +13394,17 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_138_Def.Text = Convert.ToString(OBJECTIF_Codex_138_Def.Score_ObjS);
+
+            ///CALCUL SCORE OBJECTIF MISSION 139
+            Classe_Score_OBJC_Ork_139 OBJECTIF_Codex_139_Def;
+            OBJECTIF_Codex_139_Def = new Classe_Score_OBJC_Ork_139(TextBox_ObjS_139_Def_T1.Text, TextBox_ObjS_139_Def_T2.Text, TextBox_ObjS_139_Def_T3.Text, TextBox_ObjS_139_Def_T4.Text, TextBox_ObjS_139_Def_T5.Text);
+            Scores_Defenseur[78] = OBJECTIF_Codex_139_Def.Scores_Joueur;
+            if (Convert.ToInt32(OBJECTIF_Codex_139_Def.Score_ObjS) >= 15)
+            {
+                ID_Cape_Defenseur[s] = 139;
+                s++;
+            }
+            TextBlock_ObjS_139_Def.Text = Convert.ToString(OBJECTIF_Codex_139_Def.Score_ObjS);
 
             #endregion
             #endregion
@@ -17107,15 +17171,6 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_137_C3.IsChecked == true) { CheckBox_Objectif_Sec_Def_137_C3_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_137_C3_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Def_137_C4.IsChecked == true) { CheckBox_Objectif_Sec_Def_137_C4_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_137_C4_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Def_137_C5.IsChecked == true) { CheckBox_Objectif_Sec_Def_137_C5_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_137_C5_Etat = "false"; };
-            Calcul_Score_Defenseur();
-        }
-
-        private void TextBox_ObjS_138_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_138_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
             Calcul_Score_Defenseur();
         }
 
@@ -23538,6 +23593,43 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_138D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_138E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_138F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+
+            /// OBJECTIF SECONDAIRE 139
+            StackPanel_ObjS_Att.Width = Multiple * 110;
+            Label_Objectif_Sec_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139A.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139B.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139I.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_139J.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBlock_ObjS_139_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Att_T1.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Att_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T2.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Att_T2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T3.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Att_T3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T4.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Att_T4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T5.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Att_T5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Att_T5.Height = Hauteur_saisie * Multiple;
+            GridSplitter_Objectif_Sec_Att_139A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_139B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_139C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_139D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_139E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_139F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_139G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             #endregion
 
             #region AFFICHAGE_SAISIE_SCORES_PEINTURES_ATTAQUANT
@@ -25787,6 +25879,43 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_138D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_138E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_138F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+
+            /// OBJECTIF SECONDAIRE 139
+            StackPanel_ObjS_Def.Width = Multiple * 110;
+            Label_Objectif_Sec_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139A.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139B.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139I.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_139J.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBlock_ObjS_139_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Def_T1.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Def_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T2.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Def_T2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T3.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Def_T3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T4.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Def_T4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T5.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_139_Def_T5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_139_Def_T5.Height = Hauteur_saisie * Multiple;
+            GridSplitter_Objectif_Sec_Def_139A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_139B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_139C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_139D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_139E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_139F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_139G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             #endregion
 
@@ -30186,6 +30315,102 @@ namespace CPV9
                 Label_Objectif_Sec_Def_138B.Visibility = Visibility.Visible;
                 Label_Objectif_Sec_Def_138C.Visibility = Visibility.Visible;
                 Button_Caché_ObjS_138_Def.Visibility = Visibility.Visible;
+            }
+        }
+        #endregion
+
+        #region Oeil_OBJS_139 Att & Def
+        private void Affichage_Button_oeil_ObjS_139_Att()
+        {
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
+            Button_Caché_ObjS_139_Att.Width = x;
+            Button_Caché_ObjS_139_Att.Height = x;
+            Button_Visible_ObjS_139_Att.Width = x;
+            Button_Visible_ObjS_139_Att.Height = x;
+        }
+        private void Button_Caché_ObjS_139_Att_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_139_Att();
+            StackPanel_ObjS_139B_Att.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Att_139B.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Att_139C.Visibility = Visibility.Collapsed;
+            Button_Caché_ObjS_139_Att.Visibility = Visibility.Collapsed;
+            Button_Visible_ObjS_139_Att.Visibility = Visibility.Visible;
+            Oeil_OBJS_139_Att = true;
+        }
+        private void Button_Visible_ObjS_139_Att_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_139_Att();
+            StackPanel_ObjS_139B_Att.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Att_139B.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Att_139C.Visibility = Visibility.Visible;
+            Button_Caché_ObjS_139_Att.Visibility = Visibility.Visible;
+            Button_Visible_ObjS_139_Att.Visibility = Visibility.Collapsed;
+            Oeil_OBJS_139_Att = false;
+        }
+        private void oeil_OBJS_139_Att()
+        {
+            Affichage_Button_oeil_ObjS_139_Att();
+            if (Oeil_OBJS_139_Att == true)
+            {
+                StackPanel_ObjS_139B_Att.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_139B.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_139C.Visibility = Visibility.Collapsed;
+                Button_Visible_ObjS_139_Att.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                StackPanel_ObjS_139B_Att.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_139B.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_139C.Visibility = Visibility.Visible;
+                Button_Caché_ObjS_139_Att.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Affichage_Button_oeil_ObjS_139_Def()
+        {
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) * 0.9);
+            Button_Caché_ObjS_139_Def.Width = x;
+            Button_Caché_ObjS_139_Def.Height = x;
+            Button_Visible_ObjS_139_Def.Width = x;
+            Button_Visible_ObjS_139_Def.Height = x;
+        }
+        private void Button_Caché_ObjS_139_Def_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_139_Def();
+            StackPanel_ObjS_139B_Def.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Def_139B.Visibility = Visibility.Collapsed;
+            Label_Objectif_Sec_Def_139C.Visibility = Visibility.Collapsed;
+            Button_Caché_ObjS_139_Def.Visibility = Visibility.Collapsed;
+            Button_Visible_ObjS_139_Def.Visibility = Visibility.Visible;
+            Oeil_OBJS_139_Def = true;
+        }
+        private void Button_Visible_ObjS_139_Def_Click(object sender, RoutedEventArgs e)
+        {
+            Affichage_Button_oeil_ObjS_139_Def();
+            StackPanel_ObjS_139B_Def.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Def_139B.Visibility = Visibility.Visible;
+            Label_Objectif_Sec_Def_139C.Visibility = Visibility.Visible;
+            Button_Caché_ObjS_139_Def.Visibility = Visibility.Visible;
+            Button_Visible_ObjS_139_Def.Visibility = Visibility.Collapsed;
+            Oeil_OBJS_139_Def = false;
+        }
+        private void oeil_OBJS_139_Def()
+        {
+            Affichage_Button_oeil_ObjS_139_Def();
+            if (Oeil_OBJS_139_Def == true)
+            {
+                StackPanel_ObjS_139B_Def.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_139B.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_139C.Visibility = Visibility.Collapsed;
+                Button_Visible_ObjS_139_Def.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                StackPanel_ObjS_139B_Def.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_139B.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_139C.Visibility = Visibility.Visible;
+                Button_Caché_ObjS_139_Def.Visibility = Visibility.Visible;
             }
         }
         #endregion
