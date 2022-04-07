@@ -11,14 +11,16 @@ namespace CPV9.Classes
         public string Cape_Selected { get; set; }
         public Classe_Cape(int ID_cape, String Text_Cape)
         {
+            #region OBJ PRINCIPAL
             /**  OBJECTIF PRINCIPAL  **/
             if (ID_cape == 1000) { Cape_Selected = "Objectif Principal capé"; };
-
+            #endregion
+            #region OBJ SECONDAIRE
             /**  ELIMINEZ L ENNEMI  **/
             if (ID_cape == 1) { Cape_Selected = "1-Assasinat capé"; };
             if (ID_cape == 2) { Cape_Selected = "2-Abbatez-le capé "; };
             if (ID_cape == 3) { Cape_Selected = "3-chasseur de Titans capé"; };
-            
+
             /**  PAS DE PITIER PAS DE REPIT  **/
             if (ID_cape == 5) { Cape_Selected = "5-Pas de prisonnier capé"; };
             if (ID_cape == 6) { Cape_Selected = "6-Broyez-les capé"; };
@@ -40,7 +42,8 @@ namespace CPV9.Classes
             if (ID_cape == 16) { Cape_Selected = "16-Rituel du warp capé"; };
             if (ID_cape == 17) { Cape_Selected = "17-Abhorrez le sorcier capé"; };
             if (ID_cape == 19) { Cape_Selected = "19-Percer le voile capé"; };
-
+            #endregion
+            #region OBJ CODEX
             /**  NECRON  **/
             if (ID_cape == 100) { Cape_Selected = "100-Code de combat capé"; };
             if (ID_cape == 101) { Cape_Selected = "101-Eliminez la vermine capé"; };
@@ -89,7 +92,8 @@ namespace CPV9.Classes
             if (ID_cape == 137) { Cape_Selected = "137-Les plus gros et les plus mieux capé"; };
             if (ID_cape == 138) { Cape_Selected = "138-Prenez les morceaux d'choix capé"; };
             if (ID_cape == 139) { Cape_Selected = "139-Marée verte capé"; };
-
+            #endregion
+            #region OBJ MISSION
             /**  PATROUILLE  **/
             if (ID_cape == 501) { Cape_Selected = "501-Assaut chirurgical capé"; };
             if (ID_cape == 502) { Cape_Selected = "502-Sondage capé"; };
@@ -121,7 +125,7 @@ namespace CPV9.Classes
             if (ID_cape == 3001) { Cape_Selected = "3001-Tenir le centre capé"; };
             if (ID_cape == 3002) { Cape_Selected = "3002-Encerclez-les capé"; };
             if (ID_cape == 3003) { Cape_Selected = "3003-Chercher le portail capé"; };
-            
+            #endregion
         }
     }
 }
