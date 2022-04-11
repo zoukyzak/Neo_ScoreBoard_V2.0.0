@@ -11729,6 +11729,10 @@ namespace CPV9
                 }
                 TextBlock_ObjS_2_Att.Text = Convert.ToString(OBJECTIF_Secondaire_002_Att.Score_ObjS_002);
             }
+            else
+            {
+                TextBlock_ObjS_2_Att.Text = "";
+            }
 
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 003
@@ -11743,6 +11747,10 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_3_Att.Text = Convert.ToString(OBJECTIF_Secondaire_003_Att.Score_ObjS_003);
+            }
+            else
+            {
+                TextBox_ObjS_3_Att.Text = "";
             }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 004            
@@ -11777,6 +11785,10 @@ namespace CPV9
                 }
                 TextBlock_ObjS_6_Att.Text = Convert.ToString(OBJECTIF_Secondaire_006_Att.Score_ObjS);
             }
+            else
+            {
+                TextBlock_ObjS_6_Att.Text = "0";
+            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 007
             if (TextBox_ObjS_7_Att_Unité_1.Text != "" && TextBox_ObjS_7_Att_Unité_2.Text != "" && TextBox_ObjS_7_Att_Unité_3.Text != "")
@@ -11804,6 +11816,10 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_9_Att.Text = Convert.ToString(OBJECTIF_Secondaire_009_Att.Score_ObjS);
+            }            
+            else
+            {
+                TextBlock_ObjS_9_Att.Text = "0";
             }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 010
@@ -11819,6 +11835,10 @@ namespace CPV9
                 }
                 TextBlock_ObjS_10_Att.Text = Convert.ToString(OBJECTIF_Secondaire_010_Att.Score_ObjS);
             }
+            else
+            {
+                TextBlock_ObjS_10_Att.Text = "0";
+            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 011
             if ((TextBox_ObjS_11_Att_R1_Att.Text != "" && TextBox_ObjS_11_Att_R1_Def.Text != "") || (TextBox_ObjS_11_Att_R2_Att.Text != "" && TextBox_ObjS_11_Att_R2_Def.Text != "") || (TextBox_ObjS_11_Att_R3_Att.Text != "" && TextBox_ObjS_11_Att_R3_Def.Text != "") || (TextBox_ObjS_11_Att_R4_Att.Text != "" && TextBox_ObjS_11_Att_R4_Def.Text != "") || (TextBox_ObjS_11_Att_R5_Att.Text != "" && TextBox_ObjS_11_Att_R5_Att.Text != ""))
@@ -11832,6 +11852,10 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_11_Att.Text = Convert.ToString(OBJECTIF_Secondaire_011_Att.Score_ObjS);
+            }
+            else
+            {
+                TextBlock_ObjS_11_Att.Text = "0";
             }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 012           
@@ -11856,16 +11880,23 @@ namespace CPV9
             }
             TextBlock_ObjS_13_Att.Text = Convert.ToString(OBJECTIF_Secondaire_013_Att.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF SECONDAIRE 014           
-            Classe_Score_OBJS_014 OBJECTIF_Secondaire_014_Att;
-            OBJECTIF_Secondaire_014_Att = new Classe_Score_OBJS_014(TextBox_ObjS_14_Att_R2.Text, TextBox_ObjS_14_Att_R3.Text, TextBox_ObjS_14_Att_R4.Text, TextBox_ObjS_14_Att_R5.Text, TextBox_ObjS_14_Att_R6.Text);
-            Scores_Attaquant[14] = OBJECTIF_Secondaire_014_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Secondaire_014_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF SECONDAIRE 014
+            if (TextBox_ObjS_14_Att_R2.Text != "" || TextBox_ObjS_14_Att_R3.Text != "" || TextBox_ObjS_14_Att_R4.Text != "" || TextBox_ObjS_14_Att_R5.Text != "" || TextBox_ObjS_14_Att_R6.Text != "")
             {
-                ID_Cape_Attaquant[s] = 14;
-                s++;
+                Classe_Score_OBJS_014 OBJECTIF_Secondaire_014_Att;
+                OBJECTIF_Secondaire_014_Att = new Classe_Score_OBJS_014(TextBox_ObjS_14_Att_R2.Text, TextBox_ObjS_14_Att_R3.Text, TextBox_ObjS_14_Att_R4.Text, TextBox_ObjS_14_Att_R5.Text, TextBox_ObjS_14_Att_R6.Text);
+                Scores_Attaquant[14] = OBJECTIF_Secondaire_014_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Secondaire_014_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 14;
+                    s++;
+                }
+                TextBlock_ObjS_14_Att.Text = Convert.ToString(OBJECTIF_Secondaire_014_Att.Score_ObjS);
             }
-            TextBlock_ObjS_14_Att.Text = Convert.ToString(OBJECTIF_Secondaire_014_Att.Score_ObjS);
+            else
+            {
+                TextBlock_ObjS_14_Att.Text = "0";
+            }            
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 015
             Classe_Score_OBJS_015 OBJECTIF_Secondaire_015_Att;
@@ -11914,7 +11945,7 @@ namespace CPV9
             }
             TextBlock_ObjS_18_Att.Text = Convert.ToString(OBJECTIF_Secondaire_018_Att.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF SECONDAIRE 019
+            ///CALCUL SCORE OBJECTIF SECONDAIRE 019            
             if (TextBox_ObjS_19_Att_A.Text != "")
             {
                 Classe_Score_OBJS_019 OBJECTIF_Secondaire_019_Att;
@@ -11926,6 +11957,10 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_19_Att.Text = Convert.ToString(OBJECTIF_Secondaire_019_Att.Score_ObjS);
+            }
+            else
+            {
+                TextBlock_ObjS_19_Att.Text = "";
             }
             #endregion
 
@@ -12080,38 +12115,47 @@ namespace CPV9
             TextBlock_ObjS_1033_Att.Text = Convert.ToString(OBJECTIF_Mission_1033_Att.Score_ObjS);
             #endregion
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
-            ///CALCUL SCORE OBJECTIF MISSION 2011           
-            Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Att;
-            OBJECTIF_Mission_2011_Att = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Att_R1.Text, TextBox_ObjS_2011_Att_R2.Text, TextBox_ObjS_2011_Att_R3.Text, TextBox_ObjS_2011_Att_R4.Text, TextBox_ObjS_2011_Att_R5.Text);
-            Scores_Attaquant[33] = OBJECTIF_Mission_2011_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2011_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2011
+            if (TextBox_ObjS_2011_Att_R1.Text != "" || TextBox_ObjS_2011_Att_R2.Text != "" || TextBox_ObjS_2011_Att_R3.Text != "" || TextBox_ObjS_2011_Att_R4.Text != "" || TextBox_ObjS_2011_Att_R5.Text != "")
             {
-                ID_Cape_Attaquant[s] = 2011;
-                s++;
+                Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Att;
+                OBJECTIF_Mission_2011_Att = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Att_R1.Text, TextBox_ObjS_2011_Att_R2.Text, TextBox_ObjS_2011_Att_R3.Text, TextBox_ObjS_2011_Att_R4.Text, TextBox_ObjS_2011_Att_R5.Text);
+                Scores_Attaquant[33] = OBJECTIF_Mission_2011_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2011_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2011;
+                    s++;
+                }
+                TextBlock_ObjS_2011_Att.Text = Convert.ToString(OBJECTIF_Mission_2011_Att.Score_ObjS);
             }
-            TextBlock_ObjS_2011_Att.Text = Convert.ToString(OBJECTIF_Mission_2011_Att.Score_ObjS);
+            
+            ///CALCUL SCORE OBJECTIF MISSION 2012   
+            if (TextBox_ObjS_2012_Att.Text != "")
+            {
+                Classe_Score_OBJM_2012 OBJECTIF_Mission_2012_Att;
+                OBJECTIF_Mission_2012_Att = new Classe_Score_OBJM_2012(TextBox_ObjS_2012_Att.Text);
+                Scores_Attaquant[34] = OBJECTIF_Mission_2012_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2012_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2012;
+                    s++;
+                }
+                TextBlock_ObjS_2012_Att.Text = Convert.ToString(OBJECTIF_Mission_2012_Att.Score_ObjS);
+            }
 
-            ///CALCUL SCORE OBJECTIF MISSION 2012           
-            Classe_Score_OBJM_2012 OBJECTIF_Mission_2012_Att;
-            OBJECTIF_Mission_2012_Att = new Classe_Score_OBJM_2012(TextBox_ObjS_2012_Att.Text);
-            Scores_Attaquant[34] = OBJECTIF_Mission_2012_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2012_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2013
+            if (TextBox_ObjS_2013_Att_T1.Text != "" || TextBox_ObjS_2013_Att_T2.Text != "" || TextBox_ObjS_2013_Att_T3.Text != "" || TextBox_ObjS_2013_Att_T4.Text != "" || TextBox_ObjS_2013_Att_T5.Text != "")
             {
-                ID_Cape_Attaquant[s] = 2012;
-                s++;
-            }
-            TextBlock_ObjS_2012_Att.Text = Convert.ToString(OBJECTIF_Mission_2012_Att.Score_ObjS);
-
-            ///CALCUL SCORE OBJECTIF MISSION 2013           
-            Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Att;
-            OBJECTIF_Mission_2013_Att = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Att_T1.Text, TextBox_ObjS_2013_Att_T2.Text, TextBox_ObjS_2013_Att_T3.Text, TextBox_ObjS_2013_Att_T4.Text, TextBox_ObjS_2013_Att_T5.Text);
-            Scores_Attaquant[35] = OBJECTIF_Mission_2013_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2013_Att.Score_ObjS) >= 15)
-            {
-                ID_Cape_Attaquant[s] = 2013;
-                s++;
-            }
-            TextBlock_ObjS_2013_Att.Text = Convert.ToString(OBJECTIF_Mission_2013_Att.Score_ObjS);
+                Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Att;
+                OBJECTIF_Mission_2013_Att = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Att_T1.Text, TextBox_ObjS_2013_Att_T2.Text, TextBox_ObjS_2013_Att_T3.Text, TextBox_ObjS_2013_Att_T4.Text, TextBox_ObjS_2013_Att_T5.Text);
+                Scores_Attaquant[35] = OBJECTIF_Mission_2013_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2013_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2013;
+                    s++;
+                }
+                TextBlock_ObjS_2013_Att.Text = Convert.ToString(OBJECTIF_Mission_2013_Att.Score_ObjS);
+            }            
 
             ///CALCUL SCORE OBJECTIF MISSION 2021           
             Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Att;
@@ -12146,16 +12190,16 @@ namespace CPV9
             }
             TextBlock_ObjS_2023_Att.Text = Convert.ToString(OBJECTIF_Mission_2023_Att.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2031          
-            Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Att;
-            OBJECTIF_Mission_2031_Att = new Classe_Score_OBJM_2031(CheckBox_ObjS_2031_Att_T1_Etat, CheckBox_ObjS_2031_Att_T2_Etat, CheckBox_ObjS_2031_Att_T3_Etat, CheckBox_ObjS_2031_Att_T4_Etat, TextBox_ObjS_2031_Att_Fin.Text, CheckBox_ObjS_2031_Att_Fin_Etat);
-            Scores_Attaquant[39] = OBJECTIF_Mission_2031_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2031_Att.Score_ObjS) >= 8)
-            {
-                ID_Cape_Attaquant[s] = 2031;
-                s++;
-            }
-            TextBlock_ObjS_2031_Att.Text = Convert.ToString(OBJECTIF_Mission_2031_Att.Score_ObjS);
+            ///CALCUL SCORE OBJECTIF MISSION 2031
+                Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Att;
+                OBJECTIF_Mission_2031_Att = new Classe_Score_OBJM_2031(CheckBox_ObjS_2031_Att_T1_Etat, CheckBox_ObjS_2031_Att_T2_Etat, CheckBox_ObjS_2031_Att_T3_Etat, CheckBox_ObjS_2031_Att_T4_Etat, TextBox_ObjS_2031_Att_Fin.Text, CheckBox_ObjS_2031_Att_Fin_Etat);
+                Scores_Attaquant[39] = OBJECTIF_Mission_2031_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2031_Att.Score_ObjS) >= 8)
+                {
+                    ID_Cape_Attaquant[s] = 2031;
+                    s++;
+                }
+                TextBlock_ObjS_2031_Att.Text = Convert.ToString(OBJECTIF_Mission_2031_Att.Score_ObjS);           
 
             ///CALCUL SCORE OBJECTIF MISSION 2032        
             Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Att;
@@ -12266,26 +12310,33 @@ namespace CPV9
             #region Calcul_Objectif_Codex_SM_110_112
 
             ///CALCUL SCORE OBJECTIF MISSION 110
-            Classe_Score_OBJC_SM_110 OBJECTIF_Codex_110_Att;
-            OBJECTIF_Codex_110_Att = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Att_Devastator.Text, TextBox_ObjS_110_Att_Tactique.Text, TextBox_ObjS_110_Att_Assaut.Text);
-            Scores_Attaquant[49] = OBJECTIF_Codex_110_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_110_Att.Score_ObjS) >= 15)
+            if (TextBox_ObjS_110_Att_Devastator.Text != "" || TextBox_ObjS_110_Att_Tactique.Text != "" || TextBox_ObjS_110_Att_Assaut.Text != "")
             {
-                ID_Cape_Attaquant[s] = 110;
-                s++;
-            }
-            TextBlock_ObjS_110_Att.Text = Convert.ToString(OBJECTIF_Codex_110_Att.Score_ObjS);
+                TextBlock_ObjS_110_Att_Devastator.Text = TextBox_ObjS_110_Att_Devastator.Text;
+                TextBlock_ObjS_110_Att_Tactique.Text = TextBox_ObjS_110_Att_Tactique.Text;
+                TextBlock_ObjS_110_Att_Assaut.Text = TextBox_ObjS_110_Att_Assaut.Text;
+                Classe_Score_OBJC_SM_110 OBJECTIF_Codex_110_Att;
+                OBJECTIF_Codex_110_Att = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Att_Devastator.Text, TextBox_ObjS_110_Att_Tactique.Text, TextBox_ObjS_110_Att_Assaut.Text);
+                Scores_Attaquant[49] = OBJECTIF_Codex_110_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_110_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 110;
+                    s++;
+                }
+                TextBlock_ObjS_110_Att.Text = Convert.ToString(OBJECTIF_Codex_110_Att.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 111
-            Classe_Score_OBJC_SM_111 OBJECTIF_Codex_111_Att;
-            OBJECTIF_Codex_111_Att = new Classe_Score_OBJC_SM_111(CheckBox_ObjS_111_Att_R1_Etat, CheckBox_ObjS_111_Att_R2_Etat, CheckBox_ObjS_111_Att_R3_Etat, CheckBox_ObjS_111_Att_R4_Etat, CheckBox_ObjS_111_Att_R5_Etat);
-            Scores_Attaquant[50] = OBJECTIF_Codex_111_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_111_Att.Score_ObjS) >= 15)
-            {
-                ID_Cape_Attaquant[s] = 111;
-                s++;
+                ///CALCUL SCORE OBJECTIF MISSION 111
+                Classe_Score_OBJC_SM_111 OBJECTIF_Codex_111_Att;
+                OBJECTIF_Codex_111_Att = new Classe_Score_OBJC_SM_111(CheckBox_ObjS_111_Att_R1_Etat, CheckBox_ObjS_111_Att_R2_Etat, CheckBox_ObjS_111_Att_R3_Etat, CheckBox_ObjS_111_Att_R4_Etat, CheckBox_ObjS_111_Att_R5_Etat);
+                Scores_Attaquant[50] = OBJECTIF_Codex_111_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_111_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 111;
+                    s++;
+                }
+                TextBlock_ObjS_111_Att.Text = Convert.ToString(OBJECTIF_Codex_111_Att.Score_ObjS);
             }
-            TextBlock_ObjS_111_Att.Text = Convert.ToString(OBJECTIF_Codex_111_Att.Score_ObjS);
+            
 
             ///CALCUL SCORE OBJECTIF MISSION 112
             Classe_Score_OBJC_SM_112 OBJECTIF_Codex_112_Att;
@@ -12629,6 +12680,10 @@ namespace CPV9
                 }
                 TextBlock_ObjS_2_Def.Text = Convert.ToString(OBJECTIF_Secondaire_002_Def.Score_ObjS_002);
             }
+            else
+            {
+                TextBlock_ObjS_2_Def.Text = "";
+            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 003
             if (TextBox_ObjS_3_Def.Text != "")
@@ -12642,6 +12697,10 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_3_Def.Text = Convert.ToString(OBJECTIF_Secondaire_003_Def.Score_ObjS_003);
+            }
+            else
+            {
+                TextBox_ObjS_3_Def.Text = "";
             }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 004
@@ -12675,6 +12734,10 @@ namespace CPV9
                 }
                 TextBlock_ObjS_6_Def.Text = Convert.ToString(OBJECTIF_Secondaire_006_Def.Score_ObjS);
             }
+            else
+            {
+                TextBlock_ObjS_6_Def.Text = "0";
+            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 007
             if (TextBox_ObjS_7_Def_Unité_1.Text != "" && TextBox_ObjS_7_Def_Unité_2.Text != "" && TextBox_ObjS_7_Def_Unité_3.Text != "")
@@ -12702,6 +12765,10 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_9_Def.Text = Convert.ToString(OBJECTIF_Secondaire_009_Def.Score_ObjS);
+            }
+            else
+            {
+                TextBlock_ObjS_9_Def.Text = "0";
             }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 010
@@ -12731,6 +12798,10 @@ namespace CPV9
                 }
                 TextBlock_ObjS_11_Def.Text = Convert.ToString(OBJECTIF_Secondaire_011_Def.Score_ObjS);
             }
+            else
+            {
+                TextBlock_ObjS_11_Def.Text = "0";
+            }
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 012           
             Classe_Score_OBJS_012 OBJECTIF_Secondaire_012_Def;
@@ -12754,16 +12825,24 @@ namespace CPV9
             }
             TextBlock_ObjS_13_Def.Text = Convert.ToString(OBJECTIF_Secondaire_013_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF SECONDAIRE 014           
-            Classe_Score_OBJS_014 OBJECTIF_Secondaire_014_Def;
-            OBJECTIF_Secondaire_014_Def = new Classe_Score_OBJS_014(TextBox_ObjS_14_Def_R2.Text, TextBox_ObjS_14_Def_R3.Text, TextBox_ObjS_14_Def_R4.Text, TextBox_ObjS_14_Def_R5.Text, TextBox_ObjS_14_Def_R6.Text);
-            Scores_Defenseur[14] = OBJECTIF_Secondaire_014_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Secondaire_014_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF SECONDAIRE 014
+            if (TextBox_ObjS_14_Def_R2.Text != "" || TextBox_ObjS_14_Def_R3.Text != "" || TextBox_ObjS_14_Def_R4.Text != "" || TextBox_ObjS_14_Def_R5.Text != "" || TextBox_ObjS_14_Def_R6.Text != "")
             {
-                ID_Cape_Defenseur[s] = 14;
-                s++;
+                Classe_Score_OBJS_014 OBJECTIF_Secondaire_014_Def;
+                OBJECTIF_Secondaire_014_Def = new Classe_Score_OBJS_014(TextBox_ObjS_14_Def_R2.Text, TextBox_ObjS_14_Def_R3.Text, TextBox_ObjS_14_Def_R4.Text, TextBox_ObjS_14_Def_R5.Text, TextBox_ObjS_14_Def_R6.Text);
+                Scores_Defenseur[14] = OBJECTIF_Secondaire_014_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Secondaire_014_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 14;
+                    s++;
+                }
+                TextBlock_ObjS_14_Def.Text = Convert.ToString(OBJECTIF_Secondaire_014_Def.Score_ObjS);
             }
-            TextBlock_ObjS_14_Def.Text = Convert.ToString(OBJECTIF_Secondaire_014_Def.Score_ObjS);
+            else
+            {
+                TextBlock_ObjS_14_Def.Text = "0";
+            }
+            
 
             ///CALCUL SCORE OBJECTIF SECONDAIRE 015           
             Classe_Score_OBJS_015 OBJECTIF_Secondaire_015_Def;
@@ -12824,6 +12903,10 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_19_Def.Text = Convert.ToString(OBJECTIF_Secondaire_019_Def.Score_ObjS);
+            }
+            else
+            {
+                TextBlock_ObjS_19_Def.Text = "";
             }
             #endregion
 
@@ -12979,38 +13062,50 @@ namespace CPV9
             TextBlock_ObjS_1033_Def.Text = Convert.ToString(OBJECTIF_Mission_1033_Def.Score_ObjS);
             #endregion
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
-            ///CALCUL SCORE OBJECTIF MISSION 2011           
-            Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Def;
-            OBJECTIF_Mission_2011_Def = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Def_R1.Text, TextBox_ObjS_2011_Def_R2.Text, TextBox_ObjS_2011_Def_R3.Text, TextBox_ObjS_2011_Def_R4.Text, TextBox_ObjS_2011_Def_R5.Text);
-            Scores_Defenseur[33] = OBJECTIF_Mission_2011_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2011_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2011
+            if (TextBox_ObjS_2011_Def_R1.Text !="" || TextBox_ObjS_2011_Def_R2.Text != "" || TextBox_ObjS_2011_Def_R3.Text != "" || TextBox_ObjS_2011_Def_R4.Text != "" || TextBox_ObjS_2011_Def_R5.Text != "")
             {
-                ID_Cape_Defenseur[s] = 2011;
-                s++;
+                Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Def;
+                OBJECTIF_Mission_2011_Def = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Def_R1.Text, TextBox_ObjS_2011_Def_R2.Text, TextBox_ObjS_2011_Def_R3.Text, TextBox_ObjS_2011_Def_R4.Text, TextBox_ObjS_2011_Def_R5.Text);
+                Scores_Defenseur[33] = OBJECTIF_Mission_2011_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2011_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2011;
+                    s++;
+                }
+                TextBlock_ObjS_2011_Def.Text = Convert.ToString(OBJECTIF_Mission_2011_Def.Score_ObjS);
             }
-            TextBlock_ObjS_2011_Def.Text = Convert.ToString(OBJECTIF_Mission_2011_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2012           
-            Classe_Score_OBJM_2012 OBJECTIF_Mission_2012_Def;
-            OBJECTIF_Mission_2012_Def = new Classe_Score_OBJM_2012(TextBox_ObjS_2012_Def.Text);
-            Scores_Defenseur[34] = OBJECTIF_Mission_2012_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2012_Def.Score_ObjS) >= 15)
-            {
-                ID_Cape_Defenseur[s] = 2012;
-                s++;
-            }
-            TextBlock_ObjS_2012_Def.Text = Convert.ToString(OBJECTIF_Mission_2012_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2013           
-            Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Def;
-            OBJECTIF_Mission_2013_Def = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Def_T1.Text, TextBox_ObjS_2013_Def_T2.Text, TextBox_ObjS_2013_Def_T3.Text, TextBox_ObjS_2013_Def_T4.Text, TextBox_ObjS_2013_Def_T5.Text);
-            Scores_Defenseur[35] = OBJECTIF_Mission_2013_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2013_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2012     
+            if (TextBox_ObjS_2012_Def.Text != "")
             {
-                ID_Cape_Defenseur[s] = 2013;
-                s++;
+                Classe_Score_OBJM_2012 OBJECTIF_Mission_2012_Def;
+                OBJECTIF_Mission_2012_Def = new Classe_Score_OBJM_2012(TextBox_ObjS_2012_Def.Text);
+                Scores_Defenseur[34] = OBJECTIF_Mission_2012_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2012_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2012;
+                    s++;
+                }
+                TextBlock_ObjS_2012_Def.Text = Convert.ToString(OBJECTIF_Mission_2012_Def.Score_ObjS);
             }
-            TextBlock_ObjS_2013_Def.Text = Convert.ToString(OBJECTIF_Mission_2013_Def.Score_ObjS);
+
+
+            ///CALCUL SCORE OBJECTIF MISSION 2013
+            if (TextBox_ObjS_2013_Def_T1.Text != "" || TextBox_ObjS_2013_Def_T2.Text != "" || TextBox_ObjS_2013_Def_T3.Text != "" || TextBox_ObjS_2013_Def_T4.Text != "" || TextBox_ObjS_2013_Def_T5.Text != "")
+            {
+                Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Def;
+                OBJECTIF_Mission_2013_Def = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Def_T1.Text, TextBox_ObjS_2013_Def_T2.Text, TextBox_ObjS_2013_Def_T3.Text, TextBox_ObjS_2013_Def_T4.Text, TextBox_ObjS_2013_Def_T5.Text);
+                Scores_Defenseur[35] = OBJECTIF_Mission_2013_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2013_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2013;
+                    s++;
+                }
+                TextBlock_ObjS_2013_Def.Text = Convert.ToString(OBJECTIF_Mission_2013_Def.Score_ObjS);
+            }
+            
 
             ///CALCUL SCORE OBJECTIF MISSION 2021           
             Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Def;
@@ -13045,16 +13140,16 @@ namespace CPV9
             }
             TextBlock_ObjS_2023_Def.Text = Convert.ToString(OBJECTIF_Mission_2023_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2031         
-            Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Def;
-            OBJECTIF_Mission_2031_Def = new Classe_Score_OBJM_2031(CheckBox_ObjS_2031_Def_T1_Etat, CheckBox_ObjS_2031_Def_T2_Etat, CheckBox_ObjS_2031_Def_T3_Etat, CheckBox_ObjS_2031_Def_T4_Etat, TextBox_ObjS_2031_Def_Fin.Text, CheckBox_ObjS_2031_Def_Fin_Etat);
-            Scores_Defenseur[39] = OBJECTIF_Mission_2031_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2031_Def.Score_ObjS) >= 8)
-            {
-                ID_Cape_Defenseur[s] = 2031;
-                s++;
-            }
-            TextBlock_ObjS_2031_Def.Text = Convert.ToString(OBJECTIF_Mission_2031_Def.Score_ObjS);
+            ///CALCUL SCORE OBJECTIF MISSION 2031            
+                Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Def;
+                OBJECTIF_Mission_2031_Def = new Classe_Score_OBJM_2031(CheckBox_ObjS_2031_Def_T1_Etat, CheckBox_ObjS_2031_Def_T2_Etat, CheckBox_ObjS_2031_Def_T3_Etat, CheckBox_ObjS_2031_Def_T4_Etat, TextBox_ObjS_2031_Def_Fin.Text, CheckBox_ObjS_2031_Def_Fin_Etat);
+                Scores_Defenseur[39] = OBJECTIF_Mission_2031_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2031_Def.Score_ObjS) >= 8)
+                {
+                    ID_Cape_Defenseur[s] = 2031;
+                    s++;
+                }
+                TextBlock_ObjS_2031_Def.Text = Convert.ToString(OBJECTIF_Mission_2031_Def.Score_ObjS);                    
 
             ///CALCUL SCORE OBJECTIF MISSION 2032        
             Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Def;
@@ -13165,26 +13260,32 @@ namespace CPV9
             #region Calcul_Objectif_Codex_SM_110_112
 
             ///CALCUL SCORE OBJECTIF MISSION 110
-            Classe_Score_OBJC_SM_110 OBJECTIF_Codex_110_Def;
-            OBJECTIF_Codex_110_Def = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Def_Devastator.Text, TextBox_ObjS_110_Def_Tactique.Text, TextBox_ObjS_110_Def_Assaut.Text);
-            Scores_Defenseur[49] = OBJECTIF_Codex_110_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_110_Def.Score_ObjS) >= 15)
+            if (TextBox_ObjS_110_Def_Devastator.Text != "" || TextBox_ObjS_110_Def_Tactique.Text != "" || TextBox_ObjS_110_Def_Assaut.Text != "")
             {
-                ID_Cape_Defenseur[s] = 110;
-                s++;
+                TextBlock_ObjS_110_Def_Devastator.Text = TextBox_ObjS_110_Def_Devastator.Text;
+                TextBlock_ObjS_110_Def_Tactique.Text = TextBox_ObjS_110_Def_Tactique.Text;
+                TextBlock_ObjS_110_Def_Assaut.Text = TextBox_ObjS_110_Def_Assaut.Text;
+                Classe_Score_OBJC_SM_110 OBJECTIF_Codex_110_Def;
+                OBJECTIF_Codex_110_Def = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Def_Devastator.Text, TextBox_ObjS_110_Def_Tactique.Text, TextBox_ObjS_110_Def_Assaut.Text);
+                Scores_Defenseur[49] = OBJECTIF_Codex_110_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_110_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 110;
+                    s++;
+                }
+                TextBlock_ObjS_110_Def.Text = Convert.ToString(OBJECTIF_Codex_110_Def.Score_ObjS);
             }
-            TextBlock_ObjS_110_Def.Text = Convert.ToString(OBJECTIF_Codex_110_Def.Score_ObjS);
-
             ///CALCUL SCORE OBJECTIF MISSION 111
             Classe_Score_OBJC_SM_111 OBJECTIF_Codex_111_Def;
-            OBJECTIF_Codex_111_Def = new Classe_Score_OBJC_SM_111(CheckBox_ObjS_111_Def_R1_Etat, CheckBox_ObjS_111_Def_R2_Etat, CheckBox_ObjS_111_Def_R3_Etat, CheckBox_ObjS_111_Def_R4_Etat, CheckBox_ObjS_111_Def_R5_Etat);
-            Scores_Defenseur[50] = OBJECTIF_Codex_111_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_111_Def.Score_ObjS) >= 15)
-            {
-                ID_Cape_Defenseur[s] = 111;
-                s++;
-            }
-            TextBlock_ObjS_111_Def.Text = Convert.ToString(OBJECTIF_Codex_111_Def.Score_ObjS);
+                OBJECTIF_Codex_111_Def = new Classe_Score_OBJC_SM_111(CheckBox_ObjS_111_Def_R1_Etat, CheckBox_ObjS_111_Def_R2_Etat, CheckBox_ObjS_111_Def_R3_Etat, CheckBox_ObjS_111_Def_R4_Etat, CheckBox_ObjS_111_Def_R5_Etat);
+                Scores_Defenseur[50] = OBJECTIF_Codex_111_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_111_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 111;
+                    s++;
+                }
+                TextBlock_ObjS_111_Def.Text = Convert.ToString(OBJECTIF_Codex_111_Def.Score_ObjS);
+            
 
             ///CALCUL SCORE OBJECTIF MISSION 112
             Classe_Score_OBJC_SM_112 OBJECTIF_Codex_112_Def;
@@ -13603,41 +13704,15 @@ namespace CPV9
             }
         }
 
-        #region TextChanged
-        #region TextChanged Figurines peintes
-
-        private void TextBox_Obj_FIG_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_Obj_FIG_Att.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-        }
-        private void TextBox_Obj_FIG_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_Obj_FIG_Def.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-        }
-
-
-        #endregion
-
-        #region TextChanged objectif Principaux
-
-        private void Calcul_Att_TextChanged(object sender, TextChangedEventArgs e)
+        #region TextChanged & Checkbox in Click
+        private void TextBox_General_Att_TextChanged(object sender, TextChangedEventArgs e)
         {
             Calcul_Score_Attaquant();
         }
-
-        private void Calcul_Def_TextChanged(object sender, TextChangedEventArgs e)
+        private void TextBox_General_Def_TextChanged(object sender, TextChangedEventArgs e)
         {
             Calcul_Score_Defenseur();
-
-        }
-
-        #endregion
+        }       
 
         #region TextChanged objectif Secondaires
 
@@ -13712,91 +13787,6 @@ namespace CPV9
                 TextBox_ObjS_1_Def.Text = "0";
             }
             Calcul_Score_Defenseur();
-        }
-
-        private void TextBox_ObjS_2_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2_Att_A.Text != "" || TextBox_ObjS_2_Att_B.Text != "" || TextBox_ObjS_2_Att_C.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBlock_ObjS_2_Att.Text = "";
-            }
-        }
-        private void TextBox_ObjS_2_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2_Def_A.Text != "" || TextBox_ObjS_2_Def_B.Text != "" || TextBox_ObjS_2_Def_C.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBlock_ObjS_2_Def.Text = "";
-            }
-        }
-
-        private void TextBox_ObjS_3_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_3_Att.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBox_ObjS_3_Att.Text = "";
-            }
-        }
-        private void TextBox_ObjS_3_Def_TextChanged_1(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_3_Def.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBox_ObjS_3_Def.Text = "";
-            }
-        }
-
-        private void TextBox_ObjS_5_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-            if (TextBox_ObjS_5_Att_R1.Text != "" || TextBox_ObjS_5_Att_R2.Text != "" || TextBox_ObjS_5_Att_R3.Text != "" || TextBox_ObjS_5_Att_R4.Text != "" || TextBox_ObjS_5_Att_R5.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-        }
-        private void TextBox_ObjS_5_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_5_Def_R1.Text != "" || TextBox_ObjS_5_Def_R2.Text != "" || TextBox_ObjS_5_Def_R3.Text != "" || TextBox_ObjS_5_Def_R4.Text != "" || TextBox_ObjS_5_Def_R5.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-        }
-
-        private void TextBox_ObjS_6_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_6_Att_RE1.Text != "" && TextBox_ObjS_6_Att_RA1.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBlock_ObjS_6_Att.Text = "0";
-            }
-        }
-        private void TextBox_ObjS_6_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_6_Def_RE1.Text != "" && TextBox_ObjS_6_Def_RA1.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBlock_ObjS_6_Def.Text = "0";
-            }
         }
 
         private void TextBox_ObjS_7_Att_Unité_TextChanged(object sender, TextChangedEventArgs e)
@@ -13984,76 +13974,6 @@ namespace CPV9
                 TextBlock_ObjS_7_Def.Text = "0";
             }
             Calcul_Score_Defenseur();
-        }
-
-        private void TextBox_ObjS_9_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_9_Att_R1.Text != "" || TextBox_ObjS_9_Att_R2.Text != "" || TextBox_ObjS_9_Att_R3.Text != "" || TextBox_ObjS_9_Att_R4.Text != "" || TextBox_ObjS_9_Att_R5.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBlock_ObjS_9_Att.Text = "0";
-            }
-        }
-        private void TextBox_ObjS_9_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_9_Def_R1.Text != "" || TextBox_ObjS_9_Def_R2.Text != "" || TextBox_ObjS_9_Def_R3.Text != "" || TextBox_ObjS_9_Def_R4.Text != "" || TextBox_ObjS_9_Def_R5.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBlock_ObjS_9_Def.Text = "0";
-            }
-        }
-
-        private void TextBox_ObjS_10_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_10_Att_R1.Text != "" || TextBox_ObjS_10_Att_R2.Text != "" || TextBox_ObjS_10_Att_R3.Text != "" || TextBox_ObjS_10_Att_R4.Text != "" || TextBox_ObjS_10_Att_R5.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBlock_ObjS_10_Att.Text = "0";
-            }
-        }
-        private void TextBox_ObjS_10_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_10_Def_R1.Text != "" || TextBox_ObjS_10_Def_R2.Text != "" || TextBox_ObjS_10_Def_R3.Text != "" || TextBox_ObjS_10_Def_R4.Text != "" || TextBox_ObjS_10_Def_R5.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBlock_ObjS_10_Def.Text = "0";
-            }
-        }
-
-        private void TextBox_ObjS_11_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if ((TextBox_ObjS_11_Att_R1_Att.Text != "" || TextBox_ObjS_11_Att_R2_Att.Text != "" || TextBox_ObjS_11_Att_R3_Att.Text != "" || TextBox_ObjS_11_Att_R4_Att.Text != "" || TextBox_ObjS_11_Att_R5_Att.Text != "" || TextBox_ObjS_11_Att_R1_Def.Text != "" || TextBox_ObjS_11_Att_R2_Def.Text != "" || TextBox_ObjS_11_Att_R3_Def.Text != "" || TextBox_ObjS_11_Att_R4_Def.Text != "" || TextBox_ObjS_11_Att_R5_Def.Text != ""))
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBlock_ObjS_11_Att.Text = "0";
-            }
-
-        }
-        private void TextBox_ObjS_11_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if ((TextBox_ObjS_11_Def_R1_Att.Text != "" || TextBox_ObjS_11_Def_R2_Att.Text != "" || TextBox_ObjS_11_Def_R3_Att.Text != "" || TextBox_ObjS_11_Def_R4_Att.Text != "" || TextBox_ObjS_11_Def_R5_Att.Text != "" || TextBox_ObjS_11_Def_R1_Def.Text != "" || TextBox_ObjS_11_Def_R2_Def.Text != "" || TextBox_ObjS_11_Def_R3_Def.Text != "" || TextBox_ObjS_11_Def_R4_Def.Text != "" || TextBox_ObjS_11_Def_R5_Def.Text != ""))
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBlock_ObjS_11_Def.Text = "0";
-            }
         }
 
         private void CheckBox_ObjS_12_Att_Click(object sender, RoutedEventArgs e)
@@ -14346,29 +14266,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_14_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_14_Att_R2.Text != "" || TextBox_ObjS_14_Att_R3.Text != "" || TextBox_ObjS_14_Att_R4.Text != "" || TextBox_ObjS_14_Att_R5.Text != "" || TextBox_ObjS_14_Att_R6.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBlock_ObjS_14_Att.Text = "0";
-            }
-        }
-        private void TextBox_ObjS_14_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_14_Def_R2.Text != "" || TextBox_ObjS_14_Def_R3.Text != "" || TextBox_ObjS_14_Def_R4.Text != "" || TextBox_ObjS_14_Def_R5.Text != "" || TextBox_ObjS_14_Def_R6.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBlock_ObjS_14_Def.Text = "0";
-            }
-        }
-
         private void CheckBox_ObjS_15_Att_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_15_Att_R1.IsChecked == true)
@@ -14555,21 +14452,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_17_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_17_Att_A.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-        }
-        private void TextBox_ObjS_17_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_17_Def_A.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-        }
-
         private void CheckBox_ObjS_18_Att_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_18_Att_A.IsChecked == true)
@@ -14651,80 +14533,9 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_19_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_19_Att_A.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-            else
-            {
-                TextBlock_ObjS_19_Att.Text = "";
-            }
-        }
-        private void TextBox_ObjS_19_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_19_Def_A.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-            else
-            {
-                TextBlock_ObjS_19_Def.Text = "";
-            }
-        }
-
         #endregion
 
         #region TextChanged Objectif Codex 
-        private void TextBox_ObjS_100_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_100_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-        private void TextBox_ObjS_101_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_101_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-        private void TextBox_ObjS_102_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_102_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-        private void TextBox_ObjS_103_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_103_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-
-        private void TextBox_ObjS_110_Att_Devastator_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            TextBlock_ObjS_110_Att_Devastator.Text = TextBox_ObjS_110_Att_Devastator.Text;
-            TextBlock_ObjS_110_Att_Tactique.Text = TextBox_ObjS_110_Att_Tactique.Text;
-            TextBlock_ObjS_110_Att_Assaut.Text = TextBox_ObjS_110_Att_Assaut.Text;
-
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_110_Def_Devastator_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            TextBlock_ObjS_110_Def_Devastator.Text = TextBox_ObjS_110_Def_Devastator.Text;
-            TextBlock_ObjS_110_Def_Tactique.Text = TextBox_ObjS_110_Def_Tactique.Text;
-            TextBlock_ObjS_110_Def_Assaut.Text = TextBox_ObjS_110_Def_Assaut.Text;
-            Calcul_Score_Defenseur();
-        }
         private void CheckBox_ObjS_111_Att_R1_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_111_Att_R1.IsChecked == true)
@@ -15665,15 +15476,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_116_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_116_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-
         private void CheckBox_ObjS_125_Att_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_125_Att_R1.IsChecked == true)
@@ -15962,15 +15764,6 @@ namespace CPV9
             {
                 TextBlock_ObjS_127_Def.Text = "0";
             }
-            Calcul_Score_Defenseur();
-        }
-
-        private void TextBox_ObjS_128_Att_Fig_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_128_Def_Fig_TextChanged(object sender, TextChangedEventArgs e)
-        {
             Calcul_Score_Defenseur();
         }
 
@@ -16839,15 +16632,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_Objectif_Sec_Att_132_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_Objectif_Sec_Def_132_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-
         private void CheckBox_Objectif_Sec_Att_133_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_Objectif_Sec_Att_133_R1_Bolts.IsChecked == true) { CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat = "true"; };
@@ -17126,15 +16910,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_136_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_136_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-
         private void CheckBox_Objectif_Sec_Att_137_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_Objectif_Sec_Att_137_A1.IsChecked == true) { CheckBox_Objectif_Sec_Att_137_A1_Etat = "true"; } else { CheckBox_Objectif_Sec_Att_137_A1_Etat = "false"; };
@@ -17173,19 +16948,6 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_137_C5.IsChecked == true) { CheckBox_Objectif_Sec_Def_137_C5_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_137_C5_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
-
-
-        private void TextBox_General_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_General_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-
-
-
 
         #endregion
 
@@ -18503,15 +18265,6 @@ namespace CPV9
             }
         }
 
-        private void TextBox_ObjS_1032_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_1032_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-
         private void CheckBox_ObjS_1033_Att_OBJ1_1_Click(object sender, RoutedEventArgs e)
         {
             Check_ObjS_1033_Att_OBJ1_1();
@@ -19475,45 +19228,7 @@ namespace CPV9
         #endregion
 
         #region TextChanged objectif Mission Force de Frappe       
-        private void TextBox_ObjS_2011_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_2011_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
-
-        private void TextBox_ObjS_2012_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2012_Att.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-        }
-        private void TextBox_ObjS_2012_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2012_Def.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-        }
-
-        private void TextBox_ObjS_2013_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2013_Att_T1.Text != "" || TextBox_ObjS_2013_Att_T2.Text != "" || TextBox_ObjS_2013_Att_T3.Text != "" || TextBox_ObjS_2013_Att_T4.Text != "" || TextBox_ObjS_2013_Att_T5.Text != "")
-            {
-                Calcul_Score_Attaquant();
-            }
-        }
-        private void TextBox_ObjS_2013_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2013_Def_T1.Text != "" || TextBox_ObjS_2013_Def_T2.Text != "" || TextBox_ObjS_2013_Def_T3.Text != "" || TextBox_ObjS_2013_Def_T4.Text != "" || TextBox_ObjS_2013_Def_T5.Text != "")
-            {
-                Calcul_Score_Defenseur();
-            }
-        }
-
+        
         private void CheckBox_ObjS_2021_Att_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_2021_Att_T1.IsChecked == true) { CheckBox_ObjS_2021_Att_T1_Etat = "true"; };
@@ -19766,15 +19481,7 @@ namespace CPV9
             if (CheckBox_ObjS_2031_Def_Fin.IsChecked == false) { CheckBox_ObjS_2031_Def_Fin_Etat = "false"; };
             Calcul_Score_Defenseur();
         }
-        private void TextBox_ObjS_2031_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2031_Att_Fin.Text != "") { Calcul_Score_Attaquant(); };
-        }
-        private void TextBox_ObjS_2031_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (TextBox_ObjS_2031_Def_Fin.Text != "") { Calcul_Score_Defenseur(); };
-        }
-
+        
         private void CheckBox_ObjS_2032_Att_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_2032_Att_Obj1.IsChecked == true) { CheckBox_ObjS_2032_Att_Obj1_Etat = "true"; };
@@ -19856,10 +19563,6 @@ namespace CPV9
         #endregion
 
         #region TextChanged objectif Mission Offensive
-        private void TextBox_ObjS_3001_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
         private void CheckBox_ObjS_3001_Att_R2_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_3001_Att_R2.IsChecked == true)
@@ -19907,10 +19610,6 @@ namespace CPV9
                 CheckBox_ObjS_3001_Att_R5_Etat = "false";
             }
             Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_3001_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
         }
         private void CheckBox_ObjS_3001_Def_R2_Click(object sender, RoutedEventArgs e)
         {
@@ -19961,14 +19660,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_3002_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_3002_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
         private void CheckBox_ObjS_3002_Att_R2_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_3002_Att_R2.IsChecked == true)
@@ -20090,14 +19781,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void TextBox_ObjS_3003_Att_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Attaquant();
-        }
-        private void TextBox_ObjS_3003_Def_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            Calcul_Score_Defenseur();
-        }
         private void CheckBox_ObjS_3003_Att_R2_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_ObjS_3003_Att_R2.IsChecked == true)
