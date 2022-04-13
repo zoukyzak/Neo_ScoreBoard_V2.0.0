@@ -127,6 +127,7 @@ namespace CPV9
         public double Largeur_saisie;
         public double Hauteur_saisie;
 
+        public string Chemin_Image_Player;
 
         public string Selection_Armee;
         public int Pages;
@@ -1008,8 +1009,7 @@ namespace CPV9
         private void Init_affichage()
         {
             FDE.Visibility = Visibility.Collapsed;
-            StackPanel_CPV9_Droit.Visibility = Visibility.Collapsed;
-            StackPanel_CPV9_Gauche.Visibility = Visibility.Collapsed;
+            StackPanel_Neo_Scorboard.Visibility = Visibility.Collapsed;
             Image_CA22.Visibility = Visibility.Collapsed;
             Button_info.Visibility = Visibility.Collapsed;
             StackPanel_Tables.Visibility = Visibility.Collapsed;
@@ -6872,13 +6872,11 @@ namespace CPV9
         private void Page_Format()
         {
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_Bouton_Format();
         }
         private void Page_Format_Affich()
         {
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_Bouton_Mode();
             TextBlock_Rassembler_Les_Armées.Text = Convert.ToString(format);
             StackPanel_Rassembler_Les_Armees.Visibility = Visibility.Visible;
@@ -6890,19 +6888,16 @@ namespace CPV9
         private void Saisie_Attaquant()
         {
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_Saisie_Attaquant();
         }
         private void Saisie_Defenseur()
         {
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_Saisie_Defenseur();
         }
         private void Page_Saisie_Map()
         {
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_Selection_Map();
             StackPanel_MAPS.Visibility = Visibility.Visible;
             if (format == 500 || format == 3000)
@@ -6919,7 +6914,6 @@ namespace CPV9
         private void Affiche_Mission()
         {
             Affichage_FDE();
-            Affichage_CP_v9();
             Button_Valid_Affichage_Map.Visibility = Visibility.Visible;
             if (format == 501)
             {
@@ -7059,7 +7053,6 @@ namespace CPV9
         {
             this.ResizeMode = ResizeMode.NoResize;
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_OBJsec_Att();
             if (format == 501)
             {
@@ -7162,7 +7155,6 @@ namespace CPV9
         {
             this.ResizeMode = ResizeMode.NoResize;
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_OBJsec_Def();
             if (format == 501)
             {
@@ -7266,12 +7258,12 @@ namespace CPV9
         {
             this.ResizeMode = ResizeMode.CanResize;
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_Saisie_Att_Def();
             TextBox_Saisie_Att_J1.Text = Players_Attaquant[0];
         }
         private void Affiche_page_Score()
         {
+            Affichage_FDE();
             Affichage_CP_v9();
             Affichage_Bouton_Pages();
             Button_Affichage_Tv.Visibility = Visibility.Visible;
@@ -7300,8 +7292,8 @@ namespace CPV9
         }
         private void Affiche_Page_Attaquant()
         {
-            Affichage_CP_v9();
-            StackPanel_CPV9_Droit.Visibility = Visibility.Collapsed;
+            Affichage_FDE();
+            StackPanel_Neo_Scorboard.Visibility = Visibility.Collapsed;
             Affichage_Bouton_Pages();
             StackPanel_Bouton_Pages.Visibility = Visibility.Visible;
             StackPanel_Round.Visibility = Visibility.Collapsed;
@@ -7427,8 +7419,8 @@ namespace CPV9
         }
         private void Affiche_Page_Defenseur()
         {
-            Affichage_CP_v9();
-            StackPanel_CPV9_Gauche.Visibility = Visibility.Collapsed;
+            Affichage_FDE();
+            StackPanel_Neo_Scorboard.Visibility = Visibility.Collapsed;
             Affichage_Bouton_Pages();
             StackPanel_Bouton_Pages.Visibility = Visibility.Visible;
             StackPanel_Round.Visibility = Visibility.Collapsed;
@@ -7555,7 +7547,6 @@ namespace CPV9
         private void Affiche_Page_Save_Table()
         {
             Affichage_FDE();
-            Affichage_CP_v9();
             Affichage_Tables_Sauvegarde();
             if (Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Mars\"))
             {
@@ -10875,7 +10866,6 @@ namespace CPV9
             }
         }
         
-        public string Chemin_Image_Player;
         private void Selection_Image_Attaquant()
         {
             Select_Image_Player("Att", Players_Attaquant[1]);
@@ -10897,7 +10887,6 @@ namespace CPV9
             Image_PL2.Visibility = Visibility.Visible;
             return;            
         }
-
         private void Select_Image_Player(String Player, String Choix)
         {
             
@@ -19272,24 +19261,27 @@ namespace CPV9
         private void Affichage_FDE()
         {
             FDE.Width = _Resolution[0] * 1.3;
-            FDE.Height = _Resolution[1] * 1.2;///x 1.6 avant la modif du 09/11/2021 version 1.6.4.4
+            FDE.Height = _Resolution[1] * 1.2;
             FDE.Visibility = Visibility.Visible;
-
-            Image_CA22.Visibility = Visibility.Visible;
-            Image_CA22.Width = 20 * Rapport_Taille_X;
-            Image_CA22.Height = 15 * Rapport_Taille_Y;
-
+            if (Pages == 0)
+            {
+                Image_CA22.Visibility = Visibility.Visible;
+                Image_CA22.Width = 20 * Rapport_Taille_X;
+                Image_CA22.Height = 15 * Rapport_Taille_Y;
+            }
+            else
+            {
+                Image_CA22.Visibility = Visibility.Collapsed;
+            }
+            
             Image_CA22.Margin = new Thickness(0, 0, 5 * Rapport_Taille_X, 5 * Rapport_Taille_Y);
+            if (Pages >= 10) { StackPanel_Neo_Scorboard.Margin = new Thickness(0,30,0,0); };
         }
         private void Affichage_CP_v9()
         {
-            StackPanel_CPV9_Gauche.Visibility = Visibility.Visible;
-            CDV9_gauche_Neo.FontSize = 5 * Rapport_Taille_X;
-            CDV9_gauche_ScoreBoard.FontSize = Rapport_Taille_X;
-
-            StackPanel_CPV9_Droit.Visibility = Visibility.Visible;
-            CDV9_droit_Neo.FontSize = 5 * Rapport_Taille_X;
-            CDV9_droit_ScoreBoard.FontSize = Rapport_Taille_X;
+            StackPanel_Neo_Scorboard.Visibility = Visibility.Visible;
+            Label_Neo_Scorboard.FontSize = 5 * Rapport_Taille_X;
+            Label_Nachmund.FontSize = 4 * Rapport_Taille_X;
         }
         private void Affichage_Version()
         {
@@ -19328,7 +19320,7 @@ namespace CPV9
         private void Affichage_Bouton_Format()
         {
             StackPanel_Bouton_Format.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.4);
             StackPanel_Bouton_Format.Width = 55 * x;
             StackPanel_Bouton_Format.Height = 15 * x;
             Label_Bouton_Format.FontSize = x;
@@ -19343,7 +19335,7 @@ namespace CPV9
         }
         private void Affichage_Selection_Map()
         {
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.4);
             StackPanel_MAPS.Width = 45 * x;
             StackPanel_MAPS.Height = 25 * x;
             Label_Maps.FontSize = 2 * x;
@@ -19363,7 +19355,7 @@ namespace CPV9
         }
         private void Affichage_Bouton_Mode()
         {
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.4);
             Label_rassembler_les_armees.FontSize = x;
             Label_Rassembler_les_armees_2.FontSize = x;
             TextBlock_Rassembler_Les_Armées.FontSize = x;

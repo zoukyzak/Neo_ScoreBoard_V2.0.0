@@ -60,6 +60,9 @@
   <PropertyGroup>
     <StartupObject>CPV9.App</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Néo ScoreBoard.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -204,6 +207,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Polices\INFECTED.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -309,13 +313,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\ADEPTA SORORITAS.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images_Fond\fond necron 1600 900.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\ADEPTUS CUSTODES.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\ASTRA MILITARUM.PNG" />
@@ -424,6 +422,27 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\livre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\FOND_BETON.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ADEPTA SORORITAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ADEPTUS CUSTODES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Néo ScoreBoard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\Image_Cadre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\Image_Cadre_noir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image_Cadre_noir.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
