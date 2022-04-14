@@ -19299,22 +19299,22 @@ namespace CPV9
         private void Affichage_Tables_Sauvegarde()
         {
             StackPanel_Tables.Visibility = Visibility.Visible;
-            Label_Tables_Wargame.FontSize = 2.4 * Rapport_Taille_X;
+            Label_Tables_Wargame.FontSize = 4 * Rapport_Taille_X;
 
             Image_Table_Quarantaine.Width = 20 * Rapport_Taille_X;
             Image_Table_Quarantaine.Height = 15 * Rapport_Taille_X;
-            Button_Table_Quarantaine_Effacer.FontSize = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
-            Button_Table_Quarantaine_Reprendre.FontSize = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
+            Button_Table_Quarantaine_Effacer.FontSize = (Rapport_Taille_Y + Rapport_Taille_X);
+            Button_Table_Quarantaine_Reprendre.FontSize = (Rapport_Taille_Y + Rapport_Taille_X);
 
             Image_Table_Highlands.Width = 20 * Rapport_Taille_X;
             Image_Table_Highlands.Height = 15 * Rapport_Taille_X;
-            Button_Table_Highlands_Effacer.FontSize = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
-            Button_Table_Highlands_Reprendre.FontSize = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
+            Button_Table_Highlands_Effacer.FontSize = (Rapport_Taille_Y + Rapport_Taille_X);
+            Button_Table_Highlands_Reprendre.FontSize = (Rapport_Taille_Y + Rapport_Taille_X);
 
             Image_Table_Mars.Width = 20 * Rapport_Taille_X;
             Image_Table_Mars.Height = 15 * Rapport_Taille_X;
-            Button_Table_Mars_Effacer.FontSize = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
-            Button_Table_Mars_Reprendre.FontSize = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.7);
+            Button_Table_Mars_Effacer.FontSize = (Rapport_Taille_Y + Rapport_Taille_X);
+            Button_Table_Mars_Reprendre.FontSize = (Rapport_Taille_Y + Rapport_Taille_X);
 
         }
         private void Affichage_Bouton_Format()
@@ -19338,18 +19338,18 @@ namespace CPV9
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.4);
             StackPanel_MAPS.Width = 45 * x;
             StackPanel_MAPS.Height = 25 * x;
-            Label_Maps.FontSize = 2 * x;
-            Label_Maps_B.FontSize = x;
-            Label_Maps_2D6.FontSize = x;
-            Label_Maps_1D6.FontSize = x;
-            TextBlock_Map.FontSize = 1.4 * x;
-            TextBox_Map_A.FontSize = x;
+            Label_Maps.FontSize = 3 * x;
+            Label_Maps_B.FontSize = 1.5 * x;
+            Label_Maps_2D6.FontSize = 1.5 * x;
+            Label_Maps_1D6.FontSize = 1.5 * x;
+            TextBlock_Map.FontSize = 1.8 * x;
+            TextBox_Map_A.FontSize = 1.5 * x;
             TextBox_Map_A.Width = 2 * x;
             radioButton_Codex_oui.FontSize = x;
             radioButton_Codex_oui.Width = 5 * x;
             radioButton_Codex_non.FontSize = x;
             radioButton_Codex_non.Width = 5 * x;
-            Button_Map_Ok.FontSize = x;
+            Button_Map_Ok.FontSize = 1.5 * x;
             Button_Map_Ok.Width = 6 * x;
             Button_Map_Ok.Height = 2.5 * x;
         }
@@ -19367,7 +19367,7 @@ namespace CPV9
             Label_Saisie_Attaquant.Visibility = Visibility.Visible;
             Label_Nom_Attaquant.Visibility = Visibility.Visible;
             TextBox_Nom_Attaquant.Visibility = Visibility.Visible;
-            Label_Saisie_Attaquant.FontSize = 8 * x;
+            Label_Saisie_Attaquant.FontSize = 6 * x;
             Label_Nom_Attaquant.FontSize = 2 * x;
             TextBox_Nom_Attaquant.FontSize = 2 * x;
             TextBox_Nom_Attaquant.Width = 20 * x;
@@ -19403,7 +19403,7 @@ namespace CPV9
             Label_Saisie_Defenseur.Visibility = Visibility.Visible;
             Label_Nom_Defenseur.Visibility = Visibility.Visible;
             TextBox_Nom_Defenseur.Visibility = Visibility.Visible;
-            Label_Saisie_Defenseur.FontSize = 8 * x;
+            Label_Saisie_Defenseur.FontSize = 6 * x;
             Label_Nom_Defenseur.FontSize = 2 * x;
             TextBox_Nom_Defenseur.FontSize = 2 * x;
             TextBox_Nom_Defenseur.Width = 20 * x;
@@ -19436,7 +19436,7 @@ namespace CPV9
         {
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
             int taille = 25;
-            Label_OBJSec_Att.FontSize = 3 * x;
+            Label_OBJSec_Att.FontSize = 5 * x;
             StackPanel_OBJSec_Att.Margin = new Thickness(0, Rapport_Taille_Y, 0, 0);
 
             Image_EleminezLEnnemi_Att.Width = taille * x;
@@ -19603,7 +19603,7 @@ namespace CPV9
             Button_Obj_Sec_Att_19.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_19.FontSize = x;
 
-            Label_Objectif_Mission_Att.FontSize = 2 * x;
+            Label_Objectif_Mission_Att.FontSize = 3 * x;
 
             Button_Obj_501_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_501_Att.Height = 4 * Rapport_Taille_Y;
@@ -19681,7 +19681,7 @@ namespace CPV9
             Button_Obj_3003_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_3003_Att.FontSize = x;
 
-            Label_Objectifs_secondaire_selectionner_Att.FontSize = 1.5 * x;
+            Label_Objectifs_secondaire_selectionner_Att.FontSize = 3 * x;
             TextBlock_ObjS_Att_1.FontSize = 2 * x;
             TextBlock_ObjS_Att_2.FontSize = 2 * x;
             TextBlock_ObjS_Att_3.FontSize = 2 * x;
@@ -19981,7 +19981,7 @@ namespace CPV9
         private void Affichage_OBJsec_Def()
         {
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            int taille = 25;
+            int taille = 15;
             Label_OBJSec_Def.FontSize = 3 * x;
             StackPanel_OBJSec_Def.Margin = new Thickness(0, Rapport_Taille_Y, 0, 0);
 
@@ -20149,7 +20149,7 @@ namespace CPV9
             Button_Obj_Sec_Def_19.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_19.FontSize = x;
 
-            Label_Objectif_Mission_Def.FontSize = 2 * x;
+            Label_Objectif_Mission_Def.FontSize = 3 * x;
 
             Button_Obj_501_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_501_Def.Height = 4 * Rapport_Taille_Y;
@@ -20227,7 +20227,7 @@ namespace CPV9
             Button_Obj_3003_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_3003_Def.FontSize = x;
 
-            Label_Objectifs_secondaire_selectionner_Def.FontSize = 1.5 * x;
+            Label_Objectifs_secondaire_selectionner_Def.FontSize = 3 * x;
             TextBlock_ObjS_Def_1.FontSize = 2 * x;
             TextBlock_ObjS_Def_2.FontSize = 2 * x;
             TextBlock_ObjS_Def_3.FontSize = 2 * x;
