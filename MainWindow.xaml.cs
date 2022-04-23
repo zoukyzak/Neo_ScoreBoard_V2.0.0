@@ -152,9 +152,9 @@ namespace CPV9
         public int Select_OBJ;
         public int Select_Objectif;
         public string Select_Camps;
-        public int[] Choix_ObjS_Attaquant = new int[3];
+        public int[] Choix_ObjS_Attaquant = new int[4];
         public int Choix_ObjS_Att = 0;
-        public int[] Choix_ObjS_Defenseur = new int[3];
+        public int[] Choix_ObjS_Defenseur = new int[4];
         public int Choix_ObjS_Def = 0;
         public int[] ID_Cape_Attaquant = new int[6];
         public int[] ID_Cape_Defenseur = new int[6];
@@ -1235,7 +1235,7 @@ namespace CPV9
 
             Choix_ObjS_Att = 0;
             Choix_ObjS_Def = 0;
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 Choix_ObjS_Attaquant[i] = 0;
                 Choix_ObjS_Defenseur[i] = 0;
@@ -7064,206 +7064,13 @@ namespace CPV9
         {
             this.ResizeMode = ResizeMode.NoResize;
             Affichage_FDE();
-            Affichage_OBJsec_Att();
-            if (format == 501)
-            {
-                Stackpanel_Obj_501_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 502)
-            {
-                Stackpanel_Obj_502_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 503)
-            {
-                Stackpanel_Obj_503_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1011)
-            {
-                Stackpanel_Obj_1011_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1012)
-            {
-                Stackpanel_Obj_1012_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1013)
-            {
-                Stackpanel_Obj_1013_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1021)
-            {
-                Stackpanel_Obj_1021_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1022)
-            {
-                Stackpanel_Obj_1022_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1023)
-            {
-                Stackpanel_Obj_1023_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1031)
-            {
-                Stackpanel_Obj_1031_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1032)
-            {
-                Stackpanel_Obj_1032_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 1033)
-            {
-                Stackpanel_Obj_1033_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2011)
-            {
-                Stackpanel_Obj_2011_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2012)
-            {
-                Stackpanel_Obj_2012_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2013)
-            {
-                Stackpanel_Obj_2013_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2021)
-            {
-                Stackpanel_Obj_2021_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2022)
-            {
-                Stackpanel_Obj_2022_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2023)
-            {
-                Stackpanel_Obj_2023_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2031)
-            {
-                Stackpanel_Obj_2031_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2032)
-            {
-                Stackpanel_Obj_2032_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 2033)
-            {
-                Stackpanel_Obj_2033_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 3001)
-            {
-                Stackpanel_Obj_3001_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 3002)
-            {
-                Stackpanel_Obj_3002_Att.Visibility = Visibility.Visible;
-            }
-            if (format == 3003)
-            {
-                Stackpanel_Obj_3003_Att.Visibility = Visibility.Visible;
-            }
+            Affichage_OBJsec_Att();            
         }
         private void Affiche_page_OBJ_Def()
         {
             this.ResizeMode = ResizeMode.NoResize;
             Affichage_FDE();
-            Affichage_OBJsec_Def();
-            if (format == 501)
-            {
-                Stackpanel_Obj_501_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 502)
-            {
-                Stackpanel_Obj_502_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 503)
-            {
-                Stackpanel_Obj_503_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1011)
-            {
-                Stackpanel_Obj_1011_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1012)
-            {
-                Stackpanel_Obj_1012_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1013)
-            {
-                Stackpanel_Obj_1013_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1021)
-            {
-                Stackpanel_Obj_1021_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1022)
-            {
-                Stackpanel_Obj_1022_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1023)
-            {
-                Stackpanel_Obj_1023_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1031)
-            {
-                Stackpanel_Obj_1031_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1032)
-            {
-                Stackpanel_Obj_1032_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 1033)
-            {
-                Stackpanel_Obj_1033_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2011)
-            {
-                Stackpanel_Obj_2011_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2012)
-            {
-                Stackpanel_Obj_2012_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2013)
-            {
-                Stackpanel_Obj_2013_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2021)
-            {
-                Stackpanel_Obj_2021_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2022)
-            {
-                Stackpanel_Obj_2022_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2023)
-            {
-                Stackpanel_Obj_2023_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2031)
-            {
-                Stackpanel_Obj_2031_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2032)
-            {
-                Stackpanel_Obj_2032_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 2033)
-            {
-                Stackpanel_Obj_2033_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 3001)
-            {
-                Stackpanel_Obj_3001_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 3002)
-            {
-                Stackpanel_Obj_3002_Def.Visibility = Visibility.Visible;
-            }
-            if (format == 3003)
-            {
-                Stackpanel_Obj_3003_Def.Visibility = Visibility.Visible;
-            }
-
+            Affichage_OBJsec_Def();            
         }
         private void Saisie_Equipes()
         {
@@ -7377,10 +7184,10 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 137 || Choix_ObjS_Attaquant[1] == 137 || Choix_ObjS_Attaquant[2] == 137) { StackPanel_ObjS_137_Att.Visibility = Visibility.Visible; oeil_OBJS_137_Att(); };
             if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { StackPanel_ObjS_138_Att.Visibility = Visibility.Visible; oeil_OBJS_138_Att(); };
             if (Choix_ObjS_Attaquant[0] == 139 || Choix_ObjS_Attaquant[1] == 139 || Choix_ObjS_Attaquant[2] == 139) { StackPanel_ObjS_139_Att.Visibility = Visibility.Visible; oeil_OBJS_139_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 501 || Choix_ObjS_Attaquant[1] == 501 || Choix_ObjS_Attaquant[2] == 501) { StackPanel_ObjS_501_Att.Visibility = Visibility.Visible; oeil_OBJS_501_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 502 || Choix_ObjS_Attaquant[1] == 502 || Choix_ObjS_Attaquant[2] == 502) { StackPanel_ObjS_502_Att.Visibility = Visibility.Visible; oeil_OBJS_502_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 503 || Choix_ObjS_Attaquant[1] == 503 || Choix_ObjS_Attaquant[2] == 503) { StackPanel_ObjS_503_Att.Visibility = Visibility.Visible; oeil_OBJS_503_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1011 || Choix_ObjS_Attaquant[1] == 1011 || Choix_ObjS_Attaquant[2] == 1011)
+            if (Choix_ObjS_Attaquant[3] == 501) { StackPanel_ObjS_501_Att.Visibility = Visibility.Visible; oeil_OBJS_501_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 502) { StackPanel_ObjS_502_Att.Visibility = Visibility.Visible; oeil_OBJS_502_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 503) { StackPanel_ObjS_503_Att.Visibility = Visibility.Visible; oeil_OBJS_503_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1011)
             {
                 StackPanel_ObjS_1011_Att.Visibility = Visibility.Visible;
                 if (CheckBox_ObjS_1011_Att_T2B_Etat == "true")
@@ -7401,26 +7208,26 @@ namespace CPV9
                 }
                 oeil_OBJS_1011_Att();
             }
-            if (Choix_ObjS_Attaquant[0] == 1012 || Choix_ObjS_Attaquant[1] == 1012 || Choix_ObjS_Attaquant[2] == 1012) { StackPanel_ObjS_1012_Att.Visibility = Visibility.Visible; oeil_OBJS_1012_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1013 || Choix_ObjS_Attaquant[1] == 1013 || Choix_ObjS_Attaquant[2] == 1013) { StackPanel_ObjS_1013_Att.Visibility = Visibility.Visible; oeil_OBJS_1013_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1021 || Choix_ObjS_Attaquant[1] == 1021 || Choix_ObjS_Attaquant[2] == 1021) { StackPanel_ObjS_1021_Att.Visibility = Visibility.Visible; oeil_OBJS_1021_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1022 || Choix_ObjS_Attaquant[1] == 1022 || Choix_ObjS_Attaquant[2] == 1022) { StackPanel_ObjS_1022_Att.Visibility = Visibility.Visible; oeil_OBJS_1022_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1023 || Choix_ObjS_Attaquant[1] == 1023 || Choix_ObjS_Attaquant[2] == 1023) { StackPanel_ObjS_1023_Att.Visibility = Visibility.Visible; oeil_OBJS_1023_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1031 || Choix_ObjS_Attaquant[1] == 1031 || Choix_ObjS_Attaquant[2] == 1031) { StackPanel_ObjS_1031_Att.Visibility = Visibility.Visible; oeil_OBJS_1031_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1032 || Choix_ObjS_Attaquant[1] == 1032 || Choix_ObjS_Attaquant[2] == 1032) { StackPanel_ObjS_1032_Att.Visibility = Visibility.Visible; oeil_OBJS_1032_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 1033 || Choix_ObjS_Attaquant[1] == 1033 || Choix_ObjS_Attaquant[2] == 1033) { StackPanel_ObjS_1033_Att.Visibility = Visibility.Visible; oeil_OBJS_1033_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2011 || Choix_ObjS_Attaquant[1] == 2011 || Choix_ObjS_Attaquant[2] == 2011) { StackPanel_ObjS_2011_Att.Visibility = Visibility.Visible; oeil_OBJS_2011_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2012 || Choix_ObjS_Attaquant[1] == 2012 || Choix_ObjS_Attaquant[2] == 2012) { StackPanel_ObjS_2012_Att.Visibility = Visibility.Visible; oeil_OBJS_2012_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2013 || Choix_ObjS_Attaquant[1] == 2013 || Choix_ObjS_Attaquant[2] == 2013) { StackPanel_ObjS_2013_Att.Visibility = Visibility.Visible; oeil_OBJS_2013_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2021 || Choix_ObjS_Attaquant[1] == 2021 || Choix_ObjS_Attaquant[2] == 2021) { StackPanel_ObjS_2021_Att.Visibility = Visibility.Visible; oeil_OBJS_2021_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2022 || Choix_ObjS_Attaquant[1] == 2022 || Choix_ObjS_Attaquant[2] == 2022) { StackPanel_ObjS_2022_Att.Visibility = Visibility.Visible; oeil_OBJS_2022_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2023 || Choix_ObjS_Attaquant[1] == 2023 || Choix_ObjS_Attaquant[2] == 2023) { StackPanel_ObjS_2023_Att.Visibility = Visibility.Visible; oeil_OBJS_2023_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2031 || Choix_ObjS_Attaquant[1] == 2031 || Choix_ObjS_Attaquant[2] == 2031) { StackPanel_ObjS_2031_Att.Visibility = Visibility.Visible; oeil_OBJS_2031_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2032 || Choix_ObjS_Attaquant[1] == 2032 || Choix_ObjS_Attaquant[2] == 2032) { StackPanel_ObjS_2032_Att.Visibility = Visibility.Visible; oeil_OBJS_2032_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 2033 || Choix_ObjS_Attaquant[1] == 2033 || Choix_ObjS_Attaquant[2] == 2033) { StackPanel_ObjS_2033_Att.Visibility = Visibility.Visible; oeil_OBJS_2033_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 3001 || Choix_ObjS_Attaquant[1] == 3001 || Choix_ObjS_Attaquant[2] == 3001) { StackPanel_ObjS_3001_Att.Visibility = Visibility.Visible; oeil_OBJS_3001_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 3002 || Choix_ObjS_Attaquant[1] == 3002 || Choix_ObjS_Attaquant[2] == 3002) { StackPanel_ObjS_3002_Att.Visibility = Visibility.Visible; oeil_OBJS_3002_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 3003 || Choix_ObjS_Attaquant[1] == 3003 || Choix_ObjS_Attaquant[2] == 3003) { StackPanel_ObjS_3003_Att.Visibility = Visibility.Visible; oeil_OBJS_3003_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1012) { StackPanel_ObjS_1012_Att.Visibility = Visibility.Visible; oeil_OBJS_1012_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1013) { StackPanel_ObjS_1013_Att.Visibility = Visibility.Visible; oeil_OBJS_1013_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1021) { StackPanel_ObjS_1021_Att.Visibility = Visibility.Visible; oeil_OBJS_1021_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1022) { StackPanel_ObjS_1022_Att.Visibility = Visibility.Visible; oeil_OBJS_1022_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1023) { StackPanel_ObjS_1023_Att.Visibility = Visibility.Visible; oeil_OBJS_1023_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1031) { StackPanel_ObjS_1031_Att.Visibility = Visibility.Visible; oeil_OBJS_1031_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1032) { StackPanel_ObjS_1032_Att.Visibility = Visibility.Visible; oeil_OBJS_1032_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 1033) { StackPanel_ObjS_1033_Att.Visibility = Visibility.Visible; oeil_OBJS_1033_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2011) { StackPanel_ObjS_2011_Att.Visibility = Visibility.Visible; oeil_OBJS_2011_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2012) { StackPanel_ObjS_2012_Att.Visibility = Visibility.Visible; oeil_OBJS_2012_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2013) { StackPanel_ObjS_2013_Att.Visibility = Visibility.Visible; oeil_OBJS_2013_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2021) { StackPanel_ObjS_2021_Att.Visibility = Visibility.Visible; oeil_OBJS_2021_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2022) { StackPanel_ObjS_2022_Att.Visibility = Visibility.Visible; oeil_OBJS_2022_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2023) { StackPanel_ObjS_2023_Att.Visibility = Visibility.Visible; oeil_OBJS_2023_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2031) { StackPanel_ObjS_2031_Att.Visibility = Visibility.Visible; oeil_OBJS_2031_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2032) { StackPanel_ObjS_2032_Att.Visibility = Visibility.Visible; oeil_OBJS_2032_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 2033) { StackPanel_ObjS_2033_Att.Visibility = Visibility.Visible; oeil_OBJS_2033_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 3001) { StackPanel_ObjS_3001_Att.Visibility = Visibility.Visible; oeil_OBJS_3001_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 3002) { StackPanel_ObjS_3002_Att.Visibility = Visibility.Visible; oeil_OBJS_3002_Att(); };
+            if (Choix_ObjS_Attaquant[3] == 3003) { StackPanel_ObjS_3003_Att.Visibility = Visibility.Visible; oeil_OBJS_3003_Att(); };
             StackPanel_Obj_FIG_Att.Visibility = Visibility.Visible;
             if (formatBis == 1)
             {
@@ -7504,10 +7311,10 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 137 || Choix_ObjS_Defenseur[1] == 137 || Choix_ObjS_Defenseur[2] == 137) { StackPanel_ObjS_137_Def.Visibility = Visibility.Visible; oeil_OBJS_137_Def(); };
             if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { StackPanel_ObjS_138_Def.Visibility = Visibility.Visible; oeil_OBJS_138_Def(); };
             if (Choix_ObjS_Defenseur[0] == 139 || Choix_ObjS_Defenseur[1] == 139 || Choix_ObjS_Defenseur[2] == 139) { StackPanel_ObjS_139_Def.Visibility = Visibility.Visible; oeil_OBJS_139_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 501 || Choix_ObjS_Defenseur[1] == 501 || Choix_ObjS_Defenseur[2] == 501) { StackPanel_ObjS_501_Def.Visibility = Visibility.Visible; oeil_OBJS_501_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 502 || Choix_ObjS_Defenseur[1] == 502 || Choix_ObjS_Defenseur[2] == 502) { StackPanel_ObjS_502_Def.Visibility = Visibility.Visible; oeil_OBJS_502_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 503 || Choix_ObjS_Defenseur[1] == 503 || Choix_ObjS_Defenseur[2] == 503) { StackPanel_ObjS_503_Def.Visibility = Visibility.Visible; oeil_OBJS_503_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1011 || Choix_ObjS_Defenseur[1] == 1011 || Choix_ObjS_Defenseur[2] == 1011)
+            if (Choix_ObjS_Defenseur[3] == 501) { StackPanel_ObjS_501_Def.Visibility = Visibility.Visible; oeil_OBJS_501_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 502) { StackPanel_ObjS_502_Def.Visibility = Visibility.Visible; oeil_OBJS_502_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 503) { StackPanel_ObjS_503_Def.Visibility = Visibility.Visible; oeil_OBJS_503_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1011)
             {
                 StackPanel_ObjS_1011_Def.Visibility = Visibility.Visible;
                 if (CheckBox_ObjS_1011_Def_T2B_Etat == "true")
@@ -7528,26 +7335,26 @@ namespace CPV9
                 }
                 oeil_OBJS_1011_Def();
             }
-            if (Choix_ObjS_Defenseur[0] == 1012 || Choix_ObjS_Defenseur[1] == 1012 || Choix_ObjS_Defenseur[2] == 1012) { StackPanel_ObjS_1012_Def.Visibility = Visibility.Visible; oeil_OBJS_1012_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1013 || Choix_ObjS_Defenseur[1] == 1013 || Choix_ObjS_Defenseur[2] == 1013) { StackPanel_ObjS_1013_Def.Visibility = Visibility.Visible; oeil_OBJS_1013_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1021 || Choix_ObjS_Defenseur[1] == 1021 || Choix_ObjS_Defenseur[2] == 1021) { StackPanel_ObjS_1021_Def.Visibility = Visibility.Visible; oeil_OBJS_1021_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1022 || Choix_ObjS_Defenseur[1] == 1022 || Choix_ObjS_Defenseur[2] == 1022) { StackPanel_ObjS_1022_Def.Visibility = Visibility.Visible; oeil_OBJS_1022_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1023 || Choix_ObjS_Defenseur[1] == 1023 || Choix_ObjS_Defenseur[2] == 1023) { StackPanel_ObjS_1023_Def.Visibility = Visibility.Visible; oeil_OBJS_1023_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1031 || Choix_ObjS_Defenseur[1] == 1031 || Choix_ObjS_Defenseur[2] == 1031) { StackPanel_ObjS_1031_Def.Visibility = Visibility.Visible; oeil_OBJS_1031_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1032 || Choix_ObjS_Defenseur[1] == 1032 || Choix_ObjS_Defenseur[2] == 1032) { StackPanel_ObjS_1032_Def.Visibility = Visibility.Visible; oeil_OBJS_1032_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 1033 || Choix_ObjS_Defenseur[1] == 1033 || Choix_ObjS_Defenseur[2] == 1033) { StackPanel_ObjS_1033_Def.Visibility = Visibility.Visible; oeil_OBJS_1033_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2011 || Choix_ObjS_Defenseur[1] == 2011 || Choix_ObjS_Defenseur[2] == 2011) { StackPanel_ObjS_2011_Def.Visibility = Visibility.Visible; oeil_OBJS_2011_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2012 || Choix_ObjS_Defenseur[1] == 2012 || Choix_ObjS_Defenseur[2] == 2012) { StackPanel_ObjS_2012_Def.Visibility = Visibility.Visible; oeil_OBJS_2012_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2013 || Choix_ObjS_Defenseur[1] == 2013 || Choix_ObjS_Defenseur[2] == 2013) { StackPanel_ObjS_2013_Def.Visibility = Visibility.Visible; oeil_OBJS_2013_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2021 || Choix_ObjS_Defenseur[1] == 2021 || Choix_ObjS_Defenseur[2] == 2021) { StackPanel_ObjS_2021_Def.Visibility = Visibility.Visible; oeil_OBJS_2021_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2022 || Choix_ObjS_Defenseur[1] == 2022 || Choix_ObjS_Defenseur[2] == 2022) { StackPanel_ObjS_2022_Def.Visibility = Visibility.Visible; oeil_OBJS_2022_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2023 || Choix_ObjS_Defenseur[1] == 2023 || Choix_ObjS_Defenseur[2] == 2023) { StackPanel_ObjS_2023_Def.Visibility = Visibility.Visible; oeil_OBJS_2023_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2031 || Choix_ObjS_Defenseur[1] == 2031 || Choix_ObjS_Defenseur[2] == 2031) { StackPanel_ObjS_2031_Def.Visibility = Visibility.Visible; oeil_OBJS_2031_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2032 || Choix_ObjS_Defenseur[1] == 2032 || Choix_ObjS_Defenseur[2] == 2032) { StackPanel_ObjS_2032_Def.Visibility = Visibility.Visible; oeil_OBJS_2032_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 2033 || Choix_ObjS_Defenseur[1] == 2033 || Choix_ObjS_Defenseur[2] == 2033) { StackPanel_ObjS_2033_Def.Visibility = Visibility.Visible; oeil_OBJS_2033_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 3001 || Choix_ObjS_Defenseur[1] == 3001 || Choix_ObjS_Defenseur[2] == 3001) { StackPanel_ObjS_3001_Def.Visibility = Visibility.Visible; oeil_OBJS_3001_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 3002 || Choix_ObjS_Defenseur[1] == 3002 || Choix_ObjS_Defenseur[2] == 3002) { StackPanel_ObjS_3002_Def.Visibility = Visibility.Visible; oeil_OBJS_3002_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 3003 || Choix_ObjS_Defenseur[1] == 3003 || Choix_ObjS_Defenseur[2] == 3003) { StackPanel_ObjS_3003_Def.Visibility = Visibility.Visible; oeil_OBJS_3003_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1012) { StackPanel_ObjS_1012_Def.Visibility = Visibility.Visible; oeil_OBJS_1012_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1013) { StackPanel_ObjS_1013_Def.Visibility = Visibility.Visible; oeil_OBJS_1013_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1021) { StackPanel_ObjS_1021_Def.Visibility = Visibility.Visible; oeil_OBJS_1021_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1022) { StackPanel_ObjS_1022_Def.Visibility = Visibility.Visible; oeil_OBJS_1022_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1023) { StackPanel_ObjS_1023_Def.Visibility = Visibility.Visible; oeil_OBJS_1023_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1031) { StackPanel_ObjS_1031_Def.Visibility = Visibility.Visible; oeil_OBJS_1031_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1032) { StackPanel_ObjS_1032_Def.Visibility = Visibility.Visible; oeil_OBJS_1032_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 1033) { StackPanel_ObjS_1033_Def.Visibility = Visibility.Visible; oeil_OBJS_1033_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2011) { StackPanel_ObjS_2011_Def.Visibility = Visibility.Visible; oeil_OBJS_2011_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2012) { StackPanel_ObjS_2012_Def.Visibility = Visibility.Visible; oeil_OBJS_2012_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2013) { StackPanel_ObjS_2013_Def.Visibility = Visibility.Visible; oeil_OBJS_2013_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2021) { StackPanel_ObjS_2021_Def.Visibility = Visibility.Visible; oeil_OBJS_2021_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2022) { StackPanel_ObjS_2022_Def.Visibility = Visibility.Visible; oeil_OBJS_2022_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2023) { StackPanel_ObjS_2023_Def.Visibility = Visibility.Visible; oeil_OBJS_2023_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2031) { StackPanel_ObjS_2031_Def.Visibility = Visibility.Visible; oeil_OBJS_2031_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2032) { StackPanel_ObjS_2032_Def.Visibility = Visibility.Visible; oeil_OBJS_2032_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 2033) { StackPanel_ObjS_2033_Def.Visibility = Visibility.Visible; oeil_OBJS_2033_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 3001) { StackPanel_ObjS_3001_Def.Visibility = Visibility.Visible; oeil_OBJS_3001_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 3002) { StackPanel_ObjS_3002_Def.Visibility = Visibility.Visible; oeil_OBJS_3002_Def(); };
+            if (Choix_ObjS_Defenseur[3] == 3003) { StackPanel_ObjS_3003_Def.Visibility = Visibility.Visible; oeil_OBJS_3003_Def(); };
             StackPanel_Obj_FIG_Def.Visibility = Visibility.Visible;
             if (formatBis == 1)
             {
@@ -9348,6 +9155,7 @@ namespace CPV9
         #region Selection objectif secondaire
         private void Button_Valid_Choix_ObsS_Att_Ok_Click(object sender, RoutedEventArgs e)
         {
+            Choix_ObjS_Attaquant[3] = format;
             Init_affichage();
             Pages = 8;
             Deroulement();
@@ -9368,6 +9176,7 @@ namespace CPV9
         ///Pour remettre la selection du choix attanquant ou defenseur
         private void Button_Valid_Choix_ObsS_Def_Ok_Click(object sender, RoutedEventArgs e)
         {
+            Choix_ObjS_Defenseur[3] = format;
             Init_affichage();
             /// 
             Pages = 10;/// pages = 9; pour remettre la selection du choix attanquant ou defenseur
@@ -9387,9 +9196,6 @@ namespace CPV9
             Pages = 8;
             Deroulement();
         }
-
-
-
         #endregion
 
         #region OBJECTIF SECONDAIRE
@@ -9516,11 +9322,6 @@ namespace CPV9
                     Button_Obj_Codex_Ork_138_Att.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Ork_139_Att.Visibility = Visibility.Hidden;
                 }
-
-                if (Select_Objectif >= 500 && Select_Objectif <= 3003)
-                {
-                    StackPanel_Obj_M_Att.Visibility = Visibility.Hidden;
-                }
             }
 
             if (Select_Camps == "Def")
@@ -9591,11 +9392,6 @@ namespace CPV9
                     Button_Obj_Codex_Ork_137_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Ork_138_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Ork_139_Def.Visibility = Visibility.Hidden;
-                }
-
-                if (Select_Objectif >= 500 && Select_Objectif <= 3003)
-                {
-                    StackPanel_Obj_M_Def.Visibility = Visibility.Hidden;
                 }
             }
 
@@ -10953,7 +10749,6 @@ namespace CPV9
                 StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
                 StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden;
                 StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden;
-                StackPanel_Obj_M_Att.Visibility = Visibility.Hidden;
                 StackPanel_Valid_Choix_ObjS_Att.Visibility = Visibility.Visible;
                 return;
             }
@@ -10989,7 +10784,6 @@ namespace CPV9
                 StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
                 StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
                 StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden;
-                StackPanel_Obj_M_Def.Visibility = Visibility.Hidden;
                 StackPanel_Valid_Choix_ObjS_Def.Visibility = Visibility.Visible;
                 return;
             }
@@ -11446,7 +11240,7 @@ namespace CPV9
             #endregion
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
             ///CALCUL SCORE OBJECTIF MISSION 2011
-            if (TextBox_ObjS_2011_Att_R1.Text != "" || TextBox_ObjS_2011_Att_R2.Text != "" || TextBox_ObjS_2011_Att_R3.Text != "" || TextBox_ObjS_2011_Att_R4.Text != "" || TextBox_ObjS_2011_Att_R5.Text != "")
+            if ((TextBox_ObjS_2011_Att_R1.Text != "" || TextBox_ObjS_2011_Att_R2.Text != "" || TextBox_ObjS_2011_Att_R3.Text != "" || TextBox_ObjS_2011_Att_R4.Text != "" || TextBox_ObjS_2011_Att_R5.Text != "") && format == 2011)
             {
                 Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Att;
                 OBJECTIF_Mission_2011_Att = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Att_R1.Text, TextBox_ObjS_2011_Att_R2.Text, TextBox_ObjS_2011_Att_R3.Text, TextBox_ObjS_2011_Att_R4.Text, TextBox_ObjS_2011_Att_R5.Text);
@@ -11458,11 +11252,10 @@ namespace CPV9
                 }
                 TextBlock_ObjS_2011_Att.Text = Convert.ToString(OBJECTIF_Mission_2011_Att.Score_ObjS);
                 Scores_Attaquant[34] = OBJECTIF_Mission_2011_Att.Score_ObjS;
-                ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[33]);
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 2012   
-            if (TextBox_ObjS_2012_Att.Text != "")
+            if (TextBox_ObjS_2012_Att.Text != "" && format == 2012)
             {
                 Classe_Score_OBJM_2012 OBJECTIF_Mission_2012_Att;
                 OBJECTIF_Mission_2012_Att = new Classe_Score_OBJM_2012(TextBox_ObjS_2012_Att.Text);
@@ -19711,84 +19504,6 @@ namespace CPV9
             Button_Obj_Sec_Att_19.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_19.FontSize = x;
 
-            Label_Objectif_Mission_Att.FontSize = 3 * x;
-
-            Button_Obj_501_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_501_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_501_Att.FontSize = x;
-            Button_Obj_502_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_502_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_502_Att.FontSize = x;
-            Button_Obj_503_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_503_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_503_Att.FontSize = x;
-
-            Button_Obj_1011_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1011_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1011_Att.FontSize = x;
-            Button_Obj_1012_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1012_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1012_Att.FontSize = x;
-            Button_Obj_1013_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1013_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1013_Att.FontSize = x;
-            Button_Obj_1021_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1021_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1021_Att.FontSize = x;
-            Button_Obj_1022_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1022_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1022_Att.FontSize = x;
-            Button_Obj_1023_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1023_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1023_Att.FontSize = x;
-            Button_Obj_1031_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1031_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1031_Att.FontSize = x;
-            Button_Obj_1032_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1032_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1032_Att.FontSize = x;
-            Button_Obj_1033_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1033_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1033_Att.FontSize = x;
-
-            Button_Obj_2011_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2011_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2011_Att.FontSize = x;
-            Button_Obj_2012_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2012_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2012_Att.FontSize = x;
-            Button_Obj_2013_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2013_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2013_Att.FontSize = x;
-            Button_Obj_2021_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2021_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2021_Att.FontSize = x;
-            Button_Obj_2022_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2022_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2022_Att.FontSize = x;
-            Button_Obj_2023_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2023_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2023_Att.FontSize = x;
-            Button_Obj_2031_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2031_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2031_Att.FontSize = x;
-            Button_Obj_2032_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2032_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2032_Att.FontSize = x;
-            Button_Obj_2033_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2033_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2033_Att.FontSize = x;
-
-            Button_Obj_3001_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_3001_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_3001_Att.FontSize = x;
-            Button_Obj_3002_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_3002_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_3002_Att.FontSize = x;
-            Button_Obj_3003_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_3003_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_3003_Att.FontSize = x;
-
             Label_Objectifs_secondaire_selectionner_Att.FontSize = 3 * x;
             TextBlock_ObjS_Att_1.FontSize = 2 * x;
             TextBlock_ObjS_Att_2.FontSize = 2 * x;
@@ -19809,7 +19524,6 @@ namespace CPV9
             StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Visible;
             StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Visible;
             StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Visible;
-            StackPanel_Obj_M_Att.Visibility = Visibility.Visible;
             if (codex == true)
             {
                 if (Players_Attaquant[1] == "  SM_Space Marines" || Players_Attaquant[1] == "  SM_Dark Angels" || Players_Attaquant[1] == "  SM_White Scares" || Players_Attaquant[1] == "  SM_Space Wolves" || Players_Attaquant[1] == "  SM_Imperial Fists" || Players_Attaquant[1] == "  SM_Crimson Fists" || Players_Attaquant[1] == "  SM_Black Templars" || Players_Attaquant[1] == "  SM_Blood Angels" || Players_Attaquant[1] == "  SM_Flesh Tearers" || Players_Attaquant[1] == "  SM_Iron Hands" || Players_Attaquant[1] == "  SM_Ultramarines" || Players_Attaquant[1] == "  SM_Salamandres" || Players_Attaquant[1] == "  SM_Raven Guard" || Players_Attaquant[1] == "  SM_Deathwatch") { Affiche_Bouton_Codex_SM_Att(); };
@@ -20257,84 +19971,6 @@ namespace CPV9
             Button_Obj_Sec_Def_19.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_19.FontSize = x;
 
-            Label_Objectif_Mission_Def.FontSize = 3 * x;
-
-            Button_Obj_501_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_501_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_501_Def.FontSize = x;
-            Button_Obj_502_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_502_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_502_Def.FontSize = x;
-            Button_Obj_503_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_503_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_503_Def.FontSize = x;
-
-            Button_Obj_1011_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1011_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1011_Def.FontSize = x;
-            Button_Obj_1012_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1012_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1012_Def.FontSize = x;
-            Button_Obj_1013_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1013_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1013_Def.FontSize = x;
-            Button_Obj_1021_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1021_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1021_Def.FontSize = x;
-            Button_Obj_1022_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1022_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1022_Def.FontSize = x;
-            Button_Obj_1023_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1023_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1023_Def.FontSize = x;
-            Button_Obj_1031_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1031_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1031_Def.FontSize = x;
-            Button_Obj_1032_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1032_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1032_Def.FontSize = x;
-            Button_Obj_1033_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_1033_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_1033_Def.FontSize = x;
-
-            Button_Obj_2011_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2011_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2011_Def.FontSize = x;
-            Button_Obj_2012_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2012_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2012_Def.FontSize = x;
-            Button_Obj_2013_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2013_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2013_Def.FontSize = x;
-            Button_Obj_2021_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2021_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2021_Def.FontSize = x;
-            Button_Obj_2022_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2022_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2022_Def.FontSize = x;
-            Button_Obj_2023_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2023_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2023_Def.FontSize = x;
-            Button_Obj_2031_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2031_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2031_Def.FontSize = x;
-            Button_Obj_2032_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2032_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2032_Def.FontSize = x;
-            Button_Obj_2033_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_2033_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_2033_Def.FontSize = x;
-
-            Button_Obj_3001_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_3001_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_3001_Def.FontSize = x;
-            Button_Obj_3002_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_3002_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_3002_Def.FontSize = x;
-            Button_Obj_3003_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_3003_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_3003_Def.FontSize = x;
-
             Label_Objectifs_secondaire_selectionner_Def.FontSize = 3 * x;
             TextBlock_ObjS_Def_1.FontSize = 2 * x;
             TextBlock_ObjS_Def_2.FontSize = 2 * x;
@@ -20354,7 +19990,6 @@ namespace CPV9
             StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Visible;
             StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Visible;
             StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Visible;
-            StackPanel_Obj_M_Def.Visibility = Visibility.Visible;
 
             if (codex == true)
             {

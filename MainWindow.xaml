@@ -305,8 +305,6 @@
             <Label x:Name="Label_Cape_Player_Attaquant_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
             <Label x:Name="Label_Cape_Player_Attaquant_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
         </StackPanel>
-
-
         <!--#endregion-->
 
         <!--#region Affichage Defenseur -->
@@ -6792,92 +6790,6 @@
                     <Button x:Name="Button_Obj_Sec_Att_19" Content="19 - PERCER LE VOILE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_Sec_Att_19_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
                 </StackPanel>
             </StackPanel>
-            <StackPanel x:Name="StackPanel_Obj_M_Att" Orientation="Vertical" Visibility="Visible" Margin="0,20,0,0" >
-                <Label x:Name="Label_Objectif_Mission_Att" Content="OBJECTIF DE MISSION" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="/CPV9;component/Polices/#INFECTED" FontSize="2">
-                    <Label.Foreground>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="Black" Offset="0"/>
-                            <GradientStop Color="#FFEE0B0B" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Label.Foreground>
-                </Label>
-                <StackPanel x:Name="Stackpanel_Obj_501_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="collapsed">
-                    <Button x:Name="Button_Obj_501_Att" Content="501 - ASSAUT CHIRURGICAL" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_501_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_502_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_502_Att" Content="502 - SONDAGE" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_502_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_503_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_503_Att" Content="503 - ENCERCLER" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_503_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-
-                <StackPanel x:Name="Stackpanel_Obj_1011_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1011_Att" Content="1011 - ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1011_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1012_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1012_Att" Content="1012 - SECURISEZ LES SITES D'ATTERRISSAGE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1012_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1013_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1013_Att" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1013_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1021_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1021_Att" Content="1021-PILIER DE LA FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1021_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1022_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1022_Att" Content="1022-ASCENSION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1022_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1023_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1023_Att" Content="1023-ELAN DE FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1023_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1031_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1031_Att" Content="1031-TELECHARGER LE DATA-SPAUME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1031_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1032_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1032_Att" Content="1032-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1032_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1033_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1033_Att" Content="1033-BALAYAGE DE RECONNAISSANCE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1033_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-
-                <StackPanel x:Name="Stackpanel_Obj_2011_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2011_Att" Content="2011-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2011_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2012_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2012_Att" Content="2012-DETONATION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#FF84A1F0" Click="Button_Obj_2012_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2013_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2013_Att" Content="2013-INTERCEPTION DE DONNEES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2013_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2021_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2021_Att" Content="2021-SECURISER LES SANCTUAIRES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2021_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2022_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2022_Att" Content="2022-SOL CORROMPU" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2022_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2023_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2023_Att" Content="2023-SCAN STRATEGIQUE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2023_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2031_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2031_Att" Content="2031-SUBMERGER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2031_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2032_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2032_Att" Content="2032-ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2032_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2033_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2033_Att" Content="2033-ARTEFACTS PRECIEUX" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2033_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-
-                <StackPanel x:Name="Stackpanel_Obj_3001_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_3001_Att" Content="3001-TENIR LE CENTRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_3001_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_3002_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_3002_Att" Content="3002-ENCERCLEZ-LES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_3002_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_3003_Att" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_3003_Att" Content="3003-CHERCHER LE PORTAIL" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_3003_Att_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-
-            </StackPanel>
 
             <StackPanel x:Name="Stackpanel_ObjSec_Att_choix" HorizontalAlignment="Left" Height="Auto" Width="Auto" Margin="10,20" Orientation="Horizontal" Background="#99FDFDFD">
                 <Label x:Name="Label_Objectifs_secondaire_selectionner_Att" Content="Objectif Secondaire selectionne :" HorizontalAlignment="Left" FontFamily="/CPV9;component/Polices/#INFECTED" FontSize="10" Foreground="Black"/>
@@ -6972,91 +6884,6 @@
                     <Button x:Name="Button_Obj_Sec_Def_17" Content="17 - ABHORREZ LE SORCIER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_Sec_Def_17_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
                     <Button x:Name="Button_Obj_Sec_Def_19" Content="19 - PERCER LE VOILE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_Sec_Def_19_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
 
-                </StackPanel>
-            </StackPanel>
-            <StackPanel x:Name="StackPanel_Obj_M_Def" Orientation="Vertical" Visibility="Visible" Margin="0,20,0,0" >
-                <Label x:Name="Label_Objectif_Mission_Def" Content="OBJECTIF DE MISSION" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="/CPV9;component/Polices/#INFECTED" FontSize="2">
-                    <Label.Foreground>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="black" Offset="0"/>
-                            <GradientStop Color="#FFEE0B0B" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Label.Foreground>
-                </Label>
-                <StackPanel x:Name="Stackpanel_Obj_501_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_501_Def" Content="501 - ASSAUT CHIRURGICAL" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_501_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_502_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_502_Def" Content="502 - SONDAGE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_502_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_503_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_503_Def" Content="503 - ENCERCLER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_503_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-
-                <StackPanel x:Name="Stackpanel_Obj_1011_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1011_Def" Content="1011 - ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1011_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1012_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1012_Def" Content="1012 - SECURISEZ LES SITES D'ATTERRISSAGE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1012_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1013_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1013_Def" Content="1013-ATTAQUEZ LES LIGNES DE RAVITAILLEMENT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1013_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1021_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1021_Def" Content="1021-PILIER DE LA FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1021_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1022_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1022_Def" Content="1022-ASCENSION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1022_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1023_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1023_Def" Content="1023-ELAN DE FOI" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1023_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1031_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1031_Def" Content="1031-TELECHARGER LE DATA-SPAUME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1031_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1032_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1032_Def" Content="1032-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1032_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_1033_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_1033_Def" Content="1033-BALAYAGE DE RECONNAISSANCE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_1033_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-
-                <StackPanel x:Name="Stackpanel_Obj_2011_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2011_Def" Content="2011-BRISEZ-LES CORPS ET AME" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2011_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2012_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2012_Def" Content="2012-DETONATION" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2012_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2013_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2013_Def" Content="2013-INTERCEPTION DE DONNEES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2013_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2021_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2021_Def" Content="2021-SECURISER LES SANCTUAIRES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2021_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2022_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2022_Def" Content="2022-SOL CORROMPU" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2022_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2023_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2023_Def" Content="2023-SCAN STRATEGIQUE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2023_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2031_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2031_Def" Content="2031-SUBMERGER" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2031_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2032_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2032_Def" Content="2032-ASSAUT DIRECT" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2032_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_2033_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_2033_Def" Content="2033-ARTEFACTS PRECIEUX" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_2033_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-
-                <StackPanel x:Name="Stackpanel_Obj_3001_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_3001_Def" Content="3001-TENIR LE CENTRE" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_3001_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_3002_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_3002_Def" Content="3002-ENCERCLEZ-LES" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_3002_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
-                </StackPanel>
-                <StackPanel x:Name="Stackpanel_Obj_3003_Def" HorizontalAlignment="Center" VerticalAlignment="Center" Height="Auto" Width="Auto" Margin="0,20" Orientation="Vertical" Visibility="Collapsed">
-                    <Button x:Name="Button_Obj_3003_Def" Content="3003-CHERCHER LE PORTAIL" HorizontalAlignment="center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="2" Background="#7F84A1F0" Click="Button_Obj_3003_Def_Click" BorderBrush="#FFA61919" Padding="5" UseLayoutRounding="True"/>
                 </StackPanel>
             </StackPanel>
 

@@ -194,7 +194,7 @@ namespace CPV9.Classes
             StringBuilder ligne = new StringBuilder();
             using (StreamWriter fichier = new StreamWriter(_chemin_Choix_ObjS_Attaquant_Quarantaine, false, Encoding.UTF8, 1024))
             {
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 4; i++)
                 {
                     ligne.Append(Choix_ObjS_Attaquant[i] + ";");
                     fichier.WriteLine(ligne.ToString());
@@ -212,7 +212,7 @@ namespace CPV9.Classes
             StringBuilder ligne = new StringBuilder();
             using (StreamWriter fichier = new StreamWriter(_chemin_Choix_ObjS_Defenseur_Quarantaine, false, Encoding.UTF8, 1024))
             {
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < 4; i++)
                 {
                     ligne.Append(Choix_ObjS_Defenseur[i] + ";");
                     fichier.WriteLine(ligne.ToString());
