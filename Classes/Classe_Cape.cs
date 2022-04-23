@@ -9,7 +9,8 @@ namespace CPV9.Classes
         {
             #region OBJ PRINCIPAL
             /**  OBJECTIF PRINCIPAL  **/
-            if (ID_cape == 1000) { Cape_Selected = "Objectif Principal capé"; };
+            if (ID_cape == 1000) { Cape_Selected = "Objectif Principal prendre et tenir capé"; };
+            if (ID_cape == 1001) { Cape_Selected = "OBJECTIFS PRINCIPAUX capé"; };
             #endregion
             #region OBJ SECONDAIRE
             /**  ELIMINEZ L ENNEMI  **/

@@ -42,11 +42,15 @@ namespace CPV9.Windows
             Label_Tv_Cape_Player_Attaquant_2.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Attaquant_3.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Attaquant_4.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Attaquant_5.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Attaquant_6.Visibility = Visibility.Collapsed;
 
             Label_Tv_Cape_Player_Defenseur_1.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Defenseur_2.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Defenseur_3.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Defenseur_4.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Defenseur_5.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Defenseur_6.Visibility = Visibility.Collapsed;
         }
         public void Collect_Cape_Tv(string Player, int ID_Cape_Tv, string text_Cape_Tv)
          {
@@ -100,6 +104,30 @@ namespace CPV9.Windows
                         Label_Tv_Cape_Player_Attaquant_4.Visibility = Visibility.Visible;
                     }
                 }
+                if (ID_Cape_Tv == 5)
+                {
+                    Label_Tv_Cape_Player_Attaquant_5.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_5.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_5.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 6)
+                {
+                    Label_Tv_Cape_Player_Attaquant_6.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_6.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_6.Visibility = Visibility.Visible;
+                    }
+                }
             }
             if (Player == "Def")
             {
@@ -149,6 +177,30 @@ namespace CPV9.Windows
                     else
                     {
                         Label_Tv_Cape_Player_Defenseur_4.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 5)
+                {
+                    Label_Tv_Cape_Player_Defenseur_5.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_5.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_5.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 6)
+                {
+                    Label_Tv_Cape_Player_Defenseur_6.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_6.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_6.Visibility = Visibility.Visible;
                     }
                 }
             }

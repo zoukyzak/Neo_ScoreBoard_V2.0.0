@@ -143,6 +143,12 @@ namespace CPV9
         public string[] Players_Defenseur = new string[3];
         public int[] Scores_Attaquant = new int[200];
         public int[] Scores_Defenseur = new int[200];
+        public int score_Principal_A_Att = 0;
+        public int score_Principal_B_Att = 0;
+        public int score_Principal_Total_Att = 0;
+        public int score_Principal_A_Def = 0;
+        public int score_Principal_B_Def = 0;
+        public int score_Principal_Total_Def = 0;
         public int Select_OBJ;
         public int Select_Objectif;
         public string Select_Camps;
@@ -150,8 +156,8 @@ namespace CPV9
         public int Choix_ObjS_Att = 0;
         public int[] Choix_ObjS_Defenseur = new int[3];
         public int Choix_ObjS_Def = 0;
-        public int[] ID_Cape_Attaquant = new int[4];
-        public int[] ID_Cape_Defenseur = new int[4];
+        public int[] ID_Cape_Attaquant = new int[6];
+        public int[] ID_Cape_Defenseur = new int[6];
         public string[,] Mem_Saisie_Attaquant = new string[20, 100];
         public string[,] Mem_Saisie_Defenseur = new string[20, 100];
         #region Variables_bool_Oeil
@@ -1205,7 +1211,12 @@ namespace CPV9
             Players_Defenseur[2] = null;
             Scores_Attaquant[0] = 0;
             Scores_Defenseur[0] = 0;
-
+            score_Principal_A_Att = 0;
+            score_Principal_B_Att = 0;
+            score_Principal_Total_Att = 0;
+            score_Principal_A_Def = 0;
+            score_Principal_B_Def = 0;
+            score_Principal_Total_Def = 0;
             for (int i = 0; i < 20; i++)
             {
                 for (int t = 0; t < 100; t++)
@@ -1229,7 +1240,7 @@ namespace CPV9
                 Choix_ObjS_Attaquant[i] = 0;
                 Choix_ObjS_Defenseur[i] = 0;
             }
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 6; i++)
             {
                 ID_Cape_Attaquant[i] = 0;
                 ID_Cape_Defenseur[i] = 0;
@@ -10986,7 +10997,7 @@ namespace CPV9
 
         private void Calcul_Score_Attaquant()
         {
-            for (int h = 0; h < 4; h++)
+            for (int h = 0; h < 6; h++)
             {
                 ID_Cape_Attaquant[h] = 0;
             }
@@ -10996,13 +11007,12 @@ namespace CPV9
             /// CALCUL SCORE OBJECTIF PRINCIPAL
             Classe_Score_Obj_Principaux OBJECTIF_Principal_Att;
             OBJECTIF_Principal_Att = new Classe_Score_Obj_Principaux(formatBis, Convert.ToString(TextBox_OBJP_2_Att_Att.Text), Convert.ToString(TextBox_OBJP_2_Att_Def.Text), Convert.ToString(TextBox_OBJP_3_Att_Att.Text), Convert.ToString(TextBox_OBJP_3_Att_Def.Text), Convert.ToString(TextBox_OBJP_4_Att_Att.Text), Convert.ToString(TextBox_OBJP_4_Att_Def.Text), Convert.ToString(TextBox_OBJP_5_Att_Att.Text), Convert.ToString(TextBox_OBJP_5_Att_Def.Text));
-            Scores_Attaquant[0] = OBJECTIF_Principal_Att.Scores_Joueur;
+            score_Principal_A_Att = OBJECTIF_Principal_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Principal_Att.Score_ObjP) >= 45)
             {
                 ID_Cape_Attaquant[s] = 1000;
                 s++;
             }
-
             TextBlock_ObjP_Att.Text = Convert.ToString(OBJECTIF_Principal_Att.Score_ObjP);
 
             #endregion
@@ -11280,9 +11290,10 @@ namespace CPV9
                 Scores_Attaquant[20] = OBJECTIF_Peinture_Att.Scores_Joueur;
                 TextBlock_Obj_FIG_Att.Text = Convert.ToString(OBJECTIF_Peinture_Att.Score_ObjS);
             }
-            #endregion
+            #endregion            
 
             #region Calcul_Objectif_Missions
+            score_Principal_B_Att = 0;
             #region Calcul_Objectif_Missions_Patrouille_501_503
             ///CALCUL SCORE OBJECTIF MISSION 501       
             Classe_Score_OBJM_501 OBJECTIF_Mission_501_Att;
@@ -11294,6 +11305,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_501_Att.Text = Convert.ToString(OBJECTIF_Mission_501_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[21]);
 
             ///CALCUL SCORE OBJECTIF MISSION 502
             Classe_Score_OBJM_502 OBJECTIF_Mission_502_Att;
@@ -11305,6 +11317,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_502_Att.Text = Convert.ToString(OBJECTIF_Mission_502_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[22]);
 
             ///CALCUL SCORE OBJECTIF MISSION 503
             Classe_Score_OBJM_503 OBJECTIF_Mission_503_Att;
@@ -11316,6 +11329,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_503_Att.Text = Convert.ToString(OBJECTIF_Mission_503_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[23]);
             #endregion
             #region Calcul_Objectif_Missions_Incursion_1011_1033
             ///CALCUL SCORE OBJECTIF MISSION 1011          
@@ -11328,6 +11342,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1011_Att.Text = Convert.ToString(OBJECTIF_Mission_1011_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[24]);
 
             ///CALCUL SCORE OBJECTIF MISSION 1012          
             Classe_Score_OBJM_1012 OBJECTIF_Mission_1012_Att;
@@ -11339,6 +11354,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1012_Att.Text = Convert.ToString(OBJECTIF_Mission_1012_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[25]);
 
             ///CALCUL SCORE OBJECTIF MISSION 1013         
             Classe_Score_OBJM_1013 OBJECTIF_Mission_1013_Att;
@@ -11350,6 +11366,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1013_Att.Text = Convert.ToString(OBJECTIF_Mission_1013_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[26]);
 
             ///CALCUL SCORE OBJECTIF MISSION 1021         
             Classe_Score_OBJM_1021 OBJECTIF_Mission_1021_Att;
@@ -11361,6 +11378,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1021_Att.Text = Convert.ToString(OBJECTIF_Mission_1021_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[27]);
 
             ///CALCUL SCORE OBJECTIF MISSION 1022       
             Classe_Score_OBJM_1022 OBJECTIF_Mission_1022_Att;
@@ -11372,6 +11390,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1022_Att.Text = Convert.ToString(OBJECTIF_Mission_1022_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[28]);
 
             ///CALCUL SCORE OBJECTIF MISSION 1023     
             Classe_Score_OBJM_1023 OBJECTIF_Mission_1023_Att;
@@ -11383,6 +11402,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1023_Att.Text = Convert.ToString(OBJECTIF_Mission_1023_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[29]);
 
             ///CALCUL SCORE OBJECTIF MISSION 1031
             if (TextBox_ObjS_1031_Att_T2.Text != "" || TextBox_ObjS_1031_Att_T3.Text != "" || TextBox_ObjS_1031_Att_T4.Text != "" || TextBox_ObjS_1031_Att_T5.Text != "")
@@ -11396,6 +11416,7 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_1031_Att.Text = Convert.ToString(OBJECTIF_Mission_1031_Att.Score_ObjS);
+                ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[30]);
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 1032            
@@ -11408,6 +11429,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1032_Att.Text = Convert.ToString(OBJECTIF_Mission_1032_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[31]);
 
 
             ///CALCUL SCORE OBJECTIF MISSION 1033           
@@ -11420,6 +11442,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_1033_Att.Text = Convert.ToString(OBJECTIF_Mission_1033_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[32]);
             #endregion
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
             ///CALCUL SCORE OBJECTIF MISSION 2011
@@ -11427,15 +11450,17 @@ namespace CPV9
             {
                 Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Att;
                 OBJECTIF_Mission_2011_Att = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Att_R1.Text, TextBox_ObjS_2011_Att_R2.Text, TextBox_ObjS_2011_Att_R3.Text, TextBox_ObjS_2011_Att_R4.Text, TextBox_ObjS_2011_Att_R5.Text);
-                Scores_Attaquant[33] = OBJECTIF_Mission_2011_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2011_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2011_Att.Score_ObjS) >= 15)
                 {
                     ID_Cape_Attaquant[s] = 2011;
                     s++;
                 }
                 TextBlock_ObjS_2011_Att.Text = Convert.ToString(OBJECTIF_Mission_2011_Att.Score_ObjS);
+                Scores_Attaquant[34] = OBJECTIF_Mission_2011_Att.Score_ObjS;
+                ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[33]);
             }
-            
+
             ///CALCUL SCORE OBJECTIF MISSION 2012   
             if (TextBox_ObjS_2012_Att.Text != "")
             {
@@ -11448,6 +11473,7 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_2012_Att.Text = Convert.ToString(OBJECTIF_Mission_2012_Att.Score_ObjS);
+                ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[34]);
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 2013
@@ -11462,6 +11488,7 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_2013_Att.Text = Convert.ToString(OBJECTIF_Mission_2013_Att.Score_ObjS);
+                Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[35]);
             }            
 
             ///CALCUL SCORE OBJECTIF MISSION 2021           
@@ -11474,6 +11501,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_2021_Att.Text = Convert.ToString(OBJECTIF_Mission_2021_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[36]);
 
             ///CALCUL SCORE OBJECTIF MISSION 2022           
             Classe_Score_OBJM_2022 OBJECTIF_Mission_2022_Att;
@@ -11485,6 +11513,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_2022_Att.Text = Convert.ToString(OBJECTIF_Mission_2022_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[37]);
 
             ///CALCUL SCORE OBJECTIF MISSION 2023           
             Classe_Score_OBJM_2023 OBJECTIF_Mission_2023_Att;
@@ -11496,9 +11525,10 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_2023_Att.Text = Convert.ToString(OBJECTIF_Mission_2023_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[38]);
 
             ///CALCUL SCORE OBJECTIF MISSION 2031
-                Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Att;
+            Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Att;
                 OBJECTIF_Mission_2031_Att = new Classe_Score_OBJM_2031(CheckBox_ObjS_2031_Att_T1_Etat, CheckBox_ObjS_2031_Att_T2_Etat, CheckBox_ObjS_2031_Att_T3_Etat, CheckBox_ObjS_2031_Att_T4_Etat, TextBox_ObjS_2031_Att_Fin.Text, CheckBox_ObjS_2031_Att_Fin_Etat);
                 Scores_Attaquant[39] = OBJECTIF_Mission_2031_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2031_Att.Score_ObjS) >= 8)
@@ -11506,7 +11536,8 @@ namespace CPV9
                     ID_Cape_Attaquant[s] = 2031;
                     s++;
                 }
-                TextBlock_ObjS_2031_Att.Text = Convert.ToString(OBJECTIF_Mission_2031_Att.Score_ObjS);           
+                TextBlock_ObjS_2031_Att.Text = Convert.ToString(OBJECTIF_Mission_2031_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[39]);
 
             ///CALCUL SCORE OBJECTIF MISSION 2032        
             Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Att;
@@ -11518,6 +11549,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_2032_Att.Text = Convert.ToString(OBJECTIF_Mission_2032_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[40]);
 
             ///CALCUL SCORE OBJECTIF MISSION 2033     
             Classe_Score_OBJM_2033 OBJECTIF_Mission_2033_Att;
@@ -11529,6 +11561,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_2033_Att.Text = Convert.ToString(OBJECTIF_Mission_2033_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[41]);
             #endregion
             #region Calcul_Objectif_Missions_Offensive_3001_3003
             ///CALCUL SCORE OBJECTIF MISSION 3001     
@@ -11541,6 +11574,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_3001_Att.Text = Convert.ToString(OBJECTIF_Mission_3001_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[42]);
 
             ///CALCUL SCORE OBJECTIF MISSION 3002
             Classe_Score_OBJM_3002 OBJECTIF_Mission_3002_Att;
@@ -11552,6 +11586,7 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_3002_Att.Text = Convert.ToString(OBJECTIF_Mission_3002_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[43]);
 
             ///CALCUL SCORE OBJECTIF MISSION 3003
             Classe_Score_OBJM_3003 OBJECTIF_Mission_3003_Att;
@@ -11563,8 +11598,9 @@ namespace CPV9
                 s++;
             }
             TextBlock_ObjS_3003_Att.Text = Convert.ToString(OBJECTIF_Mission_3003_Att.Score_ObjS);
+            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[44]);
             #endregion
-            #endregion
+            #endregion           
 
             #region Calcul_Objectif_Codex
             #region Calcul_Objectif_Codex_Necrons_100_103
@@ -11869,11 +11905,8 @@ namespace CPV9
             TextBlock_ObjS_139_Att.Text = Convert.ToString(OBJECTIF_Codex_139_Att.Score_ObjS);
             #endregion
             #endregion
-
-            for (int i = 1; i < 200; i++)
-            {
-                Scores_Attaquant[0] = Scores_Attaquant[0] + Scores_Attaquant[i];
-            }
+            Calcul_Score_Principal("Att", score_Principal_A_Att, score_Principal_B_Att);
+            if (score_Principal_Total_Att >= 45) { ID_Cape_Attaquant[s] = 1001; };         
 
             string texte = "";
 
@@ -11933,6 +11966,34 @@ namespace CPV9
                 Label_Cape_Player_Attaquant_4.Visibility = Visibility.Collapsed;
                 win.Collect_Cape_Tv("Att", 4, "");
             }
+            if (ID_Cape_Attaquant[4] != 0)
+            {
+                Classe_Cape ID_Cape_Selected;
+                ID_Cape_Selected = new Classe_Cape(ID_Cape_Attaquant[4], texte);
+                Label_Cape_Player_Attaquant_5.Content = ID_Cape_Selected.Cape_Selected;
+                Label_Cape_Player_Attaquant_5.Visibility = Visibility.Visible;
+                win.Collect_Cape_Tv("Att", 5, ID_Cape_Selected.Cape_Selected);
+            }
+            else
+            {
+                Label_Cape_Player_Attaquant_5.Content = "";
+                Label_Cape_Player_Attaquant_5.Visibility = Visibility.Collapsed;
+                win.Collect_Cape_Tv("Att", 5, "");
+            }
+            if (ID_Cape_Attaquant[5] != 0)
+            {
+                Classe_Cape ID_Cape_Selected;
+                ID_Cape_Selected = new Classe_Cape(ID_Cape_Attaquant[5], texte);
+                Label_Cape_Player_Attaquant_6.Content = ID_Cape_Selected.Cape_Selected;
+                Label_Cape_Player_Attaquant_6.Visibility = Visibility.Visible;
+                win.Collect_Cape_Tv("Att", 6, ID_Cape_Selected.Cape_Selected);
+            }
+            else
+            {
+                Label_Cape_Player_Attaquant_6.Content = "";
+                Label_Cape_Player_Attaquant_6.Visibility = Visibility.Collapsed;
+                win.Collect_Cape_Tv("Att", 6, "");
+            }
 
             win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);
 
@@ -11940,7 +12001,7 @@ namespace CPV9
         }
         private void Calcul_Score_Defenseur()
         {
-            for (int h = 0; h < 4; h++)
+            for (int h = 0; h < 6; h++)
             {
                 ID_Cape_Defenseur[h] = 0;
             }
@@ -11950,7 +12011,7 @@ namespace CPV9
             /// CALCUL SCORE OBJECTIF PRINCIPAL
             Classe_Score_Obj_Principaux OBJECTIF_Principal_Def;
             OBJECTIF_Principal_Def = new Classe_Score_Obj_Principaux(formatBis, Convert.ToString(TextBox_OBJP_2_Def_Def.Text), Convert.ToString(TextBox_OBJP_2_Def_Att.Text), Convert.ToString(TextBox_OBJP_3_Def_Def.Text), Convert.ToString(TextBox_OBJP_3_Def_Att.Text), Convert.ToString(TextBox_OBJP_4_Def_Def.Text), Convert.ToString(TextBox_OBJP_4_Def_Att.Text), Convert.ToString(TextBox_OBJP_5_Def_Def.Text), Convert.ToString(TextBox_OBJP_5_Def_Att.Text));
-            Scores_Defenseur[0] = OBJECTIF_Principal_Def.Scores_Joueur;
+            score_Principal_A_Def = OBJECTIF_Principal_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Principal_Def.Score_ObjP) >= 45)
             {
                 ID_Cape_Defenseur[s] = 1000;
@@ -12374,7 +12435,7 @@ namespace CPV9
             {
                 Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Def;
                 OBJECTIF_Mission_2011_Def = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Def_R1.Text, TextBox_ObjS_2011_Def_R2.Text, TextBox_ObjS_2011_Def_R3.Text, TextBox_ObjS_2011_Def_R4.Text, TextBox_ObjS_2011_Def_R5.Text);
-                Scores_Defenseur[33] = OBJECTIF_Mission_2011_Def.Scores_Joueur;
+                score_Principal_B_Def = OBJECTIF_Mission_2011_Def.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2011_Def.Score_ObjS) >= 15)
                 {
                     ID_Cape_Defenseur[s] = 2011;
@@ -12817,10 +12878,8 @@ namespace CPV9
             #endregion
             #endregion
 
-            for (int i = 1; i < 200; i++)
-            {
-                Scores_Defenseur[0] = Scores_Defenseur[0] + Scores_Defenseur[i];
-            }
+            Calcul_Score_Principal("Def", score_Principal_A_Def, score_Principal_B_Def);
+            if (score_Principal_Total_Def == 45) { ID_Cape_Defenseur[s] = 1001; };            
 
             string texte = "";
 
@@ -12880,10 +12939,59 @@ namespace CPV9
                 Label_Cape_Player_Defenseur_4.Visibility = Visibility.Collapsed;
                 win.Collect_Cape_Tv("Def", 4, "");
             }
+            if (ID_Cape_Defenseur[4] != 0)
+            {
+                Classe_Cape ID_Cape_Selected;
+                ID_Cape_Selected = new Classe_Cape(ID_Cape_Defenseur[4], texte);
+                Label_Cape_Player_Defenseur_5.Content = ID_Cape_Selected.Cape_Selected;
+                Label_Cape_Player_Defenseur_5.Visibility = Visibility.Visible;
+                win.Collect_Cape_Tv("Def", 5, ID_Cape_Selected.Cape_Selected);
+            }
+            else
+            {
+                Label_Cape_Player_Defenseur_5.Content = "";
+                Label_Cape_Player_Defenseur_5.Visibility = Visibility.Collapsed;
+                win.Collect_Cape_Tv("Def", 5, "");
+            }
+            if (ID_Cape_Defenseur[5] != 0)
+            {
+                Classe_Cape ID_Cape_Selected;
+                ID_Cape_Selected = new Classe_Cape(ID_Cape_Defenseur[5], texte);
+                Label_Cape_Player_Defenseur_6.Content = ID_Cape_Selected.Cape_Selected;
+                Label_Cape_Player_Defenseur_6.Visibility = Visibility.Visible;
+                win.Collect_Cape_Tv("Def", 6, ID_Cape_Selected.Cape_Selected);
+            }
+            else
+            {
+                Label_Cape_Player_Defenseur_6.Content = "";
+                Label_Cape_Player_Defenseur_6.Visibility = Visibility.Collapsed;
+                win.Collect_Cape_Tv("Def", 6, "");
+            }
 
             win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);
         }
 
+        private void Calcul_Score_Principal(string Joueur, int Score_A, int Score_B)
+        {
+            int score = Score_A + Score_B;
+            if (score > 45) { score = 45; };
+            if (Joueur == "Att") 
+            {
+                score_Principal_Total_Att = score;
+                TextBlock_ObjP12_Att.Text = Convert.ToString(score_Principal_Total_Att);
+                Scores_Attaquant[0] = score;
+                for (int i = 1; i < 21; i++) { Scores_Attaquant[0] += Scores_Attaquant[i]; };
+                for (int i = 45; i < 200; i++) { Scores_Attaquant[0] += Scores_Attaquant[i]; };
+            }         
+            if (Joueur == "Def")
+            {
+                score_Principal_Total_Def = score;
+                TextBlock_ObjP12_Def.Text = Convert.ToString(score_Principal_Total_Def);
+                Scores_Defenseur[0] = score;
+                for (int i = 1; i < 21; i++) { Scores_Defenseur[0] += Scores_Defenseur[i]; };
+                for (int i = 45; i < 200; i++) { Scores_Defenseur[0] += Scores_Defenseur[i]; };
+            }       
+        }
 
         private void Round()
         {
@@ -20334,6 +20442,7 @@ namespace CPV9
             StackPanel_PTS_Attaquant.Width = Multiple * 110;
             StackPanel_PTS_Attaquant.Margin = new Thickness(8 * Multiple, 5 * Multiple, 5 * Multiple, 12 * Multiple);
             Label_Objectif_Principal_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Principal_Att_2.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Principal_Att_message.FontSize = Taille_texte * Multiple;
             Affichage_Capé();
 
@@ -20400,6 +20509,12 @@ namespace CPV9
             TextBlock_ObjP_Att.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Principal_Att_PtsB.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_OBJP_Att_pstA.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+
+            /// OBJECTIF PRINCIPAL PTS TOTAL
+            Label_Objectif_Principaux_Att_PtsTTA.FontSize = 1.4 * Taille_texte * Multiple;
+            TextBlock_ObjP12_Att.FontSize = 1.4 * Taille_texte * Multiple;
+            Label_Objectif_Principaux_Att_PtsTTB.FontSize = 1.4 * Taille_texte * Multiple;
+            GridSplitter_OBJP12_Att_pstA.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             #endregion
 
             #region AFFICHAGE_SAISIE_SCORES_SECONDAIRES_ATTAQUANT
@@ -22646,6 +22761,7 @@ namespace CPV9
             StackPanel_PTS_Defenseur.Width = Multiple * 110;
             StackPanel_PTS_Defenseur.Margin = new Thickness(8 * Multiple, 5 * Multiple, 5 * Multiple, 12 * Multiple);
             Label_Objectif_Principal_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Principal_Def_2.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Principal_Def_message.FontSize = Taille_texte * Multiple;
             Affichage_Capé();
             #region AFFICHAGE_SAISIE_SCORES_PRINCIPAUX_DEFENSEUR
@@ -22711,6 +22827,12 @@ namespace CPV9
             TextBlock_ObjP_Def.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Principal_Def_PtsB.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_OBJP_Def_pstA.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+
+            /// OBJECTIF PRINCIPAL PTS TOTAL
+            Label_Objectif_Principaux_Def_PtsTTA.FontSize = 1.4 * Taille_texte * Multiple;
+            TextBlock_ObjP12_Def.FontSize = 1.4 * Taille_texte * Multiple;
+            Label_Objectif_Principaux_Def_PtsTTB.FontSize = 1.4 * Taille_texte * Multiple;
+            GridSplitter_OBJP12_Def_pstA.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             #endregion
             #region AFFICHAGE_SAISIE_SCORES_SECONDAIRES_DEFENSEUR
@@ -24937,12 +25059,16 @@ namespace CPV9
             Label_Cape_Player_Attaquant_2.FontSize = z * x;
             Label_Cape_Player_Attaquant_3.FontSize = z * x;
             Label_Cape_Player_Attaquant_4.FontSize = z * x;
+            Label_Cape_Player_Attaquant_5.FontSize = z * x;
+            Label_Cape_Player_Attaquant_6.FontSize = z * x;
 
             StackPanel_Cape_Player_2.Margin = new Thickness(0, 45 * Rapport_Taille_Y, 3 * Rapport_Taille_X, 0);
             Label_Cape_Player_Defenseur_1.FontSize = z * x;
             Label_Cape_Player_Defenseur_2.FontSize = z * x;
             Label_Cape_Player_Defenseur_3.FontSize = z * x;
             Label_Cape_Player_Defenseur_4.FontSize = z * x;
+            Label_Cape_Player_Defenseur_5.FontSize = z * x;
+            Label_Cape_Player_Defenseur_6.FontSize = z * x;
         }
 
         private void Affichage_501_Map()

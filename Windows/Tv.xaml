@@ -140,6 +140,8 @@
                 <Label x:Name="Label_Tv_Cape_Player_Attaquant_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
                 <Label x:Name="Label_Tv_Cape_Player_Attaquant_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
                 <Label x:Name="Label_Tv_Cape_Player_Attaquant_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
             </StackPanel>
 
         </StackPanel>
@@ -183,6 +185,8 @@
                 <Label x:Name="Label_Tv_Cape_Player_Defenseur_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
                 <Label x:Name="Label_Tv_Cape_Player_Defenseur_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
                 <Label x:Name="Label_Tv_Cape_Player_Defenseur_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
             </StackPanel>
 
         </StackPanel>
