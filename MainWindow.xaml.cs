@@ -11089,161 +11089,194 @@ namespace CPV9
             #region Calcul_Objectif_Missions
             score_Principal_B_Att = 0;
             #region Calcul_Objectif_Missions_Patrouille_501_503
-            ///CALCUL SCORE OBJECTIF MISSION 501       
-            Classe_Score_OBJM_501 OBJECTIF_Mission_501_Att;
-            OBJECTIF_Mission_501_Att = new Classe_Score_OBJM_501(CheckBox_ObjS_501_Att_T1_Etat, CheckBox_ObjS_501_Att_T2_Etat, CheckBox_ObjS_501_Att_T3_Etat, CheckBox_ObjS_501_Att_T4_Etat, CheckBox_ObjS_501_Att_T5_Etat);
-            Scores_Attaquant[21] = OBJECTIF_Mission_501_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_501_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 501            
+            if (format == 501)
             {
-                ID_Cape_Attaquant[s] = 501;
-                s++;
+                Classe_Score_OBJM_501 OBJECTIF_Mission_501_Att;
+                OBJECTIF_Mission_501_Att = new Classe_Score_OBJM_501(CheckBox_ObjS_501_Att_T1_Etat, CheckBox_ObjS_501_Att_T2_Etat, CheckBox_ObjS_501_Att_T3_Etat, CheckBox_ObjS_501_Att_T4_Etat, CheckBox_ObjS_501_Att_T5_Etat);
+                Scores_Attaquant[21] = OBJECTIF_Mission_501_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_501_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_501_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 501;
+                    s++;
+                }
+                TextBlock_ObjS_501_Att.Text = Convert.ToString(OBJECTIF_Mission_501_Att.Score_ObjS);
             }
-            TextBlock_ObjS_501_Att.Text = Convert.ToString(OBJECTIF_Mission_501_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[21]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 502
-            Classe_Score_OBJM_502 OBJECTIF_Mission_502_Att;
-            OBJECTIF_Mission_502_Att = new Classe_Score_OBJM_502(CheckBox_ObjS_502_Att_T2_Etat, CheckBox_ObjS_502_Att_T3_Etat, CheckBox_ObjS_502_Att_T4_Etat, CheckBox_ObjS_502_Att_T5_Etat);
-            Scores_Attaquant[22] = OBJECTIF_Mission_502_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_502_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 502            
+            if (format == 502)
             {
-                ID_Cape_Attaquant[s] = 502;
-                s++;
+                Classe_Score_OBJM_502 OBJECTIF_Mission_502_Att;
+                OBJECTIF_Mission_502_Att = new Classe_Score_OBJM_502(CheckBox_ObjS_502_Att_T2_Etat, CheckBox_ObjS_502_Att_T3_Etat, CheckBox_ObjS_502_Att_T4_Etat, CheckBox_ObjS_502_Att_T5_Etat);
+                Scores_Attaquant[22] = OBJECTIF_Mission_502_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_502_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_502_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 502;
+                    s++;
+                }
+                TextBlock_ObjS_502_Att.Text = Convert.ToString(OBJECTIF_Mission_502_Att.Score_ObjS);
             }
-            TextBlock_ObjS_502_Att.Text = Convert.ToString(OBJECTIF_Mission_502_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[22]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 503
-            Classe_Score_OBJM_503 OBJECTIF_Mission_503_Att;
-            OBJECTIF_Mission_503_Att = new Classe_Score_OBJM_503(CheckBox_ObjS_503_Att_T1A_Etat, CheckBox_ObjS_503_Att_T1B_Etat, CheckBox_ObjS_503_Att_T2A_Etat, CheckBox_ObjS_503_Att_T2B_Etat, CheckBox_ObjS_503_Att_T3A_Etat, CheckBox_ObjS_503_Att_T3B_Etat, CheckBox_ObjS_503_Att_T4A_Etat, CheckBox_ObjS_503_Att_T4B_Etat, CheckBox_ObjS_503_Att_T5A_Etat, CheckBox_ObjS_503_Att_T5B_Etat);
-            Scores_Attaquant[23] = OBJECTIF_Mission_503_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_503_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 503            
+            if (format == 503)
             {
-                ID_Cape_Attaquant[s] = 503;
-                s++;
+                Classe_Score_OBJM_503 OBJECTIF_Mission_503_Att;
+                OBJECTIF_Mission_503_Att = new Classe_Score_OBJM_503(CheckBox_ObjS_503_Att_T1A_Etat, CheckBox_ObjS_503_Att_T1B_Etat, CheckBox_ObjS_503_Att_T2A_Etat, CheckBox_ObjS_503_Att_T2B_Etat, CheckBox_ObjS_503_Att_T3A_Etat, CheckBox_ObjS_503_Att_T3B_Etat, CheckBox_ObjS_503_Att_T4A_Etat, CheckBox_ObjS_503_Att_T4B_Etat, CheckBox_ObjS_503_Att_T5A_Etat, CheckBox_ObjS_503_Att_T5B_Etat);
+                Scores_Attaquant[23] = OBJECTIF_Mission_503_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_503_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_503_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 503;
+                    s++;
+                }
+                TextBlock_ObjS_503_Att.Text = Convert.ToString(OBJECTIF_Mission_503_Att.Score_ObjS);
             }
-            TextBlock_ObjS_503_Att.Text = Convert.ToString(OBJECTIF_Mission_503_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[23]);
             #endregion
             #region Calcul_Objectif_Missions_Incursion_1011_1033
-            ///CALCUL SCORE OBJECTIF MISSION 1011          
-            Classe_Score_OBJM_1011 OBJECTIF_Mission_1011_Att;
-            OBJECTIF_Mission_1011_Att = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Att_T1A_Etat, CheckBox_ObjS_1011_Att_T1B_Etat, CheckBox_ObjS_1011_Att_T2A_Etat, CheckBox_ObjS_1011_Att_T2B_Etat, CheckBox_ObjS_1011_Att_T3A_Etat, CheckBox_ObjS_1011_Att_T3B_Etat, CheckBox_ObjS_1011_Att_T4A_Etat, CheckBox_ObjS_1011_Att_T4B_Etat, CheckBox_ObjS_1011_Att_T5A_Etat, CheckBox_ObjS_1011_Att_T5B_Etat);
-            Scores_Attaquant[24] = OBJECTIF_Mission_1011_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1011_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1011            
+            if (format == 1011)
             {
-                ID_Cape_Attaquant[s] = 1011;
-                s++;
+                Classe_Score_OBJM_1011 OBJECTIF_Mission_1011_Att;
+                OBJECTIF_Mission_1011_Att = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Att_T1A_Etat, CheckBox_ObjS_1011_Att_T1B_Etat, CheckBox_ObjS_1011_Att_T2A_Etat, CheckBox_ObjS_1011_Att_T2B_Etat, CheckBox_ObjS_1011_Att_T3A_Etat, CheckBox_ObjS_1011_Att_T3B_Etat, CheckBox_ObjS_1011_Att_T4A_Etat, CheckBox_ObjS_1011_Att_T4B_Etat, CheckBox_ObjS_1011_Att_T5A_Etat, CheckBox_ObjS_1011_Att_T5B_Etat);
+                Scores_Attaquant[24] = OBJECTIF_Mission_1011_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1011_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1011_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1011;
+                    s++;
+                }
+                TextBlock_ObjS_1011_Att.Text = Convert.ToString(OBJECTIF_Mission_1011_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1011_Att.Text = Convert.ToString(OBJECTIF_Mission_1011_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[24]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1012          
-            Classe_Score_OBJM_1012 OBJECTIF_Mission_1012_Att;
-            OBJECTIF_Mission_1012_Att = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Att_T3.Text, TextBox_ObjS_1012_Att_T4.Text, TextBox_ObjS_1012_Att_T5.Text);
-            Scores_Attaquant[25] = OBJECTIF_Mission_1012_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1012_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1012            
+            if (format == 1012)
             {
-                ID_Cape_Attaquant[s] = 1012;
-                s++;
+                Classe_Score_OBJM_1012 OBJECTIF_Mission_1012_Att;
+                OBJECTIF_Mission_1012_Att = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Att_T3.Text, TextBox_ObjS_1012_Att_T4.Text, TextBox_ObjS_1012_Att_T5.Text);
+                Scores_Attaquant[25] = OBJECTIF_Mission_1012_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1012_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1012_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1012;
+                    s++;
+                }
+                TextBlock_ObjS_1012_Att.Text = Convert.ToString(OBJECTIF_Mission_1012_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1012_Att.Text = Convert.ToString(OBJECTIF_Mission_1012_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[25]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1013         
-            Classe_Score_OBJM_1013 OBJECTIF_Mission_1013_Att;
-            OBJECTIF_Mission_1013_Att = new Classe_Score_OBJM_1013(CheckBox_ObjS_1013_Att_T1_Etat, CheckBox_ObjS_1013_Att_T2_Etat, CheckBox_ObjS_1013_Att_T3_Etat, CheckBox_ObjS_1013_Att_T4_Etat, CheckBox_ObjS_1013_Att_T5_Etat);
-            Scores_Attaquant[26] = OBJECTIF_Mission_1013_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1013_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1013            
+            if (format == 1013)
             {
-                ID_Cape_Attaquant[s] = 1013;
-                s++;
+                Classe_Score_OBJM_1013 OBJECTIF_Mission_1013_Att;
+                OBJECTIF_Mission_1013_Att = new Classe_Score_OBJM_1013(CheckBox_ObjS_1013_Att_T1_Etat, CheckBox_ObjS_1013_Att_T2_Etat, CheckBox_ObjS_1013_Att_T3_Etat, CheckBox_ObjS_1013_Att_T4_Etat, CheckBox_ObjS_1013_Att_T5_Etat);
+                Scores_Attaquant[26] = OBJECTIF_Mission_1013_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1013_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1013_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1013;
+                    s++;
+                }
+                TextBlock_ObjS_1013_Att.Text = Convert.ToString(OBJECTIF_Mission_1013_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1013_Att.Text = Convert.ToString(OBJECTIF_Mission_1013_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[26]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1021         
-            Classe_Score_OBJM_1021 OBJECTIF_Mission_1021_Att;
-            OBJECTIF_Mission_1021_Att = new Classe_Score_OBJM_1021(CheckBox_ObjS_1021_Att_T1A_Etat, CheckBox_ObjS_1021_Att_T1B_Etat, TextBox_ObjS_1021_Att_T1.Text, CheckBox_ObjS_1021_Att_T2A_Etat, CheckBox_ObjS_1021_Att_T2B_Etat, TextBox_ObjS_1021_Att_T2.Text, CheckBox_ObjS_1021_Att_T3A_Etat, CheckBox_ObjS_1021_Att_T3B_Etat, TextBox_ObjS_1021_Att_T3.Text, CheckBox_ObjS_1021_Att_T4A_Etat, CheckBox_ObjS_1021_Att_T4B_Etat, TextBox_ObjS_1021_Att_T4.Text, CheckBox_ObjS_1021_Att_T5A_Etat, CheckBox_ObjS_1021_Att_T5B_Etat, TextBox_ObjS_1021_Att_T5.Text);
-            Scores_Attaquant[27] = OBJECTIF_Mission_1021_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1021_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1021            
+            if (format == 1021)
             {
-                ID_Cape_Attaquant[s] = 1021;
-                s++;
+                Classe_Score_OBJM_1021 OBJECTIF_Mission_1021_Att;
+                OBJECTIF_Mission_1021_Att = new Classe_Score_OBJM_1021(CheckBox_ObjS_1021_Att_T1A_Etat, CheckBox_ObjS_1021_Att_T1B_Etat, TextBox_ObjS_1021_Att_T1.Text, CheckBox_ObjS_1021_Att_T2A_Etat, CheckBox_ObjS_1021_Att_T2B_Etat, TextBox_ObjS_1021_Att_T2.Text, CheckBox_ObjS_1021_Att_T3A_Etat, CheckBox_ObjS_1021_Att_T3B_Etat, TextBox_ObjS_1021_Att_T3.Text, CheckBox_ObjS_1021_Att_T4A_Etat, CheckBox_ObjS_1021_Att_T4B_Etat, TextBox_ObjS_1021_Att_T4.Text, CheckBox_ObjS_1021_Att_T5A_Etat, CheckBox_ObjS_1021_Att_T5B_Etat, TextBox_ObjS_1021_Att_T5.Text);
+                Scores_Attaquant[27] = OBJECTIF_Mission_1021_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1021_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1021_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1021;
+                    s++;
+                }
+                TextBlock_ObjS_1021_Att.Text = Convert.ToString(OBJECTIF_Mission_1021_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1021_Att.Text = Convert.ToString(OBJECTIF_Mission_1021_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[27]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1022       
-            Classe_Score_OBJM_1022 OBJECTIF_Mission_1022_Att;
-            OBJECTIF_Mission_1022_Att = new Classe_Score_OBJM_1022(CheckBox_ObjS_1022_Att_T1_Obj_Etat, CheckBox_ObjS_1022_Att_T2_Obj_Etat, CheckBox_ObjS_1022_Att_T3_Obj_Etat, CheckBox_ObjS_1022_Att_T4_Obj_Etat, CheckBox_ObjS_1022_Att_T5_Obj_Etat, CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat, CheckBox_ObjS_1022_Att_FIN_SG_Adverse_Etat);
-            Scores_Attaquant[28] = OBJECTIF_Mission_1022_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1022_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1022            
+            if (format == 1022)
             {
-                ID_Cape_Attaquant[s] = 1022;
-                s++;
+                Classe_Score_OBJM_1022 OBJECTIF_Mission_1022_Att;
+                OBJECTIF_Mission_1022_Att = new Classe_Score_OBJM_1022(CheckBox_ObjS_1022_Att_T1_Obj_Etat, CheckBox_ObjS_1022_Att_T2_Obj_Etat, CheckBox_ObjS_1022_Att_T3_Obj_Etat, CheckBox_ObjS_1022_Att_T4_Obj_Etat, CheckBox_ObjS_1022_Att_T5_Obj_Etat, CheckBox_ObjS_1022_Att_FIN_SG_Centre_Etat, CheckBox_ObjS_1022_Att_FIN_SG_Adverse_Etat);
+                Scores_Attaquant[28] = OBJECTIF_Mission_1022_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1022_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1022_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1022;
+                    s++;
+                }
+                TextBlock_ObjS_1022_Att.Text = Convert.ToString(OBJECTIF_Mission_1022_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1022_Att.Text = Convert.ToString(OBJECTIF_Mission_1022_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[28]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1023     
-            Classe_Score_OBJM_1023 OBJECTIF_Mission_1023_Att;
-            OBJECTIF_Mission_1023_Att = new Classe_Score_OBJM_1023("Joueur_A", CheckBox_ObjS_1023_Att_T1_B_Etat, CheckBox_ObjS_1023_Att_T1_C_Etat, CheckBox_ObjS_1023_Att_T1_D_Etat, CheckBox_ObjS_1023_Att_T2_B_Etat, CheckBox_ObjS_1023_Att_T2_C_Etat, CheckBox_ObjS_1023_Att_T2_D_Etat, CheckBox_ObjS_1023_Att_T3_B_Etat, CheckBox_ObjS_1023_Att_T3_C_Etat, CheckBox_ObjS_1023_Att_T3_D_Etat, CheckBox_ObjS_1023_Att_T4_B_Etat, CheckBox_ObjS_1023_Att_T4_C_Etat, CheckBox_ObjS_1023_Att_T4_D_Etat, CheckBox_ObjS_1023_Att_T5_B_Etat, CheckBox_ObjS_1023_Att_T5_C_Etat, CheckBox_ObjS_1023_Att_T5_D_Etat);
-            Scores_Attaquant[29] = OBJECTIF_Mission_1023_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1023_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1023            
+            if (format == 1023)
             {
-                ID_Cape_Attaquant[s] = 1023;
-                s++;
+                Classe_Score_OBJM_1023 OBJECTIF_Mission_1023_Att;
+                OBJECTIF_Mission_1023_Att = new Classe_Score_OBJM_1023("Joueur_A", CheckBox_ObjS_1023_Att_T1_B_Etat, CheckBox_ObjS_1023_Att_T1_C_Etat, CheckBox_ObjS_1023_Att_T1_D_Etat, CheckBox_ObjS_1023_Att_T2_B_Etat, CheckBox_ObjS_1023_Att_T2_C_Etat, CheckBox_ObjS_1023_Att_T2_D_Etat, CheckBox_ObjS_1023_Att_T3_B_Etat, CheckBox_ObjS_1023_Att_T3_C_Etat, CheckBox_ObjS_1023_Att_T3_D_Etat, CheckBox_ObjS_1023_Att_T4_B_Etat, CheckBox_ObjS_1023_Att_T4_C_Etat, CheckBox_ObjS_1023_Att_T4_D_Etat, CheckBox_ObjS_1023_Att_T5_B_Etat, CheckBox_ObjS_1023_Att_T5_C_Etat, CheckBox_ObjS_1023_Att_T5_D_Etat);
+                Scores_Attaquant[29] = OBJECTIF_Mission_1023_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1023_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1023_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1023;
+                    s++;
+                }
+                TextBlock_ObjS_1023_Att.Text = Convert.ToString(OBJECTIF_Mission_1023_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1023_Att.Text = Convert.ToString(OBJECTIF_Mission_1023_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[29]);
 
             ///CALCUL SCORE OBJECTIF MISSION 1031
-            if (TextBox_ObjS_1031_Att_T2.Text != "" || TextBox_ObjS_1031_Att_T3.Text != "" || TextBox_ObjS_1031_Att_T4.Text != "" || TextBox_ObjS_1031_Att_T5.Text != "")
+            if (format == 1031 && (TextBox_ObjS_1031_Att_T2.Text != "" || TextBox_ObjS_1031_Att_T3.Text != "" || TextBox_ObjS_1031_Att_T4.Text != "" || TextBox_ObjS_1031_Att_T5.Text != ""))
             {
                 Classe_Score_OBJM_1031 OBJECTIF_Mission_1031_Att;
                 OBJECTIF_Mission_1031_Att = new Classe_Score_OBJM_1031(TextBox_ObjS_1031_Att_T2.Text, TextBox_ObjS_1031_Att_T3.Text, TextBox_ObjS_1031_Att_T4.Text, TextBox_ObjS_1031_Att_T5.Text);
                 Scores_Attaquant[30] = OBJECTIF_Mission_1031_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1031_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_1031_Att.Score_ObjS) >= 15)
                 {
                     ID_Cape_Attaquant[s] = 1031;
                     s++;
                 }
                 TextBlock_ObjS_1031_Att.Text = Convert.ToString(OBJECTIF_Mission_1031_Att.Score_ObjS);
-                ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[30]);
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 1032            
-            Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Att;
-            OBJECTIF_Mission_1032_Att = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Att_R1.Text, TextBox_ObjS_1032_Att_R2.Text, TextBox_ObjS_1032_Att_R3.Text, TextBox_ObjS_1032_Att_R4.Text, TextBox_ObjS_1032_Att_R5.Text);
-            Scores_Attaquant[31] = OBJECTIF_Mission_1032_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1032_Att.Score_ObjS) >= 15)
+            if (format == 1032)
             {
-                ID_Cape_Attaquant[s] = 1032;
-                s++;
+                Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Att;
+                OBJECTIF_Mission_1032_Att = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Att_R1.Text, TextBox_ObjS_1032_Att_R2.Text, TextBox_ObjS_1032_Att_R3.Text, TextBox_ObjS_1032_Att_R4.Text, TextBox_ObjS_1032_Att_R5.Text);
+                Scores_Attaquant[31] = OBJECTIF_Mission_1032_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1032_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1032_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1032;
+                    s++;
+                }
+                TextBlock_ObjS_1032_Att.Text = Convert.ToString(OBJECTIF_Mission_1032_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1032_Att.Text = Convert.ToString(OBJECTIF_Mission_1032_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[31]);
 
-
-            ///CALCUL SCORE OBJECTIF MISSION 1033           
-            Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Att;
-            OBJECTIF_Mission_1033_Att = new Classe_Score_OBJM_1033(CheckBox_ObjS_1033_Att_OBJ1_1_Etat, CheckBox_ObjS_1033_Att_OBJ1_2_Etat, CheckBox_ObjS_1033_Att_OBJ1_3_Etat, CheckBox_ObjS_1033_Att_OBJ1_4_Etat, CheckBox_ObjS_1033_Att_OBJ2_1_Etat, CheckBox_ObjS_1033_Att_OBJ2_2_Etat, CheckBox_ObjS_1033_Att_OBJ2_3_Etat, CheckBox_ObjS_1033_Att_OBJ2_4_Etat, CheckBox_ObjS_1033_Att_OBJ3_1_Etat, CheckBox_ObjS_1033_Att_OBJ3_2_Etat, CheckBox_ObjS_1033_Att_OBJ3_3_Etat, CheckBox_ObjS_1033_Att_OBJ3_4_Etat, CheckBox_ObjS_1033_Att_OBJ4_1_Etat, CheckBox_ObjS_1033_Att_OBJ4_2_Etat, CheckBox_ObjS_1033_Att_OBJ4_3_Etat, CheckBox_ObjS_1033_Att_OBJ4_4_Etat, CheckBox_ObjS_1033_Att_OBJ5_1_Etat, CheckBox_ObjS_1033_Att_OBJ5_2_Etat, CheckBox_ObjS_1033_Att_OBJ5_3_Etat, CheckBox_ObjS_1033_Att_OBJ5_4_Etat);
-            Scores_Attaquant[32] = OBJECTIF_Mission_1033_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1033_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1033            
+            if (format == 1033)
             {
-                ID_Cape_Attaquant[s] = 1033;
-                s++;
+                Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Att;
+                OBJECTIF_Mission_1033_Att = new Classe_Score_OBJM_1033(CheckBox_ObjS_1033_Att_OBJ1_1_Etat, CheckBox_ObjS_1033_Att_OBJ1_2_Etat, CheckBox_ObjS_1033_Att_OBJ1_3_Etat, CheckBox_ObjS_1033_Att_OBJ1_4_Etat, CheckBox_ObjS_1033_Att_OBJ2_1_Etat, CheckBox_ObjS_1033_Att_OBJ2_2_Etat, CheckBox_ObjS_1033_Att_OBJ2_3_Etat, CheckBox_ObjS_1033_Att_OBJ2_4_Etat, CheckBox_ObjS_1033_Att_OBJ3_1_Etat, CheckBox_ObjS_1033_Att_OBJ3_2_Etat, CheckBox_ObjS_1033_Att_OBJ3_3_Etat, CheckBox_ObjS_1033_Att_OBJ3_4_Etat, CheckBox_ObjS_1033_Att_OBJ4_1_Etat, CheckBox_ObjS_1033_Att_OBJ4_2_Etat, CheckBox_ObjS_1033_Att_OBJ4_3_Etat, CheckBox_ObjS_1033_Att_OBJ4_4_Etat, CheckBox_ObjS_1033_Att_OBJ5_1_Etat, CheckBox_ObjS_1033_Att_OBJ5_2_Etat, CheckBox_ObjS_1033_Att_OBJ5_3_Etat, CheckBox_ObjS_1033_Att_OBJ5_4_Etat);
+                Scores_Attaquant[32] = OBJECTIF_Mission_1033_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_1033_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1033_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 1033;
+                    s++;
+                }
+                TextBlock_ObjS_1033_Att.Text = Convert.ToString(OBJECTIF_Mission_1033_Att.Score_ObjS);
             }
-            TextBlock_ObjS_1033_Att.Text = Convert.ToString(OBJECTIF_Mission_1033_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[32]);
             #endregion
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
             ///CALCUL SCORE OBJECTIF MISSION 2011
-            if ((TextBox_ObjS_2011_Att_R1.Text != "" || TextBox_ObjS_2011_Att_R2.Text != "" || TextBox_ObjS_2011_Att_R3.Text != "" || TextBox_ObjS_2011_Att_R4.Text != "" || TextBox_ObjS_2011_Att_R5.Text != "") && format == 2011)
+            if (format == 2011 && (TextBox_ObjS_2011_Att_R1.Text != "" || TextBox_ObjS_2011_Att_R2.Text != "" || TextBox_ObjS_2011_Att_R3.Text != "" || TextBox_ObjS_2011_Att_R4.Text != "" || TextBox_ObjS_2011_Att_R5.Text != ""))
             {
                 Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Att;
                 OBJECTIF_Mission_2011_Att = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Att_R1.Text, TextBox_ObjS_2011_Att_R2.Text, TextBox_ObjS_2011_Att_R3.Text, TextBox_ObjS_2011_Att_R4.Text, TextBox_ObjS_2011_Att_R5.Text);
+                Scores_Attaquant[34] = OBJECTIF_Mission_2011_Att.Scores_Joueur;
                 score_Principal_B_Att += OBJECTIF_Mission_2011_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2011_Att.Score_ObjS) >= 15)
                 {
@@ -11251,147 +11284,173 @@ namespace CPV9
                     s++;
                 }
                 TextBlock_ObjS_2011_Att.Text = Convert.ToString(OBJECTIF_Mission_2011_Att.Score_ObjS);
-                Scores_Attaquant[34] = OBJECTIF_Mission_2011_Att.Score_ObjS;
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 2012   
-            if (TextBox_ObjS_2012_Att.Text != "" && format == 2012)
+            if (format == 2012 && TextBox_ObjS_2012_Att.Text != "")
             {
                 Classe_Score_OBJM_2012 OBJECTIF_Mission_2012_Att;
                 OBJECTIF_Mission_2012_Att = new Classe_Score_OBJM_2012(TextBox_ObjS_2012_Att.Text);
                 Scores_Attaquant[34] = OBJECTIF_Mission_2012_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2012_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2012_Att.Score_ObjS) >= 15)
                 {
                     ID_Cape_Attaquant[s] = 2012;
                     s++;
                 }
                 TextBlock_ObjS_2012_Att.Text = Convert.ToString(OBJECTIF_Mission_2012_Att.Score_ObjS);
-                ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[34]);
             }
 
             ///CALCUL SCORE OBJECTIF MISSION 2013
-            if (TextBox_ObjS_2013_Att_T1.Text != "" || TextBox_ObjS_2013_Att_T2.Text != "" || TextBox_ObjS_2013_Att_T3.Text != "" || TextBox_ObjS_2013_Att_T4.Text != "" || TextBox_ObjS_2013_Att_T5.Text != "")
+            if (format == 2013 && (TextBox_ObjS_2013_Att_T1.Text != "" || TextBox_ObjS_2013_Att_T2.Text != "" || TextBox_ObjS_2013_Att_T3.Text != "" || TextBox_ObjS_2013_Att_T4.Text != "" || TextBox_ObjS_2013_Att_T5.Text != ""))
             {
                 Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Att;
                 OBJECTIF_Mission_2013_Att = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Att_T1.Text, TextBox_ObjS_2013_Att_T2.Text, TextBox_ObjS_2013_Att_T3.Text, TextBox_ObjS_2013_Att_T4.Text, TextBox_ObjS_2013_Att_T5.Text);
                 Scores_Attaquant[35] = OBJECTIF_Mission_2013_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2013_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2013_Att.Score_ObjS) >= 15)
                 {
                     ID_Cape_Attaquant[s] = 2013;
                     s++;
                 }
                 TextBlock_ObjS_2013_Att.Text = Convert.ToString(OBJECTIF_Mission_2013_Att.Score_ObjS);
-                Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[35]);
-            }            
-
-            ///CALCUL SCORE OBJECTIF MISSION 2021           
-            Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Att;
-            OBJECTIF_Mission_2021_Att = new Classe_Score_OBJM_2021(CheckBox_ObjS_2021_Att_T1_Etat, CheckBox_ObjS_2021_Att_T2_Etat, CheckBox_ObjS_2021_Att_T3_Etat, CheckBox_ObjS_2021_Att_T4_Etat, CheckBox_ObjS_2021_Att_T5_Etat, CheckBox_ObjS_2021_Att_Fin_Etat);
-            Scores_Attaquant[36] = OBJECTIF_Mission_2021_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2021_Att.Score_ObjS) >= 15)
-            {
-                ID_Cape_Attaquant[s] = 2021;
-                s++;
             }
-            TextBlock_ObjS_2021_Att.Text = Convert.ToString(OBJECTIF_Mission_2021_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[36]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2022           
-            Classe_Score_OBJM_2022 OBJECTIF_Mission_2022_Att;
-            OBJECTIF_Mission_2022_Att = new Classe_Score_OBJM_2022(CheckBox_ObjS_2022_Att_T1_ZDDE_Etat, CheckBox_ObjS_2022_Att_T1_NML_Etat, CheckBox_ObjS_2022_Att_T1_ZDDA_Etat, CheckBox_ObjS_2022_Att_T2_ZDDE_Etat, CheckBox_ObjS_2022_Att_T2_NML_Etat, CheckBox_ObjS_2022_Att_T2_ZDDA_Etat, CheckBox_ObjS_2022_Att_T3_ZDDE_Etat, CheckBox_ObjS_2022_Att_T3_NML_Etat, CheckBox_ObjS_2022_Att_T3_ZDDA_Etat, CheckBox_ObjS_2022_Att_T4_ZDDE_Etat, CheckBox_ObjS_2022_Att_T4_NML_Etat, CheckBox_ObjS_2022_Att_T4_ZDDA_Etat, CheckBox_ObjS_2022_Att_T5_ZDDE_Etat, CheckBox_ObjS_2022_Att_T5_NML_Etat, CheckBox_ObjS_2022_Att_T5_ZDDA_Etat);
-            Scores_Attaquant[37] = OBJECTIF_Mission_2022_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2022_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2021            
+            if (format == 2021)
             {
-                ID_Cape_Attaquant[s] = 2022;
-                s++;
+                Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Att;
+                OBJECTIF_Mission_2021_Att = new Classe_Score_OBJM_2021(CheckBox_ObjS_2021_Att_T1_Etat, CheckBox_ObjS_2021_Att_T2_Etat, CheckBox_ObjS_2021_Att_T3_Etat, CheckBox_ObjS_2021_Att_T4_Etat, CheckBox_ObjS_2021_Att_T5_Etat, CheckBox_ObjS_2021_Att_Fin_Etat);
+                Scores_Attaquant[36] = OBJECTIF_Mission_2021_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2021_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2021_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2021;
+                    s++;
+                }
+                TextBlock_ObjS_2021_Att.Text = Convert.ToString(OBJECTIF_Mission_2021_Att.Score_ObjS);
             }
-            TextBlock_ObjS_2022_Att.Text = Convert.ToString(OBJECTIF_Mission_2022_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[37]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2023           
-            Classe_Score_OBJM_2023 OBJECTIF_Mission_2023_Att;
-            OBJECTIF_Mission_2023_Att = new Classe_Score_OBJM_2023(CheckBox_ObjS_2023_Att_A1_Etat, CheckBox_ObjS_2023_Att_A2_Etat, CheckBox_ObjS_2023_Att_B3_Etat, CheckBox_ObjS_2023_Att_B4_Etat, CheckBox_ObjS_2023_Att_5_Etat);
-            Scores_Attaquant[38] = OBJECTIF_Mission_2023_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2023_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2022            
+            if (format == 2022)
             {
-                ID_Cape_Attaquant[s] = 2023;
-                s++;
+                Classe_Score_OBJM_2022 OBJECTIF_Mission_2022_Att;
+                OBJECTIF_Mission_2022_Att = new Classe_Score_OBJM_2022(CheckBox_ObjS_2022_Att_T1_ZDDE_Etat, CheckBox_ObjS_2022_Att_T1_NML_Etat, CheckBox_ObjS_2022_Att_T1_ZDDA_Etat, CheckBox_ObjS_2022_Att_T2_ZDDE_Etat, CheckBox_ObjS_2022_Att_T2_NML_Etat, CheckBox_ObjS_2022_Att_T2_ZDDA_Etat, CheckBox_ObjS_2022_Att_T3_ZDDE_Etat, CheckBox_ObjS_2022_Att_T3_NML_Etat, CheckBox_ObjS_2022_Att_T3_ZDDA_Etat, CheckBox_ObjS_2022_Att_T4_ZDDE_Etat, CheckBox_ObjS_2022_Att_T4_NML_Etat, CheckBox_ObjS_2022_Att_T4_ZDDA_Etat, CheckBox_ObjS_2022_Att_T5_ZDDE_Etat, CheckBox_ObjS_2022_Att_T5_NML_Etat, CheckBox_ObjS_2022_Att_T5_ZDDA_Etat);
+                Scores_Attaquant[37] = OBJECTIF_Mission_2022_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2022_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2022_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2022;
+                    s++;
+                }
+                TextBlock_ObjS_2022_Att.Text = Convert.ToString(OBJECTIF_Mission_2022_Att.Score_ObjS);
             }
-            TextBlock_ObjS_2023_Att.Text = Convert.ToString(OBJECTIF_Mission_2023_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[38]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2031
-            Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Att;
+            ///CALCUL SCORE OBJECTIF MISSION 2023            
+            if (format == 2023)
+            {
+                Classe_Score_OBJM_2023 OBJECTIF_Mission_2023_Att;
+                OBJECTIF_Mission_2023_Att = new Classe_Score_OBJM_2023(CheckBox_ObjS_2023_Att_A1_Etat, CheckBox_ObjS_2023_Att_A2_Etat, CheckBox_ObjS_2023_Att_B3_Etat, CheckBox_ObjS_2023_Att_B4_Etat, CheckBox_ObjS_2023_Att_5_Etat);
+                Scores_Attaquant[38] = OBJECTIF_Mission_2023_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2023_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2023_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2023;
+                    s++;
+                }
+                TextBlock_ObjS_2023_Att.Text = Convert.ToString(OBJECTIF_Mission_2023_Att.Score_ObjS);
+            }
+
+            ///CALCUL SCORE OBJECTIF MISSION 2031            
+            if (format == 2031)
+            {
+                Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Att;
                 OBJECTIF_Mission_2031_Att = new Classe_Score_OBJM_2031(CheckBox_ObjS_2031_Att_T1_Etat, CheckBox_ObjS_2031_Att_T2_Etat, CheckBox_ObjS_2031_Att_T3_Etat, CheckBox_ObjS_2031_Att_T4_Etat, TextBox_ObjS_2031_Att_Fin.Text, CheckBox_ObjS_2031_Att_Fin_Etat);
                 Scores_Attaquant[39] = OBJECTIF_Mission_2031_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2031_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2031_Att.Score_ObjS) >= 8)
                 {
                     ID_Cape_Attaquant[s] = 2031;
                     s++;
                 }
                 TextBlock_ObjS_2031_Att.Text = Convert.ToString(OBJECTIF_Mission_2031_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[39]);
-
-            ///CALCUL SCORE OBJECTIF MISSION 2032        
-            Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Att;
-            OBJECTIF_Mission_2032_Att = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Att_Obj1_Etat, CheckBox_ObjS_2032_Att_Obj2_Etat, CheckBox_ObjS_2032_Att_Obj3_Etat, CheckBox_ObjS_2032_Att_Obj4_Etat, CheckBox_ObjS_2032_Att_Obj5_Etat, CheckBox_ObjS_2032_Att_E1_Etat, CheckBox_ObjS_2032_Att_E2_Etat, CheckBox_ObjS_2032_Att_E3_Etat, CheckBox_ObjS_2032_Att_E4_Etat, CheckBox_ObjS_2032_Att_E5_Etat);
-            Scores_Attaquant[40] = OBJECTIF_Mission_2032_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2032_Att.Score_ObjS) >= 15)
-            {
-                ID_Cape_Attaquant[s] = 2032;
-                s++;
             }
-            TextBlock_ObjS_2032_Att.Text = Convert.ToString(OBJECTIF_Mission_2032_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[40]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2033     
-            Classe_Score_OBJM_2033 OBJECTIF_Mission_2033_Att;
-            OBJECTIF_Mission_2033_Att = new Classe_Score_OBJM_2033(CheckBox_ObjS_2033_Att_Obj1_Etat, CheckBox_ObjS_2033_Att_Obj2_Etat, CheckBox_ObjS_2033_Att_Obj3_Etat, CheckBox_ObjS_2033_Att_Obj4_Etat, CheckBox_ObjS_2033_Att_Obj5_Etat);
-            Scores_Attaquant[41] = OBJECTIF_Mission_2033_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2033_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2032            
+            if (format == 2032)
             {
-                ID_Cape_Attaquant[s] = 2033;
-                s++;
+                Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Att;
+                OBJECTIF_Mission_2032_Att = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Att_Obj1_Etat, CheckBox_ObjS_2032_Att_Obj2_Etat, CheckBox_ObjS_2032_Att_Obj3_Etat, CheckBox_ObjS_2032_Att_Obj4_Etat, CheckBox_ObjS_2032_Att_Obj5_Etat, CheckBox_ObjS_2032_Att_E1_Etat, CheckBox_ObjS_2032_Att_E2_Etat, CheckBox_ObjS_2032_Att_E3_Etat, CheckBox_ObjS_2032_Att_E4_Etat, CheckBox_ObjS_2032_Att_E5_Etat);
+                Scores_Attaquant[40] = OBJECTIF_Mission_2032_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2032_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2032_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2032;
+                    s++;
+                }
+                TextBlock_ObjS_2032_Att.Text = Convert.ToString(OBJECTIF_Mission_2032_Att.Score_ObjS);
             }
-            TextBlock_ObjS_2033_Att.Text = Convert.ToString(OBJECTIF_Mission_2033_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[41]);
+
+            ///CALCUL SCORE OBJECTIF MISSION 2033            
+            if (format == 2033)
+            {
+                Classe_Score_OBJM_2033 OBJECTIF_Mission_2033_Att;
+                OBJECTIF_Mission_2033_Att = new Classe_Score_OBJM_2033(CheckBox_ObjS_2033_Att_Obj1_Etat, CheckBox_ObjS_2033_Att_Obj2_Etat, CheckBox_ObjS_2033_Att_Obj3_Etat, CheckBox_ObjS_2033_Att_Obj4_Etat, CheckBox_ObjS_2033_Att_Obj5_Etat);
+                Scores_Attaquant[41] = OBJECTIF_Mission_2033_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_2033_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2033_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 2033;
+                    s++;
+                }
+                TextBlock_ObjS_2033_Att.Text = Convert.ToString(OBJECTIF_Mission_2033_Att.Score_ObjS);
+            }
             #endregion
             #region Calcul_Objectif_Missions_Offensive_3001_3003
-            ///CALCUL SCORE OBJECTIF MISSION 3001     
-            Classe_Score_OBJM_3001 OBJECTIF_Mission_3001_Att;
-            OBJECTIF_Mission_3001_Att = new Classe_Score_OBJM_3001(CheckBox_ObjS_3001_Att_R2_Etat, TextBox_ObjS_3001_Att_R2_Fig_Amis.Text, TextBox_ObjS_3001_Att_R2_Fig_Ennemies.Text, CheckBox_ObjS_3001_Att_R3_Etat, TextBox_ObjS_3001_Att_R3_Fig_Amis.Text, TextBox_ObjS_3001_Att_R3_Fig_Ennemies.Text, CheckBox_ObjS_3001_Att_R4_Etat, TextBox_ObjS_3001_Att_R4_Fig_Amis.Text, TextBox_ObjS_3001_Att_R4_Fig_Ennemies.Text, CheckBox_ObjS_3001_Att_R5_Etat, TextBox_ObjS_3001_Att_R5_Fig_Amis.Text, TextBox_ObjS_3001_Att_R5_Fig_Ennemies.Text);
-            Scores_Attaquant[42] = OBJECTIF_Mission_3001_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_3001_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 3001            
+            if (format == 3001)
             {
-                ID_Cape_Attaquant[s] = 3001;
-                s++;
+                Classe_Score_OBJM_3001 OBJECTIF_Mission_3001_Att;
+                OBJECTIF_Mission_3001_Att = new Classe_Score_OBJM_3001(CheckBox_ObjS_3001_Att_R2_Etat, TextBox_ObjS_3001_Att_R2_Fig_Amis.Text, TextBox_ObjS_3001_Att_R2_Fig_Ennemies.Text, CheckBox_ObjS_3001_Att_R3_Etat, TextBox_ObjS_3001_Att_R3_Fig_Amis.Text, TextBox_ObjS_3001_Att_R3_Fig_Ennemies.Text, CheckBox_ObjS_3001_Att_R4_Etat, TextBox_ObjS_3001_Att_R4_Fig_Amis.Text, TextBox_ObjS_3001_Att_R4_Fig_Ennemies.Text, CheckBox_ObjS_3001_Att_R5_Etat, TextBox_ObjS_3001_Att_R5_Fig_Amis.Text, TextBox_ObjS_3001_Att_R5_Fig_Ennemies.Text);
+                Scores_Attaquant[42] = OBJECTIF_Mission_3001_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_3001_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_3001_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 3001;
+                    s++;
+                }
+                TextBlock_ObjS_3001_Att.Text = Convert.ToString(OBJECTIF_Mission_3001_Att.Score_ObjS);
             }
-            TextBlock_ObjS_3001_Att.Text = Convert.ToString(OBJECTIF_Mission_3001_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[42]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 3002
-            Classe_Score_OBJM_3002 OBJECTIF_Mission_3002_Att;
-            OBJECTIF_Mission_3002_Att = new Classe_Score_OBJM_3002(CheckBox_ObjS_3002_Att_R2_Etat, TextBox_ObjS_3002_Att_R2_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R3_Etat, TextBox_ObjS_3002_Att_R3_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R4_Etat, TextBox_ObjS_3002_Att_R4_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R5_Etat, TextBox_ObjS_3002_Att_R5_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R6_Etat, TextBox_ObjS_3002_Att_R6_ObjB_Ennemies.Text);
-            Scores_Attaquant[43] = OBJECTIF_Mission_3002_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_3002_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 3002            
+            if (format == 3002)
             {
-                ID_Cape_Attaquant[s] = 3002;
-                s++;
+                Classe_Score_OBJM_3002 OBJECTIF_Mission_3002_Att;
+                OBJECTIF_Mission_3002_Att = new Classe_Score_OBJM_3002(CheckBox_ObjS_3002_Att_R2_Etat, TextBox_ObjS_3002_Att_R2_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R3_Etat, TextBox_ObjS_3002_Att_R3_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R4_Etat, TextBox_ObjS_3002_Att_R4_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R5_Etat, TextBox_ObjS_3002_Att_R5_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Att_R6_Etat, TextBox_ObjS_3002_Att_R6_ObjB_Ennemies.Text);
+                Scores_Attaquant[43] = OBJECTIF_Mission_3002_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_3002_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_3002_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 3002;
+                    s++;
+                }
+                TextBlock_ObjS_3002_Att.Text = Convert.ToString(OBJECTIF_Mission_3002_Att.Score_ObjS);
             }
-            TextBlock_ObjS_3002_Att.Text = Convert.ToString(OBJECTIF_Mission_3002_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[43]);
 
-            ///CALCUL SCORE OBJECTIF MISSION 3003
-            Classe_Score_OBJM_3003 OBJECTIF_Mission_3003_Att;
-            OBJECTIF_Mission_3003_Att = new Classe_Score_OBJM_3003(CheckBox_ObjS_3003_Att_R2_Etat, TextBox_ObjS_3003_Att_R2_ObjA.Text, CheckBox_ObjS_3003_Att_R3_Etat, TextBox_ObjS_3003_Att_R3_ObjA.Text, CheckBox_ObjS_3003_Att_R4_Etat, TextBox_ObjS_3003_Att_R4_ObjA.Text, CheckBox_ObjS_3003_Att_R5_Etat, TextBox_ObjS_3003_Att_R5_ObjA.Text);
-            Scores_Attaquant[44] = OBJECTIF_Mission_3003_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_3003_Att.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 3003            
+            if (format == 3003)
             {
-                ID_Cape_Attaquant[s] = 3003;
-                s++;
+                Classe_Score_OBJM_3003 OBJECTIF_Mission_3003_Att;
+                OBJECTIF_Mission_3003_Att = new Classe_Score_OBJM_3003(CheckBox_ObjS_3003_Att_R2_Etat, TextBox_ObjS_3003_Att_R2_ObjA.Text, CheckBox_ObjS_3003_Att_R3_Etat, TextBox_ObjS_3003_Att_R3_ObjA.Text, CheckBox_ObjS_3003_Att_R4_Etat, TextBox_ObjS_3003_Att_R4_ObjA.Text, CheckBox_ObjS_3003_Att_R5_Etat, TextBox_ObjS_3003_Att_R5_ObjA.Text);
+                Scores_Attaquant[44] = OBJECTIF_Mission_3003_Att.Scores_Joueur;
+                score_Principal_B_Att += OBJECTIF_Mission_3003_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_3003_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 3003;
+                    s++;
+                }
+                TextBlock_ObjS_3003_Att.Text = Convert.ToString(OBJECTIF_Mission_3003_Att.Score_ObjS);
             }
-            TextBlock_ObjS_3003_Att.Text = Convert.ToString(OBJECTIF_Mission_3003_Att.Score_ObjS);
-            ///Calcul_Score_Principal("Att", Scores_Attaquant[0], Scores_Attaquant[44]);
             #endregion
             #endregion           
 
@@ -12084,112 +12143,149 @@ namespace CPV9
 
             #region Calcul_Objectif_Missions
             #region Calcul_Objectif_Missions_Patrouille_501_503
-            ///CALCUL SCORE OBJECTIF MISSION 501       
-            Classe_Score_OBJM_501 OBJECTIF_Mission_501_Def;
-            OBJECTIF_Mission_501_Def = new Classe_Score_OBJM_501(CheckBox_ObjS_501_Def_T1_Etat, CheckBox_ObjS_501_Def_T2_Etat, CheckBox_ObjS_501_Def_T3_Etat, CheckBox_ObjS_501_Def_T4_Etat, CheckBox_ObjS_501_Def_T5_Etat);
-            Scores_Defenseur[21] = OBJECTIF_Mission_501_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_501_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 501            
+            if (format == 501)
             {
-                ID_Cape_Defenseur[s] = 501;
-                s++;
+                Classe_Score_OBJM_501 OBJECTIF_Mission_501_Def;
+                OBJECTIF_Mission_501_Def = new Classe_Score_OBJM_501(CheckBox_ObjS_501_Def_T1_Etat, CheckBox_ObjS_501_Def_T2_Etat, CheckBox_ObjS_501_Def_T3_Etat, CheckBox_ObjS_501_Def_T4_Etat, CheckBox_ObjS_501_Def_T5_Etat);
+                Scores_Defenseur[21] = OBJECTIF_Mission_501_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_501_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_501_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 501;
+                    s++;
+                }
+                TextBlock_ObjS_501_Def.Text = Convert.ToString(OBJECTIF_Mission_501_Def.Score_ObjS);
             }
-            TextBlock_ObjS_501_Def.Text = Convert.ToString(OBJECTIF_Mission_501_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 502      
-            Classe_Score_OBJM_502 OBJECTIF_Mission_502_Def;
-            OBJECTIF_Mission_502_Def = new Classe_Score_OBJM_502(CheckBox_ObjS_502_Def_T2_Etat, CheckBox_ObjS_502_Def_T3_Etat, CheckBox_ObjS_502_Def_T4_Etat, CheckBox_ObjS_502_Def_T5_Etat);
-            Scores_Defenseur[22] = OBJECTIF_Mission_502_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_502_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 502            
+            if (format == 502)
             {
-                ID_Cape_Defenseur[s] = 502;
-                s++;
+                Classe_Score_OBJM_502 OBJECTIF_Mission_502_Def;
+                OBJECTIF_Mission_502_Def = new Classe_Score_OBJM_502(CheckBox_ObjS_502_Def_T2_Etat, CheckBox_ObjS_502_Def_T3_Etat, CheckBox_ObjS_502_Def_T4_Etat, CheckBox_ObjS_502_Def_T5_Etat);
+                Scores_Defenseur[22] = OBJECTIF_Mission_502_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_502_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_502_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 502;
+                    s++;
+                }
+                TextBlock_ObjS_502_Def.Text = Convert.ToString(OBJECTIF_Mission_502_Def.Score_ObjS);
             }
-            TextBlock_ObjS_502_Def.Text = Convert.ToString(OBJECTIF_Mission_502_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 503
-            Classe_Score_OBJM_503 OBJECTIF_Mission_503_Def;
-            OBJECTIF_Mission_503_Def = new Classe_Score_OBJM_503(CheckBox_ObjS_503_Def_T1A_Etat, CheckBox_ObjS_503_Def_T1B_Etat, CheckBox_ObjS_503_Def_T2A_Etat, CheckBox_ObjS_503_Def_T2B_Etat, CheckBox_ObjS_503_Def_T3A_Etat, CheckBox_ObjS_503_Def_T3B_Etat, CheckBox_ObjS_503_Def_T4A_Etat, CheckBox_ObjS_503_Def_T4B_Etat, CheckBox_ObjS_503_Def_T5A_Etat, CheckBox_ObjS_503_Def_T5B_Etat);
-            Scores_Defenseur[23] = OBJECTIF_Mission_503_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_503_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 503            
+            if (format == 503)
             {
-                ID_Cape_Defenseur[s] = 503;
-                s++;
+                Classe_Score_OBJM_503 OBJECTIF_Mission_503_Def;
+                OBJECTIF_Mission_503_Def = new Classe_Score_OBJM_503(CheckBox_ObjS_503_Def_T1A_Etat, CheckBox_ObjS_503_Def_T1B_Etat, CheckBox_ObjS_503_Def_T2A_Etat, CheckBox_ObjS_503_Def_T2B_Etat, CheckBox_ObjS_503_Def_T3A_Etat, CheckBox_ObjS_503_Def_T3B_Etat, CheckBox_ObjS_503_Def_T4A_Etat, CheckBox_ObjS_503_Def_T4B_Etat, CheckBox_ObjS_503_Def_T5A_Etat, CheckBox_ObjS_503_Def_T5B_Etat);
+                Scores_Defenseur[23] = OBJECTIF_Mission_503_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_503_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_503_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 503;
+                    s++;
+                }
+                TextBlock_ObjS_503_Def.Text = Convert.ToString(OBJECTIF_Mission_503_Def.Score_ObjS);
             }
-            TextBlock_ObjS_503_Def.Text = Convert.ToString(OBJECTIF_Mission_503_Def.Score_ObjS);
             #endregion
             #region Calcul_Objectif_Missions_Incursion_1011_1033
-            ///CALCUL SCORE OBJECTIF MISSION 1011          
-            Classe_Score_OBJM_1011 OBJECTIF_Mission_1011_Def;
-            OBJECTIF_Mission_1011_Def = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Def_T1A_Etat, CheckBox_ObjS_1011_Def_T1B_Etat, CheckBox_ObjS_1011_Def_T2A_Etat, CheckBox_ObjS_1011_Def_T2B_Etat, CheckBox_ObjS_1011_Def_T3A_Etat, CheckBox_ObjS_1011_Def_T3B_Etat, CheckBox_ObjS_1011_Def_T4A_Etat, CheckBox_ObjS_1011_Def_T4B_Etat, CheckBox_ObjS_1011_Def_T5A_Etat, CheckBox_ObjS_1011_Def_T5B_Etat);
-            Scores_Defenseur[24] = OBJECTIF_Mission_1011_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1011_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1011            
+            if (format == 1011)
             {
-                ID_Cape_Defenseur[s] = 1011;
-                s++;
+                Classe_Score_OBJM_1011 OBJECTIF_Mission_1011_Def;
+                OBJECTIF_Mission_1011_Def = new Classe_Score_OBJM_1011(CheckBox_ObjS_1011_Def_T1A_Etat, CheckBox_ObjS_1011_Def_T1B_Etat, CheckBox_ObjS_1011_Def_T2A_Etat, CheckBox_ObjS_1011_Def_T2B_Etat, CheckBox_ObjS_1011_Def_T3A_Etat, CheckBox_ObjS_1011_Def_T3B_Etat, CheckBox_ObjS_1011_Def_T4A_Etat, CheckBox_ObjS_1011_Def_T4B_Etat, CheckBox_ObjS_1011_Def_T5A_Etat, CheckBox_ObjS_1011_Def_T5B_Etat);
+                Scores_Defenseur[24] = OBJECTIF_Mission_1011_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1011_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1011_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1011;
+                    s++;
+                }
+                TextBlock_ObjS_1011_Def.Text = Convert.ToString(OBJECTIF_Mission_1011_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1011_Def.Text = Convert.ToString(OBJECTIF_Mission_1011_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1012          
-            Classe_Score_OBJM_1012 OBJECTIF_Mission_1012_Def;
-            OBJECTIF_Mission_1012_Def = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Def_T3.Text, TextBox_ObjS_1012_Def_T4.Text, TextBox_ObjS_1012_Def_T5.Text);
-            Scores_Defenseur[25] = OBJECTIF_Mission_1012_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1012_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1012            
+            if (format == 1012)
             {
-                ID_Cape_Defenseur[s] = 1012;
-                s++;
+                Classe_Score_OBJM_1012 OBJECTIF_Mission_1012_Def;
+                OBJECTIF_Mission_1012_Def = new Classe_Score_OBJM_1012(TextBox_ObjS_1012_Def_T3.Text, TextBox_ObjS_1012_Def_T4.Text, TextBox_ObjS_1012_Def_T5.Text);
+                Scores_Defenseur[25] = OBJECTIF_Mission_1012_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1012_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1012_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1012;
+                    s++;
+                }
+                TextBlock_ObjS_1012_Def.Text = Convert.ToString(OBJECTIF_Mission_1012_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1012_Def.Text = Convert.ToString(OBJECTIF_Mission_1012_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1013          
-            Classe_Score_OBJM_1013 OBJECTIF_Mission_1013_Def;
-            OBJECTIF_Mission_1013_Def = new Classe_Score_OBJM_1013(CheckBox_ObjS_1013_Def_T1_Etat, CheckBox_ObjS_1013_Def_T2_Etat, CheckBox_ObjS_1013_Def_T3_Etat, CheckBox_ObjS_1013_Def_T4_Etat, CheckBox_ObjS_1013_Def_T5_Etat);
-            Scores_Defenseur[26] = OBJECTIF_Mission_1013_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1013_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1013            
+            if (format == 1013)
             {
-                ID_Cape_Defenseur[s] = 1013;
-                s++;
+                Classe_Score_OBJM_1013 OBJECTIF_Mission_1013_Def;
+                OBJECTIF_Mission_1013_Def = new Classe_Score_OBJM_1013(CheckBox_ObjS_1013_Def_T1_Etat, CheckBox_ObjS_1013_Def_T2_Etat, CheckBox_ObjS_1013_Def_T3_Etat, CheckBox_ObjS_1013_Def_T4_Etat, CheckBox_ObjS_1013_Def_T5_Etat);
+                Scores_Defenseur[26] = OBJECTIF_Mission_1013_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1013_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1013_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1013;
+                    s++;
+                }
+                TextBlock_ObjS_1013_Def.Text = Convert.ToString(OBJECTIF_Mission_1013_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1013_Def.Text = Convert.ToString(OBJECTIF_Mission_1013_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1021         
-            Classe_Score_OBJM_1021 OBJECTIF_Mission_1021_Def;
-            OBJECTIF_Mission_1021_Def = new Classe_Score_OBJM_1021(CheckBox_ObjS_1021_Def_T1A_Etat, CheckBox_ObjS_1021_Def_T1B_Etat, TextBox_ObjS_1021_Def_T1.Text, CheckBox_ObjS_1021_Def_T2A_Etat, CheckBox_ObjS_1021_Def_T2B_Etat, TextBox_ObjS_1021_Def_T2.Text, CheckBox_ObjS_1021_Def_T3A_Etat, CheckBox_ObjS_1021_Def_T3B_Etat, TextBox_ObjS_1021_Def_T3.Text, CheckBox_ObjS_1021_Def_T4A_Etat, CheckBox_ObjS_1021_Def_T4B_Etat, TextBox_ObjS_1021_Def_T4.Text, CheckBox_ObjS_1021_Def_T5A_Etat, CheckBox_ObjS_1021_Def_T5B_Etat, TextBox_ObjS_1021_Def_T5.Text);
-            Scores_Defenseur[27] = OBJECTIF_Mission_1021_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1021_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1021            
+            if (format == 1021)
             {
-                ID_Cape_Defenseur[s] = 1021;
-                s++;
+                Classe_Score_OBJM_1021 OBJECTIF_Mission_1021_Def;
+                OBJECTIF_Mission_1021_Def = new Classe_Score_OBJM_1021(CheckBox_ObjS_1021_Def_T1A_Etat, CheckBox_ObjS_1021_Def_T1B_Etat, TextBox_ObjS_1021_Def_T1.Text, CheckBox_ObjS_1021_Def_T2A_Etat, CheckBox_ObjS_1021_Def_T2B_Etat, TextBox_ObjS_1021_Def_T2.Text, CheckBox_ObjS_1021_Def_T3A_Etat, CheckBox_ObjS_1021_Def_T3B_Etat, TextBox_ObjS_1021_Def_T3.Text, CheckBox_ObjS_1021_Def_T4A_Etat, CheckBox_ObjS_1021_Def_T4B_Etat, TextBox_ObjS_1021_Def_T4.Text, CheckBox_ObjS_1021_Def_T5A_Etat, CheckBox_ObjS_1021_Def_T5B_Etat, TextBox_ObjS_1021_Def_T5.Text);
+                Scores_Defenseur[27] = OBJECTIF_Mission_1021_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1021_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1021_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1021;
+                    s++;
+                }
+                TextBlock_ObjS_1021_Def.Text = Convert.ToString(OBJECTIF_Mission_1021_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1021_Def.Text = Convert.ToString(OBJECTIF_Mission_1021_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1022       
-            Classe_Score_OBJM_1022 OBJECTIF_Mission_1022_Def;
-            OBJECTIF_Mission_1022_Def = new Classe_Score_OBJM_1022(CheckBox_ObjS_1022_Def_T1_Obj_Etat, CheckBox_ObjS_1022_Def_T2_Obj_Etat, CheckBox_ObjS_1022_Def_T3_Obj_Etat, CheckBox_ObjS_1022_Def_T4_Obj_Etat, CheckBox_ObjS_1022_Def_T5_Obj_Etat, CheckBox_ObjS_1022_Def_FIN_SG_Centre_Etat, CheckBox_ObjS_1022_Def_FIN_SG_Adverse_Etat);
-            Scores_Defenseur[28] = OBJECTIF_Mission_1022_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1022_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1022            
+            if (format == 1022)
             {
-                ID_Cape_Defenseur[s] = 1022;
-                s++;
+                Classe_Score_OBJM_1022 OBJECTIF_Mission_1022_Def;
+                OBJECTIF_Mission_1022_Def = new Classe_Score_OBJM_1022(CheckBox_ObjS_1022_Def_T1_Obj_Etat, CheckBox_ObjS_1022_Def_T2_Obj_Etat, CheckBox_ObjS_1022_Def_T3_Obj_Etat, CheckBox_ObjS_1022_Def_T4_Obj_Etat, CheckBox_ObjS_1022_Def_T5_Obj_Etat, CheckBox_ObjS_1022_Def_FIN_SG_Centre_Etat, CheckBox_ObjS_1022_Def_FIN_SG_Adverse_Etat);
+                Scores_Defenseur[28] = OBJECTIF_Mission_1022_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1022_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1022_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1022;
+                    s++;
+                }
+                TextBlock_ObjS_1022_Def.Text = Convert.ToString(OBJECTIF_Mission_1022_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1022_Def.Text = Convert.ToString(OBJECTIF_Mission_1022_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 1023     
-            Classe_Score_OBJM_1023 OBJECTIF_Mission_1023_Def;
-            OBJECTIF_Mission_1023_Def = new Classe_Score_OBJM_1023("Joueur_B", CheckBox_ObjS_1023_Def_T1_C_Etat, CheckBox_ObjS_1023_Def_T1_B_Etat, CheckBox_ObjS_1023_Def_T1_A_Etat, CheckBox_ObjS_1023_Def_T2_C_Etat, CheckBox_ObjS_1023_Def_T2_B_Etat, CheckBox_ObjS_1023_Def_T2_A_Etat, CheckBox_ObjS_1023_Def_T3_C_Etat, CheckBox_ObjS_1023_Def_T3_B_Etat, CheckBox_ObjS_1023_Def_T3_A_Etat, CheckBox_ObjS_1023_Def_T4_C_Etat, CheckBox_ObjS_1023_Def_T4_B_Etat, CheckBox_ObjS_1023_Def_T4_A_Etat, CheckBox_ObjS_1023_Def_T5_C_Etat, CheckBox_ObjS_1023_Def_T5_B_Etat, CheckBox_ObjS_1023_Def_T5_A_Etat);
-            Scores_Defenseur[29] = OBJECTIF_Mission_1023_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1023_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1023            
+            if (format == 1023)
             {
-                ID_Cape_Defenseur[s] = 1023;
-                s++;
+                Classe_Score_OBJM_1023 OBJECTIF_Mission_1023_Def;
+                OBJECTIF_Mission_1023_Def = new Classe_Score_OBJM_1023("Joueur_B", CheckBox_ObjS_1023_Def_T1_C_Etat, CheckBox_ObjS_1023_Def_T1_B_Etat, CheckBox_ObjS_1023_Def_T1_A_Etat, CheckBox_ObjS_1023_Def_T2_C_Etat, CheckBox_ObjS_1023_Def_T2_B_Etat, CheckBox_ObjS_1023_Def_T2_A_Etat, CheckBox_ObjS_1023_Def_T3_C_Etat, CheckBox_ObjS_1023_Def_T3_B_Etat, CheckBox_ObjS_1023_Def_T3_A_Etat, CheckBox_ObjS_1023_Def_T4_C_Etat, CheckBox_ObjS_1023_Def_T4_B_Etat, CheckBox_ObjS_1023_Def_T4_A_Etat, CheckBox_ObjS_1023_Def_T5_C_Etat, CheckBox_ObjS_1023_Def_T5_B_Etat, CheckBox_ObjS_1023_Def_T5_A_Etat);
+                Scores_Defenseur[29] = OBJECTIF_Mission_1023_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1023_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1023_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1023;
+                    s++;
+                }
+                TextBlock_ObjS_1023_Def.Text = Convert.ToString(OBJECTIF_Mission_1023_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1023_Def.Text = Convert.ToString(OBJECTIF_Mission_1023_Def.Score_ObjS);
 
             ///CALCUL SCORE OBJECTIF MISSION 1031  
-            if (TextBox_ObjS_1031_Def_T2.Text != "" || TextBox_ObjS_1031_Def_T3.Text != "" || TextBox_ObjS_1031_Def_T4.Text != "" || TextBox_ObjS_1031_Def_T5.Text != "")
+            if (format== 1031 && (TextBox_ObjS_1031_Def_T2.Text != "" || TextBox_ObjS_1031_Def_T3.Text != "" || TextBox_ObjS_1031_Def_T4.Text != "" || TextBox_ObjS_1031_Def_T5.Text != ""))
             {
                 Classe_Score_OBJM_1031 OBJECTIF_Mission_1031_Def;
                 OBJECTIF_Mission_1031_Def = new Classe_Score_OBJM_1031(TextBox_ObjS_1031_Def_T2.Text, TextBox_ObjS_1031_Def_T3.Text, TextBox_ObjS_1031_Def_T4.Text, TextBox_ObjS_1031_Def_T5.Text);
                 Scores_Defenseur[30] = OBJECTIF_Mission_1031_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1031_Def.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_1031_Def.Score_ObjS) >= 15)
                 {
                     ID_Cape_Defenseur[s] = 1031;
@@ -12198,37 +12294,44 @@ namespace CPV9
                 TextBlock_ObjS_1031_Def.Text = Convert.ToString(OBJECTIF_Mission_1031_Def.Score_ObjS);
             }
 
-            ///CALCUL SCORE OBJECTIF MISSION 1032  
-
-            Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Def;
-            OBJECTIF_Mission_1032_Def = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Def_R1.Text, TextBox_ObjS_1032_Def_R2.Text, TextBox_ObjS_1032_Def_R3.Text, TextBox_ObjS_1032_Def_R4.Text, TextBox_ObjS_1032_Def_R5.Text);
-            Scores_Defenseur[31] = OBJECTIF_Mission_1032_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1032_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1032            
+            if (format == 1032)
             {
-                ID_Cape_Defenseur[s] = 1032;
-                s++;
+                Classe_Score_OBJM_1032 OBJECTIF_Mission_1032_Def;
+                OBJECTIF_Mission_1032_Def = new Classe_Score_OBJM_1032(TextBox_ObjS_1032_Def_R1.Text, TextBox_ObjS_1032_Def_R2.Text, TextBox_ObjS_1032_Def_R3.Text, TextBox_ObjS_1032_Def_R4.Text, TextBox_ObjS_1032_Def_R5.Text);
+                Scores_Defenseur[31] = OBJECTIF_Mission_1032_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1032_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1032_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1032;
+                    s++;
+                }
+                TextBlock_ObjS_1032_Def.Text = Convert.ToString(OBJECTIF_Mission_1032_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1032_Def.Text = Convert.ToString(OBJECTIF_Mission_1032_Def.Score_ObjS);
 
-
-            ///CALCUL SCORE OBJECTIF MISSION 1033     
-            Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Def;
-            OBJECTIF_Mission_1033_Def = new Classe_Score_OBJM_1033(CheckBox_ObjS_1033_Def_OBJ1_1_Etat, CheckBox_ObjS_1033_Def_OBJ1_2_Etat, CheckBox_ObjS_1033_Def_OBJ1_3_Etat, CheckBox_ObjS_1033_Def_OBJ1_4_Etat, CheckBox_ObjS_1033_Def_OBJ2_1_Etat, CheckBox_ObjS_1033_Def_OBJ2_2_Etat, CheckBox_ObjS_1033_Def_OBJ2_3_Etat, CheckBox_ObjS_1033_Def_OBJ2_4_Etat, CheckBox_ObjS_1033_Def_OBJ3_1_Etat, CheckBox_ObjS_1033_Def_OBJ3_2_Etat, CheckBox_ObjS_1033_Def_OBJ3_3_Etat, CheckBox_ObjS_1033_Def_OBJ3_4_Etat, CheckBox_ObjS_1033_Def_OBJ4_1_Etat, CheckBox_ObjS_1033_Def_OBJ4_2_Etat, CheckBox_ObjS_1033_Def_OBJ4_3_Etat, CheckBox_ObjS_1033_Def_OBJ4_4_Etat, CheckBox_ObjS_1033_Def_OBJ5_1_Etat, CheckBox_ObjS_1033_Def_OBJ5_2_Etat, CheckBox_ObjS_1033_Def_OBJ5_3_Etat, CheckBox_ObjS_1033_Def_OBJ5_4_Etat);
-            Scores_Defenseur[32] = OBJECTIF_Mission_1033_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_1033_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 1033            
+            if (format == 1033)
             {
-                ID_Cape_Defenseur[s] = 1033;
-                s++;
+                Classe_Score_OBJM_1033 OBJECTIF_Mission_1033_Def;
+                OBJECTIF_Mission_1033_Def = new Classe_Score_OBJM_1033(CheckBox_ObjS_1033_Def_OBJ1_1_Etat, CheckBox_ObjS_1033_Def_OBJ1_2_Etat, CheckBox_ObjS_1033_Def_OBJ1_3_Etat, CheckBox_ObjS_1033_Def_OBJ1_4_Etat, CheckBox_ObjS_1033_Def_OBJ2_1_Etat, CheckBox_ObjS_1033_Def_OBJ2_2_Etat, CheckBox_ObjS_1033_Def_OBJ2_3_Etat, CheckBox_ObjS_1033_Def_OBJ2_4_Etat, CheckBox_ObjS_1033_Def_OBJ3_1_Etat, CheckBox_ObjS_1033_Def_OBJ3_2_Etat, CheckBox_ObjS_1033_Def_OBJ3_3_Etat, CheckBox_ObjS_1033_Def_OBJ3_4_Etat, CheckBox_ObjS_1033_Def_OBJ4_1_Etat, CheckBox_ObjS_1033_Def_OBJ4_2_Etat, CheckBox_ObjS_1033_Def_OBJ4_3_Etat, CheckBox_ObjS_1033_Def_OBJ4_4_Etat, CheckBox_ObjS_1033_Def_OBJ5_1_Etat, CheckBox_ObjS_1033_Def_OBJ5_2_Etat, CheckBox_ObjS_1033_Def_OBJ5_3_Etat, CheckBox_ObjS_1033_Def_OBJ5_4_Etat);
+                Scores_Defenseur[32] = OBJECTIF_Mission_1033_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_1033_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_1033_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 1033;
+                    s++;
+                }
+                TextBlock_ObjS_1033_Def.Text = Convert.ToString(OBJECTIF_Mission_1033_Def.Score_ObjS);
             }
-            TextBlock_ObjS_1033_Def.Text = Convert.ToString(OBJECTIF_Mission_1033_Def.Score_ObjS);
             #endregion
             #region Calcul_Objectif_Missions_ForceDeFrappe_2011_2033
             ///CALCUL SCORE OBJECTIF MISSION 2011
-            if (TextBox_ObjS_2011_Def_R1.Text !="" || TextBox_ObjS_2011_Def_R2.Text != "" || TextBox_ObjS_2011_Def_R3.Text != "" || TextBox_ObjS_2011_Def_R4.Text != "" || TextBox_ObjS_2011_Def_R5.Text != "")
+            if (format == 2011 && (TextBox_ObjS_2011_Def_R1.Text !="" || TextBox_ObjS_2011_Def_R2.Text != "" || TextBox_ObjS_2011_Def_R3.Text != "" || TextBox_ObjS_2011_Def_R4.Text != "" || TextBox_ObjS_2011_Def_R5.Text != ""))
             {
                 Classe_Score_OBJM_2011 OBJECTIF_Mission_2011_Def;
                 OBJECTIF_Mission_2011_Def = new Classe_Score_OBJM_2011(TextBox_ObjS_2011_Def_R1.Text, TextBox_ObjS_2011_Def_R2.Text, TextBox_ObjS_2011_Def_R3.Text, TextBox_ObjS_2011_Def_R4.Text, TextBox_ObjS_2011_Def_R5.Text);
-                score_Principal_B_Def = OBJECTIF_Mission_2011_Def.Scores_Joueur;
+                Scores_Defenseur[33] = OBJECTIF_Mission_2011_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2011_Def.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2011_Def.Score_ObjS) >= 15)
                 {
                     ID_Cape_Defenseur[s] = 2011;
@@ -12237,13 +12340,13 @@ namespace CPV9
                 TextBlock_ObjS_2011_Def.Text = Convert.ToString(OBJECTIF_Mission_2011_Def.Score_ObjS);
             }
 
-
             ///CALCUL SCORE OBJECTIF MISSION 2012     
-            if (TextBox_ObjS_2012_Def.Text != "")
+            if (format == 2012 && TextBox_ObjS_2012_Def.Text != "")
             {
                 Classe_Score_OBJM_2012 OBJECTIF_Mission_2012_Def;
                 OBJECTIF_Mission_2012_Def = new Classe_Score_OBJM_2012(TextBox_ObjS_2012_Def.Text);
                 Scores_Defenseur[34] = OBJECTIF_Mission_2012_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2012_Def.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2012_Def.Score_ObjS) >= 15)
                 {
                     ID_Cape_Defenseur[s] = 2012;
@@ -12252,13 +12355,13 @@ namespace CPV9
                 TextBlock_ObjS_2012_Def.Text = Convert.ToString(OBJECTIF_Mission_2012_Def.Score_ObjS);
             }
 
-
             ///CALCUL SCORE OBJECTIF MISSION 2013
-            if (TextBox_ObjS_2013_Def_T1.Text != "" || TextBox_ObjS_2013_Def_T2.Text != "" || TextBox_ObjS_2013_Def_T3.Text != "" || TextBox_ObjS_2013_Def_T4.Text != "" || TextBox_ObjS_2013_Def_T5.Text != "")
+            if (format == 2013 && (TextBox_ObjS_2013_Def_T1.Text != "" || TextBox_ObjS_2013_Def_T2.Text != "" || TextBox_ObjS_2013_Def_T3.Text != "" || TextBox_ObjS_2013_Def_T4.Text != "" || TextBox_ObjS_2013_Def_T5.Text != ""))
             {
                 Classe_Score_OBJM_2013 OBJECTIF_Mission_2013_Def;
                 OBJECTIF_Mission_2013_Def = new Classe_Score_OBJM_2013(TextBox_ObjS_2013_Def_T1.Text, TextBox_ObjS_2013_Def_T2.Text, TextBox_ObjS_2013_Def_T3.Text, TextBox_ObjS_2013_Def_T4.Text, TextBox_ObjS_2013_Def_T5.Text);
                 Scores_Defenseur[35] = OBJECTIF_Mission_2013_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2013_Def.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2013_Def.Score_ObjS) >= 15)
                 {
                     ID_Cape_Defenseur[s] = 2013;
@@ -12266,108 +12369,143 @@ namespace CPV9
                 }
                 TextBlock_ObjS_2013_Def.Text = Convert.ToString(OBJECTIF_Mission_2013_Def.Score_ObjS);
             }
-            
 
-            ///CALCUL SCORE OBJECTIF MISSION 2021           
-            Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Def;
-            OBJECTIF_Mission_2021_Def = new Classe_Score_OBJM_2021(CheckBox_ObjS_2021_Def_T1_Etat, CheckBox_ObjS_2021_Def_T2_Etat, CheckBox_ObjS_2021_Def_T3_Etat, CheckBox_ObjS_2021_Def_T4_Etat, CheckBox_ObjS_2021_Def_T5_Etat, CheckBox_ObjS_2021_Def_Fin_Etat);
-            Scores_Defenseur[36] = OBJECTIF_Mission_2021_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2021_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2021            
+            if (format == 2021)
             {
-                ID_Cape_Defenseur[s] = 2021;
-                s++;
+                Classe_Score_OBJM_2021 OBJECTIF_Mission_2021_Def;
+                OBJECTIF_Mission_2021_Def = new Classe_Score_OBJM_2021(CheckBox_ObjS_2021_Def_T1_Etat, CheckBox_ObjS_2021_Def_T2_Etat, CheckBox_ObjS_2021_Def_T3_Etat, CheckBox_ObjS_2021_Def_T4_Etat, CheckBox_ObjS_2021_Def_T5_Etat, CheckBox_ObjS_2021_Def_Fin_Etat);
+                Scores_Defenseur[36] = OBJECTIF_Mission_2021_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2021_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2021_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2021;
+                    s++;
+                }
+                TextBlock_ObjS_2021_Def.Text = Convert.ToString(OBJECTIF_Mission_2021_Def.Score_ObjS);
             }
-            TextBlock_ObjS_2021_Def.Text = Convert.ToString(OBJECTIF_Mission_2021_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2022           
-            Classe_Score_OBJM_2022 OBJECTIF_Mission_2022_Def;
-            OBJECTIF_Mission_2022_Def = new Classe_Score_OBJM_2022(CheckBox_ObjS_2022_Def_T1_ZDDE_Etat, CheckBox_ObjS_2022_Def_T1_NML_Etat, CheckBox_ObjS_2022_Def_T1_ZDDA_Etat, CheckBox_ObjS_2022_Def_T2_ZDDE_Etat, CheckBox_ObjS_2022_Def_T2_NML_Etat, CheckBox_ObjS_2022_Def_T2_ZDDA_Etat, CheckBox_ObjS_2022_Def_T3_ZDDE_Etat, CheckBox_ObjS_2022_Def_T3_NML_Etat, CheckBox_ObjS_2022_Def_T3_ZDDA_Etat, CheckBox_ObjS_2022_Def_T4_ZDDE_Etat, CheckBox_ObjS_2022_Def_T4_NML_Etat, CheckBox_ObjS_2022_Def_T4_ZDDA_Etat, CheckBox_ObjS_2022_Def_T5_ZDDE_Etat, CheckBox_ObjS_2022_Def_T5_NML_Etat, CheckBox_ObjS_2022_Def_T5_ZDDA_Etat);
-            Scores_Defenseur[37] = OBJECTIF_Mission_2022_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2022_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2022            
+            if (format == 2022)
             {
-                ID_Cape_Defenseur[s] = 2022;
-                s++;
+                Classe_Score_OBJM_2022 OBJECTIF_Mission_2022_Def;
+                OBJECTIF_Mission_2022_Def = new Classe_Score_OBJM_2022(CheckBox_ObjS_2022_Def_T1_ZDDE_Etat, CheckBox_ObjS_2022_Def_T1_NML_Etat, CheckBox_ObjS_2022_Def_T1_ZDDA_Etat, CheckBox_ObjS_2022_Def_T2_ZDDE_Etat, CheckBox_ObjS_2022_Def_T2_NML_Etat, CheckBox_ObjS_2022_Def_T2_ZDDA_Etat, CheckBox_ObjS_2022_Def_T3_ZDDE_Etat, CheckBox_ObjS_2022_Def_T3_NML_Etat, CheckBox_ObjS_2022_Def_T3_ZDDA_Etat, CheckBox_ObjS_2022_Def_T4_ZDDE_Etat, CheckBox_ObjS_2022_Def_T4_NML_Etat, CheckBox_ObjS_2022_Def_T4_ZDDA_Etat, CheckBox_ObjS_2022_Def_T5_ZDDE_Etat, CheckBox_ObjS_2022_Def_T5_NML_Etat, CheckBox_ObjS_2022_Def_T5_ZDDA_Etat);
+                Scores_Defenseur[37] = OBJECTIF_Mission_2022_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2022_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2022_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2022;
+                    s++;
+                }
+                TextBlock_ObjS_2022_Def.Text = Convert.ToString(OBJECTIF_Mission_2022_Def.Score_ObjS);
             }
-            TextBlock_ObjS_2022_Def.Text = Convert.ToString(OBJECTIF_Mission_2022_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2023         
-            Classe_Score_OBJM_2023 OBJECTIF_Mission_2023_Def;
-            OBJECTIF_Mission_2023_Def = new Classe_Score_OBJM_2023(CheckBox_ObjS_2023_Def_A1_Etat, CheckBox_ObjS_2023_Def_A2_Etat, CheckBox_ObjS_2023_Def_B3_Etat, CheckBox_ObjS_2023_Def_B4_Etat, CheckBox_ObjS_2023_Def_5_Etat);
-            Scores_Defenseur[38] = OBJECTIF_Mission_2023_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2023_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2023            
+            if (format == 2023)
             {
-                ID_Cape_Defenseur[s] = 2023;
-                s++;
+                Classe_Score_OBJM_2023 OBJECTIF_Mission_2023_Def;
+                OBJECTIF_Mission_2023_Def = new Classe_Score_OBJM_2023(CheckBox_ObjS_2023_Def_A1_Etat, CheckBox_ObjS_2023_Def_A2_Etat, CheckBox_ObjS_2023_Def_B3_Etat, CheckBox_ObjS_2023_Def_B4_Etat, CheckBox_ObjS_2023_Def_5_Etat);
+                Scores_Defenseur[38] = OBJECTIF_Mission_2023_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2023_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2023_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2023;
+                    s++;
+                }
+                TextBlock_ObjS_2023_Def.Text = Convert.ToString(OBJECTIF_Mission_2023_Def.Score_ObjS);
             }
-            TextBlock_ObjS_2023_Def.Text = Convert.ToString(OBJECTIF_Mission_2023_Def.Score_ObjS);
 
             ///CALCUL SCORE OBJECTIF MISSION 2031            
+            if (format == 2031)
+            {
                 Classe_Score_OBJM_2031 OBJECTIF_Mission_2031_Def;
                 OBJECTIF_Mission_2031_Def = new Classe_Score_OBJM_2031(CheckBox_ObjS_2031_Def_T1_Etat, CheckBox_ObjS_2031_Def_T2_Etat, CheckBox_ObjS_2031_Def_T3_Etat, CheckBox_ObjS_2031_Def_T4_Etat, TextBox_ObjS_2031_Def_Fin.Text, CheckBox_ObjS_2031_Def_Fin_Etat);
                 Scores_Defenseur[39] = OBJECTIF_Mission_2031_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2031_Def.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Mission_2031_Def.Score_ObjS) >= 8)
                 {
                     ID_Cape_Defenseur[s] = 2031;
                     s++;
                 }
-                TextBlock_ObjS_2031_Def.Text = Convert.ToString(OBJECTIF_Mission_2031_Def.Score_ObjS);                    
-
-            ///CALCUL SCORE OBJECTIF MISSION 2032        
-            Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Def;
-            OBJECTIF_Mission_2032_Def = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Def_Obj1_Etat, CheckBox_ObjS_2032_Def_Obj2_Etat, CheckBox_ObjS_2032_Def_Obj3_Etat, CheckBox_ObjS_2032_Def_Obj4_Etat, CheckBox_ObjS_2032_Def_Obj5_Etat, CheckBox_ObjS_2032_Def_E1_Etat, CheckBox_ObjS_2032_Def_E2_Etat, CheckBox_ObjS_2032_Def_E3_Etat, CheckBox_ObjS_2032_Def_E4_Etat, CheckBox_ObjS_2032_Def_E5_Etat);
-            Scores_Defenseur[40] = OBJECTIF_Mission_2032_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2032_Def.Score_ObjS) >= 15)
-            {
-                ID_Cape_Defenseur[s] = 2032;
-                s++;
+                TextBlock_ObjS_2031_Def.Text = Convert.ToString(OBJECTIF_Mission_2031_Def.Score_ObjS);
             }
-            TextBlock_ObjS_2032_Def.Text = Convert.ToString(OBJECTIF_Mission_2032_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 2033        
-            Classe_Score_OBJM_2033 OBJECTIF_Mission_2033_Def;
-            OBJECTIF_Mission_2033_Def = new Classe_Score_OBJM_2033(CheckBox_ObjS_2033_Def_Obj1_Etat, CheckBox_ObjS_2033_Def_Obj2_Etat, CheckBox_ObjS_2033_Def_Obj3_Etat, CheckBox_ObjS_2033_Def_Obj4_Etat, CheckBox_ObjS_2033_Def_Obj5_Etat);
-            Scores_Defenseur[41] = OBJECTIF_Mission_2033_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_2033_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 2032            
+            if (format == 2032)
             {
-                ID_Cape_Defenseur[s] = 2033;
-                s++;
+                Classe_Score_OBJM_2032 OBJECTIF_Mission_2032_Def;
+                OBJECTIF_Mission_2032_Def = new Classe_Score_OBJM_2032(CheckBox_ObjS_2032_Def_Obj1_Etat, CheckBox_ObjS_2032_Def_Obj2_Etat, CheckBox_ObjS_2032_Def_Obj3_Etat, CheckBox_ObjS_2032_Def_Obj4_Etat, CheckBox_ObjS_2032_Def_Obj5_Etat, CheckBox_ObjS_2032_Def_E1_Etat, CheckBox_ObjS_2032_Def_E2_Etat, CheckBox_ObjS_2032_Def_E3_Etat, CheckBox_ObjS_2032_Def_E4_Etat, CheckBox_ObjS_2032_Def_E5_Etat);
+                Scores_Defenseur[40] = OBJECTIF_Mission_2032_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2032_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2032_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2032;
+                    s++;
+                }
+                TextBlock_ObjS_2032_Def.Text = Convert.ToString(OBJECTIF_Mission_2032_Def.Score_ObjS);
             }
-            TextBlock_ObjS_2033_Def.Text = Convert.ToString(OBJECTIF_Mission_2033_Def.Score_ObjS);
+
+            ///CALCUL SCORE OBJECTIF MISSION 2033            
+            if (format == 2033)
+            {
+                Classe_Score_OBJM_2033 OBJECTIF_Mission_2033_Def;
+                OBJECTIF_Mission_2033_Def = new Classe_Score_OBJM_2033(CheckBox_ObjS_2033_Def_Obj1_Etat, CheckBox_ObjS_2033_Def_Obj2_Etat, CheckBox_ObjS_2033_Def_Obj3_Etat, CheckBox_ObjS_2033_Def_Obj4_Etat, CheckBox_ObjS_2033_Def_Obj5_Etat);
+                Scores_Defenseur[41] = OBJECTIF_Mission_2033_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_2033_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_2033_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 2033;
+                    s++;
+                }
+                TextBlock_ObjS_2033_Def.Text = Convert.ToString(OBJECTIF_Mission_2033_Def.Score_ObjS);
+            }
 
             #endregion
             #region Calcul_Objectif_Missions_Offensive_3001_3003
-            ///CALCUL SCORE OBJECTIF MISSION 3001     
-            Classe_Score_OBJM_3001 OBJECTIF_Mission_3001_Def;
-            OBJECTIF_Mission_3001_Def = new Classe_Score_OBJM_3001(CheckBox_ObjS_3001_Def_R2_Etat, TextBox_ObjS_3001_Def_R2_Fig_Amis.Text, TextBox_ObjS_3001_Def_R2_Fig_Ennemies.Text, CheckBox_ObjS_3001_Def_R3_Etat, TextBox_ObjS_3001_Def_R3_Fig_Amis.Text, TextBox_ObjS_3001_Def_R3_Fig_Ennemies.Text, CheckBox_ObjS_3001_Def_R4_Etat, TextBox_ObjS_3001_Def_R4_Fig_Amis.Text, TextBox_ObjS_3001_Def_R4_Fig_Ennemies.Text, CheckBox_ObjS_3001_Def_R5_Etat, TextBox_ObjS_3001_Def_R5_Fig_Amis.Text, TextBox_ObjS_3001_Def_R5_Fig_Ennemies.Text);
-            Scores_Defenseur[42] = OBJECTIF_Mission_3001_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_3001_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 3001            
+            if (format == 3001)
             {
-                ID_Cape_Defenseur[s] = 3001;
-                s++;
+                Classe_Score_OBJM_3001 OBJECTIF_Mission_3001_Def;
+                OBJECTIF_Mission_3001_Def = new Classe_Score_OBJM_3001(CheckBox_ObjS_3001_Def_R2_Etat, TextBox_ObjS_3001_Def_R2_Fig_Amis.Text, TextBox_ObjS_3001_Def_R2_Fig_Ennemies.Text, CheckBox_ObjS_3001_Def_R3_Etat, TextBox_ObjS_3001_Def_R3_Fig_Amis.Text, TextBox_ObjS_3001_Def_R3_Fig_Ennemies.Text, CheckBox_ObjS_3001_Def_R4_Etat, TextBox_ObjS_3001_Def_R4_Fig_Amis.Text, TextBox_ObjS_3001_Def_R4_Fig_Ennemies.Text, CheckBox_ObjS_3001_Def_R5_Etat, TextBox_ObjS_3001_Def_R5_Fig_Amis.Text, TextBox_ObjS_3001_Def_R5_Fig_Ennemies.Text);
+                Scores_Defenseur[42] = OBJECTIF_Mission_3001_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_3001_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_3001_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 3001;
+                    s++;
+                }
+                TextBlock_ObjS_3001_Def.Text = Convert.ToString(OBJECTIF_Mission_3001_Def.Score_ObjS);
             }
-            TextBlock_ObjS_3001_Def.Text = Convert.ToString(OBJECTIF_Mission_3001_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 3002     
-            Classe_Score_OBJM_3002 OBJECTIF_Mission_3002_Def;
-            OBJECTIF_Mission_3002_Def = new Classe_Score_OBJM_3002(CheckBox_ObjS_3002_Def_R2_Etat, TextBox_ObjS_3002_Def_R2_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R3_Etat, TextBox_ObjS_3002_Def_R3_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R4_Etat, TextBox_ObjS_3002_Def_R4_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R5_Etat, TextBox_ObjS_3002_Def_R5_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R6_Etat, TextBox_ObjS_3002_Def_R6_ObjB_Ennemies.Text);
-            Scores_Defenseur[43] = OBJECTIF_Mission_3002_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_3002_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 3002            
+            if (format == 3002)
             {
-                ID_Cape_Defenseur[s] = 3002;
-                s++;
+                Classe_Score_OBJM_3002 OBJECTIF_Mission_3002_Def;
+                OBJECTIF_Mission_3002_Def = new Classe_Score_OBJM_3002(CheckBox_ObjS_3002_Def_R2_Etat, TextBox_ObjS_3002_Def_R2_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R3_Etat, TextBox_ObjS_3002_Def_R3_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R4_Etat, TextBox_ObjS_3002_Def_R4_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R5_Etat, TextBox_ObjS_3002_Def_R5_ObjB_Ennemies.Text, CheckBox_ObjS_3002_Def_R6_Etat, TextBox_ObjS_3002_Def_R6_ObjB_Ennemies.Text);
+                Scores_Defenseur[43] = OBJECTIF_Mission_3002_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_3002_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_3002_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 3002;
+                    s++;
+                }
+                TextBlock_ObjS_3002_Def.Text = Convert.ToString(OBJECTIF_Mission_3002_Def.Score_ObjS);
             }
-            TextBlock_ObjS_3002_Def.Text = Convert.ToString(OBJECTIF_Mission_3002_Def.Score_ObjS);
 
-            ///CALCUL SCORE OBJECTIF MISSION 3003
-            Classe_Score_OBJM_3003 OBJECTIF_Mission_3003_Def;
-            OBJECTIF_Mission_3003_Def = new Classe_Score_OBJM_3003(CheckBox_ObjS_3003_Def_R2_Etat, TextBox_ObjS_3003_Def_R2_ObjA.Text, CheckBox_ObjS_3003_Def_R3_Etat, TextBox_ObjS_3003_Def_R3_ObjA.Text, CheckBox_ObjS_3003_Def_R4_Etat, TextBox_ObjS_3003_Def_R4_ObjA.Text, CheckBox_ObjS_3003_Def_R5_Etat, TextBox_ObjS_3003_Def_R5_ObjA.Text);
-            Scores_Defenseur[44] = OBJECTIF_Mission_3003_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Mission_3003_Def.Score_ObjS) >= 15)
+            ///CALCUL SCORE OBJECTIF MISSION 3003            
+            if (format == 3003)
             {
-                ID_Cape_Defenseur[s] = 3003;
-                s++;
+                Classe_Score_OBJM_3003 OBJECTIF_Mission_3003_Def;
+                OBJECTIF_Mission_3003_Def = new Classe_Score_OBJM_3003(CheckBox_ObjS_3003_Def_R2_Etat, TextBox_ObjS_3003_Def_R2_ObjA.Text, CheckBox_ObjS_3003_Def_R3_Etat, TextBox_ObjS_3003_Def_R3_ObjA.Text, CheckBox_ObjS_3003_Def_R4_Etat, TextBox_ObjS_3003_Def_R4_ObjA.Text, CheckBox_ObjS_3003_Def_R5_Etat, TextBox_ObjS_3003_Def_R5_ObjA.Text);
+                Scores_Defenseur[44] = OBJECTIF_Mission_3003_Def.Scores_Joueur;
+                score_Principal_B_Def += OBJECTIF_Mission_3003_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Mission_3003_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 3003;
+                    s++;
+                }
+                TextBlock_ObjS_3003_Def.Text = Convert.ToString(OBJECTIF_Mission_3003_Def.Score_ObjS);
             }
-            TextBlock_ObjS_3003_Def.Text = Convert.ToString(OBJECTIF_Mission_3003_Def.Score_ObjS);
             #endregion
             #endregion
 

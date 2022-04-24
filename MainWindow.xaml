@@ -297,15 +297,20 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <StackPanel x:Name="StackPanel_Cape_Player_1" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Visibility="Collapsed">
-            <Label x:Name="Label_Cape_Player_Attaquant_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Attaquant_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Attaquant_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Attaquant_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Attaquant_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Attaquant_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+        <StackPanel x:Name="StackPanel_Cape_Player_1" Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Width="Auto" Background="#99FDFDFD" Visibility="collapsed">
+            <StackPanel HorizontalAlignment="Center" Margin="-15,-5,-15,-5" VerticalAlignment="Center" Height="Auto" Width="Auto">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Image_Cadre_noir.png" TileMode="Tile"/>
+                </StackPanel.Background>
+                <Label x:Name="Label_Cape_Player_Attaquant_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,20,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Attaquant_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Attaquant_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Attaquant_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Attaquant_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Attaquant_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,30" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+            </StackPanel>
         </StackPanel>
-        <!--#endregion-->
+         <!--#endregion-->
 
         <!--#region Affichage Defenseur -->
         <TextBlock x:Name="TextBlock_Nom_Player_2" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="3" FontFamily="/CPV9;component/Polices/#INFECTED" Visibility="Collapsed" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="Auto" >
@@ -348,13 +353,18 @@
                 </LinearGradientBrush>
             </TextBlock.Foreground>
         </TextBlock>
-        <StackPanel x:Name="StackPanel_Cape_Player_2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0" Height="Auto" Width="Auto" Visibility="Collapsed">
-            <Label x:Name="Label_Cape_Player_Defenseur_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Defenseur_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Defenseur_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Defenseur_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Defenseur_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            <Label x:Name="Label_Cape_Player_Defenseur_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+        <StackPanel x:Name="StackPanel_Cape_Player_2" Margin="0,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Top" Height="Auto" Width="Auto" Background="#99FDFDFD" Visibility="Collapsed">
+            <StackPanel HorizontalAlignment="Center" Margin="-15,-5,-15,-5" VerticalAlignment="Center" Height="Auto" Width="Auto">
+                <StackPanel.Background>
+                    <ImageBrush ImageSource="Image_Cadre_noir.png" TileMode="Tile"/>
+                </StackPanel.Background>
+                <Label x:Name="Label_Cape_Player_Defenseur_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,20,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Defenseur_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Defenseur_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Defenseur_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Defenseur_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,0" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Cape_Player_Defenseur_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30,0,30,30" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+            </StackPanel>
         </StackPanel>
         <!--#endregion-->
 
@@ -3534,7 +3544,7 @@
         </StackPanel>
         
         
-        <StackPanel x:Name="StackPanel_PTS_Defenseur" HorizontalAlignment="Left" Height="Auto" Margin="10,20,100,60" VerticalAlignment="top" Width="Auto" Orientation="Vertical" Background="#B2FFFFFF" Visibility="visible">
+        <StackPanel x:Name="StackPanel_PTS_Defenseur" HorizontalAlignment="Left" Height="Auto" Margin="10,20,100,60" VerticalAlignment="top" Width="Auto" Orientation="Vertical" Background="#B2FFFFFF" Visibility="Collapsed">
             <!--# OBJP -->
             <StackPanel Width="auto" Height="auto" Margin="15,15,15,15" HorizontalAlignment="Right">
                 <Label x:Name="Label_Objectif_Principal_Def" Content="OBJECTIFS PRINCIPAUX" FontFamily="Arial Black" FontSize="14" HorizontalAlignment="Left" FontWeight="Bold" Foreground="DarkBlue" FontStyle="Italic" Margin="0" BorderThickness="2" BorderBrush="DarkBlue"/>
