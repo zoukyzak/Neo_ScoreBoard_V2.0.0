@@ -82,6 +82,11 @@
             if (Choix_ObjS == 138) { text_Objectif = "138-Prenez les morceaux d'choix , "; };
             if (Choix_ObjS == 139) { text_Objectif = "139-Marée verte , "; };
 
+            /**  TYRANIDS **/
+            if (Choix_ObjS == 140) { text_Objectif = "140-Perspicacité synaptique , "; };
+            if (Choix_ObjS == 141) { text_Objectif = "141-Nodules de spores , "; };
+            if (Choix_ObjS == 142) { text_Objectif = "142-Festin crânien , "; };
+
             /**  PATROUILLE  **/
             if (Choix_ObjS == 501) { text_Objectif = "501-Assaut chirurgical , "; };
             if (Choix_ObjS == 502) { text_Objectif = "502-Sondage , "; };

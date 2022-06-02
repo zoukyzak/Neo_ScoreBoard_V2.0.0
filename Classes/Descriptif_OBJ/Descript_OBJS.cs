@@ -442,6 +442,46 @@
                     break;
 
                 #endregion
+                #region OBJC Tyranids
+                case 140:
+                    l1 = "PERSPICACITE SYNAPTIQUE";
+                    l2 = "Si vous choississez cette objectif , tenez un compte Tuerie Synaptique. Ramenez ce compte a 0 au debut de chaque round.";
+                    l3 = "Chaque fois qu'une figurine ennemie ( hors figurine de transport assigné ) est détruite par une figurine synapse de votre armée:";
+                    l5 = "- Si la figurine ennemie avait une characteristique de PV entre 3 et 5 , ajoutez 1 à votre compte de tuerie synaptique.";
+                    l7 = "- Si la figurine ennemie avait une characteristique de PV entre 6 et 9 , ajoutez 2 à votre compte de tuerie synaptique.";
+                    l9 = "- Si la figurine ennemie avait une characteristique de PV de 10 ou plus , ajoutez 3 à votre compte de tuerie synaptique.";
+                    l11 = "Marquez 3 points de victoire à la fin du round , si votre compte est de 4 ou plus";
+                    l13 = "Vous ne pouvez pas marquer plus de 12 points de victoire avec cet objectif.";
+                    break;
+
+                case 141:
+                    l1 = "NODULES DE SPORES";
+                    l3 = "Marquez 4 points de victoire chaque fois qu'une unité de votre armée accomplit l'action suivante : ";
+                    l5 = "SEMER DES NODULES DE SPORES ( Action ) :";
+                    l6 = "1 unité de troupes de votre armée peut entreprendre cette action à la fin de votre phase de mouvement à partir du deuxieme round de bataille";
+                    l7 = "si elle est à 6 pouces de la zone de déploiement adverse et à plus de 6 pouces de tout pions objectif de nodules de spores.";
+                    l8 = "L'action est accomplit à la fin de votre tour.";
+                    l9 = "Si cette action est accomplit , placer un pion objectif n'importe ou entièrement dans la zone de déploiement adverse";
+                    l10 = " et à 1 pouce de l'unitée qui a accomplit cette action .";
+                    l12 = "Ce pion objectif représente unnodules de spores , mais ne compte pas comme un pion objectif en termes de régles autres ";
+                    l11 = "qu'au regard de cette objectif secondaire .";
+                    break;
+
+                case 142:
+                    l1 = "FESTIN CRANIEN";
+                    l3 = "Chaque fois qu'une figurine PERSONNAGE ennmie ou champion d'unité ennemi ,";
+                    l4 = "est détruite par ne attaque de mélée d'une figurine VRILLE DE RUCHE de votre armée , jeter un D6 ,";
+                    l5 = "en ajoutant 2 au jet si la figurine Vrille de Ruche a le mot-clé Vrilles Sensitives,";
+                    l6 = "et en ajoutant 2 au jet si la figurine détruite & le mot-clé Personnage : ";
+                    l8 = "Sur un 6+ , vous gagnez un point de commandement ( jusqu'à un maximum de 1 pts de commanementt par round ).";
+                    l10 = "A la fin de la bataille : ";
+                    l11 = "- Marquez 3 points de victoire si vous avez gagné 1 PC ou plus durant la bataille grâce à cet objectif.";
+                    l12 = "- Marquez 1 point de victoire pour chaque figurine Personnage ennemi et chaque Champion  d'unité ennemie";
+                    l13 = "qui as été détruite par une attaque de mêlée d'une figurine Vrille de ruche   de votre armée.";
+                    l14 = "- Marquez 3 points de victoire si le Seigneur de Guerre ennemi à été détruit par une attaque de mêlée d'une figurine Vrille de ruche de votre armée..";
+                    break;
+
+                #endregion
                 #region OBJM patrouille
                 case 501:
                     l1 = "ASSAUT CHIRURGICAL";

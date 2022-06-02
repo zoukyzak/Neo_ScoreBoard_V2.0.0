@@ -89,6 +89,12 @@ namespace CPV9.Classes
             if (ID_cape == 137) { Cape_Selected = "137-Les plus gros et les plus mieux capé"; };
             if (ID_cape == 138) { Cape_Selected = "138-Prenez les morceaux d'choix capé"; };
             if (ID_cape == 139) { Cape_Selected = "139-Marée verte capé"; };
+            
+            /**  Codex Tyranids  **/
+            if (ID_cape == 140) { Cape_Selected = "140-Perspicacité synaptique"; };
+            if (ID_cape == 141) { Cape_Selected = "141-Nodules de spores"; };
+            if (ID_cape == 142) { Cape_Selected = "142-Festin crânien"; };
+
             #endregion
             #region OBJ MISSION
             /**  PATROUILLE  **/
