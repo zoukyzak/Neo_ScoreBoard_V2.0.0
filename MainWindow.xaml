@@ -3534,28 +3534,53 @@
                         <Label x:Name="Label_Objectif_Sec_Att_140C" Content="fig ennemie détruite :  3/5 pv = 1 ; 6/9 pv = 2 ; 10+ pv = 3 ;" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         <StackPanel x:Name="StackPanel_ObjS_140B_Att" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                            <Label x:Name="Label_Objectif_Sec_Att_140D" Content="Nombres de points de tuerie : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140C_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Att_140D" Content="    " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <Label x:Name="Label_Objectif_Sec_Att_140E" Content="Nombres de figurines de 3 à 5 pv détruites : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <Label x:Name="Label_Objectif_Sec_Att_140F" Content="Nombres de figurines de 6 à 9 pv détruites : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <Label x:Name="Label_Objectif_Sec_Att_140G" Content="Nombres de figurines de plus de 9 pv détruites : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_140E" Content=" Tour 1 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Att_E1" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140D_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Att_140I" Content=" Tour 1 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E1A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E1B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E1C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_140F" Content=" Tour 2 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Att_E2" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140E_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Att_140J" Content=" Tour 2 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E2A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E2B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E2C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140D" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_140G" Content=" Tour 3 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Att_E3" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140F_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Att_140K" Content=" Tour 3 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E3A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E3B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E3C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140E" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_140H" Content=" Tour 4 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Att_E4" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140G_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Att_140L" Content=" Tour 4 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E4A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E4B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E4C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140F" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_140I" Content=" Tour 5 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Att_E5" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140H_Att" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Att_140M" Content=" Tour 5 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E5A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E5B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Att_E5C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140G" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                         <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                            <Label x:Name="Label_Objectif_Sec_Att_140J" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_140N" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                             <TextBlock x:Name="TextBlock_ObjS_140_Att" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_140K" Content="/12" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_140O" Content="/12" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_140H" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                     </StackPanel>
@@ -6755,28 +6780,53 @@
                         <Label x:Name="Label_Objectif_Sec_Def_140C" Content="fig ennemie détruite :  3/5 pv = 1 ; 6/9 pv = 2 ; 10+ pv = 3 ;" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         <StackPanel x:Name="StackPanel_ObjS_140B_Def" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                            <Label x:Name="Label_Objectif_Sec_Def_140D" Content="Nombres de points de tuerie : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140C_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Def_140D" Content="    " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <Label x:Name="Label_Objectif_Sec_Def_140E" Content="Nombres de figurines de 3 à 5 pv détruites : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <Label x:Name="Label_Objectif_Sec_Def_140F" Content="Nombres de figurines de 6 à 9 pv détruites : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <Label x:Name="Label_Objectif_Sec_Def_140G" Content="Nombres de figurines de plus de 9 pv détruites : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_140E" Content=" Tour 1 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Def_E1" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140D_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Def_140I" Content=" Tour 1 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E1A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E1B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E1C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_140F" Content=" Tour 2 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Def_E2" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140E_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Def_140J" Content=" Tour 2 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E2A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E2B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E2C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140D" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_140G" Content=" Tour 3 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Def_E3" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140F_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Def_140K" Content=" Tour 3 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E3A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E3B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E3C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140E" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_140H" Content=" Tour 4 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Def_E4" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140G_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Def_140L" Content=" Tour 4 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E4A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E4B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E4C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140F" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_140I" Content=" Tour 5 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_140_Def_E5" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <StackPanel x:Name="StackPanel_ObjS_140H_Def" Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
+                                <Label x:Name="Label_Objectif_Sec_Def_140M" Content=" Tour 5 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E5A" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E5B" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                                <TextBox x:Name="TextBox_ObjS_140_Def_E5C" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            </StackPanel>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140G" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                         <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                            <Label x:Name="Label_Objectif_Sec_Def_140J" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_140N" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                             <TextBlock x:Name="TextBlock_ObjS_140_Def" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_140K" Content="/12" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_140O" Content="/12" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_140H" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                     </StackPanel>

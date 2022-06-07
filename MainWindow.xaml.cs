@@ -1600,11 +1600,21 @@ namespace CPV9
             #endregion
             #region INIT_OBJ_ATTAQUANT_CODEX_TYRANIDS
             /// OBJECTIF SECONDAIRE 140 PERSPICACITE SYNAPTIQUE
-            TextBox_ObjS_140_Att_E1.Clear();
-            TextBox_ObjS_140_Att_E2.Clear();
-            TextBox_ObjS_140_Att_E3.Clear();
-            TextBox_ObjS_140_Att_E4.Clear();
-            TextBox_ObjS_140_Att_E5.Clear();            
+            TextBox_ObjS_140_Att_E1A.Clear();
+            TextBox_ObjS_140_Att_E1B.Clear();
+            TextBox_ObjS_140_Att_E1C.Clear();
+            TextBox_ObjS_140_Att_E2A.Clear();
+            TextBox_ObjS_140_Att_E2B.Clear();
+            TextBox_ObjS_140_Att_E2C.Clear();
+            TextBox_ObjS_140_Att_E3A.Clear();
+            TextBox_ObjS_140_Att_E3B.Clear();
+            TextBox_ObjS_140_Att_E3C.Clear();
+            TextBox_ObjS_140_Att_E4A.Clear();
+            TextBox_ObjS_140_Att_E4B.Clear();
+            TextBox_ObjS_140_Att_E4C.Clear();
+            TextBox_ObjS_140_Att_E5A.Clear();            
+            TextBox_ObjS_140_Att_E5B.Clear();
+            TextBox_ObjS_140_Att_E5C.Clear();            
             #endregion
             #endregion
             #region INIT_OBJ_ATTAQUANT_FORMAT
@@ -2186,11 +2196,21 @@ namespace CPV9
             #endregion
             #region INIT_OBJ_DEFENSEUR_CODEX_TYRANIDS
             /// OBJECTIF SECONDAIRE 140 PERSPICACITE SYNAPTIQUE
-            TextBox_ObjS_140_Def_E1.Clear();
-            TextBox_ObjS_140_Def_E2.Clear();
-            TextBox_ObjS_140_Def_E3.Clear();
-            TextBox_ObjS_140_Def_E4.Clear();
-            TextBox_ObjS_140_Def_E5.Clear();
+            TextBox_ObjS_140_Def_E1A.Clear();
+            TextBox_ObjS_140_Def_E1B.Clear();
+            TextBox_ObjS_140_Def_E1C.Clear();
+            TextBox_ObjS_140_Def_E2A.Clear();
+            TextBox_ObjS_140_Def_E2B.Clear();
+            TextBox_ObjS_140_Def_E2C.Clear();
+            TextBox_ObjS_140_Def_E3A.Clear();
+            TextBox_ObjS_140_Def_E3B.Clear();
+            TextBox_ObjS_140_Def_E3C.Clear();
+            TextBox_ObjS_140_Def_E4A.Clear();
+            TextBox_ObjS_140_Def_E4B.Clear();
+            TextBox_ObjS_140_Def_E4C.Clear();
+            TextBox_ObjS_140_Def_E5A.Clear();
+            TextBox_ObjS_140_Def_E5B.Clear();
+            TextBox_ObjS_140_Def_E5C.Clear();
             #endregion
             #endregion
             #region INIT_OBJ_DEFENSEUR_FORMAT
@@ -3229,11 +3249,21 @@ namespace CPV9
             #region Transfert_Donnees_To_Mem_Attaquant_Codex_Tyranids
             /// OBJECTIF SECONDAIRE 140
             n = 0;
-            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E1.Text; n++;
-            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E2.Text; n++;
-            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E3.Text; n++;
-            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E4.Text; n++;
-            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E5.Text;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E1A.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E1B.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E1C.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E2A.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E2B.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E2C.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E3A.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E3B.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E3C.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E4A.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E4B.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E4C.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E5A.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E5B.Text; n++;
+            Mem_Saisie_Attaquant[n, 79] = TextBox_ObjS_140_Att_E5C.Text;
             
             #endregion
             #endregion
@@ -3875,11 +3905,21 @@ namespace CPV9
             #region Transfert_Donnees_To_Mem_Defenseur_Codex_Tyranids
             /// OBJECTIF SECONDAIRE 140
             n = 0;
-            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E1.Text; n++;
-            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E2.Text; n++;
-            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E3.Text; n++;
-            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E4.Text; n++;
-            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E5.Text;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E1A.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E1B.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E1C.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E2A.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E2B.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E2C.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E3A.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E3B.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E3C.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E4A.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E4B.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E4C.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E5A.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E5B.Text; n++;
+            Mem_Saisie_Defenseur[n, 79] = TextBox_ObjS_140_Def_E5C.Text;
 
             #endregion
             #endregion
@@ -5402,11 +5442,21 @@ namespace CPV9
             #region Transfert_Donnees_To_Attaqant_Codex_Tyranids
             /// OBJECTIF SECONDAIRE 140
             n = 0;
-            TextBox_ObjS_140_Att_E1.Text = Mem_Saisie_Attaquant[n, 79]; n++;
-            TextBox_ObjS_140_Att_E2.Text = Mem_Saisie_Attaquant[n, 79]; n++;
-            TextBox_ObjS_140_Att_E3.Text = Mem_Saisie_Attaquant[n, 79]; n++;
-            TextBox_ObjS_140_Att_E4.Text = Mem_Saisie_Attaquant[n, 79]; n++;
-            TextBox_ObjS_140_Att_E5.Text = Mem_Saisie_Attaquant[n, 79];            
+            TextBox_ObjS_140_Att_E1A.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E1B.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E1C.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E2A.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E2B.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E2C.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E3A.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E3B.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E3C.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E4A.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E4B.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E4C.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E5A.Text = Mem_Saisie_Attaquant[n, 79]; n++;            
+            TextBox_ObjS_140_Att_E5B.Text = Mem_Saisie_Attaquant[n, 79]; n++;
+            TextBox_ObjS_140_Att_E5C.Text = Mem_Saisie_Attaquant[n, 79];            
             #endregion
             #endregion
 
@@ -6920,11 +6970,21 @@ namespace CPV9
             #region Transfert_Donnees_To_Defenseur_Codex_Tyranids
             /// OBJECTIF SECONDAIRE 140
             n = 0;
-            TextBox_ObjS_140_Def_E1.Text = Mem_Saisie_Defenseur[n, 79]; n++;
-            TextBox_ObjS_140_Def_E2.Text = Mem_Saisie_Defenseur[n, 79]; n++;
-            TextBox_ObjS_140_Def_E3.Text = Mem_Saisie_Defenseur[n, 79]; n++;
-            TextBox_ObjS_140_Def_E4.Text = Mem_Saisie_Defenseur[n, 79]; n++;
-            TextBox_ObjS_140_Def_E5.Text = Mem_Saisie_Defenseur[n, 79];
+            TextBox_ObjS_140_Def_E1A.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E1B.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E1C.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E2A.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E2B.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E2C.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E3A.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E3B.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E3C.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E4A.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E4B.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E4C.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E5A.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E5B.Text = Mem_Saisie_Defenseur[n, 79]; n++;
+            TextBox_ObjS_140_Def_E5C.Text = Mem_Saisie_Defenseur[n, 79];
             #endregion
             #endregion
             #endregion
@@ -11868,7 +11928,7 @@ namespace CPV9
             #region Calcul_Objectif_Codex_Tyranids_140_142
             ///CALCUL SCORE OBJECTIF MISSION 140
             Classe_Score_OBJC_Tyranids_140 OBJECTIF_Codex_140_Att;
-            OBJECTIF_Codex_140_Att = new Classe_Score_OBJC_Tyranids_140(TextBox_ObjS_140_Att_E1.Text, TextBox_ObjS_140_Att_E2.Text, TextBox_ObjS_140_Att_E3.Text, TextBox_ObjS_140_Att_E4.Text, TextBox_ObjS_140_Att_E5.Text);
+            OBJECTIF_Codex_140_Att = new Classe_Score_OBJC_Tyranids_140(TextBox_ObjS_140_Att_E1A.Text, TextBox_ObjS_140_Att_E1B.Text, TextBox_ObjS_140_Att_E1C.Text, TextBox_ObjS_140_Att_E2A.Text, TextBox_ObjS_140_Att_E2B.Text, TextBox_ObjS_140_Att_E2C.Text, TextBox_ObjS_140_Att_E3A.Text, TextBox_ObjS_140_Att_E3B.Text, TextBox_ObjS_140_Att_E3C.Text, TextBox_ObjS_140_Att_E4A.Text, TextBox_ObjS_140_Att_E4B.Text, TextBox_ObjS_140_Att_E4C.Text, TextBox_ObjS_140_Att_E5A.Text, TextBox_ObjS_140_Att_E5B.Text, TextBox_ObjS_140_Att_E5C.Text);
             Scores_Attaquant[79] = OBJECTIF_Codex_140_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_140_Att.Score_ObjS) >= 12)
             {
@@ -12933,7 +12993,7 @@ namespace CPV9
             #region Calcul_Objectif_Codex_Tyranids_140_142
             ///CALCUL SCORE OBJECTIF MISSION 140
             Classe_Score_OBJC_Tyranids_140 OBJECTIF_Codex_140_Def;
-            OBJECTIF_Codex_140_Def = new Classe_Score_OBJC_Tyranids_140(TextBox_ObjS_140_Def_E1.Text, TextBox_ObjS_140_Def_E2.Text, TextBox_ObjS_140_Def_E3.Text, TextBox_ObjS_140_Def_E4.Text, TextBox_ObjS_140_Def_E5.Text);
+            OBJECTIF_Codex_140_Def = new Classe_Score_OBJC_Tyranids_140(TextBox_ObjS_140_Def_E1A.Text, TextBox_ObjS_140_Def_E1B.Text, TextBox_ObjS_140_Def_E1C.Text, TextBox_ObjS_140_Def_E2A.Text, TextBox_ObjS_140_Def_E2B.Text, TextBox_ObjS_140_Def_E2C.Text, TextBox_ObjS_140_Def_E3A.Text, TextBox_ObjS_140_Def_E3B.Text, TextBox_ObjS_140_Def_E3C.Text, TextBox_ObjS_140_Def_E4A.Text, TextBox_ObjS_140_Def_E4B.Text, TextBox_ObjS_140_Def_E4C.Text, TextBox_ObjS_140_Def_E5A.Text, TextBox_ObjS_140_Def_E5B.Text, TextBox_ObjS_140_Def_E5C.Text);
             Scores_Defenseur[79] = OBJECTIF_Codex_140_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_140_Def.Score_ObjS) >= 12)
             {
@@ -22711,26 +22771,59 @@ namespace CPV9
             Label_Objectif_Sec_Att_140E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_140F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_140G.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_140H.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_140I.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_140J.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_140K.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_140J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_140K.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_140L.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_140M.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_140N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_140O.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_140_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Att_E1.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Att_E1.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E1.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E2.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Att_E2.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E2.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E3.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Att_E3.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E3.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E4.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Att_E4.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E4.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E5.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Att_E5.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Att_E5.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E1A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E1A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E1A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E1B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E1B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E1B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E1C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E1C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E1C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E2A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E2A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E2A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E2B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E2B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E2B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E2C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E2C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E2C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E3A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E3A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E3A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E3B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E3B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E3B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E3C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E3C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E3C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E4A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E4A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E4A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E4B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E4B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E4B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E4C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E4C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E4C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E5A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E5A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E5A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E5B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E5B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E5B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E5C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Att_E5C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Att_E5C.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Att_140A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_140B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_140C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -25043,26 +25136,59 @@ namespace CPV9
             Label_Objectif_Sec_Def_140E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_140F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_140G.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_140H.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_140I.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_140J.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_140K.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_140J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_140K.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_140L.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_140M.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_140N.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_140O.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_140_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Def_E1.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Def_E1.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E1.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E2.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Def_E2.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E2.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E3.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Def_E3.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E3.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E4.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Def_E4.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E4.Height = Hauteur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E5.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_140_Def_E5.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_140_Def_E5.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E1A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E1A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E1A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E1B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E1B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E1B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E1C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E1C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E1C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E2A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E2A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E2A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E2B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E2B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E2B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E2C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E2C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E2C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E3A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E3A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E3A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E3B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E3B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E3B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E3C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E3C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E3C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E4A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E4A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E4A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E4B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E4B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E4B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E4C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E4C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E4C.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E5A.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E5A.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E5A.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E5B.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E5B.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E5B.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E5C.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_140_Def_E5C.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_140_Def_E5C.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Def_140A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_140B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_140C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
