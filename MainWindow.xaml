@@ -3619,6 +3619,38 @@
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_141G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                     </StackPanel>
+                    <StackPanel x:Name="StackPanel_ObjS_142_Att" Height="Auto" Orientation="Vertical" Margin="30,0,0,0" Visibility="Collapsed">
+                        <StackPanel x:Name="StackPanel_ObjS_142A_Att" Orientation="Horizontal" Margin="5,0">
+                            <Label x:Name="Label_Objectif_Sec_Att_142A" Content="142-FESTIN CRANIEN" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                            <Button x:Name="Button_Caché_ObjS_142_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_142_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                                <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Button>
+                            <Button x:Name="Button_Visible_ObjS_142_Att" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_142_Att_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                                <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Button>
+                            <Button x:Name="Button_Doc_ObjS_142_Att" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_142_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                                <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Button>
+                        </StackPanel>
+                        <Label x:Name="Label_Objectif_Sec_Att_142B" Content="Marquez 3 pts si vous gagnez au moins 1 PC durant la bataille , Marquez 3 pts i vous tuez le Seigneur de Guerre en attaque de mélée." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_142C" Content="Marquez 1 pts par figuirines Personnage ou Champion détruite en melée ( Vrille ruche )" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_142A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                        <StackPanel x:Name="StackPanel_ObjS_142B_Att" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                            <CheckBox x:Name="CheckBox_Objectif_Sec_Att_142_PC" Content=" Gagnez 1 PC " VerticalAlignment="Center" VerticalContentAlignment="Center" FlowDirection="RightToLeft" BorderBrush="#FF48F109" HorizontalAlignment="Center" Padding="0" Margin="10,3,5,0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" Click="CheckBox_Objectif_Sec_Att_142_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_142B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <CheckBox x:Name="CheckBox_Objectif_Sec_Att_142_SG" Content=" Tuer le Seigneur de Guerre " VerticalAlignment="Center" VerticalContentAlignment="Center" FlowDirection="RightToLeft" BorderBrush="#FF48F109" HorizontalAlignment="Center" Padding="0" Margin="10,3,5,0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" Click="CheckBox_Objectif_Sec_Att_142_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_142C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_142D" Content=" Nombres de Figurines Perso et Champion : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_142_Att_Fig" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_142D" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                        </StackPanel>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                            <Label x:Name="Label_Objectif_Sec_Att_142E" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <TextBlock x:Name="TextBlock_ObjS_142_Att" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_142F" Content="/15" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_142E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
                 <!--# OBJ Peinture -->
                 <StackPanel Orientation="Horizontal" Margin="5,0">
@@ -6898,6 +6930,38 @@
                             <TextBlock x:Name="TextBlock_ObjS_141_Def" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>
                             <Label x:Name="Label_Objectif_Sec_Def_141F" Content="/15" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_141G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel x:Name="StackPanel_ObjS_142_Def" Height="Auto" Orientation="Vertical" Margin="30,0,0,0" Visibility="Collapsed">
+                        <StackPanel x:Name="StackPanel_ObjS_142A_Def" Orientation="Horizontal" Margin="5,0">
+                            <Label x:Name="Label_Objectif_Sec_Def_142A" Content="142-FESTIN CRANIEN" FontFamily="Arial Black" FontSize="10" FontWeight="Bold" FontStyle="Italic" Margin="0,0" HorizontalAlignment="Left" Foreground="Black" BorderBrush="Black" BorderThickness="0,0,0,2"/>
+                            <Button x:Name="Button_Caché_ObjS_142_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="Collapsed" Click="Button_Caché_ObjS_142_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                                <Image Source="/Icons/Caché.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Button>
+                            <Button x:Name="Button_Visible_ObjS_142_Def" Width="20" Height="20" Margin="5,0,0,0" Visibility ="collapsed" Click="Button_Visible_ObjS_142_Def_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                                <Image Source="/Icons/Visible.ico " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Button>
+                            <Button x:Name="Button_Doc_ObjS_142_Def" Width="40" Height="40" Margin="5,0,0,0" Visibility ="Visible" Click="Button_Doc_ObjS_142_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+                                <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Button>
+                        </StackPanel>
+                        <Label x:Name="Label_Objectif_Sec_Def_142B" Content="Marquez 3 pts si vous gagnez au moins 1 PC durant la bataille , Marquez 3 pts i vous tuez le Seigneur de Guerre en attaque de mélée." FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_142C" Content="Marquez 1 pts par figuirines Personnage ou Champion détruite en melée ( Vrille ruche )" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_142A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                        <StackPanel x:Name="StackPanel_ObjS_142B_Def" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                            <CheckBox x:Name="CheckBox_Objectif_Sec_Def_142_PC" Content=" Gagnez 1 PC " VerticalAlignment="Center" VerticalContentAlignment="Center" FlowDirection="RightToLeft" BorderBrush="#FF48F109" HorizontalAlignment="Center" Padding="0" Margin="10,3,5,0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" Click="CheckBox_Objectif_Sec_Def_142_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_142B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <CheckBox x:Name="CheckBox_Objectif_Sec_Def_142_SG" Content=" Tuer le Seigneur de Guerre " VerticalAlignment="Center" VerticalContentAlignment="Center" FlowDirection="RightToLeft" BorderBrush="#FF48F109" HorizontalAlignment="Center" Padding="0" Margin="10,3,5,0" Grid.IsSharedSizeScope="True" Width="auto" Height="auto" FontFamily="Arial Black" Click="CheckBox_Objectif_Sec_Def_142_Click"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_142C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_142D" Content=" Nombres de Figurines Perso et Champion : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_142_Def_Fig" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_142D" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                        </StackPanel>
+                        <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
+                            <Label x:Name="Label_Objectif_Sec_Def_142E" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <TextBlock x:Name="TextBlock_ObjS_142_Def" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_142F" Content="/15" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_142E" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>
