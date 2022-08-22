@@ -9290,7 +9290,7 @@ namespace CPV9
         }
         private void Button_info_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(("Néo ScoreBoard\r\rGestion des scores d'une partie Warhammer 40K -v9\rFormat Grand Tournament 2022\r\rAuteur : Zouky\r\r\r CODEX PRIS EN CHARGE :\r\rTyranids \r Ork \r Adepta Sororitas\r Adeptus Mechanicus\r Codex Death Guard\r Blood Angels\r Space Marine\r Necron"), "Version 2.0.0", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show(("Néo ScoreBoard\r\rGestion des scores d'une partie Warhammer 40K -v9\rFormat Grand Tournament 2022\r\rAuteur : Zouky\r\r\r CODEX PRIS EN CHARGE :\r\rTyranids \r Ork \r Adepta Sororitas\r Adeptus Mechanicus\r Codex Death Guard\r Blood Angels\r Space Marine\r Necron"), "Version 2.0.1", MessageBoxButton.OK, MessageBoxImage.Information);
             return;
         }
         private void Button_Option_Click(object sender, RoutedEventArgs e)
@@ -12451,6 +12451,7 @@ namespace CPV9
             #endregion
 
             #region Calcul_Objectif_Missions
+            score_Principal_B_Def = 0;
             #region Calcul_Objectif_Missions_Patrouille_501_503
             ///CALCUL SCORE OBJECTIF MISSION 501            
             if (format == 501)
