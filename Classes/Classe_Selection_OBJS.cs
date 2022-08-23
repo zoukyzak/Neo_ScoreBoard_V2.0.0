@@ -87,6 +87,11 @@
             if (Choix_ObjS == 141) { text_Objectif = "141-Nodules de spores , "; };
             if (Choix_ObjS == 142) { text_Objectif = "142-Festin crânien , "; };
 
+            /**  GRAY KNIGHTS **/
+            if (Choix_ObjS == 143) { text_Objectif = "143-Détruisez le démon , "; };
+            if (Choix_ObjS == 144) { text_Objectif = "144-Assaut téléporté , "; };
+            if (Choix_ObjS == 145) { text_Objectif = "145-Rituel purificateur , "; };
+
             /**  PATROUILLE  **/
             if (Choix_ObjS == 501) { text_Objectif = "501-Assaut chirurgical , "; };
             if (Choix_ObjS == 502) { text_Objectif = "502-Sondage , "; };

@@ -482,6 +482,46 @@
                     break;
 
                 #endregion
+                #region OBJC GK
+                case 143:
+                    l1 = "DETRUISEZ LE DEMON";
+                    l3 = "Si vous choississez cette objectif secondaire,";
+                    l4 = "Vous marquez des points de victoire pour chaque unité détruite lors de la bataille par une unité Grey Knights de votre armé";
+                    l5 = "comme suit : ";
+                    l7 = "- Unité Primarque démon : marquez 5 points de victoire .";
+                    l8 = "- Unité Monstre démon   : marquez 3 points de victoire .";
+                    l9 = "- Unité Véhicule démon  : marquez 3 points de victoire .";
+                    l10 = "- Unité autre démon    : marquez 1 points de victoire .";
+                    break;
+
+                case 144:
+                    l1 = "ASSAUT TELEPORTE";
+                    l3 = "Marquez 3 points de victoire à la fin de la bataille";
+                    l4 = "si une ou plusieurs unités ennemies ont été détruites par une figurine Grey Knights de votre armée";
+                    l5 = "qui fut placé sur le champs de bataille à l' aide: de l'aptitude Frappe par téléportation,";
+                    l7 = "de l'aptitude          -Frappe par téléportation,";
+                    l8 = "du stratagème          -Poussé de téléportation";
+                    l9 = "du pouvoir psychique   -Portail d'infinité";
+                    l11 = "lors de ce round de bataille .";
+                    break;
+
+                case 145:
+                    l1 = "RITUEL PURIFICATEUR";
+                    l2 = "Marquez à la fin du round de bataille , le nombre de points de victoire indiquer dans le tableau ci-dessous";
+                    l3 = "ce nombre étant fonction du nombre d'unités de votre armée qui ont accompli avec succès l'action psychique suivante à ce round de bataille : ";                    
+                    l4 = "Rituel Purificateur (Action PSy - Charge Warp 5)";
+                    l6 = "A votre phase Psychique , cette action peut-être accomplie par n'importe quel nombre d'unités de votre armée.";
+                    l7 = "A votre phase Psychique , si une unité Psyker Grey Knights de votre armée est a 3 pouces d'n pion objectif,elle peut tenté de Purifier";
+                    l8 = "en accompissant cette action psychique.";
+                    l9 = "Chaque pion objetif ne pas être Purifié plus d'une fois au cours du même round.";
+                    l10 = "Nbre d'objectif purifié              points de victoire marqués";
+                    l11 = "         1                                       1 pts";
+                    l12 = "         2                                       2 pts";
+                    l13 = "         3                                       4 pts";
+                    l14 = "         4+                                      6 pts";
+                    break;
+
+                #endregion
                 #region OBJM patrouille
                 case 501:
                     l1 = "ASSAUT CHIRURGICAL";

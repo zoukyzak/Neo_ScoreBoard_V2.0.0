@@ -95,6 +95,11 @@ namespace CPV9.Classes
             if (ID_cape == 141) { Cape_Selected = "141-Nodules de spores"; };
             if (ID_cape == 142) { Cape_Selected = "142-Festin crânien"; };
 
+            /**  Codex Grey Knights  **/
+            if (ID_cape == 143) { Cape_Selected = "143-Détruisez le démon"; };
+            if (ID_cape == 144) { Cape_Selected = "144-Assaut téléporté"; };
+            if (ID_cape == 145) { Cape_Selected = "145-Rituel Purificateur"; };
+
             #endregion
             #region OBJ MISSION
             /**  PATROUILLE  **/

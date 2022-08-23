@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPV9", "CPV9.csproj", "{71588308-97A2-446C-AF23-53FA47EFF4C0}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Néo ScoreBoard V2.0.0", "..\Néo ScoreBoard V2.0.0\Néo ScoreBoard V2.0.0.vdproj", "{DF2B7162-53D0-467B-8525-2CA267723612}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{71588308-97A2-446C-AF23-53FA47EFF4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71588308-97A2-446C-AF23-53FA47EFF4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71588308-97A2-446C-AF23-53FA47EFF4C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DF2B7162-53D0-467B-8525-2CA267723612}.Debug|Any CPU.ActiveCfg = Debug
-		{DF2B7162-53D0-467B-8525-2CA267723612}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
