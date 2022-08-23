@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using CPV9.Classes;
 
 namespace CPV9.Windows
 {
@@ -41,11 +42,15 @@ namespace CPV9.Windows
             Label_Tv_Cape_Player_Attaquant_2.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Attaquant_3.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Attaquant_4.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Attaquant_5.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Attaquant_6.Visibility = Visibility.Collapsed;
 
             Label_Tv_Cape_Player_Defenseur_1.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Defenseur_2.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Defenseur_3.Visibility = Visibility.Collapsed;
             Label_Tv_Cape_Player_Defenseur_4.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Defenseur_5.Visibility = Visibility.Collapsed;
+            Label_Tv_Cape_Player_Defenseur_6.Visibility = Visibility.Collapsed;
         }
         public void Collect_Cape_Tv(string Player, int ID_Cape_Tv, string text_Cape_Tv)
          {
@@ -99,6 +104,30 @@ namespace CPV9.Windows
                         Label_Tv_Cape_Player_Attaquant_4.Visibility = Visibility.Visible;
                     }
                 }
+                if (ID_Cape_Tv == 5)
+                {
+                    Label_Tv_Cape_Player_Attaquant_5.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_5.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_5.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 6)
+                {
+                    Label_Tv_Cape_Player_Attaquant_6.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Attaquant_6.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Attaquant_6.Visibility = Visibility.Visible;
+                    }
+                }
             }
             if (Player == "Def")
             {
@@ -148,6 +177,30 @@ namespace CPV9.Windows
                     else
                     {
                         Label_Tv_Cape_Player_Defenseur_4.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 5)
+                {
+                    Label_Tv_Cape_Player_Defenseur_5.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_5.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_5.Visibility = Visibility.Visible;
+                    }
+                }
+                if (ID_Cape_Tv == 6)
+                {
+                    Label_Tv_Cape_Player_Defenseur_6.Content = text_Cape_Tv;
+                    if (text_Cape_Tv == "")
+                    {
+                        Label_Tv_Cape_Player_Defenseur_6.Visibility = Visibility.Collapsed;
+                    }
+                    else
+                    {
+                        Label_Tv_Cape_Player_Defenseur_6.Visibility = Visibility.Visible;
                     }
                 }
             }
@@ -225,502 +278,46 @@ namespace CPV9.Windows
 
         private void Selection_Image_Attaquant_Tv(string Image_Attaquant)
         {
-            if (Image_Attaquant == "  Adepta Sororitas")
-            {
-                Image_PL1_ADEPTA_SORORITAS.Height = Taille_Image;
-                Image_PL1_ADEPTA_SORORITAS.Width = Taille_Image;
-                Image_PL1_ADEPTA_SORORITAS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Adeptus Custodes")
-            {
-                Image_PL1_ADEPTUS_CUSTODES.Height = Taille_Image;
-                Image_PL1_ADEPTUS_CUSTODES.Width = Taille_Image;
-                Image_PL1_ADEPTUS_CUSTODES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Adeptus Mechanicus")
-            {
-                Image_PL1_ADEPTUS_MECHANICUS.Height = Taille_Image;
-                Image_PL1_ADEPTUS_MECHANICUS.Width = Taille_Image;
-                Image_PL1_ADEPTUS_MECHANICUS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Astra Militarum")
-            {
-                Image_PL1_ASTRA_MILITARUM.Height = Taille_Image;
-                Image_PL1_ASTRA_MILITARUM.Width = Taille_Image;
-                Image_PL1_ASTRA_MILITARUM.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Chaos Daemons")
-            {
-                Image_PL1_CHAOS_DAEMONS.Height = Taille_Image;
-                Image_PL1_CHAOS_DAEMONS.Width = Taille_Image;
-                Image_PL1_CHAOS_DAEMONS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Chaos Knights")
-            {
-                Image_PL1_CHAOS_KNIGHTS.Height = Taille_Image;
-                Image_PL1_CHAOS_KNIGHTS.Width = Taille_Image;
-                Image_PL1_CHAOS_KNIGHTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Chaos Space Marines")
-            {
-                Image_PL1_CHAOS_SPACE_MARINES.Height = Taille_Image;
-                Image_PL1_CHAOS_SPACE_MARINES.Width = Taille_Image;
-                Image_PL1_CHAOS_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Craftworlds")
-            {
-                Image_PL1_CRAFTWORLDS.Height = Taille_Image;
-                Image_PL1_CRAFTWORLDS.Width = Taille_Image;
-                Image_PL1_CRAFTWORLDS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Death Guard")
-            {
-                Image_PL1_DEATH_GUARD.Height = Taille_Image;
-                Image_PL1_DEATH_GUARD.Width = Taille_Image;
-                Image_PL1_DEATH_GUARD.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Drukhari")
-            {
-                Image_PL1_DRUKHARI.Height = Taille_Image;
-                Image_PL1_DRUKHARI.Width = Taille_Image;
-                Image_PL1_DRUKHARI.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Genestealer Cults")
-            {
-                Image_PL1_GENESTEALER_CULTS.Height = Taille_Image;
-                Image_PL1_GENESTEALER_CULTS.Width = Taille_Image;
-                Image_PL1_GENESTEALER_CULTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Grey Knights")
-            {
-                Image_PL1_GREY_KNIGHTS.Height = Taille_Image;
-                Image_PL1_GREY_KNIGHTS.Width = Taille_Image;
-                Image_PL1_GREY_KNIGHTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Harlequins")
-            {
-                Image_PL1_HARLEQUINS.Height = Taille_Image;
-                Image_PL1_HARLEQUINS.Width = Taille_Image;
-                Image_PL1_HARLEQUINS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Imperial Knights")
-            {
-                Image_PL1_IMPERIAL_KNIGHTS.Height = Taille_Image;
-                Image_PL1_IMPERIAL_KNIGHTS.Width = Taille_Image;
-                Image_PL1_IMPERIAL_KNIGHTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Necrons")
-            {
-                Image_PL1_NECRONS.Height = Taille_Image;
-                Image_PL1_NECRONS.Width = Taille_Image;
-                Image_PL1_NECRONS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Officio Assassinorum")
-            {
-                Image_PL1_OFFICIO_ASSASSINORUM.Height = Taille_Image;
-                Image_PL1_OFFICIO_ASSASSINORUM.Width = Taille_Image;
-                Image_PL1_OFFICIO_ASSASSINORUM.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Orks")
-            {
-                Image_PL1_ORKS.Height = Taille_Image;
-                Image_PL1_ORKS.Width = Taille_Image;
-                Image_PL1_ORKS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Space Marines")
-            {
-                Image_PL1_SPACE_MARINES.Height = Taille_Image;
-                Image_PL1_SPACE_MARINES.Width = Taille_Image;
-                Image_PL1_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Dark Angels")
-            {
-                Image_PL1_DARK_ANGELS.Height = Taille_Image;
-                Image_PL1_DARK_ANGELS.Width = Taille_Image;
-                Image_PL1_DARK_ANGELS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_White Scares")
-            {
-                Image_PL1_SM_WHITE_SCARES.Height = Taille_Image;
-                Image_PL1_SM_WHITE_SCARES.Width = Taille_Image;
-                Image_PL1_SM_WHITE_SCARES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Space Wolves")
-            {
-                Image_PL1_SPACE_WOLVES.Height = Taille_Image;
-                Image_PL1_SPACE_WOLVES.Width = Taille_Image;
-                Image_PL1_SPACE_WOLVES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Imperial Fists")
-            {
-                Image_PL1_SM_IMPERIAL_FISTS.Height = Taille_Image;
-                Image_PL1_SM_IMPERIAL_FISTS.Width = Taille_Image;
-                Image_PL1_SM_IMPERIAL_FISTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Crimson Fists")
-            {
-                Image_PL1_SPACE_MARINES.Height = Taille_Image;
-                Image_PL1_SPACE_MARINES.Width = Taille_Image;
-                Image_PL1_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Black Templars")
-            {
-                Image_PL1_SPACE_MARINES.Height = Taille_Image;
-                Image_PL1_SPACE_MARINES.Width = Taille_Image;
-                Image_PL1_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Blood Angels")
-            {
-                Image_PL1_BLOOD_ANGELS.Height = Taille_Image;
-                Image_PL1_BLOOD_ANGELS.Width = Taille_Image;
-                Image_PL1_BLOOD_ANGELS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Flesh Tearers")
-            {
-                Image_PL1_SPACE_MARINES.Height = Taille_Image;
-                Image_PL1_SPACE_MARINES.Width = Taille_Image;
-                Image_PL1_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Iron Hands")
-            {
-                Image_PL1_SM_IRON_HANDS.Height = Taille_Image;
-                Image_PL1_SM_IRON_HANDS.Width = Taille_Image;
-                Image_PL1_SM_IRON_HANDS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Ultramarines")
-            {
-                Image_PL1_SM_ULTRAMARINES.Height = Taille_Image;
-                Image_PL1_SM_ULTRAMARINES.Width = Taille_Image;
-                Image_PL1_SM_ULTRAMARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Salamandres")
-            {
-                Image_PL1_SM_SALAMANDRES.Height = Taille_Image;
-                Image_PL1_SM_SALAMANDRES.Width = Taille_Image;
-                Image_PL1_SM_SALAMANDRES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Raven Guard")
-            {
-                Image_PL1_SM_RAVEN_GUARD.Height = Taille_Image;
-                Image_PL1_SM_RAVEN_GUARD.Width = Taille_Image;
-                Image_PL1_SM_RAVEN_GUARD.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  SM_Deathwatch")
-            {
-                Image_PL1_DEATHWATCH.Height = Taille_Image;
-                Image_PL1_DEATHWATCH.Width = Taille_Image;
-                Image_PL1_DEATHWATCH.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  T AU Empire")
-            {
-                Image_PL1_T_AU_EMPIRE.Height = Taille_Image;
-                Image_PL1_T_AU_EMPIRE.Width = Taille_Image;
-                Image_PL1_T_AU_EMPIRE.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Thousand Sons")
-            {
-                Image_PL1_THOUSAND_SONS.Height = Taille_Image;
-                Image_PL1_THOUSAND_SONS.Width = Taille_Image;
-                Image_PL1_THOUSAND_SONS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Tyranid")
-            {
-                Image_PL1_TYRANID.Height = Taille_Image;
-                Image_PL1_TYRANID.Width = Taille_Image;
-                Image_PL1_TYRANID.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Attaquant == "  Ynarri")
-            {
-                Image_PL1_YNARRI.Height = Taille_Image;
-                Image_PL1_YNARRI.Width = Taille_Image;
-                Image_PL1_YNARRI.Visibility = Visibility.Visible;
-                return;
-            }
+            Select_Image_Player_Tv("Att", Image_Attaquant);
+            Image_PL1.Height = Taille_Image;
+            Image_PL1.Width = Taille_Image;
+            Image_PL1.Visibility = Visibility.Visible;
+            return;
 
         }
         private void Selection_Image_Defenseur_Tv(string Image_Defenseur)
         {
-            if (Image_Defenseur == "  Adepta Sororitas")
-            {
-                Image_PL2_ADEPTA_SORORITAS.Height = Taille_Image;
-                Image_PL2_ADEPTA_SORORITAS.Width = Taille_Image;
-                Image_PL2_ADEPTA_SORORITAS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Adeptus Custodes")
-            {;
-                Image_PL2_ADEPTUS_CUSTODES.Height = Taille_Image;
-                Image_PL2_ADEPTUS_CUSTODES.Width = Taille_Image;
-                Image_PL2_ADEPTUS_CUSTODES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Adeptus Mechanicus")
-            {
-                Image_PL2_ADEPTUS_MECHANICUS.Height = Taille_Image;
-                Image_PL2_ADEPTUS_MECHANICUS.Width = Taille_Image;
-                Image_PL2_ADEPTUS_MECHANICUS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Astra Militarum")
-            {
-                Image_PL2_ASTRA_MILITARUM.Height = Taille_Image;
-                Image_PL2_ASTRA_MILITARUM.Width = Taille_Image;
-                Image_PL2_ASTRA_MILITARUM.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Chaos Daemons")
-            {
-                Image_PL2_CHAOS_DAEMONS.Height = Taille_Image;
-                Image_PL2_CHAOS_DAEMONS.Width = Taille_Image;
-                Image_PL2_CHAOS_DAEMONS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Chaos Knights")
-            {
-                Image_PL2_CHAOS_KNIGHTS.Height = Taille_Image;
-                Image_PL2_CHAOS_KNIGHTS.Width = Taille_Image;
-                Image_PL2_CHAOS_KNIGHTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Chaos Space Marines")
-            {
-                Image_PL2_CHAOS_SPACE_MARINES.Height = Taille_Image;
-                Image_PL2_CHAOS_SPACE_MARINES.Width = Taille_Image;
-                Image_PL2_CHAOS_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Craftworlds")
-            {
-                Image_PL2_CRAFTWORLDS.Height = Taille_Image;
-                Image_PL2_CRAFTWORLDS.Width = Taille_Image;
-                Image_PL2_CRAFTWORLDS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Death Guard")
-            {
-                Image_PL2_DEATH_GUARD.Height = Taille_Image;
-                Image_PL2_DEATH_GUARD.Width = Taille_Image;
-                Image_PL2_DEATH_GUARD.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Drukhari")
-            {
-                Image_PL2_DRUKHARI.Height = Taille_Image;
-                Image_PL2_DRUKHARI.Width = Taille_Image;
-                Image_PL2_DRUKHARI.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Genestealer Cults")
-            {
-                Image_PL2_GENESTEALER_CULTS.Height = Taille_Image;
-                Image_PL2_GENESTEALER_CULTS.Width = Taille_Image;
-                Image_PL2_GENESTEALER_CULTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Grey Knights")
-            {
-                Image_PL2_GREY_KNIGHTS.Height = Taille_Image;
-                Image_PL2_GREY_KNIGHTS.Width = Taille_Image;
-                Image_PL2_GREY_KNIGHTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Harlequins")
-            {
-                Image_PL2_HARLEQUINS.Height = Taille_Image;
-                Image_PL2_HARLEQUINS.Width = Taille_Image;
-                Image_PL2_HARLEQUINS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Imperial Knights")
-            {
-                Image_PL2_IMPERIAL_KNIGHTS.Height = Taille_Image;
-                Image_PL2_IMPERIAL_KNIGHTS.Width = Taille_Image;
-                Image_PL2_IMPERIAL_KNIGHTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Necrons")
-            {
-                Image_PL2_NECRONS.Height = Taille_Image;
-                Image_PL2_NECRONS.Width = Taille_Image;
-                Image_PL2_NECRONS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Officio Assassinorum")
-            {
-                Image_PL2_OFFICIO_ASSASSINORUM.Height = Taille_Image;
-                Image_PL2_OFFICIO_ASSASSINORUM.Width = Taille_Image;
-                Image_PL2_OFFICIO_ASSASSINORUM.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Orks")
-            {
-                Image_PL2_ORKS.Height = Taille_Image;
-                Image_PL2_ORKS.Width = Taille_Image;
-                Image_PL2_ORKS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Space Marines")
-            {
-                Image_PL2_SPACE_MARINES.Height = Taille_Image;
-                Image_PL2_SPACE_MARINES.Width = Taille_Image;
-                Image_PL2_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Dark Angels")
-            {
-                Image_PL2_DARK_ANGELS.Height = Taille_Image;
-                Image_PL2_DARK_ANGELS.Width = Taille_Image;
-                Image_PL2_DARK_ANGELS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_White Scares")
-            {
-                Image_PL2_SM_WHITE_SCARES.Height = Taille_Image;
-                Image_PL2_SM_WHITE_SCARES.Width = Taille_Image;
-                Image_PL2_SM_WHITE_SCARES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Space Wolves")
-            {
-                Image_PL2_SPACE_WOLVES.Height = Taille_Image;
-                Image_PL2_SPACE_WOLVES.Width = Taille_Image;
-                Image_PL2_SPACE_WOLVES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Imperial Fists")
-            {
-                Image_PL2_SM_IMPERIAL_FISTS.Height = Taille_Image;
-                Image_PL2_SM_IMPERIAL_FISTS.Width = Taille_Image;
-                Image_PL2_SM_IMPERIAL_FISTS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Crimson Fists")
-            {
-                Image_PL2_SPACE_MARINES.Height = Taille_Image;
-                Image_PL2_SPACE_MARINES.Width = Taille_Image;
-                Image_PL2_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Black Templars")
-            {
-                Image_PL2_SPACE_MARINES.Height = Taille_Image;
-                Image_PL2_SPACE_MARINES.Width = Taille_Image;
-                Image_PL2_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Blood Angels")
-            {
-                Image_PL2_BLOOD_ANGELS.Height = Taille_Image;
-                Image_PL2_BLOOD_ANGELS.Width = Taille_Image;
-                Image_PL2_BLOOD_ANGELS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Flesh Tearers")
-            {
-                Image_PL2_SPACE_MARINES.Height = Taille_Image;
-                Image_PL2_SPACE_MARINES.Width = Taille_Image;
-                Image_PL2_SPACE_MARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Iron Hands")
-            {
-                Image_PL2_SM_IRON_HANDS.Height = Taille_Image;
-                Image_PL2_SM_IRON_HANDS.Width = Taille_Image;
-                Image_PL2_SM_IRON_HANDS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Ultramarines")
-            {
-                Image_PL2_SM_ULTRAMARINES.Height = Taille_Image;
-                Image_PL2_SM_ULTRAMARINES.Width = Taille_Image;
-                Image_PL2_SM_ULTRAMARINES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Salamandres")
-            {
-                Image_PL2_SM_SALAMANDRES.Height = Taille_Image;
-                Image_PL2_SM_SALAMANDRES.Width = Taille_Image;
-                Image_PL2_SM_SALAMANDRES.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Raven Guard")
-            {
-                Image_PL2_SM_RAVEN_GUARD.Height = Taille_Image;
-                Image_PL2_SM_RAVEN_GUARD.Width = Taille_Image;
-                Image_PL2_SM_RAVEN_GUARD.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  SM_Deathwatch")
-            {
-                Image_PL2_DEATHWATCH.Height = Taille_Image;
-                Image_PL2_DEATHWATCH.Width = Taille_Image;
-                Image_PL2_DEATHWATCH.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  T AU Empire")
-            {
-                Image_PL2_T_AU_EMPIRE.Height = Taille_Image;
-                Image_PL2_T_AU_EMPIRE.Width = Taille_Image;
-                Image_PL2_T_AU_EMPIRE.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Thousand Sons")
-            {
-                Image_PL2_THOUSAND_SONS.Height = Taille_Image;
-                Image_PL2_THOUSAND_SONS.Width = Taille_Image;
-                Image_PL2_THOUSAND_SONS.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Tyranid")
-            {
-                Image_PL2_TYRANID.Height = Taille_Image;
-                Image_PL2_TYRANID.Width = Taille_Image;
-                Image_PL2_TYRANID.Visibility = Visibility.Visible;
-                return;
-            }
-            if (Image_Defenseur == "  Ynarri")
-            {
-                Image_PL2_YNARRI.Height = Taille_Image;
-                Image_PL2_YNARRI.Width = Taille_Image;
-                Image_PL2_YNARRI.Visibility = Visibility.Visible;
-                return;
-            }
+            Select_Image_Player_Tv("Def", Image_Defenseur);
+            Image_PL2.Height = Taille_Image;
+            Image_PL2.Width = Taille_Image;
+            Image_PL2.Visibility = Visibility.Visible;
+            return;
         }
 
+        private void Select_Image_Player_Tv(String Player, String Choix)
+        {
+
+            if (Player == "Att")
+            {
+                BitmapImage Chemin_Image_Pl1 = new BitmapImage();
+                Chemin_Image_Pl1.BeginInit();
+                Classe_Images_Players chemin_Image;
+                chemin_Image = new Classe_Images_Players(Choix);
+                Chemin_Image_Pl1.UriSource = new Uri(chemin_Image.Chemin_Image_Player, UriKind.Relative);
+                Chemin_Image_Pl1.EndInit();
+                Image_PL1.Source = Chemin_Image_Pl1;
+            }
+            if (Player == "Def")
+            {
+                BitmapImage Chemin_Image_Pl2 = new BitmapImage();
+                Chemin_Image_Pl2.BeginInit();
+                Classe_Images_Players chemin_Image;
+                chemin_Image = new Classe_Images_Players(Choix);
+                Chemin_Image_Pl2.UriSource = new Uri(chemin_Image.Chemin_Image_Player, UriKind.Relative);
+                Chemin_Image_Pl2.EndInit();
+                Image_PL2.Source = Chemin_Image_Pl2;
+            }
+        }
         private void Button_Option_Tv_Click(object sender, RoutedEventArgs e)
         {
             if (style_Tv == false)

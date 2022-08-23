@@ -60,6 +60,9 @@
   <PropertyGroup>
     <StartupObject>CPV9.App</StartupObject>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Néo ScoreBoard.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -83,15 +86,22 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\Classe_Cape.cs" />
+    <Compile Include="Classes\Classe_Images_Players.cs" />
     <Compile Include="Classes\Descriptif_OBJ\Descript_OBJS.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_132.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_133.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_134.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_135.cs" />
+    <Compile Include="Classes\OBJC\GK\Classe_Score_OBJC_GK_143.cs" />
+    <Compile Include="Classes\OBJC\GK\Classe_Score_OBJC_GK_144.cs" />
+    <Compile Include="Classes\OBJC\GK\Classe_Score_OBJC_GK_145.cs" />
     <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_136.cs" />
     <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_137.cs" />
     <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_138.cs" />
     <Compile Include="Classes\OBJC\Ork\Classe_Score_OBJC_Ork_139.cs" />
+    <Compile Include="Classes\OBJC\Tyranids\Classe_Score_OBJC_Tyranids_140.cs" />
+    <Compile Include="Classes\OBJC\Tyranids\Classe_Score_OBJC_Tyranids_141.cs" />
+    <Compile Include="Classes\OBJC\Tyranids\Classe_Score_OBJC_Tyranids_142.cs" />
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1021.cs" />
     <Compile Include="Windows\Livres.xaml.cs">
       <DependentUpon>Livres.xaml</DependentUpon>
@@ -203,6 +213,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Polices\INFECTED.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -308,13 +319,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\ADEPTA SORORITAS.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images_Fond\fond necron 1600 900.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\ADEPTUS CUSTODES.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\ASTRA MILITARUM.PNG" />
@@ -423,6 +428,30 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\livre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\FOND_BETON.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ADEPTA SORORITAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ADEPTUS CUSTODES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Néo ScoreBoard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\Image_Cadre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\Image_Cadre_noir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image_Cadre_noir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image_Cadre.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
