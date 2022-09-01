@@ -8,6 +8,7 @@ namespace CPV9.Classes
     {
 
         static private string _dossier_Quarantaine = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Quarantaine\";
+        static private string _fichier_CA_Quarantaine = "CA.csv";
         static private string _fichier_Pages_Quarantaine = "Pages.csv";
         static private string _fichier_Format_Quarantaine = "Format.csv";
         static private string _fichier_FormatBis_Quarantaine = "FormatBis.csv";
@@ -23,6 +24,7 @@ namespace CPV9.Classes
         static private string _fichier_Mem_Saisie_Defenseur_Quarantaine = "Mem_Saisie_Defenseur.csv";
 
 
+        static private string _chemin_CA_Quarantaine = Path.Combine(_dossier_Quarantaine, _fichier_CA_Quarantaine);
         static private string _chemin_Pages_Quarantaine = Path.Combine(_dossier_Quarantaine, _fichier_Pages_Quarantaine);
         static private string _chemin_Format_Quarantaine = Path.Combine(_dossier_Quarantaine, _fichier_Format_Quarantaine);
         static private string _chemin_FormatBis_Quarantaine = Path.Combine(_dossier_Quarantaine, _fichier_FormatBis_Quarantaine);
@@ -37,6 +39,22 @@ namespace CPV9.Classes
         static private string _chemin_Mem_Saisie_Attaquant_Quarantaine = Path.Combine(_dossier_Quarantaine, _fichier_Mem_Saisie_Attaquant_Quarantaine);
         static private string _chemin_Mem_Saisie_Defenseur_Quarantaine = Path.Combine(_dossier_Quarantaine, _fichier_Mem_Saisie_Defenseur_Quarantaine);
 
+
+        public static void Sauvegarder_CA_CSV(string CA)
+        {
+            if (!Directory.Exists(_dossier_Quarantaine))
+            {
+                Directory.CreateDirectory(_dossier_Quarantaine);
+            }
+
+            StringBuilder ligne = new StringBuilder();
+            using (StreamWriter fichier = new StreamWriter(_chemin_CA_Quarantaine, false, Encoding.UTF8, 1024))
+            {
+                ligne.Append(CA + ";");
+                fichier.WriteLine(ligne.ToString());
+                ligne.Clear();
+            }
+        }
         public static void Sauvegarder_Pages_CSV(int Pages)
         {
             if (!Directory.Exists(_dossier_Quarantaine))

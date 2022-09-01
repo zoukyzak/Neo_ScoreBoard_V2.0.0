@@ -415,7 +415,7 @@
     <Resource Include="Icons\tv.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images_Fond\CA22.jpg" />
+    <Resource Include="Images_Fond\CA22_Nachmund.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\ArtDuWarp.jpg" />
@@ -452,6 +452,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Image_Cadre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\CA22_Nephilim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\back_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

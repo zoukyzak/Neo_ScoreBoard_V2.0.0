@@ -8,6 +8,7 @@ namespace CPV9.Classes
     {
 
         static private string _dossier_Mars = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Mars\";
+        static private string _fichier_CA_Mars = "CA.csv";
         static private string _fichier_Pages_Mars = "Pages.csv";
         static private string _fichier_Format_Mars = "Format.csv";
         static private string _fichier_FormatBis_Mars = "FormatBis.csv";
@@ -23,6 +24,7 @@ namespace CPV9.Classes
         static private string _fichier_Mem_Saisie_Defenseur_Mars = "Mem_Saisie_Defenseur.csv";
 
 
+        static private string _chemin_CA_Mars = Path.Combine(_dossier_Mars, _fichier_CA_Mars);
         static private string _chemin_Pages_Mars = Path.Combine(_dossier_Mars, _fichier_Pages_Mars);
         static private string _chemin_Format_Mars = Path.Combine(_dossier_Mars, _fichier_Format_Mars);
         static private string _chemin_FormatBis_Mars = Path.Combine(_dossier_Mars, _fichier_FormatBis_Mars);
@@ -37,6 +39,22 @@ namespace CPV9.Classes
         static private string _chemin_Mem_Saisie_Attaquant_Mars = Path.Combine(_dossier_Mars, _fichier_Mem_Saisie_Attaquant_Mars);
         static private string _chemin_Mem_Saisie_Defenseur_Mars = Path.Combine(_dossier_Mars, _fichier_Mem_Saisie_Defenseur_Mars);
 
+
+        public static void Sauvegarder_CA_CSV(string CA)
+        {
+            if (!Directory.Exists(_dossier_Mars))
+            {
+                Directory.CreateDirectory(_dossier_Mars);
+            }
+
+            StringBuilder ligne = new StringBuilder();
+            using (StreamWriter fichier = new StreamWriter(_chemin_CA_Mars, false, Encoding.UTF8, 1024))
+            {
+                ligne.Append(CA + ";");
+                fichier.WriteLine(ligne.ToString());
+                ligne.Clear();
+            }
+        }
         public static void Sauvegarder_Pages_CSV(int Pages)
         {
             if (!Directory.Exists(_dossier_Mars))

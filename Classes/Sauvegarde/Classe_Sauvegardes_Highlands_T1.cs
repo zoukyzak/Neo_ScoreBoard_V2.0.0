@@ -8,6 +8,7 @@ namespace CPV9.Classes
     {
 
         static private string _dossier_Highlands = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Highlands\";
+        static private string _fichier_CA_Highlands = "CA.csv";
         static private string _fichier_Pages_Highlands = "Pages.csv";
         static private string _fichier_Format_Highlands = "Format.csv";
         static private string _fichier_FormatBis_Highlands = "FormatBis.csv";
@@ -23,6 +24,7 @@ namespace CPV9.Classes
         static private string _fichier_Mem_Saisie_Defenseur_Highlands = "Mem_Saisie_Defenseur.csv";
 
 
+        static private string _chemin_CA_Highlands = Path.Combine(_dossier_Highlands, _fichier_CA_Highlands);
         static private string _chemin_Pages_Highlands = Path.Combine(_dossier_Highlands, _fichier_Pages_Highlands);
         static private string _chemin_Format_Highlands = Path.Combine(_dossier_Highlands, _fichier_Format_Highlands);
         static private string _chemin_FormatBis_Highlands = Path.Combine(_dossier_Highlands, _fichier_FormatBis_Highlands);
@@ -37,6 +39,22 @@ namespace CPV9.Classes
         static private string _chemin_Mem_Saisie_Attaquant_Highlands = Path.Combine(_dossier_Highlands, _fichier_Mem_Saisie_Attaquant_Highlands);
         static private string _chemin_Mem_Saisie_Defenseur_Highlands = Path.Combine(_dossier_Highlands, _fichier_Mem_Saisie_Defenseur_Highlands);
 
+
+        public static void Sauvegarder_CA_CSV(String CA)
+        {
+            if (!Directory.Exists(_dossier_Highlands))
+            {
+                Directory.CreateDirectory(_dossier_Highlands);
+            }
+
+            StringBuilder ligne = new StringBuilder();
+            using (StreamWriter fichier = new StreamWriter(_chemin_CA_Highlands, false, Encoding.UTF8, 1024))
+            {
+                ligne.Append(CA + ";");
+                fichier.WriteLine(ligne.ToString());
+                ligne.Clear();
+            }
+        }
         public static void Sauvegarder_Pages_CSV(int Pages)
         {
             if (!Directory.Exists(_dossier_Highlands))

@@ -23,6 +23,7 @@ namespace CPV9
         #region Preparation sauvegarde Mars
         static private string _dossier_Mars = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Mars\";
 
+        static private string _fichier_CA_Mars = "CA.csv";
         static private string _fichier_Pages_Mars = "Pages.csv";
         static private string _fichier_Format_Mars = "Format.csv";
         static private string _fichier_FormatBis_Mars = "FormatBis.csv";
@@ -37,6 +38,7 @@ namespace CPV9
         static private string _fichier_Mem_Saisie_Attaquant_Mars = "Mem_Saisie_Attaquant.csv";
         static private string _fichier_Mem_Saisie_Defenseur_Mars = "Mem_Saisie_Defenseur.csv";
 
+        static private string _chemin_CA_Mars = System.IO.Path.Combine(_dossier_Mars, _fichier_CA_Mars);
         static private string _chemin_Pages_Mars = System.IO.Path.Combine(_dossier_Mars, _fichier_Pages_Mars);
         static private string _chemin_Format_Mars = System.IO.Path.Combine(_dossier_Mars, _fichier_Format_Mars);
         static private string _chemin_FormatBis_Mars = System.IO.Path.Combine(_dossier_Mars, _fichier_FormatBis_Mars);
@@ -55,6 +57,7 @@ namespace CPV9
         #region Preparation sauvegarde Highlands
         static private string _dossier_Highlands = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Highlands\";
 
+        static private string _fichier_CA_Highlands = "CA.csv";
         static private string _fichier_Pages_Highlands = "Pages.csv";
         static private string _fichier_Format_Highlands = "Format.csv";
         static private string _fichier_FormatBis_Highlands = "FormatBis.csv";
@@ -69,6 +72,7 @@ namespace CPV9
         static private string _fichier_Mem_Saisie_Attaquant_Highlands = "Mem_Saisie_Attaquant.csv";
         static private string _fichier_Mem_Saisie_Defenseur_Highlands = "Mem_Saisie_Defenseur.csv";
 
+        static private string _chemin_CA_Highlands = System.IO.Path.Combine(_dossier_Highlands, _fichier_CA_Highlands);
         static private string _chemin_Pages_Highlands = System.IO.Path.Combine(_dossier_Highlands, _fichier_Pages_Highlands);
         static private string _chemin_Format_Highlands = System.IO.Path.Combine(_dossier_Highlands, _fichier_Format_Highlands);
         static private string _chemin_FormatBis_Highlands = System.IO.Path.Combine(_dossier_Highlands, _fichier_FormatBis_Highlands);
@@ -87,6 +91,7 @@ namespace CPV9
         #region Preparation sauvegarde Quarantaine
         static private string _dossier_Quarantaine = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Quarantaine\";
 
+        static private string _fichier_CA_Quarantaine = "CA.csv";
         static private string _fichier_Pages_Quarantaine = "Pages.csv";
         static private string _fichier_Format_Quarantaine = "Format.csv";
         static private string _fichier_FormatBis_Quarantaine = "FormatBis.csv";
@@ -101,6 +106,7 @@ namespace CPV9
         static private string _fichier_Mem_Saisie_Attaquant_Quarantaine = "Mem_Saisie_Attaquant.csv";
         static private string _fichier_Mem_Saisie_Defenseur_Quarantaine = "Mem_Saisie_Defenseur.csv";
 
+        static private string _chemin_CA_Quarantaine = System.IO.Path.Combine(_dossier_Quarantaine, _fichier_CA_Quarantaine);
         static private string _chemin_Pages_Quarantaine = System.IO.Path.Combine(_dossier_Quarantaine, _fichier_Pages_Quarantaine);
         static private string _chemin_Format_Quarantaine = System.IO.Path.Combine(_dossier_Quarantaine, _fichier_Format_Quarantaine);
         static private string _chemin_FormatBis_Quarantaine = System.IO.Path.Combine(_dossier_Quarantaine, _fichier_FormatBis_Quarantaine);
@@ -129,6 +135,7 @@ namespace CPV9
 
         public string Chemin_Image_Player;
 
+        public string CA;
         public string Selection_Armee;
         public int Pages;
         public int Retour;
@@ -1062,12 +1069,14 @@ namespace CPV9
         {
             FDE.Visibility = Visibility.Collapsed;
             StackPanel_Neo_Scorboard.Visibility = Visibility.Collapsed;
-            Image_CA22.Visibility = Visibility.Collapsed;
+            StackPanel_CA22.Visibility = Visibility.Collapsed;
             Button_info.Visibility = Visibility.Collapsed;
+            Button_Pages_Retour.Visibility = Visibility.Collapsed;
             StackPanel_Tables.Visibility = Visibility.Collapsed;
             Button_Table_Mars_Reprendre.Visibility = Visibility.Hidden;
             Button_Table_Highlands_Reprendre.Visibility = Visibility.Hidden;
             Button_Table_Quarantaine_Reprendre.Visibility = Visibility.Hidden;
+            StackPanel_Bouton_CA22.Visibility = Visibility.Collapsed;
             StackPanel_Bouton_Format.Visibility = Visibility.Collapsed;
             StackPanel_Rassembler_Les_Armees.Visibility = Visibility.Collapsed;
             Button_depart.Visibility = Visibility.Collapsed;
@@ -1251,6 +1260,7 @@ namespace CPV9
         }
         public void Init_Donnees()
         {
+            CA = null;
             Selection_Armee = null;
             Pages = 0;
             Retour = 0;
@@ -2640,24 +2650,26 @@ namespace CPV9
                 if (Tables == 3) { Save_Quarantaine(); };
             }
             if (Pages == 0 || Retour == 1) { Page_Depart(); };
-            if (Pages == 1) { Page_Format(); };
-            if (Pages == 2) { Page_Format_Affich(); };
-            if (Pages == 3) { Saisie_Attaquant(); };
-            if (Pages == 4) { Saisie_Defenseur(); };
-            if (Pages == 5) { Page_Saisie_Map(); };
-            if (Pages == 6) { Affiche_Mission(); };
-            if (Pages == 7) { Affiche_page_OBJ_Att(); };
-            if (Pages == 8) { Affiche_page_OBJ_Def(); };
-            if (Pages == 9) { Saisie_Equipes(); };
-            if (Pages == 10) { Affiche_page_Score(); };
-            if (Pages == 11) { Affiche_Page_Attaquant(); };
-            if (Pages == 12) { Affiche_Page_Defenseur(); };
-            if (Pages == 13) { Affiche_Page_Save_Table(); };
+            if (Pages == 1) { Page_CA22(); };
+            if (Pages == 2) { Page_Format(); };
+            if (Pages == 3) { Page_Format_Affich(); };
+            if (Pages == 4) { Saisie_Attaquant(); };
+            if (Pages == 5) { Saisie_Defenseur(); };
+            if (Pages == 6) { Page_Saisie_Map(); };
+            if (Pages == 7) { Affiche_Mission(); };
+            if (Pages == 8) { Affiche_page_OBJ_Att(); };
+            if (Pages == 9) { Affiche_page_OBJ_Def(); };
+            if (Pages == 10) { Saisie_Equipes(); };
+            if (Pages == 11) { Affiche_page_Score(); };
+            if (Pages == 12) { Affiche_Page_Attaquant(); };
+            if (Pages == 13) { Affiche_Page_Defenseur(); };
+            if (Pages == 14) { Affiche_Page_Save_Table(); };
 
         }
         public void Save_Mars()
         {
             Transfert_Donnees_To_Mem();
+            Classe_Sauvegardes_Mars_T1.Sauvegarder_CA_CSV(CA);
             Classe_Sauvegardes_Mars_T1.Sauvegarder_Pages_CSV(Pages);
             Classe_Sauvegardes_Mars_T1.Sauvegarder_Format_CSV(format);
             Classe_Sauvegardes_Mars_T1.Sauvegarder_FormatBis_CSV(formatBis);
@@ -2675,6 +2687,7 @@ namespace CPV9
         public void Save_Highlands()
         {
             Transfert_Donnees_To_Mem();
+            Classe_Sauvegardes_Highlands_T1.Sauvegarder_CA_CSV(CA);
             Classe_Sauvegardes_Highlands_T1.Sauvegarder_Pages_CSV(Pages);
             Classe_Sauvegardes_Highlands_T1.Sauvegarder_Format_CSV(format);
             Classe_Sauvegardes_Highlands_T1.Sauvegarder_FormatBis_CSV(formatBis);
@@ -2692,6 +2705,7 @@ namespace CPV9
         public void Save_Quarantaine()
         {
             Transfert_Donnees_To_Mem();
+            Classe_Sauvegardes_Quarantaine_T1.Sauvegarder_CA_CSV(CA);
             Classe_Sauvegardes_Quarantaine_T1.Sauvegarder_Pages_CSV(Pages);
             Classe_Sauvegardes_Quarantaine_T1.Sauvegarder_Format_CSV(format);
             Classe_Sauvegardes_Quarantaine_T1.Sauvegarder_FormatBis_CSV(formatBis);
@@ -7257,9 +7271,28 @@ namespace CPV9
             Affichage_Bouton_Depart();
             Affichage_Version();
         }
+        private void Page_CA22()
+        {
+            Affichage_FDE();
+            Affichage_Bouton_CA22();
+        }
         private void Page_Format()
         {
             Affichage_FDE();
+            if (CA == "Nachmund")
+            {
+                Button_format_Patrouille_500.Content = "PATROUILLE             (  500 PTS maxi ,  3 PC , 1 détachement maxi )";
+                Button_format_Incursion_1000.Content = "INCURSION               ( 1000 PTS maxi ,  6 PC ,  2 détachements maxi)";
+                Button_format_FDF_2000.Content = "FORCE DE FRAPPE    ( 2000 PTS maxi , 12 PC , 3 détachements maxi)";
+                Button_format_Apocalypse_3000.Content = "OFFENSIVE              (   2000 PTS et + ,  18 PC , 4 détachements maxi)";
+            }
+            if (CA == "Nephilim")
+            {
+                Button_format_Patrouille_500.Content = "PATROUILLE             (  500 PTS maxi ,  1 PC , 1 détachement maxi )";
+                Button_format_Incursion_1000.Content = "INCURSION               ( 1000 PTS maxi ,  3 PC ,  2 détachements maxi)";
+                Button_format_FDF_2000.Content = "FORCE DE FRAPPE    ( 2000 PTS maxi , 6 PC , 3 détachements maxi)";
+                Button_format_Apocalypse_3000.Content = "OFFENSIVE              (   2000 PTS et + ,  9 PC , 4 détachements maxi)";
+            }
             Affichage_Bouton_Format();
         }
         private void Page_Format_Affich()
@@ -7773,14 +7806,38 @@ namespace CPV9
 
         #region Button
 
+        private void Button_Pages_Retour_Click(object sender, RoutedEventArgs e)
+        {
+            if (Pages > 1) { Pages--; };
+            Button_Pages_Retour.Visibility = Visibility.Collapsed;
+            Init_affichage();
+            Deroulement();
+        }
         private void Button_depart_Click(object sender, RoutedEventArgs e)
         {
             Init_affichage();
-            Pages = 13;
+            Pages = 14;
             Deroulement();
         }
         private void Button_Table_Mars_Reprendre_Click(object sender, RoutedEventArgs e)
         {
+            if (File.Exists(_chemin_CA_Mars))
+            {
+                using (StreamReader fichier = new StreamReader(_chemin_CA_Mars, Encoding.UTF8))
+                {
+                    String ligne;
+                    int i = 0;
+                    while ((ligne = fichier.ReadLine()) != null)
+                    {
+                        if (!string.IsNullOrWhiteSpace(ligne))
+                        {
+                            string[] champs = ligne.Split(';');
+                            CA = champs[0];
+                            i++;
+                        }
+                    }
+                }
+            }
             if (File.Exists(_chemin_Pages_Mars))
             {
                 using (StreamReader fichier = new StreamReader(_chemin_Pages_Mars, Encoding.UTF8))
@@ -8258,6 +8315,23 @@ namespace CPV9
         }
         private void Button_Table_Highlands_Reprendre_Click(object sender, RoutedEventArgs e)
         {
+            if (File.Exists(_chemin_CA_Highlands))
+            {
+                using (StreamReader fichier = new StreamReader(_chemin_CA_Highlands, Encoding.UTF8))
+                {
+                    String ligne;
+                    int i = 0;
+                    while ((ligne = fichier.ReadLine()) != null)
+                    {
+                        if (!string.IsNullOrWhiteSpace(ligne))
+                        {
+                            string[] champs = ligne.Split(';');
+                            CA = champs[0];
+                            i++;
+                        }
+                    }
+                }
+            }
             if (File.Exists(_chemin_Pages_Highlands))
             {
                 using (StreamReader fichier = new StreamReader(_chemin_Pages_Highlands, Encoding.UTF8))
@@ -8733,6 +8807,23 @@ namespace CPV9
         }
         private void Button_Table_Quarantaine_Reprendre_Click(object sender, RoutedEventArgs e)
         {
+            if (File.Exists(_chemin_CA_Quarantaine))
+            {
+                using (StreamReader fichier = new StreamReader(_chemin_CA_Quarantaine, Encoding.UTF8))
+                {
+                    String ligne;
+                    int i = 0;
+                    while ((ligne = fichier.ReadLine()) != null)
+                    {
+                        if (!string.IsNullOrWhiteSpace(ligne))
+                        {
+                            string[] champs = ligne.Split(';');
+                            CA = champs[0];
+                            i++;
+                        }
+                    }
+                }
+            }
             if (File.Exists(_chemin_Pages_Quarantaine))
             {
                 using (StreamReader fichier = new StreamReader(_chemin_Pages_Quarantaine, Encoding.UTF8))
@@ -9208,37 +9299,52 @@ namespace CPV9
             }
 
         }
+        private void Button_CA22_Nachmund_Click(object sender, RoutedEventArgs e)
+        {
+            CA = "Nachmund";
+            Pages = 2;
+            Init_affichage();
+            Deroulement();
+        }
+        private void Button_CA22_Nephilim_Click(object sender, RoutedEventArgs e)
+        {
+            CA = "Nephilim";
+            Pages = 2;
+            Init_affichage();
+            Deroulement();
+        }
+
         private void Button_format_Patrouille_500_Click(object sender, RoutedEventArgs e)
         {
             format = 500;
-            Pages = 2;
+            Pages = 3;
             Init_affichage();
             Deroulement();
         }
         private void Button_format_Incursion_1000_Click(object sender, RoutedEventArgs e)
         {
             format = 1000;
-            Pages = 2;
+            Pages = 3;
             Init_affichage();
             Deroulement();
         }
         private void Button_format_FDF_2000_Click(object sender, RoutedEventArgs e)
         {
             format = 2000;
-            Pages = 2;
+            Pages = 3;
             Init_affichage();
             Deroulement();
         }
         private void Button_format_Apocalypse_3000_Click(object sender, RoutedEventArgs e)
         {
             format = 3000;
-            Pages = 2;
+            Pages = 3;
             Init_affichage();
             Deroulement();
         }
         private void Button_Rassembler_Les_Armees_Click(object sender, RoutedEventArgs e)
         {
-            Pages = 3;
+            Pages = 4;
             Init_affichage();
             Deroulement();
         }
@@ -9277,7 +9383,7 @@ namespace CPV9
                 ComboBox_Choix_Armee_Xenos.SelectedIndex = 0;
                 ComboBox_Choix_Armee_Chaos.SelectedIndex = 0;
                 Selection_Armee = null;
-                Pages = 4;
+                Pages = 5;
                 Init_affichage();
                 Deroulement();
             }
@@ -9309,7 +9415,7 @@ namespace CPV9
                 ComboBox_Choix_Armee_Chaos.SelectedIndex = 0;
                 ComboBox_Choix_Armee_Xenos.SelectedIndex = 0;
                 Selection_Armee = null;
-                Pages = 5;
+                Pages = 6;
                 Init_affichage();
                 Deroulement();
             }
@@ -9336,7 +9442,7 @@ namespace CPV9
                     {
                         format = format + map;
                         Init_affichage();
-                        Pages = 6;
+                        Pages = 7;
                         Deroulement();
                     }
                     else
@@ -9365,7 +9471,7 @@ namespace CPV9
                     {
                         format = format + map;
                         Init_affichage();
-                        Pages = 6;
+                        Pages = 7;
                         Deroulement();
                     }
                     else
@@ -9391,14 +9497,14 @@ namespace CPV9
         private void Button_Valid_Affichage_Map_Click(object sender, RoutedEventArgs e)
         {
             Init_affichage();
-            Pages = 7;
+            Pages = 8;
             Deroulement();
         }
         private void Button_Choix_Att_Click(object sender, RoutedEventArgs e)
         {
             StackPanel_Saisie_Att_Def.Visibility = Visibility.Collapsed;
             Init_affichage();
-            Pages = 10;
+            Pages = 11;
             Deroulement();
         }
         private void Button_Choix_Def_Click(object sender, RoutedEventArgs e)
@@ -9420,7 +9526,7 @@ namespace CPV9
             TextBox_Nom_Attaquant_SG.Text = TextBox_Nom_Defenseur_SG.Text;
             TextBox_Nom_Defenseur_SG.Text = TextBox_Nom_Attaquant_SG_provisoir;
             Init_affichage();
-            Pages = 10;
+            Pages = 11;
             Deroulement();
 
         }
@@ -9429,21 +9535,21 @@ namespace CPV9
             Init_affichage();
             Calcul_Score_Attaquant();
             Calcul_Score_Defenseur();
-            Pages = 10;
+            Pages = 11;
             Deroulement();
         }
         private void Button_Pages_Attaquant_Click(object sender, RoutedEventArgs e)
         {
             Init_affichage();
             Calcul_Score_Attaquant();
-            Pages = 11;
+            Pages = 12;
             Deroulement();
         }
         private void Button_Pages_Defenseur_Click(object sender, RoutedEventArgs e)
         {
             Init_affichage();
             Calcul_Score_Defenseur();
-            Pages = 12;
+            Pages = 13;
             Deroulement();
         }
         private void Button_info_Click(object sender, RoutedEventArgs e)
@@ -9546,7 +9652,7 @@ namespace CPV9
         {
             Choix_ObjS_Attaquant[3] = format;
             Init_affichage();
-            Pages = 8;
+            Pages = 9;
             Deroulement();
         }
         private void Button_Valid_Choix_ObsS_Att_Annuler_Click(object sender, RoutedEventArgs e)
@@ -9559,7 +9665,7 @@ namespace CPV9
             TextBlock_ObjS_Att_2.Text = null;
             TextBlock_ObjS_Att_3.Text = null;
             Init_affichage();
-            Pages = 7;
+            Pages = 8;
             Deroulement();
         }
         ///Pour remettre la selection du choix attanquant ou defenseur
@@ -9568,7 +9674,7 @@ namespace CPV9
             Choix_ObjS_Defenseur[3] = format;
             Init_affichage();
             /// 
-            Pages = 10;/// pages = 9; pour remettre la selection du choix attanquant ou defenseur
+            Pages = 10;/// pages = 10; pour remettre la selection du choix attanquant ou defenseur
             Deroulement();
 
         }
@@ -9582,7 +9688,7 @@ namespace CPV9
             TextBlock_ObjS_Def_2.Text = null;
             TextBlock_ObjS_Def_3.Text = null;
             Init_affichage();
-            Pages = 8;
+            Pages = 9;
             Deroulement();
         }
         #endregion
@@ -9667,61 +9773,64 @@ namespace CPV9
                     StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden;
                 }
 
-                if (Select_Objectif >= 100 && Select_Objectif <= 103)
+                if (CA == "Nachmund")
                 {
-                    Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Necron_101_Att_1.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 110 && Select_Objectif <= 116)
-                {
-                    Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_SM_112_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_BA_113_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_BA_114_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_BA_115_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_BA_116_Att.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 125 && Select_Objectif <= 127)
-                {
-                    Button_Obj_Codex_DG_125_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_DG_126_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_DG_127_Att.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 128 && Select_Objectif <= 131)
-                {
-                    Button_Obj_Codex_Admech_128_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Admech_129_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Admech_130_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Admech_131_Att.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 132 && Select_Objectif <= 135)
-                {
-                    Button_Obj_Codex_AdeptaS_132_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_AdeptaS_133_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_AdeptaS_134_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_AdeptaS_135_Att.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 136 && Select_Objectif <= 139)
-                {
-                    Button_Obj_Codex_Ork_136_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Ork_137_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Ork_138_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Ork_139_Att.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 140 && Select_Objectif <= 142)
-                {
-                    Button_Obj_Codex_Tyranids_140_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Tyranids_141_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Tyranids_142_Att.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 143 && Select_Objectif <= 145)
-                {
-                    Button_Obj_Codex_GK_143_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_GK_144_Att.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_GK_145_Att.Visibility = Visibility.Hidden;
+                    if (Select_Objectif >= 100 && Select_Objectif <= 103)
+                    {
+                        Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Necron_101_Att_1.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Hidden;
+                    }
+                    if (Select_Objectif >= 110 && Select_Objectif <= 116)
+                    {
+                        Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_SM_112_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_BA_113_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_BA_114_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_BA_115_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_BA_116_Att.Visibility = Visibility.Hidden;
+                    }
+                    if (Select_Objectif >= 125 && Select_Objectif <= 127)
+                    {
+                        Button_Obj_Codex_DG_125_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_DG_126_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_DG_127_Att.Visibility = Visibility.Hidden;
+                    }
+                    if (Select_Objectif >= 128 && Select_Objectif <= 131)
+                    {
+                        Button_Obj_Codex_Admech_128_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Admech_129_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Admech_130_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Admech_131_Att.Visibility = Visibility.Hidden;
+                    }
+                    if (Select_Objectif >= 132 && Select_Objectif <= 135)
+                    {
+                        Button_Obj_Codex_AdeptaS_132_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_AdeptaS_133_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_AdeptaS_134_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_AdeptaS_135_Att.Visibility = Visibility.Hidden;
+                    }
+                    if (Select_Objectif >= 136 && Select_Objectif <= 139)
+                    {
+                        Button_Obj_Codex_Ork_136_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Ork_137_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Ork_138_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Ork_139_Att.Visibility = Visibility.Hidden;
+                    }
+                    if (Select_Objectif >= 140 && Select_Objectif <= 142)
+                    {
+                        Button_Obj_Codex_Tyranids_140_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Tyranids_141_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Tyranids_142_Att.Visibility = Visibility.Hidden;
+                    }
+                    if (Select_Objectif >= 143 && Select_Objectif <= 145)
+                    {
+                        Button_Obj_Codex_GK_143_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_GK_144_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_GK_145_Att.Visibility = Visibility.Hidden;
+                    }
                 }
             }
 
@@ -9749,15 +9858,16 @@ namespace CPV9
                 {
                     StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden;
                 }
-
-                if (Select_Objectif >= 100 && Select_Objectif <= 103)
+                if (CA == "Nachmund")
+                {                
+                    if (Select_Objectif >= 100 && Select_Objectif <= 103)
                 {
                     Button_Obj_Codex_Necron_100_Def_1.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Necron_101_Def_1.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Necron_103_Def_1.Visibility = Visibility.Hidden;
                 }
-                if (Select_Objectif >= 110 && Select_Objectif <= 116)
+                    if (Select_Objectif >= 110 && Select_Objectif <= 116)
                 {
                     Button_Obj_Codex_SM_110_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_SM_111_Def.Visibility = Visibility.Hidden;
@@ -9767,44 +9877,45 @@ namespace CPV9
                     Button_Obj_Codex_BA_115_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_BA_116_Def.Visibility = Visibility.Hidden;
                 }
-                if (Select_Objectif >= 125 && Select_Objectif <= 127)
+                    if (Select_Objectif >= 125 && Select_Objectif <= 127)
                 {
                     Button_Obj_Codex_DG_125_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_DG_126_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_DG_127_Def.Visibility = Visibility.Hidden;
                 }
-                if (Select_Objectif >= 128 && Select_Objectif <= 131)
+                    if (Select_Objectif >= 128 && Select_Objectif <= 131)
                 {
                     Button_Obj_Codex_Admech_128_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Admech_129_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Admech_130_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Admech_131_Def.Visibility = Visibility.Hidden;
                 }
-                if (Select_Objectif >= 132 && Select_Objectif <= 135)
+                    if (Select_Objectif >= 132 && Select_Objectif <= 135)
                 {
                     Button_Obj_Codex_AdeptaS_132_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_AdeptaS_133_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_AdeptaS_134_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_AdeptaS_135_Def.Visibility = Visibility.Hidden;
                 }
-                if (Select_Objectif >= 136 && Select_Objectif <= 139)
+                    if (Select_Objectif >= 136 && Select_Objectif <= 139)
                 {
                     Button_Obj_Codex_Ork_136_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Ork_137_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Ork_138_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Ork_139_Def.Visibility = Visibility.Hidden;
                 }
-                if (Select_Objectif >= 140 && Select_Objectif <= 142)
+                    if (Select_Objectif >= 140 && Select_Objectif <= 142)
                 {
                     Button_Obj_Codex_Tyranids_140_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Tyranids_141_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Tyranids_142_Def.Visibility = Visibility.Hidden;
                 }
-                if (Select_Objectif >= 143 && Select_Objectif <= 145)
+                    if (Select_Objectif >= 143 && Select_Objectif <= 145)
                 {
                     Button_Obj_Codex_GK_143_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_GK_144_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_GK_145_Def.Visibility = Visibility.Hidden;
+                }
                 }
             }
 
@@ -19980,19 +20091,28 @@ namespace CPV9
             FDE.Width = _Resolution[0] * 1.3;
             FDE.Height = _Resolution[1] * 1.2;
             FDE.Visibility = Visibility.Visible;
+
             if (Pages == 0)
             {
-                Image_CA22.Visibility = Visibility.Visible;
-                Image_CA22.Width = 20 * Rapport_Taille_X;
-                Image_CA22.Height = 15 * Rapport_Taille_Y;
+                StackPanel_CA22.Visibility = Visibility.Visible;
+                Button_Pages_Retour.Visibility = Visibility.Collapsed;
+                Image_CA22_Nachmund.Width = 20 * Rapport_Taille_X;
+                Image_CA22_Nachmund.Height = 15 * Rapport_Taille_Y;
+                Image_CA22_Nephilim.Width = 20 * Rapport_Taille_X;
+                Image_CA22_Nephilim.Height = 15 * Rapport_Taille_Y;
             }
             else
             {
-                Image_CA22.Visibility = Visibility.Collapsed;
+                StackPanel_CA22.Visibility = Visibility.Collapsed;
+                Button_Pages_Retour.Visibility = Visibility.Visible;
             }
-            
-            Image_CA22.Margin = new Thickness(0, 0, 5 * Rapport_Taille_X, 5 * Rapport_Taille_Y);
-            if (Pages >= 10) { StackPanel_Neo_Scorboard.Margin = new Thickness(0,30,0,0); };
+
+            StackPanel_CA22.Margin = new Thickness(0, 0, 5 * Rapport_Taille_X, 5 * Rapport_Taille_Y);
+            if (Pages >= 11) 
+                { 
+                    StackPanel_Neo_Scorboard.Margin = new Thickness(0,30,0,0);
+                    Button_Pages_Retour.Visibility = Visibility.Collapsed;
+            }
         }
         private void Affichage_CP_v9()
         {
@@ -20034,9 +20154,24 @@ namespace CPV9
             Button_Table_Mars_Reprendre.FontSize = (Rapport_Taille_Y + Rapport_Taille_X);
 
         }
+
+        private void Affichage_Bouton_CA22()
+        {
+            StackPanel_Bouton_CA22.Visibility = Visibility.Visible;
+            Button_Pages_Retour.Visibility = Visibility.Visible;
+            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.4);
+            StackPanel_Bouton_CA22.Width = 35 * x;
+            StackPanel_Bouton_CA22.Height = 20 * x;
+            Label_Bouton_CA22.FontSize = 1.5 * x;
+            Button_CA22_Nachmund.Width = 8 * x;
+            Button_CA22_Nachmund.Height = 11 * x;
+            Button_CA22_Nephilim.Width = 8 * x;
+            Button_CA22_Nephilim.Height = 11 * x;
+        }
         private void Affichage_Bouton_Format()
         {
             StackPanel_Bouton_Format.Visibility = Visibility.Visible;
+            Button_Pages_Retour.Visibility = Visibility.Visible;
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 1.4);
             StackPanel_Bouton_Format.Width = 55 * x;
             StackPanel_Bouton_Format.Height = 15 * x;
@@ -33978,6 +34113,7 @@ namespace CPV9
         {
             Livres(3003);
         }
+
         #endregion
 
     }

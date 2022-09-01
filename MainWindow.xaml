@@ -15,7 +15,7 @@
 
         <!--#region Page de presentation -->
         <Image x:Name="FDE" Source="/Images_Fond/FOND_BETON.JPG" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,0,0" Visibility="visible"/>
-        <StackPanel x:Name="StackPanel_Neo_Scorboard" Width="auto" Height="auto" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,150" Visibility="Collapsed">
+        <StackPanel x:Name="StackPanel_Neo_Scorboard" Width="auto" Height="auto" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,150" Visibility="Collapsed">
             <Label x:Name="Label_Neo_Scorboard" Content="NEO SCOREBOARD" Width="Auto" Height="Auto" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" FontSize="72" FontFamily="/CPV9;component/Polices/#INFECTED" BorderBrush="#FFBF2B2B">
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
@@ -24,7 +24,7 @@
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
-            <Label x:Name="Label_Nachmund" Content="nachmund" Width="Auto" Height="Auto" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" FontSize="48" FontFamily="/CPV9;component/Polices/#INFECTED">
+            <Label x:Name="Label_Nachmund" Content="nachmund et niphilim" Width="Auto" Height="Auto" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" FontSize="48" FontFamily="/CPV9;component/Polices/#INFECTED">
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                         <GradientStop Color="#FFE80D0D" Offset="1"/>
@@ -33,10 +33,13 @@
                 </Label.Foreground>
             </Label>
         </StackPanel>
-
+        <StackPanel x:Name="StackPanel_CA22" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0, 0, 0, -100" Orientation="Horizontal" Visibility="Visible">
+            <Image x:Name="Image_CA22_Nachmund" Source="/Images_Fond/CA22_Nachmund.jpg " Width="86" Height="121" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,0" OpacityMask="#FF67E80E"/>
+            <Image x:Name="Image_CA22_Nephilim" Source="/Images_Fond/CA22_Nephilim.jpg " Width="86" Height="121" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,0" OpacityMask="#FF67E80E"/>
+        </StackPanel>
         <Button x:Name="Button_info" Content="Info" HorizontalAlignment="Right" Margin="0,0,20,10" VerticalAlignment="Bottom" Width="Auto" Height="Auto" FontSize="12" FontFamily="/CPV9;component/Polices/#INFECTED" Background="#FF3A3A7E" Visibility="collapsed" Click="Button_info_Click"/>
-        <Image x:Name="Image_CA22" Source="/Images_Fond/CA22.jpg " Width="86" Height="121" HorizontalAlignment="Right" VerticalAlignment="bottom" Margin="0,0,100,100" OpacityMask="#FF67E80E" Visibility="collapsed"/>
-
+        
+        
         <!--#endregion-->
 
         <!--#region Image Pl1 -->
@@ -101,6 +104,18 @@
 
 
         <!--#endregion-->
+
+        <StackPanel x:Name="StackPanel_Bouton_CA22" VerticalAlignment="top" HorizontalAlignment="Center" Orientation="Vertical"  Height="Auto" Width="Auto" Visibility="Collapsed" Margin="0,50,0,0" >            
+            <Label x:Name="Label_Bouton_CA22" Content="CHOIX DU CHAPTER APPROVED" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Background="{x:Null}" Foreground="Black" FontSize="2" FontFamily="Impact" BorderThickness="0,0,0,4" BorderBrush="Black"/>
+                <StackPanel Orientation="Horizontal" Margin="0, 100" HorizontalAlignment="center">
+                    <Button x:Name="Button_CA22_Nachmund" HorizontalAlignment="Center" Margin="-50,0,0,0" VerticalAlignment="center" Width="86" Height="121" BorderBrush="DarkGreen" BorderThickness="5" Click="Button_CA22_Nachmund_Click">
+                    <Image Source="/Images_Fond/CA22_Nachmund.jpg " Width="Auto" Height="Auto"/>
+                </Button>
+                    <Button x:Name="Button_CA22_Nephilim" HorizontalAlignment="Center" Margin="50,0,0,0" VerticalAlignment="center" Width="86" Height="121" BorderBrush="DarkGreen" BorderThickness="5" Click="Button_CA22_Nephilim_Click">
+                        <Image Source="/Images_Fond/CA22_Nephilim.jpg"  Width="Auto" Height="Auto"/>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
 
         <StackPanel x:Name="StackPanel_Bouton_Format" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Height="Auto" Width="Auto" Visibility="Collapsed" Margin="0,0,0,0">
             <StackPanel.Background>
@@ -7581,7 +7596,9 @@
         <Button x:Name="Button_Affichage_Tv" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="Auto" Height="Auto" Visibility="Collapsed" Click="Button_Affichage_Tv_Click">
             <Image Source="/Icons/tv.ico" Width="40" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Button>
-
+        <Button x:Name="Button_Pages_Retour" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20,0,0,20" Visibility ="Collapsed" Click="Button_Pages_Retour_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
+            <Image Source="/Icons/back_icon.PNG " Width="60" Height="60" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
         <Button x:Name="Button_Option" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,0" Visibility ="Collapsed" Click="Button_Option_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
             <Image Source="/Icons/option.PNG " Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
