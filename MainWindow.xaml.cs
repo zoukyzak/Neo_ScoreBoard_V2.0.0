@@ -7556,10 +7556,10 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 10 || Choix_ObjS_Attaquant[1] == 10 || Choix_ObjS_Attaquant[2] == 10) { Adaptation_OBJS_10_Att(); };
             if (Choix_ObjS_Attaquant[0] == 11 || Choix_ObjS_Attaquant[1] == 11 || Choix_ObjS_Attaquant[2] == 11) { Adaptation_OBJS_11_Att(); };
 
-            if (Choix_ObjS_Attaquant[0] == 12 || Choix_ObjS_Attaquant[1] == 12 || Choix_ObjS_Attaquant[2] == 12) { StackPanel_ObjS_12_Att.Visibility = Visibility.Visible; oeil_OBJS_12_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 13 || Choix_ObjS_Attaquant[1] == 13 || Choix_ObjS_Attaquant[2] == 13) { StackPanel_ObjS_13_Att.Visibility = Visibility.Visible; oeil_OBJS_13_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 14 || Choix_ObjS_Attaquant[1] == 14 || Choix_ObjS_Attaquant[2] == 14) { StackPanel_ObjS_14_Att.Visibility = Visibility.Visible; oeil_OBJS_14_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 18 || Choix_ObjS_Attaquant[1] == 18 || Choix_ObjS_Attaquant[2] == 18) { StackPanel_ObjS_18_Att.Visibility = Visibility.Visible; oeil_OBJS_18_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 12 || Choix_ObjS_Attaquant[1] == 12 || Choix_ObjS_Attaquant[2] == 12) { Adaptation_OBJS_12_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 13 || Choix_ObjS_Attaquant[1] == 13 || Choix_ObjS_Attaquant[2] == 13) { Adaptation_OBJS_13_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 14 || Choix_ObjS_Attaquant[1] == 14 || Choix_ObjS_Attaquant[2] == 14) { Adaptation_OBJS_14_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 18 || Choix_ObjS_Attaquant[1] == 18 || Choix_ObjS_Attaquant[2] == 18) { Adaptation_OBJS_18_Att(); };
 
             if (Choix_ObjS_Attaquant[0] == 15 || Choix_ObjS_Attaquant[1] == 15 || Choix_ObjS_Attaquant[2] == 15) { Adaptation_OBJS_15_Att(); };
             if (Choix_ObjS_Attaquant[0] == 16 || Choix_ObjS_Attaquant[1] == 16 || Choix_ObjS_Attaquant[2] == 16) { Adaptation_OBJS_16_Att(); };
@@ -7570,7 +7570,7 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 101 || Choix_ObjS_Attaquant[1] == 101 || Choix_ObjS_Attaquant[2] == 101) { StackPanel_ObjS_101_Att.Visibility = Visibility.Visible; oeil_OBJS_101_Att(); };
             if (Choix_ObjS_Attaquant[0] == 102 || Choix_ObjS_Attaquant[1] == 102 || Choix_ObjS_Attaquant[2] == 102) { StackPanel_ObjS_102_Att.Visibility = Visibility.Visible; oeil_OBJS_102_Att(); };
             if (Choix_ObjS_Attaquant[0] == 103 || Choix_ObjS_Attaquant[1] == 103 || Choix_ObjS_Attaquant[2] == 103) { StackPanel_ObjS_103_Att.Visibility = Visibility.Visible; oeil_OBJS_103_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 110 || Choix_ObjS_Attaquant[1] == 110 || Choix_ObjS_Attaquant[2] == 110) { StackPanel_ObjS_110_Att.Visibility = Visibility.Visible; oeil_OBJS_110_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 110 || Choix_ObjS_Attaquant[1] == 110 || Choix_ObjS_Attaquant[2] == 110) { Adaptation_OBJC_110_Att(); };
             if (Choix_ObjS_Attaquant[0] == 111 || Choix_ObjS_Attaquant[1] == 111 || Choix_ObjS_Attaquant[2] == 111) { StackPanel_ObjS_111_Att.Visibility = Visibility.Visible; oeil_OBJS_111_Att(); };
             if (Choix_ObjS_Attaquant[0] == 112 || Choix_ObjS_Attaquant[1] == 112 || Choix_ObjS_Attaquant[2] == 112) { StackPanel_ObjS_112_Att.Visibility = Visibility.Visible; oeil_OBJS_112_Att(); };
             if (Choix_ObjS_Attaquant[0] == 113 || Choix_ObjS_Attaquant[1] == 113 || Choix_ObjS_Attaquant[2] == 113) { StackPanel_ObjS_113_Att.Visibility = Visibility.Visible; oeil_OBJS_113_Att(); };
@@ -7689,10 +7689,10 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 10 || Choix_ObjS_Defenseur[1] == 10 || Choix_ObjS_Defenseur[2] == 10) { Adaptation_OBJS_10_Def(); };
             if (Choix_ObjS_Defenseur[0] == 11 || Choix_ObjS_Defenseur[1] == 11 || Choix_ObjS_Defenseur[2] == 11) { Adaptation_OBJS_11_Def(); };
 
-            if (Choix_ObjS_Defenseur[0] == 12 || Choix_ObjS_Defenseur[1] == 12 || Choix_ObjS_Defenseur[2] == 12) { StackPanel_ObjS_12_Def.Visibility = Visibility.Visible; oeil_OBJS_12_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 13 || Choix_ObjS_Defenseur[1] == 13 || Choix_ObjS_Defenseur[2] == 13) { StackPanel_ObjS_13_Def.Visibility = Visibility.Visible; oeil_OBJS_13_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 14 || Choix_ObjS_Defenseur[1] == 14 || Choix_ObjS_Defenseur[2] == 14) { StackPanel_ObjS_14_Def.Visibility = Visibility.Visible; oeil_OBJS_14_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 18 || Choix_ObjS_Defenseur[1] == 18 || Choix_ObjS_Defenseur[2] == 18) { StackPanel_ObjS_18_Def.Visibility = Visibility.Visible; oeil_OBJS_18_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 12 || Choix_ObjS_Defenseur[1] == 12 || Choix_ObjS_Defenseur[2] == 12) { Adaptation_OBJS_12_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 13 || Choix_ObjS_Defenseur[1] == 13 || Choix_ObjS_Defenseur[2] == 13) { Adaptation_OBJS_13_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 14 || Choix_ObjS_Defenseur[1] == 14 || Choix_ObjS_Defenseur[2] == 14) { Adaptation_OBJS_14_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 18 || Choix_ObjS_Defenseur[1] == 18 || Choix_ObjS_Defenseur[2] == 18) { Adaptation_OBJS_18_Def(); };
 
             if (Choix_ObjS_Defenseur[0] == 15 || Choix_ObjS_Defenseur[1] == 15 || Choix_ObjS_Defenseur[2] == 15) { Adaptation_OBJS_15_Def(); };
             if (Choix_ObjS_Defenseur[0] == 16 || Choix_ObjS_Defenseur[1] == 16 || Choix_ObjS_Defenseur[2] == 16) { Adaptation_OBJS_16_Def(); };
@@ -7703,7 +7703,7 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 101 || Choix_ObjS_Defenseur[1] == 101 || Choix_ObjS_Defenseur[2] == 101) { StackPanel_ObjS_101_Def.Visibility = Visibility.Visible; oeil_OBJS_101_Def(); };
             if (Choix_ObjS_Defenseur[0] == 102 || Choix_ObjS_Defenseur[1] == 102 || Choix_ObjS_Defenseur[2] == 102) { StackPanel_ObjS_102_Def.Visibility = Visibility.Visible; oeil_OBJS_102_Def(); };
             if (Choix_ObjS_Defenseur[0] == 103 || Choix_ObjS_Defenseur[1] == 103 || Choix_ObjS_Defenseur[2] == 103) { StackPanel_ObjS_103_Def.Visibility = Visibility.Visible; oeil_OBJS_103_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 110 || Choix_ObjS_Defenseur[1] == 110 || Choix_ObjS_Defenseur[2] == 110) { StackPanel_ObjS_110_Def.Visibility = Visibility.Visible; oeil_OBJS_110_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 110 || Choix_ObjS_Defenseur[1] == 110 || Choix_ObjS_Defenseur[2] == 110) { Adaptation_OBJC_110_Def(); };
             if (Choix_ObjS_Defenseur[0] == 111 || Choix_ObjS_Defenseur[1] == 111 || Choix_ObjS_Defenseur[2] == 111) { StackPanel_ObjS_111_Def.Visibility = Visibility.Visible; oeil_OBJS_111_Def(); };
             if (Choix_ObjS_Defenseur[0] == 112 || Choix_ObjS_Defenseur[1] == 112 || Choix_ObjS_Defenseur[2] == 112) { StackPanel_ObjS_112_Def.Visibility = Visibility.Visible; oeil_OBJS_112_Def(); };
             if (Choix_ObjS_Defenseur[0] == 113 || Choix_ObjS_Defenseur[1] == 113 || Choix_ObjS_Defenseur[2] == 113) { StackPanel_ObjS_113_Def.Visibility = Visibility.Visible; oeil_OBJS_113_Def(); };
@@ -12099,11 +12099,24 @@ namespace CPV9
             ///CALCUL SCORE OBJECTIF MISSION 110
             if (TextBox_ObjS_110_Att_Devastator.Text != "" || TextBox_ObjS_110_Att_Tactique.Text != "" || TextBox_ObjS_110_Att_Assaut.Text != "")
             {
-                TextBlock_ObjS_110_Att_Devastator.Text = TextBox_ObjS_110_Att_Devastator.Text;
+                if (CA == "Nachmund")
+                {
+                    TextBlock_ObjS_110_Att_Devastator.Text = TextBox_ObjS_110_Att_Devastator.Text;
+                }
+                if (CA == "Nephilim")
+                {
+                    string Q = TextBox_ObjS_110_Att_Devastator.Text;
+                    if (Q != "")
+                    {                        
+                        int x;
+                        x = 2 * Convert.ToInt32(Q);
+                        TextBlock_ObjS_110_Att_Devastator.Text = Convert.ToString(x);
+                    }                    
+                }
                 TextBlock_ObjS_110_Att_Tactique.Text = TextBox_ObjS_110_Att_Tactique.Text;
                 TextBlock_ObjS_110_Att_Assaut.Text = TextBox_ObjS_110_Att_Assaut.Text;
                 Classe_Score_OBJC_SM_110 OBJECTIF_Codex_110_Att;
-                OBJECTIF_Codex_110_Att = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Att_Devastator.Text, TextBox_ObjS_110_Att_Tactique.Text, TextBox_ObjS_110_Att_Assaut.Text);
+                OBJECTIF_Codex_110_Att = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Att_Devastator.Text, TextBox_ObjS_110_Att_Tactique.Text, TextBox_ObjS_110_Att_Assaut.Text, CA);
                 Scores_Attaquant[49] = OBJECTIF_Codex_110_Att.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Codex_110_Att.Score_ObjS) >= 15)
                 {
@@ -13222,11 +13235,24 @@ namespace CPV9
             ///CALCUL SCORE OBJECTIF MISSION 110
             if (TextBox_ObjS_110_Def_Devastator.Text != "" || TextBox_ObjS_110_Def_Tactique.Text != "" || TextBox_ObjS_110_Def_Assaut.Text != "")
             {
-                TextBlock_ObjS_110_Def_Devastator.Text = TextBox_ObjS_110_Def_Devastator.Text;
+                if (CA == "Nachmund")
+                {
+                    TextBlock_ObjS_110_Def_Devastator.Text = TextBox_ObjS_110_Def_Devastator.Text;
+                }
+                if (CA == "Nephilim")
+                {
+                    string Q = TextBox_ObjS_110_Def_Devastator.Text;
+                    if (Q != "")
+                    {
+                        int x;
+                        x = 2 * Convert.ToInt32(Q);
+                        TextBlock_ObjS_110_Def_Devastator.Text = Convert.ToString(x);
+                    }
+                }
                 TextBlock_ObjS_110_Def_Tactique.Text = TextBox_ObjS_110_Def_Tactique.Text;
                 TextBlock_ObjS_110_Def_Assaut.Text = TextBox_ObjS_110_Def_Assaut.Text;
                 Classe_Score_OBJC_SM_110 OBJECTIF_Codex_110_Def;
-                OBJECTIF_Codex_110_Def = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Def_Devastator.Text, TextBox_ObjS_110_Def_Tactique.Text, TextBox_ObjS_110_Def_Assaut.Text);
+                OBJECTIF_Codex_110_Def = new Classe_Score_OBJC_SM_110(TextBox_ObjS_110_Def_Devastator.Text, TextBox_ObjS_110_Def_Tactique.Text, TextBox_ObjS_110_Def_Assaut.Text, CA);
                 Scores_Defenseur[49] = OBJECTIF_Codex_110_Def.Scores_Joueur;
                 if (Convert.ToInt32(OBJECTIF_Codex_110_Def.Score_ObjS) >= 15)
                 {
@@ -20322,9 +20348,13 @@ namespace CPV9
 
             }///OBJS 3 - TUEURS DE TITANS
 
-            Button_Obj_Codex_SM_110_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SM_110_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SM_110_Att.FontSize = x;
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Visible;
+                Button_Obj_Codex_SM_110_Att.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_SM_110_Att.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_SM_110_Att.FontSize = x;
+            }///OBJC SM 110-GUERRE CODEX
             Button_Obj_Codex_BA_113_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_113_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_113_Att.FontSize = x;
@@ -20478,9 +20508,20 @@ namespace CPV9
             Button_Obj_Sec_Att_13.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_13.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_13.FontSize = x;
-            Button_Obj_Sec_Att_14.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Sec_Att_14.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Sec_Att_14.FontSize = x;
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Sec_Att_14.Visibility = Visibility.Visible;
+                Button_Obj_Sec_Att_14.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Sec_Att_14.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Sec_Att_14.FontSize = x;
+            }///OBJS 14 - LEVEZ HAUT LES ETENDARDS
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Sec_Att_18.Visibility = Visibility.Visible;
+                Button_Obj_Sec_Att_18.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Sec_Att_18.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Sec_Att_18.FontSize = x;
+            }///OBJS 18 - DONNEES DE NEPHILIM
             Button_Obj_Sec_Att_18.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_18.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_18.FontSize = x;
@@ -20930,9 +20971,13 @@ namespace CPV9
                 Button_Obj_Sec_Def_3.FontSize = x;
             }///OBJS 3 - TUEURS DE TITANS
 
-            Button_Obj_Codex_SM_110_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SM_110_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SM_110_Def.FontSize = x;
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_SM_110_Def.Visibility = Visibility.Visible;
+                Button_Obj_Codex_SM_110_Def.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_SM_110_Def.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_SM_110_Def.FontSize = x;
+            }///OBJC SM 110-GUERRE CODEX
             Button_Obj_Codex_BA_113_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_113_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_113_Def.FontSize = x;
@@ -21086,12 +21131,20 @@ namespace CPV9
             Button_Obj_Sec_Def_13.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Def_13.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Def_13.FontSize = x;
-            Button_Obj_Sec_Def_14.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Sec_Def_14.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Sec_Def_14.FontSize = x;
-            Button_Obj_Sec_Def_18.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Sec_Def_18.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Sec_Def_18.FontSize = x;
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Sec_Def_14.Visibility = Visibility.Visible;
+                Button_Obj_Sec_Def_14.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Sec_Def_14.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Sec_Def_14.FontSize = x;
+            }///OBJS 14 - LEVEZ HAUT LES ETENDARDS
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Sec_Def_18.Visibility = Visibility.Visible;
+                Button_Obj_Sec_Def_18.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Sec_Def_18.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Sec_Def_18.FontSize = x;
+            }///OBJS 18 - DONNEES DE NEPHILIM
             Button_Obj_Codex_Necron_103_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_103_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_103_Def_1.FontSize = x;
@@ -26539,6 +26592,64 @@ namespace CPV9
             StackPanel_ObjS_11_Def.Visibility = Visibility.Visible;
             oeil_OBJS_11_Def();
         }
+        private void Adaptation_OBJS_12_Att()
+        {
+            if (CA == "Nachmun")
+            {
+                StackPanel_ObjS_12_Att.Visibility = Visibility.Visible;
+            }
+            if (CA == "Nephilim")
+            {
+                StackPanel_ObjS_12_Att.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_12_Att();
+        }
+        private void Adaptation_OBJS_12_Def()
+        {
+            if (CA == "Nachmun")
+            {
+                StackPanel_ObjS_12_Def.Visibility = Visibility.Visible;
+            }
+            if (CA == "Nephilim")
+            {
+                StackPanel_ObjS_12_Def.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_12_Def();
+        }
+        private void Adaptation_OBJS_13_Att()
+        {
+            if (CA == "Nachmun")
+            {
+                StackPanel_ObjS_13_Att.Visibility = Visibility.Visible;
+            }
+            if (CA == "Nephilim")
+            {
+                StackPanel_ObjS_13_Att.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_13_Att();
+        }
+        private void Adaptation_OBJS_13_Def()
+        {
+            if (CA == "Nachmun")
+            {
+                StackPanel_ObjS_13_Def.Visibility = Visibility.Visible;
+            }
+            if (CA == "Nephilim")
+            {
+                StackPanel_ObjS_13_Def.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_13_Def();
+        }
+        private void Adaptation_OBJS_14_Att()
+        {
+            StackPanel_ObjS_14_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_14_Att();
+        }
+        private void Adaptation_OBJS_14_Def()
+        {
+            StackPanel_ObjS_14_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_14_Def();
+        }
         private void Adaptation_OBJS_15_Att()
         {
             StackPanel_ObjS_15_Att.Visibility = Visibility.Visible;
@@ -26579,6 +26690,34 @@ namespace CPV9
             StackPanel_ObjS_17_Def.Visibility = Visibility.Visible;
             oeil_OBJS_17_Def();
         }
+        private void Adaptation_OBJS_18_Att()
+        {
+            if (CA == "Nachmun")
+            {
+                StackPanel_ObjS_18_Att.Visibility = Visibility.Visible;
+            }
+            if (CA == "Nephilim")
+            {
+                Button_Obj_Sec_Att_18.Content = "18 - DONNEES DE NEPHILIM";
+                Label_Objectif_Sec_Att_18A.Content = "18-RECUPEREZ LES DONNEES DE NEPHILIM";
+                StackPanel_ObjS_18_Att.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_18_Att();
+        }
+        private void Adaptation_OBJS_18_Def()
+        {
+            if (CA == "Nachmun")
+            {
+                StackPanel_ObjS_18_Def.Visibility = Visibility.Visible;
+            }
+            if (CA == "Nephilim")
+            {
+                Button_Obj_Sec_Def_18.Content = "18 - DONNEES DE NEPHILIM";
+                Label_Objectif_Sec_Def_18A.Content = "18-RECUPEREZ LES DONNEES DE NEPHILIM";
+                StackPanel_ObjS_18_Def.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_18_Def();
+        }
         private void Adaptation_OBJS_19_Att()
         {
             if (CA == "Nachmun")
@@ -26603,6 +26742,29 @@ namespace CPV9
             }
             oeil_OBJS_19_Def();
         }
+        #endregion
+        #region OBJ Codex
+            #region SM
+        private void Adaptation_OBJC_110_Att()
+        {
+            StackPanel_ObjS_110_Att.Visibility = Visibility.Visible;            
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_110B.Content = "Marquez 1 pts pour chaque unité ennemi detruite avec les armes spécifier , et 2 pts en doctrine Dévastator";
+            }
+            oeil_OBJS_110_Att();
+        }
+        private void Adaptation_OBJC_110_Def()
+        {
+            StackPanel_ObjS_110_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_110B.Content = "Marquez 1 pts pour chaque unité ennemi detruite avec les armes spécifier , et 2 pts en doctrine Dévastator";
+            }
+            oeil_OBJS_110_Def();
+        }
+
+        #endregion
         #endregion
         #endregion
 

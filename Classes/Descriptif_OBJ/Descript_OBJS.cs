@@ -129,13 +129,27 @@
                     l6 = "Une unité ne peut pas commencer cette action s'il y a la moindre unité ennemie (hors Aérodyne) à portée du même pion objectif.";
                     l7 = "L'action est accomplie à la fin de votre phase de mouvement.";
                     l8 = "si cette action est accomplie, on dit qu'un étendard de votre armée est levé sur ce pion objectif.";
-                    l10 = "L'étendard est retiré si votre adversaire contrôle le pion objectif au début de n'importe quelle phase.";
+                    if (CA == "Nachmund")
+                    {
+                        l10 = "L'étendard est retiré si votre adversaire contrôle le pion objectif au début de n'importe quelle phase.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l10 = "L'étendard est retiré si votre adversaire contrôle le pion objectif au début de n'importe quelle phase de Commandement.";
+                    }
                     l12 = "Vous marquez 1 point de victoire à la fin de chacune de vos phase de commandement et 1 point de victoire à la fin de la bataille,";
                     l13 = "pour chaque pion objectif du champs de bataille sur lequel un de vos étendards a été levé";
                     break;
 
                 case 18:
-                    l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action)";
+                    if (CA == "Nachmund")
+                    {
+                        l1 = " RECUPEREZ LES DONNEES DE NACHMUND (action)";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l1 = " RECUPEREZ LES DONNEES DE NEPHILIM (action)";
+                    }
                     l2 = "1 unité INFANTERIE ou motard de votre armée peut entreprendre cette action à la fin de votre phase de mouvement";
                     l3 = "si elle est entièrement dans un quart de table sans servocrâne récupéré par votre armée (voir ci-dessous)";
                     l4 = "et à plus de 6 pouces de tout autre quart de table.";
@@ -236,11 +250,22 @@
                 #region OBJC_SM
                 case 110:
                     l1 = "GUERRE CODEX";
-                    l4 = "Marquez 1 pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné";
+                    if (CA == "Nachmund")
+                    {
+                        l4 = "Marquez 1 pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné";
+                        l7 = "Doctrine Devastator ( armes Lourdes et Grenades)";
+                        l8 = "Doctrine Tactique ( armes Assaut et Tir rapide)";
+                        l9 = "Doctrine Assaut ( armes Mêlé et Pistolet)";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l4 = "Marquez des pts, par unité detruite pendant les doctrines suivante et en utilisant les armes selectionné";
+                        l7 = "Doctrine Devastator ( armes Lourdes et Grenades) (2 pts de victoires)";
+                        l8 = "Doctrine Tactique ( armes Assaut et Tir rapide) (1 pts de victoires)";
+                        l9 = "Doctrine Assaut ( armes Mêlé et Pistolet) (1 pts de victoires)";
+                    }
                     l5 = "dans un maximun de 5 pts par doctrine (Utiliser les unités ADEPTUS ASTARTES uniquement)";
-                    l7 = "Doctrine Devastator ( armes Lourdes et Grenades)";
-                    l8 = "Doctrine Tactique ( armes Assaut et Tir rapide)";
-                    l9 = "Doctrine Assaut ( armes Mêlé et Pistolet)";
+                    
                     break;
 
                 case 111:

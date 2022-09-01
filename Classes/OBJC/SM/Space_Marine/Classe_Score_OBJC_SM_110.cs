@@ -9,11 +9,24 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJC_SM_110(String Saisie1, String Saisie2, String Saisie3)
+        public Classe_Score_OBJC_SM_110(String Saisie1, String Saisie2, String Saisie3, string CA)
         {
-            if (Saisie1 != "")
+            if (Saisie1 != "" && CA == "Nachmund")
             {
                 calcul(Convert.ToInt32(Saisie1));
+            }
+            if (Saisie1 != "" && CA == "Nephilim")
+            {
+                int Donne1 = Convert.ToInt32(Saisie1);
+                if (Donne1 >= 1)
+                {
+                    Donne1 = Donne1 * 2;
+                    if (Donne1 >= 5)
+                    {
+                        Donne1 = 5;
+                    }
+                    Score += Donne1;
+                }                
             }
             if (Saisie2 != "")
             {
