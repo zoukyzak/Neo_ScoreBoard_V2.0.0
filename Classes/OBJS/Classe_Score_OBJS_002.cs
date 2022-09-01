@@ -9,7 +9,7 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJS_002(String Saisie1, String Saisie2, String Saisie3)
+        public Classe_Score_OBJS_002(String Saisie1, String Saisie2, String Saisie3, string Saisie4)
         {
             if (Saisie1 != "")
             {
@@ -32,6 +32,14 @@ namespace CPV9.Classes
                 if (Convert.ToInt32(Saisie3) > 0)
                 {
                     Score = Score + (Convert.ToInt32(Saisie3) * 3);
+                    Score_ObjS_002 = Score;
+                }
+            }
+            if (Saisie4 != "")
+            {
+                if (Convert.ToInt32(Saisie4) > 0)
+                {
+                    Score = Score + (Convert.ToInt32(Saisie4) * 4);
                     Score_ObjS_002 = Score;
                 }
             }

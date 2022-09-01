@@ -10,9 +10,9 @@ namespace CPV9.Windows
             InitializeComponent();
             
         }
-        public void Affich_Lives(int Objectif)
+        public void Affich_Lives(int Objectif, string CA)
         {
-            CPV9.Classes.Descript_OBJS CetObjectif = new CPV9.Classes.Descript_OBJS(Objectif);
+            CPV9.Classes.Descript_OBJS CetObjectif = new CPV9.Classes.Descript_OBJS(Objectif, CA);
 
             Label_OBJ_Livres_1.Content = CetObjectif.L1;
             Label_OBJ_Livres_2.Content = CetObjectif.L2;

@@ -2,7 +2,7 @@
 {
     class Descript_OBJS
     {
-        public Descript_OBJS(int OBJ)
+        public Descript_OBJS(int OBJ , string CA)
         {
             l1 = l2 = l3 = l4 = l5 = l6 = l7 = l8 = l9 = l10 = l11 = l12 = l13 = l14 = "";
             switch (OBJ)
@@ -23,8 +23,18 @@
                     l4 = "véhicule ou monstre avec une charactéristique de PV de 9 ou moins qui est détruite.";
                     l6 = "Score 2 points de victoire à la fin de la bataille pour chaque figurine ennemi";
                     l7 = "véhicule ou monstre avec une charactéristique de PV entre 10 et 14 qui est détruite.";
-                    l9 = "et 3 points de victoire à la fin de la bataille pour chaque figurine ennemi, ";
-                    l10 = "véhicule ou monstre avec une charactéristique de PV de 15 et plus qui est détruite.";
+                    l9 = "Score 3 points de victoire à la fin de la bataille pour chaque figurine ennemi, ";
+                    if (CA == "Nachmund")
+                    {
+                        l10 = "véhicule ou monstre avec une charactéristique de PV de 15 et plus qui est détruite.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l10 = "véhicule ou monstre avec une charactéristique de PV entre 15 et 19 qui est détruite.";
+                        l12 = "Score 4 points de victoire à la fin de la bataille pour chaque figurine ennemi, ";
+                        l13 = "véhicule ou monstre avec une charactéristique de PV de 20 et plus qui est détruite.";
+
+                    }
                     break;
 
                 case 3:
@@ -142,7 +152,16 @@
                     l3 = "Marquez 3 points de victoire chaque fois que vous accomplissez avec succès l'action psychique suivante:";
                     l5 = "INTERROGATION PSYCHIQUE (Action Psychique charge Warp 4):";
                     l7 = "1 unité PERSONNAGE PSYKER de votre armée peut tenter d'accomplir cette action psychique à votre phase psychique";
-                    l8 = "si elle est à 24 pouces d'une ou plusieurs figurines PERSONNAGES ennemies.";
+                    if (CA == "Nachmund")
+                    {
+                        l8 = "si elle est à 24 pouces d'une ou plusieurs figurines PERSONNAGES ennemies.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l8 = "si elle est à 24 pouces d'une ou plusieurs figurines PERSONNAGES ennemies visible.";
+                        l9 = "de plus si le resultat du test psychique est suppérieur ou égal à la charactéristique de commandement";
+                        l10 = "d'une ou plusieurs figurines ennemies à 24 pouces alors cette action est accomplie et vous gagnez 1 PC à la fin de la phase.";
+                    }
                     break;
 
                 case 16:
