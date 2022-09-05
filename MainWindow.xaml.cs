@@ -1616,6 +1616,23 @@ namespace CPV9
             TextBox_Objectif_Sec_Att_132_R5A.Clear();
             TextBox_Objectif_Sec_Att_132_R5B.Clear();
 
+            /// OBJECTIF SECONDAIRE 133 TUEZ L'HERETIQUE
+            TextBox_Objectif_Sec_Att_133_R1_Bolts.Clear();
+            TextBox_Objectif_Sec_Att_133_R1_Flammes.Clear();
+            TextBox_Objectif_Sec_Att_133_R1_Fusion.Clear();
+            TextBox_Objectif_Sec_Att_133_R2_Bolts.Clear();
+            TextBox_Objectif_Sec_Att_133_R2_Flammes.Clear();
+            TextBox_Objectif_Sec_Att_133_R2_Fusion.Clear();
+            TextBox_Objectif_Sec_Att_133_R3_Bolts.Clear();
+            TextBox_Objectif_Sec_Att_133_R3_Flammes.Clear();
+            TextBox_Objectif_Sec_Att_133_R3_Fusion.Clear();
+            TextBox_Objectif_Sec_Att_133_R4_Bolts.Clear();
+            TextBox_Objectif_Sec_Att_133_R4_Flammes.Clear();
+            TextBox_Objectif_Sec_Att_133_R4_Fusion.Clear();
+            TextBox_Objectif_Sec_Att_133_R5_Bolts.Clear();
+            TextBox_Objectif_Sec_Att_133_R5_Flammes.Clear();
+            TextBox_Objectif_Sec_Att_133_R5_Fusion.Clear();
+
             TextBox_ObjS_135_Att_Sanctuaire.Clear();
             #endregion
             #region INIT_OBJ_ATTAQUANT_CODEX_ORK
@@ -2238,6 +2255,23 @@ namespace CPV9
             TextBox_Objectif_Sec_Def_132_R4B.Clear();
             TextBox_Objectif_Sec_Def_132_R5A.Clear();
             TextBox_Objectif_Sec_Def_132_R5B.Clear();
+
+            /// OBJECTIF SECONDAIRE 133 TUEZ L'HERETIQUE
+            TextBox_Objectif_Sec_Def_133_R1_Bolts.Clear();
+            TextBox_Objectif_Sec_Def_133_R1_Flammes.Clear();
+            TextBox_Objectif_Sec_Def_133_R1_Fusion.Clear();
+            TextBox_Objectif_Sec_Def_133_R2_Bolts.Clear();
+            TextBox_Objectif_Sec_Def_133_R2_Flammes.Clear();
+            TextBox_Objectif_Sec_Def_133_R2_Fusion.Clear();
+            TextBox_Objectif_Sec_Def_133_R3_Bolts.Clear();
+            TextBox_Objectif_Sec_Def_133_R3_Flammes.Clear();
+            TextBox_Objectif_Sec_Def_133_R3_Fusion.Clear();
+            TextBox_Objectif_Sec_Def_133_R4_Bolts.Clear();
+            TextBox_Objectif_Sec_Def_133_R4_Flammes.Clear();
+            TextBox_Objectif_Sec_Def_133_R4_Fusion.Clear();
+            TextBox_Objectif_Sec_Def_133_R5_Bolts.Clear();
+            TextBox_Objectif_Sec_Def_133_R5_Flammes.Clear();
+            TextBox_Objectif_Sec_Def_133_R5_Fusion.Clear();
 
             TextBox_ObjS_135_Def_Sanctuaire.Clear();
             #endregion
@@ -3277,21 +3311,42 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 71] = TextBox_Objectif_Sec_Att_132_R5B.Text;
             /// OBJECTIF SECONDAIRE 133
             n = 0;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat; n++;
-            Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat;
+            if (CA == "Nachmund")
+            {
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat; n++;
+                Mem_Saisie_Attaquant[n, 72] = CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat;
+            }
+            if (CA =="Nephilim")
+            {
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R1_Bolts.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R1_Flammes.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R1_Fusion.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R2_Bolts.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R2_Flammes.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R2_Fusion.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R3_Bolts.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R3_Flammes.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R3_Fusion.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R4_Bolts.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R4_Flammes.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R4_Fusion.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R5_Bolts.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R5_Flammes.Text; n++;
+                Mem_Saisie_Attaquant[n, 72] = TextBox_Objectif_Sec_Att_133_R5_Fusion.Text;
+            }
 
             /// OBJECTIF SECONDAIRE 134
             n = 0;
@@ -3964,23 +4019,45 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 71] = TextBox_Objectif_Sec_Def_132_R4B.Text; n++;
             Mem_Saisie_Defenseur[n, 71] = TextBox_Objectif_Sec_Def_132_R5A.Text; n++;
             Mem_Saisie_Defenseur[n, 71] = TextBox_Objectif_Sec_Def_132_R5B.Text;
+
             /// OBJECTIF SECONDAIRE 133
             n = 0;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat; n++;
-            Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat;
+            if (CA == "Nachmund")
+            {
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat; n++;
+                Mem_Saisie_Defenseur[n, 72] = CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat;
+            }
+            if (CA == "Nephilim")
+            {
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R1_Bolts.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R1_Flammes.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R1_Fusion.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R2_Bolts.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R2_Flammes.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R2_Fusion.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R3_Bolts.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R3_Flammes.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R3_Fusion.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R4_Bolts.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R4_Flammes.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R4_Fusion.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R5_Bolts.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R5_Flammes.Text; n++;
+                Mem_Saisie_Defenseur[n, 72] = TextBox_Objectif_Sec_Def_133_R5_Fusion.Text;
+            }            
 
             /// OBJECTIF SECONDAIRE 134
             n = 0;
@@ -5484,36 +5561,57 @@ namespace CPV9
 
             /// OBJECTIF SECONDAIRE 133
             n = 0;
-            CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
-            CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat = Mem_Saisie_Attaquant[n, 72];
-            if (CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R1_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R1_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R1_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R2_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R2_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R2_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R3_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R3_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R3_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R4_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R4_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R4_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R5_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R5_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R5_Fusion.IsChecked = true; };
+            if (CA == "Nachmund")
+            {
+                CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat = Mem_Saisie_Attaquant[n, 72]; n++;
+                CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat = Mem_Saisie_Attaquant[n, 72];
+                if (CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R1_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R1_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R1_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R2_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R2_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R2_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R3_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R3_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R3_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R4_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R4_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R4_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R5_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R5_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Att_133_R5_Fusion.IsChecked = true; };
+            }
+            if (CA == "Nephilim")
+            {
+                TextBox_Objectif_Sec_Att_133_R1_Bolts.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R1_Flammes.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R1_Fusion.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R2_Bolts.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R2_Flammes.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R2_Fusion.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R3_Bolts.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R3_Flammes.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R3_Fusion.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R4_Bolts.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R4_Flammes.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R4_Fusion.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R5_Bolts.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R5_Flammes.Text = Mem_Saisie_Attaquant[n, 72]; n++;
+                TextBox_Objectif_Sec_Att_133_R5_Fusion.Text = Mem_Saisie_Attaquant[n, 72];
+            }
 
             /// OBJECTIF SECONDAIRE 134
             n = 0;
@@ -7057,36 +7155,57 @@ namespace CPV9
 
             /// OBJECTIF SECONDAIRE 133
             n = 0;
-            CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
-            CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat = Mem_Saisie_Defenseur[n, 72];
-            if (CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R1_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R1_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R1_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R2_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R2_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R2_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R3_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R3_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R3_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R4_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R4_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R4_Fusion.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R5_Bolts.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R5_Flammes.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R5_Fusion.IsChecked = true; };
+            if (CA == "Nachmund")
+            {
+                CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat = Mem_Saisie_Defenseur[n, 72]; n++;
+                if (CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R1_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R1_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R1_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R2_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R2_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R2_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R3_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R3_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R3_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R4_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R4_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R4_Fusion.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R5_Bolts.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R5_Flammes.IsChecked = true; };
+                if (CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat == "true") { CheckBox_Objectif_Sec_Def_133_R5_Fusion.IsChecked = true; };
+            }
+            if (CA == "Nephilim")
+            {
+                TextBox_Objectif_Sec_Def_133_R1_Bolts.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R1_Flammes.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R1_Fusion.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R2_Bolts.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R2_Flammes.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R2_Fusion.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R3_Bolts.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R3_Flammes.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R3_Fusion.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R4_Bolts.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R4_Flammes.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R4_Fusion.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R5_Bolts.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R5_Flammes.Text = Mem_Saisie_Defenseur[n, 72]; n++;
+                TextBox_Objectif_Sec_Def_133_R5_Fusion.Text = Mem_Saisie_Defenseur[n, 72];
+            }
 
             /// OBJECTIF SECONDAIRE 134
             n = 0;
@@ -7571,8 +7690,8 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 102 || Choix_ObjS_Attaquant[1] == 102 || Choix_ObjS_Attaquant[2] == 102) { StackPanel_ObjS_102_Att.Visibility = Visibility.Visible; oeil_OBJS_102_Att(); };
             if (Choix_ObjS_Attaquant[0] == 103 || Choix_ObjS_Attaquant[1] == 103 || Choix_ObjS_Attaquant[2] == 103) { StackPanel_ObjS_103_Att.Visibility = Visibility.Visible; oeil_OBJS_103_Att(); };
             if (Choix_ObjS_Attaquant[0] == 110 || Choix_ObjS_Attaquant[1] == 110 || Choix_ObjS_Attaquant[2] == 110) { Adaptation_OBJC_110_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 111 || Choix_ObjS_Attaquant[1] == 111 || Choix_ObjS_Attaquant[2] == 111) { StackPanel_ObjS_111_Att.Visibility = Visibility.Visible; oeil_OBJS_111_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 112 || Choix_ObjS_Attaquant[1] == 112 || Choix_ObjS_Attaquant[2] == 112) { StackPanel_ObjS_112_Att.Visibility = Visibility.Visible; oeil_OBJS_112_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 111 || Choix_ObjS_Attaquant[1] == 111 || Choix_ObjS_Attaquant[2] == 111) { Adaptation_OBJC_111_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 112 || Choix_ObjS_Attaquant[1] == 112 || Choix_ObjS_Attaquant[2] == 112) { Adaptation_OBJC_112_Att(); };
             if (Choix_ObjS_Attaquant[0] == 113 || Choix_ObjS_Attaquant[1] == 113 || Choix_ObjS_Attaquant[2] == 113) { StackPanel_ObjS_113_Att.Visibility = Visibility.Visible; oeil_OBJS_113_Att(); };
             if (Choix_ObjS_Attaquant[0] == 114 || Choix_ObjS_Attaquant[1] == 114 || Choix_ObjS_Attaquant[2] == 114) { StackPanel_ObjS_114_Att.Visibility = Visibility.Visible; oeil_OBJS_114_Att(); };
             if (Choix_ObjS_Attaquant[0] == 115 || Choix_ObjS_Attaquant[1] == 115 || Choix_ObjS_Attaquant[2] == 115) { StackPanel_ObjS_115_Att.Visibility = Visibility.Visible; oeil_OBJS_115_Att(); };
@@ -7593,7 +7712,7 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 130 || Choix_ObjS_Attaquant[1] == 130 || Choix_ObjS_Attaquant[2] == 130) { StackPanel_ObjS_130_Att.Visibility = Visibility.Visible; oeil_OBJS_130_Att(); };
             if (Choix_ObjS_Attaquant[0] == 131 || Choix_ObjS_Attaquant[1] == 131 || Choix_ObjS_Attaquant[2] == 131) { StackPanel_ObjS_131_Att.Visibility = Visibility.Visible; oeil_OBJS_131_Att(); };
             if (Choix_ObjS_Attaquant[0] == 132 || Choix_ObjS_Attaquant[1] == 132 || Choix_ObjS_Attaquant[2] == 132) { StackPanel_ObjS_132_Att.Visibility = Visibility.Visible; oeil_OBJS_132_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 133 || Choix_ObjS_Attaquant[1] == 133 || Choix_ObjS_Attaquant[2] == 133) { StackPanel_ObjS_133_Att.Visibility = Visibility.Visible; oeil_OBJS_133_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 133 || Choix_ObjS_Attaquant[1] == 133 || Choix_ObjS_Attaquant[2] == 133) { Adaptation_OBJC_133_Att(); };
             if (Choix_ObjS_Attaquant[0] == 134 || Choix_ObjS_Attaquant[1] == 134 || Choix_ObjS_Attaquant[2] == 134) { StackPanel_ObjS_134_Att.Visibility = Visibility.Visible; oeil_OBJS_134_Att(); };
             if (Choix_ObjS_Attaquant[0] == 135 || Choix_ObjS_Attaquant[1] == 135 || Choix_ObjS_Attaquant[2] == 135) { StackPanel_ObjS_135_Att.Visibility = Visibility.Visible; oeil_OBJS_135_Att(); };
             if (Choix_ObjS_Attaquant[0] == 136 || Choix_ObjS_Attaquant[1] == 136 || Choix_ObjS_Attaquant[2] == 136) { StackPanel_ObjS_136_Att.Visibility = Visibility.Visible; oeil_OBJS_136_Att(); };
@@ -7704,8 +7823,8 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 102 || Choix_ObjS_Defenseur[1] == 102 || Choix_ObjS_Defenseur[2] == 102) { StackPanel_ObjS_102_Def.Visibility = Visibility.Visible; oeil_OBJS_102_Def(); };
             if (Choix_ObjS_Defenseur[0] == 103 || Choix_ObjS_Defenseur[1] == 103 || Choix_ObjS_Defenseur[2] == 103) { StackPanel_ObjS_103_Def.Visibility = Visibility.Visible; oeil_OBJS_103_Def(); };
             if (Choix_ObjS_Defenseur[0] == 110 || Choix_ObjS_Defenseur[1] == 110 || Choix_ObjS_Defenseur[2] == 110) { Adaptation_OBJC_110_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 111 || Choix_ObjS_Defenseur[1] == 111 || Choix_ObjS_Defenseur[2] == 111) { StackPanel_ObjS_111_Def.Visibility = Visibility.Visible; oeil_OBJS_111_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 112 || Choix_ObjS_Defenseur[1] == 112 || Choix_ObjS_Defenseur[2] == 112) { StackPanel_ObjS_112_Def.Visibility = Visibility.Visible; oeil_OBJS_112_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 111 || Choix_ObjS_Defenseur[1] == 111 || Choix_ObjS_Defenseur[2] == 111) { Adaptation_OBJC_111_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 112 || Choix_ObjS_Defenseur[1] == 112 || Choix_ObjS_Defenseur[2] == 112) { Adaptation_OBJC_112_Def(); };
             if (Choix_ObjS_Defenseur[0] == 113 || Choix_ObjS_Defenseur[1] == 113 || Choix_ObjS_Defenseur[2] == 113) { StackPanel_ObjS_113_Def.Visibility = Visibility.Visible; oeil_OBJS_113_Def(); };
             if (Choix_ObjS_Defenseur[0] == 114 || Choix_ObjS_Defenseur[1] == 114 || Choix_ObjS_Defenseur[2] == 114) { StackPanel_ObjS_114_Def.Visibility = Visibility.Visible; oeil_OBJS_114_Def(); };
             if (Choix_ObjS_Defenseur[0] == 115 || Choix_ObjS_Defenseur[1] == 115 || Choix_ObjS_Defenseur[2] == 115) { StackPanel_ObjS_115_Def.Visibility = Visibility.Visible; oeil_OBJS_115_Def(); };
@@ -7726,7 +7845,7 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 130 || Choix_ObjS_Defenseur[1] == 130 || Choix_ObjS_Defenseur[2] == 130) { StackPanel_ObjS_130_Def.Visibility = Visibility.Visible; oeil_OBJS_130_Def(); };
             if (Choix_ObjS_Defenseur[0] == 131 || Choix_ObjS_Defenseur[1] == 131 || Choix_ObjS_Defenseur[2] == 131) { StackPanel_ObjS_131_Def.Visibility = Visibility.Visible; oeil_OBJS_131_Def(); };
             if (Choix_ObjS_Defenseur[0] == 132 || Choix_ObjS_Defenseur[1] == 132 || Choix_ObjS_Defenseur[2] == 132) { StackPanel_ObjS_132_Def.Visibility = Visibility.Visible; oeil_OBJS_132_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 133 || Choix_ObjS_Defenseur[1] == 133 || Choix_ObjS_Defenseur[2] == 133) { StackPanel_ObjS_133_Def.Visibility = Visibility.Visible; oeil_OBJS_133_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 133 || Choix_ObjS_Defenseur[1] == 133 || Choix_ObjS_Defenseur[2] == 133) { Adaptation_OBJC_133_Def(); };
             if (Choix_ObjS_Defenseur[0] == 134 || Choix_ObjS_Defenseur[1] == 134 || Choix_ObjS_Defenseur[2] == 134) { StackPanel_ObjS_134_Def.Visibility = Visibility.Visible; oeil_OBJS_134_Def(); };
             if (Choix_ObjS_Defenseur[0] == 135 || Choix_ObjS_Defenseur[1] == 135 || Choix_ObjS_Defenseur[2] == 135) { StackPanel_ObjS_135_Def.Visibility = Visibility.Visible; oeil_OBJS_135_Def(); };
             if (Choix_ObjS_Defenseur[0] == 136 || Choix_ObjS_Defenseur[1] == 136 || Choix_ObjS_Defenseur[2] == 136) { StackPanel_ObjS_136_Def.Visibility = Visibility.Visible; oeil_OBJS_136_Def(); };
@@ -9560,7 +9679,7 @@ namespace CPV9
         }
         private void Button_info_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(("Néo ScoreBoard\r\rGestion des scores d'une partie Warhammer 40K -v9\rFormat Grand Tournament 2022\r\rAuteur : Zouky\r\r\r CODEX PRIS EN CHARGE :\r\rGrey Knights\r Tyranids \r Ork\r Adepta Sororitas\r Adeptus Mechanicus\r Codex Death Guard\r Blood Angels\r Space Marine\r Necron"), "Version 2.1.0", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show(("Néo ScoreBoard\r\rGestion des scores d'une partie Warhammer 40K -v9\rFormat Grand Tournament 2022 Nachmun et Nephilim\r\rAuteur : Zouky\r\r\r CODEX PRIS EN CHARGE :\r\rGrey Knights\r Tyranids \r Ork\r Adepta Sororitas\r Adeptus Mechanicus\r Codex Death Guard\r Blood Angels\r Space Marine\r Necron"), "Version 3.0.0", MessageBoxButton.OK, MessageBoxImage.Information);
             return;
         }
         private void Button_Option_Click(object sender, RoutedEventArgs e)
@@ -9788,7 +9907,7 @@ namespace CPV9
                         Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Hidden;
                         Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Hidden;
                     }
-                    if (Select_Objectif >= 110 && Select_Objectif <= 116)
+                    if (Select_Objectif >= 110 && Select_Objectif <= 116 || Select_Objectif >= 132 && Select_Objectif <= 135)
                     {
                         Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Hidden;
                         Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Hidden;
@@ -9873,7 +9992,7 @@ namespace CPV9
                     Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Necron_103_Def_1.Visibility = Visibility.Hidden;
                 }
-                    if (Select_Objectif >= 110 && Select_Objectif <= 116)
+                    if (Select_Objectif >= 110 && Select_Objectif <= 116 || Select_Objectif >= 132 && Select_Objectif <= 135)
                 {
                     Button_Obj_Codex_SM_110_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_SM_111_Def.Visibility = Visibility.Hidden;
@@ -12123,24 +12242,23 @@ namespace CPV9
                     ID_Cape_Attaquant[s] = 110;
                     s++;
                 }
-                TextBlock_ObjS_110_Att.Text = Convert.ToString(OBJECTIF_Codex_110_Att.Score_ObjS);
-
-                ///CALCUL SCORE OBJECTIF MISSION 111
-                Classe_Score_OBJC_SM_111 OBJECTIF_Codex_111_Att;
-                OBJECTIF_Codex_111_Att = new Classe_Score_OBJC_SM_111(CheckBox_ObjS_111_Att_R1_Etat, CheckBox_ObjS_111_Att_R2_Etat, CheckBox_ObjS_111_Att_R3_Etat, CheckBox_ObjS_111_Att_R4_Etat, CheckBox_ObjS_111_Att_R5_Etat);
-                Scores_Attaquant[50] = OBJECTIF_Codex_111_Att.Scores_Joueur;
-                if (Convert.ToInt32(OBJECTIF_Codex_111_Att.Score_ObjS) >= 15)
-                {
-                    ID_Cape_Attaquant[s] = 111;
-                    s++;
-                }
-                TextBlock_ObjS_111_Att.Text = Convert.ToString(OBJECTIF_Codex_111_Att.Score_ObjS);
+                TextBlock_ObjS_110_Att.Text = Convert.ToString(OBJECTIF_Codex_110_Att.Score_ObjS);                
             }
-            
+
+            ///CALCUL SCORE OBJECTIF MISSION 111
+            Classe_Score_OBJC_SM_111 OBJECTIF_Codex_111_Att;
+            OBJECTIF_Codex_111_Att = new Classe_Score_OBJC_SM_111(CheckBox_ObjS_111_Att_R1_Etat, CheckBox_ObjS_111_Att_R2_Etat, CheckBox_ObjS_111_Att_R3_Etat, CheckBox_ObjS_111_Att_R4_Etat, CheckBox_ObjS_111_Att_R5_Etat);
+            Scores_Attaquant[50] = OBJECTIF_Codex_111_Att.Scores_Joueur;
+            if (Convert.ToInt32(OBJECTIF_Codex_111_Att.Score_ObjS) >= 15)
+            {
+                ID_Cape_Attaquant[s] = 111;
+                s++;
+            }
+            TextBlock_ObjS_111_Att.Text = Convert.ToString(OBJECTIF_Codex_111_Att.Score_ObjS);
 
             ///CALCUL SCORE OBJECTIF MISSION 112
             Classe_Score_OBJC_SM_112 OBJECTIF_Codex_112_Att;
-            OBJECTIF_Codex_112_Att = new Classe_Score_OBJC_SM_112(CheckBox_ObjS_112_Att_Valeur_R1_Etat, CheckBox_ObjS_112_Att_Valeur_R2_Etat, CheckBox_ObjS_112_Att_Valeur_R3_Etat, CheckBox_ObjS_112_Att_Valeur_R4_Etat, CheckBox_ObjS_112_Att_Valeur_R5_Etat, CheckBox_ObjS_112_Att_Honneur_R1_Etat, CheckBox_ObjS_112_Att_Honneur_R2_Etat, CheckBox_ObjS_112_Att_Honneur_R3_Etat, CheckBox_ObjS_112_Att_Honneur_R4_Etat, CheckBox_ObjS_112_Att_Honneur_R5_Etat, CheckBox_ObjS_112_Att_Devoir_R1_Etat, CheckBox_ObjS_112_Att_Devoir_R2_Etat, CheckBox_ObjS_112_Att_Devoir_R3_Etat, CheckBox_ObjS_112_Att_Devoir_R4_Etat, CheckBox_ObjS_112_Att_Devoir_R5_Etat);
+            OBJECTIF_Codex_112_Att = new Classe_Score_OBJC_SM_112(CheckBox_ObjS_112_Att_Valeur_R1_Etat, CheckBox_ObjS_112_Att_Valeur_R2_Etat, CheckBox_ObjS_112_Att_Valeur_R3_Etat, CheckBox_ObjS_112_Att_Valeur_R4_Etat, CheckBox_ObjS_112_Att_Valeur_R5_Etat, CheckBox_ObjS_112_Att_Honneur_R1_Etat, CheckBox_ObjS_112_Att_Honneur_R2_Etat, CheckBox_ObjS_112_Att_Honneur_R3_Etat, CheckBox_ObjS_112_Att_Honneur_R4_Etat, CheckBox_ObjS_112_Att_Honneur_R5_Etat, CheckBox_ObjS_112_Att_Devoir_R1_Etat, CheckBox_ObjS_112_Att_Devoir_R2_Etat, CheckBox_ObjS_112_Att_Devoir_R3_Etat, CheckBox_ObjS_112_Att_Devoir_R4_Etat, CheckBox_ObjS_112_Att_Devoir_R5_Etat, CA);
             Scores_Attaquant[51] = OBJECTIF_Codex_112_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_112_Att.Score_ObjS) >= 15)
             {
@@ -12285,14 +12403,28 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 133
             Classe_Score_OBJC_AdeptaS_133 OBJECTIF_Codex_133_Att;
-            OBJECTIF_Codex_133_Att = new Classe_Score_OBJC_AdeptaS_133(CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat);
-            Scores_Attaquant[72] = OBJECTIF_Codex_133_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_133_Att.Score_ObjS) >= 15)
+            if (CA == "Nachmund")
             {
-                ID_Cape_Attaquant[s] = 133;
-                s++;
+                OBJECTIF_Codex_133_Att = new Classe_Score_OBJC_AdeptaS_133(CheckBox_Objectif_Sec_Att_133_R1_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R1_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R1_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R2_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R2_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R2_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R3_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R3_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R3_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R4_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R4_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R4_Fusion_Etat, CheckBox_Objectif_Sec_Att_133_R5_Bolts_Etat, CheckBox_Objectif_Sec_Att_133_R5_Flammes_Etat, CheckBox_Objectif_Sec_Att_133_R5_Fusion_Etat, CA);
+                Scores_Attaquant[72] = OBJECTIF_Codex_133_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_133_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 133;
+                    s++;
+                }
+                TextBlock_ObjS_133_Att.Text = Convert.ToString(OBJECTIF_Codex_133_Att.Score_ObjS);
             }
-            TextBlock_ObjS_133_Att.Text = Convert.ToString(OBJECTIF_Codex_133_Att.Score_ObjS);
+            if (CA == "Nephilim")
+            {
+                OBJECTIF_Codex_133_Att = new Classe_Score_OBJC_AdeptaS_133(TextBox_Objectif_Sec_Att_133_R1_Bolts.Text, TextBox_Objectif_Sec_Att_133_R1_Flammes.Text, TextBox_Objectif_Sec_Att_133_R1_Fusion.Text, TextBox_Objectif_Sec_Att_133_R2_Bolts.Text, TextBox_Objectif_Sec_Att_133_R2_Flammes.Text, TextBox_Objectif_Sec_Att_133_R2_Fusion.Text, TextBox_Objectif_Sec_Att_133_R3_Bolts.Text, TextBox_Objectif_Sec_Att_133_R3_Flammes.Text, TextBox_Objectif_Sec_Att_133_R3_Fusion.Text, TextBox_Objectif_Sec_Att_133_R4_Bolts.Text, TextBox_Objectif_Sec_Att_133_R4_Flammes.Text, TextBox_Objectif_Sec_Att_133_R4_Fusion.Text, TextBox_Objectif_Sec_Att_133_R5_Bolts.Text, TextBox_Objectif_Sec_Att_133_R5_Flammes.Text, TextBox_Objectif_Sec_Att_133_R5_Fusion.Text, CA);
+                Scores_Attaquant[72] = OBJECTIF_Codex_133_Att.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_133_Att.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Attaquant[s] = 133;
+                    s++;
+                }
+                TextBlock_ObjS_133_Att.Text = Convert.ToString(OBJECTIF_Codex_133_Att.Score_ObjS);
+            }
 
             ///CALCUL SCORE OBJECTIF MISSION 134
             Classe_Score_OBJC_AdeptaS_134 OBJECTIF_Codex_134_Att;
@@ -13261,6 +13393,7 @@ namespace CPV9
                 }
                 TextBlock_ObjS_110_Def.Text = Convert.ToString(OBJECTIF_Codex_110_Def.Score_ObjS);
             }
+
             ///CALCUL SCORE OBJECTIF MISSION 111
             Classe_Score_OBJC_SM_111 OBJECTIF_Codex_111_Def;
                 OBJECTIF_Codex_111_Def = new Classe_Score_OBJC_SM_111(CheckBox_ObjS_111_Def_R1_Etat, CheckBox_ObjS_111_Def_R2_Etat, CheckBox_ObjS_111_Def_R3_Etat, CheckBox_ObjS_111_Def_R4_Etat, CheckBox_ObjS_111_Def_R5_Etat);
@@ -13275,7 +13408,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 112
             Classe_Score_OBJC_SM_112 OBJECTIF_Codex_112_Def;
-            OBJECTIF_Codex_112_Def = new Classe_Score_OBJC_SM_112(CheckBox_ObjS_112_Def_Valeur_R1_Etat, CheckBox_ObjS_112_Def_Valeur_R2_Etat, CheckBox_ObjS_112_Def_Valeur_R3_Etat, CheckBox_ObjS_112_Def_Valeur_R4_Etat, CheckBox_ObjS_112_Def_Valeur_R5_Etat, CheckBox_ObjS_112_Def_Honneur_R1_Etat, CheckBox_ObjS_112_Def_Honneur_R2_Etat, CheckBox_ObjS_112_Def_Honneur_R3_Etat, CheckBox_ObjS_112_Def_Honneur_R4_Etat, CheckBox_ObjS_112_Def_Honneur_R5_Etat, CheckBox_ObjS_112_Def_Devoir_R1_Etat, CheckBox_ObjS_112_Def_Devoir_R2_Etat, CheckBox_ObjS_112_Def_Devoir_R3_Etat, CheckBox_ObjS_112_Def_Devoir_R4_Etat, CheckBox_ObjS_112_Def_Devoir_R5_Etat);
+            OBJECTIF_Codex_112_Def = new Classe_Score_OBJC_SM_112(CheckBox_ObjS_112_Def_Valeur_R1_Etat, CheckBox_ObjS_112_Def_Valeur_R2_Etat, CheckBox_ObjS_112_Def_Valeur_R3_Etat, CheckBox_ObjS_112_Def_Valeur_R4_Etat, CheckBox_ObjS_112_Def_Valeur_R5_Etat, CheckBox_ObjS_112_Def_Honneur_R1_Etat, CheckBox_ObjS_112_Def_Honneur_R2_Etat, CheckBox_ObjS_112_Def_Honneur_R3_Etat, CheckBox_ObjS_112_Def_Honneur_R4_Etat, CheckBox_ObjS_112_Def_Honneur_R5_Etat, CheckBox_ObjS_112_Def_Devoir_R1_Etat, CheckBox_ObjS_112_Def_Devoir_R2_Etat, CheckBox_ObjS_112_Def_Devoir_R3_Etat, CheckBox_ObjS_112_Def_Devoir_R4_Etat, CheckBox_ObjS_112_Def_Devoir_R5_Etat, CA);
             Scores_Defenseur[51] = OBJECTIF_Codex_112_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_112_Def.Score_ObjS) >= 15)
             {
@@ -13416,15 +13549,30 @@ namespace CPV9
             TextBlock_ObjS_132_Def.Text = Convert.ToString(OBJECTIF_Codex_132_Def.Score_ObjS);
 
             ///CALCUL SCORE OBJECTIF MISSION 133
+
             Classe_Score_OBJC_AdeptaS_133 OBJECTIF_Codex_133_Def;
-            OBJECTIF_Codex_133_Def = new Classe_Score_OBJC_AdeptaS_133(CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat);
-            Scores_Defenseur[72] = OBJECTIF_Codex_133_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_133_Def.Score_ObjS) >= 15)
+            if (CA == "Nachmund")
             {
-                ID_Cape_Defenseur[s] = 133;
-                s++;
+                OBJECTIF_Codex_133_Def = new Classe_Score_OBJC_AdeptaS_133(CheckBox_Objectif_Sec_Def_133_R1_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R1_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R1_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R2_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R2_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R2_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R3_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R3_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R3_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R4_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R4_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R4_Fusion_Etat, CheckBox_Objectif_Sec_Def_133_R5_Bolts_Etat, CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat, CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat, CA);
+                Scores_Defenseur[72] = OBJECTIF_Codex_133_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_133_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 133;
+                    s++;
+                }
+                TextBlock_ObjS_133_Def.Text = Convert.ToString(OBJECTIF_Codex_133_Def.Score_ObjS);
             }
-            TextBlock_ObjS_133_Def.Text = Convert.ToString(OBJECTIF_Codex_133_Def.Score_ObjS);
+            if (CA == "Nephilim")
+            {
+                OBJECTIF_Codex_133_Def = new Classe_Score_OBJC_AdeptaS_133(TextBox_Objectif_Sec_Def_133_R1_Bolts.Text, TextBox_Objectif_Sec_Def_133_R1_Flammes.Text, TextBox_Objectif_Sec_Def_133_R1_Fusion.Text, TextBox_Objectif_Sec_Def_133_R2_Bolts.Text, TextBox_Objectif_Sec_Def_133_R2_Flammes.Text, TextBox_Objectif_Sec_Def_133_R2_Fusion.Text, TextBox_Objectif_Sec_Def_133_R3_Bolts.Text, TextBox_Objectif_Sec_Def_133_R3_Flammes.Text, TextBox_Objectif_Sec_Def_133_R3_Fusion.Text, TextBox_Objectif_Sec_Def_133_R4_Bolts.Text, TextBox_Objectif_Sec_Def_133_R4_Flammes.Text, TextBox_Objectif_Sec_Def_133_R4_Fusion.Text, TextBox_Objectif_Sec_Def_133_R5_Bolts.Text, TextBox_Objectif_Sec_Def_133_R5_Flammes.Text, TextBox_Objectif_Sec_Def_133_R5_Fusion.Text, CA);
+                Scores_Defenseur[72] = OBJECTIF_Codex_133_Def.Scores_Joueur;
+                if (Convert.ToInt32(OBJECTIF_Codex_133_Def.Score_ObjS) >= 15)
+                {
+                    ID_Cape_Defenseur[s] = 133;
+                    s++;
+                }
+                TextBlock_ObjS_133_Def.Text = Convert.ToString(OBJECTIF_Codex_133_Def.Score_ObjS);
+            }
 
             ///CALCUL SCORE OBJECTIF MISSION 134
             Classe_Score_OBJC_AdeptaS_134 OBJECTIF_Codex_134_Def;
@@ -16799,6 +16947,14 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_133_R5_Flammes.IsChecked == false) { CheckBox_Objectif_Sec_Def_133_R5_Flammes_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Def_133_R5_Fusion.IsChecked == true) { CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_133_R5_Fusion.IsChecked == false) { CheckBox_Objectif_Sec_Def_133_R5_Fusion_Etat = "false"; };
+            Calcul_Score_Defenseur();
+        }
+        private void TextBox_ObjS_133_Att_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Calcul_Score_Attaquant();
+        }
+        private void TextBox_ObjS_133_Def_TextChanged(object sender, TextChangedEventArgs e)
+        {
             Calcul_Score_Defenseur();
         }
 
@@ -20370,9 +20526,15 @@ namespace CPV9
             Button_Obj_Codex_Admech_128_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Admech_128_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Admech_128_Att.FontSize = x;
-            Button_Obj_Codex_AdeptaS_133_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_AdeptaS_133_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_AdeptaS_133_Att.FontSize = x;
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_AdeptaS_133_Att.Visibility = Visibility.Visible;
+                Button_Obj_Codex_AdeptaS_133_Att.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_AdeptaS_133_Att.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_AdeptaS_133_Att.FontSize = x;
+
+            }///OBJC ADEPTA SORORITAS 133 - TUEZ L'HERETIQUE
+
             Button_Obj_Codex_Ork_137_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Ork_137_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Ork_137_Att.FontSize = x;
@@ -20409,9 +20571,15 @@ namespace CPV9
             Button_Obj_Codex_Necron_100_Att_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_100_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Att_1.FontSize = x;
-            Button_Obj_Codex_SM_112_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SM_112_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SM_112_Att.FontSize = x;
+
+                /// OBJC SM 
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_SM_112_Att.Visibility = Visibility.Visible;
+                Button_Obj_Codex_SM_112_Att.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_SM_112_Att.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_SM_112_Att.FontSize = x;
+            }///OBJC SM 112-SERMENTS DE L'INSTANT
             Button_Obj_Codex_BA_114_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_114_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_114_Att.FontSize = x;
@@ -20475,9 +20643,14 @@ namespace CPV9
             Button_Obj_Codex_Necron_102_Att_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_102_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_102_Att_1.FontSize = x;
-            Button_Obj_Codex_SM_111_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SM_111_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SM_111_Att.FontSize = x;
+
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Visible;
+                Button_Obj_Codex_SM_111_Att.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_SM_111_Att.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_SM_111_Att.FontSize = x;
+            }///OBJC SM 111 - 111-TACTIQUES DE CHOC
             Button_Obj_Codex_BA_116_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_116_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_116_Att.FontSize = x;
@@ -20993,9 +21166,14 @@ namespace CPV9
             Button_Obj_Codex_Admech_128_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Admech_128_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Admech_128_Def.FontSize = x;
-            Button_Obj_Codex_AdeptaS_133_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_AdeptaS_133_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_AdeptaS_133_Def.FontSize = x;
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_AdeptaS_133_Def.Visibility = Visibility.Visible;
+                Button_Obj_Codex_AdeptaS_133_Def.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_AdeptaS_133_Def.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_AdeptaS_133_Def.FontSize = x;
+
+            }///OBJC ADEPTA SORORITAS 133 - TUEZ L'HERETIQUE
             Button_Obj_Codex_Ork_137_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Ork_137_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Ork_137_Def.FontSize = x;
@@ -21032,9 +21210,15 @@ namespace CPV9
             Button_Obj_Codex_Necron_100_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_100_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Def_1.FontSize = x;
-            Button_Obj_Codex_SM_112_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SM_112_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SM_112_Def.FontSize = x;
+
+            /// OBJC SM 
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_SM_112_Def.Visibility = Visibility.Visible;
+                Button_Obj_Codex_SM_112_Def.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_SM_112_Def.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_SM_112_Def.FontSize = x;
+            }///OBJC SM 112-SERMENTS DE L'INSTANT
             Button_Obj_Codex_BA_114_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_114_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_114_Def.FontSize = x;
@@ -21098,9 +21282,14 @@ namespace CPV9
             Button_Obj_Codex_Necron_102_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_102_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_102_Def_1.FontSize = x;
-            Button_Obj_Codex_SM_111_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SM_111_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SM_111_Def.FontSize = x;
+
+            if (CA == "Nachmund" || CA == "Nephilim")
+            {
+                Button_Obj_Codex_SM_111_Def.Visibility = Visibility.Visible;
+                Button_Obj_Codex_SM_111_Def.Width = 14 * Rapport_Taille_X;
+                Button_Obj_Codex_SM_111_Def.Height = 4 * Rapport_Taille_Y;
+                Button_Obj_Codex_SM_111_Def.FontSize = x;
+            }///OBJC SM 111 - 111-TACTIQUES DE CHOC
             Button_Obj_Codex_BA_116_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_116_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_116_Def.FontSize = x;
@@ -23367,21 +23556,73 @@ namespace CPV9
             Label_Objectif_Sec_Att_133M.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_133N.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_133_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R1_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R1_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R1_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R2_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R2_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R2_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R3_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R3_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R3_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R4_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R4_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R4_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R5_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R5_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_133_R5_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+            if (CA == "Nachmun")
+            {
+                CheckBox_Objectif_Sec_Att_133_R1_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R1_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R1_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R2_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R2_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R2_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R3_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R3_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R3_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R4_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R4_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R4_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R5_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R5_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Att_133_R5_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+            }
+            if (CA == "Nephilim")
+            {
+                TextBox_Objectif_Sec_Att_133_R1_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R1_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R2_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R3_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R4_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Att_133_R5_Fusion.Height = Hauteur_saisie * Multiple;
+
+            }
             GridSplitter_Objectif_Sec_Att_133A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_133B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_133C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -25837,21 +26078,73 @@ namespace CPV9
             Label_Objectif_Sec_Def_133M.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_133N.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_133_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R1_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R1_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R1_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R2_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R2_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R2_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R3_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R3_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R3_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R4_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R4_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R4_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R5_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R5_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_133_R5_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+            if (CA == "Nachmun")
+            {
+                CheckBox_Objectif_Sec_Def_133_R1_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R1_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R1_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R2_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R2_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R2_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R3_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R3_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R3_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R4_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R4_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R4_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R5_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R5_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                CheckBox_Objectif_Sec_Def_133_R5_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+            }
+            if (CA == "Nephilim")
+            {
+                TextBox_Objectif_Sec_Def_133_R1_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R1_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R2_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R3_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R4_Fusion.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Bolts.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Bolts.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Bolts.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Flammes.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Flammes.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Flammes.Height = Hauteur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Fusion.FontSize = 1.2 * Taille_texte * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Fusion.Width = Largeur_saisie * Multiple;
+                TextBox_Objectif_Sec_Def_133_R5_Fusion.Height = Hauteur_saisie * Multiple;
+
+            }
             GridSplitter_Objectif_Sec_Def_133A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_133B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_133C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -26763,7 +27056,123 @@ namespace CPV9
             }
             oeil_OBJS_110_Def();
         }
+        private void Adaptation_OBJC_111_Att()
+        {
+            StackPanel_ObjS_111_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_111_Att();
+        }
+        private void Adaptation_OBJC_111_Def()
+        {
+            StackPanel_ObjS_111_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_111_Def();
+        }
+        private void Adaptation_OBJC_112_Att()
+        {
+            StackPanel_ObjS_112_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_112E.Content = "serments du DEVOIR (1 pts) : avoir une unité Base ou Personnage entierement dans les 6 pouces du centre du champs de bataille";
+            }
+            oeil_OBJS_112_Att();
+        }
+        private void Adaptation_OBJC_112_Def()
+        {
+            StackPanel_ObjS_112_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_112E.Content = "serments du DEVOIR (1 pts) : avoir une unité Base ou Personnage entierement dans les 6 pouces du centre du champs de bataille";
+            }
+            oeil_OBJS_112_Def();
+        }
 
+        #endregion
+        #region OBJ ADEPTA SORORITAS
+        private void Adaptation_OBJC_133_Att()
+        {
+            StackPanel_ObjS_133_Att.Visibility = Visibility.Visible;
+            
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_133B.Content = "Marquez à la fin de votre tour, 1 pts par conditions accompli a l'aide d'unité Adeptus Ministorum, avec les armes approprié";
+                Label_Objectif_Sec_Att_133C.Content = "maximum 5 pts par conditions";
+
+                CheckBox_Objectif_Sec_Att_133_R1_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R1_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R1_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R2_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R2_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R2_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R3_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R3_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R3_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R4_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R4_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R4_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R5_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R5_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_133_R5_Fusion.Visibility = Visibility.Collapsed;
+
+                TextBox_Objectif_Sec_Att_133_R1_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R1_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R1_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R2_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R2_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R2_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R3_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R3_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R3_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R4_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R4_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R4_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R5_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R5_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Att_133_R5_Fusion.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_133_Att();
+        }
+        private void Adaptation_OBJC_133_Def()
+        {
+            StackPanel_ObjS_133_Def.Visibility = Visibility.Visible;
+
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_133B.Content = "Marquez à la fin de votre tour, 1 pts par conditions accompli a l'aide d'unité Adeptus Ministorum, avec les armes approprié";
+                Label_Objectif_Sec_Def_133C.Content = "maximum 5 pts par conditions";
+
+                CheckBox_Objectif_Sec_Def_133_R1_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R1_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R1_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R2_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R2_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R2_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R3_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R3_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R3_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R4_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R4_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R4_Fusion.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R5_Bolts.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R5_Flammes.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_133_R5_Fusion.Visibility = Visibility.Collapsed;
+
+                TextBox_Objectif_Sec_Def_133_R1_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R1_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R1_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R2_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R2_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R2_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R3_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R3_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R3_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R4_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R4_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R4_Fusion.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R5_Bolts.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R5_Flammes.Visibility = Visibility.Visible;
+                TextBox_Objectif_Sec_Def_133_R5_Fusion.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_133_Def();
+        }
         #endregion
         #endregion
         #endregion

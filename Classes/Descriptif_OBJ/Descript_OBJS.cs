@@ -280,7 +280,14 @@
                     l4 = "Marquez des points a chaque round , pour chaque serment respecté.";
                     l6 = "serment de VALEUR ( 1 pts/round) pour avoir détruit au moins un personnage,véhicule ou montre a laide d'une unité ADEPTUS ASTARTES";
                     l7 = "serment d'HONNEUR ( 1 pts/round) pour n'avoir ni battu en retraite , ni avoir raté un test de morale";
-                    l8 = "serment du DEVOIR ( 2 pts/round) pour avoir une unité ADEPTUS ASTARTES entierement dans les 6 pouces au centre du champs de bataille";
+                    if (CA == "Nachmund")
+                    {
+                        l8 = "serment du DEVOIR ( 2 pts/round) pour avoir une unité ADEPTUS ASTARTES entierement dans les 6 pouces au centre du champs de bataille";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l8 = "serment du DEVOIR ( 1 pts/round) pour avoir une unité ADEPTUS ASTARTES Base ou personnage entierement dans les 6 pouces au centre du champs de bataille";
+                    }
                     break;
                 #endregion
                 #region OBJC_BA
@@ -401,12 +408,25 @@
 
                 case 133:
                     l1 = "TUEZ L'HERETIQUE";
-                    l3 = "A la fin de chacune de vos phase de tir, marquez 1 points de victoire pour chacune des conditions suivantes qui as été rempli:";
-                    l5 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a BOLTS par une unité MINISTORUM de votre armée.";
-                    l7 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FLAMMES par une unité MINISTORUM de votre armée.";
-                    l9 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FUSION par une unité MINISTORUM de votre armée.";
-                    l12 = "Si ces trois conditions ont été remplis à la fin de votre phase de tir , marquez 1 point de victoire additionnel";
-                    l13 = "( pour un maximum de 4 points de victoire )";
+                    if (CA == "Nachmund")
+                    {
+                        l3 = "A la fin de chacune de vos phase de tir, marquez 1 point de victoire pour chacune des conditions suivantes qui as été rempli:";
+                        l5 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a BOLTS par une unité MINISTORUM de votre armée.";
+                        l7 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FLAMMES par une unité MINISTORUM de votre armée.";
+                        l9 = "- Une ou plusieurs unités ennemies ont été détruites par une attaque éffectué avec une arme a FUSION par une unité MINISTORUM de votre armée.";
+                        l12 = "Si ces trois conditions ont été remplis à la fin de votre phase de tir , marquez 1 point de victoire additionnel";
+                        l13 = "( pour un maximum de 4 points de victoire )";
+
+                    }
+                    if (CA  == "Nephilim")
+                    {
+                        l3 = "A la fin de votre tour, marquez 1 point de victoire pour chaque unitée ennemie détruite suivant ces conditions :";
+                        l5 = "- Une unité ennemie a été détruite par une attaque éffectué avec une arme a BOLTS par une unité MINISTORUM de votre armée.";
+                        l7 = "- Une unité ennemie a été détruite par une attaque éffectué avec une arme a FLAMMES par une unité MINISTORUM de votre armée.";
+                        l9 = "- Une unité ennemie a été détruite par une attaque éffectué avec une arme a FUSION par une unité MINISTORUM de votre armée.";
+                        l11 = "( pour un maximum de 5 points de victoire par conditions)";
+
+                    }
                     break;
 
                 case 134:
