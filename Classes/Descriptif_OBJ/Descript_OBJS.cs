@@ -440,7 +440,14 @@
                     l10 = "tant que l'unité qui l'accomplit est encore à portée du pion objectif.Si elle est achevée, le pion objectif est consacré par votre armée,";
                     l11 = "et jusqu'a la fin de la bataille , il gagne le trait Terrain Exaltant comme s'il sagissait d'un élément de terrain";
                     l12 = "Chaque fois qu'une unité achève l'action Sol Sacré,si le pion objectif consacré par l'action était entièrement dans votre zone de déploiement";
-                    l13 = "marquez 1 point de victoire ; sinon marquez 4 points de victoire.";
+                    if (CA == "Nachmund")
+                    {
+                        l13 = "marquez 1 point de victoire ; sinon marquez 4 points de victoire.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l13 = "marquez 1 point de victoire ; sinon marquez 5 points de victoire.";
+                    }
                     break;
 
                 case 135:
@@ -449,7 +456,10 @@
                     l4 = "sur le champs de bataille hors de sa zone de déploiement qui sera le pion objectif du sanctuaire";
                     l5 = "(Si le seul pion objectif du champ de bataille est dans la zone de déploiement ennemie, ce sera le pion objectif du sanctuaire)";
                     l7 = "- A la fin de votre tour, marquez 3 points de victoire, si vous contrôlez le pion objectif de sanctuaire. ";
-                    l9 = "- A la fin de la bataille, marquez 3 points de victoire additionnel, si vous contrôlez le pion objectif de sanctuaire. ";
+                    if (CA == "Nachmund")
+                    {
+                        l9 = "- A la fin de la bataille, marquez 3 points de victoire additionnel, si vous contrôlez le pion objectif de sanctuaire. ";
+                    }
                     l11 = "- A la fin de la bataille, réduisez le nombre de point de victoire que vous a rapporté cet objectif secondaire de 3 ";
                     l12 = "jusqu'a un minimun de 0, si votre adversaire contrôle le pion de santuaire.";
                     break;

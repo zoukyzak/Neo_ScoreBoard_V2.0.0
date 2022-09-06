@@ -13,15 +13,17 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJC_AdeptaS_135(string obj1, string obj2, string obj3, string obj4, string obj5, string obj6, string obj_vous, string obj_Adv)
+        public Classe_Score_OBJC_AdeptaS_135(string obj1, string obj2, string obj3, string obj4, string obj5, string obj_vous, string obj_Adv,string CA)
         {
             Calcul(obj1);
             Calcul(obj2);
             Calcul(obj3);
             Calcul(obj4);
             Calcul(obj5);
-            Calcul(obj6);
-            Calcul(obj_vous);
+            if (CA == "Nachmund")
+            {
+                Calcul(obj_vous);
+            }
             if (obj_Adv == "true"){ Score -= 3; };
 
             Score_ObjS = Score;

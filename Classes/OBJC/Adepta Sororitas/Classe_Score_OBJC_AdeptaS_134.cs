@@ -13,14 +13,17 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJC_AdeptaS_134(string ZDD1, string ZDD2, string ZDD3, string ZDD4, string ZDD5, string ZDD6, string Obj1, string Obj2, string Obj3, string Obj4, string Obj5, string Obj6)
+        public Classe_Score_OBJC_AdeptaS_134(string ZDD1, string ZDD2, string ZDD3, string ZDD4, string ZDD5, string ZDD6, string Obj1, string Obj2, string Obj3, string Obj4, string Obj5, string Obj6, string CA)
         {
-            if (Obj1 == "true") {if (ZDD1 == "true") { Score += 4; } else { Score++; } };
-            if (Obj2 == "true") {if (ZDD2 == "true") { Score += 4; } else { Score++; } };
-            if (Obj3 == "true") {if (ZDD3 == "true") { Score += 4; } else { Score++; } };
-            if (Obj4 == "true") {if (ZDD4 == "true") { Score += 4; } else { Score++; } };
-            if (Obj5 == "true") {if (ZDD5 == "true") { Score += 4; } else { Score++; } };
-            if (Obj6 == "true") {if (ZDD6 == "true") { Score += 4; } else { Score++; } };
+            int TPS = 0;
+            if (CA == "Nachmund") { TPS = 4; };
+            if (CA == "Nephilim") { TPS = 5; };
+            if (Obj1 == "true") {if (ZDD1 == "true") { Score += TPS; } else { Score++; } };
+            if (Obj2 == "true") {if (ZDD2 == "true") { Score += TPS; } else { Score++; } };
+            if (Obj3 == "true") {if (ZDD3 == "true") { Score += TPS; } else { Score++; } };
+            if (Obj4 == "true") {if (ZDD4 == "true") { Score += TPS; } else { Score++; } };
+            if (Obj5 == "true") {if (ZDD5 == "true") { Score += TPS; } else { Score++; } };
+            if (Obj6 == "true") {if (ZDD6 == "true") { Score += TPS; } else { Score++; } };
             Score_ObjS = Score;
             if (Score > 15)
             {

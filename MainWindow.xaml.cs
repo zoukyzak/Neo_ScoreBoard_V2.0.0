@@ -966,7 +966,6 @@ namespace CPV9
         public string CheckBox_Objectif_Sec_Att_135_T3_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_135_T4_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_135_T5_Etat = "false";
-        public string CheckBox_Objectif_Sec_Att_135_T6_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_135_T1_Etat = "false";
@@ -974,7 +973,6 @@ namespace CPV9
         public string CheckBox_Objectif_Sec_Def_135_T3_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_135_T4_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_135_T5_Etat = "false";
-        public string CheckBox_Objectif_Sec_Def_135_T6_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_135_Fin_Vous_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_135_Fin_Adv_Etat = "false";
 
@@ -3371,7 +3369,6 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 74] = CheckBox_Objectif_Sec_Att_135_T3_Etat; n++;
             Mem_Saisie_Attaquant[n, 74] = CheckBox_Objectif_Sec_Att_135_T4_Etat; n++;
             Mem_Saisie_Attaquant[n, 74] = CheckBox_Objectif_Sec_Att_135_T5_Etat; n++;
-            Mem_Saisie_Attaquant[n, 74] = CheckBox_Objectif_Sec_Att_135_T6_Etat; n++;
             Mem_Saisie_Attaquant[n, 74] = CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat; n++;
             Mem_Saisie_Attaquant[n, 74] = CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat;
 
@@ -4082,7 +4079,6 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 74] = CheckBox_Objectif_Sec_Def_135_T3_Etat; n++;
             Mem_Saisie_Defenseur[n, 74] = CheckBox_Objectif_Sec_Def_135_T4_Etat; n++;
             Mem_Saisie_Defenseur[n, 74] = CheckBox_Objectif_Sec_Def_135_T5_Etat; n++;
-            Mem_Saisie_Defenseur[n, 74] = CheckBox_Objectif_Sec_Def_135_T6_Etat; n++;
             Mem_Saisie_Defenseur[n, 74] = CheckBox_Objectif_Sec_Def_135_Fin_Vous_Etat; n++;
             Mem_Saisie_Defenseur[n, 74] = CheckBox_Objectif_Sec_Def_135_Fin_Adv_Etat;
 
@@ -5648,7 +5644,6 @@ namespace CPV9
             CheckBox_Objectif_Sec_Att_135_T3_Etat = Mem_Saisie_Attaquant[n, 74]; n++;
             CheckBox_Objectif_Sec_Att_135_T4_Etat = Mem_Saisie_Attaquant[n, 74]; n++;
             CheckBox_Objectif_Sec_Att_135_T5_Etat = Mem_Saisie_Attaquant[n, 74]; n++;
-            CheckBox_Objectif_Sec_Att_135_T6_Etat = Mem_Saisie_Attaquant[n, 74]; n++;
             CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = Mem_Saisie_Attaquant[n, 74]; n++;
             CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat = Mem_Saisie_Attaquant[n, 74];
             if (CheckBox_Objectif_Sec_Att_135_T1_Etat == "true") { CheckBox_Objectif_Sec_Att_135_T1.IsChecked = true; };
@@ -5656,7 +5651,6 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Att_135_T3_Etat == "true") { CheckBox_Objectif_Sec_Att_135_T3.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_135_T4_Etat == "true") { CheckBox_Objectif_Sec_Att_135_T4.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_135_T5_Etat == "true") { CheckBox_Objectif_Sec_Att_135_T5.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_135_T6_Etat == "true") { CheckBox_Objectif_Sec_Att_135_T6.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat == "true") { CheckBox_Objectif_Sec_Att_135_Fin_Vous.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat == "true") { CheckBox_Objectif_Sec_Att_135_Fin_Adv.IsChecked = true; };
 
@@ -7242,7 +7236,6 @@ namespace CPV9
             CheckBox_Objectif_Sec_Def_135_T3_Etat = Mem_Saisie_Defenseur[n, 74]; n++;
             CheckBox_Objectif_Sec_Def_135_T4_Etat = Mem_Saisie_Defenseur[n, 74]; n++;
             CheckBox_Objectif_Sec_Def_135_T5_Etat = Mem_Saisie_Defenseur[n, 74]; n++;
-            CheckBox_Objectif_Sec_Def_135_T6_Etat = Mem_Saisie_Defenseur[n, 74]; n++;
             CheckBox_Objectif_Sec_Def_135_Fin_Vous_Etat = Mem_Saisie_Defenseur[n, 74]; n++;
             CheckBox_Objectif_Sec_Def_135_Fin_Adv_Etat = Mem_Saisie_Defenseur[n, 74];
             if (CheckBox_Objectif_Sec_Def_135_T1_Etat == "true") { CheckBox_Objectif_Sec_Def_135_T1.IsChecked = true; };
@@ -7250,7 +7243,6 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_135_T3_Etat == "true") { CheckBox_Objectif_Sec_Def_135_T3.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Def_135_T4_Etat == "true") { CheckBox_Objectif_Sec_Def_135_T4.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Def_135_T5_Etat == "true") { CheckBox_Objectif_Sec_Def_135_T5.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_135_T6_Etat == "true") { CheckBox_Objectif_Sec_Def_135_T6.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Def_135_Fin_Vous_Etat == "true") { CheckBox_Objectif_Sec_Def_135_Fin_Vous.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Def_135_Fin_Adv_Etat == "true") { CheckBox_Objectif_Sec_Def_135_Fin_Adv.IsChecked = true; };
 
@@ -7711,10 +7703,10 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 129 || Choix_ObjS_Attaquant[1] == 129 || Choix_ObjS_Attaquant[2] == 129) { StackPanel_ObjS_129_Att.Visibility = Visibility.Visible; oeil_OBJS_129_Att(); };
             if (Choix_ObjS_Attaquant[0] == 130 || Choix_ObjS_Attaquant[1] == 130 || Choix_ObjS_Attaquant[2] == 130) { StackPanel_ObjS_130_Att.Visibility = Visibility.Visible; oeil_OBJS_130_Att(); };
             if (Choix_ObjS_Attaquant[0] == 131 || Choix_ObjS_Attaquant[1] == 131 || Choix_ObjS_Attaquant[2] == 131) { StackPanel_ObjS_131_Att.Visibility = Visibility.Visible; oeil_OBJS_131_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 132 || Choix_ObjS_Attaquant[1] == 132 || Choix_ObjS_Attaquant[2] == 132) { StackPanel_ObjS_132_Att.Visibility = Visibility.Visible; oeil_OBJS_132_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 132 || Choix_ObjS_Attaquant[1] == 132 || Choix_ObjS_Attaquant[2] == 132) { Adaptation_OBJC_132_Att(); };
             if (Choix_ObjS_Attaquant[0] == 133 || Choix_ObjS_Attaquant[1] == 133 || Choix_ObjS_Attaquant[2] == 133) { Adaptation_OBJC_133_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 134 || Choix_ObjS_Attaquant[1] == 134 || Choix_ObjS_Attaquant[2] == 134) { StackPanel_ObjS_134_Att.Visibility = Visibility.Visible; oeil_OBJS_134_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 135 || Choix_ObjS_Attaquant[1] == 135 || Choix_ObjS_Attaquant[2] == 135) { StackPanel_ObjS_135_Att.Visibility = Visibility.Visible; oeil_OBJS_135_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 134 || Choix_ObjS_Attaquant[1] == 134 || Choix_ObjS_Attaquant[2] == 134) { Adaptation_OBJC_134_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 135 || Choix_ObjS_Attaquant[1] == 135 || Choix_ObjS_Attaquant[2] == 135) { Adaptation_OBJC_135_Att(); };
             if (Choix_ObjS_Attaquant[0] == 136 || Choix_ObjS_Attaquant[1] == 136 || Choix_ObjS_Attaquant[2] == 136) { StackPanel_ObjS_136_Att.Visibility = Visibility.Visible; oeil_OBJS_136_Att(); };
             if (Choix_ObjS_Attaquant[0] == 137 || Choix_ObjS_Attaquant[1] == 137 || Choix_ObjS_Attaquant[2] == 137) { StackPanel_ObjS_137_Att.Visibility = Visibility.Visible; oeil_OBJS_137_Att(); };
             if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { StackPanel_ObjS_138_Att.Visibility = Visibility.Visible; oeil_OBJS_138_Att(); };
@@ -7844,10 +7836,10 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 129 || Choix_ObjS_Defenseur[1] == 129 || Choix_ObjS_Defenseur[2] == 129) { StackPanel_ObjS_129_Def.Visibility = Visibility.Visible; oeil_OBJS_129_Def(); };
             if (Choix_ObjS_Defenseur[0] == 130 || Choix_ObjS_Defenseur[1] == 130 || Choix_ObjS_Defenseur[2] == 130) { StackPanel_ObjS_130_Def.Visibility = Visibility.Visible; oeil_OBJS_130_Def(); };
             if (Choix_ObjS_Defenseur[0] == 131 || Choix_ObjS_Defenseur[1] == 131 || Choix_ObjS_Defenseur[2] == 131) { StackPanel_ObjS_131_Def.Visibility = Visibility.Visible; oeil_OBJS_131_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 132 || Choix_ObjS_Defenseur[1] == 132 || Choix_ObjS_Defenseur[2] == 132) { StackPanel_ObjS_132_Def.Visibility = Visibility.Visible; oeil_OBJS_132_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 132 || Choix_ObjS_Defenseur[1] == 132 || Choix_ObjS_Defenseur[2] == 132) { Adaptation_OBJC_132_Att(); };
             if (Choix_ObjS_Defenseur[0] == 133 || Choix_ObjS_Defenseur[1] == 133 || Choix_ObjS_Defenseur[2] == 133) { Adaptation_OBJC_133_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 134 || Choix_ObjS_Defenseur[1] == 134 || Choix_ObjS_Defenseur[2] == 134) { StackPanel_ObjS_134_Def.Visibility = Visibility.Visible; oeil_OBJS_134_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 135 || Choix_ObjS_Defenseur[1] == 135 || Choix_ObjS_Defenseur[2] == 135) { StackPanel_ObjS_135_Def.Visibility = Visibility.Visible; oeil_OBJS_135_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 134 || Choix_ObjS_Defenseur[1] == 134 || Choix_ObjS_Defenseur[2] == 134) { Adaptation_OBJC_134_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 135 || Choix_ObjS_Defenseur[1] == 135 || Choix_ObjS_Defenseur[2] == 135) { Adaptation_OBJC_135_Def(); };
             if (Choix_ObjS_Defenseur[0] == 136 || Choix_ObjS_Defenseur[1] == 136 || Choix_ObjS_Defenseur[2] == 136) { StackPanel_ObjS_136_Def.Visibility = Visibility.Visible; oeil_OBJS_136_Def(); };
             if (Choix_ObjS_Defenseur[0] == 137 || Choix_ObjS_Defenseur[1] == 137 || Choix_ObjS_Defenseur[2] == 137) { StackPanel_ObjS_137_Def.Visibility = Visibility.Visible; oeil_OBJS_137_Def(); };
             if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { StackPanel_ObjS_138_Def.Visibility = Visibility.Visible; oeil_OBJS_138_Def(); };
@@ -12428,7 +12420,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 134
             Classe_Score_OBJC_AdeptaS_134 OBJECTIF_Codex_134_Att;
-            OBJECTIF_Codex_134_Att = new Classe_Score_OBJC_AdeptaS_134(CheckBox_Objectif_Sec_Att_134_1ZDD_Etat, CheckBox_Objectif_Sec_Att_134_2ZDD_Etat, CheckBox_Objectif_Sec_Att_134_3ZDD_Etat, CheckBox_Objectif_Sec_Att_134_4ZDD_Etat, CheckBox_Objectif_Sec_Att_134_5ZDD_Etat, CheckBox_Objectif_Sec_Att_134_6ZDD_Etat, CheckBox_Objectif_Sec_Att_134_OBJ1_Etat, CheckBox_Objectif_Sec_Att_134_OBJ2_Etat, CheckBox_Objectif_Sec_Att_134_OBJ3_Etat, CheckBox_Objectif_Sec_Att_134_OBJ4_Etat, CheckBox_Objectif_Sec_Att_134_OBJ5_Etat, CheckBox_Objectif_Sec_Att_134_OBJ6_Etat);
+            OBJECTIF_Codex_134_Att = new Classe_Score_OBJC_AdeptaS_134(CheckBox_Objectif_Sec_Att_134_1ZDD_Etat, CheckBox_Objectif_Sec_Att_134_2ZDD_Etat, CheckBox_Objectif_Sec_Att_134_3ZDD_Etat, CheckBox_Objectif_Sec_Att_134_4ZDD_Etat, CheckBox_Objectif_Sec_Att_134_5ZDD_Etat, CheckBox_Objectif_Sec_Att_134_6ZDD_Etat, CheckBox_Objectif_Sec_Att_134_OBJ1_Etat, CheckBox_Objectif_Sec_Att_134_OBJ2_Etat, CheckBox_Objectif_Sec_Att_134_OBJ3_Etat, CheckBox_Objectif_Sec_Att_134_OBJ4_Etat, CheckBox_Objectif_Sec_Att_134_OBJ5_Etat, CheckBox_Objectif_Sec_Att_134_OBJ6_Etat, CA);
             Scores_Attaquant[73] = OBJECTIF_Codex_134_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_134_Att.Score_ObjS) >= 15)
             {
@@ -12439,7 +12431,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 135
             Classe_Score_OBJC_AdeptaS_135 OBJECTIF_Codex_135_Att;
-            OBJECTIF_Codex_135_Att = new Classe_Score_OBJC_AdeptaS_135(CheckBox_Objectif_Sec_Att_135_T1_Etat, CheckBox_Objectif_Sec_Att_135_T2_Etat, CheckBox_Objectif_Sec_Att_135_T3_Etat, CheckBox_Objectif_Sec_Att_135_T4_Etat, CheckBox_Objectif_Sec_Att_135_T5_Etat, CheckBox_Objectif_Sec_Att_135_T6_Etat, CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat, CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat);
+            OBJECTIF_Codex_135_Att = new Classe_Score_OBJC_AdeptaS_135(CheckBox_Objectif_Sec_Att_135_T1_Etat, CheckBox_Objectif_Sec_Att_135_T2_Etat, CheckBox_Objectif_Sec_Att_135_T3_Etat, CheckBox_Objectif_Sec_Att_135_T4_Etat, CheckBox_Objectif_Sec_Att_135_T5_Etat, CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat, CheckBox_Objectif_Sec_Att_135_Fin_Adv_Etat, CA);
             Scores_Attaquant[74] = OBJECTIF_Codex_135_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_135_Att.Score_ObjS) >= 15)
             {
@@ -13576,7 +13568,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 134
             Classe_Score_OBJC_AdeptaS_134 OBJECTIF_Codex_134_Def;
-            OBJECTIF_Codex_134_Def = new Classe_Score_OBJC_AdeptaS_134(CheckBox_Objectif_Sec_Def_134_1ZDD_Etat, CheckBox_Objectif_Sec_Def_134_2ZDD_Etat, CheckBox_Objectif_Sec_Def_134_3ZDD_Etat, CheckBox_Objectif_Sec_Def_134_4ZDD_Etat, CheckBox_Objectif_Sec_Def_134_5ZDD_Etat, CheckBox_Objectif_Sec_Def_134_6ZDD_Etat, CheckBox_Objectif_Sec_Def_134_OBJ1_Etat, CheckBox_Objectif_Sec_Def_134_OBJ2_Etat, CheckBox_Objectif_Sec_Def_134_OBJ3_Etat, CheckBox_Objectif_Sec_Def_134_OBJ4_Etat, CheckBox_Objectif_Sec_Def_134_OBJ5_Etat, CheckBox_Objectif_Sec_Def_134_OBJ6_Etat);
+            OBJECTIF_Codex_134_Def = new Classe_Score_OBJC_AdeptaS_134(CheckBox_Objectif_Sec_Def_134_1ZDD_Etat, CheckBox_Objectif_Sec_Def_134_2ZDD_Etat, CheckBox_Objectif_Sec_Def_134_3ZDD_Etat, CheckBox_Objectif_Sec_Def_134_4ZDD_Etat, CheckBox_Objectif_Sec_Def_134_5ZDD_Etat, CheckBox_Objectif_Sec_Def_134_6ZDD_Etat, CheckBox_Objectif_Sec_Def_134_OBJ1_Etat, CheckBox_Objectif_Sec_Def_134_OBJ2_Etat, CheckBox_Objectif_Sec_Def_134_OBJ3_Etat, CheckBox_Objectif_Sec_Def_134_OBJ4_Etat, CheckBox_Objectif_Sec_Def_134_OBJ5_Etat, CheckBox_Objectif_Sec_Def_134_OBJ6_Etat, CA);
             Scores_Defenseur[73] = OBJECTIF_Codex_134_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_134_Def.Score_ObjS) >= 15)
             {
@@ -13587,7 +13579,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 135
             Classe_Score_OBJC_AdeptaS_135 OBJECTIF_Codex_135_Def;
-            OBJECTIF_Codex_135_Def = new Classe_Score_OBJC_AdeptaS_135(CheckBox_Objectif_Sec_Def_135_T1_Etat, CheckBox_Objectif_Sec_Def_135_T2_Etat, CheckBox_Objectif_Sec_Def_135_T3_Etat, CheckBox_Objectif_Sec_Def_135_T4_Etat, CheckBox_Objectif_Sec_Def_135_T5_Etat, CheckBox_Objectif_Sec_Def_135_T6_Etat, CheckBox_Objectif_Sec_Def_135_Fin_Vous_Etat, CheckBox_Objectif_Sec_Def_135_Fin_Adv_Etat);
+            OBJECTIF_Codex_135_Def = new Classe_Score_OBJC_AdeptaS_135(CheckBox_Objectif_Sec_Def_135_T1_Etat, CheckBox_Objectif_Sec_Def_135_T2_Etat, CheckBox_Objectif_Sec_Def_135_T3_Etat, CheckBox_Objectif_Sec_Def_135_T4_Etat, CheckBox_Objectif_Sec_Def_135_T5_Etat, CheckBox_Objectif_Sec_Def_135_Fin_Vous_Etat, CheckBox_Objectif_Sec_Def_135_Fin_Adv_Etat, CA);
             Scores_Defenseur[74] = OBJECTIF_Codex_135_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_135_Def.Score_ObjS) >= 15)
             {
@@ -17055,8 +17047,6 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Att_135_T4.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T4_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Att_135_T5.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T5_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Att_135_T5.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T5_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_135_T6.IsChecked == true) { CheckBox_Objectif_Sec_Att_135_T6_Etat = "true"; };
-            if (CheckBox_Objectif_Sec_Att_135_T6.IsChecked == false) { CheckBox_Objectif_Sec_Att_135_T6_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Att_135_Fin_Vous.IsChecked == true)
             {
                 CheckBox_Objectif_Sec_Att_135_Fin_Vous_Etat = "true";
@@ -17088,8 +17078,6 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_135_T4.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T4_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Def_135_T5.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T5_Etat = "true"; };
             if (CheckBox_Objectif_Sec_Def_135_T5.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T5_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_135_T6.IsChecked == true) { CheckBox_Objectif_Sec_Def_135_T6_Etat = "true"; };
-            if (CheckBox_Objectif_Sec_Def_135_T6.IsChecked == false) { CheckBox_Objectif_Sec_Def_135_T6_Etat = "false"; };
             if (CheckBox_Objectif_Sec_Def_135_Fin_Vous.IsChecked == true)
             {
                 CheckBox_Objectif_Sec_Def_135_Fin_Vous_Etat = "true";
@@ -27038,7 +27026,7 @@ namespace CPV9
         #endregion
         #region OBJ Codex
             #region SM
-        private void Adaptation_OBJC_110_Att()
+            private void Adaptation_OBJC_110_Att()
         {
             StackPanel_ObjS_110_Att.Visibility = Visibility.Visible;            
             if (CA == "Nephilim")
@@ -27047,7 +27035,7 @@ namespace CPV9
             }
             oeil_OBJS_110_Att();
         }
-        private void Adaptation_OBJC_110_Def()
+            private void Adaptation_OBJC_110_Def()
         {
             StackPanel_ObjS_110_Def.Visibility = Visibility.Visible;
             if (CA == "Nephilim")
@@ -27056,17 +27044,17 @@ namespace CPV9
             }
             oeil_OBJS_110_Def();
         }
-        private void Adaptation_OBJC_111_Att()
+            private void Adaptation_OBJC_111_Att()
         {
             StackPanel_ObjS_111_Att.Visibility = Visibility.Visible;
             oeil_OBJS_111_Att();
         }
-        private void Adaptation_OBJC_111_Def()
+            private void Adaptation_OBJC_111_Def()
         {
             StackPanel_ObjS_111_Def.Visibility = Visibility.Visible;
             oeil_OBJS_111_Def();
         }
-        private void Adaptation_OBJC_112_Att()
+            private void Adaptation_OBJC_112_Att()
         {
             StackPanel_ObjS_112_Att.Visibility = Visibility.Visible;
             if (CA == "Nephilim")
@@ -27075,7 +27063,7 @@ namespace CPV9
             }
             oeil_OBJS_112_Att();
         }
-        private void Adaptation_OBJC_112_Def()
+            private void Adaptation_OBJC_112_Def()
         {
             StackPanel_ObjS_112_Def.Visibility = Visibility.Visible;
             if (CA == "Nephilim")
@@ -27086,8 +27074,18 @@ namespace CPV9
         }
 
         #endregion
-        #region OBJ ADEPTA SORORITAS
-        private void Adaptation_OBJC_133_Att()
+            #region OBJ ADEPTA SORORITAS
+            private void Adaptation_OBJC_132_Att()
+        {
+            StackPanel_ObjS_132_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_132_Att();
+        }
+            private void Adaptation_OBJC_132_Def()
+        {
+            StackPanel_ObjS_132_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_132_Def();
+        }
+            private void Adaptation_OBJC_133_Att()
         {
             StackPanel_ObjS_133_Att.Visibility = Visibility.Visible;
             
@@ -27130,7 +27128,7 @@ namespace CPV9
             }
             oeil_OBJS_133_Att();
         }
-        private void Adaptation_OBJC_133_Def()
+            private void Adaptation_OBJC_133_Def()
         {
             StackPanel_ObjS_133_Def.Visibility = Visibility.Visible;
 
@@ -27172,6 +27170,48 @@ namespace CPV9
                 TextBox_Objectif_Sec_Def_133_R5_Fusion.Visibility = Visibility.Visible;
             }
             oeil_OBJS_133_Def();
+        }
+            private void Adaptation_OBJC_134_Att()
+        {
+            StackPanel_ObjS_134_Att.Visibility = Visibility.Visible;
+
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_134C.Content = "Si votre unité d action est toujours sur l'objectif a votre prochaine phase de commandement , 1 pts/Obj entierement dans votre ZDD, 5 pts pour les autres";
+            }
+            oeil_OBJS_134_Att();
+        }
+            private void Adaptation_OBJC_134_Def()
+        {
+            StackPanel_ObjS_134_Def.Visibility = Visibility.Visible;
+
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_134C.Content = "Si votre unité d action est toujours sur l'objectif a votre prochaine phase de commandement , 1 pts/Obj entierement dans votre ZDD, 5 pts pour les autres";
+            }
+            oeil_OBJS_134_Def();
+        }
+            private void Adaptation_OBJC_135_Att()
+        {
+            StackPanel_ObjS_135_Att.Visibility = Visibility.Visible;
+
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_135C.Content = "3 pts/Tours ,si vous controlez le sanctuaire a la fin de votre tour.";
+                CheckBox_Objectif_Sec_Att_135_Fin_Vous.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_135_Att();
+        }
+            private void Adaptation_OBJC_135_Def()
+        {
+            StackPanel_ObjS_135_Def.Visibility = Visibility.Visible;
+
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_135C.Content = "3 pts/Tours ,si vous controlez le sanctuaire a la fin de votre tour.";
+                CheckBox_Objectif_Sec_Def_135_Fin_Vous.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_135_Def();
         }
         #endregion
         #endregion
