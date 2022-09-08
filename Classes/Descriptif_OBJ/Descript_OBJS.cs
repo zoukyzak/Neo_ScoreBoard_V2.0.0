@@ -207,6 +207,7 @@
                     l13 = "s'il est à 6 pouces du bord de table de votre adversaire et a plus de 6 pouces de toute figurine ennemie.";
                     break;
                 #endregion
+
                 #region OBJC_Necron
                 case 100:
                     l1 = " CODE DE COMBAT";
@@ -372,10 +373,20 @@
 
                 case 129:
                     l1 = "ERADICATION DE LA CHAIR";
-                    l4 = "Marquez 3 points de victoire à la fin du round de bataille s'il y a au moins une unité Véhicule ADEPTUS MECHANICUS";
-                    l5 = "de votre armée sur le champs de bataille,";
-                    l6 = "et si à ce round de bataille, les unités ADEPTUS MECHANICUS de votre armée ont détruit plus d'unités d'Infanterie";
-                    l7 = "que les unités ennemie n'ont détruit d'unités Vehicule amies.";
+                    if (CA == "Nachmund")
+                    {
+                        l4 = "Marquez 3 points de victoire à la fin du round de bataille s'il y a au moins une unité Véhicule ADEPTUS MECHANICUS";
+                        l5 = "de votre armée sur le champs de bataille,";
+                        l6 = "et si à ce round de bataille, les unités ADEPTUS MECHANICUS de votre armée ont détruit plus d'unités d'Infanterie";
+                        l7 = "que les unités ennemie n'ont détruit d'unités Vehicule amies.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l4 = "A la fin du round de bataille, marquez 3 points de victoire si plus d'unitée ennemies ont été detruitent ";
+                        l5 = "par des unités Véhicule Adeptus Mechanicus de votre armée à ce round de bataille";
+                        l6 = " que des unités Véhicules Adeptus Mechanicus de votre armée ont été detruitent par des unités ennemies";
+                        l7 = "a ce round de bataille.";
+                    }
                     break;
 
                 case 130:
@@ -391,8 +402,15 @@
                     l1 = "ARCHEOCRYPTE SECRETE";
                     l4 = "Aprés le déploiement,votre adversaire choisit un seul pion objectif sur le champs de bataille";
                     l5 = "( En dehors des pions objectif dans sa propre zon de déploiement) ";
-                    l8 = "- Marquez 2 points de victoire à la fin du round de bataille si vous contrôlez le pion objectif concerné.";
-                    l10 = "- Marquez 5 points de victoire à la fin du round de bataille si vous contrôlez le pion objectif concerné.";
+                    if (CA == "Nachmund")
+                    {
+                        l8 = "- Marquez 2 points de victoire à la fin du round si vous contrôlez le pion objectif concerné.";
+                        l10 = "- Marquez 5 points de victoire à la fin de la bataille si vous contrôlez le pion objectif concerné.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l8 = "- Marquez 4 points de victoire à la fin du round si vous contrôlez le pion objectif concerné.";
+                    }
                     break;
 
                 #endregion
@@ -566,6 +584,12 @@
                     l8 = "- Unité Monstre démon   : marquez 3 points de victoire .";
                     l9 = "- Unité Véhicule démon  : marquez 3 points de victoire .";
                     l10 = "- Unité autre démon    : marquez 1 points de victoire .";
+                    if (CA == "Nephilim")
+                    { 
+                        l12 = "Réduisez de 1 pts de victoire marquez par cet objectif, à la fin de la bataille ,";
+                        l13 = "pour chaque unité Démon qui n'est pas en dessous de sa demi-force.";
+                        l14 = "pour les unitées d'une figurine , la demi-force correspond à la moitié de la charactéristique des PV";
+                    };
                     break;
 
                 case 144:
@@ -596,6 +620,7 @@
                     break;
 
                 #endregion
+
                 #region OBJM patrouille
                 case 501:
                     l1 = "ASSAUT CHIRURGICAL";

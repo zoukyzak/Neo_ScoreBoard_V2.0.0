@@ -9,8 +9,12 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJC_Admech_129(String Admech1, String Infanterie1, String Vehicule1, String Admech2, String Infanterie2, String Vehicule2, String Admech3, String Infanterie3, String Vehicule3, String Admech4, String Infanterie4, String Vehicule4, String Admech5, String Infanterie5, String Vehicule5)
+        public Classe_Score_OBJC_Admech_129(String Admech1, String Infanterie1, String Vehicule1, String Admech2, String Infanterie2, String Vehicule2, String Admech3, String Infanterie3, String Vehicule3, String Admech4, String Infanterie4, String Vehicule4, String Admech5, String Infanterie5, String Vehicule5,string CA)
         {
+            if (CA == "Nephilim")
+            {
+                Admech1 = Admech2 = Admech3 = Admech4 = Admech5 = "true";
+            }
             if (Admech1 == "true" && Infanterie1 != "" && Vehicule1 != "") { VALEUR(Convert.ToInt32(Infanterie1), Convert.ToInt32(Vehicule1)); };
             if (Admech2 == "true" && Infanterie2 != "" && Vehicule2 != "") { VALEUR(Convert.ToInt32(Infanterie2), Convert.ToInt32(Vehicule2)); };
             if (Admech3 == "true" && Infanterie3 != "" && Vehicule3 != "") { VALEUR(Convert.ToInt32(Infanterie3), Convert.ToInt32(Vehicule3)); };

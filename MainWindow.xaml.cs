@@ -6,6 +6,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using System.Collections.Generic;
 
 namespace CPV9
 {
@@ -1021,15 +1022,6 @@ namespace CPV9
         public string CheckBox_Objectif_Sec_Def_142_PC_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_142_SG_Etat = "false";
 
-        public string CheckBox_Objectif_Sec_Att_143_Primarque_Etat = "false";
-        public string CheckBox_Objectif_Sec_Att_143_Monstre_Etat = "false";
-        public string CheckBox_Objectif_Sec_Att_143_Vehicule_Etat = "false";
-        public string CheckBox_Objectif_Sec_Att_143_Demons_Etat = "false";
-        public string CheckBox_Objectif_Sec_Def_143_Primarque_Etat = "false";
-        public string CheckBox_Objectif_Sec_Def_143_Monstre_Etat = "false";
-        public string CheckBox_Objectif_Sec_Def_143_Vehicule_Etat = "false";
-        public string CheckBox_Objectif_Sec_Def_143_Demons_Etat = "false";
-
         public string CheckBox_Objectif_Sec_Att_144_T1_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_144_T2_Etat = "false";
         public string CheckBox_Objectif_Sec_Att_144_T3_Etat = "false";
@@ -1041,6 +1033,66 @@ namespace CPV9
         public string CheckBox_Objectif_Sec_Def_144_T4_Etat = "false";
         public string CheckBox_Objectif_Sec_Def_144_T5_Etat = "false";
         #endregion
+
+
+        List<string> List_Armee_Sans_Codex = new List<string>() 
+            {
+              "  Adepta Sororitas",
+              "  Adeptus Custodes",
+              "  Adeptus Mechanicus",
+              "  Astra Militarum",
+              "  Grey Knights",
+              "  Imperial Knights",
+              "  SM_Space Marines",
+              "  SM_Dark Angels",
+              "  SM_White Scares",
+              "  SM_Space Wolves",
+              "  SM_Imperial Fists",
+              "  SM_Crimson Fists",
+              "  SM_Black Templars",
+              "  SM_Blood Angels",
+              "  SM_Flesh Tearers",
+              "  SM_Iron Hands",
+              "  SM_Ultramarines",
+              "  SM_Salamandres",
+              "  SM_Raven Guard",
+              "  SM_Deathwatch",
+              "  Officio Assassinorum",
+              "  Chaos Daemons",
+              "  Chaos Knights",
+              "  Chaos Space Marines",
+              "  Death Guard",
+              "  Thousand Sons",
+              "  Craftworlds",
+              "  Drukhari",
+              "  Genestealer Cults",
+              "  Harlequins",
+              "  Necrons",
+              "  Orks",
+              "  T AU Empire",
+              "  Tyranid",
+              "  Ynarri"
+            };
+        List<string> List_Armee_Nachmund = new List<string>()
+        {
+            "  SM_Space Marines",
+            "  SM_Blood Angels",
+            "  Adepta Sororitas",
+            "  Adeptus Mechanicus",
+            "  Grey Knights",
+            "  Death Guard",
+            "  Necrons",
+            "  Orks",
+            "  Tyranid"
+        };
+        List<string> List_Armee_Nephilim = new List<string>()
+        {
+            "  SM_Space Marines",
+            "  SM_Blood Angels",
+            "  Adepta Sororitas",
+            "  Adeptus Mechanicus",
+            "  Grey Knights",
+        };
 
         #endregion
 
@@ -1145,22 +1197,7 @@ namespace CPV9
             Button_Obj_Codex_BA_115_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_BA_116_Att.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_BA_116_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_117_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_118_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_118_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_119_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_119_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_120_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_120_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_121_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_121_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_122_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_122_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_123_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_123_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_124_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_124_Def.Visibility = Visibility.Collapsed;
+            
             Button_Obj_Codex_DG_125_Att.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_DG_125_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_DG_126_Att.Visibility = Visibility.Collapsed;
@@ -1707,10 +1744,11 @@ namespace CPV9
             #endregion
             #region INIT_OBJ_ATTAQUANT_CODEX_GREY KNIGHTS
             /// OBJECTIF SECONDAIRE 143 DETRUISEZ LES DEMONS
-            CheckBox_Objectif_Sec_Att_143_Primarque.IsChecked = false;
-            CheckBox_Objectif_Sec_Att_143_Monstre.IsChecked = false;
-            CheckBox_Objectif_Sec_Att_143_Vehicule.IsChecked = false;
-            CheckBox_Objectif_Sec_Att_143_Demons.IsChecked = false;
+            TextBox_Objectif_Sec_Att_143_Primarque.Clear();
+            TextBox_Objectif_Sec_Att_143_Monstre.Clear();
+            TextBox_Objectif_Sec_Att_143_Vehicule.Clear();
+            TextBox_Objectif_Sec_Att_143_Demons.Clear();
+            TextBox_ObjS_143_Att_DemiForce.Clear();
             /// OBJECTIF SECONDAIRE 144 ASSAUT TELEPORTE
             CheckBox_Objectif_Sec_Att_144_T1.IsChecked = false;
             CheckBox_Objectif_Sec_Att_144_T2.IsChecked = false;
@@ -2347,10 +2385,11 @@ namespace CPV9
             #endregion
             #region INIT_OBJ_ATTAQUANT_CODEX_GREY KNIGHTS
             /// OBJECTIF SECONDAIRE 143 DETRUISEZ LES DEMONS
-            CheckBox_Objectif_Sec_Def_143_Primarque.IsChecked = false;
-            CheckBox_Objectif_Sec_Def_143_Monstre.IsChecked = false;
-            CheckBox_Objectif_Sec_Def_143_Vehicule.IsChecked = false;
-            CheckBox_Objectif_Sec_Def_143_Demons.IsChecked = false;
+            TextBox_Objectif_Sec_Def_143_Primarque.Clear();
+            TextBox_Objectif_Sec_Def_143_Monstre.Clear();
+            TextBox_Objectif_Sec_Def_143_Vehicule.Clear();
+            TextBox_Objectif_Sec_Def_143_Demons.Clear();
+            TextBox_ObjS_143_Def_DemiForce.Clear();
             /// OBJECTIF SECONDAIRE 144 ASSAUT TELEPORTE
             CheckBox_Objectif_Sec_Def_144_T1.IsChecked = false;
             CheckBox_Objectif_Sec_Def_144_T2.IsChecked = false;
@@ -3454,10 +3493,11 @@ namespace CPV9
             #region Transfert_Donnees_To_Mem_Attaquant_Codex_Grey_Knights
             /// OBJECTIF SECONDAIRE 143
             n = 0;           
-            Mem_Saisie_Attaquant[n, 82] = CheckBox_Objectif_Sec_Att_143_Primarque_Etat; n++;
-            Mem_Saisie_Attaquant[n, 82] = CheckBox_Objectif_Sec_Att_143_Monstre_Etat; n++;
-            Mem_Saisie_Attaquant[n, 82] = CheckBox_Objectif_Sec_Att_143_Vehicule_Etat; n++;
-            Mem_Saisie_Attaquant[n, 82] = CheckBox_Objectif_Sec_Att_143_Demons_Etat;
+            Mem_Saisie_Attaquant[n, 82] = TextBox_Objectif_Sec_Att_143_Primarque.Text; n++;
+            Mem_Saisie_Attaquant[n, 82] = TextBox_Objectif_Sec_Att_143_Monstre.Text; n++;
+            Mem_Saisie_Attaquant[n, 82] = TextBox_Objectif_Sec_Att_143_Vehicule.Text; n++;
+            Mem_Saisie_Attaquant[n, 82] = TextBox_Objectif_Sec_Att_143_Demons.Text; n++;
+            Mem_Saisie_Attaquant[n, 82] = TextBox_ObjS_143_Att_DemiForce.Text;
             /// OBJECTIF SECONDAIRE 144
             n = 0;
             Mem_Saisie_Attaquant[n, 83] = CheckBox_Objectif_Sec_Att_144_T1_Etat; n++;
@@ -4163,10 +4203,11 @@ namespace CPV9
             #region Transfert_Donnees_To_Mem_Attaquant_Codex_Grey_Knights
             /// OBJECTIF SECONDAIRE 143
             n = 0;
-            Mem_Saisie_Defenseur[n, 82] = CheckBox_Objectif_Sec_Def_143_Primarque_Etat; n++;
-            Mem_Saisie_Defenseur[n, 82] = CheckBox_Objectif_Sec_Def_143_Monstre_Etat; n++;
-            Mem_Saisie_Defenseur[n, 82] = CheckBox_Objectif_Sec_Def_143_Vehicule_Etat; n++;
-            Mem_Saisie_Defenseur[n, 82] = CheckBox_Objectif_Sec_Def_143_Demons_Etat;
+            Mem_Saisie_Defenseur[n, 82] = TextBox_Objectif_Sec_Def_143_Primarque.Text; n++;
+            Mem_Saisie_Defenseur[n, 82] = TextBox_Objectif_Sec_Def_143_Monstre.Text; n++;
+            Mem_Saisie_Defenseur[n, 82] = TextBox_Objectif_Sec_Def_143_Vehicule.Text; n++;
+            Mem_Saisie_Defenseur[n, 82] = TextBox_Objectif_Sec_Def_143_Demons.Text; n++;
+            Mem_Saisie_Defenseur[n, 82] = TextBox_ObjS_143_Def_DemiForce.Text;
             /// OBJECTIF SECONDAIRE 144
             n = 0;
             Mem_Saisie_Defenseur[n, 83] = CheckBox_Objectif_Sec_Def_144_T1_Etat; n++;
@@ -5756,14 +5797,11 @@ namespace CPV9
             #region Transfert_Donnees_To_Attaquant_Codex_Grey Knights
             /// OBJECTIF SECONDAIRE 143
             n = 0;
-            CheckBox_Objectif_Sec_Att_143_Primarque_Etat = Mem_Saisie_Attaquant[n, 82]; n++;
-            CheckBox_Objectif_Sec_Att_143_Monstre_Etat = Mem_Saisie_Attaquant[n, 82]; n++;
-            CheckBox_Objectif_Sec_Att_143_Vehicule_Etat = Mem_Saisie_Attaquant[n, 82]; n++;
-            CheckBox_Objectif_Sec_Att_143_Demons_Etat = Mem_Saisie_Attaquant[n, 82];
-            if (CheckBox_Objectif_Sec_Att_143_Primarque_Etat == "true") { CheckBox_Objectif_Sec_Att_143_Primarque.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_143_Monstre_Etat == "true") { CheckBox_Objectif_Sec_Att_143_Monstre.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_143_Vehicule_Etat == "true") { CheckBox_Objectif_Sec_Att_143_Vehicule.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Att_143_Demons_Etat == "true") { CheckBox_Objectif_Sec_Att_143_Demons.IsChecked = true; };
+            TextBox_Objectif_Sec_Att_143_Primarque.Text = Mem_Saisie_Attaquant[n, 82]; n++;
+            TextBox_Objectif_Sec_Att_143_Monstre.Text = Mem_Saisie_Attaquant[n, 82]; n++;
+            TextBox_Objectif_Sec_Att_143_Vehicule.Text = Mem_Saisie_Attaquant[n, 82]; n++;
+            TextBox_Objectif_Sec_Att_143_Demons.Text = Mem_Saisie_Attaquant[n, 82]; n++;
+            TextBox_ObjS_143_Att_DemiForce.Text = Mem_Saisie_Attaquant[n, 82];
             /// OBJECTIF SECONDAIRE 144
             n = 0;
             CheckBox_Objectif_Sec_Att_144_T1_Etat = Mem_Saisie_Attaquant[n, 83]; n++;
@@ -7350,14 +7388,11 @@ namespace CPV9
             #region Transfert_Donnees_To_Defenseur_Codex_Grey Knights
             /// OBJECTIF SECONDAIRE 143
             n = 0;
-            CheckBox_Objectif_Sec_Def_143_Primarque_Etat = Mem_Saisie_Defenseur[n, 82]; n++;
-            CheckBox_Objectif_Sec_Def_143_Monstre_Etat = Mem_Saisie_Defenseur[n, 82]; n++;
-            CheckBox_Objectif_Sec_Def_143_Vehicule_Etat = Mem_Saisie_Defenseur[n, 82]; n++;
-            CheckBox_Objectif_Sec_Def_143_Demons_Etat = Mem_Saisie_Defenseur[n, 82];
-            if (CheckBox_Objectif_Sec_Def_143_Primarque_Etat == "true") { CheckBox_Objectif_Sec_Def_143_Primarque.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_143_Monstre_Etat == "true") { CheckBox_Objectif_Sec_Def_143_Monstre.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_143_Vehicule_Etat == "true") { CheckBox_Objectif_Sec_Def_143_Vehicule.IsChecked = true; };
-            if (CheckBox_Objectif_Sec_Def_143_Demons_Etat == "true") { CheckBox_Objectif_Sec_Def_143_Demons.IsChecked = true; };
+            TextBox_Objectif_Sec_Def_143_Primarque.Text = Mem_Saisie_Defenseur[n, 82]; n++;
+            TextBox_Objectif_Sec_Def_143_Monstre.Text = Mem_Saisie_Defenseur[n, 82]; n++;
+            TextBox_Objectif_Sec_Def_143_Vehicule.Text = Mem_Saisie_Defenseur[n, 82]; n++;
+            TextBox_Objectif_Sec_Def_143_Demons.Text = Mem_Saisie_Defenseur[n, 82]; n++;
+            TextBox_ObjS_143_Def_DemiForce.Text = Mem_Saisie_Defenseur[n, 82];
             /// OBJECTIF SECONDAIRE 144
             n = 0;
             CheckBox_Objectif_Sec_Def_144_T1_Etat = Mem_Saisie_Defenseur[n, 83]; n++;
@@ -7684,25 +7719,18 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 110 || Choix_ObjS_Attaquant[1] == 110 || Choix_ObjS_Attaquant[2] == 110) { Adaptation_OBJC_110_Att(); };
             if (Choix_ObjS_Attaquant[0] == 111 || Choix_ObjS_Attaquant[1] == 111 || Choix_ObjS_Attaquant[2] == 111) { Adaptation_OBJC_111_Att(); };
             if (Choix_ObjS_Attaquant[0] == 112 || Choix_ObjS_Attaquant[1] == 112 || Choix_ObjS_Attaquant[2] == 112) { Adaptation_OBJC_112_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 113 || Choix_ObjS_Attaquant[1] == 113 || Choix_ObjS_Attaquant[2] == 113) { StackPanel_ObjS_113_Att.Visibility = Visibility.Visible; oeil_OBJS_113_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 114 || Choix_ObjS_Attaquant[1] == 114 || Choix_ObjS_Attaquant[2] == 114) { StackPanel_ObjS_114_Att.Visibility = Visibility.Visible; oeil_OBJS_114_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 115 || Choix_ObjS_Attaquant[1] == 115 || Choix_ObjS_Attaquant[2] == 115) { StackPanel_ObjS_115_Att.Visibility = Visibility.Visible; oeil_OBJS_115_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 116 || Choix_ObjS_Attaquant[1] == 116 || Choix_ObjS_Attaquant[2] == 116) { StackPanel_ObjS_116_Att.Visibility = Visibility.Visible; oeil_OBJS_116_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 117 || Choix_ObjS_Attaquant[1] == 117 || Choix_ObjS_Attaquant[2] == 117) { StackPanel_ObjS_117_Att.Visibility = Visibility.Visible; oeil_OBJS_117_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 118 || Choix_ObjS_Attaquant[1] == 118 || Choix_ObjS_Attaquant[2] == 118) { StackPanel_ObjS_118_Att.Visibility = Visibility.Visible; oeil_OBJS_118_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 119 || Choix_ObjS_Attaquant[1] == 119 || Choix_ObjS_Attaquant[2] == 119) { StackPanel_ObjS_119_Att.Visibility = Visibility.Visible; oeil_OBJS_119_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 120 || Choix_ObjS_Attaquant[1] == 120 || Choix_ObjS_Attaquant[2] == 120) { StackPanel_ObjS_120_Att.Visibility = Visibility.Visible; oeil_OBJS_120_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 121 || Choix_ObjS_Attaquant[1] == 121 || Choix_ObjS_Attaquant[2] == 121) { StackPanel_ObjS_121_Att.Visibility = Visibility.Visible; oeil_OBJS_121_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 122 || Choix_ObjS_Attaquant[1] == 122 || Choix_ObjS_Attaquant[2] == 122) { StackPanel_ObjS_122_Att.Visibility = Visibility.Visible; oeil_OBJS_122_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 123 || Choix_ObjS_Attaquant[1] == 123 || Choix_ObjS_Attaquant[2] == 123) { StackPanel_ObjS_123_Att.Visibility = Visibility.Visible; oeil_OBJS_123_Att(); };
-            ///         if (Choix_ObjS_Attaquant[0] == 124 || Choix_ObjS_Attaquant[1] == 124 || Choix_ObjS_Attaquant[2] == 124) { StackPanel_ObjS_124_Att.Visibility = Visibility.Visible; oeil_OBJS_124_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 113 || Choix_ObjS_Attaquant[1] == 113 || Choix_ObjS_Attaquant[2] == 113) { Adaptation_OBJC_113_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 114 || Choix_ObjS_Attaquant[1] == 114 || Choix_ObjS_Attaquant[2] == 114) { Adaptation_OBJC_114_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 115 || Choix_ObjS_Attaquant[1] == 115 || Choix_ObjS_Attaquant[2] == 115) { Adaptation_OBJC_115_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 116 || Choix_ObjS_Attaquant[1] == 116 || Choix_ObjS_Attaquant[2] == 116) { Adaptation_OBJC_116_Att(); };
+
             if (Choix_ObjS_Attaquant[0] == 125 || Choix_ObjS_Attaquant[1] == 125 || Choix_ObjS_Attaquant[2] == 125) { StackPanel_ObjS_125_Att.Visibility = Visibility.Visible; oeil_OBJS_125_Att(); };
             if (Choix_ObjS_Attaquant[0] == 126 || Choix_ObjS_Attaquant[1] == 126 || Choix_ObjS_Attaquant[2] == 126) { StackPanel_ObjS_126_Att.Visibility = Visibility.Visible; oeil_OBJS_126_Att(); };
             if (Choix_ObjS_Attaquant[0] == 127 || Choix_ObjS_Attaquant[1] == 127 || Choix_ObjS_Attaquant[2] == 127) { StackPanel_ObjS_127_Att.Visibility = Visibility.Visible; oeil_OBJS_127_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 128 || Choix_ObjS_Attaquant[1] == 128 || Choix_ObjS_Attaquant[2] == 128) { StackPanel_ObjS_128_Att.Visibility = Visibility.Visible; oeil_OBJS_128_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 129 || Choix_ObjS_Attaquant[1] == 129 || Choix_ObjS_Attaquant[2] == 129) { StackPanel_ObjS_129_Att.Visibility = Visibility.Visible; oeil_OBJS_129_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 130 || Choix_ObjS_Attaquant[1] == 130 || Choix_ObjS_Attaquant[2] == 130) { StackPanel_ObjS_130_Att.Visibility = Visibility.Visible; oeil_OBJS_130_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 131 || Choix_ObjS_Attaquant[1] == 131 || Choix_ObjS_Attaquant[2] == 131) { StackPanel_ObjS_131_Att.Visibility = Visibility.Visible; oeil_OBJS_131_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 128 || Choix_ObjS_Attaquant[1] == 128 || Choix_ObjS_Attaquant[2] == 128) { Adaptation_OBJC_128_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 129 || Choix_ObjS_Attaquant[1] == 129 || Choix_ObjS_Attaquant[2] == 129) { Adaptation_OBJC_129_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 130 || Choix_ObjS_Attaquant[1] == 130 || Choix_ObjS_Attaquant[2] == 130) { Adaptation_OBJC_130_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 131 || Choix_ObjS_Attaquant[1] == 131 || Choix_ObjS_Attaquant[2] == 131) { Adaptation_OBJC_131_Att(); };
             if (Choix_ObjS_Attaquant[0] == 132 || Choix_ObjS_Attaquant[1] == 132 || Choix_ObjS_Attaquant[2] == 132) { Adaptation_OBJC_132_Att(); };
             if (Choix_ObjS_Attaquant[0] == 133 || Choix_ObjS_Attaquant[1] == 133 || Choix_ObjS_Attaquant[2] == 133) { Adaptation_OBJC_133_Att(); };
             if (Choix_ObjS_Attaquant[0] == 134 || Choix_ObjS_Attaquant[1] == 134 || Choix_ObjS_Attaquant[2] == 134) { Adaptation_OBJC_134_Att(); };
@@ -7714,9 +7742,9 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 140 || Choix_ObjS_Attaquant[1] == 140 || Choix_ObjS_Attaquant[2] == 140) { StackPanel_ObjS_140_Att.Visibility = Visibility.Visible; oeil_OBJS_140_Att(); };
             if (Choix_ObjS_Attaquant[0] == 141 || Choix_ObjS_Attaquant[1] == 141 || Choix_ObjS_Attaquant[2] == 141) { StackPanel_ObjS_141_Att.Visibility = Visibility.Visible; oeil_OBJS_141_Att(); };
             if (Choix_ObjS_Attaquant[0] == 142 || Choix_ObjS_Attaquant[1] == 142 || Choix_ObjS_Attaquant[2] == 142) { StackPanel_ObjS_142_Att.Visibility = Visibility.Visible; oeil_OBJS_142_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 143 || Choix_ObjS_Attaquant[1] == 143 || Choix_ObjS_Attaquant[2] == 143) { StackPanel_ObjS_143_Att.Visibility = Visibility.Visible; oeil_OBJS_143_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 144 || Choix_ObjS_Attaquant[1] == 144 || Choix_ObjS_Attaquant[2] == 144) { StackPanel_ObjS_144_Att.Visibility = Visibility.Visible; oeil_OBJS_144_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 145 || Choix_ObjS_Attaquant[1] == 145 || Choix_ObjS_Attaquant[2] == 145) { StackPanel_ObjS_145_Att.Visibility = Visibility.Visible; oeil_OBJS_145_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 143 || Choix_ObjS_Attaquant[1] == 143 || Choix_ObjS_Attaquant[2] == 143) { Adaptation_OBJC_143_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 144 || Choix_ObjS_Attaquant[1] == 144 || Choix_ObjS_Attaquant[2] == 144) { Adaptation_OBJC_144_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 145 || Choix_ObjS_Attaquant[1] == 145 || Choix_ObjS_Attaquant[2] == 145) { Adaptation_OBJC_145_Att(); };
             if (Choix_ObjS_Attaquant[3] == 501) { StackPanel_ObjS_501_Att.Visibility = Visibility.Visible; oeil_OBJS_501_Att(); };
             if (Choix_ObjS_Attaquant[3] == 502) { StackPanel_ObjS_502_Att.Visibility = Visibility.Visible; oeil_OBJS_502_Att(); };
             if (Choix_ObjS_Attaquant[3] == 503) { StackPanel_ObjS_503_Att.Visibility = Visibility.Visible; oeil_OBJS_503_Att(); };
@@ -7817,26 +7845,19 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 110 || Choix_ObjS_Defenseur[1] == 110 || Choix_ObjS_Defenseur[2] == 110) { Adaptation_OBJC_110_Def(); };
             if (Choix_ObjS_Defenseur[0] == 111 || Choix_ObjS_Defenseur[1] == 111 || Choix_ObjS_Defenseur[2] == 111) { Adaptation_OBJC_111_Def(); };
             if (Choix_ObjS_Defenseur[0] == 112 || Choix_ObjS_Defenseur[1] == 112 || Choix_ObjS_Defenseur[2] == 112) { Adaptation_OBJC_112_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 113 || Choix_ObjS_Defenseur[1] == 113 || Choix_ObjS_Defenseur[2] == 113) { StackPanel_ObjS_113_Def.Visibility = Visibility.Visible; oeil_OBJS_113_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 114 || Choix_ObjS_Defenseur[1] == 114 || Choix_ObjS_Defenseur[2] == 114) { StackPanel_ObjS_114_Def.Visibility = Visibility.Visible; oeil_OBJS_114_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 115 || Choix_ObjS_Defenseur[1] == 115 || Choix_ObjS_Defenseur[2] == 115) { StackPanel_ObjS_115_Def.Visibility = Visibility.Visible; oeil_OBJS_115_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 116 || Choix_ObjS_Defenseur[1] == 116 || Choix_ObjS_Defenseur[2] == 116) { StackPanel_ObjS_116_Def.Visibility = Visibility.Visible; oeil_OBJS_116_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 117 || Choix_ObjS_Defenseur[1] == 117 || Choix_ObjS_Defenseur[2] == 117) { StackPanel_ObjS_117_Def.Visibility = Visibility.Visible; oeil_OBJS_117_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 118 || Choix_ObjS_Defenseur[1] == 118 || Choix_ObjS_Defenseur[2] == 118) { StackPanel_ObjS_118_Def.Visibility = Visibility.Visible; oeil_OBJS_118_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 119 || Choix_ObjS_Defenseur[1] == 119 || Choix_ObjS_Defenseur[2] == 119) { StackPanel_ObjS_119_Def.Visibility = Visibility.Visible; oeil_OBJS_119_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 120 || Choix_ObjS_Defenseur[1] == 120 || Choix_ObjS_Defenseur[2] == 120) { StackPanel_ObjS_120_Def.Visibility = Visibility.Visible; oeil_OBJS_120_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 121 || Choix_ObjS_Defenseur[1] == 121 || Choix_ObjS_Defenseur[2] == 121) { StackPanel_ObjS_121_Def.Visibility = Visibility.Visible; oeil_OBJS_121_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 122 || Choix_ObjS_Defenseur[1] == 122 || Choix_ObjS_Defenseur[2] == 122) { StackPanel_ObjS_122_Def.Visibility = Visibility.Visible; oeil_OBJS_122_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 123 || Choix_ObjS_Defenseur[1] == 123 || Choix_ObjS_Defenseur[2] == 123) { StackPanel_ObjS_123_Def.Visibility = Visibility.Visible; oeil_OBJS_123_Def(); };
-            ///         if (Choix_ObjS_Defenseur[0] == 124 || Choix_ObjS_Defenseur[1] == 124 || Choix_ObjS_Defenseur[2] == 124) { StackPanel_ObjS_124_Def.Visibility = Visibility.Visible; oeil_OBJS_124_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 113 || Choix_ObjS_Defenseur[1] == 113 || Choix_ObjS_Defenseur[2] == 113) { Adaptation_OBJC_113_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 114 || Choix_ObjS_Defenseur[1] == 114 || Choix_ObjS_Defenseur[2] == 114) { Adaptation_OBJC_114_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 115 || Choix_ObjS_Defenseur[1] == 115 || Choix_ObjS_Defenseur[2] == 115) { Adaptation_OBJC_115_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 116 || Choix_ObjS_Defenseur[1] == 116 || Choix_ObjS_Defenseur[2] == 116) { Adaptation_OBJC_116_Def(); };
+
             if (Choix_ObjS_Defenseur[0] == 125 || Choix_ObjS_Defenseur[1] == 125 || Choix_ObjS_Defenseur[2] == 125) { StackPanel_ObjS_125_Def.Visibility = Visibility.Visible; oeil_OBJS_125_Def(); };
             if (Choix_ObjS_Defenseur[0] == 126 || Choix_ObjS_Defenseur[1] == 126 || Choix_ObjS_Defenseur[2] == 126) { StackPanel_ObjS_126_Def.Visibility = Visibility.Visible; oeil_OBJS_126_Def(); };
             if (Choix_ObjS_Defenseur[0] == 127 || Choix_ObjS_Defenseur[1] == 127 || Choix_ObjS_Defenseur[2] == 127) { StackPanel_ObjS_127_Def.Visibility = Visibility.Visible; oeil_OBJS_127_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 128 || Choix_ObjS_Defenseur[1] == 128 || Choix_ObjS_Defenseur[2] == 128) { StackPanel_ObjS_128_Def.Visibility = Visibility.Visible; oeil_OBJS_128_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 129 || Choix_ObjS_Defenseur[1] == 129 || Choix_ObjS_Defenseur[2] == 129) { StackPanel_ObjS_129_Def.Visibility = Visibility.Visible; oeil_OBJS_129_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 130 || Choix_ObjS_Defenseur[1] == 130 || Choix_ObjS_Defenseur[2] == 130) { StackPanel_ObjS_130_Def.Visibility = Visibility.Visible; oeil_OBJS_130_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 131 || Choix_ObjS_Defenseur[1] == 131 || Choix_ObjS_Defenseur[2] == 131) { StackPanel_ObjS_131_Def.Visibility = Visibility.Visible; oeil_OBJS_131_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 132 || Choix_ObjS_Defenseur[1] == 132 || Choix_ObjS_Defenseur[2] == 132) { Adaptation_OBJC_132_Att(); };
+            if (Choix_ObjS_Defenseur[0] == 128 || Choix_ObjS_Defenseur[1] == 128 || Choix_ObjS_Defenseur[2] == 128) { Adaptation_OBJC_128_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 129 || Choix_ObjS_Defenseur[1] == 129 || Choix_ObjS_Defenseur[2] == 129) { Adaptation_OBJC_129_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 130 || Choix_ObjS_Defenseur[1] == 130 || Choix_ObjS_Defenseur[2] == 130) { Adaptation_OBJC_130_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 131 || Choix_ObjS_Defenseur[1] == 131 || Choix_ObjS_Defenseur[2] == 131) { Adaptation_OBJC_131_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 132 || Choix_ObjS_Defenseur[1] == 132 || Choix_ObjS_Defenseur[2] == 132) { Adaptation_OBJC_132_Def(); };
             if (Choix_ObjS_Defenseur[0] == 133 || Choix_ObjS_Defenseur[1] == 133 || Choix_ObjS_Defenseur[2] == 133) { Adaptation_OBJC_133_Def(); };
             if (Choix_ObjS_Defenseur[0] == 134 || Choix_ObjS_Defenseur[1] == 134 || Choix_ObjS_Defenseur[2] == 134) { Adaptation_OBJC_134_Def(); };
             if (Choix_ObjS_Defenseur[0] == 135 || Choix_ObjS_Defenseur[1] == 135 || Choix_ObjS_Defenseur[2] == 135) { Adaptation_OBJC_135_Def(); };
@@ -7847,9 +7868,9 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 140 || Choix_ObjS_Defenseur[1] == 140 || Choix_ObjS_Defenseur[2] == 140) { StackPanel_ObjS_140_Def.Visibility = Visibility.Visible; oeil_OBJS_140_Def(); };
             if (Choix_ObjS_Defenseur[0] == 141 || Choix_ObjS_Defenseur[1] == 141 || Choix_ObjS_Defenseur[2] == 141) { StackPanel_ObjS_141_Def.Visibility = Visibility.Visible; oeil_OBJS_141_Def(); };
             if (Choix_ObjS_Defenseur[0] == 142 || Choix_ObjS_Defenseur[1] == 142 || Choix_ObjS_Defenseur[2] == 142) { StackPanel_ObjS_142_Def.Visibility = Visibility.Visible; oeil_OBJS_142_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 143 || Choix_ObjS_Defenseur[1] == 143 || Choix_ObjS_Defenseur[2] == 143) { StackPanel_ObjS_143_Def.Visibility = Visibility.Visible; oeil_OBJS_143_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 144 || Choix_ObjS_Defenseur[1] == 144 || Choix_ObjS_Defenseur[2] == 144) { StackPanel_ObjS_144_Def.Visibility = Visibility.Visible; oeil_OBJS_144_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 145 || Choix_ObjS_Defenseur[1] == 145 || Choix_ObjS_Defenseur[2] == 145) { StackPanel_ObjS_145_Def.Visibility = Visibility.Visible; oeil_OBJS_145_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 143 || Choix_ObjS_Defenseur[1] == 143 || Choix_ObjS_Defenseur[2] == 143) { Adaptation_OBJC_143_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 144 || Choix_ObjS_Defenseur[1] == 144 || Choix_ObjS_Defenseur[2] == 144) { Adaptation_OBJC_144_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 145 || Choix_ObjS_Defenseur[1] == 145 || Choix_ObjS_Defenseur[2] == 145) { Adaptation_OBJC_145_Def(); };
             if (Choix_ObjS_Defenseur[3] == 501) { StackPanel_ObjS_501_Def.Visibility = Visibility.Visible; oeil_OBJS_501_Def(); };
             if (Choix_ObjS_Defenseur[3] == 502) { StackPanel_ObjS_502_Def.Visibility = Visibility.Visible; oeil_OBJS_502_Def(); };
             if (Choix_ObjS_Defenseur[3] == 503) { StackPanel_ObjS_503_Def.Visibility = Visibility.Visible; oeil_OBJS_503_Def(); };
@@ -9677,6 +9698,7 @@ namespace CPV9
         private void Button_Option_Click(object sender, RoutedEventArgs e)
         {
             Retour = 1;
+            Init_Donnees();
             Init_affichage();
             Deroulement();
 
@@ -9908,6 +9930,10 @@ namespace CPV9
                         Button_Obj_Codex_BA_114_Att.Visibility = Visibility.Hidden;
                         Button_Obj_Codex_BA_115_Att.Visibility = Visibility.Hidden;
                         Button_Obj_Codex_BA_116_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_AdeptaS_132_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_AdeptaS_133_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_AdeptaS_134_Att.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_AdeptaS_135_Att.Visibility = Visibility.Hidden;
                     }
                     if (Select_Objectif >= 125 && Select_Objectif <= 127)
                     {
@@ -9993,7 +10019,11 @@ namespace CPV9
                     Button_Obj_Codex_BA_114_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_BA_115_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_BA_116_Def.Visibility = Visibility.Hidden;
-                }
+                    Button_Obj_Codex_AdeptaS_132_Def.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_AdeptaS_133_Def.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_AdeptaS_134_Def.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_AdeptaS_135_Def.Visibility = Visibility.Hidden;
+                    }
                     if (Select_Objectif >= 125 && Select_Objectif <= 127)
                 {
                     Button_Obj_Codex_DG_125_Def.Visibility = Visibility.Hidden;
@@ -10557,592 +10587,6 @@ namespace CPV9
         private void Button_Obj_Codex_BA_116_Def_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(116, "Def");
-        }
-        #endregion
-        #endregion
-        #region Deathwatch
-        #region Objectif Codex Deathwatch Attaquant
-        private void Button_Obj_Codex_Deathwatch_117_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_117_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 117;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_Deathwatch_117_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_Deathwatch_118_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_118_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 118;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_Deathwatch_118_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_Deathwatch_119_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_119_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 119;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_Deathwatch_119_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_Deathwatch_120_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_120_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 120;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_Deathwatch_120_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        #endregion
-        #region Objectif Codex Deathwatch Defenseur
-        private void Button_Obj_Codex_Deathwatch_117_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Def_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_117_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_116_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 117;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_Deathwatch_117_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_116_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_Deathwatch_118_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_118_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 118;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_Deathwatch_118_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_Deathwatch_119_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_119_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 119;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_Deathwatch_119_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_Deathwatch_120_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_Deathwatch_116_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_Deathwatch_116_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_Deathwatch_116_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_Deathwatch_120_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 120;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_Deathwatch_120_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-        #endregion
-        #endregion
-        #region SW
-        #region Objectif Codex SW Attaquant
-        private void Button_Obj_Codex_SW_121_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_113_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_113_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_113_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_113_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_121_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 121;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_SW_121_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_SW_122_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_114_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_114_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_114_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_114_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_114_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_122_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 122;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_SW_122_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_SW_123_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_114_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_114_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_114_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_114_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_114_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_123_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_SW_114_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 123;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_SW_123_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_SW_124_Att_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Att.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_114_Att_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_114_Att_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_114_Att_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_114_Att_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_114_Att_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_114_Att_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_124_Att_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Att = 124;
-            Select_ObjS_Attaquant(Choix_ObjS_Att);
-            Affiche_Bouton_Codex_SM_Att();
-        }
-        private void Label_OBJ_Codex_SW_124_Att_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_114_Att.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
-        }
-
-        #endregion
-        #region Objectif Codex SM Defenseur
-        private void Button_Obj_Codex_SW_121_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_113_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_113_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_113_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_121_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 121;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_SW_121_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_SW_122_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_113_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_113_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_113_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_122_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 122;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_SW_122_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_SW_123_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_113_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_113_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_113_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_123_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 123;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_SW_123_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-        }
-
-        private void Button_Obj_Codex_SW_124_Def_Click(object sender, RoutedEventArgs e)
-        {
-            StackPanel_OBJSec_Def.Visibility = Visibility.Collapsed;
-            /*
-            Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Visible;
-            double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
-            Label_OBJ_Codex_BA_113_Def_1.FontSize = 3 * x;
-            Label_OBJ_Codex_BA_113_Def_2.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_3.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_4.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_5.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_6.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_7.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_oui.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_oui.Height = 3 * Rapport_Taille_Y;
-            Label_OBJ_Codex_BA_113_Def_non.FontSize = 2 * x;
-            Label_OBJ_Codex_BA_113_Def_non.Width = 8 * Rapport_Taille_X;
-            Label_OBJ_Codex_BA_113_Def_non.Height = 3 * Rapport_Taille_Y;
-            */
-        }
-        private void Label_OBJ_Codex_SW_124_Def_oui_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
-            StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-            Choix_ObjS_Def = 124;
-            Select_ObjS_Defenseur(Choix_ObjS_Def);
-            Affiche_Bouton_Codex_SM_Def();
-        }
-        private void Label_OBJ_Codex_SW_124_Def_non_Click(object sender, RoutedEventArgs e)
-        {
-            ///Label_OBJ_Codex_BA_113_Def.Visibility = Visibility.Collapsed;
-            StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
         }
         #endregion
         #endregion
@@ -12352,7 +11796,7 @@ namespace CPV9
             TextBlock_ObjS_128_Att.Text = Convert.ToString(OBJECTIF_Codex_128_Att.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 129
             Classe_Score_OBJC_Admech_129 OBJECTIF_Codex_129_Att;
-            OBJECTIF_Codex_129_Att = new Classe_Score_OBJC_Admech_129(CheckBox_Objectif_Sec_Att_129_R1_Adeptus_Etat, TextBox_ObjS_129_Att_R1_Infanterie.Text, TextBox_ObjS_129_Att_R1_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R2_Adeptus_Etat, TextBox_ObjS_129_Att_R2_Infanterie.Text, TextBox_ObjS_129_Att_R2_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R3_Adeptus_Etat, TextBox_ObjS_129_Att_R3_Infanterie.Text, TextBox_ObjS_129_Att_R3_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R4_Adeptus_Etat, TextBox_ObjS_129_Att_R4_Infanterie.Text, TextBox_ObjS_129_Att_R4_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R5_Adeptus_Etat, TextBox_ObjS_129_Att_R5_Infanterie.Text, TextBox_ObjS_129_Att_R5_Vehicule.Text);
+            OBJECTIF_Codex_129_Att = new Classe_Score_OBJC_Admech_129(CheckBox_Objectif_Sec_Att_129_R1_Adeptus_Etat, TextBox_ObjS_129_Att_R1_Infanterie.Text, TextBox_ObjS_129_Att_R1_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R2_Adeptus_Etat, TextBox_ObjS_129_Att_R2_Infanterie.Text, TextBox_ObjS_129_Att_R2_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R3_Adeptus_Etat, TextBox_ObjS_129_Att_R3_Infanterie.Text, TextBox_ObjS_129_Att_R3_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R4_Adeptus_Etat, TextBox_ObjS_129_Att_R4_Infanterie.Text, TextBox_ObjS_129_Att_R4_Vehicule.Text, CheckBox_Objectif_Sec_Att_129_R5_Adeptus_Etat, TextBox_ObjS_129_Att_R5_Infanterie.Text, TextBox_ObjS_129_Att_R5_Vehicule.Text, CA);
             Scores_Attaquant[68] = OBJECTIF_Codex_129_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_129_Att.Score_ObjS) >= 15)
             {
@@ -12372,7 +11816,7 @@ namespace CPV9
             TextBlock_ObjS_130_Att.Text = Convert.ToString(OBJECTIF_Codex_130_Att.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 131
             Classe_Score_OBJC_Admech_131 OBJECTIF_Codex_131_Att;
-            OBJECTIF_Codex_131_Att = new Classe_Score_OBJC_Admech_131(CheckBox_Objectif_Sec_Att_131_R1_Etat, CheckBox_Objectif_Sec_Att_131_R2_Etat, CheckBox_Objectif_Sec_Att_131_R3_Etat, CheckBox_Objectif_Sec_Att_131_R4_Etat, CheckBox_Objectif_Sec_Att_131_R5_Etat, CheckBox_Objectif_Sec_Att_131_R6_Etat, TextBox_ObjS_131_Att_Objo.Text);
+            OBJECTIF_Codex_131_Att = new Classe_Score_OBJC_Admech_131(CheckBox_Objectif_Sec_Att_131_R1_Etat, CheckBox_Objectif_Sec_Att_131_R2_Etat, CheckBox_Objectif_Sec_Att_131_R3_Etat, CheckBox_Objectif_Sec_Att_131_R4_Etat, CheckBox_Objectif_Sec_Att_131_R5_Etat, CheckBox_Objectif_Sec_Att_131_R6_Etat, TextBox_ObjS_131_Att_Objo.Text, CA);
             Scores_Attaquant[70] = OBJECTIF_Codex_131_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_131_Att.Score_ObjS) >= 15)
             {
@@ -12524,9 +11968,9 @@ namespace CPV9
             #region Calcul_Objectif_Codex_Grey_Knights_143_145
             ///CALCUL SCORE OBJECTIF MISSION 143
             Classe_Score_OBJC_GK_143 OBJECTIF_Codex_143_Att;
-            OBJECTIF_Codex_143_Att = new Classe_Score_OBJC_GK_143(CheckBox_Objectif_Sec_Att_143_Primarque_Etat, CheckBox_Objectif_Sec_Att_143_Monstre_Etat, CheckBox_Objectif_Sec_Att_143_Vehicule_Etat, CheckBox_Objectif_Sec_Att_143_Demons_Etat);
+            OBJECTIF_Codex_143_Att = new Classe_Score_OBJC_GK_143(TextBox_Objectif_Sec_Att_143_Primarque.Text, TextBox_Objectif_Sec_Att_143_Monstre.Text, TextBox_Objectif_Sec_Att_143_Vehicule.Text, TextBox_Objectif_Sec_Att_143_Demons.Text, TextBox_ObjS_143_Att_DemiForce.Text, CA);
             Scores_Attaquant[82] = OBJECTIF_Codex_143_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_143_Att.Score_ObjS) >= 12)
+            if (Convert.ToInt32(OBJECTIF_Codex_143_Att.Score_ObjS) >= 15)
             {
                 ID_Cape_Attaquant[s] = 143;
                 s++;
@@ -13499,7 +12943,7 @@ namespace CPV9
             TextBlock_ObjS_128_Def.Text = Convert.ToString(OBJECTIF_Codex_128_Def.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 129
             Classe_Score_OBJC_Admech_129 OBJECTIF_Codex_129_Def;
-            OBJECTIF_Codex_129_Def = new Classe_Score_OBJC_Admech_129(CheckBox_Objectif_Sec_Def_129_R1_Adeptus_Etat, TextBox_ObjS_129_Def_R1_Infanterie.Text, TextBox_ObjS_129_Def_R1_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R2_Adeptus_Etat, TextBox_ObjS_129_Def_R2_Infanterie.Text, TextBox_ObjS_129_Def_R2_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R3_Adeptus_Etat, TextBox_ObjS_129_Def_R3_Infanterie.Text, TextBox_ObjS_129_Def_R3_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R4_Adeptus_Etat, TextBox_ObjS_129_Def_R4_Infanterie.Text, TextBox_ObjS_129_Def_R4_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R5_Adeptus_Etat, TextBox_ObjS_129_Def_R5_Infanterie.Text, TextBox_ObjS_129_Def_R5_Vehicule.Text);
+            OBJECTIF_Codex_129_Def = new Classe_Score_OBJC_Admech_129(CheckBox_Objectif_Sec_Def_129_R1_Adeptus_Etat, TextBox_ObjS_129_Def_R1_Infanterie.Text, TextBox_ObjS_129_Def_R1_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R2_Adeptus_Etat, TextBox_ObjS_129_Def_R2_Infanterie.Text, TextBox_ObjS_129_Def_R2_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R3_Adeptus_Etat, TextBox_ObjS_129_Def_R3_Infanterie.Text, TextBox_ObjS_129_Def_R3_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R4_Adeptus_Etat, TextBox_ObjS_129_Def_R4_Infanterie.Text, TextBox_ObjS_129_Def_R4_Vehicule.Text, CheckBox_Objectif_Sec_Def_129_R5_Adeptus_Etat, TextBox_ObjS_129_Def_R5_Infanterie.Text, TextBox_ObjS_129_Def_R5_Vehicule.Text, CA);
             Scores_Defenseur[68] = OBJECTIF_Codex_129_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_129_Def.Score_ObjS) >= 15)
             {
@@ -13519,7 +12963,7 @@ namespace CPV9
             TextBlock_ObjS_130_Def.Text = Convert.ToString(OBJECTIF_Codex_130_Def.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 131
             Classe_Score_OBJC_Admech_131 OBJECTIF_Codex_131_Def;
-            OBJECTIF_Codex_131_Def = new Classe_Score_OBJC_Admech_131(CheckBox_Objectif_Sec_Def_131_R1_Etat, CheckBox_Objectif_Sec_Def_131_R2_Etat, CheckBox_Objectif_Sec_Def_131_R3_Etat, CheckBox_Objectif_Sec_Def_131_R4_Etat, CheckBox_Objectif_Sec_Def_131_R5_Etat, CheckBox_Objectif_Sec_Def_131_R6_Etat, TextBox_ObjS_131_Def_Objo.Text);
+            OBJECTIF_Codex_131_Def = new Classe_Score_OBJC_Admech_131(CheckBox_Objectif_Sec_Def_131_R1_Etat, CheckBox_Objectif_Sec_Def_131_R2_Etat, CheckBox_Objectif_Sec_Def_131_R3_Etat, CheckBox_Objectif_Sec_Def_131_R4_Etat, CheckBox_Objectif_Sec_Def_131_R5_Etat, CheckBox_Objectif_Sec_Def_131_R6_Etat, TextBox_ObjS_131_Def_Objo.Text, CA);
             Scores_Defenseur[70] = OBJECTIF_Codex_131_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_131_Def.Score_ObjS) >= 15)
             {
@@ -13673,9 +13117,9 @@ namespace CPV9
             #region Calcul_Objectif_Codex_Grey_Knights_143_145
             ///CALCUL SCORE OBJECTIF MISSION 143
             Classe_Score_OBJC_GK_143 OBJECTIF_Codex_143_Def;
-            OBJECTIF_Codex_143_Def = new Classe_Score_OBJC_GK_143(CheckBox_Objectif_Sec_Def_143_Primarque_Etat, CheckBox_Objectif_Sec_Def_143_Monstre_Etat, CheckBox_Objectif_Sec_Def_143_Vehicule_Etat, CheckBox_Objectif_Sec_Def_143_Demons_Etat);
+            OBJECTIF_Codex_143_Def = new Classe_Score_OBJC_GK_143(TextBox_Objectif_Sec_Def_143_Primarque.Text, TextBox_Objectif_Sec_Def_143_Monstre.Text, TextBox_Objectif_Sec_Def_143_Vehicule.Text, TextBox_Objectif_Sec_Def_143_Demons.Text, TextBox_ObjS_143_Def_DemiForce.Text, CA);
             Scores_Defenseur[82] = OBJECTIF_Codex_143_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_143_Def.Score_ObjS) >= 12)
+            if (Convert.ToInt32(OBJECTIF_Codex_143_Def.Score_ObjS) >= 15)
             {
                 ID_Cape_Defenseur[s] = 143;
                 s++;
@@ -13855,6 +13299,7 @@ namespace CPV9
             if (TextBox_Nom_Attaquant_SG.Text != null)
             {
                 StackPanel_ComboBox_Choix_Armee.Visibility = Visibility.Visible;
+                Controle_Codex_CA();
                 Button_Saisie_Attaquant_Valider.Visibility = Visibility.Visible;
             }
         }
@@ -13872,6 +13317,7 @@ namespace CPV9
             if (TextBox_Nom_Defenseur_SG.Text != null)
             {
                 StackPanel_ComboBox_Choix_Armee.Visibility = Visibility.Visible;
+                Controle_Codex_CA();
                 Button_Saisie_Defenseur_Valider.Visibility = Visibility.Visible;
             }
         }
@@ -17224,23 +16670,6 @@ namespace CPV9
             Calcul_Score_Defenseur();
         }
 
-        private void CheckBox_Objectif_Sec_Att_143_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_Objectif_Sec_Att_143_Primarque.IsChecked == true) { CheckBox_Objectif_Sec_Att_143_Primarque_Etat = "true"; } else { CheckBox_Objectif_Sec_Att_143_Primarque_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_143_Monstre.IsChecked == true) { CheckBox_Objectif_Sec_Att_143_Monstre_Etat = "true"; } else { CheckBox_Objectif_Sec_Att_143_Monstre_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_143_Vehicule.IsChecked == true) { CheckBox_Objectif_Sec_Att_143_Vehicule_Etat = "true"; } else { CheckBox_Objectif_Sec_Att_143_Vehicule_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Att_143_Demons.IsChecked == true) { CheckBox_Objectif_Sec_Att_143_Demons_Etat = "true"; } else { CheckBox_Objectif_Sec_Att_143_Demons_Etat = "false"; };
-            Calcul_Score_Attaquant();
-        }
-        private void CheckBox_Objectif_Sec_Def_143_Click(object sender, RoutedEventArgs e)
-        {
-            if (CheckBox_Objectif_Sec_Def_143_Primarque.IsChecked == true) { CheckBox_Objectif_Sec_Def_143_Primarque_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_143_Primarque_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_143_Monstre.IsChecked == true) { CheckBox_Objectif_Sec_Def_143_Monstre_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_143_Monstre_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_143_Vehicule.IsChecked == true) { CheckBox_Objectif_Sec_Def_143_Vehicule_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_143_Vehicule_Etat = "false"; };
-            if (CheckBox_Objectif_Sec_Def_143_Demons.IsChecked == true) { CheckBox_Objectif_Sec_Def_143_Demons_Etat = "true"; } else { CheckBox_Objectif_Sec_Def_143_Demons_Etat = "false"; };
-            Calcul_Score_Defenseur();
-        }
-
         private void CheckBox_Objectif_Sec_Att_144_Click(object sender, RoutedEventArgs e)
         {
             if (CheckBox_Objectif_Sec_Att_144_T1.IsChecked == true) { CheckBox_Objectif_Sec_Att_144_T1_Etat = "true"; } else { CheckBox_Objectif_Sec_Att_144_T1_Etat = "false"; };
@@ -20460,6 +19889,69 @@ namespace CPV9
             ComboBox_Choix_Armee_Xenos.Height = 1.5 * x;
             Button_Saisie_Defenseur_Valider.FontSize = 2 * x;
         }
+        private void Controle_Codex_CA()
+        {
+            if (codex == false)
+            {
+                foreach (var item in List_Armee_Sans_Codex)
+                {
+                    Affiche_ComboBoxItemArmee(item);
+                }
+
+            }
+            if (CA == "Nachmund")
+            {
+                foreach (var item in List_Armee_Nachmund)
+                {
+                    Affiche_ComboBoxItemArmee(item);
+                }
+            }
+            if (CA == "Nephilim")
+            {
+                foreach (var item in List_Armee_Nephilim)
+                {
+                    Affiche_ComboBoxItemArmee(item);
+                }
+            }
+        }
+        private void Affiche_ComboBoxItemArmee(string item)
+        {
+            if (item == "  Adepta Sororitas") { ComboBoxItem_Adepta_Sororitas.Visibility = Visibility.Visible; };
+            if (item == "  Adeptus Custodes") { ComboBoxItem_Adeptus_Custodes.Visibility = Visibility.Visible; };
+            if (item == "  Adeptus Mechanicus") { ComboBoxItem_Adeptus_Mechanicus.Visibility = Visibility.Visible; };
+            if (item == "  Astra Militarum") { ComboBoxItem_Astra_Militarum.Visibility = Visibility.Visible; };
+            if (item == "  Grey Knights") { ComboBoxItem_Grey_Knights.Visibility = Visibility.Visible; };
+            if (item == "  Imperial Knights") { ComboBoxItem_Imperial_Knights.Visibility = Visibility.Visible; };
+            if (item == "  SM_Space Marines") { ComboBoxItem_SM_Space_Marines.Visibility = Visibility.Visible; };
+            if (item == "  SM_Dark Angels") { ComboBoxItem_SM_Dark_Angels.Visibility = Visibility.Visible; };
+            if (item == "  SM_White Scares") { ComboBoxItem_SM_White_Scares.Visibility = Visibility.Visible; };
+            if (item == "  SM_Space Wolves") { ComboBoxItem_SM_Space_Wolves.Visibility = Visibility.Visible; };
+            if (item == "  SM_Imperial Fists") { ComboBoxItem_SM_Imperial_Fists.Visibility = Visibility.Visible; };
+            if (item == "  SM_Crimson Fists") { ComboBoxItem_SM_Crimson_Fists.Visibility = Visibility.Visible; };
+            if (item == "  SM_Black Templars") { ComboBoxItem_SM_Black_Templars.Visibility = Visibility.Visible; };
+            if (item == "  SM_Blood Angels") { ComboBoxItem_SM_Blood_Angels.Visibility = Visibility.Visible; };
+            if (item == "  SM_Flesh Tearers") { ComboBoxItem_SM_Flesh_Tearers.Visibility = Visibility.Visible; };
+            if (item == "  SM_Iron Hands") { ComboBoxItem_SM_Iron_Hands.Visibility = Visibility.Visible; };
+            if (item == "  SM_Ultramarines") { ComboBoxItem_SM_Ultramarines.Visibility = Visibility.Visible; };
+            if (item == "  SM_Salamandres") { ComboBoxItem_SM_Salamandres.Visibility = Visibility.Visible; };
+            if (item == "  SM_Raven Guard") { ComboBoxItem_SM_Raven_Guard.Visibility = Visibility.Visible; };
+            if (item == "  SM_Deathwatch") { ComboBoxItem_SM_Deathwatch.Visibility = Visibility.Visible; };
+            if (item == "  Chaos Daemons") { ComboBoxItem_Chaos_Daemons.Visibility = Visibility.Visible; };
+            if (item == "  Chaos Knights") { ComboBoxItem_Chaos_Knights.Visibility = Visibility.Visible; };
+            if (item == "  Chaos Space Marines") { ComboBoxItem_Chaos_Space_Marines.Visibility = Visibility.Visible; };
+            if (item == "  Death Guard") { ComboBoxItem_Death_Guard.Visibility = Visibility.Visible; };
+            if (item == "  Thousand Sons") { ComboBoxItem_Thousand_Sons.Visibility = Visibility.Visible; };
+            if (item == "  Craftworlds") { ComboBoxItem_Craftworlds.Visibility = Visibility.Visible; };
+            if (item == "  Drukhari") { ComboBoxItem_Drukhari.Visibility = Visibility.Visible; };
+            if (item == "  Genestealer Cults") { ComboBoxItem_Genestealer_Cults.Visibility = Visibility.Visible; };
+            if (item == "  Harlequins") { ComboBoxItem_Harlequins.Visibility = Visibility.Visible; };
+            if (item == "  Necrons") { ComboBoxItem_Necrons.Visibility = Visibility.Visible; };
+            if (item == "  Orks") { ComboBoxItem_Orks.Visibility = Visibility.Visible; };
+            if (item == "  T AU Empire") { ComboBoxItem_T_AU_Empire.Visibility = Visibility.Visible; };
+            if (item == "  Tyranid") { ComboBoxItem_Tyranid.Visibility = Visibility.Visible; };
+            if (item == "  Ynarri") { ComboBoxItem_Ynarri.Visibility = Visibility.Visible; };
+        }
+
         private void Affichage_OBJsec_Att()
         {
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3);
@@ -20492,36 +19984,21 @@ namespace CPV9
 
             }///OBJS 3 - TUEURS DE TITANS
 
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Visible;
-                Button_Obj_Codex_SM_110_Att.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_SM_110_Att.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_SM_110_Att.FontSize = x;
-            }///OBJC SM 110-GUERRE CODEX
+            Button_Obj_Codex_SM_110_Att.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_SM_110_Att.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_SM_110_Att.FontSize = x;
+
             Button_Obj_Codex_BA_113_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_113_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_BA_113_Att.FontSize = x;
-            Button_Obj_Codex_Deathwatch_118_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_118_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_118_Att.FontSize = x;
-            Button_Obj_Codex_SW_121_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_121_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_121_Att.FontSize = x;
-            Button_Obj_Codex_SW_122_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_122_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_122_Att.FontSize = x;
+            Button_Obj_Codex_BA_113_Att.FontSize = x;       
+
             Button_Obj_Codex_Admech_128_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Admech_128_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Admech_128_Att.FontSize = x;
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_AdeptaS_133_Att.Visibility = Visibility.Visible;
-                Button_Obj_Codex_AdeptaS_133_Att.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_AdeptaS_133_Att.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_AdeptaS_133_Att.FontSize = x;
 
-            }///OBJC ADEPTA SORORITAS 133 - TUEZ L'HERETIQUE
+            Button_Obj_Codex_AdeptaS_133_Att.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_AdeptaS_133_Att.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_AdeptaS_133_Att.FontSize = x;
 
             Button_Obj_Codex_Ork_137_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Ork_137_Att.Height = 4 * Rapport_Taille_Y;
@@ -20560,29 +20037,17 @@ namespace CPV9
             Button_Obj_Codex_Necron_100_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Att_1.FontSize = x;
 
-                /// OBJC SM 
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_SM_112_Att.Visibility = Visibility.Visible;
-                Button_Obj_Codex_SM_112_Att.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_SM_112_Att.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_SM_112_Att.FontSize = x;
-            }///OBJC SM 112-SERMENTS DE L'INSTANT
+            Button_Obj_Codex_SM_112_Att.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_SM_112_Att.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_SM_112_Att.FontSize = x;
+
             Button_Obj_Codex_BA_114_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_114_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_114_Att.FontSize = x;
             Button_Obj_Codex_BA_115_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_115_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_115_Att.FontSize = x;
-            Button_Obj_Codex_Deathwatch_120_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_120_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_120_Att.FontSize = x;
-            Button_Obj_Codex_SW_123_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_123_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_123_Att.FontSize = x;
-            Button_Obj_Codex_SW_124_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_124_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_124_Att.FontSize = x;
+            
             Button_Obj_Codex_DG_125_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_125_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_125_Att.FontSize = x;
@@ -20632,19 +20097,13 @@ namespace CPV9
             Button_Obj_Codex_Necron_102_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_102_Att_1.FontSize = x;
 
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Visible;
-                Button_Obj_Codex_SM_111_Att.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_SM_111_Att.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_SM_111_Att.FontSize = x;
-            }///OBJC SM 111 - 111-TACTIQUES DE CHOC
+            Button_Obj_Codex_SM_111_Att.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_SM_111_Att.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_SM_111_Att.FontSize = x;
             Button_Obj_Codex_BA_116_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_116_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_116_Att.FontSize = x;
-            Button_Obj_Codex_Deathwatch_117_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_117_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_117_Att.FontSize = x;
+
             Button_Obj_Codex_DG_126_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_126_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_126_Att.FontSize = x;
@@ -20689,9 +20148,6 @@ namespace CPV9
             Button_Obj_Codex_Necron_103_Att_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_103_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_103_Att_1.FontSize = x;
-            Button_Obj_Codex_Deathwatch_119_Att.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_119_Att.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_119_Att.FontSize = x;
             Button_Obj_Codex_DG_127_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_127_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_127_Att.FontSize = x;
@@ -20804,46 +20260,27 @@ namespace CPV9
             Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_SM_112_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_BA_113_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_BA_114_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_BA_115_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_BA_116_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_117_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_118_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_119_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_120_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_121_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_122_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_123_Att.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_124_Att.Visibility = Visibility.Collapsed;
+            
 
             if (Choix_ObjS_Attaquant[0] == 0 & Choix_ObjS_Attaquant[1] == 0 & Choix_ObjS_Attaquant[2] == 0)
             {
                 if (Players_Attaquant[1] == "  SM_Space Marines" || Players_Attaquant[1] == "  SM_Dark Angels" || Players_Attaquant[1] == "  SM_White Scares" || Players_Attaquant[1] == "  SM_Space Wolves" || Players_Attaquant[1] == "  SM_Imperial Fists" || Players_Attaquant[1] == "  SM_Crimson Fists" || Players_Attaquant[1] == "  SM_Black Templars" || Players_Attaquant[1] == "  SM_Blood Angels" || Players_Attaquant[1] == "  SM_Flesh Tearers" || Players_Attaquant[1] == "  SM_Iron Hands" || Players_Attaquant[1] == "  SM_Ultramarines" || Players_Attaquant[1] == "  SM_Salamandres" || Players_Attaquant[1] == "  SM_Raven Guard" || Players_Attaquant[1] == "  SM_Deathwatch")
                 {
-                    Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_SM_112_Att.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_SM_112_Att.Visibility = Visibility.Visible;
+                    }///OBJC SM 
                     if (Players_Attaquant[1] == "  SM_Blood Angels")
                     {
-                        Button_Obj_Codex_BA_113_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_BA_114_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_BA_115_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_BA_116_Att.Visibility = Visibility.Visible;
-                    }
-                    if (Players_Attaquant[1] == "  SM_Deathwatch")
-                    {
-                        Button_Obj_Codex_Deathwatch_117_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_Deathwatch_118_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_Deathwatch_119_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_Deathwatch_120_Att.Visibility = Visibility.Visible;
-                    }
-                    if (Players_Attaquant[1] == "  SM_Space Wolves")
-                    {
-                        Button_Obj_Codex_SW_121_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_SW_122_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_SW_123_Att.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_SW_124_Att.Visibility = Visibility.Visible;
+                        if (CA == "Nachmund")
+                        {
+                            Button_Obj_Codex_BA_113_Att.Visibility = Visibility.Visible;
+                            Button_Obj_Codex_BA_114_Att.Visibility = Visibility.Visible;
+                            Button_Obj_Codex_BA_115_Att.Visibility = Visibility.Visible;
+                            Button_Obj_Codex_BA_116_Att.Visibility = Visibility.Visible;
+                        }///OBJC BA 
                     }
                 }
             }
@@ -20857,42 +20294,26 @@ namespace CPV9
             Button_Obj_Codex_BA_114_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_BA_115_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_BA_116_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_117_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_118_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_119_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Deathwatch_120_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_121_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_122_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_123_Def.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_SW_124_Def.Visibility = Visibility.Collapsed;
 
             if (Choix_ObjS_Defenseur[0] == 0 & Choix_ObjS_Defenseur[1] == 0 & Choix_ObjS_Defenseur[2] == 0)
             {
                 if (Players_Defenseur[1] == "  SM_Space Marines" || Players_Defenseur[1] == "  SM_Dark Angels" || Players_Defenseur[1] == "  SM_White Scares" || Players_Defenseur[1] == "  SM_Space Wolves" || Players_Defenseur[1] == "  SM_Imperial Fists" || Players_Defenseur[1] == "  SM_Crimson Fists" || Players_Defenseur[1] == "  SM_Black Templars" || Players_Defenseur[1] == "  SM_Blood Angels" || Players_Defenseur[1] == "  SM_Flesh Tearers" || Players_Defenseur[1] == "  SM_Iron Hands" || Players_Defenseur[1] == "  SM_Ultramarines" || Players_Defenseur[1] == "  SM_Salamandres" || Players_Defenseur[1] == "  SM_Raven Guard" || Players_Defenseur[1] == "  SM_Deathwatch")
                 {
-                    Button_Obj_Codex_SM_110_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_SM_111_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_SM_112_Def.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_SM_110_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_SM_111_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_SM_112_Def.Visibility = Visibility.Visible;
+                    }///OBJC SM 
                     if (Players_Defenseur[1] == "  SM_Blood Angels")
                     {
-                        Button_Obj_Codex_BA_113_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_BA_114_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_BA_115_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_BA_116_Def.Visibility = Visibility.Visible;
-                    }
-                    if (Players_Defenseur[1] == "  SM_Deathwatch")
-                    {
-                        Button_Obj_Codex_Deathwatch_117_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_Deathwatch_118_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_Deathwatch_119_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_Deathwatch_120_Def.Visibility = Visibility.Visible;
-                    }
-                    if (Players_Defenseur[1] == "  SM_Space Wolves")
-                    {
-                        Button_Obj_Codex_SW_121_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_SW_122_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_SW_123_Def.Visibility = Visibility.Visible;
-                        Button_Obj_Codex_SW_124_Def.Visibility = Visibility.Visible;
+                        if (CA == "Nachmund")
+                        {
+                            Button_Obj_Codex_BA_113_Def.Visibility = Visibility.Visible;
+                            Button_Obj_Codex_BA_114_Def.Visibility = Visibility.Visible;
+                            Button_Obj_Codex_BA_115_Def.Visibility = Visibility.Visible;
+                            Button_Obj_Codex_BA_116_Def.Visibility = Visibility.Visible;
+                        }///OBJC BA 
                     }
                 }
             }
@@ -20940,10 +20361,13 @@ namespace CPV9
             {
                 if (Players_Attaquant[1] == "  Adeptus Mechanicus")
                 {
-                    Button_Obj_Codex_Admech_128_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_Admech_129_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_Admech_130_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_Admech_131_Att.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_Admech_128_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_Admech_129_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_Admech_130_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_Admech_131_Att.Visibility = Visibility.Visible;
+                    }
                 }
             }
         }
@@ -20958,10 +20382,13 @@ namespace CPV9
             {
                 if (Players_Defenseur[1] == "  Adeptus Mechanicus")
                 {
-                    Button_Obj_Codex_Admech_128_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_Admech_129_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_Admech_130_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_Admech_131_Def.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_Admech_128_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_Admech_129_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_Admech_130_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_Admech_131_Def.Visibility = Visibility.Visible;
+                    }
                 }
             }
         }
@@ -20976,10 +20403,14 @@ namespace CPV9
             {
                 if (Players_Attaquant[1] == "  Adepta Sororitas")
                 {
-                    Button_Obj_Codex_AdeptaS_132_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_AdeptaS_133_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_AdeptaS_134_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_AdeptaS_135_Att.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_AdeptaS_132_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_AdeptaS_133_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_AdeptaS_134_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_AdeptaS_135_Att.Visibility = Visibility.Visible;
+
+                    }///OBJC ADEPTA SORORITAS 
                 }
             }
         }
@@ -20994,10 +20425,14 @@ namespace CPV9
             {
                 if (Players_Defenseur[1] == "  Adepta Sororitas")
                 {
-                    Button_Obj_Codex_AdeptaS_132_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_AdeptaS_133_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_AdeptaS_134_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_AdeptaS_135_Def.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_AdeptaS_132_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_AdeptaS_133_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_AdeptaS_134_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_AdeptaS_135_Def.Visibility = Visibility.Visible;
+
+                    }///OBJC ADEPTA SORORITAS 
                 }
             }
         }
@@ -21079,9 +20514,12 @@ namespace CPV9
             {
                 if (Players_Attaquant[1] == "  Grey Knights")
                 {
-                    Button_Obj_Codex_GK_143_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_GK_144_Att.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_GK_145_Att.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_GK_143_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_GK_144_Att.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_GK_145_Att.Visibility = Visibility.Visible;
+                    }
                 }
             }
         }
@@ -21095,9 +20533,12 @@ namespace CPV9
             {
                 if (Players_Defenseur[1] == "  Grey Knights")
                 {
-                    Button_Obj_Codex_GK_143_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_GK_144_Def.Visibility = Visibility.Visible;
-                    Button_Obj_Codex_GK_145_Def.Visibility = Visibility.Visible;
+                    if (CA == "Nachmund" || CA == "Nephilim")
+                    {
+                        Button_Obj_Codex_GK_143_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_GK_144_Def.Visibility = Visibility.Visible;
+                        Button_Obj_Codex_GK_145_Def.Visibility = Visibility.Visible;
+                    }
                 }
             }
         }
@@ -21132,36 +20573,22 @@ namespace CPV9
                 Button_Obj_Sec_Def_3.FontSize = x;
             }///OBJS 3 - TUEURS DE TITANS
 
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_SM_110_Def.Visibility = Visibility.Visible;
-                Button_Obj_Codex_SM_110_Def.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_SM_110_Def.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_SM_110_Def.FontSize = x;
-            }///OBJC SM 110-GUERRE CODEX
+            Button_Obj_Codex_SM_110_Def.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_SM_110_Def.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_SM_110_Def.FontSize = x;
+
             Button_Obj_Codex_BA_113_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_113_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_113_Def.FontSize = x;
-            Button_Obj_Codex_Deathwatch_118_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_118_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_118_Def.FontSize = x;
-            Button_Obj_Codex_SW_121_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_121_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_121_Def.FontSize = x;
-            Button_Obj_Codex_SW_122_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_122_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_122_Def.FontSize = x;
+
             Button_Obj_Codex_Admech_128_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Admech_128_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Admech_128_Def.FontSize = x;
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_AdeptaS_133_Def.Visibility = Visibility.Visible;
-                Button_Obj_Codex_AdeptaS_133_Def.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_AdeptaS_133_Def.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_AdeptaS_133_Def.FontSize = x;
 
-            }///OBJC ADEPTA SORORITAS 133 - TUEZ L'HERETIQUE
+            Button_Obj_Codex_AdeptaS_133_Def.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_AdeptaS_133_Def.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_AdeptaS_133_Def.FontSize = x;
+
             Button_Obj_Codex_Ork_137_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Ork_137_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Ork_137_Def.FontSize = x;
@@ -21199,29 +20626,16 @@ namespace CPV9
             Button_Obj_Codex_Necron_100_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Def_1.FontSize = x;
 
-            /// OBJC SM 
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_SM_112_Def.Visibility = Visibility.Visible;
-                Button_Obj_Codex_SM_112_Def.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_SM_112_Def.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_SM_112_Def.FontSize = x;
-            }///OBJC SM 112-SERMENTS DE L'INSTANT
+            Button_Obj_Codex_SM_112_Def.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_SM_112_Def.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_SM_112_Def.FontSize = x;
+
             Button_Obj_Codex_BA_114_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_114_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_114_Def.FontSize = x;
             Button_Obj_Codex_BA_115_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_115_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_115_Def.FontSize = x;
-            Button_Obj_Codex_Deathwatch_120_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_120_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_120_Def.FontSize = x;
-            Button_Obj_Codex_SW_123_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_123_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_123_Def.FontSize = x;
-            Button_Obj_Codex_SW_124_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_SW_124_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_SW_124_Def.FontSize = x;
             Button_Obj_Codex_DG_125_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_125_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_125_Def.FontSize = x;
@@ -21271,19 +20685,13 @@ namespace CPV9
             Button_Obj_Codex_Necron_102_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_102_Def_1.FontSize = x;
 
-            if (CA == "Nachmund" || CA == "Nephilim")
-            {
-                Button_Obj_Codex_SM_111_Def.Visibility = Visibility.Visible;
-                Button_Obj_Codex_SM_111_Def.Width = 14 * Rapport_Taille_X;
-                Button_Obj_Codex_SM_111_Def.Height = 4 * Rapport_Taille_Y;
-                Button_Obj_Codex_SM_111_Def.FontSize = x;
-            }///OBJC SM 111 - 111-TACTIQUES DE CHOC
+            Button_Obj_Codex_SM_111_Def.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_SM_111_Def.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_SM_111_Def.FontSize = x;
+
             Button_Obj_Codex_BA_116_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_BA_116_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_BA_116_Def.FontSize = x;
-            Button_Obj_Codex_Deathwatch_117_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_117_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_117_Def.FontSize = x;
             Button_Obj_Codex_DG_126_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_126_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_126_Def.FontSize = x;
@@ -21325,9 +20733,6 @@ namespace CPV9
             Button_Obj_Codex_Necron_103_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_103_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_103_Def_1.FontSize = x;
-            Button_Obj_Codex_Deathwatch_119_Def.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Deathwatch_119_Def.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Deathwatch_119_Def.FontSize = x;
             Button_Obj_Codex_DG_127_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_127_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_127_Def.FontSize = x;
@@ -23958,19 +23363,36 @@ namespace CPV9
             Label_Objectif_Sec_Att_143B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_143C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_143D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_143G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_143H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_143I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_143J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_143K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_143E.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_143F.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_143_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_143_Primarque.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_143_Monstre.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_143_Vehicule.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Att_143_Demons.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Att_143_Primarque.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Att_143_Primarque.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Att_143_Primarque.Height = Hauteur_saisie * Multiple;
+            TextBox_Objectif_Sec_Att_143_Monstre.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Att_143_Monstre.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Att_143_Monstre.Height = Hauteur_saisie * Multiple;
+            TextBox_Objectif_Sec_Att_143_Vehicule.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Att_143_Vehicule.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Att_143_Vehicule.Height = Hauteur_saisie * Multiple;
+            TextBox_Objectif_Sec_Att_143_Demons.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Att_143_Demons.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Att_143_Demons.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_143_Att_DemiForce.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_143_Att_DemiForce.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_143_Att_DemiForce.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Att_143A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_143B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_143C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_143D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_143E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_143F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_143G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 144
             StackPanel_ObjS_Att.Width = Multiple * 110;
@@ -26483,19 +25905,36 @@ namespace CPV9
             Label_Objectif_Sec_Def_143B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_143C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_143D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_143G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_143H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_143I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_143J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_143K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_143E.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_143F.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_143_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_143_Primarque.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_143_Monstre.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_143_Vehicule.FontSize = 1.2 * Taille_texte * Multiple;
-            CheckBox_Objectif_Sec_Def_143_Demons.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Def_143_Primarque.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Def_143_Primarque.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Def_143_Primarque.Height = Hauteur_saisie * Multiple;
+            TextBox_Objectif_Sec_Def_143_Monstre.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Def_143_Monstre.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Def_143_Monstre.Height = Hauteur_saisie * Multiple;
+            TextBox_Objectif_Sec_Def_143_Vehicule.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Def_143_Vehicule.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Def_143_Vehicule.Height = Hauteur_saisie * Multiple;
+            TextBox_Objectif_Sec_Def_143_Demons.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_Objectif_Sec_Def_143_Demons.Width = Largeur_saisie * Multiple;
+            TextBox_Objectif_Sec_Def_143_Demons.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_143_Def_DemiForce.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_143_Def_DemiForce.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_143_Def_DemiForce.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Def_143A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_143B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_143C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_143D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_143E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_143F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_143G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 144
             StackPanel_ObjS_Def.Width = Multiple * 110;
@@ -27025,7 +26464,7 @@ namespace CPV9
         }
         #endregion
         #region OBJ Codex
-            #region SM
+        #region SM
             private void Adaptation_OBJC_110_Att()
         {
             StackPanel_ObjS_110_Att.Visibility = Visibility.Visible;            
@@ -27074,7 +26513,50 @@ namespace CPV9
         }
 
         #endregion
-            #region OBJ ADEPTA SORORITAS
+        #region OBJ BA
+        private void Adaptation_OBJC_113_Att()
+        {
+            StackPanel_ObjS_113_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_113_Att();
+        }
+        private void Adaptation_OBJC_113_Def()
+        {
+            StackPanel_ObjS_113_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_113_Def();
+        }
+        private void Adaptation_OBJC_114_Att()
+        {
+            StackPanel_ObjS_114_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_114_Att();
+        }
+        private void Adaptation_OBJC_114_Def()
+        {
+            StackPanel_ObjS_114_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_114_Def();
+        }
+        private void Adaptation_OBJC_115_Att()
+        {
+            StackPanel_ObjS_115_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_115_Att();
+        }
+        private void Adaptation_OBJC_115_Def()
+        {
+            StackPanel_ObjS_115_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_115_Def();
+        }
+        private void Adaptation_OBJC_116_Att()
+        {
+            StackPanel_ObjS_116_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_116_Att();
+        }
+        private void Adaptation_OBJC_116_Def()
+        {
+            StackPanel_ObjS_116_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_116_Def();
+        }
+
+        #endregion
+        #region OBJ ADEPTA SORORITAS
             private void Adaptation_OBJC_132_Att()
         {
             StackPanel_ObjS_132_Att.Visibility = Visibility.Visible;
@@ -27212,6 +26694,173 @@ namespace CPV9
                 CheckBox_Objectif_Sec_Def_135_Fin_Vous.Visibility = Visibility.Collapsed;
             }
             oeil_OBJS_135_Def();
+        }
+        #endregion
+        #region OBJ ADEPTICUS MECHANICUS
+        private void Adaptation_OBJC_128_Att()
+        {
+            StackPanel_ObjS_128_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_128_Att();
+        }
+        private void Adaptation_OBJC_128_Def()
+        {
+            StackPanel_ObjS_128_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_128_Def();
+        }
+        private void Adaptation_OBJC_129_Att()
+        {
+            StackPanel_ObjS_129_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_129B.Content = "Marquez 3 pts à la fin du tour si vous avez détruit plus d'unité ennemi a l'aide de vos véhicules,";
+                Label_Objectif_Sec_Att_129C.Content = " que l'ennemi vous a détruit d'unité VEHICULE";
+                Label_Objectif_Sec_Att_129E.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_129F.Content = "NOMBRES D UNITES ENNEMI DETRUITE";
+                CheckBox_Objectif_Sec_Att_129_R1_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Att_129_R2_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Att_129_R3_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Att_129_R4_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Att_129_R5_Adeptus.IsChecked = true;
+                TextBox_ObjS_129_Att_R1_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R2_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R3_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R4_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R5_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R1_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R2_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R3_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R4_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Att_R5_Vehicule.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_129_R1_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_129_R2_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_129_R3_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_129_R4_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_129_R5_Adeptus.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_129_Att();
+        }
+        private void Adaptation_OBJC_129_Def()
+        {
+            StackPanel_ObjS_129_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_129B.Content = "Marquez 3 pts à la fin du tour si vous avez détruit plus d'unité ennemi a l'aide de vos véhicule, que l'ennemi vous a détruit d'unité VEHICULE";
+                Label_Objectif_Sec_Def_129C.Content = " que l'ennemi vous a détruit d'unité VEHICULE";
+                Label_Objectif_Sec_Def_129E.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_129F.Content = "NOMBRES D UNITES ENNEMI DETRUITE";
+                CheckBox_Objectif_Sec_Def_129_R1_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Def_129_R2_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Def_129_R3_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Def_129_R4_Adeptus.IsChecked = true;
+                CheckBox_Objectif_Sec_Def_129_R5_Adeptus.IsChecked = true;
+                TextBox_ObjS_129_Def_R1_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R2_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R3_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R4_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R5_Infanterie.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R1_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R2_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R3_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R4_Vehicule.Visibility = Visibility.Visible;
+                TextBox_ObjS_129_Def_R5_Vehicule.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_129_R1_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_129_R2_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_129_R3_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_129_R4_Adeptus.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_129_R5_Adeptus.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_129_Def();
+        }
+        private void Adaptation_OBJC_130_Att()
+        {
+            StackPanel_ObjS_130_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_130_Att();
+        }
+        private void Adaptation_OBJC_130_Def()
+        {
+            StackPanel_ObjS_130_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_130_Def();
+        }
+        private void Adaptation_OBJC_131_Att()
+        {
+            StackPanel_ObjS_131_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_131C.Content = "Marquez 4 points de vitoire à la fin du round si vous controlez cette objectif";
+                StackPanel_OBJS_131D_Att.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Att_131G.Visibility = Visibility.Collapsed;
+
+            }
+            oeil_OBJS_131_Att();
+        }
+        private void Adaptation_OBJC_131_Def()
+        {
+            StackPanel_ObjS_131_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_131C.Content = "Marquez 4 points de vitoire à la fin du round si vous controlez cette objectif";
+                StackPanel_OBJS_131D_Def.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Def_131G.Visibility = Visibility.Collapsed;
+            }
+            oeil_OBJS_131_Def();
+        }
+        #endregion
+        #region OBJ GREY KNIGHTS
+        private void Adaptation_OBJC_143_Att()
+        {
+            StackPanel_ObjS_143_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_143G.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_143H.Visibility = Visibility.Visible;
+                TextBox_ObjS_143_Att_DemiForce.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Att_143G.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_143_Att();
+        }
+        private void Adaptation_OBJC_143_Def()
+        {
+            StackPanel_ObjS_143_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_143G.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_143H.Visibility = Visibility.Visible;
+                TextBox_ObjS_143_Def_DemiForce.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Def_143G.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_143_Def();
+        }
+        private void Adaptation_OBJC_144_Att()
+        {
+            StackPanel_ObjS_144_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+            }
+            oeil_OBJS_144_Att();
+        }
+        private void Adaptation_OBJC_144_Def()
+        {
+            StackPanel_ObjS_144_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+            }
+            oeil_OBJS_144_Def();
+        }
+        private void Adaptation_OBJC_145_Att()
+        {
+            StackPanel_ObjS_145_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+            }
+            oeil_OBJS_145_Att();
+        }
+        private void Adaptation_OBJC_145_Def()
+        {
+            StackPanel_ObjS_145_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+            }
+            oeil_OBJS_145_Def();
         }
         #endregion
         #endregion

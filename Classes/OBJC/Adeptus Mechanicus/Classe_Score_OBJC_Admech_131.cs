@@ -13,17 +13,17 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJC_Admech_131(String Valid1, String Valid2, String Valid3, String Valid4, String Valid5, String Valid6, String Valid7)
+        public Classe_Score_OBJC_Admech_131(String Valid1, String Valid2, String Valid3, String Valid4, String Valid5, String Valid6, String Valid7, string CA)
         {
             if (Valid7 !="")
             {
                 if (Convert.ToInt32(Valid7) > 0)
                 {
-                    if (Valid1 == "true") { VALEUR(); };
-                    if (Valid2 == "true") { VALEUR(); };
-                    if (Valid3 == "true") { VALEUR(); };
-                    if (Valid4 == "true") { VALEUR(); };
-                    if (Valid5 == "true") { VALEUR(); };
+                    if (Valid1 == "true") { VALEUR(CA); };
+                    if (Valid2 == "true") { VALEUR(CA); };
+                    if (Valid3 == "true") { VALEUR(CA); };
+                    if (Valid4 == "true") { VALEUR(CA); };
+                    if (Valid5 == "true") { VALEUR(CA); };
                     if (Valid6 == "true") { Score += 5; };
                 }
             }
@@ -35,10 +35,18 @@ namespace CPV9.Classes
             Scores_Joueur = Score;
         }
 
-        private void VALEUR()
+        private void VALEUR(string CA)
         {
-            Score += 2;
-            return;
+            if (CA == "Nachmund")
+            {
+                Score += 2;
+                return;
+            }
+            if (CA == "Nephilim")
+            {
+                Score += 4;
+                return;
+            }
         }
     }
 }
