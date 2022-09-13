@@ -14,25 +14,21 @@
         </Grid.ColumnDefinitions>
 
         <!--#region Page de presentation -->
-        <Image x:Name="FDE" Source="/Images_Fond/FOND_BETON.JPG" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,0,0" Visibility="visible"/>
+        <Image x:Name="FDE_Necron" Source="/Images_Fond/image fond Neo Scoreboard necron 1600 900.png" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,0,0" Visibility="visible"/>
+        <Image x:Name="FDE_noir" Source="/Images_Fond/image fond Neo Scoreboard noir.JPG" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,0,0" Visibility="Collapsed"/>
+        <Image x:Name="FDE_blanc" Source="/Images_Fond/image fond Neo Scoreboard blanc.JPG" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,0,0" Visibility="Collapsed"/>
+        <Image x:Name="FDE_bleu" Source="/Images_Fond/image fond Neo Scoreboard bleu.JPG" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,0,0" Visibility="Collapsed"/>
+        <Image x:Name="FDE_beton" Source="/Images_Fond/image fond Neo Scoreboard beton.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="0,0,0,0" Visibility="Collapsed"/>
         <StackPanel x:Name="StackPanel_Neo_Scorboard" Width="auto" Height="auto" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,150" Visibility="Collapsed">
-            <Label x:Name="Label_Neo_Scorboard" Content="NEO SCOREBOARD" Width="Auto" Height="Auto" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" FontSize="72" FontFamily="/CPV9;component/Polices/#INFECTED" BorderBrush="#FFBF2B2B">
-                <Label.Foreground>
-                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                        <GradientStop Color="#FFE80D0D" Offset="1"/>
-                        <GradientStop Color="#FF2B2A29"/>
-                    </LinearGradientBrush>
-                </Label.Foreground>
-            </Label>
-            <Label x:Name="Label_Nachmund" Content="nachmund et niphilim" Width="Auto" Height="Auto" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Background="{x:Null}" FontSize="48" FontFamily="/CPV9;component/Polices/#INFECTED">
-                <Label.Foreground>
-                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-                        <GradientStop Color="#FFE80D0D" Offset="1"/>
-                        <GradientStop Color="#FF810B0B"/>
-                    </LinearGradientBrush>
-                </Label.Foreground>
-            </Label>
+            <Image x:Name="FDE_Warhammer" Source="/Images_Fond/image Logo_Warhammer_40000.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2" Margin="0,-10,0,0" Visibility="visible"/>
+            <Image x:Name="FDE_Neo" Source="/Images_Fond/image neo scorebord.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2" Margin="0,-50,0,0" Visibility="visible"/>
+
+            <StackPanel Orientation="Horizontal" Margin="0,-70">
+                <Image x:Name="Image_FDE_CA_Nephilim" Source="/Images_Fond/image nephilim.png"  HorizontalAlignment="Center"  VerticalAlignment="Top" Width="200"/>
+                <Image x:Name="Image_FDE_CA_Nachmund" Source="/Images_Fond/image nachmund.png"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"/>
+            </StackPanel>
         </StackPanel>
+        
         <StackPanel x:Name="StackPanel_CA22" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0, 0, 0, -100" Orientation="Horizontal" Visibility="Visible">
             <Image x:Name="Image_CA22_Nachmund" Source="/Images_Fond/CA22_Nachmund.jpg " Width="86" Height="121" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,0" OpacityMask="#FF67E80E"/>
             <Image x:Name="Image_CA22_Nephilim" Source="/Images_Fond/CA22_Nephilim.jpg " Width="86" Height="121" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,0" OpacityMask="#FF67E80E"/>
@@ -106,7 +102,7 @@
         <!--#endregion-->
 
         <StackPanel x:Name="StackPanel_Bouton_CA22" VerticalAlignment="top" HorizontalAlignment="Center" Orientation="Vertical"  Height="Auto" Width="Auto" Visibility="Collapsed" Margin="0,50,0,0" >            
-            <Label x:Name="Label_Bouton_CA22" Content="CHOIX DU CHAPTER APPROVED" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Background="{x:Null}" Foreground="Black" FontSize="2" FontFamily="Impact" BorderThickness="0,0,0,4" BorderBrush="Black"/>
+            <Label x:Name="Label_Bouton_CA22" Content="CHOIX DU CHAPTER APPROVED" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Background="{x:Null}" Foreground="gray" FontSize="2" FontFamily="Impact" BorderThickness="0,0,0,4" BorderBrush="Black"/>
                 <StackPanel Orientation="Horizontal" Margin="0, 100" HorizontalAlignment="center">
                     <Button x:Name="Button_CA22_Nachmund" HorizontalAlignment="Center" Margin="-50,0,0,0" VerticalAlignment="center" Width="86" Height="121" BorderBrush="DarkGreen" BorderThickness="5" Click="Button_CA22_Nachmund_Click">
                     <Image Source="/Images_Fond/CA22_Nachmund.jpg " Width="Auto" Height="Auto"/>
@@ -121,7 +117,7 @@
             <StackPanel.Background>
                 <ImageBrush ImageSource="Image_Cadre_noir.png" TileMode="Tile"/>
             </StackPanel.Background>
-            <Label x:Name="Label_Bouton_Format" Content="CHOIX DU FORMAT DE JEU" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Background="{x:Null}" Foreground="Black" FontSize="2" FontFamily="Impact" BorderThickness="0,0,0,4" BorderBrush="Black"/>
+            <Label x:Name="Label_Bouton_Format" Content="CHOIX DU FORMAT DE JEU" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" Background="{x:Null}" Foreground="gray" FontSize="2" FontFamily="Impact" BorderThickness="0,0,0,4" BorderBrush="Black"/>
             <Button x:Name="Button_format_Patrouille_500"  Content="PATROUILLE             (  500 PTS maxi ,  3 PC , 1 détachement maxi )" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="top" Width="Auto" Height="Auto" FontSize="1" FontFamily="Impact" Background="Gray" BorderBrush="DarkGreen" BorderThickness="3" Click="Button_format_Patrouille_500_Click"/>
             <Button x:Name="Button_format_Incursion_1000"  Content="INCURSION               ( 1000 PTS maxi ,  6 PC ,  2 détachements maxi)" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="top" Width="Auto" Height="Auto" FontSize="1" FontFamily="Impact" Background="Gray" BorderBrush="DarkGreen" BorderThickness="3" Click="Button_format_Incursion_1000_Click"/>
             <Button x:Name="Button_format_FDF_2000"        Content="FORCE DE FRAPPE    ( 2000 PTS maxi , 12 PC , 3 détachements maxi)" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" FontSize="1" FontFamily="Impact" Background="Gray" BorderBrush="DarkGreen" BorderThickness="3" Click="Button_format_FDF_2000_Click"/>
@@ -132,11 +128,11 @@
             <StackPanel.Background>
                 <ImageBrush ImageSource="Image_Cadre_noir.png" TileMode="Tile"/>
             </StackPanel.Background>
-            <Label x:Name="Label_rassembler_les_armees" Content="RASSEMBLER LES ARMEES" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Background="{x:Null}" Foreground="Black" FontSize="5" FontFamily="Impact"/>
+            <Label x:Name="Label_rassembler_les_armees" Content="RASSEMBLEZ VOS ARMEES" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Background="{x:Null}" Foreground="gray" FontSize="5" FontFamily="Impact"/>
             <StackPanel  Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Height="Auto" Width="Auto" Margin="20,20,20,0">
-                <Label x:Name="Label_Rassembler_les_armees_2" Content="vous devez constituer une armée de :" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Background="{x:Null}" Foreground="Black" FontSize="5" FontFamily="Impact"/>
-                <TextBlock x:Name="TextBlock_Rassembler_Les_Armées" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="5" FontFamily="Impact" Margin="0,0,0,0"/>
-                <Label x:Name="Label_Rassembler_les_armees_3" Content="points maximum" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Background="{x:Null}" Foreground="Black" FontSize="5" FontFamily="Impact"/>
+                <Label x:Name="Label_Rassembler_les_armees_2" Content="vous devez constituer une armée de :" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Background="{x:Null}" Foreground="gray" FontSize="5" FontFamily="Impact"/>
+                <TextBlock x:Name="TextBlock_Rassembler_Les_Armées" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="5" FontFamily="Impact" Margin="0,0,0,0" Foreground="gray"/>
+                <Label x:Name="Label_Rassembler_les_armees_3" Content="points maximum" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,0" Background="{x:Null}" Foreground="gray" FontSize="5" FontFamily="Impact"/>
             </StackPanel>
             <Button x:Name="Button_Rassembler_Les_Armees" Content="ok" HorizontalAlignment="Center" Margin="0,30,0,20" VerticalAlignment="top" Width="50" Height="Auto" FontSize="28" FontFamily="/CPV9;component/Polices/#INFECTED" Click="Button_Rassembler_Les_Armees_Click" BorderBrush="{x:Null}">
                 <Button.Background>
@@ -167,14 +163,14 @@
             <StackPanel Orientation="Horizontal" Width="auto" Height="Auto">
                 <StackPanel Orientation="Vertical" Width="auto" Height="Auto">
                     <Label x:Name="Label_Nom_Attaquant" Content="Pseudo :" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Visibility="Collapsed" Foreground="Green" FontSize="5" FontFamily="/CPV9;component/Polices/#INFECTED"/>
-                    <TextBox x:Name="TextBox_Nom_Attaquant" HorizontalAlignment="Left" Height="Auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Black" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Attaquant_SelectionChanged"/>
+                    <TextBox x:Name="TextBox_Nom_Attaquant" HorizontalAlignment="Left" Height="Auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Gray" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Attaquant_SelectionChanged"/>
                     <Label x:Name="Label_Nom_Attaquant_SG" Content="Seigneur de Guerre " HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="Auto" Height="auto" Visibility="Collapsed" Foreground="Green" FontSize="5" FontFamily="/CPV9;component/Polices/#INFECTED"/>
-                    <TextBox x:Name="TextBox_Nom_Attaquant_SG" HorizontalAlignment="Left" Height="auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Black" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Attaquant_SG_SelectionChanged"/>
+                    <TextBox x:Name="TextBox_Nom_Attaquant_SG" HorizontalAlignment="Left" Height="auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Gray" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Attaquant_SG_SelectionChanged"/>
 
                     <Label x:Name="Label_Nom_Defenseur" Content="Pseudo :" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Visibility="Collapsed" Foreground="green" FontSize="5" FontFamily="/CPV9;component/Polices/#INFECTED"/>
-                    <TextBox x:Name="TextBox_Nom_Defenseur" HorizontalAlignment="Left" Height="auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Black" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Defenseur_SelectionChanged"/>
+                    <TextBox x:Name="TextBox_Nom_Defenseur" HorizontalAlignment="Left" Height="auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Gray" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Defenseur_SelectionChanged"/>
                     <Label x:Name="Label_Nom_Defenseur_SG" Content="Seigneur de Guerre " HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Visibility="Collapsed" Foreground="Green" FontSize="5" FontFamily="/CPV9;component/Polices/#INFECTED"/>
-                    <TextBox x:Name="TextBox_Nom_Defenseur_SG" HorizontalAlignment="Left" Height="Auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Black" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Defenseur_SG_SelectionChanged"/>
+                    <TextBox x:Name="TextBox_Nom_Defenseur_SG" HorizontalAlignment="Left" Height="Auto" Margin="60,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="auto" Background="Beige" BorderBrush="#FF289328" CaretBrush="#FF2CC51D" Foreground="Gray" SelectionBrush="#FF9E0A03" FontSize="6" FontWeight="Bold" FontFamily="/CPV9;component/Polices/#INFECTED" BorderThickness="4" Visibility="Collapsed" SelectionChanged="TextBox_Nom_Defenseur_SG_SelectionChanged"/>
 
                 </StackPanel>
                 <!-- Choix armée -->
@@ -245,7 +241,7 @@
             <StackPanel.Background>
                 <ImageBrush ImageSource="Image_Cadre_noir.png"/>
             </StackPanel.Background>
-            <Label x:Name="Label_Maps" Content="TIRAGE DE LA MAP" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="30" FontFamily="/CPV9;component/Polices/#INFECTED"/>
+            <Label x:Name="Label_Maps" Content="TIRAGE DE LA MAP" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="gray" FontSize="30" FontFamily="/CPV9;component/Polices/#INFECTED"/>
             <TextBlock x:Name="TextBlock_Map" HorizontalAlignment="Center" VerticalAlignment="top" FontSize="30" FontFamily="/CPV9;component/Polices/#INFECTED" Margin="0,20,0,0"/>
             <Label x:Name="Label_Maps_2D6" Content="entrez le resultat de vos des (2 D6) :" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="18" FontFamily="/CPV9;component/Polices/#INFECTED" Visibility="Collapsed"/>
             <Label x:Name="Label_Maps_1D6" Content="entrez le resultat de votre de (1 D6) :" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="18" FontFamily="/CPV9;component/Polices/#INFECTED" Visibility="Collapsed"/>
@@ -270,7 +266,7 @@
             <Button x:Name="Button_Pages_Defenseur" Content="DEFENSEUR" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Width="Auto" Height="Auto" FontSize="2" FontFamily="/CPV9;component/Polices/#INFECTED" BorderBrush="#FFE44010" Background="#FFC53535" Visibility="Hidden" Click="Button_Pages_Defenseur_Click"/>
         </StackPanel>
 
-
+        
         <!--#region Affichage Attaquant -->
         <TextBlock x:Name="TextBlock_Nom_Player_1" HorizontalAlignment="Left" VerticalAlignment="top" FontSize="3" FontFamily="/CPV9;component/Polices/#INFECTED" Visibility="collapsed" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="auto" >
             <TextBlock.Foreground>
@@ -3777,19 +3773,32 @@
                                 <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Button>
                         </StackPanel>
-                        <Label x:Name="Label_Objectif_Sec_Att_145B" Content="Marquez 3 pts par action psychique : Rituel Purificateur à 3 pouces d'un pion objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_145B" Content="Action psychique : Rituel Purificateur à 3 pouces d'un pion objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <Label x:Name="Label_Objectif_Sec_Att_145C" Content="Ne peut être réalisé plusieurs fois sur le même pion dans le même round" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         <StackPanel x:Name="StackPanel_ObjS_145B_Att" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                             <Label x:Name="Label_Objectif_Sec_Att_145D" Content="Nombres de rituel réussit :  " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_145_Att" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_145E" Content=" TOUR 1 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_145_Att_T1" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_145F" Content=" TOUR 2 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_145_Att_T2" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_145G" Content=" TOUR 3 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_145_Att_T3" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145D" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_145H" Content=" TOUR 4 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_145_Att_T4" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145E" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_145I" Content=" TOUR 5 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_145_Att_T5" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145F" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                         <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                            <Label x:Name="Label_Objectif_Sec_Att_145E" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_145J" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                             <TextBlock x:Name="TextBlock_ObjS_145_Att" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>
-                            <Label x:Name="Label_Objectif_Sec_Att_145F" Content="/6" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_145K" Content="/15" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_145G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                     </StackPanel>
 
@@ -7217,19 +7226,32 @@
                                 <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Button>
                         </StackPanel>
-                        <Label x:Name="Label_Objectif_Sec_Def_145B" Content="Marquez 3 pts par action psychique : Rituel Purificateur à 3 pouces d'un pion objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Def_145B" Content="Action psychique : Rituel Purificateur à 3 pouces d'un pion objectif" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <Label x:Name="Label_Objectif_Sec_Def_145C" Content="Ne peut être réalisé plusieurs fois sur le même pion dans le même round" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         <StackPanel x:Name="StackPanel_ObjS_145B_Def" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                             <Label x:Name="Label_Objectif_Sec_Def_145D" Content="Nombres de rituel réussit :  " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
-                            <TextBox x:Name="TextBox_ObjS_145_Def" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_145E" Content=" TOUR 1 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <TextBox x:Name="TextBox_ObjS_145_Def_T1" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>                                 
+                            <Label x:Name="Label_Objectif_Sec_Def_145F" Content=" TOUR 2 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>           
+                            <TextBox x:Name="TextBox_ObjS_145_Def_T2" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145C" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>                                 
+                            <Label x:Name="Label_Objectif_Sec_Def_145G" Content=" TOUR 3 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>           
+                            <TextBox x:Name="TextBox_ObjS_145_Def_T3" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145D" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>                                 
+                            <Label x:Name="Label_Objectif_Sec_Def_145H" Content=" TOUR 4 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>           
+                            <TextBox x:Name="TextBox_ObjS_145_Def_T4" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145E" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>                                 
+                            <Label x:Name="Label_Objectif_Sec_Def_145I" Content=" TOUR 5 " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>           
+                            <TextBox x:Name="TextBox_ObjS_145_Def_T5" Width="20" Height="20" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145F" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                         <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
-                            <Label x:Name="Label_Objectif_Sec_Def_145E" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_145J" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                             <TextBlock x:Name="TextBlock_ObjS_145_Def" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>
-                            <Label x:Name="Label_Objectif_Sec_Def_145F" Content="/6" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
-                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145C" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_145K" Content="/15" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_145G" Width="5" Margin="0,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                     </StackPanel>
 
@@ -7539,19 +7561,11 @@
         </StackPanel>
 
         <StackPanel x:Name="StackPanel_Tables" HorizontalAlignment="Center" Height="Auto" Margin="0,50,0,0" VerticalAlignment="top" Width="Auto" Orientation="Vertical" Visibility="Collapsed">
-            <Label x:Name="Label_Tables_Wargame" Content="LES TABLES DU WARGAME " VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="/CPV9;component/Polices/#INFECTED" FontSize="2" Background="{x:Null}">
-                <Label.Foreground>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="black" Offset="0"/>
-                        <GradientStop Color="#FFCF0000" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Foreground>
-            </Label>
-
+            <Label x:Name="Label_Tables_Wargame" Content="LES TABLES DU WARGAME " VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="/CPV9;component/Polices/#Impact" FontSize="2" Background="{x:Null}" Foreground="Gray"/>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Height="Auto" Width="Auto" Margin="40,40,40,40">
 
                 <StackPanel Orientation="Vertical" Height="Auto" Width="Auto">
-                    <Label Content="QUARANTAINE" HorizontalAlignment="Center" VerticalAlignment="top" Width="auto" Height="auto" Foreground="black" FontSize="50" FontFamily="/CPV9;component/Polices/#INFECTED" Margin="0,0,0,0"/>
+                    <Label Content="QUARANTAINE" HorizontalAlignment="Center" VerticalAlignment="top" Width="auto" Height="auto" Foreground="Gray" FontSize="50" FontFamily="/CPV9;component/Polices/#INFECTED" Margin="0,0,0,0"/>
                     <Image x:Name="Image_Table_Quarantaine" Source="Table_Zone_de_Quarantaine.PNG" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="top" Visibility="Visible" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
@@ -7567,7 +7581,7 @@
                 </StackPanel>
 
                 <StackPanel Orientation="Vertical" Height="Auto" Width="Auto">
-                    <Label Content="HIGHLANDS" HorizontalAlignment="Center" VerticalAlignment="top" Width="auto" Height="auto" Foreground="black" FontSize="50" FontFamily="/CPV9;component/Polices/#INFECTED" Margin="0,0,0,0"/>
+                    <Label Content="HIGHLANDS" HorizontalAlignment="Center" VerticalAlignment="top" Width="auto" Height="auto" Foreground="Gray" FontSize="50" FontFamily="/CPV9;component/Polices/#INFECTED" Margin="0,0,0,0"/>
                     <Image x:Name="Image_Table_Highlands" Source="Table_Highlands-en-guerre.PNG" HorizontalAlignment="Center" VerticalAlignment="top" Visibility="Visible" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
@@ -7583,7 +7597,7 @@
                 </StackPanel>
 
                 <StackPanel Orientation="Vertical" Height="Auto" Width="Auto">
-                    <Label Content="MARS" HorizontalAlignment="Center" VerticalAlignment="top" Width="auto" Height="auto" Foreground="black" FontSize="50" FontFamily="/CPV9;component/Polices/#INFECTED" Margin="0,0,0,0"/>
+                    <Label Content="MARS" HorizontalAlignment="Center" VerticalAlignment="top" Width="auto" Height="auto" Foreground="Gray" FontSize="50" FontFamily="/CPV9;component/Polices/#INFECTED" Margin="0,0,0,0"/>
                     <Image x:Name="Image_Table_Mars" Source="Table_Forge-de-mars.PNG" HorizontalAlignment="Center" VerticalAlignment="Bottom" Visibility="Visible" RenderTransformOrigin="0.5,0.5">
                         <Image.RenderTransform>
                             <TransformGroup>
@@ -7641,6 +7655,42 @@
             <Image Source="/Icons/option.PNG " Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Button>
         <!--#endregion-->
+
+        <StackPanel x:Name="StackPanel_Option" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="collapsed" Margin="0,0,0,0" Height="auto" Background="LightBlue" Width="auto" MinWidth="1600" MinHeight="900">
+            <Label x:Name="Label_Option" Content="OPTIONS" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="30" FontFamily="/CPV9;component/Polices/#Impact"/>
+            <Label x:Name="Label_Option_Fond" Content="Décors de fond " HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="30" FontFamily="/CPV9;component/Polices/#Impact"/>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Visibility="Visible" Margin="0,5,0,0">
+                <Button x:Name="Button_Option_Fond_Blanc" HorizontalAlignment="Center" Margin="0,20,20,0" VerticalAlignment="Center" Width="200" Height="200" BorderBrush="{x:Null}" Click="Button_Option_Fond_Blanc_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Images_Fond/image fond Neo Scoreboard blanc.JPG" />
+                    </Button.Background>
+                </Button>
+                <Button x:Name="Button_Option_Fond_Noir" HorizontalAlignment="Center" Margin="0,20,20,0" VerticalAlignment="Center" Width="200" Height="200" BorderBrush="{x:Null}" Click="Button_Option_Fond_Noir_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Images_Fond/image fond Neo Scoreboard noir.JPG" />
+                    </Button.Background>
+                </Button>
+                <Button x:Name="Button_Option_Fond_Bleu" HorizontalAlignment="Center" Margin="0,20,20,0" VerticalAlignment="Center" Width="200" Height="200" BorderBrush="{x:Null}" Click="Button_Option_Fond_Bleu_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Images_Fond/image fond Neo Scoreboard bleu.JPG" />
+                    </Button.Background>
+                </Button>
+                <Button x:Name="Button_Option_Fond_Beton" HorizontalAlignment="Center" Margin="0,20,20,0" VerticalAlignment="Center" Width="200" Height="200" BorderBrush="{x:Null}" Click="Button_Option_Fond_Beton_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/Images_Fond/image fond Neo Scoreboard beton.JPG" />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label x:Name="Label_Opacit" Content="OPACITE (0 - 100) :" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="30" FontFamily="/CPV9;component/Polices/#Impact"/>
+                <TextBox x:Name="TextBox_Opacit" Width="30" Height="30" FontFamily="Arial Black" FontSize="10" Margin="0,0" TextAlignment="Center" KeyDown="Controle_Key_KeyDown"/>
+                <Button x:Name="Button_Option_Opacit" Content="VALIDE" HorizontalAlignment="Center" Margin="20,0,0,0" VerticalAlignment="Center" Width="200" Height="30" BorderBrush="{x:Null}" Click="Button_Option_Opacit_Click">
+                    
+                </Button>
+
+            </StackPanel>
+        </StackPanel>
+
 
     </Grid>
 </Window>

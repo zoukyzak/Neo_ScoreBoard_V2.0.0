@@ -594,7 +594,15 @@
 
                 case 144:
                     l1 = "ASSAUT TELEPORTE";
-                    l3 = "Marquez 3 points de victoire à la fin de la bataille";
+                    if (CA == "Nachmund")
+                    {
+                        l3 = "Marquez 3 points de victoire à la fin de la bataille";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l3 = "Marquez 4 points de victoire à la fin de la bataille";
+
+                    }
                     l4 = "si une ou plusieurs unités ennemies ont été détruites par une figurine Grey Knights de votre armée";
                     l5 = "qui fut placé sur le champs de bataille à l' aide: de l'aptitude Frappe par téléportation,";
                     l7 = "de l'aptitude          -Frappe par téléportation,";
@@ -616,7 +624,14 @@
                     l11 = "         1                                       1 pts";
                     l12 = "         2                                       2 pts";
                     l13 = "         3                                       4 pts";
-                    l14 = "         4+                                      6 pts";
+                    if (CA == "Nachmun")
+                    {
+                        l14 = "         4+                                      6 pts";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l14 = "         4+                                      5 pts";
+                    }
                     break;
 
                 #endregion

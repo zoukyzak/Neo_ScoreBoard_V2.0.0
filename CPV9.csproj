@@ -103,6 +103,7 @@
     <Compile Include="Classes\OBJC\Tyranids\Classe_Score_OBJC_Tyranids_141.cs" />
     <Compile Include="Classes\OBJC\Tyranids\Classe_Score_OBJC_Tyranids_142.cs" />
     <Compile Include="Classes\OBJM\Incursion\Classe_Score_OBJM_1021.cs" />
+    <Compile Include="Classes\Sauvegarde\Classe_Sauvegarde_Options.cs" />
     <Compile Include="Windows\Livres.xaml.cs">
       <DependentUpon>Livres.xaml</DependentUpon>
     </Compile>
@@ -319,7 +320,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images_Fond\fond necron 1600 900.png" />
+    <Resource Include="Images_Fond\image fond Neo Scoreboard necron 1600 900.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\ASTRA MILITARUM.PNG" />
@@ -430,9 +431,6 @@
     <Resource Include="Icons\livre.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images_Fond\FOND_BETON.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\ADEPTA SORORITAS.png" />
   </ItemGroup>
   <ItemGroup>
@@ -458,6 +456,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Icons\back_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\image Logo_Warhammer_40000.png" />
+    <Resource Include="Images_Fond\image nachmund.png" />
+    <Resource Include="Images_Fond\image neo scorebord.png" />
+    <Resource Include="Images_Fond\image nephilim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\image fond Neo Scoreboard noir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\image fond Neo Scoreboard blanc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\image fond Neo Scoreboard bleu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images_Fond\image fond Neo Scoreboard beton.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Collections.Generic;
 
@@ -18,6 +19,17 @@ namespace CPV9
         static private string _fichier_Resolution = "Resolution.csv";
 
         static private string _chemin_Resolution = System.IO.Path.Combine(_dossier_Resolution, _fichier_Resolution);
+
+        #endregion
+
+        #region Preparation sauvegarde Options
+        static private string _dossier_Options = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\CP_v9_Options\";
+        
+        static private string _fichier_Options_Fond = "Option_Fond.csv";
+        static private string _fichier_Options_Opacity = "Option_Opacity.csv";
+        
+        static private string _chemin_Options_Fond = System.IO.Path.Combine(_dossier_Options, _fichier_Options_Fond);
+        static private string _chemin_Options_Opacity = System.IO.Path.Combine(_dossier_Options, _fichier_Options_Opacity);
 
         #endregion
 
@@ -134,8 +146,9 @@ namespace CPV9
         public double Largeur_saisie;
         public double Hauteur_saisie;
 
-        public string Chemin_Image_Player;
 
+        public string Image_FDE;
+        public int Opacit;
         public string CA;
         public string Selection_Armee;
         public int Pages;
@@ -1104,6 +1117,7 @@ namespace CPV9
             Init_affichage();
             Init_Donnees();
             Init_Resolution();
+            Load_Options();
             if (_Resolution[0] != 0)
             {
                 this.Width = _Resolution[0];
@@ -1117,8 +1131,13 @@ namespace CPV9
 
         private void Init_affichage()
         {
-            FDE.Visibility = Visibility.Collapsed;
+            FDE_Necron.Visibility = Visibility.Collapsed;
+            FDE_noir.Visibility = Visibility.Collapsed;
+            FDE_blanc.Visibility = Visibility.Collapsed;
+            FDE_bleu.Visibility = Visibility.Collapsed;
+            FDE_beton.Visibility = Visibility.Collapsed;
             StackPanel_Neo_Scorboard.Visibility = Visibility.Collapsed;
+            StackPanel_Option.Visibility = Visibility.Collapsed;
             StackPanel_CA22.Visibility = Visibility.Collapsed;
             Button_info.Visibility = Visibility.Collapsed;
             Button_Pages_Retour.Visibility = Visibility.Collapsed;
@@ -1295,6 +1314,8 @@ namespace CPV9
         }
         public void Init_Donnees()
         {
+            Image_FDE = "beton";
+            Opacit = 40;
             CA = null;
             Selection_Armee = null;
             Pages = 0;
@@ -1756,7 +1777,11 @@ namespace CPV9
             CheckBox_Objectif_Sec_Att_144_T4.IsChecked = false;
             CheckBox_Objectif_Sec_Att_144_T5.IsChecked = false;
             /// OBJECTIF SECONDAIRE 145 RITUEL PURIFICATEUR
-            TextBox_ObjS_145_Att.Clear();
+            TextBox_ObjS_145_Att_T1.Clear();
+            TextBox_ObjS_145_Att_T2.Clear();
+            TextBox_ObjS_145_Att_T3.Clear();
+            TextBox_ObjS_145_Att_T4.Clear();
+            TextBox_ObjS_145_Att_T5.Clear();
             #endregion
             #endregion
             #region INIT_OBJ_ATTAQUANT_FORMAT
@@ -2397,7 +2422,11 @@ namespace CPV9
             CheckBox_Objectif_Sec_Def_144_T4.IsChecked = false;
             CheckBox_Objectif_Sec_Def_144_T5.IsChecked = false;
             /// OBJECTIF SECONDAIRE 145 RITUEL PURIFICATEUR
-            TextBox_ObjS_145_Def.Clear();
+            TextBox_ObjS_145_Def_T1.Clear();
+            TextBox_ObjS_145_Def_T2.Clear();
+            TextBox_ObjS_145_Def_T3.Clear();
+            TextBox_ObjS_145_Def_T4.Clear();
+            TextBox_ObjS_145_Def_T5.Clear();
             #endregion
             #endregion
             #region INIT_OBJ_DEFENSEUR_FORMAT
@@ -2712,33 +2741,7 @@ namespace CPV9
             Hauteur_saisie = 1.8;/// 1.6 d origine 
         }
 
-
-        #region Deroulement preliminaire
-        public void Deroulement()
-        {
-            if (Pages >= 2)
-            {
-                if (Tables == 1) { Save_Mars(); };
-                if (Tables == 2) { Save_Highlands(); };
-                if (Tables == 3) { Save_Quarantaine(); };
-            }
-            if (Pages == 0 || Retour == 1) { Page_Depart(); };
-            if (Pages == 1) { Page_CA22(); };
-            if (Pages == 2) { Page_Format(); };
-            if (Pages == 3) { Page_Format_Affich(); };
-            if (Pages == 4) { Saisie_Attaquant(); };
-            if (Pages == 5) { Saisie_Defenseur(); };
-            if (Pages == 6) { Page_Saisie_Map(); };
-            if (Pages == 7) { Affiche_Mission(); };
-            if (Pages == 8) { Affiche_page_OBJ_Att(); };
-            if (Pages == 9) { Affiche_page_OBJ_Def(); };
-            if (Pages == 10) { Saisie_Equipes(); };
-            if (Pages == 11) { Affiche_page_Score(); };
-            if (Pages == 12) { Affiche_Page_Attaquant(); };
-            if (Pages == 13) { Affiche_Page_Defenseur(); };
-            if (Pages == 14) { Affiche_Page_Save_Table(); };
-
-        }
+        #region SAVE & LOAD
         public void Save_Mars()
         {
             Transfert_Donnees_To_Mem();
@@ -2792,6 +2795,79 @@ namespace CPV9
             Classe_Sauvegardes_Quarantaine_T1.Sauvegarder_Choix_ObjS_Defenseur_CSV(Choix_ObjS_Defenseur);
             Classe_Sauvegardes_Quarantaine_T1.Sauvegarder_Mem_Saisie_Attaquant_CSV(Mem_Saisie_Attaquant);
             Classe_Sauvegardes_Quarantaine_T1.Sauvegarder_Mem_Saisie_Defenseur_CSV(Mem_Saisie_Defenseur);
+        }
+        public void Save_Options()
+        {
+            Classe_Sauvegarde_Options.Sauvegarder_Option_Fond_CSV(Image_FDE);
+            Classe_Sauvegarde_Options.Sauvegarder_Option_Opacity_CSV(Opacit);
+        }
+
+        private void Load_Options()
+        {
+            if (File.Exists(_chemin_Options_Fond))
+            {
+                using (StreamReader fichier = new StreamReader(_chemin_Options_Fond, Encoding.UTF8))
+                {
+                    String ligne;
+                    int i = 0;
+                    while ((ligne = fichier.ReadLine()) != null)
+                    {
+                        if (!string.IsNullOrWhiteSpace(ligne))
+                        {
+                            string[] champs = ligne.Split(';');
+                            Image_FDE = champs[0];
+                            i++;
+                        }
+                    }
+                }
+            }
+            if (File.Exists(_chemin_Options_Opacity))
+            {
+                using (StreamReader fichier = new StreamReader(_chemin_Options_Opacity, Encoding.UTF8))
+                {
+                    String ligne;
+                    int i = 0;
+                    while ((ligne = fichier.ReadLine()) != null)
+                    {
+                        if (!string.IsNullOrWhiteSpace(ligne))
+                        {
+                            string[] champs = ligne.Split(';');
+                            Opacit = Convert.ToInt32(champs[0]);
+                            i++;
+                        }
+                    }
+                }
+            }
+            Affichage_Fond();
+        }
+        #endregion
+
+        #region Deroulement preliminaire
+        public void Deroulement()
+        {
+
+            if (Pages >= 2)
+            {
+                if (Tables == 1) { Save_Mars(); };
+                if (Tables == 2) { Save_Highlands(); };
+                if (Tables == 3) { Save_Quarantaine(); };
+            }
+            if (Pages == 0 || Retour == 1) { Page_Depart(); };
+            if (Pages == 1) { Page_CA22(); };
+            if (Pages == 2) { Page_Format(); };
+            if (Pages == 3) { Page_Format_Affich(); };
+            if (Pages == 4) { Saisie_Attaquant(); };
+            if (Pages == 5) { Saisie_Defenseur(); };
+            if (Pages == 6) { Page_Saisie_Map(); };
+            if (Pages == 7) { Affiche_Mission(); };
+            if (Pages == 8) { Affiche_page_OBJ_Att(); };
+            if (Pages == 9) { Affiche_page_OBJ_Def(); };
+            if (Pages == 10) { Saisie_Equipes(); };
+            if (Pages == 11) { Affiche_page_Score(); };
+            if (Pages == 12) { Affiche_Page_Attaquant(); };
+            if (Pages == 13) { Affiche_Page_Defenseur(); };
+            if (Pages == 14) { Affiche_Page_Save_Table(); };
+
         }
         public void Transfert_Donnees_To_Mem()
         {
@@ -3507,7 +3583,11 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 83] = CheckBox_Objectif_Sec_Att_144_T5_Etat;
             /// OBJECTIF SECONDAIRE 145
             n = 0;
-            Mem_Saisie_Attaquant[n, 84] = TextBox_ObjS_145_Att.Text;
+            Mem_Saisie_Attaquant[n, 84] = TextBox_ObjS_145_Att_T1.Text;n++;
+            Mem_Saisie_Attaquant[n, 84] = TextBox_ObjS_145_Att_T2.Text;n++;
+            Mem_Saisie_Attaquant[n, 84] = TextBox_ObjS_145_Att_T3.Text;n++;
+            Mem_Saisie_Attaquant[n, 84] = TextBox_ObjS_145_Att_T4.Text;n++;
+            Mem_Saisie_Attaquant[n, 84] = TextBox_ObjS_145_Att_T5.Text;
             #endregion
             #endregion
             #endregion
@@ -4217,7 +4297,11 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 83] = CheckBox_Objectif_Sec_Def_144_T5_Etat;
             /// OBJECTIF SECONDAIRE 145
             n = 0;
-            Mem_Saisie_Defenseur[n, 84] = TextBox_ObjS_145_Def.Text;
+            Mem_Saisie_Defenseur[n, 84] = TextBox_ObjS_145_Def_T1.Text; n++;
+            Mem_Saisie_Defenseur[n, 84] = TextBox_ObjS_145_Def_T2.Text; n++;
+            Mem_Saisie_Defenseur[n, 84] = TextBox_ObjS_145_Def_T3.Text; n++;
+            Mem_Saisie_Defenseur[n, 84] = TextBox_ObjS_145_Def_T4.Text; n++;
+            Mem_Saisie_Defenseur[n, 84] = TextBox_ObjS_145_Def_T5.Text;
             #endregion
             #endregion
             #endregion
@@ -5816,7 +5900,11 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Att_144_T5_Etat == "true") { CheckBox_Objectif_Sec_Att_144_T5.IsChecked = true; };
             /// OBJECTIF SECONDAIRE 145
             n = 0;
-            TextBox_ObjS_145_Att.Text = Mem_Saisie_Attaquant[n, 84];
+            TextBox_ObjS_145_Att_T1.Text = Mem_Saisie_Attaquant[n, 84]; n++;
+            TextBox_ObjS_145_Att_T2.Text = Mem_Saisie_Attaquant[n, 84]; n++;
+            TextBox_ObjS_145_Att_T3.Text = Mem_Saisie_Attaquant[n, 84]; n++;
+            TextBox_ObjS_145_Att_T4.Text = Mem_Saisie_Attaquant[n, 84]; n++;
+            TextBox_ObjS_145_Att_T5.Text = Mem_Saisie_Attaquant[n, 84];
 
             #endregion
             #endregion
@@ -7407,7 +7495,11 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_144_T5_Etat == "true") { CheckBox_Objectif_Sec_Def_144_T5.IsChecked = true; };
             /// OBJECTIF SECONDAIRE 145
             n = 0;
-            TextBox_ObjS_145_Def.Text = Mem_Saisie_Defenseur[n, 84];
+            TextBox_ObjS_145_Def_T1.Text = Mem_Saisie_Defenseur[n, 84]; n++;
+            TextBox_ObjS_145_Def_T2.Text = Mem_Saisie_Defenseur[n, 84]; n++;
+            TextBox_ObjS_145_Def_T3.Text = Mem_Saisie_Defenseur[n, 84]; n++;
+            TextBox_ObjS_145_Def_T4.Text = Mem_Saisie_Defenseur[n, 84]; n++;
+            TextBox_ObjS_145_Def_T5.Text = Mem_Saisie_Defenseur[n, 84];
             #endregion
             #endregion
             #endregion
@@ -7418,6 +7510,7 @@ namespace CPV9
             Init_affichage();
             Retour = 0;
             Pages = 0;
+            Load_Options();
             Affichage_FDE();
             Affichage_CP_v9();
             Affichage_Bouton_Depart();
@@ -7684,6 +7777,7 @@ namespace CPV9
             StackPanel_PTS_Attaquant.Visibility = Visibility.Visible;
             TextBlock_Nom_Player_1.Visibility = Visibility.Visible;
             TextBlock_Nom_SG_1.Visibility = Visibility.Visible;
+            Button_Option.Visibility = Visibility.Visible;
             StackPanel_Cape_Player_1.Visibility = Visibility.Visible;
             Affichage_Nom_SG_P1();
             StackPanel_ObjS_Att.Visibility = Visibility.Visible;
@@ -7807,6 +7901,7 @@ namespace CPV9
             Button_Pages_Attaquant.Visibility = Visibility.Visible;
             Button_Pages_Scores.Visibility = Visibility.Visible;
             Button_Affichage_Tv.Visibility = Visibility.Collapsed;
+            Button_Option.Visibility = Visibility.Visible;
             StackPanel_PTS_Defenseur.Visibility = Visibility.Visible;
             TextBlock_Nom_Player_2.Visibility = Visibility.Visible;
             TextBlock_Nom_SG_2.Visibility = Visibility.Visible;
@@ -8445,6 +8540,7 @@ namespace CPV9
                     Directory.Delete(_dossier_Mars, true);
                 }
                 Init_affichage();
+                Load_Options();
                 Tables = 1;
                 Pages = 1;
                 Deroulement();
@@ -8937,6 +9033,7 @@ namespace CPV9
                     Directory.Delete(_dossier_Highlands, true);
                 }
                 Init_affichage();
+                Load_Options();
                 Tables = 2;
                 Pages = 1;
                 Deroulement();
@@ -9431,6 +9528,7 @@ namespace CPV9
                 }
                 Init_Donnees();
                 Init_affichage();
+                Load_Options();
                 Tables = 3;
                 Pages = 1;
                 Deroulement();
@@ -9697,11 +9795,9 @@ namespace CPV9
         }
         private void Button_Option_Click(object sender, RoutedEventArgs e)
         {
-            Retour = 1;
-            Init_Donnees();
             Init_affichage();
-            Deroulement();
-
+            TextBox_Opacit.Text = Convert.ToString(Opacit);
+            StackPanel_Option.Visibility = Visibility.Visible;
         }
         public void Button_Affichage_Tv_Click(object sender, RoutedEventArgs e)
         {
@@ -9844,6 +9940,24 @@ namespace CPV9
             StackPanel_OBJ_Uniform.Visibility = Visibility.Visible;
 
             CPV9.Classes.Descript_OBJS CetObjectif = new CPV9.Classes.Descript_OBJS(Objectif, CA);
+            Color Color_Text = (Color)ColorConverter.ConvertFromString("Gray");
+            if (Image_FDE == "noir" || Image_FDE == "bleu") { Color_Text = (Color)ColorConverter.ConvertFromString("White"); };
+            if (Image_FDE == "blanc" || Image_FDE == "beton") { Color_Text = (Color)ColorConverter.ConvertFromString("Black"); };
+
+            Label_OBJ_Uniform_1.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_2.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_3.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_4.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_5.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_6.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_7.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_8.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_9.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_10.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_11.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_12.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_13.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
+            Label_OBJ_Uniform_14.Foreground = new System.Windows.Media.SolidColorBrush(Color_Text);
 
             Label_OBJ_Uniform_1.Content = CetObjectif.L1;
             Label_OBJ_Uniform_2.Content = CetObjectif.L2;
@@ -11978,7 +12092,7 @@ namespace CPV9
             TextBlock_ObjS_143_Att.Text = Convert.ToString(OBJECTIF_Codex_143_Att.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 144
             Classe_Score_OBJC_GK_144 OBJECTIF_Codex_144_Att;
-            OBJECTIF_Codex_144_Att = new Classe_Score_OBJC_GK_144(CheckBox_Objectif_Sec_Att_144_T1_Etat, CheckBox_Objectif_Sec_Att_144_T2_Etat, CheckBox_Objectif_Sec_Att_144_T3_Etat, CheckBox_Objectif_Sec_Att_144_T4_Etat, CheckBox_Objectif_Sec_Att_144_T5_Etat);
+            OBJECTIF_Codex_144_Att = new Classe_Score_OBJC_GK_144(CheckBox_Objectif_Sec_Att_144_T1_Etat, CheckBox_Objectif_Sec_Att_144_T2_Etat, CheckBox_Objectif_Sec_Att_144_T3_Etat, CheckBox_Objectif_Sec_Att_144_T4_Etat, CheckBox_Objectif_Sec_Att_144_T5_Etat, CA);
             Scores_Attaquant[83] = OBJECTIF_Codex_144_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_144_Att.Score_ObjS) >= 15)
             {
@@ -11988,9 +12102,9 @@ namespace CPV9
             TextBlock_ObjS_144_Att.Text = Convert.ToString(OBJECTIF_Codex_144_Att.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 145
             Classe_Score_OBJC_GK_145 OBJECTIF_Codex_145_Att;
-            OBJECTIF_Codex_145_Att = new Classe_Score_OBJC_GK_145(TextBox_ObjS_145_Att.Text);
+            OBJECTIF_Codex_145_Att = new Classe_Score_OBJC_GK_145(TextBox_ObjS_145_Att_T1.Text, TextBox_ObjS_145_Att_T2.Text, TextBox_ObjS_145_Att_T3.Text, TextBox_ObjS_145_Att_T4.Text, TextBox_ObjS_145_Att_T5.Text, CA);
             Scores_Attaquant[84] = OBJECTIF_Codex_145_Att.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_145_Att.Score_ObjS) >= 6)
+            if (Convert.ToInt32(OBJECTIF_Codex_145_Att.Score_ObjS) >= 15)
             {
                 ID_Cape_Attaquant[s] = 145;
                 s++;
@@ -13127,7 +13241,7 @@ namespace CPV9
             TextBlock_ObjS_143_Def.Text = Convert.ToString(OBJECTIF_Codex_143_Def.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 144
             Classe_Score_OBJC_GK_144 OBJECTIF_Codex_144_Def;
-            OBJECTIF_Codex_144_Def = new Classe_Score_OBJC_GK_144(CheckBox_Objectif_Sec_Def_144_T1_Etat, CheckBox_Objectif_Sec_Def_144_T2_Etat, CheckBox_Objectif_Sec_Def_144_T3_Etat, CheckBox_Objectif_Sec_Def_144_T4_Etat, CheckBox_Objectif_Sec_Def_144_T5_Etat);
+            OBJECTIF_Codex_144_Def = new Classe_Score_OBJC_GK_144(CheckBox_Objectif_Sec_Def_144_T1_Etat, CheckBox_Objectif_Sec_Def_144_T2_Etat, CheckBox_Objectif_Sec_Def_144_T3_Etat, CheckBox_Objectif_Sec_Def_144_T4_Etat, CheckBox_Objectif_Sec_Def_144_T5_Etat, CA);
             Scores_Defenseur[83] = OBJECTIF_Codex_144_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_144_Def.Score_ObjS) >= 15)
             {
@@ -13137,9 +13251,9 @@ namespace CPV9
             TextBlock_ObjS_144_Def.Text = Convert.ToString(OBJECTIF_Codex_144_Def.Score_ObjS);
             ///CALCUL SCORE OBJECTIF MISSION 145
             Classe_Score_OBJC_GK_145 OBJECTIF_Codex_145_Def;
-            OBJECTIF_Codex_145_Def = new Classe_Score_OBJC_GK_145(TextBox_ObjS_145_Def.Text);
+            OBJECTIF_Codex_145_Def = new Classe_Score_OBJC_GK_145(TextBox_ObjS_145_Def_T1.Text, TextBox_ObjS_145_Def_T2.Text, TextBox_ObjS_145_Def_T3.Text, TextBox_ObjS_145_Def_T4.Text, TextBox_ObjS_145_Def_T5.Text, CA) ;
             Scores_Defenseur[84] = OBJECTIF_Codex_145_Def.Scores_Joueur;
-            if (Convert.ToInt32(OBJECTIF_Codex_145_Def.Score_ObjS) >= 6)
+            if (Convert.ToInt32(OBJECTIF_Codex_145_Def.Score_ObjS) >= 15)
             {
                 ID_Cape_Defenseur[s] = 145;
                 s++;
@@ -19693,10 +19807,7 @@ namespace CPV9
 
         private void Affichage_FDE()
         {
-            FDE.Width = _Resolution[0] * 1.3;
-            FDE.Height = _Resolution[1] * 1.2;
-            FDE.Visibility = Visibility.Visible;
-
+            Affichage_Fond();
             if (Pages == 0)
             {
                 StackPanel_CA22.Visibility = Visibility.Visible;
@@ -19719,11 +19830,44 @@ namespace CPV9
                     Button_Pages_Retour.Visibility = Visibility.Collapsed;
             }
         }
+        private void Affichage_Fond()
+        {
+            if (Image_FDE == "Necron")
+            {
+                FDE_Necron.Width = _Resolution[0] * 1.3;
+                FDE_Necron.Height = _Resolution[1] * 1.2;
+                FDE_Necron.Visibility = Visibility.Visible;
+            }
+            if (Image_FDE == "noir")
+            {
+                FDE_noir.Width = _Resolution[0] * 1.3;
+                FDE_noir.Height = _Resolution[1] * 1.2;
+                FDE_noir.Visibility = Visibility.Visible;
+            }
+            if (Image_FDE == "blanc")
+            {
+                FDE_blanc.Width = _Resolution[0] * 1.3;
+                FDE_blanc.Height = _Resolution[1] * 1.2;
+                FDE_blanc.Visibility = Visibility.Visible;
+            }
+            if (Image_FDE == "bleu")
+            {
+                FDE_bleu.Width = _Resolution[0] * 1.3;
+                FDE_bleu.Height = _Resolution[1] * 1.2;
+                FDE_bleu.Visibility = Visibility.Visible;
+            }
+            if (Image_FDE == "beton")
+            {
+                FDE_beton.Width = _Resolution[0] * 1.3;
+                FDE_beton.Height = _Resolution[1] * 1.2;
+                FDE_beton.Visibility = Visibility.Visible;
+            }
+        }
         private void Affichage_CP_v9()
         {
             StackPanel_Neo_Scorboard.Visibility = Visibility.Visible;
-            Label_Neo_Scorboard.FontSize = 5 * Rapport_Taille_X;
-            Label_Nachmund.FontSize = 4 * Rapport_Taille_X;
+            FDE_Warhammer.Width = 20 * Rapport_Taille_X;
+            FDE_Neo.Width = 20 * Rapport_Taille_X;
         }
         private void Affichage_Version()
         {
@@ -20879,8 +21023,8 @@ namespace CPV9
             Button_Pages_Defenseur.Width = 20 * Rapport_Taille_X;
             Button_Pages_Defenseur.Height = 4 * Rapport_Taille_Y;
             Button_Pages_Defenseur.Content = Players_Defenseur[0];
-            Button_Option.Width = 3 * x;
-            Button_Option.Height = 3 * x;
+            Button_Option.Width = 6 * x;
+            Button_Option.Height = 6 * x;
         }
         private void Affichage_Saisie_Scores_P1()
         {
@@ -23424,12 +23568,29 @@ namespace CPV9
             Label_Objectif_Sec_Att_145B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_145C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_145D.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_145E.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Att_145F.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_145E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_145F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_145G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_145H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_145I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_145J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_145K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_145_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_145_Att.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_145_Att.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_145_Att.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T1.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Att_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T2.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Att_T2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T3.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Att_T3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T4.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Att_T4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T5.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Att_T5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Att_T5.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Att_145A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_145B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_145C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
@@ -25966,15 +26127,36 @@ namespace CPV9
             Label_Objectif_Sec_Def_145B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_145C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_145D.FontSize = Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_145E.FontSize = 1.2 * Taille_texte * Multiple;
-            Label_Objectif_Sec_Def_145F.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_145E.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_145F.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_145G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_145H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_145I.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_145J.FontSize = 1.2 * Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_145K.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_145_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_145_Def.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_145_Def.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_145_Def.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T1.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Def_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T1.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T2.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Def_T2.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T2.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T3.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Def_T3.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T3.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T4.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Def_T4.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T4.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T5.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_145_Def_T5.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_145_Def_T5.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Def_145A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_145B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_145C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_145D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_145E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_145F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_145G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             #endregion
 
@@ -26835,6 +27017,7 @@ namespace CPV9
             StackPanel_ObjS_144_Att.Visibility = Visibility.Visible;
             if (CA == "Nephilim")
             {
+                Label_Objectif_Sec_Att_144B.Content = "Marquez 4 pts par rounds si une ou plusieurs unités ennemies détruites a l'aide";
             }
             oeil_OBJS_144_Att();
         }
@@ -26843,23 +27026,18 @@ namespace CPV9
             StackPanel_ObjS_144_Def.Visibility = Visibility.Visible;
             if (CA == "Nephilim")
             {
+                Label_Objectif_Sec_Def_144B.Content = "Marquez 4 pts par rounds si une ou plusieurs unités ennemies détruites a l'aide";
             }
             oeil_OBJS_144_Def();
         }
         private void Adaptation_OBJC_145_Att()
         {
-            StackPanel_ObjS_145_Att.Visibility = Visibility.Visible;
-            if (CA == "Nephilim")
-            {
-            }
+            StackPanel_ObjS_145_Att.Visibility = Visibility.Visible;            
             oeil_OBJS_145_Att();
         }
         private void Adaptation_OBJC_145_Def()
         {
             StackPanel_ObjS_145_Def.Visibility = Visibility.Visible;
-            if (CA == "Nephilim")
-            {
-            }
             oeil_OBJS_145_Def();
         }
         #endregion
@@ -34729,6 +34907,47 @@ namespace CPV9
         }
 
         #endregion
+
+        #region CHANGEMENT DE FOND
+
+        public void Changement_FDE(string Design)
+        {
+            Image_FDE = Design;
+            Save_Options();
+            Init_affichage();
+            Deroulement();
+        }
+        private void Button_Option_Fond_Blanc_Click(object sender, RoutedEventArgs e)
+        {
+            Changement_FDE("blanc");
+        }
+        private void Button_Option_Fond_Bleu_Click(object sender, RoutedEventArgs e)
+        {
+            Changement_FDE("bleu");
+        }
+        private void Button_Option_Fond_Noir_Click(object sender, RoutedEventArgs e)
+        {
+            Changement_FDE("noir");
+        }
+        private void Button_Option_Fond_Beton_Click(object sender, RoutedEventArgs e)
+        {
+            Changement_FDE("beton");
+        }
+        private void Button_Option_Opacit_Click(object sender, RoutedEventArgs e)
+        {
+            if (TextBox_Opacit.Text != "")
+            {
+                Opacit = Convert.ToInt16(TextBox_Opacit.Text);
+                if (Opacit > 100) { Opacit = 100; };
+
+                StackPanel_PTS_Attaquant.Background.Opacity = Opacit / 100;
+                StackPanel_PTS_Defenseur.Background.Opacity = Opacit / 100;
+                Save_Options();
+                Init_affichage();
+                Deroulement();
+            }
+        }
+        #endregion        
 
     }
 
