@@ -8,12 +8,14 @@ namespace CPV9.Classes
         public int Score_ObjS { get; set; }
 
         private int Score = 0;
-        public Classe_Score_OBJC_Ork_138(String Saisie1, String Saisie2, String Saisie3, String Saisie4)
+        public Classe_Score_OBJC_Ork_138(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String Saisie6, String CA)
         {
             Calcul(Saisie1);
             Calcul(Saisie2);
             Calcul(Saisie3);
             Calcul(Saisie4);
+            Calcul(Saisie5);
+            Calcul(Saisie6);
 
             Score_ObjS = Score;
             if (Score >= 15) { Score = 15; };

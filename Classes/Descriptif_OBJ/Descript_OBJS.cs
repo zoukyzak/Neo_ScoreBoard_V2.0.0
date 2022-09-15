@@ -530,38 +530,75 @@
                 case 137:
                     l1 = "LES PLUS GROS ET LES PLUS MIEUX";
                     l3 = "Si vous avez choisi cet objectif secondaire,";
-                    l4 = "vous marquez 3 points de victoire à la fin de chaque round de bataille";
+                    if (CA == "Nachmund")
+                    {
+                        l4 = "vous marquez 3 points de victoire à la fin de chaque round de bataille";
+                        l9 = "Une unité Monstre ou Véhicule ennemie est détruite suite à une attaque de mêlée de ce Seigneur de Guerre.";
+                        l10 = "Une unité Personnage ennemie est détruite suite à une attaque de mêlée de ce Seigneur de Guerre.";
+                        l11 = "5 figurines ennemies ou plus ont été détruites suite à des attaques de ce Seigneur de Guerre.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l4 = "vous marquez 2 points de victoire à la fin de chaque round de bataille";
+                        l9 = "Une unité Personnage, Monstre ou Véhicule ennemie a perdu des PV suite à une attaque de mêlée de ce Seigneur de Guerre.";
+                        l10 = "Votre Seigneur de Guerre est à porté d'un pion Objectif que vous contrôlez , hors de votre zone de déploiment.";
+                        l11 = "5 figurines ennemies ou plus ont été détruites suite à des attaques de ce Seigneur de Guerre.";
+                    }
                     l5 = "pour chacune des conditions suivantes remplies par votre Seigneur de Guerre Orks ,";
                     l6 = "jusqu'à un maximum de 5 points de victoire :";
-                    l9 = "Une unité Monstre ou Véhicule ennemie est détruite suite à une attaque de mêlée de ce Seigneur de Guerre.";
-                    l11 = "Un Personnage ennemie est détruit suite à une attaque de mêlée de ce Seigneur de Guerre.";
-                    l13 = "5 figurines ennemies ou plus ont été détruites suite à des attaques de ce Seigneur de Guerre.";
                     break;
 
                 case 138:
                     l1 = "PRENEZ LES MORCEAUX D'CHOIX";
-                    l2 = "Si vous avez choisi cet objectif secondaire, après le déploiement des deux camps, ";
-                    l3 = "les joueurs choisissent à tour de rôle les pions objectifs qui ne sont dans la zone de déploiement d'aucun joueur";
-                    l4 = "pour être des pions objectif de Morceaux d'Choix, jusqu'à ce que 3 pions objectif aient été choisis";
-                    l5 = "(s'il n'y a qu'un pion objectif de cette sorte, seul celui-ci est un pion objectif de Morceaux d'Choix).";
-                    l7 = "Les unités Base Orks de votre armée peuvent tenter l'action suivante:";
-                    l8 = "Prenez les Morceaux d'Choix (Action):";
-                    l9 = "A la fin de votre phase de Mouvement, une ou plusieurs unités Base Orks de votre armée peuvent commencer à accomplir cette action.";
-                    l10 = "Chaque unité qui commence cette action doit être à portée d'un pion objectif de Morceaux d'Choix différent.";
-                    l11 = "Une unité ennemie (hormis Aérodyne) à portée du même pion.";
-                    l12 = "L'action est accomplie à la fin de votre prochaine phase de Commandement, tant que l'unité tentant l'action";
-                    l13 = "est toujours à portée du même pion objectif de Morceaux d'Choix.";
-                    l14 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action Prenez les Morceaux d'Choix.";
+                    if (CA == "Nachmund")
+                    {
+                        l2 = "Si vous avez choisi cet objectif secondaire, après le déploiement des deux camps, ";
+                        l3 = "les joueurs choisissent à tour de rôle les pions objectifs qui ne sont dans la zone de déploiement d'aucun joueur";
+                        l4 = "pour être des pions objectif de Morceaux d'Choix, jusqu'à ce que 3 pions objectif aient été choisis";
+                        l5 = "(s'il n'y a qu'un pion objectif de cette sorte, seul celui-ci est un pion objectif de Morceaux d'Choix).";
+                        l7 = "Les unités Base Orks de votre armée peuvent tenter l'action suivante:";
+                        l8 = "Prenez les Morceaux d'Choix (Action):";
+                        l9 = "A la fin de votre phase de Mouvement, une ou plusieurs unités Base Orks de votre armée peuvent commencer à accomplir cette action.";
+                        l10 = "Chaque unité qui commence cette action doit être à portée d'un pion objectif de Morceaux d'Choix différent.";
+                        l11 = "Une unité ennemie (hormis Aérodyne) à portée du même pion.";
+                        l12 = "L'action est accomplie à la fin de votre prochaine phase de Commandement, tant que l'unité tentant l'action";
+                        l13 = "est toujours à portée du même pion objectif de Morceaux d'Choix.";
+                        l14 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action Prenez les Morceaux d'Choix.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l2 = "Si vous avez choisi cet objectif secondaire, les unités Base Orks peuvent entreprendre cette action. ";
+                        l3 = "";
+                        l4 = "Prenez les Morceaux d'Choix (Action):";
+                        l5 = "";
+                        l7 = "A la fin de votre phase de Mouvement, une ou plusieurs unités Base Orks de votre armée peuvent commencer à accomplir cette action.";
+                        l8 = "Chaque unité qui commence cette action doit être à portée d'un pion objectif de Morceaux d'Choix différent que vous contrôlez et.";
+                        l9 = "qui n'est pas dans une zone de déploiement.";
+                        l10 = "Si une unité Pillards ou Gretchin entreprend cette action, elle est accompli à la fin de votre tour.";
+                        l11 = " Sinon elle est accompli à la fin de votre prochaine phase de commandement ou à la fin de la bataille.";
+                        l12 = "(Selon ce qui arrive en premier)";
+                        l13 = "Seulement si l'unitée est toujours à portée du même pion objectif de Morceaux d'Choix.";
+                        l14 = "Marquez 3 points de victoire chaque fois qu'une unité de votre armée accomplit l'action Prenez les Morceaux d'Choix.( Max 5pts/Round)";
+                    }
                     break;
 
                 case 139:
                     l1 = "MAREE VERTE";
                     l5 = "Au début de la bataille, divisez le champ de bataille en quarts égaux.";
-                    l7 = "Marquez 3 points de victoire à la fin du round de bataille si deux quarts de champ de bataille";
-                    l8 = "ou plus ont une unité Orks de votre armée contenant 11 figurines ou plus entièrement à l'intérieur";
-                    l9 = "de chacun d'eux.";
-                    l11 = "Marquez à la place 5 points de victoire à la fin du round de bataille si les quatre quarts ont une unité";
-                    l12 = "Orks de votre armée contenant 11 figurines ou plus entièrement à l'intérieur de chacun d'eux.";
+                    if (CA == "Nachmund")
+                    {
+                        l7 = "Marquez 3 points de victoire à la fin du round de bataille si deux quarts de champ de bataille";
+                        l8 = "ou plus ont une unité Orks de votre armée contenant 11 figurines ou plus entièrement à l'intérieur";
+                        l9 = "de chacun d'eux.";
+                        l11 = "Marquez à la place 5 points de victoire à la fin du round de bataille si les quatre quarts ont une unité";
+                        l12 = "Orks de votre armée contenant 11 figurines ou plus entièrement à l'intérieur de chacun d'eux.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l7 = "Marquez 1 points de victoire à la fin de votre tour, pour chaque quart de champ de bataille";
+                        l8 = "ou plus ont une unité Orks de votre armée contenant 10 figurines ou plus entièrement à l'intérieur";
+                        l9 = "de chacun d'eux et à plus de 6 pouces d'un autre quart de table.";
+                    }
                     break;
 
                 #endregion

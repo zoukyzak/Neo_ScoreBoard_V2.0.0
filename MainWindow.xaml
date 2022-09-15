@@ -22,11 +22,12 @@
         <StackPanel x:Name="StackPanel_Neo_Scorboard" Width="auto" Height="auto" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,150" Visibility="Collapsed">
             <Image x:Name="FDE_Warhammer" Source="/Images_Fond/image Logo_Warhammer_40000.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2" Margin="0,-10,0,0" Visibility="visible"/>
             <Image x:Name="FDE_Neo" Source="/Images_Fond/image neo scorebord.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="500" Grid.ColumnSpan="2" Margin="0,-50,0,0" Visibility="visible"/>
-
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,-70">
                 <Image x:Name="Image_FDE_CA_Nachmund" Source="/Images_Fond/image nachmund.png"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="200"/>
                 <Image x:Name="Image_FDE_CA_Nephilim" Source="/Images_Fond/image nephilim.png"  HorizontalAlignment="Center"  VerticalAlignment="Top" Width="200" Margin="0,-25"/>
             </StackPanel>
+            <Label x:Name="Label_FDE_Alpha" Content="ALPHA" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-15,0,0" Background="{x:Null}" Foreground="red" FontSize="30" FontFamily="Impact" BorderThickness="0,0,0,4" BorderBrush="Black"/>
+
         </StackPanel>
         
         <StackPanel x:Name="StackPanel_CA22" HorizontalAlignment="Center" VerticalAlignment="bottom" Margin="0, 0, 0, -100" Orientation="Horizontal" Visibility="Visible">
@@ -3428,8 +3429,8 @@
                                 <Image Source="/Icons/Livre.png " Width="auto" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             </Button>
                         </StackPanel>
-                        <Label x:Name="Label_Objectif_Sec_Att_137B" Content="Marquez 3 pts par round pour chacune des conditions suivantes réalisez à l'aide de votre seigneur de guerre (Maxi 5pts/round)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
-                        <Label x:Name="Label_Objectif_Sec_Att_137C" Content="A- Détruire une unité Véhicule ou monstre en mélé  B- Détruire un personnage en mélé   C- Détruire 5 figurines ou plus" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_137B" Content="Marquez 3 pts par round pour chacune des conditions suivantes réalisez à l'aide de votre seigneur de guerre (Maxi 5 pts/round)" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
+                        <Label x:Name="Label_Objectif_Sec_Att_137C" Content="A- Détruire une unité Personnage Véhicule ou monstre en mélé  B- Détruire un personnage en mélé   C- Détruire 5 figurines ou plus" FontFamily="Arial Black" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_137A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         <StackPanel x:Name="StackPanel_ObjS_137B_Att" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                             <StackPanel Height="Auto" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right">
@@ -3493,6 +3494,9 @@
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_138A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         <StackPanel x:Name="StackPanel_ObjS_138B_Att" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,5" HorizontalAlignment="Right">
                             <Label x:Name="Label_Objectif_Sec_Att_138C" Content="Nombres d'objectif Morceaux d'choix contrôlez : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_138J" Content="Tour 1 : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2" Visibility="Collapsed"/>
+                            <TextBox x:Name="TextBox_ObjS_138_Att_T1" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" Visibility="Collapsed" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_138G" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green" Visibility="Collapsed"/>
                             <Label x:Name="Label_Objectif_Sec_Att_138D" Content="Tour 2 : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2"/>
                             <TextBox x:Name="TextBox_ObjS_138_Att_T2" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_138B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
@@ -3504,7 +3508,10 @@
                             <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_138D" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                             <Label x:Name="Label_Objectif_Sec_Att_138G" Content="Tour 5 : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2"/>
                             <TextBox x:Name="TextBox_ObjS_138_Att_T5" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
-                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_138E" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_138E" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green" Visibility="Collapsed"/>
+                            <Label x:Name="Label_Objectif_Sec_Att_138K" Content="Fin : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2" Visibility="Collapsed"/>
+                            <TextBox x:Name="TextBox_ObjS_138_Att_Fin" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" Visibility="Collapsed" TextChanged="TextBox_General_Att_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Att_138H" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                         </StackPanel>
                         <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                             <Label x:Name="Label_Objectif_Sec_Att_138H" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
@@ -6955,6 +6962,9 @@
                     <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_138A" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
                     <StackPanel x:Name="StackPanel_ObjS_138B_Def" Visibility="Hidden" Height="Auto" Orientation="Horizontal" Margin="0,5" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Def_138C" Content="Nombres d'objectif Morceaux d'choix contrôlez : " FontFamily="Arial Black" HorizontalAlignment="Right" FontSize="11" Margin="0,0" Padding="5,2"/>
+                            <Label x:Name="Label_Objectif_Sec_Def_138J" Content="Tour 1 : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2" Visibility="Collapsed"/>
+                            <TextBox x:Name="TextBox_ObjS_138_Def_T1" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" Visibility="Collapsed" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_138G" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green" Visibility="Collapsed"/>                        
                         <Label x:Name="Label_Objectif_Sec_Def_138D" Content="Tour 2 : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <TextBox x:Name="TextBox_ObjS_138_Def_T2" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_138B" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
@@ -6967,7 +6977,10 @@
                         <Label x:Name="Label_Objectif_Sec_Def_138G" Content="Tour 5 : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2"/>
                         <TextBox x:Name="TextBox_ObjS_138_Def_T5" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
                         <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_138E" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green"/>
-                    </StackPanel>
+                            <Label x:Name="Label_Objectif_Sec_Def_138K" Content="Fin : " FontFamily="Arial Black" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="11" Margin="0,0" Padding="5,2" Visibility="Collapsed"/>
+                            <TextBox x:Name="TextBox_ObjS_138_Def_Fin" Width="Auto" Height="Auto" FontFamily="Arial Black" FontSize="10" TextAlignment="Center" Margin="5,2" Visibility="Collapsed" TextChanged="TextBox_General_Def_TextChanged" KeyDown="Controle_Key_KeyDown"/>
+                            <GridSplitter x:Name="GridSplitter_Objectif_Sec_Def_138H" Width="5" Margin="10,0,10,0" HorizontalAlignment="Left" Background="Green" Visibility="Collapsed"/>
+                        </StackPanel>
                     <StackPanel Height="Auto" Orientation="Horizontal" Margin="0,0" HorizontalAlignment="Right">
                         <Label x:Name="Label_Objectif_Sec_Def_138H" Content="Points :" FontFamily="Arial Black" FontSize="12" Margin="0,0"/>
                         <TextBlock x:Name="TextBlock_ObjS_138_Def" FontFamily="Arial Black" FontSize="12" Margin="0,0" VerticalAlignment="Center"/>

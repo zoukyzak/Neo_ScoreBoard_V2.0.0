@@ -3696,10 +3696,12 @@ namespace CPV9
             Mem_Saisie_Attaquant[n, 76] = CheckBox_Objectif_Sec_Att_137_C5_Etat;
             /// OBJECTIF SECONDAIRE 138
             n = 0;
+            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T1.Text; n++;
             Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T2.Text; n++;
             Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T3.Text; n++;
             Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T4.Text; n++;
-            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T5.Text;
+            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_T5.Text; n++;
+            Mem_Saisie_Attaquant[n, 77] = TextBox_ObjS_138_Att_Fin.Text;
             /// OBJECTIF SECONDAIRE 139
             n = 0;
             Mem_Saisie_Attaquant[n, 78] = TextBox_ObjS_139_Att_T1.Text; n++;
@@ -4418,10 +4420,12 @@ namespace CPV9
             Mem_Saisie_Defenseur[n, 76] = CheckBox_Objectif_Sec_Def_137_C5_Etat;
             /// OBJECTIF SECONDAIRE 138
             n = 0;
+            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T1.Text; n++;
             Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T2.Text; n++;
             Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T3.Text; n++;
             Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T4.Text; n++;
-            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T5.Text;
+            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_T5.Text; n++;
+            Mem_Saisie_Defenseur[n, 77] = TextBox_ObjS_138_Def_Fin.Text;
             /// OBJECTIF SECONDAIRE 139
             n = 0;
             Mem_Saisie_Defenseur[n, 78] = TextBox_ObjS_139_Def_T1.Text; n++;
@@ -6018,10 +6022,12 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Att_137_C5_Etat == "true") { CheckBox_Objectif_Sec_Att_137_C5.IsChecked = true; };
             /// OBJECTIF SECONDAIRE 138
             n = 0;
+            TextBox_ObjS_138_Att_T1.Text = Mem_Saisie_Attaquant[n, 77]; n++;
             TextBox_ObjS_138_Att_T2.Text = Mem_Saisie_Attaquant[n, 77]; n++;
             TextBox_ObjS_138_Att_T3.Text = Mem_Saisie_Attaquant[n, 77]; n++;
             TextBox_ObjS_138_Att_T4.Text = Mem_Saisie_Attaquant[n, 77]; n++;
-            TextBox_ObjS_138_Att_T5.Text = Mem_Saisie_Attaquant[n, 77];
+            TextBox_ObjS_138_Att_T5.Text = Mem_Saisie_Attaquant[n, 77]; n++;
+            TextBox_ObjS_138_Att_Fin.Text = Mem_Saisie_Attaquant[n, 77];
             /// OBJECTIF SECONDAIRE 139
             n = 0;
             TextBox_ObjS_139_Att_T1.Text = Mem_Saisie_Attaquant[n, 78]; n++;
@@ -7619,10 +7625,12 @@ namespace CPV9
             if (CheckBox_Objectif_Sec_Def_137_C5_Etat == "true") { CheckBox_Objectif_Sec_Def_137_C5.IsChecked = true; };
             /// OBJECTIF SECONDAIRE 138
             n = 0;
+            TextBox_ObjS_138_Def_T1.Text = Mem_Saisie_Defenseur[n, 77]; n++;
             TextBox_ObjS_138_Def_T2.Text = Mem_Saisie_Defenseur[n, 77]; n++;
             TextBox_ObjS_138_Def_T3.Text = Mem_Saisie_Defenseur[n, 77]; n++;
             TextBox_ObjS_138_Def_T4.Text = Mem_Saisie_Defenseur[n, 77]; n++;
-            TextBox_ObjS_138_Def_T5.Text = Mem_Saisie_Defenseur[n, 77];
+            TextBox_ObjS_138_Def_T5.Text = Mem_Saisie_Defenseur[n, 77]; n++;
+            TextBox_ObjS_138_Def_Fin.Text = Mem_Saisie_Defenseur[n, 77];
             /// OBJECTIF SECONDAIRE 139
             n = 0;
             TextBox_ObjS_139_Def_T1.Text = Mem_Saisie_Defenseur[n, 78]; n++;
@@ -8027,10 +8035,10 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 133 || Choix_ObjS_Attaquant[1] == 133 || Choix_ObjS_Attaquant[2] == 133) { Adaptation_OBJC_133_Att(); };
             if (Choix_ObjS_Attaquant[0] == 134 || Choix_ObjS_Attaquant[1] == 134 || Choix_ObjS_Attaquant[2] == 134) { Adaptation_OBJC_134_Att(); };
             if (Choix_ObjS_Attaquant[0] == 135 || Choix_ObjS_Attaquant[1] == 135 || Choix_ObjS_Attaquant[2] == 135) { Adaptation_OBJC_135_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 136 || Choix_ObjS_Attaquant[1] == 136 || Choix_ObjS_Attaquant[2] == 136) { StackPanel_ObjS_136_Att.Visibility = Visibility.Visible; oeil_OBJS_136_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 137 || Choix_ObjS_Attaquant[1] == 137 || Choix_ObjS_Attaquant[2] == 137) { StackPanel_ObjS_137_Att.Visibility = Visibility.Visible; oeil_OBJS_137_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { StackPanel_ObjS_138_Att.Visibility = Visibility.Visible; oeil_OBJS_138_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 139 || Choix_ObjS_Attaquant[1] == 139 || Choix_ObjS_Attaquant[2] == 139) { StackPanel_ObjS_139_Att.Visibility = Visibility.Visible; oeil_OBJS_139_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 136 || Choix_ObjS_Attaquant[1] == 136 || Choix_ObjS_Attaquant[2] == 136) { Adaptation_OBJC_136_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 137 || Choix_ObjS_Attaquant[1] == 137 || Choix_ObjS_Attaquant[2] == 137) { Adaptation_OBJC_137_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { Adaptation_OBJC_138_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 139 || Choix_ObjS_Attaquant[1] == 139 || Choix_ObjS_Attaquant[2] == 139) { Adaptation_OBJC_139_Att(); };
             if (Choix_ObjS_Attaquant[0] == 140 || Choix_ObjS_Attaquant[1] == 140 || Choix_ObjS_Attaquant[2] == 140) { Adaptation_OBJC_140_Att(); };
             if (Choix_ObjS_Attaquant[0] == 141 || Choix_ObjS_Attaquant[1] == 141 || Choix_ObjS_Attaquant[2] == 141) { Adaptation_OBJC_141_Att(); };
             if (Choix_ObjS_Attaquant[0] == 142 || Choix_ObjS_Attaquant[1] == 142 || Choix_ObjS_Attaquant[2] == 142) { Adaptation_OBJC_142_Att(); };
@@ -8154,10 +8162,10 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 133 || Choix_ObjS_Defenseur[1] == 133 || Choix_ObjS_Defenseur[2] == 133) { Adaptation_OBJC_133_Def(); };
             if (Choix_ObjS_Defenseur[0] == 134 || Choix_ObjS_Defenseur[1] == 134 || Choix_ObjS_Defenseur[2] == 134) { Adaptation_OBJC_134_Def(); };
             if (Choix_ObjS_Defenseur[0] == 135 || Choix_ObjS_Defenseur[1] == 135 || Choix_ObjS_Defenseur[2] == 135) { Adaptation_OBJC_135_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 136 || Choix_ObjS_Defenseur[1] == 136 || Choix_ObjS_Defenseur[2] == 136) { StackPanel_ObjS_136_Def.Visibility = Visibility.Visible; oeil_OBJS_136_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 137 || Choix_ObjS_Defenseur[1] == 137 || Choix_ObjS_Defenseur[2] == 137) { StackPanel_ObjS_137_Def.Visibility = Visibility.Visible; oeil_OBJS_137_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { StackPanel_ObjS_138_Def.Visibility = Visibility.Visible; oeil_OBJS_138_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 139 || Choix_ObjS_Defenseur[1] == 139 || Choix_ObjS_Defenseur[2] == 139) { StackPanel_ObjS_139_Def.Visibility = Visibility.Visible; oeil_OBJS_139_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 136 || Choix_ObjS_Defenseur[1] == 136 || Choix_ObjS_Defenseur[2] == 136) { Adaptation_OBJC_136_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 137 || Choix_ObjS_Defenseur[1] == 137 || Choix_ObjS_Defenseur[2] == 137) { Adaptation_OBJC_137_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { Adaptation_OBJC_138_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 139 || Choix_ObjS_Defenseur[1] == 139 || Choix_ObjS_Defenseur[2] == 139) { Adaptation_OBJC_139_Def(); };
             if (Choix_ObjS_Defenseur[0] == 140 || Choix_ObjS_Defenseur[1] == 140 || Choix_ObjS_Defenseur[2] == 140) { Adaptation_OBJC_140_Def(); };
             if (Choix_ObjS_Defenseur[0] == 141 || Choix_ObjS_Defenseur[1] == 141 || Choix_ObjS_Defenseur[2] == 141) { Adaptation_OBJC_141_Def(); };
             if (Choix_ObjS_Defenseur[0] == 142 || Choix_ObjS_Defenseur[1] == 142 || Choix_ObjS_Defenseur[2] == 142) { Adaptation_OBJC_142_Def(); };
@@ -9988,7 +9996,7 @@ namespace CPV9
         }
         private void Button_info_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(("Néo ScoreBoard\r\rGestion des scores d'une partie Warhammer 40K -v9\rFormat Grand Tournament 2022 Nachmun et Nephilim\r\rAuteur : Zouky\r\r\r CODEX PRIS EN CHARGE :\r\rGrey Knights\r Tyranids \r Ork\r Adepta Sororitas\r Adeptus Mechanicus\r Codex Death Guard\r Blood Angels\r Space Marine\r Necron"), "Version 3.0.0", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show(("Néo ScoreBoard\r\rGestion des scores d'une partie Warhammer 40K -v9\rFormat Grand Tournament 2022 Nachmun et Nephilim\r\rAuteur : Zouky\rVersion : ALPHA\r\r\r CODEX PRIS EN CHARGE :\r\rGrey Knights\r Tyranids \r Ork\r Adepta Sororitas\r Adeptus Mechanicus\r Blood Angels\r Space Marine\r Necron"), "Version 3.0.0", MessageBoxButton.OK, MessageBoxImage.Information);
             return;
         }
         private void Button_Option_Click(object sender, RoutedEventArgs e)
@@ -12262,7 +12270,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 137
             Classe_Score_OBJC_Ork_137 OBJECTIF_Codex_137_Att;
-            OBJECTIF_Codex_137_Att = new Classe_Score_OBJC_Ork_137(CheckBox_Objectif_Sec_Att_137_A1_Etat, CheckBox_Objectif_Sec_Att_137_A2_Etat, CheckBox_Objectif_Sec_Att_137_A3_Etat, CheckBox_Objectif_Sec_Att_137_A4_Etat, CheckBox_Objectif_Sec_Att_137_A5_Etat, CheckBox_Objectif_Sec_Att_137_B1_Etat, CheckBox_Objectif_Sec_Att_137_B2_Etat, CheckBox_Objectif_Sec_Att_137_B3_Etat, CheckBox_Objectif_Sec_Att_137_B4_Etat, CheckBox_Objectif_Sec_Att_137_B5_Etat, CheckBox_Objectif_Sec_Att_137_C1_Etat, CheckBox_Objectif_Sec_Att_137_C2_Etat, CheckBox_Objectif_Sec_Att_137_C3_Etat, CheckBox_Objectif_Sec_Att_137_C4_Etat, CheckBox_Objectif_Sec_Att_137_C5_Etat);
+            OBJECTIF_Codex_137_Att = new Classe_Score_OBJC_Ork_137(CheckBox_Objectif_Sec_Att_137_A1_Etat, CheckBox_Objectif_Sec_Att_137_A2_Etat, CheckBox_Objectif_Sec_Att_137_A3_Etat, CheckBox_Objectif_Sec_Att_137_A4_Etat, CheckBox_Objectif_Sec_Att_137_A5_Etat, CheckBox_Objectif_Sec_Att_137_B1_Etat, CheckBox_Objectif_Sec_Att_137_B2_Etat, CheckBox_Objectif_Sec_Att_137_B3_Etat, CheckBox_Objectif_Sec_Att_137_B4_Etat, CheckBox_Objectif_Sec_Att_137_B5_Etat, CheckBox_Objectif_Sec_Att_137_C1_Etat, CheckBox_Objectif_Sec_Att_137_C2_Etat, CheckBox_Objectif_Sec_Att_137_C3_Etat, CheckBox_Objectif_Sec_Att_137_C4_Etat, CheckBox_Objectif_Sec_Att_137_C5_Etat, CA);
             Scores_Attaquant[76] = OBJECTIF_Codex_137_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_137_Att.Score_ObjS) >= 15)
             {
@@ -12273,7 +12281,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 138
             Classe_Score_OBJC_Ork_138 OBJECTIF_Codex_138_Att;
-            OBJECTIF_Codex_138_Att = new Classe_Score_OBJC_Ork_138(TextBox_ObjS_138_Att_T2.Text, TextBox_ObjS_138_Att_T3.Text, TextBox_ObjS_138_Att_T4.Text, TextBox_ObjS_138_Att_T5.Text);
+            OBJECTIF_Codex_138_Att = new Classe_Score_OBJC_Ork_138(TextBox_ObjS_138_Att_T1.Text, TextBox_ObjS_138_Att_T2.Text, TextBox_ObjS_138_Att_T3.Text, TextBox_ObjS_138_Att_T4.Text, TextBox_ObjS_138_Att_T5.Text, TextBox_ObjS_138_Att_Fin.Text, CA);
             Scores_Attaquant[77] = OBJECTIF_Codex_138_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_138_Att.Score_ObjS) >= 15)
             {
@@ -12284,7 +12292,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 139
             Classe_Score_OBJC_Ork_139 OBJECTIF_Codex_139_Att;
-            OBJECTIF_Codex_139_Att = new Classe_Score_OBJC_Ork_139(TextBox_ObjS_139_Att_T1.Text, TextBox_ObjS_139_Att_T2.Text, TextBox_ObjS_139_Att_T3.Text, TextBox_ObjS_139_Att_T4.Text, TextBox_ObjS_139_Att_T5.Text);
+            OBJECTIF_Codex_139_Att = new Classe_Score_OBJC_Ork_139(TextBox_ObjS_139_Att_T1.Text, TextBox_ObjS_139_Att_T2.Text, TextBox_ObjS_139_Att_T3.Text, TextBox_ObjS_139_Att_T4.Text, TextBox_ObjS_139_Att_T5.Text, CA);
             Scores_Attaquant[78] = OBJECTIF_Codex_139_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_139_Att.Score_ObjS) >= 15)
             {
@@ -13410,7 +13418,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 137
             Classe_Score_OBJC_Ork_137 OBJECTIF_Codex_137_Def;
-            OBJECTIF_Codex_137_Def = new Classe_Score_OBJC_Ork_137(CheckBox_Objectif_Sec_Def_137_A1_Etat, CheckBox_Objectif_Sec_Def_137_A2_Etat, CheckBox_Objectif_Sec_Def_137_A3_Etat, CheckBox_Objectif_Sec_Def_137_A4_Etat, CheckBox_Objectif_Sec_Def_137_A5_Etat, CheckBox_Objectif_Sec_Def_137_B1_Etat, CheckBox_Objectif_Sec_Def_137_B2_Etat, CheckBox_Objectif_Sec_Def_137_B3_Etat, CheckBox_Objectif_Sec_Def_137_B4_Etat, CheckBox_Objectif_Sec_Def_137_B5_Etat, CheckBox_Objectif_Sec_Def_137_C1_Etat, CheckBox_Objectif_Sec_Def_137_C2_Etat, CheckBox_Objectif_Sec_Def_137_C3_Etat, CheckBox_Objectif_Sec_Def_137_C4_Etat, CheckBox_Objectif_Sec_Def_137_C5_Etat);
+            OBJECTIF_Codex_137_Def = new Classe_Score_OBJC_Ork_137(CheckBox_Objectif_Sec_Def_137_A1_Etat, CheckBox_Objectif_Sec_Def_137_A2_Etat, CheckBox_Objectif_Sec_Def_137_A3_Etat, CheckBox_Objectif_Sec_Def_137_A4_Etat, CheckBox_Objectif_Sec_Def_137_A5_Etat, CheckBox_Objectif_Sec_Def_137_B1_Etat, CheckBox_Objectif_Sec_Def_137_B2_Etat, CheckBox_Objectif_Sec_Def_137_B3_Etat, CheckBox_Objectif_Sec_Def_137_B4_Etat, CheckBox_Objectif_Sec_Def_137_B5_Etat, CheckBox_Objectif_Sec_Def_137_C1_Etat, CheckBox_Objectif_Sec_Def_137_C2_Etat, CheckBox_Objectif_Sec_Def_137_C3_Etat, CheckBox_Objectif_Sec_Def_137_C4_Etat, CheckBox_Objectif_Sec_Def_137_C5_Etat, CA);
             Scores_Defenseur[76] = OBJECTIF_Codex_137_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_137_Def.Score_ObjS) >= 15)
             {
@@ -13421,7 +13429,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 138
             Classe_Score_OBJC_Ork_138 OBJECTIF_Codex_138_Def;
-            OBJECTIF_Codex_138_Def = new Classe_Score_OBJC_Ork_138(TextBox_ObjS_138_Def_T2.Text, TextBox_ObjS_138_Def_T3.Text, TextBox_ObjS_138_Def_T4.Text, TextBox_ObjS_138_Def_T5.Text);
+            OBJECTIF_Codex_138_Def = new Classe_Score_OBJC_Ork_138(TextBox_ObjS_138_Def_T1.Text, TextBox_ObjS_138_Def_T2.Text, TextBox_ObjS_138_Def_T3.Text, TextBox_ObjS_138_Def_T4.Text, TextBox_ObjS_138_Def_T5.Text, TextBox_ObjS_138_Def_Fin.Text, CA);
             Scores_Defenseur[77] = OBJECTIF_Codex_138_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_138_Def.Score_ObjS) >= 15)
             {
@@ -13432,7 +13440,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 139
             Classe_Score_OBJC_Ork_139 OBJECTIF_Codex_139_Def;
-            OBJECTIF_Codex_139_Def = new Classe_Score_OBJC_Ork_139(TextBox_ObjS_139_Def_T1.Text, TextBox_ObjS_139_Def_T2.Text, TextBox_ObjS_139_Def_T3.Text, TextBox_ObjS_139_Def_T4.Text, TextBox_ObjS_139_Def_T5.Text);
+            OBJECTIF_Codex_139_Def = new Classe_Score_OBJC_Ork_139(TextBox_ObjS_139_Def_T1.Text, TextBox_ObjS_139_Def_T2.Text, TextBox_ObjS_139_Def_T3.Text, TextBox_ObjS_139_Def_T4.Text, TextBox_ObjS_139_Def_T5.Text, CA);
             Scores_Defenseur[78] = OBJECTIF_Codex_139_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_139_Def.Score_ObjS) >= 15)
             {
@@ -23621,9 +23629,14 @@ namespace CPV9
             Label_Objectif_Sec_Att_138E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_138F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_138G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_138K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_138H.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_138I.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_138_Att.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_T1.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Att_T1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_138_Att_T2.FontSize = 1.2 * Taille_texte * Multiple;
             TextBox_ObjS_138_Att_T2.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_138_Att_T2.Height = Hauteur_saisie * Multiple;
@@ -23636,12 +23649,17 @@ namespace CPV9
             TextBox_ObjS_138_Att_T5.FontSize = 1.2 * Taille_texte * Multiple;
             TextBox_ObjS_138_Att_T5.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_138_Att_T5.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Att_Fin.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Att_Fin.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Att_Fin.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Att_138A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_138B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_138C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_138D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_138E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_138F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_138G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_138H.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 139
             StackPanel_ObjS_Att.Width = Multiple * 110;
@@ -26193,9 +26211,14 @@ namespace CPV9
             Label_Objectif_Sec_Def_138E.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_138F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_138G.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138J.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_138K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_138H.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_138I.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_138_Def.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_T1.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_T1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Def_T1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_138_Def_T2.FontSize = 1.2 * Taille_texte * Multiple;
             TextBox_ObjS_138_Def_T2.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_138_Def_T2.Height = Hauteur_saisie * Multiple;
@@ -26208,12 +26231,17 @@ namespace CPV9
             TextBox_ObjS_138_Def_T5.FontSize = 1.2 * Taille_texte * Multiple;
             TextBox_ObjS_138_Def_T5.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_138_Def_T5.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_138_Def_Fin.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_138_Def_Fin.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_138_Def_Fin.Height = Hauteur_saisie * Multiple;
             GridSplitter_Objectif_Sec_Def_138A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_138B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_138C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_138D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_138E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_138F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_138G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_138H.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 139
             StackPanel_ObjS_Def.Width = Multiple * 110;
@@ -27061,7 +27089,40 @@ namespace CPV9
             private void Adaptation_OBJC_133_Att()
         {
             StackPanel_ObjS_133_Att.Visibility = Visibility.Visible;
-            
+            if (CA == "Nachmund")
+            {
+                CheckBox_Objectif_Sec_Att_133_R1_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R1_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R1_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R2_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R2_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R2_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R3_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R3_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R3_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R4_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R4_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R4_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R5_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R5_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_133_R5_Fusion.Visibility = Visibility.Visible;
+
+                TextBox_Objectif_Sec_Att_133_R1_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R1_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R1_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R2_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R2_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R2_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R3_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R3_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R3_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R4_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R4_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R4_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R5_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R5_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Att_133_R5_Fusion.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_133B.Content = "Marquez à la fin de votre tour, 1 pts par conditions accompli a l'aide d'unité Adeptus Ministorum, avec les armes approprié";
@@ -27105,6 +27166,40 @@ namespace CPV9
         {
             StackPanel_ObjS_133_Def.Visibility = Visibility.Visible;
 
+            if (CA == "Nachmund")
+            {
+                CheckBox_Objectif_Sec_Def_133_R1_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R1_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R1_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R2_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R2_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R2_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R3_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R3_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R3_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R4_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R4_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R4_Fusion.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R5_Bolts.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R5_Flammes.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_133_R5_Fusion.Visibility = Visibility.Visible;
+
+                TextBox_Objectif_Sec_Def_133_R1_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R1_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R1_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R2_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R2_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R2_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R3_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R3_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R3_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R4_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R4_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R4_Fusion.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R5_Bolts.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R5_Flammes.Visibility = Visibility.Collapsed;
+                TextBox_Objectif_Sec_Def_133_R5_Fusion.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_133B.Content = "Marquez à la fin de votre tour, 1 pts par conditions accompli a l'aide d'unité Adeptus Ministorum, avec les armes approprié";
@@ -27167,7 +27262,10 @@ namespace CPV9
             private void Adaptation_OBJC_135_Att()
         {
             StackPanel_ObjS_135_Att.Visibility = Visibility.Visible;
-
+            if (CA == "Nachmund")
+            {
+                CheckBox_Objectif_Sec_Att_135_Fin_Vous.Visibility = Visibility.Visible;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_135C.Content = "3 pts/Tours ,si vous controlez le sanctuaire a la fin de votre tour.";
@@ -27179,6 +27277,10 @@ namespace CPV9
         {
             StackPanel_ObjS_135_Def.Visibility = Visibility.Visible;
 
+            if (CA == "Nachmund")
+            {
+                CheckBox_Objectif_Sec_Def_135_Fin_Vous.Visibility = Visibility.Visible;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_135C.Content = "3 pts/Tours ,si vous controlez le sanctuaire a la fin de votre tour.";
@@ -27201,6 +27303,30 @@ namespace CPV9
         private void Adaptation_OBJC_129_Att()
         {
             StackPanel_ObjS_129_Att.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Att_129E.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_129_R1_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Att_129_R2_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Att_129_R3_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Att_129_R4_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Att_129_R5_Adeptus.IsChecked = false;
+                TextBox_ObjS_129_Att_R1_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R2_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R3_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R4_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R5_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R1_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R2_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R3_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R4_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Att_R5_Vehicule.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Att_129_R1_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_129_R2_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_129_R3_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_129_R4_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Att_129_R5_Adeptus.Visibility = Visibility.Visible;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_129B.Content = "Marquez 3 pts à la fin du tour si vous avez détruit plus d'unité ennemi a l'aide de vos véhicules,";
@@ -27233,6 +27359,30 @@ namespace CPV9
         private void Adaptation_OBJC_129_Def()
         {
             StackPanel_ObjS_129_Def.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Def_129E.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_129_R1_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Def_129_R2_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Def_129_R3_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Def_129_R4_Adeptus.IsChecked = false;
+                CheckBox_Objectif_Sec_Def_129_R5_Adeptus.IsChecked = false;
+                TextBox_ObjS_129_Def_R1_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R2_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R3_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R4_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R5_Infanterie.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R1_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R2_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R3_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R4_Vehicule.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_129_Def_R5_Vehicule.Visibility = Visibility.Collapsed;
+                CheckBox_Objectif_Sec_Def_129_R1_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_129_R2_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_129_R3_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_129_R4_Adeptus.Visibility = Visibility.Visible;
+                CheckBox_Objectif_Sec_Def_129_R5_Adeptus.Visibility = Visibility.Visible;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_129B.Content = "Marquez 3 pts à la fin du tour si vous avez détruit plus d'unité ennemi a l'aide de vos véhicule, que l'ennemi vous a détruit d'unité VEHICULE";
@@ -27275,6 +27425,12 @@ namespace CPV9
         private void Adaptation_OBJC_131_Att()
         {
             StackPanel_ObjS_131_Att.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                StackPanel_OBJS_131D_Att.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Att_131G.Visibility = Visibility.Visible;
+
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_131C.Content = "Marquez 4 points de vitoire à la fin du round si vous controlez cette objectif";
@@ -27287,6 +27443,12 @@ namespace CPV9
         private void Adaptation_OBJC_131_Def()
         {
             StackPanel_ObjS_131_Def.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                StackPanel_OBJS_131D_Def.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Def_131G.Visibility = Visibility.Visible;
+
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_131C.Content = "Marquez 4 points de vitoire à la fin du round si vous controlez cette objectif";
@@ -27300,6 +27462,13 @@ namespace CPV9
         private void Adaptation_OBJC_143_Att()
         {
             StackPanel_ObjS_143_Att.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Att_143G.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_143H.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_143_Att_DemiForce.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Att_143G.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_143G.Visibility = Visibility.Visible;
@@ -27312,6 +27481,13 @@ namespace CPV9
         private void Adaptation_OBJC_143_Def()
         {
             StackPanel_ObjS_143_Def.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Def_143G.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_143H.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_143_Def_DemiForce.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Def_143G.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_143G.Visibility = Visibility.Visible;
@@ -27376,6 +27552,12 @@ namespace CPV9
         private void Adaptation_OBJC_142_Att()
         {
             StackPanel_ObjS_142_Att.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Att_142G.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_142_Att_Perso.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Att_142G.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_142C.Content = "3 Pts par Personnages , et 1 pts par Champion détruite en melée ( Vrille ruche )";
@@ -27389,6 +27571,12 @@ namespace CPV9
         private void Adaptation_OBJC_142_Def()
         {
             StackPanel_ObjS_142_Def.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Def_142G.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_142_Def_Perso.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Def_142G.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_142C.Content = "3 Pts par Personnages , et 1 pts par Champion détruite en melée ( Vrille ruche )";
@@ -27404,6 +27592,12 @@ namespace CPV9
         private void Adaptation_OBJC_100_Att()
         {
             StackPanel_ObjS_100_Att.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Att_100F.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_100_Att_Cac.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Att_100B_Att.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_100B.Content = "Detruire les unités ennemis a l aide d un Noble. Personnage ennemi tué = 1 PC";
@@ -27417,6 +27611,12 @@ namespace CPV9
         private void Adaptation_OBJC_100_Def()
         {
             StackPanel_ObjS_100_Def.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Def_100F.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_100_Def_Cac.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Def_100B_Att.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_100B.Content = "Detruire les unités ennemis a l aide d un Noble. Personnage ennemi tué = 1 PC";
@@ -27430,6 +27630,12 @@ namespace CPV9
         private void Adaptation_OBJC_101_Att()
         {
             StackPanel_ObjS_101_Att.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Att_101K.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_101_Att_R1.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Att_101F_Att.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Att_101B.Content = "1 pts/Quart de table sans ennemi en fin de votre tour (entierement à l interieur)";
@@ -27444,6 +27650,12 @@ namespace CPV9
         private void Adaptation_OBJC_101_Def()
         {
             StackPanel_ObjS_101_Def.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Def_101K.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_101_Def_R1.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Def_101F.Visibility = Visibility.Collapsed;
+            }
             if (CA == "Nephilim")
             {
                 Label_Objectif_Sec_Def_101B.Content = "1 pts/Quart de table sans ennemi en fin de votre tour (entierement à l interieur)";
@@ -27484,6 +27696,107 @@ namespace CPV9
             }
             oeil_OBJS_103_Def();
         }
+        #endregion
+        #region OBJ ORKS
+        private void Adaptation_OBJC_136_Att()
+        {
+            StackPanel_ObjS_136_Att.Visibility = Visibility.Visible;            
+            oeil_OBJS_136_Att();
+        }
+        private void Adaptation_OBJC_136_Def()
+        {
+            StackPanel_ObjS_136_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_136_Def();
+        }
+        private void Adaptation_OBJC_137_Att()
+        {
+            StackPanel_ObjS_137_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_137B.Content = "Marquez 2 pts par round pour chacune des conditions suivantes réalisez à l'aide de votre seigneur de guerre (Maxi 5 pts/round)";
+                Label_Objectif_Sec_Att_137C.Content = "A- Faire perdre des PV une unité Personnage, Véhicule ou monstre en mélé  B-SG sur Objectif   C- Détruire 5 figurines ou plus";
+                Label_Objectif_Sec_Att_137J.Content = "A - Unités Personnage, Véhicule ou monstre ennemi a perdu des PV";
+                Label_Objectif_Sec_Att_137K.Content = "B - SG sur Objectif tenu";
+            }
+            oeil_OBJS_137_Att();
+        }
+        private void Adaptation_OBJC_137_Def()
+        {
+            StackPanel_ObjS_137_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_137B.Content = "Marquez 2 pts par round pour chacune des conditions suivantes réalisez à l'aide de votre seigneur de guerre (Maxi 5 pts/round)";
+                Label_Objectif_Sec_Def_137C.Content = "A- Faire perdre des PV une unité Personnage, Véhicule ou monstre en mélé  B-SG sur Objectif   C- Détruire 5 figurines ou plus";
+                Label_Objectif_Sec_Def_137J.Content = "A - Unités Personnage, Véhicule ou monstre ennemi a perdu des PV";
+                Label_Objectif_Sec_Def_137K.Content = "B - SG sur Objectif tenu";
+            }
+            oeil_OBJS_137_Def();
+        }
+        private void Adaptation_OBJC_138_Att()
+        {
+            StackPanel_ObjS_138_Att.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Att_138J.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_138_Att_T1.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Att_138G.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Att_138K.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_138_Att_Fin.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Att_138H.Visibility = Visibility.Collapsed;
+            }
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_138J.Visibility = Visibility.Visible;
+                TextBox_ObjS_138_Att_T1.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Att_138G.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Att_138K.Visibility = Visibility.Visible;
+                TextBox_ObjS_138_Att_Fin.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Att_138H.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_138_Att();
+        }
+        private void Adaptation_OBJC_138_Def()
+        {
+            StackPanel_ObjS_138_Def.Visibility = Visibility.Visible;
+            if (CA == "Nachmund")
+            {
+                Label_Objectif_Sec_Def_138J.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_138_Def_T1.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Def_138G.Visibility = Visibility.Collapsed;
+                Label_Objectif_Sec_Def_138K.Visibility = Visibility.Collapsed;
+                TextBox_ObjS_138_Def_Fin.Visibility = Visibility.Collapsed;
+                GridSplitter_Objectif_Sec_Def_138H.Visibility = Visibility.Collapsed;
+            }
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_138J.Visibility = Visibility.Visible;
+                TextBox_ObjS_138_Def_T1.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Def_138G.Visibility = Visibility.Visible;
+                Label_Objectif_Sec_Def_138K.Visibility = Visibility.Visible;
+                TextBox_ObjS_138_Def_Fin.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Def_138H.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_138_Def();
+        }
+        private void Adaptation_OBJC_139_Att()
+        {
+            StackPanel_ObjS_139_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_139B.Content = "Marquez 1 pts de victoire par quart de table occupé par des unités de 10 figs ORK";
+            }
+            oeil_OBJS_139_Att();
+        }
+        private void Adaptation_OBJC_139_Def()
+        {
+            StackPanel_ObjS_139_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_139B.Content = "Marquez 1 pts de victoire par quart de table occupé par des unités de 10 figs ORK";
+            }
+            oeil_OBJS_139_Def();
+        }
+
         #endregion
         #endregion
         #endregion
