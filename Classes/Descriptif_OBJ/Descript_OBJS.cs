@@ -212,22 +212,46 @@
                 case 100:
                     l1 = " CODE DE COMBAT";
                     l5 = "Marquez 3 points de victoire à la fin de la bataille pour chaque unité énnemie détruite";
-                    l6 = "par une unité NOBLE Nécron de votre armée.";
+                    if (CA == "Nachmund")
+                    {
+                        l6 = "par une unité NOBLE Nécron de votre armée.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l6 = "par une unité NOBLE Nécron de votre armée avec une arme de Tir.";
+                        l7 = "et 4 points de victoire par une unité NOBLE Nécron de votre armée au corps a corps.";
+                        l9 = "Pour chaque unité Personnage ennemie qui sera détruite par une unité Noble au Corps à Corps";
+                        l10 = "Gagnez un point de commandement.";
+                    }
                     break;
 
                 case 101:
                     l1 = " ELEMINEZ LA VERMINE";
-                    l4 = "Marquez 2 points de victoire à la fin de votre tour pour chaque quart de table";
-                    l5 = "qui n'as aucune unité énnemie ( hors aérodynes) entièement à l'intérieur.";
-                    l6 = "cette objectif ne peut pas être marqué au premier tour.";
+                    if (CA == "Nachmund")
+                    {
+                        l4 = "Marquez 2 points de victoire à la fin de votre tour pour chaque quart de table";
+                        l5 = "qui n'as aucune unité énnemie ( hors aérodynes) entièrement à l'intérieur.";
+                        l6 = "cette objectif ne peut pas être marqué au premier tour.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l4 = "Marquez 1 points de victoire à la fin de votre tour pour chaque quart de table";
+                        l5 = "qui n'as aucune unité énnemie ( hors aérodynes) entièrement à l'intérieur.";
+                        l6 = "Marquez 1 points de victoire à la fin de votre tour, s'il n'y a aucune unité ennemie";
+                        l7 = "Dans votre zone de déploiement.";
+                    }
                     break;
 
                 case 102:
                     l1 = " TRESORS DES EONS";
                     l3 = "Si vous choisissez cette objectif secondaire, une fois les deux camps déployés,";
-                    l4 = "votre adversaire choisit 3 pions objectifs sur le champs de bataille.";
-                    l5 = "Marquez un nombre de points de victoire à la fin de votre tour si vous contrôlez";
-                    l6 = "un ou plusieurs de ces pions objectif";
+                    l4 = "votre adversaire choisit 3 pions objectifs sur le champs de bataille,";                    
+                    if (CA == "Nephilim")
+                    {
+                        l5 = "en dehors de sa zone de déploiement, sauf s'il n'y pas plus d'objectif de disponible dans le no'man's land.";
+                    }
+                    l6 = "Marquez un nombre de points de victoire à la fin de votre tour si vous contrôlez";
+                    l7 = "un ou plusieurs de ces pions objectif";
                     l8 = "Nombres de pions objectifs contrôler :";
                     l10 = "1 = 2 points de victoire";
                     l11 = "2 = 3 points de victoire";
@@ -245,7 +269,14 @@
                     l10 = "Chaque unité de votre armée qui commence à accomplir cette action dois être à porté d'un pion objectif Machine de guerre Antique distinct.";
                     l11 = "Une unité ne peut pas commencer à accomplir cette action tant qu'il y a une unité ennemi à portée du même pion objectif.";
                     l12 = "L'action est achevé à la fin de votre prochaine phase de commandement, tant que l'unité est encore à porté du pion";
-                    l13 = "de machine quantique en question.Marquez 3 points chaque fois qu'une unité achève l'action Eveiller une machine quantite.";
+                    if (CA == "Nachmund")
+                    {
+                        l13 = "de machine quantique en question. Marquez 3 points chaque fois qu'une unité achève l'action Eveiller une machine quantite.";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l13 = "de machine quantique en question. Marquez 4 points chaque fois qu'une unité achève l'action Eveiller une machine quantite.";
+                    }
                     break;
                 #endregion
                 #region OBJC_SM
@@ -555,22 +586,32 @@
                     l8 = "L'action est accomplit à la fin de votre tour.";
                     l9 = "Si cette action est accomplit , placer un pion objectif n'importe ou entièrement dans la zone de déploiement adverse";
                     l10 = " et à 1 pouce de l'unitée qui a accomplit cette action .";
-                    l12 = "Ce pion objectif représente unnodules de spores , mais ne compte pas comme un pion objectif en termes de régles autres ";
+                    l12 = "Ce pion objectif représente un nodule de spores , mais ne compte pas comme un pion objectif en termes de régles autres ";
                     l11 = "qu'au regard de cette objectif secondaire .";
                     break;
 
                 case 142:
                     l1 = "FESTIN CRANIEN";
                     l3 = "Chaque fois qu'une figurine PERSONNAGE ennmie ou champion d'unité ennemi ,";
-                    l4 = "est détruite par ne attaque de mélée d'une figurine VRILLE DE RUCHE de votre armée , jeter un D6 ,";
+                    l4 = "est détruite par une attaque de mélée d'une figurine VRILLE DE RUCHE de votre armée , jeter un D6 ,";
                     l5 = "en ajoutant 2 au jet si la figurine Vrille de Ruche a le mot-clé Vrilles Sensitives,";
                     l6 = "et en ajoutant 2 au jet si la figurine détruite & le mot-clé Personnage : ";
                     l8 = "Sur un 6+ , vous gagnez un point de commandement ( jusqu'à un maximum de 1 pts de commanementt par round ).";
-                    l10 = "A la fin de la bataille : ";
-                    l11 = "- Marquez 3 points de victoire si vous avez gagné 1 PC ou plus durant la bataille grâce à cet objectif.";
-                    l12 = "- Marquez 1 point de victoire pour chaque figurine Personnage ennemi et chaque Champion  d'unité ennemie";
-                    l13 = "qui as été détruite par une attaque de mêlée d'une figurine Vrille de ruche   de votre armée.";
-                    l14 = "- Marquez 3 points de victoire si le Seigneur de Guerre ennemi à été détruit par une attaque de mêlée d'une figurine Vrille de ruche de votre armée..";
+                    l9 = "A la fin de la bataille : ";
+                    l10 = "- Marquez 3 points de victoire si vous avez gagné 1 PC ou plus durant la bataille grâce à cet objectif.";
+                    if (CA == "Nachmund")
+                    {
+                        l11 = "- Marquez 1 point de victoire pour chaque figurine Personnage ennemi et chaque Champion d'unité ennemie";
+                        l12 = "qui as été détruite par une attaque de mêlée d'une figurine Vrille de ruche de votre armée.";
+                        l13 = "- Marquez 3 points de victoire si le Seigneur de Guerre ennemi à été détruit par une attaque de mêlée d'une figurine Vrille de ruche de votre armée..";
+                    }
+                    if (CA == "Nephilim")
+                    {
+                        l11 = "- Marquez 1 point de victoire pour chaque figurine Champion d'unité ennemie";
+                        l12 = "- Marquez 3 point de victoire pour chaque figurine Personnage ennemi";
+                        l13 = "qui as été détruite par une attaque de mêlée d'une figurine Vrille de ruche de votre armée.";
+                        l14 = "- Marquez 3 points de victoire si le Seigneur de Guerre ennemi à été détruit par une attaque de mêlée d'une figurine Vrille de ruche de votre armée..";
+                    }
                     break;
 
                 #endregion

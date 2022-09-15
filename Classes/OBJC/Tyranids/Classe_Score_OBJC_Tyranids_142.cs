@@ -13,11 +13,16 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJC_Tyranids_142(string PC, string SG, string Fig)
+        public Classe_Score_OBJC_Tyranids_142(string PC, string SG, string Fig, string Perso, string CA)
         {
             if (PC == "true") { Score += 3;};
             if (SG == "true") { Score += 3;};
+
             if (Fig != "") { Score += Convert.ToInt32(Fig) ;};
+            if (CA == "Nephilim")
+            {
+                if (Perso != "") { Score += 3 * Convert.ToInt32(Perso); };
+            }
 
             Score_ObjS = Score;
             if (Score >= 15) { Score = 15; };

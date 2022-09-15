@@ -1089,11 +1089,13 @@ namespace CPV9
         List<string> List_Armee_Nachmund = new List<string>()
         {
             "  SM_Space Marines",
+            "  SM_Dark Angels",
             "  SM_Blood Angels",
             "  Adepta Sororitas",
             "  Adeptus Mechanicus",
             "  Grey Knights",
             "  Death Guard",
+            "  Thousand Sons",
             "  Necrons",
             "  Orks",
             "  Tyranid"
@@ -1101,10 +1103,16 @@ namespace CPV9
         List<string> List_Armee_Nephilim = new List<string>()
         {
             "  SM_Space Marines",
+            "  SM_Dark Angels",
             "  SM_Blood Angels",
             "  Adepta Sororitas",
             "  Adeptus Mechanicus",
             "  Grey Knights",
+            "  Death Guard",
+            "  Thousand Sons",
+            "  Necrons",
+            "  Orks",
+            "  Tyranid"
         };
 
         #endregion
@@ -1196,12 +1204,16 @@ namespace CPV9
             Button_3003_Affichage_Description.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Necron_100_Def_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_101_Att_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_101_Def_1.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_100_Att_2.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_100_Def_2.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_101_Att.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_101_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_103_Def_1.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_102_Att_2.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_102_Def_2.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_103_Att.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_103_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_SM_110_Att.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_SM_110_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_SM_111_Att.Visibility = Visibility.Collapsed;
@@ -1277,6 +1289,160 @@ namespace CPV9
 
             StackPanel_Obj_FIG_Att.Visibility = Visibility.Collapsed;
             StackPanel_Obj_FIG_Def.Visibility = Visibility.Collapsed;
+
+            StackPanel_ObjS_1_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_3_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_3_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_5_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_5_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_6_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_6_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_7_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_7_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_9_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_9_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_10_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_10_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_11_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_11_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_12_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_12_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_13_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_13_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_14_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_14_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_15_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_15_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_16_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_16_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_17_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_17_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_18_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_18_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_19_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_19_Def.Visibility = Visibility.Collapsed;
+
+            StackPanel_ObjS_100_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_100_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_101_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_101_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_102_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_102_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_103_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_103_Def.Visibility = Visibility.Collapsed;
+
+            StackPanel_ObjS_110_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_110_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_111_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_111_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_112_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_112_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_113_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_113_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_114_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_114_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_115_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_115_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_116_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_116_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_125_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_125_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_126_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_126_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_127_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_127_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_128_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_128_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_129_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_129_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_130_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_130_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_131_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_131_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_132_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_132_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_133_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_133_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_134_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_134_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_135_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_135_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_136_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_136_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_137_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_137_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_138_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_138_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_139_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_139_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_140_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_140_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_141_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_141_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_142_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_142_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_143_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_143_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_144_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_144_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_145_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_145_Def.Visibility = Visibility.Collapsed;
+
+            StackPanel_ObjS_501_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_501_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_502_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_502_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_503_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_503_Def.Visibility = Visibility.Collapsed;
+
+            StackPanel_ObjS_1011_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1011_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1012_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1012_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1013_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1013_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1021_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1021_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1022_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1022_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1023_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1023_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1031_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1031_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1032_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1032_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1033_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_1033_Def.Visibility = Visibility.Collapsed;
+
+            StackPanel_ObjS_2011_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2011_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2012_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2012_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2013_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2013_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2021_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2021_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2022_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2022_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2023_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2023_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2031_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2031_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2032_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2032_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2033_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_2033_Def.Visibility = Visibility.Collapsed;
+
+            StackPanel_ObjS_3001_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_3001_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_3002_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_3002_Def.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_3003_Att.Visibility = Visibility.Collapsed;
+            StackPanel_ObjS_3003_Def.Visibility = Visibility.Collapsed;
+
 
             Image_PL1.Visibility = Visibility.Collapsed;
             Image_PL2.Visibility = Visibility.Collapsed;
@@ -1504,8 +1670,10 @@ namespace CPV9
             #region INIT_OBJ_ATTAQUANT_CODEX
             #region INIT_OBJ_ATTAQUANT_CODEX_NECRON
             /// OBJECTIF SECONDAIRE 100 : CODE DE COMBAT
-            TextBox_ObjS_100_Att.Clear();
+            TextBox_ObjS_100_Att_Tir.Clear();
+            TextBox_ObjS_100_Att_Cac.Clear();
             /// OBJECTIF SECONDAIRE 101 : ELIMINEZ LA VERMINE
+            TextBox_ObjS_101_Att_R1.Clear();
             TextBox_ObjS_101_Att_R2.Clear();
             TextBox_ObjS_101_Att_R3.Clear();
             TextBox_ObjS_101_Att_R4.Clear();
@@ -2150,8 +2318,10 @@ namespace CPV9
             #region INIT_OBJ_DEFENSEUR_CODEX
             #region INIT_OBJ_DEFENSEUR_CODEX_NECRON
             /// OBJECTIF SECONDAIRE 100 : CODE DE COMBAT
-            TextBox_ObjS_100_Def.Clear();
+            TextBox_ObjS_100_Def_Tir.Clear();
+            TextBox_ObjS_100_Def_Cac.Clear();
             /// OBJECTIF SECONDAIRE 101 : ELIMINEZ LA VERMINE
+            TextBox_ObjS_101_Def_R1.Clear();
             TextBox_ObjS_101_Def_R2.Clear();
             TextBox_ObjS_101_Def_R3.Clear();
             TextBox_ObjS_101_Def_R4.Clear();
@@ -3245,23 +3415,29 @@ namespace CPV9
             #region Transfert_Donnees_To_Mem_Attaquant_Codex
             #region Transfert_Donnees_To_Mem_Attaquant_Codex_Necron
             /// OBJECTIF CODEX NECRON 100 : CODE DE COMBAT
-            Mem_Saisie_Attaquant[0, 45] = TextBox_ObjS_100_Att.Text;
+            n = 0;
+            Mem_Saisie_Attaquant[n, 45] = TextBox_ObjS_100_Att_Tir.Text; n++;
+            Mem_Saisie_Attaquant[n, 45] = TextBox_ObjS_100_Att_Cac.Text;
             /// OBJECTIF SECONDAIRE 101 : ELIMINEZ LA VERMINE
-            Mem_Saisie_Attaquant[0, 46] = TextBox_ObjS_101_Att_R2.Text;
-            Mem_Saisie_Attaquant[1, 46] = TextBox_ObjS_101_Att_R3.Text;
-            Mem_Saisie_Attaquant[2, 46] = TextBox_ObjS_101_Att_R4.Text;
-            Mem_Saisie_Attaquant[3, 46] = TextBox_ObjS_101_Att_R5.Text;
+            n = 0;
+            Mem_Saisie_Attaquant[n, 46] = TextBox_ObjS_101_Att_R1.Text; n++;
+            Mem_Saisie_Attaquant[n, 46] = TextBox_ObjS_101_Att_R2.Text; n++;
+            Mem_Saisie_Attaquant[n, 46] = TextBox_ObjS_101_Att_R3.Text; n++;
+            Mem_Saisie_Attaquant[n, 46] = TextBox_ObjS_101_Att_R4.Text; n++;
+            Mem_Saisie_Attaquant[n, 46] = TextBox_ObjS_101_Att_R5.Text;
             /// OBJECTIF SECONDAIRE 102 : TRESORS DES EONS
-            Mem_Saisie_Attaquant[0, 47] = TextBox_ObjS_102_Att_R1.Text;
-            Mem_Saisie_Attaquant[1, 47] = TextBox_ObjS_102_Att_R2.Text;
-            Mem_Saisie_Attaquant[2, 47] = TextBox_ObjS_102_Att_R3.Text;
-            Mem_Saisie_Attaquant[3, 47] = TextBox_ObjS_102_Att_R4.Text;
-            Mem_Saisie_Attaquant[4, 47] = TextBox_ObjS_102_Att_R5.Text;
+            n = 0;
+            Mem_Saisie_Attaquant[n, 47] = TextBox_ObjS_102_Att_R1.Text; n++;
+            Mem_Saisie_Attaquant[n, 47] = TextBox_ObjS_102_Att_R2.Text; n++;
+            Mem_Saisie_Attaquant[n, 47] = TextBox_ObjS_102_Att_R3.Text; n++;
+            Mem_Saisie_Attaquant[n, 47] = TextBox_ObjS_102_Att_R4.Text; n++;
+            Mem_Saisie_Attaquant[n, 47] = TextBox_ObjS_102_Att_R5.Text;
             /// OBJECTIF SECONDAIRE 103 : MACHINES ANTIQUES
-            Mem_Saisie_Attaquant[0, 48] = TextBox_ObjS_103_Att_R2.Text;
-            Mem_Saisie_Attaquant[1, 48] = TextBox_ObjS_103_Att_R3.Text;
-            Mem_Saisie_Attaquant[2, 48] = TextBox_ObjS_103_Att_R4.Text;
-            Mem_Saisie_Attaquant[3, 48] = TextBox_ObjS_103_Att_R5.Text;
+            n = 0;
+            Mem_Saisie_Attaquant[n, 48] = TextBox_ObjS_103_Att_R2.Text; n++;
+            Mem_Saisie_Attaquant[n, 48] = TextBox_ObjS_103_Att_R3.Text; n++;
+            Mem_Saisie_Attaquant[n, 48] = TextBox_ObjS_103_Att_R4.Text; n++;
+            Mem_Saisie_Attaquant[n, 48] = TextBox_ObjS_103_Att_R5.Text;
             #endregion
             #region Transfert_Donnees_To_Mem_Attaquant_Codex_Space marine
             /// OBJECTIF SECONDAIRE 110 : GUERRE CODEX
@@ -3563,7 +3739,8 @@ namespace CPV9
             n = 0;
             Mem_Saisie_Attaquant[n, 81] = CheckBox_Objectif_Sec_Att_142_PC_Etat; n++;
             Mem_Saisie_Attaquant[n, 81] = CheckBox_Objectif_Sec_Att_142_SG_Etat; n++;
-            Mem_Saisie_Attaquant[n, 81] = TextBox_ObjS_142_Att_Fig.Text;
+            Mem_Saisie_Attaquant[n, 81] = TextBox_ObjS_142_Att_Fig.Text; n++;
+            Mem_Saisie_Attaquant[n, 81] = TextBox_ObjS_142_Att_Perso.Text;
 
             #endregion
             #region Transfert_Donnees_To_Mem_Attaquant_Codex_Grey_Knights
@@ -3959,23 +4136,29 @@ namespace CPV9
             #region Transfert_Donnees_To_Mem_Defenseur_Codex
             #region Transfert_Donnees_To_Mem_Defenseur_Codex_Necron
             /// OBJECTIF CODEX NECRON 100 : CODE DE COMBAT
-            Mem_Saisie_Defenseur[0, 45] = TextBox_ObjS_100_Def.Text;
+            n = 0;
+            Mem_Saisie_Defenseur[n, 45] = TextBox_ObjS_100_Def_Tir.Text; n++;
+            Mem_Saisie_Defenseur[n, 45] = TextBox_ObjS_100_Def_Cac.Text;
             /// OBJECTIF SECONDAIRE 101 : ELIMINEZ LA VERMINE
-            Mem_Saisie_Defenseur[0, 46] = TextBox_ObjS_101_Def_R2.Text;
-            Mem_Saisie_Defenseur[1, 46] = TextBox_ObjS_101_Def_R3.Text;
-            Mem_Saisie_Defenseur[2, 46] = TextBox_ObjS_101_Def_R4.Text;
-            Mem_Saisie_Defenseur[3, 46] = TextBox_ObjS_101_Def_R5.Text;
+            n = 0;
+            Mem_Saisie_Defenseur[n, 46] = TextBox_ObjS_101_Def_R1.Text; n++;
+            Mem_Saisie_Defenseur[n, 46] = TextBox_ObjS_101_Def_R3.Text; n++;
+            Mem_Saisie_Defenseur[n, 46] = TextBox_ObjS_101_Def_R4.Text; n++;
+            Mem_Saisie_Defenseur[n, 46] = TextBox_ObjS_101_Def_R5.Text; n++;
+            Mem_Saisie_Defenseur[n, 46] = TextBox_ObjS_101_Def_R5.Text;
             /// OBJECTIF SECONDAIRE 102 : TRESORS DES EONS
-            Mem_Saisie_Defenseur[0, 47] = TextBox_ObjS_102_Def_R1.Text;
-            Mem_Saisie_Defenseur[1, 47] = TextBox_ObjS_102_Def_R2.Text;
-            Mem_Saisie_Defenseur[2, 47] = TextBox_ObjS_102_Def_R3.Text;
-            Mem_Saisie_Defenseur[3, 47] = TextBox_ObjS_102_Def_R4.Text;
-            Mem_Saisie_Defenseur[4, 47] = TextBox_ObjS_102_Def_R5.Text;
+            n = 0;
+            Mem_Saisie_Defenseur[n, 47] = TextBox_ObjS_102_Def_R1.Text; n++;
+            Mem_Saisie_Defenseur[n, 47] = TextBox_ObjS_102_Def_R2.Text; n++;
+            Mem_Saisie_Defenseur[n, 47] = TextBox_ObjS_102_Def_R3.Text; n++;
+            Mem_Saisie_Defenseur[n, 47] = TextBox_ObjS_102_Def_R4.Text; n++;
+            Mem_Saisie_Defenseur[n, 47] = TextBox_ObjS_102_Def_R5.Text;
             /// OBJECTIF SECONDAIRE 103 : MACHINES ANTIQUES
-            Mem_Saisie_Defenseur[0, 48] = TextBox_ObjS_103_Def_R2.Text;
-            Mem_Saisie_Defenseur[1, 48] = TextBox_ObjS_103_Def_R3.Text;
-            Mem_Saisie_Defenseur[2, 48] = TextBox_ObjS_103_Def_R4.Text;
-            Mem_Saisie_Defenseur[3, 48] = TextBox_ObjS_103_Def_R5.Text;
+            n = 0;
+            Mem_Saisie_Defenseur[n, 48] = TextBox_ObjS_103_Def_R2.Text; n++;
+            Mem_Saisie_Defenseur[n, 48] = TextBox_ObjS_103_Def_R3.Text; n++;
+            Mem_Saisie_Defenseur[n, 48] = TextBox_ObjS_103_Def_R4.Text; n++;
+            Mem_Saisie_Defenseur[n, 48] = TextBox_ObjS_103_Def_R5.Text;
             #endregion
             #region Transfert_Donnees_To_Mem_Defenseur_Codex_Space marine
             /// OBJECTIF SECONDAIRE 110 : GUERRE CODEX
@@ -4277,7 +4460,8 @@ namespace CPV9
             n = 0;
             Mem_Saisie_Defenseur[n, 81] = CheckBox_Objectif_Sec_Def_142_PC_Etat; n++;
             Mem_Saisie_Defenseur[n, 81] = CheckBox_Objectif_Sec_Def_142_SG_Etat; n++;
-            Mem_Saisie_Defenseur[n, 81] = TextBox_ObjS_142_Def_Fig.Text;
+            Mem_Saisie_Defenseur[n, 81] = TextBox_ObjS_142_Def_Fig.Text; n++;
+            Mem_Saisie_Defenseur[n, 81] = TextBox_ObjS_142_Def_Perso.Text;
 
             #endregion
             #region Transfert_Donnees_To_Mem_Attaquant_Codex_Grey_Knights
@@ -5175,23 +5359,29 @@ namespace CPV9
             #region Transfert_Donnees_To_Text_Attaquant_Codex
             #region Transfert_Donnees_To_Text_Attaquant_Codex_Necron
             /// OBJECTIF CODEX NECRON 100 : CODE DE COMBAT
-            TextBox_ObjS_100_Att.Text = Mem_Saisie_Attaquant[0, 45];
+            n = 0;
+            TextBox_ObjS_100_Att_Tir.Text = Mem_Saisie_Attaquant[n, 45]; n++;
+            TextBox_ObjS_100_Att_Cac.Text = Mem_Saisie_Attaquant[n, 45];
             /// OBJECTIF SECONDAIRE 101 : ELIMINEZ LA VERMINE
-            TextBox_ObjS_101_Att_R2.Text = Mem_Saisie_Attaquant[0, 46];
-            TextBox_ObjS_101_Att_R3.Text = Mem_Saisie_Attaquant[1, 46];
-            TextBox_ObjS_101_Att_R4.Text = Mem_Saisie_Attaquant[2, 46];
-            TextBox_ObjS_101_Att_R5.Text = Mem_Saisie_Attaquant[3, 46];
+            n = 0;
+            TextBox_ObjS_101_Att_R1.Text = Mem_Saisie_Attaquant[n, 46]; n++;
+            TextBox_ObjS_101_Att_R2.Text = Mem_Saisie_Attaquant[n, 46]; n++;
+            TextBox_ObjS_101_Att_R3.Text = Mem_Saisie_Attaquant[n, 46]; n++;
+            TextBox_ObjS_101_Att_R4.Text = Mem_Saisie_Attaquant[n, 46]; n++;
+            TextBox_ObjS_101_Att_R5.Text = Mem_Saisie_Attaquant[n, 46];
             /// OBJECTIF SECONDAIRE 102 : TRESORS DES EONS
-            TextBox_ObjS_102_Att_R1.Text = Mem_Saisie_Attaquant[0, 47];
-            TextBox_ObjS_102_Att_R2.Text = Mem_Saisie_Attaquant[1, 47];
-            TextBox_ObjS_102_Att_R3.Text = Mem_Saisie_Attaquant[2, 47];
-            TextBox_ObjS_102_Att_R4.Text = Mem_Saisie_Attaquant[3, 47];
-            TextBox_ObjS_102_Att_R5.Text = Mem_Saisie_Attaquant[4, 47];
+            n = 0;
+            TextBox_ObjS_102_Att_R1.Text = Mem_Saisie_Attaquant[n, 47]; n++;
+            TextBox_ObjS_102_Att_R2.Text = Mem_Saisie_Attaquant[n, 47]; n++;
+            TextBox_ObjS_102_Att_R3.Text = Mem_Saisie_Attaquant[n, 47]; n++;
+            TextBox_ObjS_102_Att_R4.Text = Mem_Saisie_Attaquant[n, 47]; n++;
+            TextBox_ObjS_102_Att_R5.Text = Mem_Saisie_Attaquant[n, 47];
             /// OBJECTIF SECONDAIRE 103 : MACHINES ANTIQUES
-            TextBox_ObjS_103_Att_R2.Text = Mem_Saisie_Attaquant[0, 48];
-            TextBox_ObjS_103_Att_R3.Text = Mem_Saisie_Attaquant[1, 48];
-            TextBox_ObjS_103_Att_R4.Text = Mem_Saisie_Attaquant[2, 48];
-            TextBox_ObjS_103_Att_R5.Text = Mem_Saisie_Attaquant[3, 48];
+            n = 0;
+            TextBox_ObjS_103_Att_R2.Text = Mem_Saisie_Attaquant[n, 48]; n++;
+            TextBox_ObjS_103_Att_R3.Text = Mem_Saisie_Attaquant[n, 48]; n++;
+            TextBox_ObjS_103_Att_R4.Text = Mem_Saisie_Attaquant[n, 48]; n++;
+            TextBox_ObjS_103_Att_R5.Text = Mem_Saisie_Attaquant[n, 48];
             #endregion
             #region Transfert_Donnees_To_Text_Attaquant_Codex_Space marine
             /// OBJECTIF SECONDAIRE 110 : GUERRE CODEX
@@ -5874,7 +6064,8 @@ namespace CPV9
             n = 0;
             CheckBox_Objectif_Sec_Att_142_PC_Etat = Mem_Saisie_Attaquant[n, 81]; n++;
             CheckBox_Objectif_Sec_Att_142_SG_Etat = Mem_Saisie_Attaquant[n, 81]; n++;
-            TextBox_ObjS_142_Att_Fig.Text = Mem_Saisie_Attaquant[n, 81];
+            TextBox_ObjS_142_Att_Fig.Text = Mem_Saisie_Attaquant[n, 81]; n++;
+            TextBox_ObjS_142_Att_Perso.Text = Mem_Saisie_Attaquant[n, 81];
             if (CheckBox_Objectif_Sec_Att_142_PC_Etat == "true") { CheckBox_Objectif_Sec_Att_142_PC.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Att_142_SG_Etat == "true") { CheckBox_Objectif_Sec_Att_142_SG.IsChecked = true; };
             #endregion
@@ -6774,23 +6965,29 @@ namespace CPV9
             #region Transfert_Donnees_To_Text_Defenseur_Codex
             #region Transfert_Donnees_To_Text_Defenseur_Codex_Necron
             /// OBJECTIF CODEX NECRON 100 : CODE DE COMBAT
-            TextBox_ObjS_100_Def.Text = Mem_Saisie_Defenseur[0, 45];
+            n = 0;
+            TextBox_ObjS_100_Def_Tir.Text = Mem_Saisie_Defenseur[n, 45]; n++;
+            TextBox_ObjS_100_Def_Cac.Text = Mem_Saisie_Defenseur[n, 45];
             /// OBJECTIF SECONDAIRE 101 : ELIMINEZ LA VERMINE
-            TextBox_ObjS_101_Def_R2.Text = Mem_Saisie_Defenseur[0, 46];
-            TextBox_ObjS_101_Def_R3.Text = Mem_Saisie_Defenseur[1, 46];
-            TextBox_ObjS_101_Def_R4.Text = Mem_Saisie_Defenseur[2, 46];
-            TextBox_ObjS_101_Def_R5.Text = Mem_Saisie_Defenseur[3, 46];
+            n = 0;
+            TextBox_ObjS_101_Def_R1.Text = Mem_Saisie_Defenseur[n, 46]; n++;
+            TextBox_ObjS_101_Def_R2.Text = Mem_Saisie_Defenseur[n, 46]; n++;
+            TextBox_ObjS_101_Def_R3.Text = Mem_Saisie_Defenseur[n, 46]; n++;
+            TextBox_ObjS_101_Def_R4.Text = Mem_Saisie_Defenseur[n, 46]; n++;
+            TextBox_ObjS_101_Def_R5.Text = Mem_Saisie_Defenseur[n, 46];
             /// OBJECTIF SECONDAIRE 102 : TRESORS DES EONS
-            TextBox_ObjS_102_Def_R1.Text = Mem_Saisie_Defenseur[0, 47];
-            TextBox_ObjS_102_Def_R2.Text = Mem_Saisie_Defenseur[1, 47];
-            TextBox_ObjS_102_Def_R3.Text = Mem_Saisie_Defenseur[2, 47];
-            TextBox_ObjS_102_Def_R4.Text = Mem_Saisie_Defenseur[3, 47];
-            TextBox_ObjS_102_Def_R5.Text = Mem_Saisie_Defenseur[4, 47];
+            n = 0;
+            TextBox_ObjS_102_Def_R1.Text = Mem_Saisie_Defenseur[n, 47]; n++;
+            TextBox_ObjS_102_Def_R2.Text = Mem_Saisie_Defenseur[n, 47]; n++;
+            TextBox_ObjS_102_Def_R3.Text = Mem_Saisie_Defenseur[n, 47]; n++;
+            TextBox_ObjS_102_Def_R4.Text = Mem_Saisie_Defenseur[n, 47]; n++;
+            TextBox_ObjS_102_Def_R5.Text = Mem_Saisie_Defenseur[n, 47];
             /// OBJECTIF SECONDAIRE 103 : MACHINES ANTIQUES
-            TextBox_ObjS_103_Def_R2.Text = Mem_Saisie_Defenseur[0, 48];
-            TextBox_ObjS_103_Def_R3.Text = Mem_Saisie_Defenseur[1, 48];
-            TextBox_ObjS_103_Def_R4.Text = Mem_Saisie_Defenseur[2, 48];
-            TextBox_ObjS_103_Def_R5.Text = Mem_Saisie_Defenseur[3, 48];
+            n = 0;
+            TextBox_ObjS_103_Def_R2.Text = Mem_Saisie_Defenseur[n, 48]; n++;
+            TextBox_ObjS_103_Def_R3.Text = Mem_Saisie_Defenseur[n, 48]; n++;
+            TextBox_ObjS_103_Def_R4.Text = Mem_Saisie_Defenseur[n, 48]; n++;
+            TextBox_ObjS_103_Def_R5.Text = Mem_Saisie_Defenseur[n, 48];
             #endregion
             #region Transfert_Donnees_To_Text_Defenseur_Codex_Space marine
             /// OBJECTIF SECONDAIRE 110 : GUERRE CODEX
@@ -7469,7 +7666,8 @@ namespace CPV9
             n = 0;
             CheckBox_Objectif_Sec_Def_142_PC_Etat = Mem_Saisie_Defenseur[n, 81]; n++;
             CheckBox_Objectif_Sec_Def_142_SG_Etat = Mem_Saisie_Defenseur[n, 81]; n++;
-            TextBox_ObjS_142_Def_Fig.Text = Mem_Saisie_Defenseur[n, 81];
+            TextBox_ObjS_142_Def_Fig.Text = Mem_Saisie_Defenseur[n, 81]; n++;
+            TextBox_ObjS_142_Def_Perso.Text = Mem_Saisie_Defenseur[n, 81];
             if (CheckBox_Objectif_Sec_Def_142_PC_Etat == "true") { CheckBox_Objectif_Sec_Def_142_PC.IsChecked = true; };
             if (CheckBox_Objectif_Sec_Def_142_SG_Etat == "true") { CheckBox_Objectif_Sec_Def_142_SG.IsChecked = true; };
             #endregion
@@ -7806,10 +8004,10 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 17 || Choix_ObjS_Attaquant[1] == 17 || Choix_ObjS_Attaquant[2] == 17) { Adaptation_OBJS_17_Att(); };
             if (Choix_ObjS_Attaquant[0] == 19 || Choix_ObjS_Attaquant[1] == 19 || Choix_ObjS_Attaquant[2] == 19) { Adaptation_OBJS_19_Att(); };
 
-            if (Choix_ObjS_Attaquant[0] == 100 || Choix_ObjS_Attaquant[1] == 100 || Choix_ObjS_Attaquant[2] == 100) { StackPanel_ObjS_100_Att.Visibility = Visibility.Visible; oeil_OBJS_100_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 101 || Choix_ObjS_Attaquant[1] == 101 || Choix_ObjS_Attaquant[2] == 101) { StackPanel_ObjS_101_Att.Visibility = Visibility.Visible; oeil_OBJS_101_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 102 || Choix_ObjS_Attaquant[1] == 102 || Choix_ObjS_Attaquant[2] == 102) { StackPanel_ObjS_102_Att.Visibility = Visibility.Visible; oeil_OBJS_102_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 103 || Choix_ObjS_Attaquant[1] == 103 || Choix_ObjS_Attaquant[2] == 103) { StackPanel_ObjS_103_Att.Visibility = Visibility.Visible; oeil_OBJS_103_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 100 || Choix_ObjS_Attaquant[1] == 100 || Choix_ObjS_Attaquant[2] == 100) { Adaptation_OBJC_100_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 101 || Choix_ObjS_Attaquant[1] == 101 || Choix_ObjS_Attaquant[2] == 101) { Adaptation_OBJC_101_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 102 || Choix_ObjS_Attaquant[1] == 102 || Choix_ObjS_Attaquant[2] == 102) { Adaptation_OBJC_102_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 103 || Choix_ObjS_Attaquant[1] == 103 || Choix_ObjS_Attaquant[2] == 103) { Adaptation_OBJC_103_Att(); };
             if (Choix_ObjS_Attaquant[0] == 110 || Choix_ObjS_Attaquant[1] == 110 || Choix_ObjS_Attaquant[2] == 110) { Adaptation_OBJC_110_Att(); };
             if (Choix_ObjS_Attaquant[0] == 111 || Choix_ObjS_Attaquant[1] == 111 || Choix_ObjS_Attaquant[2] == 111) { Adaptation_OBJC_111_Att(); };
             if (Choix_ObjS_Attaquant[0] == 112 || Choix_ObjS_Attaquant[1] == 112 || Choix_ObjS_Attaquant[2] == 112) { Adaptation_OBJC_112_Att(); };
@@ -7833,9 +8031,9 @@ namespace CPV9
             if (Choix_ObjS_Attaquant[0] == 137 || Choix_ObjS_Attaquant[1] == 137 || Choix_ObjS_Attaquant[2] == 137) { StackPanel_ObjS_137_Att.Visibility = Visibility.Visible; oeil_OBJS_137_Att(); };
             if (Choix_ObjS_Attaquant[0] == 138 || Choix_ObjS_Attaquant[1] == 138 || Choix_ObjS_Attaquant[2] == 138) { StackPanel_ObjS_138_Att.Visibility = Visibility.Visible; oeil_OBJS_138_Att(); };
             if (Choix_ObjS_Attaquant[0] == 139 || Choix_ObjS_Attaquant[1] == 139 || Choix_ObjS_Attaquant[2] == 139) { StackPanel_ObjS_139_Att.Visibility = Visibility.Visible; oeil_OBJS_139_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 140 || Choix_ObjS_Attaquant[1] == 140 || Choix_ObjS_Attaquant[2] == 140) { StackPanel_ObjS_140_Att.Visibility = Visibility.Visible; oeil_OBJS_140_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 141 || Choix_ObjS_Attaquant[1] == 141 || Choix_ObjS_Attaquant[2] == 141) { StackPanel_ObjS_141_Att.Visibility = Visibility.Visible; oeil_OBJS_141_Att(); };
-            if (Choix_ObjS_Attaquant[0] == 142 || Choix_ObjS_Attaquant[1] == 142 || Choix_ObjS_Attaquant[2] == 142) { StackPanel_ObjS_142_Att.Visibility = Visibility.Visible; oeil_OBJS_142_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 140 || Choix_ObjS_Attaquant[1] == 140 || Choix_ObjS_Attaquant[2] == 140) { Adaptation_OBJC_140_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 141 || Choix_ObjS_Attaquant[1] == 141 || Choix_ObjS_Attaquant[2] == 141) { Adaptation_OBJC_141_Att(); };
+            if (Choix_ObjS_Attaquant[0] == 142 || Choix_ObjS_Attaquant[1] == 142 || Choix_ObjS_Attaquant[2] == 142) { Adaptation_OBJC_142_Att(); };
             if (Choix_ObjS_Attaquant[0] == 143 || Choix_ObjS_Attaquant[1] == 143 || Choix_ObjS_Attaquant[2] == 143) { Adaptation_OBJC_143_Att(); };
             if (Choix_ObjS_Attaquant[0] == 144 || Choix_ObjS_Attaquant[1] == 144 || Choix_ObjS_Attaquant[2] == 144) { Adaptation_OBJC_144_Att(); };
             if (Choix_ObjS_Attaquant[0] == 145 || Choix_ObjS_Attaquant[1] == 145 || Choix_ObjS_Attaquant[2] == 145) { Adaptation_OBJC_145_Att(); };
@@ -7933,10 +8131,10 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 17 || Choix_ObjS_Defenseur[1] == 17 || Choix_ObjS_Defenseur[2] == 17) { Adaptation_OBJS_17_Def(); };
             if (Choix_ObjS_Defenseur[0] == 19 || Choix_ObjS_Defenseur[1] == 19 || Choix_ObjS_Defenseur[2] == 19) { Adaptation_OBJS_19_Def(); };
 
-            if (Choix_ObjS_Defenseur[0] == 100 || Choix_ObjS_Defenseur[1] == 100 || Choix_ObjS_Defenseur[2] == 100) { StackPanel_ObjS_100_Def.Visibility = Visibility.Visible; oeil_OBJS_100_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 101 || Choix_ObjS_Defenseur[1] == 101 || Choix_ObjS_Defenseur[2] == 101) { StackPanel_ObjS_101_Def.Visibility = Visibility.Visible; oeil_OBJS_101_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 102 || Choix_ObjS_Defenseur[1] == 102 || Choix_ObjS_Defenseur[2] == 102) { StackPanel_ObjS_102_Def.Visibility = Visibility.Visible; oeil_OBJS_102_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 103 || Choix_ObjS_Defenseur[1] == 103 || Choix_ObjS_Defenseur[2] == 103) { StackPanel_ObjS_103_Def.Visibility = Visibility.Visible; oeil_OBJS_103_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 100 || Choix_ObjS_Defenseur[1] == 100 || Choix_ObjS_Defenseur[2] == 100) { Adaptation_OBJC_100_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 101 || Choix_ObjS_Defenseur[1] == 101 || Choix_ObjS_Defenseur[2] == 101) { Adaptation_OBJC_101_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 102 || Choix_ObjS_Defenseur[1] == 102 || Choix_ObjS_Defenseur[2] == 102) { Adaptation_OBJC_102_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 103 || Choix_ObjS_Defenseur[1] == 103 || Choix_ObjS_Defenseur[2] == 103) { Adaptation_OBJC_103_Def(); };
             if (Choix_ObjS_Defenseur[0] == 110 || Choix_ObjS_Defenseur[1] == 110 || Choix_ObjS_Defenseur[2] == 110) { Adaptation_OBJC_110_Def(); };
             if (Choix_ObjS_Defenseur[0] == 111 || Choix_ObjS_Defenseur[1] == 111 || Choix_ObjS_Defenseur[2] == 111) { Adaptation_OBJC_111_Def(); };
             if (Choix_ObjS_Defenseur[0] == 112 || Choix_ObjS_Defenseur[1] == 112 || Choix_ObjS_Defenseur[2] == 112) { Adaptation_OBJC_112_Def(); };
@@ -7960,9 +8158,9 @@ namespace CPV9
             if (Choix_ObjS_Defenseur[0] == 137 || Choix_ObjS_Defenseur[1] == 137 || Choix_ObjS_Defenseur[2] == 137) { StackPanel_ObjS_137_Def.Visibility = Visibility.Visible; oeil_OBJS_137_Def(); };
             if (Choix_ObjS_Defenseur[0] == 138 || Choix_ObjS_Defenseur[1] == 138 || Choix_ObjS_Defenseur[2] == 138) { StackPanel_ObjS_138_Def.Visibility = Visibility.Visible; oeil_OBJS_138_Def(); };
             if (Choix_ObjS_Defenseur[0] == 139 || Choix_ObjS_Defenseur[1] == 139 || Choix_ObjS_Defenseur[2] == 139) { StackPanel_ObjS_139_Def.Visibility = Visibility.Visible; oeil_OBJS_139_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 140 || Choix_ObjS_Defenseur[1] == 140 || Choix_ObjS_Defenseur[2] == 140) { StackPanel_ObjS_140_Def.Visibility = Visibility.Visible; oeil_OBJS_140_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 141 || Choix_ObjS_Defenseur[1] == 141 || Choix_ObjS_Defenseur[2] == 141) { StackPanel_ObjS_141_Def.Visibility = Visibility.Visible; oeil_OBJS_141_Def(); };
-            if (Choix_ObjS_Defenseur[0] == 142 || Choix_ObjS_Defenseur[1] == 142 || Choix_ObjS_Defenseur[2] == 142) { StackPanel_ObjS_142_Def.Visibility = Visibility.Visible; oeil_OBJS_142_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 140 || Choix_ObjS_Defenseur[1] == 140 || Choix_ObjS_Defenseur[2] == 140) { Adaptation_OBJC_140_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 141 || Choix_ObjS_Defenseur[1] == 141 || Choix_ObjS_Defenseur[2] == 141) { Adaptation_OBJC_141_Def(); };
+            if (Choix_ObjS_Defenseur[0] == 142 || Choix_ObjS_Defenseur[1] == 142 || Choix_ObjS_Defenseur[2] == 142) { Adaptation_OBJC_142_Def(); };
             if (Choix_ObjS_Defenseur[0] == 143 || Choix_ObjS_Defenseur[1] == 143 || Choix_ObjS_Defenseur[2] == 143) { Adaptation_OBJC_143_Def(); };
             if (Choix_ObjS_Defenseur[0] == 144 || Choix_ObjS_Defenseur[1] == 144 || Choix_ObjS_Defenseur[2] == 144) { Adaptation_OBJC_144_Def(); };
             if (Choix_ObjS_Defenseur[0] == 145 || Choix_ObjS_Defenseur[1] == 145 || Choix_ObjS_Defenseur[2] == 145) { Adaptation_OBJC_145_Def(); };
@@ -10005,35 +10203,61 @@ namespace CPV9
             {
                 StackPanel_OBJSec_Att.Visibility = Visibility.Visible;
                 Select_ObjS_Attaquant(Select_Objectif);
-                if (Select_Objectif >= 1 && Select_Objectif <= 3 || Select_Objectif == 110 || Select_Objectif == 113 || Select_Objectif == 128 || Select_Objectif == 133 || Select_Objectif == 137 || Select_Objectif == 142 || Select_Objectif == 143)
-                {
-                    StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 5 && Select_Objectif <= 7 || Select_Objectif == 100 || Select_Objectif == 112 || Select_Objectif == 114 || Select_Objectif == 115 || Select_Objectif == 125 || Select_Objectif == 129 || Select_Objectif == 132 || Select_Objectif == 136 || Select_Objectif == 140 || Select_Objectif == 144)
-                {
-                    StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 9 && Select_Objectif <= 11 || Select_Objectif == 101 || Select_Objectif == 102 || Select_Objectif == 111 || Select_Objectif == 116 || Select_Objectif == 126 || Select_Objectif == 130 || Select_Objectif == 131 || Select_Objectif == 135 || Select_Objectif == 139)
-                {
-                    StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18 || Select_Objectif == 103 || Select_Objectif == 127 || Select_Objectif == 134 || Select_Objectif == 138 || Select_Objectif == 141)
-                {
-                    StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19 || Select_Objectif == 145)
-                {
-                    StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden;
-                }
+
+                if (   Select_Objectif >= 1 && Select_Objectif <= 3
+                    || Select_Objectif == 100 && CA == "Nephilim"
+                    || Select_Objectif == 110
+                    || Select_Objectif == 113
+                    || Select_Objectif == 128
+                    || Select_Objectif == 133
+                    || Select_Objectif == 137
+                    || Select_Objectif == 142
+                    || Select_Objectif == 143) { StackPanel_Obj_Sec_Att_1.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 5 && Select_Objectif <= 7
+                    || Select_Objectif == 100 && CA == "Nachmund"
+                    || Select_Objectif == 102 && CA == "Nephilim"
+                    || Select_Objectif == 112
+                    || Select_Objectif == 114
+                    || Select_Objectif == 115
+                    || Select_Objectif == 125
+                    || Select_Objectif == 129
+                    || Select_Objectif == 132
+                    || Select_Objectif == 136
+                    || Select_Objectif == 140
+                    || Select_Objectif == 144) { StackPanel_Obj_Sec_Att_2.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 9 && Select_Objectif <= 11
+                    || Select_Objectif == 101
+                    || Select_Objectif == 102 && CA == "Nachmund"
+                    || Select_Objectif == 111
+                    || Select_Objectif == 116
+                    || Select_Objectif == 126
+                    || Select_Objectif == 130
+                    || Select_Objectif == 131
+                    || Select_Objectif == 135
+                    || Select_Objectif == 139) { StackPanel_Obj_Sec_Att_3.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 12 && Select_Objectif <= 14
+                    || Select_Objectif == 18
+                    || Select_Objectif == 103
+                    || Select_Objectif == 127
+                    || Select_Objectif == 134
+                    || Select_Objectif == 138
+                    || Select_Objectif == 141) { StackPanel_Obj_Sec_Att_4.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 15 && Select_Objectif <= 17
+                    || Select_Objectif == 19
+                    || Select_Objectif == 145) { StackPanel_Obj_Sec_Att_5.Visibility = Visibility.Hidden; };
 
                 if (CA == "Nachmund")
                 {
                     if (Select_Objectif >= 100 && Select_Objectif <= 103)
                     {
                         Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Hidden;
-                        Button_Obj_Codex_Necron_101_Att_1.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Necron_101_Att.Visibility = Visibility.Hidden;
                         Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Hidden;
-                        Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Hidden;
+                        Button_Obj_Codex_Necron_103_Att.Visibility = Visibility.Hidden;
                     }
                     if (Select_Objectif >= 110 && Select_Objectif <= 116 || Select_Objectif >= 132 && Select_Objectif <= 135)
                     {
@@ -10095,34 +10319,60 @@ namespace CPV9
             {
                 StackPanel_OBJSec_Def.Visibility = Visibility.Visible;
                 Select_ObjS_Defenseur(Select_Objectif);
-                if (Select_Objectif >= 1 && Select_Objectif <= 3 || Select_Objectif == 110 || Select_Objectif == 113 || Select_Objectif == 128 || Select_Objectif == 133 || Select_Objectif == 137 || Select_Objectif == 142 || Select_Objectif == 143)
-                {
-                    StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 5 && Select_Objectif <= 7 || Select_Objectif == 100 || Select_Objectif == 112 || Select_Objectif == 114 || Select_Objectif == 115 || Select_Objectif == 125 || Select_Objectif == 129 || Select_Objectif == 132 || Select_Objectif == 136 || Select_Objectif == 140 || Select_Objectif == 144)
-                {
-                    StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 9 && Select_Objectif <= 11 || Select_Objectif == 101 || Select_Objectif == 102 || Select_Objectif == 111 || Select_Objectif == 116 || Select_Objectif == 126 || Select_Objectif == 130 || Select_Objectif == 131 || Select_Objectif == 135 || Select_Objectif == 139)
-                {
-                    StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 12 && Select_Objectif <= 14 || Select_Objectif == 18 || Select_Objectif == 103 || Select_Objectif == 127 || Select_Objectif == 134 || Select_Objectif == 138 || Select_Objectif == 141)
-                {
-                    StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden;
-                }
-                if (Select_Objectif >= 15 && Select_Objectif <= 17 || Select_Objectif == 19 || Select_Objectif == 145)
-                {
-                    StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden;
-                }
+
+                if (   Select_Objectif >= 1 && Select_Objectif <= 3
+                    || Select_Objectif == 100 && CA == "Nephilim"
+                    || Select_Objectif == 110
+                    || Select_Objectif == 113
+                    || Select_Objectif == 128
+                    || Select_Objectif == 133
+                    || Select_Objectif == 137
+                    || Select_Objectif == 142
+                    || Select_Objectif == 143) { StackPanel_Obj_Sec_Def_1.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 5 && Select_Objectif <= 7
+                    || Select_Objectif == 100 && CA == "Nachmund"
+                    || Select_Objectif == 102 && CA == "Nephilim"
+                    || Select_Objectif == 112
+                    || Select_Objectif == 114
+                    || Select_Objectif == 115
+                    || Select_Objectif == 125
+                    || Select_Objectif == 129
+                    || Select_Objectif == 132
+                    || Select_Objectif == 136
+                    || Select_Objectif == 140
+                    || Select_Objectif == 144) { StackPanel_Obj_Sec_Def_2.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 9 && Select_Objectif <= 11
+                    || Select_Objectif == 101
+                    || Select_Objectif == 102 && CA == "Nachmund"
+                    || Select_Objectif == 111
+                    || Select_Objectif == 116
+                    || Select_Objectif == 126
+                    || Select_Objectif == 130
+                    || Select_Objectif == 131
+                    || Select_Objectif == 135
+                    || Select_Objectif == 139) { StackPanel_Obj_Sec_Def_3.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 12 && Select_Objectif <= 14
+                    || Select_Objectif == 18
+                    || Select_Objectif == 103
+                    || Select_Objectif == 127
+                    || Select_Objectif == 134
+                    || Select_Objectif == 138
+                    || Select_Objectif == 141) { StackPanel_Obj_Sec_Def_4.Visibility = Visibility.Hidden; };
+
+                if (   Select_Objectif >= 15 && Select_Objectif <= 17
+                    || Select_Objectif == 19
+                    || Select_Objectif == 145) { StackPanel_Obj_Sec_Def_5.Visibility = Visibility.Hidden; };
                 if (CA == "Nachmund")
                 {                
                     if (Select_Objectif >= 100 && Select_Objectif <= 103)
                 {
                     Button_Obj_Codex_Necron_100_Def_1.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Necron_101_Def_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_101_Def.Visibility = Visibility.Hidden;
                     Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Hidden;
-                    Button_Obj_Codex_Necron_103_Def_1.Visibility = Visibility.Hidden;
+                    Button_Obj_Codex_Necron_103_Def.Visibility = Visibility.Hidden;
                 }
                     if (Select_Objectif >= 110 && Select_Objectif <= 116 || Select_Objectif >= 132 && Select_Objectif <= 135)
                 {
@@ -10592,37 +10842,37 @@ namespace CPV9
         #region OBJECTIF CODEX
         #region necron
         #region Objectif Codex Necron Attaquant
-        private void Button_Obj_Codex_Necron_100_Att_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_100_Att_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(100, "Att");
         }
-        private void Button_Obj_Codex_Necron_101_Att_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_101_Att_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(101, "Att");
         }
-        private void Button_Obj_Codex_Necron_102_Att_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_102_Att_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(102, "Att");
         }
-        private void Button_Obj_Codex_Necron_103_Att_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_103_Att_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(103, "Att");
         }
         #endregion
         #region Objectif Codex Necron Defenseur
-        private void Button_Obj_Codex_Necron_100_Def_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_100_Def_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(100, "Def");
         }
-        private void Button_Obj_Codex_Necron_101_Def_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_101_Def_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(101, "Def");
         }
-        private void Button_Obj_Codex_Necron_102_Def_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_102_Def_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(102, "Def");
         }
-        private void Button_Obj_Codex_Necron_103_Def_1_Click(object sender, RoutedEventArgs e)
+        private void Button_Obj_Codex_Necron_103_Def_Click(object sender, RoutedEventArgs e)
         {
             Affich_Descript_OBJ(103, "Def");
         }
@@ -11720,7 +11970,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 100
             Classe_Score_OBJC_Necrons_100 OBJECTIF_Codex_100_Att;
-            OBJECTIF_Codex_100_Att = new Classe_Score_OBJC_Necrons_100(TextBox_ObjS_100_Att.Text);
+            OBJECTIF_Codex_100_Att = new Classe_Score_OBJC_Necrons_100(TextBox_ObjS_100_Att_Tir.Text, TextBox_ObjS_100_Att_Cac.Text);
             Scores_Attaquant[45] = OBJECTIF_Codex_100_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_100_Att.Score_ObjS) >= 15)
             {
@@ -11731,7 +11981,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 101
             Classe_Score_OBJC_Necrons_101 OBJECTIF_Codex_101_Att;
-            OBJECTIF_Codex_101_Att = new Classe_Score_OBJC_Necrons_101(TextBox_ObjS_101_Att_R2.Text, TextBox_ObjS_101_Att_R3.Text, TextBox_ObjS_101_Att_R4.Text, TextBox_ObjS_101_Att_R5.Text);
+            OBJECTIF_Codex_101_Att = new Classe_Score_OBJC_Necrons_101(TextBox_ObjS_101_Att_R1.Text, TextBox_ObjS_101_Att_R2.Text, TextBox_ObjS_101_Att_R3.Text, TextBox_ObjS_101_Att_R4.Text, TextBox_ObjS_101_Att_R5.Text, CA);
             Scores_Attaquant[46] = OBJECTIF_Codex_101_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_101_Att.Score_ObjS) >= 15)
             {
@@ -11753,7 +12003,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 103
             Classe_Score_OBJC_Necrons_103 OBJECTIF_Codex_103_Att;
-            OBJECTIF_Codex_103_Att = new Classe_Score_OBJC_Necrons_103(TextBox_ObjS_103_Att_R2.Text, TextBox_ObjS_103_Att_R3.Text, TextBox_ObjS_103_Att_R4.Text, TextBox_ObjS_103_Att_R5.Text);
+            OBJECTIF_Codex_103_Att = new Classe_Score_OBJC_Necrons_103(TextBox_ObjS_103_Att_R2.Text, TextBox_ObjS_103_Att_R3.Text, TextBox_ObjS_103_Att_R4.Text, TextBox_ObjS_103_Att_R5.Text, CA);
             Scores_Attaquant[48] = OBJECTIF_Codex_103_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_103_Att.Score_ObjS) >= 15)
             {
@@ -12068,7 +12318,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 142
             Classe_Score_OBJC_Tyranids_142 OBJECTIF_Codex_142_Att;
-            OBJECTIF_Codex_142_Att = new Classe_Score_OBJC_Tyranids_142(CheckBox_Objectif_Sec_Att_142_PC_Etat, CheckBox_Objectif_Sec_Att_142_SG_Etat, TextBox_ObjS_142_Att_Fig.Text);
+            OBJECTIF_Codex_142_Att = new Classe_Score_OBJC_Tyranids_142(CheckBox_Objectif_Sec_Att_142_PC_Etat, CheckBox_Objectif_Sec_Att_142_SG_Etat, TextBox_ObjS_142_Att_Fig.Text, TextBox_ObjS_142_Att_Perso.Text, CA);
             Scores_Attaquant[81] = OBJECTIF_Codex_142_Att.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_142_Att.Score_ObjS) >= 15)
             {
@@ -12869,7 +13119,7 @@ namespace CPV9
             #region Calcul_Objectif_Codex_Necrons_100_103
             ///CALCUL SCORE OBJECTIF MISSION 100
             Classe_Score_OBJC_Necrons_100 OBJECTIF_Codex_100_Def;
-            OBJECTIF_Codex_100_Def = new Classe_Score_OBJC_Necrons_100(TextBox_ObjS_100_Def.Text);
+            OBJECTIF_Codex_100_Def = new Classe_Score_OBJC_Necrons_100(TextBox_ObjS_100_Def_Tir.Text, TextBox_ObjS_100_Def_Cac.Text);
             Scores_Defenseur[45] = OBJECTIF_Codex_100_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_100_Def.Score_ObjS) >= 15)
             {
@@ -12880,7 +13130,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 101
             Classe_Score_OBJC_Necrons_101 OBJECTIF_Codex_101_Def;
-            OBJECTIF_Codex_101_Def = new Classe_Score_OBJC_Necrons_101(TextBox_ObjS_101_Def_R2.Text, TextBox_ObjS_101_Def_R3.Text, TextBox_ObjS_101_Def_R4.Text, TextBox_ObjS_101_Def_R5.Text);
+            OBJECTIF_Codex_101_Def = new Classe_Score_OBJC_Necrons_101(TextBox_ObjS_101_Def_R1.Text, TextBox_ObjS_101_Def_R2.Text, TextBox_ObjS_101_Def_R3.Text, TextBox_ObjS_101_Def_R4.Text, TextBox_ObjS_101_Def_R5.Text, CA);
             Scores_Defenseur[46] = OBJECTIF_Codex_101_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_101_Def.Score_ObjS) >= 15)
             {
@@ -12902,7 +13152,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 103
             Classe_Score_OBJC_Necrons_103 OBJECTIF_Codex_103_Def;
-            OBJECTIF_Codex_103_Def = new Classe_Score_OBJC_Necrons_103(TextBox_ObjS_103_Def_R2.Text, TextBox_ObjS_103_Def_R3.Text, TextBox_ObjS_103_Def_R4.Text, TextBox_ObjS_103_Def_R5.Text);
+            OBJECTIF_Codex_103_Def = new Classe_Score_OBJC_Necrons_103(TextBox_ObjS_103_Def_R2.Text, TextBox_ObjS_103_Def_R3.Text, TextBox_ObjS_103_Def_R4.Text, TextBox_ObjS_103_Def_R5.Text, CA);
             Scores_Defenseur[48] = OBJECTIF_Codex_103_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_103_Def.Score_ObjS) >= 15)
             {
@@ -13217,7 +13467,7 @@ namespace CPV9
 
             ///CALCUL SCORE OBJECTIF MISSION 142
             Classe_Score_OBJC_Tyranids_142 OBJECTIF_Codex_142_Def;
-            OBJECTIF_Codex_142_Def = new Classe_Score_OBJC_Tyranids_142(CheckBox_Objectif_Sec_Def_142_PC_Etat, CheckBox_Objectif_Sec_Def_142_SG_Etat, TextBox_ObjS_142_Def_Fig.Text);
+            OBJECTIF_Codex_142_Def = new Classe_Score_OBJC_Tyranids_142(CheckBox_Objectif_Sec_Def_142_PC_Etat, CheckBox_Objectif_Sec_Def_142_SG_Etat, TextBox_ObjS_142_Def_Fig.Text, TextBox_ObjS_142_Def_Perso.Text, CA);
             Scores_Defenseur[81] = OBJECTIF_Codex_142_Def.Scores_Joueur;
             if (Convert.ToInt32(OBJECTIF_Codex_142_Def.Score_ObjS) >= 15)
             {
@@ -19827,7 +20077,15 @@ namespace CPV9
             if (Pages >= 11) 
                 { 
                     StackPanel_Neo_Scorboard.Margin = new Thickness(0,30,0,0);
-                    Button_Pages_Retour.Visibility = Visibility.Collapsed;
+                if (CA == "Nachmund")
+                {
+                    Image_FDE_CA_Nephilim.Visibility = Visibility.Collapsed;
+                }
+                if (CA == "Nephilim")
+                {
+                    Image_FDE_CA_Nachmund.Visibility = Visibility.Collapsed;
+                }
+                Button_Pages_Retour.Visibility = Visibility.Collapsed;
             }
         }
         private void Affichage_Fond()
@@ -20128,6 +20386,10 @@ namespace CPV9
 
             }///OBJS 3 - TUEURS DE TITANS
 
+            Button_Obj_Codex_Necron_100_Att_2.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_100_Att_2.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_100_Att_2.FontSize = x;
+
             Button_Obj_Codex_SM_110_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_SM_110_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_SM_110_Att.FontSize = x;
@@ -20177,9 +20439,13 @@ namespace CPV9
                 Button_Obj_Sec_Att_7.Height = 4 * Rapport_Taille_Y;
                 Button_Obj_Sec_Att_7.FontSize = x;
             }///OBJS 7 - JUSQU'AU DERNIER
+
             Button_Obj_Codex_Necron_100_Att_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_100_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Att_1.FontSize = x;
+            Button_Obj_Codex_Necron_102_Att_2.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_102_Att_2.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_102_Att_2.FontSize = x;
 
             Button_Obj_Codex_SM_112_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_SM_112_Att.Height = 4 * Rapport_Taille_Y;
@@ -20234,9 +20500,9 @@ namespace CPV9
                 Button_Obj_Sec_Att_11.Height = 4 * Rapport_Taille_Y;
                 Button_Obj_Sec_Att_11.FontSize = x;
             }///OBJS 11 - EMPRISE
-            Button_Obj_Codex_Necron_101_Att_1.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Necron_101_Att_1.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Necron_101_Att_1.FontSize = x;
+            Button_Obj_Codex_Necron_101_Att.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_101_Att.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_101_Att.FontSize = x;
             Button_Obj_Codex_Necron_102_Att_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_102_Att_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_102_Att_1.FontSize = x;
@@ -20289,9 +20555,9 @@ namespace CPV9
             Button_Obj_Sec_Att_18.Width = 14 * Rapport_Taille_X;
             Button_Obj_Sec_Att_18.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Sec_Att_18.FontSize = x;
-            Button_Obj_Codex_Necron_103_Att_1.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Necron_103_Att_1.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Necron_103_Att_1.FontSize = x;
+            Button_Obj_Codex_Necron_103_Att.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_103_Att.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_103_Att.FontSize = x;
             Button_Obj_Codex_DG_127_Att.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_127_Att.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_127_Att.FontSize = x;
@@ -20374,29 +20640,37 @@ namespace CPV9
         private void Affiche_Bouton_Codex_Necrons_Att()
         {
             Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_101_Att_1.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_100_Att_2.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_101_Att.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_102_Att_2.Visibility = Visibility.Collapsed;           
+            Button_Obj_Codex_Necron_103_Att.Visibility = Visibility.Collapsed;
             if (Choix_ObjS_Attaquant[0] == 0 & Choix_ObjS_Attaquant[1] == 0 & Choix_ObjS_Attaquant[2] == 0)
             {
-                if (Players_Attaquant[1] == "  Necrons") { Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Visible; };
-                if (Players_Attaquant[1] == "  Necrons") { Button_Obj_Codex_Necron_101_Att_1.Visibility = Visibility.Visible; };
-                if (Players_Attaquant[1] == "  Necrons") { Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Visible; };
-                if (Players_Attaquant[1] == "  Necrons") { Button_Obj_Codex_Necron_103_Att_1.Visibility = Visibility.Visible; };
+                if (Players_Attaquant[1] == "  Necrons" && CA == "Nachmund") { Button_Obj_Codex_Necron_100_Att_1.Visibility = Visibility.Visible; };
+                if (Players_Attaquant[1] == "  Necrons" && CA == "Nephilim") { Button_Obj_Codex_Necron_100_Att_2.Visibility = Visibility.Visible; };
+                if (Players_Attaquant[1] == "  Necrons") { Button_Obj_Codex_Necron_101_Att.Visibility = Visibility.Visible; };
+                if (Players_Attaquant[1] == "  Necrons" && CA == "Nachmund") { Button_Obj_Codex_Necron_102_Att_1.Visibility = Visibility.Visible; };
+                if (Players_Attaquant[1] == "  Necrons" && CA == "Nephilim") { Button_Obj_Codex_Necron_102_Att_2.Visibility = Visibility.Visible; };
+                if (Players_Attaquant[1] == "  Necrons") { Button_Obj_Codex_Necron_103_Att.Visibility = Visibility.Visible; };
             }
         }
         private void Affiche_Bouton_Codex_Necrons_Def()
         {
             Button_Obj_Codex_Necron_100_Def_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_101_Def_1.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_100_Def_2.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_101_Def.Visibility = Visibility.Collapsed;
             Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Collapsed;
-            Button_Obj_Codex_Necron_103_Def_1.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_102_Def_2.Visibility = Visibility.Collapsed;
+            Button_Obj_Codex_Necron_103_Def.Visibility = Visibility.Collapsed;
             if (Choix_ObjS_Defenseur[0] == 0 & Choix_ObjS_Defenseur[1] == 0 & Choix_ObjS_Defenseur[2] == 0)
             {
-                if (Players_Defenseur[1] == "  Necrons") { Button_Obj_Codex_Necron_100_Def_1.Visibility = Visibility.Visible; };
-                if (Players_Defenseur[1] == "  Necrons") { Button_Obj_Codex_Necron_101_Def_1.Visibility = Visibility.Visible; };
-                if (Players_Defenseur[1] == "  Necrons") { Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Visible; };
-                if (Players_Defenseur[1] == "  Necrons") { Button_Obj_Codex_Necron_103_Def_1.Visibility = Visibility.Visible; };
+                if (Players_Defenseur[1] == "  Necrons" && CA == "Nachmund") { Button_Obj_Codex_Necron_100_Def_1.Visibility = Visibility.Visible; };
+                if (Players_Defenseur[1] == "  Necrons" && CA == "Nephilim") { Button_Obj_Codex_Necron_100_Def_2.Visibility = Visibility.Visible; };
+                if (Players_Defenseur[1] == "  Necrons") { Button_Obj_Codex_Necron_101_Def.Visibility = Visibility.Visible; };
+                if (Players_Defenseur[1] == "  Necrons" && CA == "Nachmund") { Button_Obj_Codex_Necron_102_Def_1.Visibility = Visibility.Visible; };
+                if (Players_Defenseur[1] == "  Necrons" && CA == "Nephilim") { Button_Obj_Codex_Necron_102_Def_2.Visibility = Visibility.Visible; };
+                if (Players_Defenseur[1] == "  Necrons") { Button_Obj_Codex_Necron_103_Def.Visibility = Visibility.Visible; };
             }
         }
         private void Affiche_Bouton_Codex_SM_Att()
@@ -20717,6 +20991,10 @@ namespace CPV9
                 Button_Obj_Sec_Def_3.FontSize = x;
             }///OBJS 3 - TUEURS DE TITANS
 
+            Button_Obj_Codex_Necron_100_Def_2.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_100_Def_2.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_100_Def_2.FontSize = x;
+
             Button_Obj_Codex_SM_110_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_SM_110_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_SM_110_Def.FontSize = x;
@@ -20766,9 +21044,13 @@ namespace CPV9
                 Button_Obj_Sec_Def_7.Height = 4 * Rapport_Taille_Y;
                 Button_Obj_Sec_Def_7.FontSize = x;
             }///OBJS 7 - JUSQU'AU DERNIER
+
             Button_Obj_Codex_Necron_100_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_100_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_100_Def_1.FontSize = x;
+            Button_Obj_Codex_Necron_102_Def_2.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_102_Def_2.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_102_Def_2.FontSize = x;
 
             Button_Obj_Codex_SM_112_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_SM_112_Def.Height = 4 * Rapport_Taille_Y;
@@ -20822,9 +21104,9 @@ namespace CPV9
                 Button_Obj_Sec_Def_11.Height = 4 * Rapport_Taille_Y;
                 Button_Obj_Sec_Def_11.FontSize = x;
             }///OBJS 11 - EMPRISE
-            Button_Obj_Codex_Necron_101_Def_1.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Necron_101_Def_1.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Necron_101_Def_1.FontSize = x;
+            Button_Obj_Codex_Necron_101_Def.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_101_Def.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_101_Def.FontSize = x;
             Button_Obj_Codex_Necron_102_Def_1.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_Necron_102_Def_1.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_Necron_102_Def_1.FontSize = x;
@@ -20874,9 +21156,9 @@ namespace CPV9
                 Button_Obj_Sec_Def_18.Height = 4 * Rapport_Taille_Y;
                 Button_Obj_Sec_Def_18.FontSize = x;
             }///OBJS 18 - DONNEES DE NEPHILIM
-            Button_Obj_Codex_Necron_103_Def_1.Width = 14 * Rapport_Taille_X;
-            Button_Obj_Codex_Necron_103_Def_1.Height = 4 * Rapport_Taille_Y;
-            Button_Obj_Codex_Necron_103_Def_1.FontSize = x;
+            Button_Obj_Codex_Necron_103_Def.Width = 14 * Rapport_Taille_X;
+            Button_Obj_Codex_Necron_103_Def.Height = 4 * Rapport_Taille_Y;
+            Button_Obj_Codex_Necron_103_Def.FontSize = x;
             Button_Obj_Codex_DG_127_Def.Width = 14 * Rapport_Taille_X;
             Button_Obj_Codex_DG_127_Def.Height = 4 * Rapport_Taille_Y;
             Button_Obj_Codex_DG_127_Def.FontSize = x;
@@ -22420,14 +22702,19 @@ namespace CPV9
             Label_Objectif_Sec_Att_100A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_100B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_100C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_100F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_100D.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_100E.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_100_Att.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_100_Att.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_100_Att.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_100_Att_Tir.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_100_Att_Tir.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_100_Att_Tir.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_100_Att_Cac.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_100_Att_Cac.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_100_Att_Cac.Height = Hauteur_saisie * Multiple;
             TextBlock_ObjS_100_Att.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_Objectif_Sec_Att_100A_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_100B_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_100C_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             /// OBJECTIF SECONDAIRE 101
             StackPanel_ObjS_Att.Width = Multiple * 110;
             Label_Objectif_Sec_Att.FontSize = 1.2 * Taille_texte * Multiple;
@@ -22439,8 +22726,13 @@ namespace CPV9
             Label_Objectif_Sec_Att_101F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_101G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_101H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_101H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_101K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_101I.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_101J.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_101_Att_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_101_Att_R1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_101_Att_R1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_101_Att_R2.FontSize = Taille_texte * Multiple;
             TextBox_ObjS_101_Att_R2.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_101_Att_R2.Height = Hauteur_saisie * Multiple;
@@ -22459,6 +22751,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Att_101C_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_101D_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_101E_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_101F_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             /// OBJECTIF SECONDAIRE 102
             StackPanel_ObjS_Att.Width = Multiple * 110;
             Label_Objectif_Sec_Att.FontSize = 1.2 * Taille_texte * Multiple;
@@ -23488,17 +23781,20 @@ namespace CPV9
             Label_Objectif_Sec_Att_142B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_142C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_142D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Att_142G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Att_142E.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Att_142F.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_142_Att.FontSize = 1.2 * Taille_texte * Multiple;
             CheckBox_Objectif_Sec_Att_142_PC.FontSize = 1.2 * Taille_texte * Multiple;
             CheckBox_Objectif_Sec_Att_142_SG.FontSize = 1.2 * Taille_texte * Multiple;
             TextBox_ObjS_142_Att_Fig.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_142_Att_Perso.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_Objectif_Sec_Att_142A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_142B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_142C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_142D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Att_142E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Att_142G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 143
             StackPanel_ObjS_Att.Width = Multiple * 110;
@@ -24976,14 +25272,19 @@ namespace CPV9
             Label_Objectif_Sec_Def_100A.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_100B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_100C.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_100F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_100D.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_100E.FontSize = 1.2 * Taille_texte * Multiple;
-            TextBox_ObjS_100_Def.FontSize = Taille_texte * Multiple;
-            TextBox_ObjS_100_Def.Width = Largeur_saisie * Multiple;
-            TextBox_ObjS_100_Def.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_100_Def_Tir.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_100_Def_Tir.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_100_Def_Tir.Height = Hauteur_saisie * Multiple;
+            TextBox_ObjS_100_Def_Cac.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_100_Def_Cac.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_100_Def_Cac.Height = Hauteur_saisie * Multiple;
             TextBlock_ObjS_100_Def.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_Objectif_Sec_Def_100A_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_100B_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_100C_Att.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             /// OBJECTIF SECONDAIRE 101
             StackPanel_ObjS_Def.Width = Multiple * 110;
             Label_Objectif_Sec_Def.FontSize = 1.2 * Taille_texte * Multiple;
@@ -24995,8 +25296,12 @@ namespace CPV9
             Label_Objectif_Sec_Def_101F.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_101G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_101H.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_101K.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_101I.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_101J.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_101_Def_R1.FontSize = Taille_texte * Multiple;
+            TextBox_ObjS_101_Def_R1.Width = Largeur_saisie * Multiple;
+            TextBox_ObjS_101_Def_R1.Height = Hauteur_saisie * Multiple;
             TextBox_ObjS_101_Def_R2.FontSize = Taille_texte * Multiple;
             TextBox_ObjS_101_Def_R2.Width = Largeur_saisie * Multiple;
             TextBox_ObjS_101_Def_R2.Height = Hauteur_saisie * Multiple;
@@ -25015,6 +25320,7 @@ namespace CPV9
             GridSplitter_Objectif_Sec_Def_101C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_101D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_101E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_101F.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             /// OBJECTIF SECONDAIRE 102
             StackPanel_ObjS_Def.Width = Multiple * 110;
             Label_Objectif_Sec_Def.FontSize = 1.2 * Taille_texte * Multiple;
@@ -26047,17 +26353,20 @@ namespace CPV9
             Label_Objectif_Sec_Def_142B.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_142C.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_142D.FontSize = Taille_texte * Multiple;
+            Label_Objectif_Sec_Def_142G.FontSize = Taille_texte * Multiple;
             Label_Objectif_Sec_Def_142E.FontSize = 1.2 * Taille_texte * Multiple;
             Label_Objectif_Sec_Def_142F.FontSize = 1.2 * Taille_texte * Multiple;
             TextBlock_ObjS_142_Def.FontSize = 1.2 * Taille_texte * Multiple;
             CheckBox_Objectif_Sec_Def_142_PC.FontSize = 1.2 * Taille_texte * Multiple;
             CheckBox_Objectif_Sec_Def_142_SG.FontSize = 1.2 * Taille_texte * Multiple;
             TextBox_ObjS_142_Def_Fig.FontSize = 1.2 * Taille_texte * Multiple;
+            TextBox_ObjS_142_Def_Perso.FontSize = 1.2 * Taille_texte * Multiple;
             GridSplitter_Objectif_Sec_Def_142A.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_142B.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_142C.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_142D.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
             GridSplitter_Objectif_Sec_Def_142E.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
+            GridSplitter_Objectif_Sec_Def_142G.Margin = new Thickness(Multiple / 2, 0, Multiple, 0);
 
             /// OBJECTIF SECONDAIRE 143
             StackPanel_ObjS_Def.Width = Multiple * 110;
@@ -26371,7 +26680,7 @@ namespace CPV9
         private void Adaptation_OBJS_2_Att()
         {
             StackPanel_ObjS_2_Att.Visibility = Visibility.Visible;
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_2E_Att.Visibility = Visibility.Collapsed;
             }
@@ -26385,7 +26694,7 @@ namespace CPV9
         private void Adaptation_OBJS_2_Def()
         {
             StackPanel_ObjS_2_Def.Visibility = Visibility.Visible;
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_2E_Def.Visibility = Visibility.Collapsed;
             }
@@ -26398,7 +26707,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_3_Att()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_3_Att.Visibility = Visibility.Visible;
             }
@@ -26410,7 +26719,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_3_Def()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_3_Def.Visibility = Visibility.Visible;
             }
@@ -26442,7 +26751,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_7_Att()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_7_Att.Visibility = Visibility.Visible;
             }
@@ -26454,7 +26763,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_7_Def()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_7_Def.Visibility = Visibility.Visible;
             }
@@ -26496,7 +26805,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_12_Att()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_12_Att.Visibility = Visibility.Visible;
             }
@@ -26508,7 +26817,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_12_Def()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_12_Def.Visibility = Visibility.Visible;
             }
@@ -26520,7 +26829,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_13_Att()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_13_Att.Visibility = Visibility.Visible;
             }
@@ -26532,7 +26841,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_13_Def()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_13_Def.Visibility = Visibility.Visible;
             }
@@ -26594,7 +26903,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_18_Att()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_18_Att.Visibility = Visibility.Visible;
             }
@@ -26608,7 +26917,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_18_Def()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_18_Def.Visibility = Visibility.Visible;
             }
@@ -26622,7 +26931,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_19_Att()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_19_Att.Visibility = Visibility.Visible;
             }
@@ -26634,7 +26943,7 @@ namespace CPV9
         }
         private void Adaptation_OBJS_19_Def()
         {
-            if (CA == "Nachmun")
+            if (CA == "Nachmund")
             {
                 StackPanel_ObjS_19_Def.Visibility = Visibility.Visible;
             }
@@ -27039,6 +27348,141 @@ namespace CPV9
         {
             StackPanel_ObjS_145_Def.Visibility = Visibility.Visible;
             oeil_OBJS_145_Def();
+        }
+        #endregion
+        #region OBJ TYRANIDS
+        private void Adaptation_OBJC_140_Att()
+        {
+            StackPanel_ObjS_140_Att.Visibility = Visibility.Visible;            
+            oeil_OBJS_140_Att();
+        }
+        private void Adaptation_OBJC_140_Def()
+        {
+            StackPanel_ObjS_140_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_140_Def();
+        }
+
+        private void Adaptation_OBJC_141_Att()
+        {
+            StackPanel_ObjS_141_Att.Visibility = Visibility.Visible;
+            oeil_OBJS_141_Att();
+        }
+        private void Adaptation_OBJC_141_Def()
+        {
+            StackPanel_ObjS_141_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_141_Def();
+        }
+
+        private void Adaptation_OBJC_142_Att()
+        {
+            StackPanel_ObjS_142_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_142C.Content = "3 Pts par Personnages , et 1 pts par Champion détruite en melée ( Vrille ruche )";
+                Label_Objectif_Sec_Att_142D.Content = "Champion : ";
+                Label_Objectif_Sec_Att_142G.Visibility = Visibility.Visible;
+                TextBox_ObjS_142_Att_Perso.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Att_142G.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_142_Att();
+        }
+        private void Adaptation_OBJC_142_Def()
+        {
+            StackPanel_ObjS_142_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_142C.Content = "3 Pts par Personnages , et 1 pts par Champion détruite en melée ( Vrille ruche )";
+                Label_Objectif_Sec_Def_142D.Content = "Champion : ";
+                Label_Objectif_Sec_Def_142G.Visibility = Visibility.Visible;
+                TextBox_ObjS_142_Def_Perso.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Def_142G.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_142_Def();
+        }
+        #endregion
+        #region OBJ NECRONS
+        private void Adaptation_OBJC_100_Att()
+        {
+            StackPanel_ObjS_100_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_100B.Content = "Detruire les unités ennemis a l aide d un Noble. Personnage ennemi tué = 1 PC";
+                Label_Objectif_Sec_Att_100C.Content = "Nbres d'unités ennemies tué au Tir:( x 3)";
+                Label_Objectif_Sec_Att_100F.Visibility = Visibility.Visible;
+                TextBox_ObjS_100_Att_Cac.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Att_100B_Att.Visibility = Visibility.Visible;
+            }            
+            oeil_OBJS_100_Att();
+        }
+        private void Adaptation_OBJC_100_Def()
+        {
+            StackPanel_ObjS_100_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_100B.Content = "Detruire les unités ennemis a l aide d un Noble. Personnage ennemi tué = 1 PC";
+                Label_Objectif_Sec_Def_100C.Content = "Nbres d'unités ennemies tué au Tir:( x 3)";
+                Label_Objectif_Sec_Def_100F.Visibility = Visibility.Visible;
+                TextBox_ObjS_100_Def_Cac.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Def_100B_Att.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_100_Def();
+        }
+        private void Adaptation_OBJC_101_Att()
+        {
+            StackPanel_ObjS_101_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_101B.Content = "1 pts/Quart de table sans ennemi en fin de votre tour (entierement à l interieur)";
+                Label_Objectif_Sec_Att_101C.Content = "1 pts supplementaire si pas d'ennemi dans votre zone de déploiement";
+                Label_Objectif_Sec_Att_101D.Content = "Nbres de quard de table sans ennemi + ZZD libre: ";
+                Label_Objectif_Sec_Att_101K.Visibility = Visibility.Visible;
+                TextBox_ObjS_101_Att_R1.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Att_101F_Att.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_101_Att();
+        }
+        private void Adaptation_OBJC_101_Def()
+        {
+            StackPanel_ObjS_101_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_101B.Content = "1 pts/Quart de table sans ennemi en fin de votre tour (entierement à l interieur)";
+                Label_Objectif_Sec_Def_101C.Content = "1 pts supplementaire si pas d'ennemi dans votre zone de déploiement";
+                Label_Objectif_Sec_Def_101D.Content = "Nbres de quard de table sans ennemi + ZZD libre: ";
+                Label_Objectif_Sec_Def_101K.Visibility = Visibility.Visible;
+                TextBox_ObjS_101_Def_R1.Visibility = Visibility.Visible;
+                GridSplitter_Objectif_Sec_Def_101F.Visibility = Visibility.Visible;
+            }
+            oeil_OBJS_101_Def();
+        }
+        private void Adaptation_OBJC_102_Att()
+        {
+            StackPanel_ObjS_102_Att.Visibility = Visibility.Visible;
+
+            oeil_OBJS_102_Att();
+        }
+        private void Adaptation_OBJC_102_Def()
+        {
+            StackPanel_ObjS_102_Def.Visibility = Visibility.Visible;
+            oeil_OBJS_102_Def();
+        }
+        private void Adaptation_OBJC_103_Att()
+        {
+            StackPanel_ObjS_103_Att.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Att_103B.Content = "Marquez 4 pts par action Eveillez une machine Antique ,a votre prochaine phase de commandement";
+            }
+            oeil_OBJS_103_Att();
+        }
+        private void Adaptation_OBJC_103_Def()
+        {
+            StackPanel_ObjS_103_Def.Visibility = Visibility.Visible;
+            if (CA == "Nephilim")
+            {
+                Label_Objectif_Sec_Def_103B.Content = "Marquez 4 pts par action Eveillez une machine Antique ,a votre prochaine phase de commandement";
+            }
+            oeil_OBJS_103_Def();
         }
         #endregion
         #endregion
@@ -34947,8 +35391,14 @@ namespace CPV9
                 Deroulement();
             }
         }
-        #endregion        
-
+        private void Button_Option_Retour_Click(object sender, RoutedEventArgs e)
+        {
+            Init_affichage();
+            Pages = 0;
+            Deroulement();
+        }
+        #endregion
+        
     }
 
 }

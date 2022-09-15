@@ -9,24 +9,13 @@ namespace CPV9.Classes
 
         private int Score = 0;
 
-        public Classe_Score_OBJC_Necrons_101(String Saisie1, String Saisie2, String Saisie3, String Saisie4)
+        public Classe_Score_OBJC_Necrons_101(String Saisie1, String Saisie2, String Saisie3, String Saisie4, String Saisie5, String CA)
         {
-            if (Saisie1 != "")
-            {
-                calcul(Convert.ToInt32(Saisie1));
-            }
-            if (Saisie2 != "")
-            {
-                calcul(Convert.ToInt32(Saisie2));
-            }
-            if (Saisie3 != "")
-            {
-                calcul(Convert.ToInt32(Saisie3));
-            }
-            if (Saisie4 != "")
-            {
-                calcul(Convert.ToInt32(Saisie4));
-            }
+            if (CA == "Nephilim" && Saisie1 !="") { calcul(Convert.ToInt32(Saisie1), CA); };
+            if (Saisie2 != "") { calcul(Convert.ToInt32(Saisie2), CA); };
+            if (Saisie3 != "") { calcul(Convert.ToInt32(Saisie3), CA); };
+            if (Saisie4 != "") { calcul(Convert.ToInt32(Saisie4), CA); };
+            if (Saisie5 != "") { calcul(Convert.ToInt32(Saisie5), CA); };
             Score_ObjS = Score;
             if (Score >= 15)
             {
@@ -35,11 +24,15 @@ namespace CPV9.Classes
             Scores_Joueur = Score;
         }
 
-        private void calcul(int Donne1)
+        private void calcul(int Donne1, string CA)
         {
-            if (Donne1 >= 0 && Donne1 <= 4)
+            if (CA == "Nachmund")
             {
-                Score += (2 * Donne1);
+                if (Donne1 >= 0 && Donne1 <= 4) { Score += 2 * Donne1; };
+            }
+            if (CA == "Nephilim")
+            {
+                if (Donne1 >= 0 && Donne1 <= 5) { Score += Donne1; };
             }
             return;
         }
