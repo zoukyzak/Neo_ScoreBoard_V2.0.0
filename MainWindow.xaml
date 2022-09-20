@@ -269,7 +269,7 @@
 
         
         <!--#region Affichage Attaquant -->
-        <TextBlock x:Name="TextBlock_Nom_Player_1" HorizontalAlignment="Left" VerticalAlignment="top" FontSize="3" FontFamily="/CPV9;component/Polices/#INFECTED" Visibility="collapsed" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="auto" >
+        <TextBlock x:Name="TextBlock_Nom_Player_1" HorizontalAlignment="Left" Margin="0,-40,0,0" VerticalAlignment="top" FontSize="3" FontFamily="/CPV9;component/Polices/#INFECTED" Visibility="collapsed" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="auto" >
             <TextBlock.Foreground>
                 <RadialGradientBrush>
                     <GradientStop Color="#FFE2DA2F" Offset="0"/>
@@ -285,7 +285,7 @@
                 </TransformGroup>
             </TextBlock.RenderTransform><Run Text="N.C"/><LineBreak/><Run/>
         </TextBlock>
-        <TextBlock x:Name="TextBlock_Nom_SG_1" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="3" FontFamily="/CPV9;component/Polices/#INFECTED" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Collapsed" Height="Auto">
+        <TextBlock x:Name="TextBlock_Nom_SG_1" HorizontalAlignment="Left" Margin="0,-40,0,0" VerticalAlignment="Top" FontSize="3" FontFamily="/CPV9;component/Polices/#INFECTED" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Collapsed" Height="Auto">
             <TextBlock.Foreground>
                 <RadialGradientBrush>
                     <GradientStop Color="#FFE2DA2F" Offset="0"/>

@@ -11198,7 +11198,7 @@ namespace CPV9
 
             double z = ((Rapport_Taille_Y + Rapport_Taille_X) / 3.5);
             Image_PL1.Visibility = Visibility.Visible;
-            Image_PL1.Margin = new Thickness(0.2 * Rapport_Taille_X, 15 * Rapport_Taille_Y, 0, 0);
+            Image_PL1.Margin = new Thickness(0.2 * Rapport_Taille_X, 10 * Rapport_Taille_Y, 0, 0);
             Image_PL1.Height = 40 * z;
             Image_PL1.Width = 40 * z;
             return;           
@@ -11207,7 +11207,7 @@ namespace CPV9
         {
             Select_Image_Player("Def", Players_Defenseur[1]);
             double g = ((Rapport_Taille_Y + Rapport_Taille_X) / 3.5);
-            Image_PL2.Margin = new Thickness(0, 15 * Rapport_Taille_Y, 0.4 * Rapport_Taille_X, 0);
+            Image_PL2.Margin = new Thickness(0, 10 * Rapport_Taille_Y, 0.2 * Rapport_Taille_X, 0);
             Image_PL2.Height = 40 * g;
             Image_PL2.Width = 40 * g;
             Image_PL2.Visibility = Visibility.Visible;
@@ -21280,10 +21280,10 @@ namespace CPV9
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3.3);
 
             TextBlock_Nom_Player_1.FontSize = 5 * x;
-            TextBlock_Nom_Player_1.Margin = new Thickness(3 * x, 15 * x, 0, 0);
+            TextBlock_Nom_Player_1.Margin = new Thickness(3 * x, 7 * x, 0, 0);
 
             TextBlock_Nom_SG_1.FontSize = 3 * x;
-            TextBlock_Nom_SG_1.Margin = new Thickness(5 * x, 20 * x, 0, 0);
+            TextBlock_Nom_SG_1.Margin = new Thickness(5 * x, 11 * x, 0, 0);
         }
         private void Affichage_Nom_SG_P2()
         {
@@ -21294,10 +21294,10 @@ namespace CPV9
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3.3);
 
             TextBlock_Nom_Player_2.FontSize = 5 * x;
-            TextBlock_Nom_Player_2.Margin = new Thickness(0, 10 * x, 3 * x, 0);
+            TextBlock_Nom_Player_2.Margin = new Thickness(0, 7 * x, 3 * x, 0);
 
             TextBlock_Nom_SG_2.FontSize = 3 * x;
-            TextBlock_Nom_SG_2.Margin = new Thickness(0, 15 * x, 5 * x, 0);
+            TextBlock_Nom_SG_2.Margin = new Thickness(0, 11 * x, 5 * x, 0);
         }
         private void Affichage_Bouton_Pages()
         {
@@ -26516,7 +26516,7 @@ namespace CPV9
         private void Affichage_Capé()
         {
             double x = ((Rapport_Taille_Y + Rapport_Taille_X) / 3.3);
-            StackPanel_Cape_Player_1.Margin = new Thickness(3 * Rapport_Taille_X, 45 * Rapport_Taille_Y, 0, 0);
+            StackPanel_Cape_Player_1.Margin = new Thickness(3 * Rapport_Taille_X, 40 * Rapport_Taille_Y, 0, 0);
             Double z = 1.5;
             Label_Cape_Player_Attaquant_1.FontSize = z * x;
             Label_Cape_Player_Attaquant_2.FontSize = z * x;
@@ -26525,7 +26525,7 @@ namespace CPV9
             Label_Cape_Player_Attaquant_5.FontSize = z * x;
             Label_Cape_Player_Attaquant_6.FontSize = z * x;
 
-            StackPanel_Cape_Player_2.Margin = new Thickness(0, 45 * Rapport_Taille_Y, 3 * Rapport_Taille_X, 0);
+            StackPanel_Cape_Player_2.Margin = new Thickness(0, 40 * Rapport_Taille_Y, 3 * Rapport_Taille_X, 0);
             Label_Cape_Player_Defenseur_1.FontSize = z * x;
             Label_Cape_Player_Defenseur_2.FontSize = z * x;
             Label_Cape_Player_Defenseur_3.FontSize = z * x;

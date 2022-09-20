@@ -5,194 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CPV9.Windows"
         mc:Ignorable="d"
-        Title="Néo ScoreBoard Mini" Height="500" Width="600" MinHeight="400" MinWidth="500" Background="White" Foreground="Black" SizeChanged="Window_Tv_SizeChanged" ResizeMode="CanResizeWithGrip" SizeToContent="WidthAndHeight" WindowStyle="None">
+        Title="Néo ScoreBoard Mini" Height="520" Width="960" MinHeight="520" MinWidth="960" Background="White" WindowStartupLocation="CenterScreen" Foreground="Black" SizeChanged="Window_TV_SizeChanged" ResizeMode="CanResize" WindowStyle="ThreeDBorderWindow">
     <Grid>
-
-        <Label x:Name="Label_Tv_Titre" Content="titre TV"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="top" Foreground="Black" FontSize="45" FontFamily="Source Serif Pro Black"/>
-        <StackPanel x:Name="StackPanel_CPV9_Droit" Orientation="Vertical">
-            <Label x:Name="CDV9_droit_Neo" Content="Néo" Width="Auto" Height="Auto" Margin="0,14,0,0" HorizontalAlignment="Right" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="100" FontFamily="Arial Black">
-                <Label.Foreground>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black" Offset="0.087"/>
-                        <GradientStop Color="#FF73F10A" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Foreground>
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="10.372"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
-            <Label x:Name="CDV9_droit_ScoreBoard" Content="ScoreBoard" Width="Auto" Height="Auto" Margin="0,-40,0,0" HorizontalAlignment="Right" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="30" FontFamily="Arial Black">
-                <Label.Foreground>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FF1244EE" Offset="1"/>
-                        <GradientStop Color="#FFFF1700"/>
-                    </RadialGradientBrush>
-                </Label.Foreground>
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="10.372"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
-        </StackPanel>
-        <StackPanel x:Name="StackPanel_CPV9_Gauche" Orientation="Vertical">
-            <Label x:Name="CDV9_gauche_Neo" Content="Néo" Width="Auto" Height="Auto" Margin="0,14,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="100" FontFamily="Arial Black">
-                <Label.Foreground>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black" Offset="0.087"/>
-                        <GradientStop Color="#FF73F10A" Offset="1"/>
-                    </LinearGradientBrush>
-                </Label.Foreground>
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-9.183"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
-            <Label x:Name="CDV9_gauche_ScoreBoard" Content="ScorBoard" Width="Auto" Height="Auto" Margin="0,-40,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5" Background="{x:Null}" FontSize="30" FontFamily="Arial Black">
-                <Label.Foreground>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FF1244EE"/>
-                        <GradientStop Color="#FFFF1700" Offset="1"/>
-                    </RadialGradientBrush>
-                </Label.Foreground>
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-9.183"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
-        </StackPanel>
-            <!--#region Image Pl1 -->
-        <Image x:Name="Image_PL1" Width="500" Height="400" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-11.31"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-            <!--#endregion-->
-            <!--#region Image PL2 -->
-        <Image x:Name="Image_PL2" Width="500" Height="400" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="10,0,0,0" Visibility="Collapsed">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="11.31"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Image.RenderTransform>
-        </Image>
-            <!--#endregion-->
-
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <TextBlock x:Name="TextBlock_Nom_Player_1_Tv" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="top" FontSize="20" FontFamily="Arial Black" Visibility="Visible" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="auto" Text="Pseudo" >
-                <TextBlock.Foreground>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
-                        <GradientStop Color="#FFFF3D04" Offset="1"/>
-                    </RadialGradientBrush>
-                </TextBlock.Foreground>
-                <TextBlock.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-10.923"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock x:Name="TextBlock_Nom_SG_1_Tv" HorizontalAlignment="Left" Margin="10,-20,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de gerre" AllowDrop="True">
-                <TextBlock.Foreground>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
-                        <GradientStop Color="#FFFF3D04" Offset="1"/>
-                    </RadialGradientBrush>
-                </TextBlock.Foreground>
-                <TextBlock.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-10.923"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <StackPanel x:Name="StackPanel_Cape_Player_1_Tv" Orientation="Vertical" Margin="5,150,0,0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="Auto" Width="Auto" Visibility="Visible">
-                <Label x:Name="Label_Tv_Cape_Player_Attaquant_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Attaquant_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Attaquant_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Attaquant_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Attaquant_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Attaquant_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
-            </StackPanel>
-
-        </StackPanel>
-
         
-        <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top">
-            <TextBlock x:Name="TextBlock_Nom_Player_2_Tv" HorizontalAlignment="Right" Margin="0,50,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" Visibility="Visible" TextAlignment="Center" LineHeight="auto" IsEnabled="False" Height="Auto" Text="Pseudo" >
-                <TextBlock.Foreground>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
-                        <GradientStop Color="#FFFF3D04" Offset="1"/>
-                    </RadialGradientBrush>
-                </TextBlock.Foreground>
-                <TextBlock.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="10.923"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <TextBlock x:Name="TextBlock_Nom_SG_2_Tv" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Black" TextAlignment="Center" LineHeight="auto" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de guerre" >
-                <TextBlock.Foreground>
-                    <RadialGradientBrush>
-                        <GradientStop Color="#FFE2DA2F" Offset="0"/>
-                        <GradientStop Color="#FFFF3D04" Offset="1"/>
-                    </RadialGradientBrush>
-                </TextBlock.Foreground>
-                <TextBlock.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="10.923"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <StackPanel x:Name="StackPanel_Cape_Player_2_Tv" Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,5,0" Height="Auto" Width="Auto" Visibility="Visible">
-                <Label x:Name="Label_Tv_Cape_Player_Defenseur_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Defenseur_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Defenseur_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Defenseur_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Defenseur_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
-                <Label x:Name="Label_Tv_Cape_Player_Defenseur_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="2" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+        <StackPanel x:Name="StackPanel_WIn_Tv_Centre" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="top">
+            <Image x:Name="FDE_Warhammer" Source="/Images_Fond/image Logo_Warhammer_40000.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2" Margin="0,-0,0,0" Visibility="visible"/>
+            <Image x:Name="FDE_Neo" Source="/Images_Fond/image neo scorebord.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Grid.ColumnSpan="2" Margin="0,-25,0,0" Visibility="visible"/>
+            <StackPanel x:Name="StackPanel_CA_Tv" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-40">
+                <Image x:Name="Image_FDE_CA_Nachmund" Source="/Images_Fond/image nachmund.png"  HorizontalAlignment="Center" VerticalAlignment="Top" Width="125"/>
+                <Image x:Name="Image_FDE_CA_Nephilim" Source="/Images_Fond/image nephilim.png"  HorizontalAlignment="Center"  VerticalAlignment="Top" Width="125" Margin="0,-25"/>
             </StackPanel>
-
+            <Label x:Name="Label_FDE_Alpha" Content="ALPHA" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-30,0,0" Background="{x:Null}" Foreground="red" FontSize="20" FontFamily="Impact" BorderThickness="0,0,0,4" BorderBrush="Black"/>
+            <Label x:Name="Label_Tv_Titre" Content="titre TV"  HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="top" Foreground="Black" FontSize="15" FontFamily="Source Serif Pro Black"/>
         </StackPanel>
-
-        <StackPanel x:Name="StackPanel_Tv_Scores" Orientation="Horizontal" HorizontalAlignment="Center" Height="auto" Margin="5,100,0,0" VerticalAlignment="Center" Width="auto">
-            <TextBlock x:Name="TextBlock_Score_Player_1_Tv" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" FontSize="20" FontWeight="Bold" FontFamily="Impact" TextAlignment="Center" Text="Nc"  Visibility="Visible">
+        
+        <StackPanel x:Name="StackPanel_Tv_Scores" Orientation="Horizontal" HorizontalAlignment="Center" Height="auto" Margin="0,0,0,0" VerticalAlignment="Center" Width="auto">
+            <TextBlock x:Name="TextBlock_Score_Player_1_Tv" Margin="0,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Height="auto" Width="auto" FontSize="90" FontWeight="Bold" FontFamily="Impact" TextAlignment="Center" Text="Nc"  Visibility="Visible">
                 <TextBlock.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                         <GradientStop Color="#FF83DE15" Offset="1"/>
@@ -200,8 +28,8 @@
                     </LinearGradientBrush>
                 </TextBlock.Foreground>
             </TextBlock>
-            <Label x:Name="Label_Serapare_Score" Content="-" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="30" FontFamily="Source Serif Pro Black"/>
-            <TextBlock x:Name="TextBlock_Score_Player_2_Tv" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="Auto" Width="Auto" FontSize="20" FontWeight="Bold" FontFamily="Impact" TextAlignment="Center" Text="Nc" Visibility="Visible">
+            <Label x:Name="Label_Serapare_Score" Content="-" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Top" Foreground="Black" FontSize="90" FontFamily="Source Serif Pro Black"/>
+            <TextBlock x:Name="TextBlock_Score_Player_2_Tv" HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="Auto" Width="Auto" FontSize="90" FontWeight="Bold" FontFamily="Impact" TextAlignment="Center" Text="Nc" Visibility="Visible">
                 <TextBlock.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                         <GradientStop Color="#FF83DE15" Offset="1"/>
@@ -210,9 +38,9 @@
                 </TextBlock.Foreground>
             </TextBlock>
         </StackPanel>
-
-        <StackPanel x:Name="StackPanel_Round" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,100" Visibility="Visible">
-            <Label x:Name="Label_Round" Content="ROUND " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" FontFamily="Arial Black">
+        
+        <StackPanel x:Name="StackPanel_Round" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30" Visibility="Visible">
+            <Label x:Name="Label_Round" Content="ROUND " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Arial Black">
                 <Label.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                         <GradientStop Color="#FF83DE15" Offset="1"/>
@@ -220,7 +48,7 @@
                     </LinearGradientBrush>
                 </Label.Foreground>
             </Label>
-            <TextBlock x:Name="TextBlock_Round" Text="NC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="10" FontFamily="Arial Black">
+            <TextBlock x:Name="TextBlock_Round" Text="NC" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" FontFamily="Arial Black">
                 <TextBlock.Foreground>
                     <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                         <GradientStop Color="#FF83DE15" Offset="1"/>
@@ -229,9 +57,80 @@
                 </TextBlock.Foreground>
             </TextBlock>
         </StackPanel>
+        
+        <StackPanel x:Name="StackPanel_WIn_Tv_Gauche" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock x:Name="TextBlock_Nom_Player_1_Tv" HorizontalAlignment="left" Margin="20,0,0,0" VerticalAlignment="top" FontSize="30" FontFamily="Impact" Visibility="Visible" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="auto" Text="Pseudo" >
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock x:Name="TextBlock_Nom_SG_1_Tv" HorizontalAlignment="left" Margin="20,0,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de gerre" AllowDrop="True">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <Image x:Name="Image_PL1" Width="250" Height="auto" HorizontalAlignment="Left" VerticalAlignment="top" RenderTransformOrigin="0.5,0.5" Margin="0,-20,0,0" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <StackPanel x:Name="StackPanel_Cape_Player_1_Tv" Orientation="Vertical" Margin="5,0,0,0" HorizontalAlignment="Left" VerticalAlignment="top" Height="Auto" Width="Auto" Visibility="Visible">
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Attaquant_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="Black" Visibility="Collapsed"/>
+            </StackPanel>
+        </StackPanel>
 
-        <Button x:Name="Button_Option_Tv" Width="Auto" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,5,5,5" Visibility ="Visible" Click="Button_Option_Tv_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF1B7806">
-            <Image Source="/Icons/option.PNG " Width="20" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Button>
+        <StackPanel x:Name="StackPanel_WIn_Tv_Doite" Orientation="Vertical" Margin="0,0" HorizontalAlignment="Right" VerticalAlignment="Top">
+            <TextBlock x:Name="TextBlock_Nom_Player_2_Tv" HorizontalAlignment="Right" Margin="0,0,20,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact" Visibility="Visible" TextAlignment="Center" LineHeight="36" IsEnabled="False" Height="Auto" Text="Pseudo"  AllowDrop="True">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <TextBlock x:Name="TextBlock_Nom_SG_2_Tv" HorizontalAlignment="right" Margin="0,0,20,0" VerticalAlignment="Top" FontSize="20" FontFamily="Impact" TextAlignment="Center" LineHeight="36" IsEnabled="False" Visibility="Visible" Height="Auto" Text="Seigneur de guerre"  AllowDrop="True">
+                <TextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBlock.Foreground>
+            </TextBlock>
+            <Image x:Name="Image_PL2" Width="250" Height="auto" HorizontalAlignment="Right" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" Margin="0,-20,0,0" Visibility="Visible">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="11.31"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <StackPanel x:Name="StackPanel_Cape_Player_2_Tv" Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,0,0" Height="Auto" Width="Auto" Visibility="Visible">
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_1" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_2" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_3" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_4" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_5" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+                <Label x:Name="Label_Tv_Cape_Player_Defenseur_6" Content=" " HorizontalAlignment="Center" VerticalAlignment="Top" Height="Auto" Width="Auto" FontSize="15" FontWeight="Bold" FontFamily="Arial Black" Foreground="black" Visibility="Collapsed"/>
+            </StackPanel>
+
+        </StackPanel>
     </Grid>
 </Window>

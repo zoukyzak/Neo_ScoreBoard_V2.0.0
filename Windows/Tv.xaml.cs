@@ -19,14 +19,8 @@ namespace CPV9.Windows
     public partial class Tv : Window
     {
         string Table;
-        Double _Taille = 1;
-        Double _Taille_Ref = 1;
-        Double Resolution;
-        int Taille_Image_Ref = 150;
-        Double Taille_Image;
         string Image_P1;
         string Image_P2;
-        bool style_Tv = false;
 
         public int[,] _Capes_Tv = new int[3,300];
         public string Text_Capes_Tv = "";
@@ -34,7 +28,6 @@ namespace CPV9.Windows
         {
             InitializeComponent();
             Init_Capes();
-            _Taille_Ref = Convert.ToInt32(this.MinHeight) + Convert.ToInt32(this.MinWidth);
         }
         private void Init_Capes()
         {
@@ -215,7 +208,6 @@ namespace CPV9.Windows
             TextBlock_Nom_SG_2_Tv.Text = SG_P2;
             TextBlock_Score_Player_1_Tv.Text = Convert.ToString(Score_P1);
             TextBlock_Score_Player_2_Tv.Text = Convert.ToString(Score_P2);
-            Taille(Resolution, _Taille_Ref);
             Image_P1 = Image_Pl1;
             Image_P2 = Image_Pl2;
             Selection_Image_Attaquant_Tv(Image_Pl1);
@@ -233,54 +225,16 @@ namespace CPV9.Windows
         {
             TextBlock_Round.Text = Convert.ToString(_Round);
         }
-        private void Taille(Double Resolution, Double _Taille_ref)
-        {
-            _Taille = Resolution / _Taille_Ref;
-            Taille_Image = Taille_Image_Ref * _Taille;
-            if (_Taille <= 0) { _Taille = 1; };
-            Label_Tv_Titre.FontSize = 25 * _Taille;
-            CDV9_droit_Neo.FontSize = 30 * _Taille;
-            CDV9_gauche_Neo.FontSize = 30 * _Taille;
-            CDV9_droit_ScoreBoard.FontSize = 10 * _Taille;
-            CDV9_gauche_ScoreBoard.FontSize = 10 * _Taille;
-            TextBlock_Nom_Player_1_Tv.FontSize = 20 * _Taille;
-            TextBlock_Nom_Player_2_Tv.FontSize = 20 * _Taille;
-            TextBlock_Nom_SG_1_Tv.FontSize = 20 * _Taille;
-            TextBlock_Nom_SG_2_Tv.FontSize = 20 * _Taille;
-            TextBlock_Score_Player_1_Tv.FontSize = 35 * _Taille;
-            Label_Serapare_Score.FontSize = 60 * _Taille;
-            Label_Round.FontSize = 20 * _Taille;
-            TextBlock_Round.FontSize = 20 * _Taille;
-            TextBlock_Score_Player_2_Tv.FontSize = 35 * _Taille;
+        private void Taille()
+        {            
             Selection_Image_Attaquant_Tv(Image_P1);
             Selection_Image_Defenseur_Tv(Image_P2);
-            StackPanel_Cape_Player_1_Tv.Margin = new Thickness (5, 150 * _Taille, 0, 0);
-            StackPanel_Cape_Player_2_Tv.Margin = new Thickness (0, 170 * _Taille, 5, 0);
-
-            Label_Tv_Cape_Player_Attaquant_1.FontSize= 8 * _Taille;
-            Label_Tv_Cape_Player_Attaquant_2.FontSize= 8 * _Taille;
-            Label_Tv_Cape_Player_Attaquant_3.FontSize= 8 * _Taille;
-            Label_Tv_Cape_Player_Attaquant_4.FontSize= 8 * _Taille;
-            Label_Tv_Cape_Player_Defenseur_1.FontSize = 8 * _Taille;
-            Label_Tv_Cape_Player_Defenseur_2.FontSize = 8 * _Taille;
-            Label_Tv_Cape_Player_Defenseur_3.FontSize = 8 * _Taille;
-            Label_Tv_Cape_Player_Defenseur_4.FontSize = 8 * _Taille;
         }
 
-        private void Window_Tv_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            Double _Resolution_X = Convert.ToInt32(this.ActualWidth);
-            Double _Resolution_Y = Convert.ToInt32(this.ActualHeight);
-            
-            Resolution = _Resolution_X + _Resolution_Y;
-            Taille(Resolution, _Taille_Ref);
-        }
 
         private void Selection_Image_Attaquant_Tv(string Image_Attaquant)
         {
             Select_Image_Player_Tv("Att", Image_Attaquant);
-            Image_PL1.Height = Taille_Image;
-            Image_PL1.Width = Taille_Image;
             Image_PL1.Visibility = Visibility.Visible;
             return;
 
@@ -288,8 +242,6 @@ namespace CPV9.Windows
         private void Selection_Image_Defenseur_Tv(string Image_Defenseur)
         {
             Select_Image_Player_Tv("Def", Image_Defenseur);
-            Image_PL2.Height = Taille_Image;
-            Image_PL2.Width = Taille_Image;
             Image_PL2.Visibility = Visibility.Visible;
             return;
         }
@@ -318,20 +270,42 @@ namespace CPV9.Windows
                 Image_PL2.Source = Chemin_Image_Pl2;
             }
         }
-        private void Button_Option_Tv_Click(object sender, RoutedEventArgs e)
+
+        private void Window_TV_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            if (style_Tv == false)
-            {
-                this.WindowStyle = WindowStyle.SingleBorderWindow;
-                style_Tv = true;
-                return;
-            }
-            if (style_Tv == true)
-            {
-                this.WindowStyle = WindowStyle.None;
-                style_Tv = false;
-                return;
-            }
+            Double _Taille_Ref_X = Convert.ToInt32(this.ActualWidth);
+            Double _Resolution = _Taille_Ref_X / 960;
+            this.Height = 540 * _Resolution;
+            Image_PL1.Width = 250 * _Resolution;
+            Image_PL2.Width = 250 * _Resolution;
+            FDE_Warhammer.Width = 250 * _Resolution;
+            FDE_Neo.Width = 250 * _Resolution;
+            Image_FDE_CA_Nachmund.Width = 125 * _Resolution;
+            Image_FDE_CA_Nephilim.Width = 125 * _Resolution;
+            StackPanel_CA_Tv.Margin = new Thickness(0, -40 * _Resolution, 0, 0);
+            Label_FDE_Alpha.Margin = new Thickness(0, -30 * _Resolution, 0, 0);
+            Label_Tv_Titre.Margin = new Thickness(0,-_Resolution, 0, 0);
+            TextBlock_Score_Player_1_Tv.FontSize = 90 * _Resolution;
+            TextBlock_Score_Player_2_Tv.FontSize = 90 * _Resolution;
+            Label_Serapare_Score.FontSize = 90 * _Resolution;
+            Label_Round.FontSize = 30 * _Resolution;
+            TextBlock_Round.FontSize = 30 * _Resolution;
+            TextBlock_Nom_Player_1_Tv.FontSize = 30 * _Resolution;
+            TextBlock_Nom_Player_2_Tv.FontSize = 30 * _Resolution;
+            TextBlock_Nom_SG_1_Tv.FontSize = 20 * _Resolution;
+            TextBlock_Nom_SG_2_Tv.FontSize = 20 * _Resolution;
+            Label_Tv_Cape_Player_Attaquant_1.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Attaquant_2.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Attaquant_3.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Attaquant_4.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Attaquant_5.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Attaquant_6.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Defenseur_1.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Defenseur_2.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Defenseur_3.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Defenseur_4.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Defenseur_5.FontSize = 15 * _Resolution;
+            Label_Tv_Cape_Player_Defenseur_6.FontSize = 15 * _Resolution;
         }
     }
 }
