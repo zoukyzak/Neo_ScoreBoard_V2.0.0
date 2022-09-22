@@ -7735,10 +7735,10 @@
                     </Button.Background>
                 </Button>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Label x:Name="Label_Opacit" Content="OPACITE (0 - 100) :" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="30" Visibility="Collapsed"  FontFamily="/CPV9;component/Polices/#Impact"/>
-                <TextBox x:Name="TextBox_Opacit" Width="30" Height="30" FontFamily="Arial Black" FontSize="14" Margin="0,0" TextAlignment="Center"  KeyDown="Controle_Key_KeyDown" HorizontalAlignment="Center" Visibility="Collapsed" VerticalAlignment="Center"/>
-                <Button x:Name="Button_Option_Opacit" Content="VALIDER" HorizontalAlignment="Center" Margin="20,0,0,0" VerticalAlignment="Center" Width="200" Height="30" BorderBrush="{x:Null}" Visibility="Collapsed" Click="Button_Option_Opacit_Click"/>
+            <StackPanel x:Name="StackPanel_Opacite" Orientation="Horizontal" HorizontalAlignment="Center" Visibility="Collapsed">
+                <Label x:Name="Label_Opacit" Content="OPACITE (0 - 100) :" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="Auto" Height="Auto" Foreground="DarkBlue" FontSize="30" FontFamily="/CPV9;component/Polices/#Impact"/>
+                <TextBox x:Name="TextBox_Opacit" Width="30" Height="30" FontFamily="Arial Black" FontSize="14" Margin="0,0" TextAlignment="Center"  KeyDown="Controle_Key_KeyDown" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button x:Name="Button_Option_Opacit" Content="VALIDER" HorizontalAlignment="Center" Margin="20,0,0,0" VerticalAlignment="Center" Width="200" Height="30" BorderBrush="{x:Null}" Click="Button_Option_Opacit_Click"/>
             </StackPanel>
             <Button x:Name="Button_Option_Retour" Content="RETOUR AU DEBUT" HorizontalAlignment="Center" Margin="0,100,0,0" VerticalAlignment="Center" Width="200" Height="30" BorderBrush="#FF1B1E5D" Visibility="Visible" Click="Button_Option_Retour_Click" Background="#FF268BE0"/>
         </StackPanel>

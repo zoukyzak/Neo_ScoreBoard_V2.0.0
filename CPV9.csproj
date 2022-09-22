@@ -88,6 +88,7 @@
     <Compile Include="Classes\Classe_Cape.cs" />
     <Compile Include="Classes\Classe_Images_Players.cs" />
     <Compile Include="Classes\Descriptif_OBJ\Descript_OBJS.cs" />
+    <Compile Include="Classes\DonneesPublic.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_132.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_133.cs" />
     <Compile Include="Classes\OBJC\Adepta Sororitas\Classe_Score_OBJC_AdeptaS_134.cs" />

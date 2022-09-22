@@ -157,9 +157,7 @@ namespace CPV9
         public int format;
         public int formatBis;
         public int map;
-        public int _Round = 1;
         public bool codex = true;
-        public bool _win = false;
         public string[] Players_Attaquant = new string[3];
         public string[] Players_Defenseur = new string[3];
         public int[] Scores_Attaquant = new int[200];
@@ -1118,7 +1116,6 @@ namespace CPV9
         #endregion
 
         readonly Windows.Tv win = new Windows.Tv();
-
         public MainWindow()
         {
             InitializeComponent();
@@ -1490,7 +1487,7 @@ namespace CPV9
             formatBis = 0;
             map = 0;
             codex = true;
-            _Round = 1;
+            DonneesPublic._Round = 1;
             Select_OBJ = 0;
             Select_Objectif = 0;
             Players_Attaquant[0] = null;
@@ -3015,7 +3012,6 @@ namespace CPV9
         #region Deroulement preliminaire
         public void Deroulement()
         {
-
             if (Pages >= 2)
             {
                 if (Tables == 1) { Save_Mars(); };
@@ -3037,7 +3033,6 @@ namespace CPV9
             if (Pages == 12) { Affiche_Page_Attaquant(); };
             if (Pages == 13) { Affiche_Page_Defenseur(); };
             if (Pages == 14) { Affiche_Page_Save_Table(); };
-
         }
         public void Transfert_Donnees_To_Mem()
         {
@@ -10006,20 +10001,23 @@ namespace CPV9
             StackPanel_Option.Visibility = Visibility.Visible;
         }
         public void Button_Affichage_Tv_Click(object sender, RoutedEventArgs e)
-        {
-            if (_win == false)
+        {            
+            if (DonneesPublic._win == true)
+            {
+                win.Hide();
+                DonneesPublic._win = false;
+                return;
+            }
+
+            if (DonneesPublic._win == false)
             {
                 win.Show();
                 win.Activate();
-                _win = true;
+                win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);
+                DonneesPublic._win = true;
                 return;
             }
-            if (_win == true)
-            {
-                win.Hide();
-                _win = false;
-                return;
-            }
+            
         }
 
 
@@ -12460,8 +12458,7 @@ namespace CPV9
                 win.Collect_Cape_Tv("Att", 6, "");
             }
 
-            win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);
-
+            win.Actu_Tv(Tables, Players_Attaquant[1], Players_Defenseur[1], Players_Attaquant[0], Players_Defenseur[0], Players_Attaquant[2], Players_Defenseur[2], Scores_Attaquant[0], Scores_Defenseur[0]);           
 
         }
         private void Calcul_Score_Defenseur()
@@ -13637,24 +13634,24 @@ namespace CPV9
 
         private void Round()
         {
-            _Round = 1;
+            DonneesPublic._Round = 1;
             if (TextBox_OBJP_2_Att_Att.Text != "" && TextBox_OBJP_2_Att_Def.Text != "" && TextBox_OBJP_2_Def_Def.Text != "" && TextBox_OBJP_2_Def_Att.Text != "")
             {
-                _Round = 2;
+                DonneesPublic._Round = 2;
                 if (TextBox_OBJP_3_Att_Att.Text != "" && TextBox_OBJP_3_Att_Def.Text != "" && TextBox_OBJP_3_Def_Def.Text != "" && TextBox_OBJP_3_Def_Att.Text != "")
                 {
-                    _Round = 3;
+                    DonneesPublic._Round = 3;
                     if (TextBox_OBJP_4_Att_Att.Text != "" && TextBox_OBJP_4_Att_Def.Text != "" && TextBox_OBJP_4_Def_Def.Text != "" && TextBox_OBJP_4_Def_Att.Text != "")
                     {
-                        _Round = 4;
+                        DonneesPublic._Round = 4;
                         if (TextBox_OBJP_5_Att_Att.Text != "" && TextBox_OBJP_5_Att_Def.Text != "" && TextBox_OBJP_5_Def_Def.Text != "" && TextBox_OBJP_5_Def_Att.Text != "")
                         {
-                            _Round = 5;
+                            DonneesPublic._Round = 5;
                         }
                     }
                 }
             }
-            win.Round_Tv(_Round);
+            win.Round_Tv();
         }
 
         private void TextBox_Nom_Attaquant_SelectionChanged(object sender, RoutedEventArgs e)
@@ -21263,7 +21260,7 @@ namespace CPV9
             TextBlock_Score_Player_1.FontSize = 15 * x;
             TextBlock_Score_Player_2.FontSize = 15 * x;
             Round();
-            TextBlock_Round.Text = Convert.ToString(_Round);
+            TextBlock_Round.Text = Convert.ToString(DonneesPublic._Round);
             Label_Round.FontSize = 5 * x;
             TextBlock_Round.FontSize = 5 * x;
             TextBlock_Score_Player_1.Margin = new Thickness(-15 * Rapport_Taille_X, 3 * Rapport_Taille_Y, 0, 0);
@@ -35710,8 +35707,10 @@ namespace CPV9
             Pages = 0;
             Deroulement();
         }
-        #endregion
         
+        #endregion
+
+
     }
 
 }
